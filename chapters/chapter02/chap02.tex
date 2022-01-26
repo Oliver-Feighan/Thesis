@@ -1,0 +1,129 @@
+%
+% File: chap02.tex
+% Author: Oliver J. H. Feighan
+% Description: delta-scf benchmarking, including dft and dftb methods.
+% Talk about important factors for modelling LHII
+%
+\let\textcircled=\pgftextcircled
+\chapter{Mean-Field excited states}
+\label{chap:dscf}
+
+\initial {P}reamble
+
+%=======
+\section{Theory}
+\label{sec:dscf_theory}
+
+\subsection{$\Delta$-SCF and eigenvalue difference}
+\label{subsec{dscf_and_eigdiff}}
+
+\dscf predicts the excitation energy of a system by comparing the single point
+energy of the ground state and the excited state. Finding this excited state
+correctly can be an issue, but is usually assumed to be similar to the ground
+state. In its simplest form, the \dscf method calculates the ground state, and
+then calculates the excited state by rerunning an self-consistent field (SCF) 
+with the excited state occupation numbers. This then gives a full description 
+of both the ground as excited state from the orbital coefficients output from 
+the two SCF procedures.
+
+Initially, the excited state could be calculated by relaxing the orbitals which
+contain the excited electron and hole in the ground state space, so that the
+excited state and ground state are orthogonal\cite{Hunt1969}. However, it was
+argued that this proceedure would exacerbate errors from finding the ground
+state, and that the excited state was not a proper SCF solution\cite{Gilbert2008}.
+Alternatively, it was proposed that an SCF like method, where instead of
+populating orbitals according to the aufbau principle, orbitals which most
+resemble the previous iteration's orbitals should be occupied. Each iteration 
+in an SCF procedure produces new molecular orbital coefficients by solving the 
+Roothaan-Hall equations\cite{Roothaan1951}, generally given as an eigenvalue problem:
+
+\begin{equation}
+\mathbf{F} \mathbf{C}^{\text{new}} = \mathbf{S} \mathbf{C}^{\text{new}} \epsilon
+\end{equation}
+
+where $\mathbf{C}^{\text{new}}$ are the next orbital coefficient solutions, 
+$\mathbf{S}$ is the overlap, and $\epsilon$ are the orbital energies. 
+The Fock matrix $\mathbf{F}$ is calculated from the previous set of orbital 
+coefficients:
+
+\begin{equation}
+\mathbf{F} = f\left(\mathbf{C}^{\text{old}}\right)
+\end{equation}
+
+The amount of similarity of orbitals can be estimated from their overlap:
+
+\begin{equation}
+\mathbf{O} = \left(\mathbf{C}^{\text{old}}\right)^\dagger \mathbf{S} \mathbf{C}^{\text{new}}
+\end{equation}
+
+and for a single orbital can be evaluated as a projection:
+
+\begin{equation}
+p_j = \sum^n_i O_{ij} = \sum^N_\nu \left[\sum^N_\mu\left(\sum^n_i C_{i\mu}^{\text{old}}\right)S_{\mu\nu}\right]C^{\text{new}}_{\nu j}
+\end{equation}
+
+where $\mu,\nu$ are orbital indices. The population can then be given by the set
+of orbitals with the highest projection $p_j$.  This method can be used for any
+excited state, with the caveat that the orbital solution is in the same region
+as the ground state solution. For a few low lying states, this is generally 
+true, and so \dscf can be used to calculate a spectrum of excited states\cite{Gilbert2008}.
+The method of using this orbital overlap is called the maximum overlap method (MOM).
+
+\dscf has been shown to be cheap alternative to TDDFT and other higher level
+methods, without considerable losses of accuracy in certain cases\cite{Worster2021}.
+Additionally, as the excited state is given as solutions to SCF equations,
+the gradient of this solution can be given by normal mean-field theory.
+These gradients would be much cheaper than TDDFT or coupled cluster methods, and
+so would be advantagous for a dynamic simulation of LHII.
+
+The final descent in response theory would be to eigenvalue difference methods. 
+Here there is assumed to be no response of the orbital energies and shapes when 
+interacting with light. As stated earlier, this would be recovered from the
+complete Cassida equation if the coupling elements in the $\mathbf{A}$ and 
+$\mathbf{B}$ matrices are set to zero. This means that the difference between 
+the excited state energy and the ground state energy is just the difference of
+the orbital energies between the orbital an electron has been excited to and the
+orbital has been excited from. Additionally, transition properties can be 
+calculated by calculating transition density matrices from only the ground state.
+Hence, all the information needed can be given by a single SCF optimization. 
+Generally, eigenvalue difference methods are not seen as accurate response methods,
+but can offer a quick and easy initial value\cite{Gimon2009}.
+
+\subsection{Semi-empirical extensions}
+\label{subsec:dscf_xtb}
+We tried to extend the range of DFT methods that could be used for \dscf and 
+eigenvalue difference methods by investigating whether a tight-binding method
+could predict transition properties.
+We chose the recently published DFTB method parameterized by the Grimme group for
+this. This method has been parameterized for geometries, frequencies and non-covalent
+interactions, and uses an extended version of H{\"u}ckel theory. The name they
+present is GFN-xTB, standing for "Geometries, Frequencies, Non-Covalent - eXtended 
+Tight Binding".
+We chose this method for two reasons. The first being that it was already 
+implemted
+
+
+\section{Benchmarking}
+\label{sec:benchmarking}
+
+\subsection{Small Systems}
+\label{subsec:smalltest}
+
+\subsection{LHII Chlorophyll}
+\label{subsec:dscf_chl_tests}
+
+\subsection{GFN methods}
+\label{subsec:dscf_gfn_tests}
+
+
+\section{Extensibility}
+\label{sec:dscf_problems}
+
+\subsection{Non-orthogonality}
+\label{subsec:dscf_nonorth}
+
+\subsection{Embedding}
+\label{subsec:dscf_embedding}
+
+\subsection{Scaling}
+\label{subsec:dscf_scaling}
