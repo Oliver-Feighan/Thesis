@@ -138,12 +138,12 @@
 \usepackage{import}
 
 % Add other packages needed for chapters here. For example:
-\usepackage{lipsum}					%Needed to create dummy text
 \usepackage{amsfonts} 					%Calls Amer. Math. Soc. (AMS) fonts
-\usepackage[centertags]{amsmath}			%Writes maths centred down
+\usepackage{braket}          			%bra, ket notation
+\usepackage[centertags]{amsmath}		%Writes maths centred down
 \usepackage{stmaryrd}					%New AMS symbols
 \usepackage{amssymb}					%Calls AMS symbols
-\usepackage{amsthm}					%Calls AMS theorem environment
+\usepackage{amsthm}						%Calls AMS theorem environment
 \usepackage{newlfont}					%Helpful package for fonts and symbols
 \usepackage{layouts}					%Layout diagrams
 \usepackage{graphicx}					%Calls figure environment
@@ -155,14 +155,11 @@
 \usepackage{mathrsfs}					%Even more math symbols
 \usepackage{float}						%Helps to place figures, tables, etc. 
 \usepackage{verbatim}					%Permits pre-formated text insertion
-\usepackage{upgreek }					%Calls other kind of greek alphabet
+\usepackage{upgreek}					%Calls other kind of greek alphabet
 \usepackage{latexsym}					%Extra symbols
 \usepackage[square,numbers,
 		     sort&compress]{natbib}		%Calls bibliography commands 
 \usepackage{url}						%Supports url commands
-% \usepackage{etex}						%eTeXÕs extended support for counters
-% \usepackage{fixltx2e}					%Eliminates some in felicities of the 
-									%original LaTeX kernel
 \usepackage[spanish,english]{babel}		%For languages characters and hyphenation
 \usepackage{color}                    				%Creates coloured text and background
 \usepackage[colorlinks=true,
@@ -295,6 +292,7 @@
 \newtheorem{resu}{Result}[chapter]
 %
 \newcommand{\dscf}[0]{$\Delta$-SCF }
+\newcommand{\dxtb}[0]{$\Delta$-xTB }
 \newcommand{\code}[1]{{\fontfamily{qcr}\selectfont{#1}}}
 
 
@@ -346,13 +344,6 @@
 \addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure} \hfill Page}\par\nobreak}
 \clearemptydoublepage
 %
-%
-%
-%
-%
-%
-%
-%
 % The bulk of the document is delegated to these chapter files in
 % subdirectories.
 \mainmatter
@@ -385,10 +376,7 @@
 \backmatter
 \bibliographystyle{siam}
 \refstepcounter{chapter}
-\bibliography{thesisbiblio}
+\bibliography{/Users/of15641/Documents/library.bib}
 \clearemptydoublepage
 %
-% Add index
-%\printindex
-%   
 \end{document}

@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  26 JAN 2022 12:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  31 JAN 2022 16:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.tex"
-(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.tex
+**"/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.tex"
+(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03> (/usr/local/texlive/2017/texmf-dist/tex/latex/nag/nag.sty
 Package: nag 2011/11/25 0.7 warning about old commands (ulmi)
@@ -623,33 +623,21 @@ Package: soul 2003/11/17 v2.4 letterspacing/underlining (mf)
 )
 \dlf@normtxtw=\skip257
 \feline@chapter=\box52
-\memoirthesis@idxfile=\write4
-\openout4 = `memoirthesis.idx'.
+\thesis@idxfile=\write4
+\openout4 = `thesis.idx'.
 
 
-Writing index file memoirthesis.idx 
+Writing index file thesis.idx 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/import/import.sty
 Package: import 2020/04/01  v 6.2
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.sty (/usr/local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2021-01-09 L3 programming layer (loader) 
- (/usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count335
-\l__pdf_internal_box=\box53
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2020-10-27 L3 Experimental document command parser
- (/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
-Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
- (/usr/local/texlive/2017/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
-File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
-)) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup6
 \symAMSb=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 LaTeX Font Info:    Redeclaring math symbol \square on input line 141.
-) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (/usr/local/texlive/2017/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2020/09/23 v2.17i AMS math features
 \@mathmargin=\skip258
 
@@ -662,30 +650,30 @@ Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count336
+\inf@bad=\count335
 LaTeX Info: Redefining \frac on input line 234.
-\uproot@=\count337
-\leftroot@=\count338
+\uproot@=\count336
+\leftroot@=\count337
 LaTeX Info: Redefining \overline on input line 399.
-\classnum@=\count339
-\DOTSCASE@=\count340
+\classnum@=\count338
+\DOTSCASE@=\count339
 LaTeX Info: Redefining \ldots on input line 496.
 LaTeX Info: Redefining \dots on input line 499.
 LaTeX Info: Redefining \cdots on input line 620.
-\Mathstrutbox@=\box54
-\strutbox@=\box55
+\Mathstrutbox@=\box53
+\strutbox@=\box54
 \big@size=\dimen190
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
-\macc@depth=\count341
-\c@MaxMatrixCols=\count342
+\macc@depth=\count340
+\c@MaxMatrixCols=\count341
 \dotsspace@=\muskip16
-\c@parentequation=\count343
-\dspbrk@lvl=\count344
+\c@parentequation=\count342
+\dspbrk@lvl=\count343
 \tag@help=\toks33
-\row@=\count345
-\column@=\count346
-\maxfields@=\count347
+\row@=\count344
+\column@=\count345
+\maxfields@=\count346
 \andhelp@=\toks34
 \eqnshift@=\dimen191
 \alignsep@=\dimen192
@@ -751,7 +739,7 @@ LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 )) (/usr/local/texlive/2017/texmf-dist/tex/latex/layouts/layouts.sty
 Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ylen=\skip264
-\layoutsbox=\box56
+\layoutsbox=\box55
 \l@youtunitlength=\skip265
 \l@youtlinethick=\skip266
 \l@youtlinethickii=\skip267
@@ -771,56 +759,56 @@ Package: layouts 2009/09/02 v2.6d graphical depiction of document elements
 \l@ypsep=\skip281
 \l@yitmsep=\skip282
 \l@ytok=\toks43
-\l@youtpw=\count348
-\l@youtph=\count349
-\l@youthpi=\count350
-\l@youthpii=\count351
-\l@youthpiii=\count352
-\l@youthpiv=\count353
-\l@youthpv=\count354
-\l@youthpvi=\count355
-\l@youthpvii=\count356
-\l@youtparskip=\count357
-\l@youtvpi=\count358
-\l@youtvpii=\count359
-\l@youtvpiii=\count360
-\l@youtvpiv=\count361
-\l@youtvpv=\count362
-\l@youtvpvi=\count363
-\l@youtvpvii=\count364
-\l@youthdo=\count365
-\l@youthdi=\count366
-\l@youthdii=\count367
-\l@youthdiii=\count368
-\l@youthdiv=\count369
-\l@youthdv=\count370
-\l@youthdvi=\count371
-\l@youthdvii=\count372
-\l@youtvdo=\count373
-\l@youtvdi=\count374
-\l@youtvdii=\count375
-\l@youtvdiii=\count376
-\l@youtvdiv=\count377
-\l@youtvdv=\count378
-\l@youtvdvi=\count379
-\l@youtvdvii=\count380
-\l@youtvdviii=\count381
-\l@youtxci=\count382
-\l@youtxcii=\count383
-\l@youtxciii=\count384
-\l@youtxciv=\count385
-\l@youtxcv=\count386
-\l@youtxcvi=\count387
-\l@youtyci=\count388
-\l@youtycii=\count389
-\l@youtyciii=\count390
-\l@youtyciv=\count391
-\l@youtycv=\count392
-\l@youtycvi=\count393
-\l@youtycvii=\count394
-\l@youtycviii=\count395
-\l@youtxco=\count396
-\l@youtyco=\count397
+\l@youtpw=\count347
+\l@youtph=\count348
+\l@youthpi=\count349
+\l@youthpii=\count350
+\l@youthpiii=\count351
+\l@youthpiv=\count352
+\l@youthpv=\count353
+\l@youthpvi=\count354
+\l@youthpvii=\count355
+\l@youtparskip=\count356
+\l@youtvpi=\count357
+\l@youtvpii=\count358
+\l@youtvpiii=\count359
+\l@youtvpiv=\count360
+\l@youtvpv=\count361
+\l@youtvpvi=\count362
+\l@youtvpvii=\count363
+\l@youthdo=\count364
+\l@youthdi=\count365
+\l@youthdii=\count366
+\l@youthdiii=\count367
+\l@youthdiv=\count368
+\l@youthdv=\count369
+\l@youthdvi=\count370
+\l@youthdvii=\count371
+\l@youtvdo=\count372
+\l@youtvdi=\count373
+\l@youtvdii=\count374
+\l@youtvdiii=\count375
+\l@youtvdiv=\count376
+\l@youtvdv=\count377
+\l@youtvdvi=\count378
+\l@youtvdvii=\count379
+\l@youtvdviii=\count380
+\l@youtxci=\count381
+\l@youtxcii=\count382
+\l@youtxciii=\count383
+\l@youtxciv=\count384
+\l@youtxcv=\count385
+\l@youtxcvi=\count386
+\l@youtyci=\count387
+\l@youtycii=\count388
+\l@youtyciii=\count389
+\l@youtyciv=\count390
+\l@youtycv=\count391
+\l@youtycvi=\count392
+\l@youtycvii=\count393
+\l@youtycviii=\count394
+\l@youtxco=\count395
+\l@youtyco=\count396
 \l@ytempdima=\skip283
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
@@ -843,23 +831,23 @@ Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
 \LTright=\skip285
 \LTpre=\skip286
 \LTpost=\skip287
-\LTchunksize=\count398
+\LTchunksize=\count397
 \LTcapwidth=\dimen199
-\LT@head=\box57
-\LT@firsthead=\box58
-\LT@foot=\box59
-\LT@lastfoot=\box60
-\LT@cols=\count399
-\LT@rows=\count400
-\c@LT@tables=\count401
-\c@LT@chunks=\count402
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@cols=\count398
+\LT@rows=\count399
+\c@LT@tables=\count400
+\c@LT@chunks=\count401
 \LT@p@ftn=\toks44
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/rotating.sty
 Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
-\c@r@tfl@t=\count403
+\c@r@tfl@t=\count402
 \rotFPtop=\skip288
 \rotFPbot=\skip289
-\rot@float@box=\box61
+\rot@float@box=\box60
 \rot@mess@toks=\toks45
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2020/08/01 v1.3d Input encoding file
@@ -886,11 +874,11 @@ Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
 \symrsfs=\mathgroup11
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count404
+\c@float@type=\count403
 \float@exts=\toks49
-\float@box=\box62
+\float@box=\box61
 \@float@everytoks=\toks50
-\@floatcapt=\box63
+\@floatcapt=\box62
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/was/upgreek.sty
 Package: upgreek 2003/02/12 v2.0 (WaS)
 Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
@@ -902,7 +890,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip291
 \bibsep=\skip292
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count405
+\c@NAT@ctr=\count404
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -910,17 +898,17 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 Package: babel 2020/12/16 3.52 The Babel package
  (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/12/16 3.52 Babel common definitions
-\babel@savecnt=\count406
+\babel@savecnt=\count405
 \U@D=\dimen256
 \l@babelnohyphens=\language86
  (/usr/local/texlive/2017/texmf-dist/tex/generic/babel/txtbabel.def)
 \bbl@readstream=\read3
 )
-\bbl@dirlevel=\count407
+\bbl@dirlevel=\count406
  (/usr/local/texlive/2017/texmf-dist/tex/generic/babel-spanish/spanish.ldf
 Language: spanish.ldf 2016/03/03 v5.0p Spanish support from the babel system
 \es@quottoks=\toks51
-\es@quotdepth=\count408
+\es@quotdepth=\count407
 Package babel Info: Making " an active character on input line 561.
 Package babel Info: Making . an active character on input line 662.
 Package babel Info: Making < an active character on input line 707.
@@ -961,8 +949,8 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
 \@linkdim=\dimen257
-\Hy@linkcounter=\count409
-\Hy@pagecounter=\count410
+\Hy@linkcounter=\count408
+\Hy@pagecounter=\count409
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
@@ -972,7 +960,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count411
+\Hy@SavedSpaceFactor=\count410
 Package hyperref Info: Option `colorlinks' set `true' on input line 4338.
 Package hyperref Info: Hyper figures OFF on input line 4464.
 Package hyperref Info: Link nesting OFF on input line 4469.
@@ -981,7 +969,7 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count412
+\c@Hy@tempcnt=\count411
 LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen258
  (/usr/local/texlive/2017/texmf-dist/tex/generic/bitset/bitset.sty
@@ -989,7 +977,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count413
+\Fld@menulength=\count412
 \Field@Width=\dimen259
 \Fld@charsize=\dimen260
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -1005,13 +993,13 @@ LaTeX Info: Redefining \pageref on input line 6421.
 Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
 with kernel methods
 )
-\Hy@abspage=\count414
-\c@Item=\count415
-\c@Hfootnote=\count416
+\Hy@abspage=\count413
+\c@Item=\count414
+\c@Hfootnote=\count415
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2019/10/24 v1.18 nameref/hyperref package fixes for memoir class
-\c@memhycontfloat=\count417
-\c@Hpagenote=\count418
+\c@memhycontfloat=\count416
+\c@Hpagenote=\count417
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/hpdftex.def
@@ -1020,8 +1008,8 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
 with kernel methods
 )
-\Fld@listcount=\count419
-\c@bookmark@seq@number=\count420
+\Fld@listcount=\count418
+\c@bookmark@seq@number=\count419
  (/usr/local/texlive/2017/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -1032,16 +1020,16 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
 \Hy@SectionHShift=\skip293
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box64
+\fn@notes=\box63
 \fn@width=\dimen261
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2020/12/07 v2.8 Micro-typographical refinements (RS)
 \MT@toks=\toks52
-\MT@count=\count421
+\MT@count=\count420
 LaTeX Info: Redefining \textls on input line 788.
 \MT@outer@kern=\dimen262
 LaTeX Info: Redefining \textmicrotypecontext on input line 1358.
-\MT@listname@count=\count422
+\MT@listname@count=\count421
  (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/microtype-pdftex.def
 File: microtype-pdftex.def 2020/12/07 v2.8 Definitions specific to pdftex (RS)
 LaTeX Info: Redefining \lsstyle on input line 915.
@@ -1061,7 +1049,7 @@ Package: alltt 1997/06/16 v2.0g defines alltt environment
 \pgfutil@tempdima=\dimen263
 \pgfutil@tempdimb=\dimen264
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box65
+\pgfutil@abb=\box64
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
 ))
@@ -1086,14 +1074,14 @@ Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@yd=\dimen274
 \w@pgf@writea=\write5
 \r@pgf@reada=\read4
-\c@pgf@counta=\count423
-\c@pgf@countb=\count424
-\c@pgf@countc=\count425
-\c@pgf@countd=\count426
+\c@pgf@counta=\count422
+\c@pgf@countb=\count423
+\c@pgf@countc=\count424
+\c@pgf@countd=\count425
 \t@pgf@toka=\toks57
 \t@pgf@tokb=\toks58
 \t@pgf@tokc=\toks59
-\pgf@sys@id@count=\count427
+\pgf@sys@id@count=\count426
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
 )
@@ -1104,8 +1092,8 @@ File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
 File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
 ))) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfsyssoftpath@smallbuffer@items=\count428
-\pgfsyssoftpath@bigbuffer@items=\count429
+\pgfsyssoftpath@smallbuffer@items=\count427
+\pgfsyssoftpath@bigbuffer@items=\count428
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )) (/usr/local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -1128,13 +1116,13 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen275
-\pgfmath@count=\count430
-\pgfmath@box=\box66
+\pgfmath@count=\count429
+\pgfmath@box=\box65
 \pgfmath@toks=\toks60
 \pgfmath@stack@operand=\toks61
 \pgfmath@stack@operation=\toks62
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count431
+\c@pgfmathroundto@lastzeros=\count430
 )) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@picminx=\dimen276
@@ -1161,10 +1149,10 @@ File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@shorten@start@additional=\dimen293
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfpic=\box67
-\pgf@hbox=\box68
-\pgf@layerbox@main=\box69
-\pgf@picture@serial@count=\count432
+\pgfpic=\box66
+\pgf@hbox=\box67
+\pgf@layerbox@main=\box68
+\pgf@picture@serial@count=\count431
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgflinewidth=\dimen294
@@ -1185,13 +1173,13 @@ File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \pgf@max=\dimen299
-\pgf@sys@shading@range@num=\count433
-\pgf@shadingcount=\count434
+\pgf@sys@shading@range@num=\count432
+\pgf@shadingcount=\count433
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfexternal@startupbox=\box70
+\pgfexternal@startupbox=\box69
 )) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
@@ -1202,7 +1190,7 @@ File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
 File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodeparttextbox=\box71
+\pgfnodeparttextbox=\box70
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
@@ -1218,7 +1206,7 @@ Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
 Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@plot@mark@count=\count435
+\pgf@plot@mark@count=\count434
 \pgfplotmarksize=\dimen302
 )
 \tikz@lastx=\dimen303
@@ -1229,21 +1217,21 @@ File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 \tikz@lastmovetoy=\dimen308
 \tikzleveldistance=\dimen309
 \tikzsiblingdistance=\dimen310
-\tikz@figbox=\box72
-\tikz@figbox@bg=\box73
-\tikz@tempbox=\box74
-\tikz@tempbox@bg=\box75
-\tikztreelevel=\count436
-\tikznumberofchildren=\count437
-\tikznumberofcurrentchild=\count438
-\tikz@fig@count=\count439
+\tikz@figbox=\box71
+\tikz@figbox@bg=\box72
+\tikz@tempbox=\box73
+\tikz@tempbox@bg=\box74
+\tikztreelevel=\count435
+\tikznumberofchildren=\count436
+\tikznumberofcurrentchild=\count437
+\tikz@fig@count=\count438
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfmatrixcurrentrow=\count440
-\pgfmatrixcurrentcolumn=\count441
-\pgf@matrix@numberofcolumns=\count442
+\pgfmatrixcurrentrow=\count439
+\pgfmatrixcurrentcolumn=\count440
+\pgf@matrix@numberofcolumns=\count441
 )
-\tikz@expandcount=\count443
+\tikz@expandcount=\count442
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ))) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
@@ -1274,26 +1262,26 @@ File: pgflibraryshapes.arrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 File: tikzlibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgfnodepartlowerbox=\box76
-\pgfnodeparttwobox=\box77
-\pgfnodepartthreebox=\box78
-\pgfnodepartfourbox=\box79
-\pgfnodeparttwentybox=\box80
-\pgfnodepartnineteenbox=\box81
-\pgfnodeparteighteenbox=\box82
-\pgfnodepartseventeenbox=\box83
-\pgfnodepartsixteenbox=\box84
-\pgfnodepartfifteenbox=\box85
-\pgfnodepartfourteenbox=\box86
-\pgfnodepartthirteenbox=\box87
-\pgfnodeparttwelvebox=\box88
-\pgfnodepartelevenbox=\box89
-\pgfnodeparttenbox=\box90
-\pgfnodepartninebox=\box91
-\pgfnodeparteightbox=\box92
-\pgfnodepartsevenbox=\box93
-\pgfnodepartsixbox=\box94
-\pgfnodepartfivebox=\box95
+\pgfnodepartlowerbox=\box75
+\pgfnodeparttwobox=\box76
+\pgfnodepartthreebox=\box77
+\pgfnodepartfourbox=\box78
+\pgfnodeparttwentybox=\box79
+\pgfnodepartnineteenbox=\box80
+\pgfnodeparteighteenbox=\box81
+\pgfnodepartseventeenbox=\box82
+\pgfnodepartsixteenbox=\box83
+\pgfnodepartfifteenbox=\box84
+\pgfnodepartfourteenbox=\box85
+\pgfnodepartthirteenbox=\box86
+\pgfnodeparttwelvebox=\box87
+\pgfnodepartelevenbox=\box88
+\pgfnodeparttenbox=\box89
+\pgfnodepartninebox=\box90
+\pgfnodeparteightbox=\box91
+\pgfnodepartsevenbox=\box92
+\pgfnodepartsixbox=\box93
+\pgfnodepartfivebox=\box94
 ))) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarysnakes.code.tex
 File: tikzlibrarysnakes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 
@@ -1306,37 +1294,37 @@ Package pgf Warning: Snakes have been superseded by decorations. Please use the 
 \pgfdecoratedinputsegmentcompleteddistance=\dimen314
 \pgfdecoratedinputsegmentremainingdistance=\dimen315
 \pgf@decorate@distancetomove=\dimen316
-\pgf@decorate@repeatstate=\count444
+\pgf@decorate@repeatstate=\count443
 \pgfdecorationsegmentamplitude=\dimen317
 \pgfdecorationsegmentlength=\dimen318
 )
-\tikz@lib@dec@box=\box96
+\tikz@lib@dec@box=\box95
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.shapes.code.tex (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.shapes.code.tex))) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryautomata.code.tex
 File: tikzlibraryautomata.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 File: tikzlibrarybackgrounds.code.tex 2020/12/27 v3.1.8b (3.1.8b)
-\pgf@layerbox@background=\box97
-\pgf@layerboxsaved@background=\box98
+\pgf@layerbox@background=\box96
+\pgf@layerboxsaved@background=\box97
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypetri.code.tex
 File: tikzlibrarypetri.code.tex 2020/12/27 v3.1.8b (3.1.8b)
 )
-\c@proofcount=\count445
+\c@proofcount=\count444
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/minifp/minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack-based programing language.
-\MFP@loopctr=\count446
+\MFP@loopctr=\count445
 )
-\c@DefaultLines=\count447
-\c@DefaultDepth=\count448
+\c@DefaultLines=\count446
+\c@DefaultDepth=\count447
 \DefaultFindent=\dimen319
 \DefaultNindent=\dimen320
 \DefaultSlope=\dimen321
 \DiscardVskip=\dimen322
-\L@lbox=\box99
-\L@tbox=\box100
-\c@L@lines=\count449
-\c@L@depth=\count450
+\L@lbox=\box98
+\L@tbox=\box99
+\c@L@lines=\count448
+\c@L@depth=\count449
 \L@Pindent=\dimen323
 \L@Findent=\dimen324
 \L@Nindent=\dimen325
@@ -1356,55 +1344,59 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack-
 
 Loading lettrine.cfg
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.cfg))
-\c@theo=\count451
-\c@prop=\count452
-\c@dfn=\count453
-\c@lema=\count454
-\c@cor=\count455
-\c@resu=\count456
- (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.aux)
-\openout1 = `memoirthesis.aux'.
+\c@theo=\count450
+\c@prop=\count451
+\c@dfn=\count452
+\c@lema=\count453
+\c@cor=\count454
+\c@resu=\count455
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count456
+\l__pdf_internal_box=\box100
+) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux)
+\openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 302.
-LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 302.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 300.
+LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 300.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 302.
-LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 302.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 300.
+LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 300.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 302.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 302.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 300.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 300.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 302.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 302.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 302.
+LaTeX Font Info:    ... okay on input line 300.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 300.
+LaTeX Font Info:    ... okay on input line 300.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 300.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 300.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 300.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 302.
+Package layouts Warning: Layout scale set to 0.5 on input line 300.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1425,7 +1417,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 302.
+Package hyperref Info: Link coloring ON on input line 300.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2017/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1437,22 +1429,22 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 302.
-LaTeX Info: Redefining \ref on input line 302.
-LaTeX Info: Redefining \pageref on input line 302.
-LaTeX Info: Redefining \nameref on input line 302.
-(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.out) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.out)
+LaTeX Info: Redefining \nameref on input line 300.
+LaTeX Info: Redefining \ref on input line 300.
+LaTeX Info: Redefining \pageref on input line 300.
+LaTeX Info: Redefining \nameref on input line 300.
+(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out)
 \@outlinefile=\write6
-\openout6 = `memoirthesis.out'.
+\openout6 = `thesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 302.
+LaTeX Info: Redefining \microtypecontext on input line 300.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 302.
+LaTeX Info: Redefining \showhyphens on input line 300.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1460,11 +1452,11 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fnc' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 302.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 302.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 302.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 302.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 302.
+Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 300.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 300.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 300.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 300.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 300.
  (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
@@ -1472,7 +1464,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 29.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 31.
-<logos/bristolcrest_colour.pdf, id=244, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=240, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 <use logos/bristolcrest_colour.pdf>
 Package pdftex.def Info: logos/bristolcrest_colour.pdf  used on input line 33.
@@ -1561,7 +1553,7 @@ l.18 \clearpage
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.327 \clearemptydoublepage
+l.325 \clearemptydoublepage
                             [2
 
 
@@ -1585,20 +1577,20 @@ Package lettrine.sty Info: Targeted height = 33.27432pt
 ]) [6
 
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.toc
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
  [7])
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 339.
- [8] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.lot
+(Font)              scaled to size 9.29993pt on input line 337.
+ [8] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 (Font)              scaled to size 10.18341pt on input line 2.
 ) [9
 
 ] [10
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.lof) [11] [12
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lof) [11] [12
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter01/chap01.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1652,15 +1644,6 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 17.
 
-
-Package natbib Warning: Citation `Hunt1969' on page 3 undefined on input line 31.
-
-
-Package natbib Warning: Citation `Gilbert2008' on page 3 undefined on input line 33.
-
-
-Package natbib Warning: Citation `Roothaan1951' on page 3 undefined on input line 38.
-
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 7.71893pt on input line 41.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
@@ -1671,45 +1654,37 @@ Underfull \vbox (badness 1092) has occurred while \output is active []
  [3
 
 ]
-
-Package natbib Warning: Citation `Gilbert2008' on page 4 undefined on input line 69.
-
-
-Package natbib Warning: Citation `Worster2021' on page 4 undefined on input line 73.
-
-
-Package natbib Warning: Citation `Gimon2009' on page 4 undefined on input line 90.
-
-[4]) [5] [6
+LaTeX Font Info:    Trying to load font information for T1+qcr on input line 103.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/tex-gyre/t1qcr.fd
+File: t1qcr.fd 2009/09/25 v1.2 font definition file for T1/qcr
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `qcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [4] [5] [6]
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 212.
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
+File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
+)
+LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
+(Font)              scaled to size 10.18341pt on input line 212.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `fnc' (encoding: TS1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [7] [8]) [9] [10
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter03/chap03.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
 (lettrine.sty)             reported on input line 11.
-) [7
-
-] [8
-
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter04/chap04.tex
-Package lettrine.sty Info: Targeted height = 39.06784pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
-(lettrine.sty)             reported on input line 10.
-) [9
-
-] [10
-
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter05/chap05.tex
-Package lettrine.sty Info: Targeted height = 39.06784pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
-(lettrine.sty)             reported on input line 10.
 ) [11
 
 ] [12
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter06/chap06.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter04/chap04.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
@@ -1718,63 +1693,71 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 
 ] [14
 
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter05/chap05.tex
+Package lettrine.sty Info: Targeted height = 39.06784pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
+(lettrine.sty)             reported on input line 10.
+) [15
+
+] [16
+
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter06/chap06.tex
+Package lettrine.sty Info: Targeted height = 39.06784pt
+(lettrine.sty)             (for loversize=0, accent excluded),
+(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
+(lettrine.sty)             reported on input line 10.
+) [17
+
+] [18
+
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/appendices/app0A.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
 (lettrine.sty)             reported on input line 10.
-LaTeX Font Info:    Trying to load font information for T1+qcr on input line 17.
- (/usr/local/texlive/2017/texmf-dist/tex/latex/tex-gyre/t1qcr.fd
-File: t1qcr.fd 2009/09/25 v1.2 font definition file for T1/qcr
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `qcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) [15
+) [19
 
-] [16
+] [20
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 3.
-
-) [17
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.bbl
+LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 4.
+LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
+(Font)              scaled to size 10.18341pt on input line 6.
+) [21
 
 
-] [18
+] [22
 
 ]
-
-Package natbib Warning: There were undefined citations.
-
 No complaints by nag.
 \tf@toc=\write7
-\openout7 = `memoirthesis.toc'.
+\openout7 = `thesis.toc'.
 
 \tf@lot=\write8
-\openout8 = `memoirthesis.lot'.
+\openout8 = `thesis.lot'.
 
 \tf@lof=\write9
-\openout9 = `memoirthesis.lof'.
+\openout9 = `thesis.lof'.
 
-(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.aux)
-Package rerunfilecheck Info: File `memoirthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 369939375D951987C29F5ED2E64042F8;3926.
+(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux)
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 4486637C367BB18E7D8C98C3FD403B3E;3855.
  ) 
 Here is how much of TeX's memory you used:
- 30897 strings out of 479304
- 580135 string characters out of 5867281
- 1089202 words of memory out of 5000000
- 46966 multiletter control sequences out of 15000+600000
- 502497 words of font info for 291 fonts, out of 8000000 for 9000
+ 30921 strings out of 479304
+ 577116 string characters out of 5867281
+ 995781 words of memory out of 5000000
+ 46858 multiletter control sequences out of 15000+600000
+ 511610 words of font info for 368 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,88p,1103b,506s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,12n,88p,1097b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qcrr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/memoirthesis.pdf" (32 pages, 234851 bytes).
+Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.pdf" (36 pages, 261077 bytes).
 PDF statistics:
- 511 PDF objects out of 1000 (max. 8388607)
- 462 compressed objects within 5 object streams
- 99 named destinations out of 1000 (max. 500000)
- 87018 words of extra memory for PDF output out of 89155 (max. 10000000)
+ 564 PDF objects out of 1000 (max. 8388607)
+ 510 compressed objects within 6 object streams
+ 127 named destinations out of 1000 (max. 500000)
+ 95202 words of extra memory for PDF output out of 106986 (max. 10000000)
 

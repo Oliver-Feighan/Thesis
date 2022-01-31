@@ -1,0 +1,47 @@
+\begin{thebibliography}{1}
+
+\bibitem{Gilbert2008}
+{\sc A.~T.~B. Gilbert, N.~A. Besley, and P.~M.~W. Gill}, {\em {Self-Consistent
+  Field Calculations of Excited States Using the Maximum Overlap Method (MOM)
+  †}}, J. Phys. Chem., 112 (2008), p.~13164.
+
+\bibitem{Gimon2009}
+{\sc T.~Gimon, A.~Ipatov, A.~He{\ss}elmann, and A.~G{\"{o}}rling}, {\em
+  {Qualitatively Correct Charge-Transfer Exictation Energies in HeH+ by
+  Time-Dependent Density-Functional Theory Due to Exact Exchange Kohn-Sham
+  Eigenvalue Differences}}, J. Chem. Theory Comput, 5 (2009), p.~27.
+
+\bibitem{Grimme2016}
+{\sc S.~Grimme and C.~Bannwarth}, {\em {Ultra-fast computation of electronic
+  spectra for large systems by tight-binding based simplified Tamm-Dancoff
+  approximation (sTDA-xTB)}}, J. Chem. Phys., 145 (2016), p.~54103.
+
+\bibitem{Hunt1969}
+{\sc s.~W.~J. Hunt and W.~A. Goddard}, {\em {Excited States of H2O using
+  improved virtual orbitals}}, Chem. Phys. Lett., 3 (1969), pp.~414--418.
+
+\bibitem{Klopman1964}
+{\sc G.~Klopman, V.~86, J.~Linevsky, K.~S. Seshadri, and D.~White}, {\em {A
+  Semiempirical Treatment of Molecular Structures. II. Molecular Terms and
+  Application to Diatomic Molecules}}, J. Am. Chem. Soc., 86 (1964),
+  pp.~4550--4557.
+
+\bibitem{Nishimoto1957}
+{\sc K.~Nishimoto and N.~Mataga}, {\em {Electronic Structure and Spectra of
+  Some Nitrogen Heterocycles}}, Zeitshrift fur Phys. Chemie Neue Folge, 12
+  (1957), pp.~335--338.
+
+\bibitem{Ohno1964}
+{\sc K.~Ohno}, {\em {Some Remarks on the Pariser-Parr-Pople Method}}, Theor.
+  chim. Acta, 2 (1964), pp.~219--227.
+
+\bibitem{Roothaan1951}
+{\sc C.~C.~J. Roothaan}, {\em {New Developments in Molecular Orbital Theory}},
+  Rev. Mod. Phys., 23 (1951), p.~69.
+
+\bibitem{Worster2021}
+{\sc S.~B. Worster, O.~Feighan, and F.~R. Manby}, {\em {Reliable transition
+  properties from excited-state mean-field calculations}}, J. Chem. Phys, 154
+  (2021), p.~124106.
+
+\end{thebibliography}
