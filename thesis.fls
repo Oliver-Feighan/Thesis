@@ -2,8 +2,8 @@ PWD /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Wr
 INPUT /usr/local/texlive/2017/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.tex
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.log
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.tex
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.log
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/nag/nag.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/nag/nag.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/nag/nag.sty
@@ -335,7 +335,7 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/soul/soul.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/soul/soul.sty
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/jknappen/ec/ectt1000.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fourier.sty
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.idx
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.idx
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/import/import.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/import/import.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/import/import.sty
@@ -1297,10 +1297,10 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdftex.de
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
@@ -1370,36 +1370,36 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/gettitlestring/gettitlestri
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.pdf
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/logos/bristolcrest_colour.pdf
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/logos/bristolcrest_colour.pdf
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/logos/bristolcrest_colour.pdf
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/logos/bristolcrest_colour.pdf
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/logos/bristolcrest_colour.pdf
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/logos/bristolcrest_colour.pdf
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/logos/bristolcrest_colour.pdf
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/logos/bristolcrest_colour.pdf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
@@ -1493,17 +1493,17 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncbc8t.tfm
@@ -1516,31 +1516,31 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.toc
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.toc
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.toc
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
@@ -1552,19 +1552,19 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lot
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lot
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lot
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lot
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lot
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lot
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncbc8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncbc8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lof
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lof
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lof
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter01/chap01.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter01/chap01.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter01/chap01.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter01/chap01.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter01/chap01.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter01/chap01.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter01/chap01.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter01/chap01.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
@@ -1575,10 +1575,10 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter02/chap02.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter02/chap02.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter02/chap02.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter02/chap02.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter02/chap02.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter02/chap02.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter02/chap02.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter02/chap02.tex
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fouriernc/fncmii.tfm
@@ -1656,41 +1656,41 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8c.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8c.vf
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter03/chap03.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter03/chap03.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter03/chap03.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter03/chap03.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter04/chap04.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter04/chap04.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter04/chap04.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter04/chap04.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter05/chap05.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter05/chap05.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter05/chap05.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter05/chap05.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter06/chap06.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter06/chap06.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter06/chap06.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter06/chap06.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/appendices/app0A.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/appendices/app0A.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/appendices/app0A.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/appendices/app0A.tex
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.bbl
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.bbl
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.bbl
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.bbl
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter04/chap04.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter04/chap04.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter04/chap04.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter04/chap04.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter05/chap05.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter05/chap05.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter05/chap05.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter05/chap05.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter06/chap06.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter06/chap06.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter06/chap06.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter06/chap06.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/appendices/app0A.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/appendices/app0A.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/appendices/app0A.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/appendices/app0A.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.bbl
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.bbl
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.bbl
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.bbl
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8c.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8c.vf
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.toc
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lot
-OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lof
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
-INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lot
+OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb

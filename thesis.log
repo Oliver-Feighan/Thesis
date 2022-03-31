@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  31 JAN 2022 16:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  31 MAR 2022 15:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.tex"
-(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.tex
+**"/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.tex"
+(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-01-09> xparse <2020-03-03> (/usr/local/texlive/2017/texmf-dist/tex/latex/nag/nag.sty
 Package: nag 2011/11/25 0.7 warning about old commands (ulmi)
@@ -1354,7 +1354,7 @@ Loading lettrine.cfg
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
 \l__kernel_color_stack_int=\count456
 \l__pdf_internal_box=\box100
-) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux)
+) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux)
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 300.
@@ -1433,7 +1433,7 @@ LaTeX Info: Redefining \nameref on input line 300.
 LaTeX Info: Redefining \ref on input line 300.
 LaTeX Info: Redefining \pageref on input line 300.
 LaTeX Info: Redefining \nameref on input line 300.
-(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.out)
+(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
@@ -1457,14 +1457,14 @@ Package nag Info: Command \captionabove not defined, skipping amendment on input
 Package nag Info: Command \captionbelow not defined, skipping amendment on input line 300.
 Package nag Info: Command \hc@caption not defined, skipping amendment on input line 300.
 Package nag Info: Command \topcaption not defined, skipping amendment on input line 300.
- (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/title.tex
+ (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 25.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 29.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 31.
-<logos/bristolcrest_colour.pdf, id=240, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=256, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 <use logos/bristolcrest_colour.pdf>
 Package pdftex.def Info: logos/bristolcrest_colour.pdf  used on input line 33.
@@ -1524,9 +1524,9 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
  [1
 
 
-{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/logos/bristolcrest_colour.pdf>] [2
+{/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/logos/bristolcrest_colour.pdf>] [2
 
-]) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/abstract.tex
+]) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abstract.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 13.39188pt on input line 14.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
@@ -1557,7 +1557,7 @@ l.325 \clearemptydoublepage
                             [2
 
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/dedication.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/dedication.tex
 Package lettrine.sty Info: Targeted height = 33.27432pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 33.866pt ( \color {gray} {\textsc {H}});
@@ -1567,7 +1567,7 @@ Package lettrine.sty Info: Targeted height = 33.27432pt
 ]) [4
 
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/frontmatter/declaration.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
 Package lettrine.sty Info: Targeted height = 33.27432pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 33.866pt ( \color {gray} {\textsc {I}});
@@ -1577,22 +1577,27 @@ Package lettrine.sty Info: Targeted height = 33.27432pt
 ]) [6
 
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.toc
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 10.18341pt on input line 2.
- [7])
+
+Overfull \hbox (1.74115pt too wide) detected at line 4
+ \T1/fnc/b/n/10.95 xiii
+ []
+
+[7])
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 9.29993pt on input line 337.
- [8] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lot
+ [8] [9] [10
+
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lot
 LaTeX Font Info:    Font shape `T1/fnc/b/sc' will be
 (Font)              scaled to size 10.18341pt on input line 2.
-) [9
+) [11] [12
 
-] [10
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof) [13] [14
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.lof) [11] [12
-
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter01/chap01.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter01/chap01.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 36.3328pt on input line 10.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1610,7 +1615,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 ] [2
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter02/chap02.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter02/chap02.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
@@ -1675,7 +1680,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             See the microtype manual for details.
  [7] [8]) [9] [10
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter03/chap03.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
@@ -1684,7 +1689,7 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 
 ] [12
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter04/chap04.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter04/chap04.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
@@ -1693,7 +1698,7 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 
 ] [14
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter05/chap05.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter05/chap05.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
@@ -1702,7 +1707,7 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 
 ] [16
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/chapter06/chap06.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter06/chap06.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
@@ -1711,7 +1716,7 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 
 ] [18
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/chapters/appendices/app0A.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/appendices/app0A.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
@@ -1720,7 +1725,7 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 
 ] [20
 
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.bbl
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 4.
 LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
@@ -1741,23 +1746,23 @@ No complaints by nag.
 \tf@lof=\write9
 \openout9 = `thesis.lof'.
 
-(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.aux)
+(/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux)
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 4486637C367BB18E7D8C98C3FD403B3E;3855.
+(rerunfilecheck)             Checksum: 9D55AA23B0208CFB0A72D835DFC98D1C;4125.
  ) 
 Here is how much of TeX's memory you used:
- 30921 strings out of 479304
- 577116 string characters out of 5867281
- 995781 words of memory out of 5000000
- 46858 multiletter control sequences out of 15000+600000
+ 30935 strings out of 479304
+ 577333 string characters out of 5867281
+ 997059 words of memory out of 5000000
+ 46866 multiletter control sequences out of 15000+600000
  511610 words of font info for 368 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,12n,88p,1097b,512s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qcrr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/thesis/thesis.pdf" (36 pages, 261077 bytes).
+Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf" (38 pages, 262561 bytes).
 PDF statistics:
- 564 PDF objects out of 1000 (max. 8388607)
- 510 compressed objects within 6 object streams
- 127 named destinations out of 1000 (max. 500000)
- 95202 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 596 PDF objects out of 1000 (max. 8388607)
+ 540 compressed objects within 6 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 95234 words of extra memory for PDF output out of 106986 (max. 10000000)
 

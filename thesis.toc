@@ -1,7 +1,7 @@
 \babel@toc {english}{}
 \par \nobreak \mbox {}\hfill {\bfseries Page}\par \nobreak 
-\contentsline {chapter}{List of Tables}{ix}{section*.5}%
-\contentsline {chapter}{List of Figures}{xi}{section*.6}%
+\contentsline {chapter}{List of Tables}{xi}{section*.5}%
+\contentsline {chapter}{List of Figures}{xiii}{section*.6}%
 \contentsline {chapter}{\chapternumberline {1}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Quantum Exploits in Light Harvesting Systems}{1}{section.1.1}%
 \contentsline {subsection}{\numberline {1.1.1}Electronic Energy Transfer}{1}{subsection.1.1.1}%
@@ -48,12 +48,16 @@
 \contentsline {subsection}{\numberline {4.3.2}Comparison}{13}{subsection.4.3.2}%
 \contentsline {chapter}{\chapternumberline {5}Atomistic Modelling of Light Harvesting Complexes}{15}{chapter.5}%
 \contentsline {section}{\numberline {5.1}LHII}{15}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Spectral Density}{15}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.1}Spectral Density Method}{15}{subsection.5.1.1}%
 \contentsline {subsection}{\numberline {5.1.2}Molecular Dynamics Method}{15}{subsection.5.1.2}%
 \contentsline {section}{\numberline {5.2}Approximating Spectral Densities}{15}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Hessians}{15}{subsection.5.2.1}%
 \contentsline {subsection}{\numberline {5.2.2}Chlorophyll distances}{15}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Excitation Energies}{15}{section.5.3}%
+\contentsline {section}{\numberline {5.3}Sites, states and couplings}{15}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Sites}{15}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Exciton states}{15}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Coupling}{15}{subsection.5.3.3}%
+\contentsline {section}{\numberline {5.4}Excitation Energies}{15}{section.5.4}%
 \contentsline {chapter}{\chapternumberline {6}Discussion}{17}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Transition Property Approximations}{17}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Further Investigations into LHII}{17}{section.6.2}%
