@@ -224,6 +224,11 @@ would be a possibility for predicting transition properties.
 
 The results are shown in fig.
 
+\begin{figure}
+    \includegraphics[]{../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png}
+    \caption{A caption}
+\end{figure}
+
 \dxtb, in this initial form, as well as linear response GFN-xTB, is inaccurate 
 at predicting excitation energies. The range of errors is quite large and there 
 is a significant systematic shift in the errors as well. As the DFT methods, 
@@ -275,6 +280,106 @@ of assigning orbital symmetry is as follows:
     \item Multiply the one electron MO symmetries together to find the symmetry 
     of the overall wavefunction.
 \end{enumerate}
+
+\begin{figure}
+    \centering
+    \begin{tikzpicture}
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,4cm) {C1s};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,3cm) {C2s};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,2cm) {C2px};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,1cm) {C2sy};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,0cm) {C2pz};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,-1cm) {H1s};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,-2cm) {H2s};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,-3cm) {H3s};
+        \node[draw=none,
+        rectangle, 
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-5cm,-4cm) {H4s};
+        
+        \node[draw,
+        rectangle, 
+        minimum width = 9cm, 
+        minimum height = 9cm
+        ](r) at (0cm,0cm) {};
+
+        \node[draw,
+        rectangle, 
+        color=white,
+        fill=black,
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-4cm,4cm) {A1};
+
+        \node[draw,
+        rectangle,
+        color=white, 
+        fill=black,
+        minimum width = 1cm, 
+        minimum height = 1cm
+        ](r) at (-3cm,3cm) {A1};
+
+        \node[draw,
+        rectangle,
+        color=white,
+        fill=black,
+        minimum width = 1cm, 
+        minimum height = 4cm
+        ](r) at (-2cm,-2.5cm) {A1};
+
+        \node[draw,
+        rectangle, 
+        color=white,
+        fill=black,
+        minimum width = 3cm, 
+        minimum height = 3cm
+        ](r) at (0cm,1cm) {T2};
+
+        \node[draw,
+        rectangle, 
+        color=white,
+        fill=black,
+        minimum width = 3cm, 
+        minimum height = 4cm
+        ](r) at (3cm,-2.5cm) {T2};
+
+    \end{tikzpicture}
+    \caption{Symmetry assigned MOs}
+\end{figure}
+
 
 We implemented this procedure and tested this on methane with a minimal basis set.
 We found that we could accurately assign the MOs and overall wavefunction of this
