@@ -47,26 +47,26 @@
 \contentsline {subsection}{\numberline {4.3.1}Assignment of States}{29}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Comparison}{29}{subsection.4.3.2}%
 \contentsline {chapter}{\chapternumberline {5}Atomistic Modelling of Light Harvesting Complexes}{35}{chapter.5}%
-\contentsline {section}{\numberline {5.1}LHII}{44}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Spectral Density Method}{44}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Molecular Dynamics Method}{44}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Approximating Spectral Densities}{44}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Hessians}{44}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Huang Rhys Factors}{44}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Chlorophyll distances}{44}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Environmental Effects}{44}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Screening}{44}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Embedding}{44}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Sites, states and couplings}{44}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Sites}{44}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Exciton states}{44}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Coupling}{44}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Excitation Energies}{44}{section.5.5}%
-\contentsline {chapter}{\chapternumberline {6}Discussion}{47}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Transition Property Approximations}{47}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Further Investigations into LHII}{47}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Coherence}{47}{section.6.3}%
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{49}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{49}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Computational Hardware}{49}{section.A.2}%
-\contentsline {chapter}{Bibliography}{51}{appendix*.7}%
+\contentsline {section}{\numberline {5.1}LHII}{43}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Spectral Density Method}{43}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Molecular Dynamics Method}{43}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Approximating Spectral Densities}{43}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Hessians}{43}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Huang Rhys Factors}{43}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Chlorophyll distances}{43}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Environmental Effects}{43}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Screening}{43}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Embedding}{43}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Sites, states and couplings}{43}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Sites}{43}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Exciton states}{43}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Coupling}{43}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Excitation Energies}{43}{section.5.5}%
+\contentsline {chapter}{\chapternumberline {6}Discussion}{45}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Transition Property Approximations}{45}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Further Investigations into LHII}{45}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Coherence}{45}{section.6.3}%
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{47}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{47}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Computational Hardware}{47}{section.A.2}%
+\contentsline {chapter}{Bibliography}{49}{appendix*.7}%
