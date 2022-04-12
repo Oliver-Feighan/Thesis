@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  12 APR 2022 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  12 APR 2022 16:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1468,7 +1468,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 28.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 30.
-<logos/bristolcrest_colour.pdf, id=276, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=284, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 <use logos/bristolcrest_colour.pdf>
 Package pdftex.def Info: logos/bristolcrest_colour.pdf  used on input line 32.
@@ -1591,7 +1591,7 @@ Overfull \hbox (1.74115pt too wide) detected at line 4
 
 [7]
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 70.
+(Font)              scaled to size 9.29993pt on input line 69.
  [8]) [9] [10
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lot
@@ -1622,48 +1622,46 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter02/chap02.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
+(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
 (lettrine.sty)             reported on input line 11.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 17.
+(Font)              scaled to size 8.36993pt on input line 35.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 17.
+(Font)              scaled to size 6.50995pt on input line 35.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 17.
+(Font)              scaled to size 11.03998pt on input line 35.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
+(Font)              scaled to size 8.27998pt on input line 35.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 17.
+(Font)              scaled to size 6.43999pt on input line 35.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 17.
+(Font)              scaled to size 11.03998pt on input line 35.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 17.
+(Font)              scaled to size 8.27998pt on input line 35.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 17.
+(Font)              scaled to size 6.43999pt on input line 35.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 17.
+(hyperref)                removing `math shift' on input line 35.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 17.
+(hyperref)                removing `\Delta' on input line 35.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 17.
+(hyperref)                removing `math shift' on input line 35.
 
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 7.71893pt on input line 41.
-LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 5.57996pt on input line 41.
-
-Underfull \vbox (badness 1092) has occurred while \output is active []
-
- [3
+[3
 
 ]
-LaTeX Font Info:    Trying to load font information for T1+qcr on input line 103.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 7.71893pt on input line 59.
+LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
+(Font)              scaled to size 5.57996pt on input line 59.
+ [4]
+LaTeX Font Info:    Trying to load font information for T1+qcr on input line 121.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/tex-gyre/t1qcr.fd
 File: t1qcr.fd 2009/09/25 v1.2 font definition file for T1/qcr
 )
@@ -1671,43 +1669,42 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `qcr' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [4] [5] [6]
-LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 212.
+ [5] [6] [7]
+LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 291.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
 )
 LaTeX Font Info:    Font shape `TS1/fnc/m/n' will be
-(Font)              scaled to size 10.18341pt on input line 212.
+(Font)              scaled to size 10.18341pt on input line 291.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fnc' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+ [8]
 
+Package nag Warning: \label in float, but not after \caption on input line 307.
 
-Package nag Warning: \label in float, but not after \caption on input line 228.
-
-<../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png, id=502, 528.2937pt x 471.9231pt>
+<../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png, id=522, 528.2937pt x 471.9231pt>
 File: ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png Graphic file (type png)
 <use ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png>
-Package pdftex.def Info: ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png  used on input line 229.
+Package pdftex.def Info: ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png  used on input line 308.
 (pdftex.def)             Requested size: 528.29242pt x 471.92194pt.
 
-Overfull \hbox (80.29242pt too wide) in paragraph at lines 229--231
+Overfull \hbox (80.29242pt too wide) in paragraph at lines 308--310
 [][] 
  []
 
-[7] [8 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png>] [9] [10]
-Underfull \vbox (badness 1629) has occurred while \output is active []
+[9] [10 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png>] [11] [12] [13]
+Underfull \vbox (badness 2512) has occurred while \output is active []
 
- [11]
-Underfull \vbox (badness 3758) has occurred while \output is active []
+ [14]) [15] [16
 
- [12] [13]) [14] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
 (lettrine.sty)             reported on input line 11.
-<../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png, id=548, 651.8754pt x 291.2481pt>
+<../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png, id=568, 651.8754pt x 291.2481pt>
 File: ../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png Graphic file (type png)
 <use ../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png>
 Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png  used on input line 30.
@@ -1717,7 +1714,7 @@ Overfull \hbox (203.8738pt too wide) in paragraph at lines 30--31
 [][] 
  []
 
-<../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png, id=549, 722.7pt x 291.2481pt>
+<../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png, id=569, 722.7pt x 291.2481pt>
 File: ../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png Graphic file (type png)
 <use ../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png>
 Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png  used on input line 35.
@@ -1727,17 +1724,17 @@ Overfull \hbox (274.69823pt too wide) in paragraph at lines 35--36
 [][] 
  []
 
-<chapters/chapter03//nelder-mead.png, id=550, 433.62pt x 289.08pt>
+<chapters/chapter03//nelder-mead.png, id=570, 433.62pt x 289.08pt>
 File: chapters/chapter03//nelder-mead.png Graphic file (type png)
 <use chapters/chapter03//nelder-mead.png>
 Package pdftex.def Info: chapters/chapter03//nelder-mead.png  used on input line 47.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-<chapters/chapter03//SLSQP.png, id=551, 433.62pt x 289.08pt>
+<chapters/chapter03//SLSQP.png, id=571, 433.62pt x 289.08pt>
 File: chapters/chapter03//SLSQP.png Graphic file (type png)
 <use chapters/chapter03//SLSQP.png>
 Package pdftex.def Info: chapters/chapter03//SLSQP.png  used on input line 52.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-<../../Year_2/chlorophyll_parameterization/training_scatter.png, id=552, 1310.8975pt x 763.85374pt>
+<../../Year_2/chlorophyll_parameterization/training_scatter.png, id=572, 1310.8975pt x 763.85374pt>
 File: ../../Year_2/chlorophyll_parameterization/training_scatter.png Graphic file (type png)
 <use ../../Year_2/chlorophyll_parameterization/training_scatter.png>
 Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/training_scatter.png  used on input line 77.
@@ -1750,7 +1747,7 @@ Overfull \hbox (862.89432pt too wide) in paragraph at lines 77--78
 
 LaTeX Warning: Float too large for page by 156.56459pt on input line 79.
 
-<../../Year_2/BChla_Qy/Scan_of_Modes.png, id=553, 1537.1829pt x 1027.6794pt>
+<../../Year_2/BChla_Qy/Scan_of_Modes.png, id=573, 1537.1829pt x 1027.6794pt>
 File: ../../Year_2/BChla_Qy/Scan_of_Modes.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/Scan_of_Modes.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/Scan_of_Modes.png  used on input line 85.
@@ -1766,7 +1763,7 @@ Overfull \hbox (1089.17917pt too wide) in paragraph at lines 85--86
 
 LaTeX Warning: Float too large for page by 391.07661pt on input line 86.
 
-<../../Year_2/BChla_Qy/mode_83.png, id=554, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_83.png, id=574, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_83.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_83.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_83.png  used on input line 89.
@@ -1782,7 +1779,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 89--90
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 90.
 
-<../../Year_2/BChla_Qy/mode_85.png, id=555, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_85.png, id=575, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_85.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_85.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_85.png  used on input line 92.
@@ -1798,7 +1795,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 92--93
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 93.
 
-<../../Year_2/BChla_Qy/mode_88.png, id=556, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_88.png, id=576, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_88.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_88.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_88.png  used on input line 95.
@@ -1814,7 +1811,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 95--96
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 96.
 
-<../../Year_2/BChla_Qy/mode_90.png, id=557, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_90.png, id=577, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_90.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_90.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_90.png  used on input line 98.
@@ -1830,7 +1827,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 98--99
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 99.
 
-<../../Year_2/BChla_Qy/mode_91.png, id=558, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_91.png, id=578, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_91.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_91.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_91.png  used on input line 101.
@@ -1846,7 +1843,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 101--102
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 102.
 
-<../../Year_2/BChla_Qy/mode_129.png, id=559, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_129.png, id=579, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_129.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_129.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_129.png  used on input line 104.
@@ -1862,7 +1859,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 104--105
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 105.
 
-<../../Year_2/BChla_Qy/mode_130.png, id=560, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_130.png, id=580, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_130.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_130.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_130.png  used on input line 107.
@@ -1878,7 +1875,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 107--108
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 108.
 
-<../../Year_2/BChla_Qy/mode_132.png, id=561, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_132.png, id=581, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_132.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_132.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_132.png  used on input line 110.
@@ -1894,7 +1891,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 110--111
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 111.
 
-<../../Year_2/BChla_Qy/mode_135.png, id=562, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_135.png, id=582, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_135.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_135.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_135.png  used on input line 113.
@@ -1910,7 +1907,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 113--114
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 114.
 
-<../../Year_2/BChla_Qy/mode_162.png, id=563, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_162.png, id=583, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_162.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_162.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_162.png  used on input line 116.
@@ -1926,7 +1923,7 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 116--117
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 117.
 
-<../../Year_2/BChla_Qy/mode_169.png, id=564, 1806.75pt x 1084.05pt>
+<../../Year_2/BChla_Qy/mode_169.png, id=584, 1806.75pt x 1084.05pt>
 File: ../../Year_2/BChla_Qy/mode_169.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_169.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_169.png  used on input line 119.
@@ -1942,15 +1939,14 @@ Overfull \hbox (1358.7456pt too wide) in paragraph at lines 119--120
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 120.
 
-) [15
+) [17
 
-
-] [16 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png>] [17 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png>] [18 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03//nelder-mead.png>] [19 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03//SLSQP.png>] [20 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/training_scatter.png>] [21 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/Scan_of_Modes.png>] [22 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_83.png>] [23 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_85.png>] [24 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_88.png>] [25 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_90.png>] [26 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_91.png>] [27 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_129.png>] [28 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_130.png>] [29 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_132.png>] [30 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_135.png>] [31 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_162.png>] [32 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_169.png>] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter04/chap04.tex
+] [18 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png>] [19 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png>] [20 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03//nelder-mead.png>] [21 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03//SLSQP.png>] [22 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/training_scatter.png>] [23 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/Scan_of_Modes.png>] [24 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_83.png>] [25 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_85.png>] [26 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_88.png>] [27 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_90.png>] [28 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_91.png>] [29 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_129.png>] [30 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_130.png>] [31 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_132.png>] [32 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_135.png>] [33 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_162.png>] [34 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_169.png>] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter04/chap04.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
 (lettrine.sty)             reported on input line 10.
-<../../Year_2/DimerModel/Scans/rotating_dimer.png, id=658, 798.985pt x 745.78625pt>
+<../../Year_2/DimerModel/Scans/rotating_dimer.png, id=678, 798.985pt x 745.78625pt>
 File: ../../Year_2/DimerModel/Scans/rotating_dimer.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/rotating_dimer.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/rotating_dimer.png  used on input line 29.
@@ -1963,7 +1959,7 @@ Overfull \hbox (350.98305pt too wide) in paragraph at lines 29--30
 
 LaTeX Warning: Float too large for page by 138.49716pt on input line 31.
 
-<../../Year_2/DimerModel/Scans/angle_and_distance.png, id=659, 2601.72pt x 7227.0pt>
+<../../Year_2/DimerModel/Scans/angle_and_distance.png, id=679, 2601.72pt x 7227.0pt>
 File: ../../Year_2/DimerModel/Scans/angle_and_distance.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/angle_and_distance.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/angle_and_distance.png  used on input line 36.
@@ -1976,7 +1972,7 @@ Overfull \hbox (2153.71368pt too wide) in paragraph at lines 36--37
 
 LaTeX Warning: Float too large for page by 6619.6952pt on input line 38.
 
-<../../Year_2/DimerModel/excitons_against_dimer.png, id=660, 2796.4475pt x 778.91pt>
+<../../Year_2/DimerModel/excitons_against_dimer.png, id=680, 2796.4475pt x 778.91pt>
 File: ../../Year_2/DimerModel/excitons_against_dimer.png Graphic file (type png)
 <use ../../Year_2/DimerModel/excitons_against_dimer.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/excitons_against_dimer.png  used on input line 49.
@@ -1992,7 +1988,7 @@ Overfull \hbox (2348.4407pt too wide) in paragraph at lines 49--50
 
 LaTeX Warning: Float too large for page by 142.30783pt on input line 50.
 
-<../../Year_2/DimerModel/histogram_of_errors.png, id=661, 2054.67625pt x 839.135pt>
+<../../Year_2/DimerModel/histogram_of_errors.png, id=681, 2054.67625pt x 839.135pt>
 File: ../../Year_2/DimerModel/histogram_of_errors.png Graphic file (type png)
 <use ../../Year_2/DimerModel/histogram_of_errors.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/histogram_of_errors.png  used on input line 53.
@@ -2008,17 +2004,17 @@ Overfull \hbox (1606.67126pt too wide) in paragraph at lines 53--54
 
 LaTeX Warning: Float too large for page by 202.53265pt on input line 54.
 
-) [33
+) [35
 
 
-] [34 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/rotating_dimer.png>] [35 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/angle_and_distance.png>] [36 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/excitons_against_dimer.png>] [37 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/histogram_of_errors.png>] [38
+] [36 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/rotating_dimer.png>] [37 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/angle_and_distance.png>] [38 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/excitons_against_dimer.png>] [39 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/histogram_of_errors.png>] [40
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter05/chap05.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
 (lettrine.sty)             reported on input line 10.
-<../../Year_3/SpectralDensity/images/CO_vibration.png, id=691, 867.24pt x 867.24pt>
+<../../Year_3/SpectralDensity/images/CO_vibration.png, id=711, 867.24pt x 867.24pt>
 File: ../../Year_3/SpectralDensity/images/CO_vibration.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/CO_vibration.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/CO_vibration.png  used on input line 36.
@@ -2035,7 +2031,7 @@ Overfull \hbox (419.2379pt too wide) in paragraph at lines 36--37
 
 LaTeX Warning: Float too large for page by 230.63762pt on input line 37.
 
-<../../Year_3/SpectralDensity/images/mg_displacement.png, id=692, 867.24pt x 867.24pt>
+<../../Year_3/SpectralDensity/images/mg_displacement.png, id=712, 867.24pt x 867.24pt>
 File: ../../Year_3/SpectralDensity/images/mg_displacement.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/mg_displacement.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/mg_displacement.png  used on input line 43.
@@ -2051,7 +2047,7 @@ Overfull \hbox (419.2379pt too wide) in paragraph at lines 43--44
 
 LaTeX Warning: Float too large for page by 230.63762pt on input line 44.
 
-<../../Year_3/SpectralDensity/images/mg_correlations.png, id=693, 3252.15pt x 1084.05pt>
+<../../Year_3/SpectralDensity/images/mg_correlations.png, id=713, 3252.15pt x 1084.05pt>
 File: ../../Year_3/SpectralDensity/images/mg_correlations.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/mg_correlations.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/mg_correlations.png  used on input line 47.
@@ -2067,7 +2063,7 @@ Overfull \hbox (2804.1421pt too wide) in paragraph at lines 47--48
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 48.
 
-<../../Year_3/SpectralDensity/images/specdens_literature_comparison.png, id=694, 1084.05pt x 1084.05pt>
+<../../Year_3/SpectralDensity/images/specdens_literature_comparison.png, id=714, 1084.05pt x 1084.05pt>
 File: ../../Year_3/SpectralDensity/images/specdens_literature_comparison.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_literature_comparison.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_literature_comparison.png  used on input line 65.
@@ -2083,7 +2079,7 @@ Overfull \hbox (636.04736pt too wide) in paragraph at lines 65--66
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 66.
 
-<../../Year_3/SpectralDensity/images/specdens_ring_average.png, id=695, 3468.96pt x 1084.05pt>
+<../../Year_3/SpectralDensity/images/specdens_ring_average.png, id=715, 3468.96pt x 1084.05pt>
 File: ../../Year_3/SpectralDensity/images/specdens_ring_average.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_ring_average.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_ring_average.png  used on input line 69.
@@ -2099,7 +2095,7 @@ Overfull \hbox (3020.95158pt too wide) in paragraph at lines 69--70
 
 LaTeX Warning: Float too large for page by 447.44708pt on input line 70.
 
-<../../Year_3/SpectralDensity/images/abs_prob_by_time.png, id=696, 2890.8pt x 433.62pt>
+<../../Year_3/SpectralDensity/images/abs_prob_by_time.png, id=716, 2890.8pt x 433.62pt>
 File: ../../Year_3/SpectralDensity/images/abs_prob_by_time.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/abs_prob_by_time.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/abs_prob_by_time.png  used on input line 76.
@@ -2112,7 +2108,7 @@ Overfull \hbox (2442.79298pt too wide) in paragraph at lines 76--77
 [][] 
  []
 
-<../../Year_3/SpectralDensity/images/abs_prob_by_energy.png, id=697, 867.24pt x 867.24pt>
+<../../Year_3/SpectralDensity/images/abs_prob_by_energy.png, id=717, 867.24pt x 867.24pt>
 File: ../../Year_3/SpectralDensity/images/abs_prob_by_energy.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/abs_prob_by_energy.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/abs_prob_by_energy.png  used on input line 80.
@@ -2128,7 +2124,7 @@ Overfull \hbox (419.2379pt too wide) in paragraph at lines 80--81
 
 LaTeX Warning: Float too large for page by 230.63762pt on input line 81.
 
-<../../Year_3/SpectralDensity/images/coupling_matrix.png, id=698, 867.24pt x 867.24pt>
+<../../Year_3/SpectralDensity/images/coupling_matrix.png, id=718, 867.24pt x 867.24pt>
 File: ../../Year_3/SpectralDensity/images/coupling_matrix.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/coupling_matrix.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/coupling_matrix.png  used on input line 88.
@@ -2147,39 +2143,39 @@ LaTeX Warning: Float too large for page by 230.63762pt on input line 89.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [39
+ [41
 
-] [40 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/CO_vibration.png>] [41 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/mg_displacement.png>] [42 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/mg_correlations.png>] [43 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_literature_comparison.png>] [44 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_ring_average.png>]
+] [42 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/CO_vibration.png>] [43 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/mg_displacement.png>] [44 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/mg_correlations.png>] [45 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_literature_comparison.png>] [46 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_ring_average.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [45 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/abs_prob_by_time.png>] [46 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/abs_prob_by_energy.png>]) [47] [48 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/coupling_matrix.png>] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter06/chap06.tex
+ [47 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/abs_prob_by_time.png>] [48 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/abs_prob_by_energy.png>]) [49] [50 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/coupling_matrix.png>] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter06/chap06.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
 (lettrine.sty)             reported on input line 10.
-) [49
+) [51
 
 
-] [50
+] [52
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/appendices/app0A.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
 (lettrine.sty)             reported on input line 10.
-) [51
+) [53
 
-] [52
+] [54
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.bbl
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 4.
 LaTeX Font Info:    Font shape `TS1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 6.
-) [53
+) [55
 
 
-] [54
+] [56
 
 ]
 
@@ -2199,21 +2195,21 @@ Package nag Warning: 23 complaints in total.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 880D8EE91E182CCC2377A8070F1DB625;4455.
+(rerunfilecheck)             Checksum: 12AFFD02E5451B50FFBB1DC86DAE3947;4607.
  ) 
 Here is how much of TeX's memory you used:
- 31262 strings out of 479304
- 588526 string characters out of 5867281
- 1000658 words of memory out of 5000000
- 47090 multiletter control sequences out of 15000+600000
- 511964 words of font info for 374 fonts, out of 8000000 for 9000
+ 31273 strings out of 479304
+ 588662 string characters out of 5867281
+ 1000745 words of memory out of 5000000
+ 47093 multiletter control sequences out of 15000+600000
+ 512082 words of font info for 376 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,12n,88p,1097b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 83i,13n,88p,1097b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qcrr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf" (70 pages, 3913136 bytes).
+Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf" (72 pages, 3920116 bytes).
 PDF statistics:
- 846 PDF objects out of 1000 (max. 8388607)
- 697 compressed objects within 7 object streams
- 180 named destinations out of 1000 (max. 500000)
- 95424 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 716 compressed objects within 8 object streams
+ 185 named destinations out of 1000 (max. 500000)
+ 95440 words of extra memory for PDF output out of 106986 (max. 10000000)
 

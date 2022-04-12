@@ -4,16 +4,34 @@
 % Description: delta-scf benchmarking, including dft and dftb methods.
 % Talk about important factors for modelling LHII
 %
-\let\textcircled=\pgftextcircled
+%\let\textcircled=\pgftextcircled
 \chapter{Mean-Field excited states}
 \label{chap:dscf}
 
-\initial {P}reamble
+\initial {T}his chapter collates all of the work done on investigating and benchmarking
+\dscf methods, at both an ab initio DFT level of theory as well as with semi-empirical, 
+tight-binding methods. To start the investigation into what is required for accurate
+atomistic treatment of chlorophyll systems, we looked at these methods as they have
+reported as being able to calculate accurate response properties with reduced computational
+cost.
+We calculated transition properties for a range of molecules, as well as
+for a small set of chlorophyll molecules, using variety of different basis sets,
+density functionals, response methods and electronic structure methods. All of 
+the work was compared to a high-standard EOM-CCSD reference, from which we made conclusions
+on the accuracy of each method. We also investigated a other issues of the mean-field
+\dscf method, such as non-orthogonality in the transition properties, and assignment
+of the symmetries of transition. These investigations, as well as the work on using 
+semi-empirical methods, is all novel work. 
+We found that whilst the high-level methods give reasonable results, the semi-empirical
+\dscf methods are not as accurate. This results is unexpected in the context of
+the benchmarking, however has reasonable explanations, and will guide the work
+of the next chapter on developing a new semi-empirical method. This work sets the
+groundwork of what could be reasonably achieved against the goals set out in the
+introductionary chapter.
 
 %=======
 \section{Theory}
 \label{sec:dscf_theory}
-
 \subsection{$\Delta$-SCF and eigenvalue difference}
 \label{subsec{dscf_and_eigdiff}}
 
@@ -97,7 +115,7 @@ could predict transition properties.
 We chose the recently published DFTB method parameterized by the Grimme group for
 this. This method has been parameterized for geometries, frequencies and non-covalent
 interactions, and uses an extended version of H{\"u}ckel theory. The name they
-present is GFN-xTB, standing for "Geometries, Frequencies, Non-Covalent - eXtended 
+present is GFN-xTB, an acronym for "Geometries, Frequencies, Non-Covalent - eXtended 
 Tight Binding".
 We chose this method for two reasons. The first being that the GFN-xTB method was
 already implemented in the \code{QCORE} package. This significantly reduced the
@@ -105,8 +123,8 @@ amount of effort required for this project. Additionally, there would be other
 users and developers who would help with implementation of this new method.
 The second, more scientific reason, is that a similar method has already been
 published that calculates transition properties. This is the sTDA-xTB method. 
-As this method has similar goals as this project, it is useful to look at this 
-in more detail.
+As development for this method had similar goals as this project, it is useful
+to look at this in more detail.
 
 \subsubsection{sTDA-xTB}
 \label{subsubsec:stda_xtb}
@@ -184,18 +202,79 @@ could be used to get accurate transition properties.
 Having established the hypothesis, that a GFN-xTB based \dscf method (which we
 name \dxtb) would predict TD-DFT transition properties with decent accuracy, we
 then tested this on a test set of small molecules, as well as bacterial chlorophylls
-from the LHII protein. Additionally, we also investigated a \dscf with a DFT method
+from the LHII protein. Additionally, we also investigated \dscf results with a DFT method
 for the ground and excited state solutions, so we could compare the two differences
 between the \dxtb method and our chosen reference method. The first being whether
 the \dscf method can reproduce response effects, and the second being whether a
 tight-binding, semi-empirical method could produce decent enough electronic
 structure.
 
+\subsection{Reference Data and test set}
+\label{subsec:reference_data}
+The test set comprised of 109 small molecules. Each system was closed-shell, 
+contained 12 atoms or less, and contained on H, C, N, and F atoms. The size and
+relative simplicity of this test set was chosen to minimise any other factors that
+could cause complication in analysing the results. For example choosing a consistently
+correct basis set and functional for the \dscf results would have been challening 
+if we had to include transition metal complexes, as well as if we had to think 
+about cpu walltime. Additionally, the size of these molecules made symmetries
+much easier to inspect by hand.
+
+For reference data we calculated the three lowest energy singlet excited states. We used
+EOM-CCSD with an aug-cc-pVTZ basis set, using Gaussian 16. 
+
 \subsection{Small Systems}
 \label{subsec:smalltest}
+Transition properties for this test set were calculated using TD-DFT and \dscf,
+both using a CAM-B3LYP functional and aug-cc-pVTZ basis set. The transitions were
+assigned to the EOM-CCSD results by comparing transition dipoles, energies and 
+the character of the MOs involved in the transitions. Where the symmetries could
+be assigned, these were also used, however this was not the case for all systems
+as many were unsuccessful in labelling symmetry or defaulted to a non-Abelain group.
+Symmetry labelling was also only available for TD-DFT calculations, as these were
+performed with Gaussian 16. \dscf calculations were done with the \code{QCORE}
+program.
 
-\subsubsection{Non-orthogonality}
-\label{subsubsec:dscf_nonorth}
+Additionally, the \dscf singlet transition is not a correct representation of a 
+true singlet excitation, as this is a superposition of both spin-same and spin-flipping
+excitations. The spin-purification formula:
+
+\begin{equation}
+\Delta E_S = 2\Delta E^{i,\alpha \rightarrow a, \alpha} - \Delta E^{i,\alpha \rightarrow a, \beta}
+\end{equation}
+
+was used to correct for the true singlet excitation energy.
+
+Overall, the excitation energies calculated with \dscf are as accurate at predicting
+EOM-CCSD energies as TD-DFT. The mean error is 0.35 eV, iwth a standard deviation
+of 0.25 eV. This is a marginal improvement on the TD-DFT results, which has a mean
+and standard deviation of 0.41 eV and 0.27 eV respectively. Transition dipoles 
+were similarly accurate to the reference data, although \dscf performs slightly 
+worse in this respect. The mean and standard deviation in the absolute value
+of transition dipole moment, $|\mathbf{\mu}|$, was 0.07 a.u. and 0.08 a.u. respectively.
+For TDDFT, the mean and standard deviation were 0.03 a.u. and 0.06 a.u. (the atomic
+unit here being equal to $ea_0$).
+
+Overall then, we can see the \dscf can accruately predict transition properties
+to a EOM-CCSD level of accuracy with as much success as TD-DFT, which is encouraging.
+We could then reasonably expect a tight-binding method, with good electronic 
+structure treatment, to also be appreciably accurate whilst drastically reducing
+the cost of calculation. 
+
+\subsection{Non-orthogonality}
+\label{subsec:dscf_nonorth}
+There is, however, a caveat with \dscf. The ground and excited states, solutions
+to two separate SCF cycles, will probably not be orthogonal. In more detail, the
+Slater determinants $\ket{\Psi_n}$, are constructed from the set of orbitals 
+$\{ \ket{\phi_j^{\left(n\right)}} \}$. For each state, these spin orbitals
+will be orthogonal to other orbitals in the same state. However they will not be
+orthogonal to orbitals of a different state, such that the inner product:
+
+\begin{equation}
+S^{21}_{jk} = \bra{\phi_j^{\left(2\right)}} \ket{\phi_k^{\left(1\right)}}
+\end{equation}
+
+will be non-zero.
 
 \subsection{LHII Chlorophyll}
 \label{subsec:dscf_chl_tests}
