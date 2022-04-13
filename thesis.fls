@@ -1650,6 +1650,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncsy.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd

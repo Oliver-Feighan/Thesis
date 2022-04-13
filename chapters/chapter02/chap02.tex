@@ -107,6 +107,54 @@ Hence, all the information needed can be given by a single SCF optimization.
 Generally, eigenvalue difference methods are not seen as accurate response methods,
 but can offer a quick and easy initial value\cite{Gimon2009}.
 
+\subsection{Transition Density and Dipole Moments}
+\label{subsec:dscf_transition_density}
+Transition properties, such as the transition dipole moment, can be calculated from
+the SCF solutions for the ground and excited states. The reduced one-particle transition
+density matrix can be written as:
+
+\begin{equation}
+\mathbf{D}^{21} = \ket{\Psi_1} \bra{\Psi_2}
+\end{equation}
+
+where $\ket{\Psi_n}$ is the Slater determinant of state $n$, constructed from the
+set of spin orbitals $\{ \phi_{j}^{\left(n\right)} \} $. Expressed 
+in terms of the molecular orbitals coefficients $\mathbf{C}^{\left(n\right)}$, the
+transition density matrix is given by
+
+\begin{equation}
+\mathbf{D}^{21} = \mathbf{C}^{\left(2\right)} \text{adj}\left(\mathbf{S}^{21}\right) \mathbf{C}^{\left(1\right) \dagger}
+\end{equation}
+
+. The adjunct of the overlap correspond to L{\"o}wdin's normal rules for nonorthogonal
+determinants. For transition dipole elements, this is:
+
+\begin{equation}
+\braket{\Psi_2|\hat{\mathbf{\mu}}|\Psi_1} = \sum_{jk} \mathbf{\mu}_{jk}^{21} \text{adj} \left( \mathbf{S}^{21}\right)_{jk}
+\end{equation}
+
+with the determinant of this overlap defined as the inner product of the two states:
+
+\begin{equation}
+\left\lvert {\mathbf{S}^{21}} \right\rvert = \braket{\Psi_2|\Psi_1}
+\end{equation}
+
+
+The general definition of the transition dipole
+
+\begin{equation}
+\mathbf{\mu}^{1\rightarrow2} = \braket{\Psi_2|\hat{\mathbf{\mu}}|\Psi_1}
+\end{equation}
+
+can be expressed with this transition density matrix as:
+
+\begin{equation}
+\begin{split}    
+\braket{\Psi_2|\hat{\mathbf{\mu}}|\Psi_1} &= \text{tr}\left(\hat{\mathbf{\mu}} \ket{\Psi_1} \bra{\Psi_2} \right) \\
+&= \text{tr}\left( \hat{\mathbf{\mu}} \mathbf{D}^{21}\right)
+\end{split}
+\end{equation}
+
 \subsection{Semi-empirical extensions}
 \label{subsec:dscf_xtb}
 We tried to extend the range of DFT methods that could be used for \dscf and 
@@ -255,8 +303,8 @@ of transition dipole moment, $|\mathbf{\mu}|$, was 0.07 a.u. and 0.08 a.u. respe
 For TDDFT, the mean and standard deviation were 0.03 a.u. and 0.06 a.u. (the atomic
 unit here being equal to $ea_0$).
 
-Overall then, we can see the \dscf can accruately predict transition properties
-to a EOM-CCSD level of accuracy with as much success as TD-DFT, which is encouraging.
+In summary, we can see the \dscf can accurately predict transition properties
+to a EOM-CCSD level of accuracy with as much success as TD-DFT.
 We could then reasonably expect a tight-binding method, with good electronic 
 structure treatment, to also be appreciably accurate whilst drastically reducing
 the cost of calculation. 
@@ -271,13 +319,65 @@ will be orthogonal to other orbitals in the same state. However they will not be
 orthogonal to orbitals of a different state, such that the inner product:
 
 \begin{equation}
-S^{21}_{jk} = \bra{\phi_j^{\left(2\right)}} \ket{\phi_k^{\left(1\right)}}
+S^{21}_{jk} = \braket{\phi_j^{\left(2\right)} | \phi_k^{\left(1\right)}}
 \end{equation}
 
-will be non-zero.
+will be non-zero. Similarly, there will be a non-zero transition charge:
+
+\begin{equation}
+q^{21} = \braket{\Phi^2|\Phi^2}
+\end{equation}
+
+which breaks the origin-independence property of the transition dipole moment. In
+this way, any transition dipoles that do not have their centre at the origin will
+have a systematic error based on this overlap and the distance from the origin.
+For vertical transitions, this transition charge should be zero, and so all transition
+dipole moments calculated with non-orthogonal \dscf would always have this error.
+
+Instead, we applied a transformation to symmetrically orthogonalise the two states
+involved in the transition, which preserve as much character of the original states
+as possible. The transformation is given by:
+
+\begin{equation}
+\ket{\Psi_{\tilde{\nu}}} = \sum_{\nu} \ket{\Psi_\nu} \left[\mathbf{S^{-\frac{1}{2}}} \right]_{\nu\tilde{\nu}}
+\end{equation}
+
+It was found that using this method for correcting the non-zero overlap of states, 
+the origin-independence of the transition dipole moment was recovered. It should
+be noted that whilst this effect is dependent on how large the overlap may be, and
+it could be argued that with a small overlap this effect may not be large, having 
+any large translation of the molecule (on the order of hundreds of angstroms) can
+lead to nonphysical transition dipole magnitudes. In a large protein system, where
+systems can be on this scale, this would obviously present a much larger problem
+than might be for a vacuum phase small molecule.
 
 \subsection{LHII Chlorophyll}
 \label{subsec:dscf_chl_tests}
+
+We also tested the accuracy of \dscf on a set of bacterial chlorophyll A (BChla) 
+molecules. These are a much large and more complex system, and so present a tougher
+challenge for the \dscf method. Additionally, it is a much relevant test for the
+goal of simulating a whole LHII complex.
+
+As each Bchla is 140 atoms, we chose not to run EOM-CCSD as the reference method
+but use TDDFT at a PBE0/Def2-SVP level of theory. We ran \dscf with the same
+density functional and basis set.
+
+We also only looked the $Q_y$ transition with both methods. More detail about this
+transition and it's importance will be discussed in the next chapter.
+
+We found that \dscf gave transition energies to within the accuracy of TD-DFT, 
+such that we can claim that the fluctuations in transition energy are due to
+physical intra-molecular reasons rather than random error from the \dscf method.
+Hence \dscf could be used to accurately predict geometry dependent properties.
+
+However, the error in transition dipole magnitudes was larger than that of the small
+test set. The error was about 0.42 a.u. larger, but without EOM-CCSD or another
+high-level method, it's unclear whether this error might be from TD-DFT or \dscf.
+Additionally, there is a clear correlation between the transition dipole magnitudes
+from TD-DFT and \dscf, and so whilst quantitative statements cannot be made, we 
+can confidently make qualitative assessments from \dscf.
+
 
 \subsection{GFN methods}
 \label{subsec:dscf_gfn_tests}
@@ -473,16 +573,49 @@ for assigning orbital symmetry is as follows:
 We implemented this procedure and tested this on methane with a minimal basis set.
 We found that we could accurately assign the MOs and overall wavefunction of this
 system with this method for the ground state, which was encouraging.
-However, we encountered two problems. First was that the assignment of MOs did not
-word as well for excited states.
-The second was that for non-abelian groups, where there are some degenerate subspaces
-such as E and T, this assignment also did not work for every case.
 
-We discussed some ideas about using symmetry decomposition for the non-abelian 
-point groups, but as this was a short study we decided that this might not be the
-most prudent path. Additionally, this may have been a useful feature for testing
-the benchmarking sets, but chlorophyll molecules would not be symmetric and so
-type of assignment would probably not have worked. 
+To assign a label to each molecular orbital, we looked at the character of each
+orbital in all subspaces. This required transforming the molecular orbital coefficients
+into the each subspace by using the transformation matrix T:
+
+\begin{equation}
+\tilde{\mathbf{C}}_A = \mathbf{T}^T_A \mathbf{S} \mathbf{C}
+\end{equation}
+
+and then summing the coefficients to obtain the character:
+
+\begin{equation}
+P_A = \sum_{\nu} \left\lvert \tilde{\mathbf{C}}_{A, \mu\nu} \right\lvert  
+\end{equation}
+
+. For well defined systems, if the molecular orbital is in the subspace then the
+character would equal 1. However in practice this was no so clear cut and so the
+higher subspace character was taken.
+
+We were able to correctly assign the MOs for an optimised methane geometry with
+an STO-3G basis set - two occupied orbitals and one unoccupied orbital of A1 symmetry,
+and three occupied and unoccupied orbitals of T2 symmetry. 
+The overall wavefunction symmetry can then be expressed as the product of all MO
+symmetries, which can be reduced with the reduction formula:
+
+\begin{equation}
+n\left( i \right) = \frac{1}{h} \sum_R \xi_r \left( R \right) \xi_i \left( R \right)
+\end{equation}
+
+. This correctly produced the overall symmetries of ground state systems.
+
+However, we encountered two problems. First was that the assignment of MOs did not
+word well for excited states, due to the character from the subspace projection
+being unclear for many MOs. The second was that for non-abelian groups,
+where there are some degenerate E and T subspaces, this assignment did not work.
+The reduction of ground state wavefunctions gave non-physical answers.
+
+We discussed some ideas about how to overcome these issues, such as using symmetry
+decomposition for the non-abelian point groups. We also discussed implementing an
+analysis based on the antisymmetric component of the direct products. However all
+of these ideas would create a more open ended project. Additionally, this may have
+been a useful feature for testing the benchmarking sets, but chlorophyll molecules 
+would not be symmetric and so type of assignment would not have worked. 
 Hence, we could not confidently assign transitions from \dscf methods with this method.
 We could still use the non-autonomous method of inspecting transition dipoles and
 plots of MOs, but as mentioned above this would drastically increase the turnaround
@@ -659,5 +792,17 @@ expense of time and energy, as well as allow for a quicker turnaround time on as
 Additionally, it would also just allow more calculations to be run. This topic
 is revisited in chapter \ref*{chap:LHII}.
 
-
+The reliability, or robustness, of \dscf is another issue in scaling up the volume
+of calculations. As mentioned at a couple of points in this chapter, when calculating
+the excited state, \dscf has the occasional tendency to either converge to an
+unintentional state, collapse back down to the ground state, or not converge at all.
+It can be very hard to predict when this will happen (for example some Bchla 
+geometries behave like this whilst others do not, which is hard to explain), and
+requires several tricks to fix. These include Fock matrix damping, changing parts of
+the SCF convergence algorithm such as the DIIS procedure, or using step-wise
+initial guesses, such as using an unphysical half-electron excitation as a starting
+point for a full electron excitation. To work out which trick is needed, and which
+systems will need them, requires a trial-and-error approach, and it's never guaranteed
+that something will work. For getting a time series of a transition property from
+a whole MD simulation, this is obviously a large problem.
 
