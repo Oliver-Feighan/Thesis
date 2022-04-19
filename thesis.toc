@@ -12,64 +12,64 @@
 \contentsline {chapter}{\chapternumberline {2}Mean-Field excited states}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Theory}{3}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}$\Delta $-SCF and eigenvalue difference}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Transition Density and Dipole Moments}{5}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Semi-empirical extensions}{6}{subsection.2.1.3}%
-\contentsline {subsubsection}{\numberline {2.1.3.1}sTDA-xTB}{6}{subsubsection.2.1.3.1}%
+\contentsline {subsection}{\numberline {2.1.2}Eigenvalue Difference}{5}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Transition Density and Dipole Moments}{5}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Semi-empirical extensions}{6}{subsection.2.1.4}%
+\contentsline {subsubsection}{\numberline {2.1.4.1}sTDA-xTB}{6}{subsubsection.2.1.4.1}%
 \contentsline {section}{\numberline {2.2}Benchmarking}{8}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Reference Data and test set}{8}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Small Systems}{8}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Non-orthogonality}{9}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}LHII Chlorophyll}{10}{subsection.2.2.4}%
-\contentsline {subsection}{\numberline {2.2.5}GFN methods}{10}{subsection.2.2.5}%
-\contentsline {subsubsection}{\numberline {2.2.5.1}Post-SCF Assignment of Symmetry}{11}{subsubsection.2.2.5.1}%
-\contentsline {subsubsection}{\numberline {2.2.5.2}Implications of Benchmarking Results}{15}{subsubsection.2.2.5.2}%
-\contentsline {section}{\numberline {2.3}Conclusions and Further Work}{16}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Symmetry}{16}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Embedding}{17}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Scaling}{17}{subsection.2.3.3}%
-\contentsline {chapter}{\chapternumberline {3}Chlorophyll specific methods}{19}{chapter.3}%
-\contentsline {section}{\numberline {3.1}The Cassida equation}{19}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Approximations to Solutions}{19}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}MNOK Integrals}{19}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Parameterization}{19}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Reference Data}{19}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Objective Function}{19}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Minimization Algorithms}{19}{subsection.3.2.3}%
-\contentsline {section}{\numberline {3.3}Benchmarking}{19}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Transition properties}{19}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Potential Energy Surfaces}{19}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Absorption Spectra}{19}{subsection.3.3.3}%
-\contentsline {chapter}{\chapternumberline {4}Exciton Method}{37}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Theory}{37}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Exciton States}{37}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Embedding}{37}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Truncated Chlorophylls}{37}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Rotation}{37}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Distance}{37}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}LHII Pairs}{37}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}Assignment of States}{37}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Comparison}{37}{subsection.4.3.2}%
-\contentsline {chapter}{\chapternumberline {5}Atomistic Modelling of Light Harvesting Complexes}{43}{chapter.5}%
-\contentsline {section}{\numberline {5.1}LHII}{51}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Spectral Density Method}{51}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Molecular Dynamics Method}{51}{subsection.5.1.2}%
-\contentsline {section}{\numberline {5.2}Approximating Spectral Densities}{51}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Hessians}{51}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Huang Rhys Factors}{51}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Chlorophyll distances}{51}{subsection.5.2.3}%
-\contentsline {section}{\numberline {5.3}Environmental Effects}{51}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Screening}{51}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Embedding}{51}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Sites, states and couplings}{51}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Sites}{51}{subsection.5.4.1}%
-\contentsline {subsection}{\numberline {5.4.2}Exciton states}{51}{subsection.5.4.2}%
-\contentsline {subsection}{\numberline {5.4.3}Coupling}{51}{subsection.5.4.3}%
-\contentsline {section}{\numberline {5.5}Excitation Energies}{51}{section.5.5}%
-\contentsline {chapter}{\chapternumberline {6}Discussion}{53}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Transition Property Approximations}{53}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Further Investigations into LHII}{53}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Coherence}{53}{section.6.3}%
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{55}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{55}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Computational Hardware}{55}{section.A.2}%
-\contentsline {chapter}{Bibliography}{57}{appendix*.7}%
+\contentsline {subsection}{\numberline {2.2.2}Small Systems}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Non-orthogonality}{12}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}LHII Chlorophyll}{14}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}xTB methods}{17}{subsection.2.2.5}%
+\contentsline {subsubsection}{\numberline {2.2.5.1}Post-SCF Assignment of Symmetry}{19}{subsubsection.2.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.2.5.2}Implications of Benchmarking Results}{21}{subsubsection.2.2.5.2}%
+\contentsline {section}{\numberline {2.3}Conclusions and Further Work}{22}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Embedding}{23}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Scaling}{23}{subsection.2.3.2}%
+\contentsline {chapter}{\chapternumberline {3}Chlorophyll specific methods}{25}{chapter.3}%
+\contentsline {section}{\numberline {3.1}The Cassida equation}{25}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Approximations to Solutions}{25}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}MNOK Integrals}{25}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Parameterization}{25}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Reference Data}{25}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Objective Function}{25}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Minimization Algorithms}{25}{subsection.3.2.3}%
+\contentsline {section}{\numberline {3.3}Benchmarking}{25}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Transition properties}{25}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Potential Energy Surfaces}{25}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Absorption Spectra}{25}{subsection.3.3.3}%
+\contentsline {chapter}{\chapternumberline {4}Exciton Method}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Theory}{43}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Exciton States}{43}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Embedding}{43}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Truncated Chlorophylls}{43}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Rotation}{43}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Distance}{43}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}LHII Pairs}{43}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Assignment of States}{43}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Comparison}{43}{subsection.4.3.2}%
+\contentsline {chapter}{\chapternumberline {5}Atomistic Modelling of Light Harvesting Complexes}{49}{chapter.5}%
+\contentsline {section}{\numberline {5.1}LHII}{57}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Spectral Density Method}{57}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Molecular Dynamics Method}{57}{subsection.5.1.2}%
+\contentsline {section}{\numberline {5.2}Approximating Spectral Densities}{57}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Hessians}{57}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Huang Rhys Factors}{57}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Chlorophyll distances}{57}{subsection.5.2.3}%
+\contentsline {section}{\numberline {5.3}Environmental Effects}{57}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Screening}{57}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Embedding}{57}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Sites, states and couplings}{57}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Sites}{57}{subsection.5.4.1}%
+\contentsline {subsection}{\numberline {5.4.2}Exciton states}{57}{subsection.5.4.2}%
+\contentsline {subsection}{\numberline {5.4.3}Coupling}{57}{subsection.5.4.3}%
+\contentsline {section}{\numberline {5.5}Excitation Energies}{57}{section.5.5}%
+\contentsline {chapter}{\chapternumberline {6}Discussion}{59}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Transition Property Approximations}{59}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Further Investigations into LHII}{59}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Coherence}{59}{section.6.3}%
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{61}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{61}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Computational Hardware}{61}{section.A.2}%
+\contentsline {chapter}{Bibliography}{63}{appendix*.7}%

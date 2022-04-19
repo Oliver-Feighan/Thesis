@@ -1,4 +1,15 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{Gaussian16}
+{\sc D.~J. {Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.;
+  Robb, M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Petersson, G. A.;
+  Nakatsuji, H.; Li, X.; Caricato, M.; Marenich, A. V.; Bloino, J.; Janesko, B.
+  G.; Gomperts, R.; Mennucci, B.; Hratch}}, {\em {Gaussian 16, Revision C.01}},
+  2016.
+
+\bibitem{Gasteiger1978}
+{\sc J.~Gasteiger and M.~Marsili}, {\em {A new model for calculating atomic
+  charges in molecules}}, Tetrahedron Lett., 19 (1978), pp.~3181--3184.
 
 \bibitem{Gilbert2008}
 {\sc A.~T.~B. Gilbert, N.~A. Besley, and P.~M.~W. Gill}, {\em {Self-Consistent
@@ -11,10 +22,22 @@
   Time-Dependent Density-Functional Theory Due to Exact Exchange Kohn-Sham
   Eigenvalue Differences}}, J. Chem. Theory Comput, 5 (2009), p.~27.
 
+\bibitem{Grimme2013}
+{\sc S.~Grimme}, {\em {A simplified Tamm-Dancoff density functional approach
+  for the electronic excitation spectra of very large molecules}}, J. Chem.
+  Phys, 138 (2013), p.~244104.
+
 \bibitem{Grimme2016}
 {\sc S.~Grimme and C.~Bannwarth}, {\em {Ultra-fast computation of electronic
   spectra for large systems by tight-binding based simplified Tamm-Dancoff
   approximation (sTDA-xTB)}}, J. Chem. Phys., 145 (2016), p.~54103.
+
+\bibitem{Grimme2017}
+{\sc S.~Grimme, C.~Bannwarth, and P.~Shushkov}, {\em {A Robust and Accurate
+  Tight-Binding Quantum Chemical Method for Structures, Vibrational
+  Frequencies, and Noncovalent Interactions of Large Molecular Systems
+  Parametrized for All spd-Block Elements (Z = 1-86)}}, J. Chem. Theory
+  Comput., 13 (2017), pp.~1989--2009.
 
 \bibitem{Hunt1969}
 {\sc s.~W.~J. Hunt and W.~A. Goddard}, {\em {Excited States of H2O using
@@ -25,6 +48,18 @@
   Semiempirical Treatment of Molecular Structures. II. Molecular Terms and
   Application to Diatomic Molecules}}, J. Am. Chem. Soc., 86 (1964),
   pp.~4550--4557.
+
+\bibitem{Lowdin1955}
+{\sc P.~O. L{\"{o}}wdin}, {\em {Quantum theory of many-particle systems. I.
+  Physical interpretations by means of density matrices, natural spin-orbitals,
+  and convergence problems in the method of configurational interaction}},
+  Phys. Rev., 97 (1955), pp.~1474--1489.
+
+\bibitem{Marenich2012}
+{\sc A.~V. Marenich, S.~V. Jerome, C.~J. Cramer, and D.~G. Truhlar}, {\em
+  {Charge Model 5: An Extension of Hirshfeld Population Analysis for the
+  Accurate Description of Molecular Interactions in Gaseous and Condensed
+  Phases}},  (2012).
 
 \bibitem{Nishimoto1957}
 {\sc K.~Nishimoto and N.~Mataga}, {\em {Electronic Structure and Spectra of
@@ -38,10 +73,5 @@
 \bibitem{Roothaan1951}
 {\sc C.~C.~J. Roothaan}, {\em {New Developments in Molecular Orbital Theory}},
   Rev. Mod. Phys., 23 (1951), p.~69.
-
-\bibitem{Worster2021}
-{\sc S.~B. Worster, O.~Feighan, and F.~R. Manby}, {\em {Reliable transition
-  properties from excited-state mean-field calculations}}, J. Chem. Phys, 154
-  (2021), p.~124106.
 
 \end{thebibliography}

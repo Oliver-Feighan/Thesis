@@ -10,24 +10,23 @@
 
 \initial {T}his chapter collates all of the work done on investigating and benchmarking
 \dscf methods, at both an ab initio DFT level of theory as well as with semi-empirical, 
-tight-binding methods. To start the investigation into what is required for accurate
-atomistic treatment of chlorophyll systems, we looked at these methods as they have
-reported as being able to calculate accurate response properties with reduced computational
-cost.
-We calculated transition properties for a range of molecules, as well as
-for a small set of chlorophyll molecules, using variety of different basis sets,
-density functionals, response methods and electronic structure methods. All of 
-the work was compared to a high-standard EOM-CCSD reference, from which we made conclusions
-on the accuracy of each method. We also investigated a other issues of the mean-field
-\dscf method, such as non-orthogonality in the transition properties, and assignment
-of the symmetries of transition. These investigations, as well as the work on using 
+tight-binding approximations. The reduced cost and moderate accuracy of these methods
+make them an ideal substitute for full TD-DFT or high-level methods when investigating
+large systems like chlorophyll.
+Transition properties were calculated for a range of molecules, as well as
+for a small set of chlorophyll geometries, using variety of different basis sets,
+density functionals, response methods and electronic structure methods. Most of 
+the work was compared to a high-standard EOM-CCSD reference, from which conclusion 
+were made on the accuracy of each method. The Non-orthogonality issue of the ground
+and excited states were also for the mean-field \dscf method, as well as assignment
+of transitions based on symmetry. These investigations, as well as the work on using 
 semi-empirical methods, is all novel work. 
-We found that whilst the high-level methods give reasonable results, the semi-empirical
+It was found that while the high-level methods give reasonable results, the semi-empirical
 \dscf methods are not as accurate. This results is unexpected in the context of
 the benchmarking, however has reasonable explanations, and will guide the work
-of the next chapter on developing a new semi-empirical method. This work sets the
+of the later chapter on developing a new semi-empirical method. This work sets the
 groundwork of what could be reasonably achieved against the goals set out in the
-introductionary chapter.
+introduction chapter.
 
 %=======
 \section{Theory}
@@ -35,21 +34,26 @@ introductionary chapter.
 \subsection{$\Delta$-SCF and eigenvalue difference}
 \label{subsec{dscf_and_eigdiff}}
 
-\dscf predicts the excitation energy of a system by comparing the single point
-energy of the ground state and the excited state. Finding this excited state
-correctly can be an issue, but is usually assumed to be similar to the ground
-state. In its simplest form, the \dscf method calculates the ground state, and
-then calculates the excited state by rerunning an self-consistent field (SCF) 
-with the excited state occupation numbers. This then gives a full description 
-of both the ground as excited state from the orbital coefficients output from 
-the two SCF procedures.
+\dscf predicts the transition energy $\Delta E$ of a system as the difference of
+the single point energy $E_n$ of two states:
 
-Initially, the excited state could be calculated by relaxing the orbitals which
+\begin{equation}
+\Delta E = E_{2} - E_{1}
+\end{equation}
+
+Finding the excited state correctly can be an issue, as for ease is usually assumed
+to be similar to the ground state. In its simplest form, the \dscf method calculates
+the ground state with normal DFT or other mean-field methods, and
+then calculates the excited state by rerunning the same method with the excited
+state occupation numbers. A full description of both the ground as excited state
+is given as the orbital coefficients output from the two calculations.
+
+Initially, the excited state was calculated by relaxing the orbitals which
 contain the excited electron and hole in the ground state space, so that the
 excited state and ground state are orthogonal\cite{Hunt1969}. However, it was
 argued that this procedure would exacerbate errors from finding the ground
 state, and that the excited state was not a proper SCF solution\cite{Gilbert2008}.
-Alternatively, it was proposed that an SCF like method, where instead of
+Alternatively, an SCF like method was proposed, where instead of
 populating orbitals according to the aufbau principle, orbitals which most
 resemble the previous iteration's orbitals should be occupied. Each iteration 
 in an SCF procedure produces new molecular orbital coefficients by solving the 
@@ -82,36 +86,44 @@ p_j = \sum^n_i O_{ij} = \sum^N_\nu \left[\sum^N_\mu\left(\sum^n_i C_{i\mu}^{\tex
 
 where $\mu,\nu$ are orbital indices. The population can then be given by the set
 of orbitals with the highest projection $p_j$.  This method can be used for any
-excited state, with the caveat that the orbital solution is in the same region
-as the ground state solution. For a few low lying states, this is generally 
-true, and so \dscf can be used to calculate a spectrum of excited states\cite{Gilbert2008}.
-The method of using this orbital overlap is called the maximum overlap method (MOM).
+excited state, with the caveat that the orbital solution will most likely be in
+the same region as the ground state solution. For a small number of low lying states,
+this is generally  true, and so \dscf can be used to calculate a small spectrum of
+excited states\cite{Gilbert2008}. The method of using this orbital overlap is called
+the maximum overlap method (MOM).
 
-\dscf has been shown to be cheap alternative to TDDFT and other higher level
-methods, without considerable losses of accuracy in certain cases\cite{Worster2021}.
+\dscf has been shown to be cheap alternative to TD-DFT and other higher level
+methods, without considerable losses of accuracy in certain cases.
 Additionally, as the excited state is given as solutions to SCF equations,
 the gradient of this solution can be given by normal mean-field theory.
-These gradients would be much cheaper than TDDFT or coupled cluster methods, and
-so would be advantageous for a dynamic simulation of LHII.
+These gradients would be much cheaper than TD-DFT or coupled cluster methods, and
+so would be better for any dynamic simulation.
 
-The final descent in response theory would be to eigenvalue difference methods. 
+\subsection{Eigenvalue Difference}
+\label{subsec:eigval_diff}
+Another approximation to full response theory would be to eigenvalue difference method. 
 Here there is assumed to be no response of the orbital energies and shapes when 
-interacting with light. As stated earlier, this would be recovered from the
-complete Cassida equation if the coupling elements in the $\mathbf{A}$ and 
-$\mathbf{B}$ matrices are set to zero. This means that the difference between 
-the excited state energy and the ground state energy is just the difference of
-the orbital energies between the orbital an electron has been excited to and the
-orbital has been excited from. Additionally, transition properties can be 
-calculated by calculating transition density matrices from only the ground state.
-Hence, all the information needed can be given by a single SCF optimization. 
+interacting with light. This would be recovered from the complete Cassida equation
+if the coupling elements in the $\mathbf{A}$ and $\mathbf{B}$ matrices are set to zero.
+This gives the difference between the excited state energy and the ground state
+energy, the transition energy, as just the difference of the orbital energies between
+the orbital an electron has been excited ($\epsilon_{\text{e}}$) to and the orbital
+has been excited from ($\epsilon_{\text{g}}$):
+
+\begin{equation}
+\Delta E = \epsilon_{\text{e}} - \epsilon_{\text{g}}
+\end{equation}
+
+Additionally, transition properties can be calculated by construction transition 
+density matrices from only the ground state solution, needing only a single SCF optimization. 
 Generally, eigenvalue difference methods are not seen as accurate response methods,
 but can offer a quick and easy initial value\cite{Gimon2009}.
 
 \subsection{Transition Density and Dipole Moments}
 \label{subsec:dscf_transition_density}
-Transition properties, such as the transition dipole moment, can be calculated from
+\dscf transition properties, such as the transition dipole moment, can be calculated from
 the SCF solutions for the ground and excited states. The reduced one-particle transition
-density matrix can be written as:
+density matrix $\mathbf{D}^{21}$ can be written as:
 
 \begin{equation}
 \mathbf{D}^{21} = \ket{\Psi_1} \bra{\Psi_2}
@@ -126,19 +138,22 @@ transition density matrix is given by
 \mathbf{D}^{21} = \mathbf{C}^{\left(2\right)} \text{adj}\left(\mathbf{S}^{21}\right) \mathbf{C}^{\left(1\right) \dagger}
 \end{equation}
 
-. The adjunct of the overlap correspond to L{\"o}wdin's normal rules for nonorthogonal
-determinants. For transition dipole elements, this is:
+where $\mathbf{S}^{mn}$ is the overlap of the two states. The adjunct of the overlap
+correspond to L{\"o}wdin's normal rules for non-orthogonal determinants \cite{Lowdin1955}.
+For transition dipole elements, this is:
 
 \begin{equation}
 \braket{\Psi_2|\hat{\mathbf{\mu}}|\Psi_1} = \sum_{jk} \mathbf{\mu}_{jk}^{21} \text{adj} \left( \mathbf{S}^{21}\right)_{jk}
 \end{equation}
 
-with the determinant of this overlap defined as the inner product of the two states:
+where $\hat{\mathbf{\mu}}$ is the one-electron transition dipole operator, and
+$\mu_{jk}$ is the element of this operator corresponding to orbital indices $j$, $k$.
+The determinant of this overlap, the orbital inner products, can be defined as the
+inner product of the two states:
 
 \begin{equation}
 \left\lvert {\mathbf{S}^{21}} \right\rvert = \braket{\Psi_2|\Psi_1}
 \end{equation}
-
 
 The general definition of the transition dipole
 
@@ -157,44 +172,44 @@ can be expressed with this transition density matrix as:
 
 \subsection{Semi-empirical extensions}
 \label{subsec:dscf_xtb}
-We tried to extend the range of DFT methods that could be used for \dscf and 
-eigenvalue difference methods by investigating whether a tight-binding method
-could predict transition properties.
-We chose the recently published DFTB method parameterized by the Grimme group for
-this. This method has been parameterized for geometries, frequencies and non-covalent
-interactions, and uses an extended version of H{\"u}ckel theory. The name they
-present is GFN-xTB, an acronym for "Geometries, Frequencies, Non-Covalent - eXtended 
-Tight Binding".
-We chose this method for two reasons. The first being that the GFN-xTB method was
+A main investigation of this chapter was whether the range of DFT methods
+that could be used for \dscf and eigenvalue difference methods could be extended 
+by using tight-binding methods to predict transition properties.
+This mainly focused on the recently published GFN-xTB method, parameterized by
+the Grimme group \cite{Grimme2017}. This method has been parameterized for geometries,
+frequencies and non-covalent interactions, and uses an extended version of H{\"u}ckel theory.
+The name GFN-xTB is acronym for "Geometries, Frequencies, Non-Covalent - eXtended Tight Binding".
+This method was chosen for two reasons. The first being that the GFN-xTB method was
 already implemented in the \code{QCORE} package. This significantly reduced the
 amount of effort required for this project. Additionally, there would be other
 users and developers who would help with implementation of this new method.
-The second, more scientific reason, is that a similar method has already been
-published that calculates transition properties. This is the sTDA-xTB method. 
-As development for this method had similar goals as this project, it is useful
-to look at this in more detail.
+Second is that a similar method has already been published that calculates
+transition properties, the precursor to the GFN-xTB methods. This is the sTDA-xTB
+method \cite{Grimme2016}.
 
 \subsubsection{sTDA-xTB}
 \label{subsubsec:stda_xtb}
-A similar method to GFN1-xTB has already shown to be accurate at predicting
-transition properties for large systems, with exceptional speed. This method was
-published as the sTDA-xTB method\cite{Grimme2016}. The drop in accuracy for this
-method is minimal, with the error being around 0.3 - 0.5 eV.
+sTDA-xTB ("simplified Tann-Dancoff Approximation - eXtended Tight Binding") is another
+method in the family of xTB methods developed by the Grimme group, and is parameterised
+for transition properties. The accuracy in calculating transition energies with this
+method is very good, with the error to high-level results being around 0.3 - 0.5 eV.
 
 Similar to other xTB methods, the sTDA-xTB method is a tight-binding method that
 uses empirically fit parameters and a minimal basis set. It was trained on a
 test set of highly accurate coupled cluster and density functional theory
-excitation energies, as well as accurate atomic partial charges.
+excitation energies, as well as atomic partial charges for inter-electronic interactions.
 
-Unlike other xTB methods, the basis set for sTDA-xTB is dependent on the D3
-coordination number. This makes this method far more flexible, which would usually
-be achieved in a fixed basis set by using diffuse or else additional orbitals in
+Unlike other xTB methods, coefficients in the basis set for sTDA-xTB is dependent on the D3
+coordination number. This makes basis functions far more flexible, which would usually
+be achieved in with fixed basis functions by using diffuse or other additional orbitals in
 the basis set. Additionally, it uses two sets of parameterized basis sets - a
-smaller valence basis set (VBS) and an extended basis set (XBS).
+smaller valence basis set (VBS) and an extended basis set (XBS). Whilst this reduces
+the cost of having larger basis sets, it makes the gradient calclations of transition
+properties much more difficult. 
 
-These two basis sets are used to construct formally similar Fock matrix elements,
-however in practice these use different global parameters. The core Hamiltonian
-is similar to other DFTB methods that use a self-consistent charge method, as
+The two basis sets are used to construct formally similar Fock matrix elements,
+however in practice they use different global parameters. The core Hamiltonian
+is similar to other DFTB methods that use a self-consistent charge (SCC) method, as
 opposed to an SCF method, to obtain molecular orbital coefficients. It is given by:
 
 \begin{equation}
@@ -205,71 +220,83 @@ where, $\mu,\nu,l,l'$ are orbital and shell indices  $k^l_\mu$ are shell-wise
 H{\"u}ckel parameters, $h$ are effective atomic-orbital energy levels, $S$ is
 the overlap, $k_T$ is a global constant and $\hat{T}$ is the kinetic energy 
 operator. The charges used in the inter-electronic repulsion function are given 
-by CM5 charges for the XBS Fock matrix. These are calculated using Mulliken 
-charges obtained from diagonalising the Fock matrix with the VBS. The charges for 
-the initial VBS Fock matrix are based on Gasteiger charges, modified by the 
-electronegativities of atoms in the system.
+by CM5 \cite{Marenich2012} charges for the XBS Fock matrix. These are calculated
+using Mulliken charges obtained from diagonalising the Fock matrix with the VBS. 
+The charges for the initial VBS Fock matrix are based on Gasteiger charges \cite{Gasteiger1978},
+modified by the parameterised electronegativities of atoms in the system.
 
 The whole process for determining molecular orbitals can be summarized as:
 \begin{enumerate}
 	\item Calculate modified Gasteiger charges for initial guess
-	\item Diagonalize Fock matrix in the VBS to get the first set of Mulliken charges
+	\item Diagonalise Fock matrix in the VBS to get the first set of Mulliken charges
 	\item Compute CM5 charges
-	\item Diagonalize Fock matrix in the VBS again for final set of Mulliken charges.
+	\item Diagonalise Fock matrix in the VBS again for final set of Mulliken charges.
 	\item Recalculate CM5 charges with this final set, and diagonalize the Fock matrix in the XBS. The molecular orbital coefficients from this are then fed to the response theory.
 \end{enumerate}
 
 The response theory for this method is based on the previous work in the Grimme 
-group on the simplified Tann-Dancoff Approximation. There are several approximations 
-made between full linear response theory and the sTDA method. First is the 
-Tann-Danncoff approximation, where the B matrix is ignored. The second approximation 
-is to use Mataga-Nishimoto-Ohno-Klopman (MNOK) integrals instead of explicit 2 electron 
-integrals to calculate matrix elements, as well as neglecting the density 
-functional term. 
+group on the simplified Tamm-Dancoff Approximation \cite{Grimme2013}.
+There are several approximations made between full linear response theory and
+the sTDA method. First is the Tamm-Danncoff approximation, where the B matrix is ignored.
+The second approximation is to use monopole approximations with Mataga-Nishimoto-Ohno-Klopman
+operators instead of explicit 2 electron integrals to calculate matrix elements, as well as
+neglecting the density functional term.
 
-Transition charges are used to calculate these MNOK integrals, where the charges 
-are computed using a Löwdin population analysis. The operator is the 
+Transition charges are used to calculate these MNOK integrals. The charge $q^A_{nm}$,
+the charge centred on atom $A$ given by transition density for the transition of
+$ n \leftarrow m$, are computed using a Löwdin population analysis:
+
+\begin{equation}
+q_{nm}^A = \sum_{\mu \in A} C^`_{\mu n} C^`_{\mu m}
+\end{equation}
+
+where the transformed coefficients $C^`_{\mu n}$ are given by the orthogonalising
+the original MO coefficients $\textbf{C}$:
+
+\begin{equation}
+\textbf{C}^` = \textbf{S}^{\frac{1}{2}} \textbf{C}
+\end{equation}
+
+and $\mu$ is an index that runs over the atomic orbitals (AO).
+
+The operator is the 
 MNOK\cite{Nishimoto1957}\cite{Ohno1964}\cite{Klopman1964} damped coloub function, 
 with different exponents $y_K$ and $j_J$ for exchange and coulomb integral respectively. 
 The $a_x$ parameter is included to recover the amount of Fock exchange mixing in
-the original matrix element equation, and is a free parameter.
+the original matrix element equation, and is a free parameter. These will be discussed
+in more detail in the next chapter, as they are a crucial part of designing a new
+response method for chlorophyll systems.
 
 Third is the truncation of single particle excited space that is used to construct 
 the $\mathbf{A}$ matrix. This reduces the number of elements that need to be 
-calculated, and so reduces the time taken for diagonalization, whilst also capturing 
+calculated, and so reduces the time taken for diagonalisation, whilst also capturing 
 a broad enough spectrum of excitation energies. The sTDA-xTB has many of the same 
 goals as this project, except in one respect, which is the gradient theory. As 
 the sTDA-xTB method still requires constructing and diagonalizing the $\mathbf{A}$ 
 matrix, albeit with a tight-binding method for molecular orbital coefficients, 
-the gradient of the transition properties would still be difficult to calculate. 
-Hence it wasn't used for this project, but informed us that an xTB like method 
-could be used to get accurate transition properties.
+the gradient of the transition properties would still be difficult to calculate.
 
 \section{Benchmarking}
 \label{sec:benchmarking}
-Having established the hypothesis, that a GFN-xTB based \dscf method (which we
-name \dxtb) would predict TD-DFT transition properties with decent accuracy, we
-then tested this on a test set of small molecules, as well as bacterial chlorophylls
-from the LHII protein. Additionally, we also investigated \dscf results with a DFT method
-for the ground and excited state solutions, so we could compare the two differences
-between the \dxtb method and our chosen reference method. The first being whether
-the \dscf method can reproduce response effects, and the second being whether a
-tight-binding, semi-empirical method could produce decent enough electronic
-structure.
+The first step in testing whether a GFN-xTB based \dscf method (which we
+name \dxtb) could predict TD-DFT transition properties with decent accuracy was
+to test a set of small molecules, as well as bacterial chlorophylls
+from the LHII protein against high-level results.
 
 \subsection{Reference Data and test set}
 \label{subsec:reference_data}
 The test set comprised of 109 small molecules. Each system was closed-shell, 
-contained 12 atoms or less, and contained on H, C, N, and F atoms. The size and
+contained 12 atoms or less, and contained on H, C, N, O and F atoms. The size and
 relative simplicity of this test set was chosen to minimise any other factors that
 could cause complication in analysing the results. For example choosing a consistently
 correct basis set and functional for the \dscf results would have been challening 
 if we had to include transition metal complexes, as well as if we had to think 
-about cpu walltime. Additionally, the size of these molecules made symmetries
+about CPU walltime. Additionally, the size of these molecules made symmetries
 much easier to inspect by hand.
 
-For reference data we calculated the three lowest energy singlet excited states. We used
-EOM-CCSD with an aug-cc-pVTZ basis set, using Gaussian 16. 
+Reference data was calculated as the three lowest energy singlet excited states, 
+using EOM-CCSD with an aug-cc-pVTZ basis set. These results were generated
+using the Gaussian 16 program \cite{Gaussian16}.
 
 \subsection{Small Systems}
 \label{subsec:smalltest}
@@ -283,40 +310,70 @@ Symmetry labelling was also only available for TD-DFT calculations, as these wer
 performed with Gaussian 16. \dscf calculations were done with the \code{QCORE}
 program.
 
-Additionally, the \dscf singlet transition is not a correct representation of a 
-true singlet excitation, as this is a superposition of both spin-same and spin-flipping
+The \dscf singlet transition is not a correct representation of a 
+true singlet excitation, as this is a superposition of both spin-same
+ $\alpha \rightarrow a, \alpha$ and spin-flipping $\alpha \rightarrow a, \beta$
 excitations. The spin-purification formula:
 
 \begin{equation}
 \Delta E_S = 2\Delta E^{i,\alpha \rightarrow a, \alpha} - \Delta E^{i,\alpha \rightarrow a, \beta}
 \end{equation}
 
-was used to correct for the true singlet excitation energy.
+was used to correct for the true singlet excitation energy $\Delta E_S$.
+
+The results of comparing transition energies and transition dipole magnitudes are
+shown in figures \ref{fig:energy_scatter} and \ref{fig:dipole_scatter}.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{../../Year_3/dscf_figures/energy_scatter.png}
+\caption{Transition energies $\Delta E$ from TD-DFT (black) and \dscf (red)
+ plotted against EOM-CCSD energies, with the line $y=x$ (dashed) for reference.
+ The ethene dimer outlier has been circled.}
+\label{fig:energy_scatter}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{../../Year_3/dscf_figures/dipole_scatter.png}
+\caption{Transition dipole magnitudes from TD-DFT (black) and \dscf (red) plotted
+against EOM-CCSD transition dipole magnitudes, with the line $y=x$ (dashed) for 
+reference.}
+\label{fig:dipole_scatter}
+\end{figure}
 
 Overall, the excitation energies calculated with \dscf are as accurate at predicting
-EOM-CCSD energies as TD-DFT. The mean error is 0.35 eV, iwth a standard deviation
+EOM-CCSD energies as TD-DFT. The mean error is 0.35 eV, with a standard deviation
 of 0.25 eV. This is a marginal improvement on the TD-DFT results, which has a mean
 and standard deviation of 0.41 eV and 0.27 eV respectively. Transition dipoles 
 were similarly accurate to the reference data, although \dscf performs slightly 
 worse in this respect. The mean and standard deviation in the absolute value
 of transition dipole moment, $|\mathbf{\mu}|$, was 0.07 a.u. and 0.08 a.u. respectively.
-For TDDFT, the mean and standard deviation were 0.03 a.u. and 0.06 a.u. (the atomic
+For TD-DFT, the mean and standard deviation were 0.03 a.u. and 0.06 a.u. (the atomic
 unit here being equal to $ea_0$).
+The outlier circled in figure \ref{fig:energy_scatter} is an ethene dimer system,
+and shows the inability of \dscf to capture a mixed excited state. The two LUMO
+orbitals in this dimer system are in-phase and out-of-phase combinations of the 
+$\pi$-antibonding orbitals, which are very close in energy. The HOMO
+orbitals are the same on both ethene molecules, being the $\pi$-bonding orbitals, 
+which are degenerate in energy. The first excited state is predicted by TD-DFT and
+EOM-CCSD to be a mix of these two close HOMO-LUMO transitions, however \dscf cannot
+include this mixed behaviour. \dscf predicts two transitions of 7 eV and 10 eV,
+whilst TD-DFT and EOM-CCSD predict 7.5 eV.
 
-In summary, we can see the \dscf can accurately predict transition properties
-to a EOM-CCSD level of accuracy with as much success as TD-DFT.
-We could then reasonably expect a tight-binding method, with good electronic 
-structure treatment, to also be appreciably accurate whilst drastically reducing
+In summary, \dscf can be seen to accurately predict transition properties
+to a EOM-CCSD level of accuracy with as much success as TD-DFT, except in cases
+of mixed transitions. It might then be expected a tight-binding method, with good electronic 
+structure treatment, could also be accurate whilst drastically reducing
 the cost of calculation. 
 
 \subsection{Non-orthogonality}
 \label{subsec:dscf_nonorth}
-There is, however, a caveat with \dscf. The ground and excited states, solutions
-to two separate SCF cycles, will probably not be orthogonal. In more detail, the
+There is, however, another caveat with \dscf. The ground and excited states, solutions
+to two separate SCF cycles, will not be truly orthogonal. The
 Slater determinants $\ket{\Psi_n}$, are constructed from the set of orbitals 
-$\{ \ket{\phi_j^{\left(n\right)}} \}$. For each state, these spin orbitals
-will be orthogonal to other orbitals in the same state. However they will not be
-orthogonal to orbitals of a different state, such that the inner product:
+$\{ \ket{\phi_j^{\left(n\right)}} \}$ that will be orthogonal within the same state,
+however the overall states will not be orthogonal to each other, such that the inner product:
 
 \begin{equation}
 S^{21}_{jk} = \braket{\phi_j^{\left(2\right)} | \phi_k^{\left(1\right)}}
@@ -325,7 +382,7 @@ S^{21}_{jk} = \braket{\phi_j^{\left(2\right)} | \phi_k^{\left(1\right)}}
 will be non-zero. Similarly, there will be a non-zero transition charge:
 
 \begin{equation}
-q^{21} = \braket{\Phi^2|\Phi^2}
+q^{21} = \braket{\Psi^2|\Psi^2}
 \end{equation}
 
 which breaks the origin-independence property of the transition dipole moment. In
@@ -334,110 +391,165 @@ have a systematic error based on this overlap and the distance from the origin.
 For vertical transitions, this transition charge should be zero, and so all transition
 dipole moments calculated with non-orthogonal \dscf would always have this error.
 
-Instead, we applied a transformation to symmetrically orthogonalise the two states
-involved in the transition, which preserve as much character of the original states
-as possible. The transformation is given by:
+In order to fix this issue, a transformation to symmetrically orthogonalise the two states
+was applied, which also would preserve as much character of the original states as possible.
+The transformation is given by:
 
 \begin{equation}
-\ket{\Psi_{\tilde{\nu}}} = \sum_{\nu} \ket{\Psi_\nu} \left[\mathbf{S^{-\frac{1}{2}}} \right]_{\nu\tilde{\nu}}
+\ket{\Psi_{\tilde{\nu}}} = \sum_{\nu} \ket{\Psi_\nu} \left[\mathbf{S}^{-\frac{1}{2}} \right]_{\nu\tilde{\nu}}
 \end{equation}
 
+where $\mathbf{S}$ here is a block matrix:
+
+\begin{equation}
+\mathbf{S} = \begin{pmatrix}
+    1 & S \\
+    S & 1 
+\end{pmatrix}
+\end{equation}
+
+with $S$ being the overlap value of the two states $\braket{\Psi_2|\Psi_1}$.
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{../../Year_3/dscf_figures/correction_scatter.png}
+\label{fig:correction_scatter}
+\caption{The absolute value of the error in transition dipole magnitude between
+\dscf and EOM-CCSD, plotted against the \dscf overlap of the ground and excited
+state. All systems were translated by 100 \AA  in all cartesian axes. Transition
+dipole magnitudes calculated without any correction are shown in red, whilst
+those with the symmetric orthogonalisation correction are shown in black.}
+\end{figure}
+
 It was found that using this method for correcting the non-zero overlap of states, 
-the origin-independence of the transition dipole moment was recovered. It should
-be noted that whilst this effect is dependent on how large the overlap may be, and
+the origin-independence of the transition dipole moment was recovered (see figure
+\ref{fig:correction_scatter}).
+The transition dipole for each molecule in the test set systems was calculated
+for molecules translated by 100\AA  in each of the $x$, $y$ and $z$ axes.
+This would induce an error for the non-orthogonalised states, which has been
+corrected for in the calculations with the symmetric orothogonalistion.
+It should be noted that whilst this effect is dependent on how large the overlap may be, and
 it could be argued that with a small overlap this effect may not be large, having 
 any large translation of the molecule (on the order of hundreds of angstroms) can
 lead to nonphysical transition dipole magnitudes. In a large protein system, where
-systems can be on this scale, this would obviously present a much larger problem
-than might be for a vacuum phase small molecule.
+these distances can be on this scale, this would obviously present a much larger problem
+than for a vacuum phase small molecule.
 
 \subsection{LHII Chlorophyll}
 \label{subsec:dscf_chl_tests}
-
-We also tested the accuracy of \dscf on a set of bacterial chlorophyll A (BChla) 
-molecules. These are a much large and more complex system, and so present a tougher
-challenge for the \dscf method. Additionally, it is a much relevant test for the
+The accuracy of \dscf was also tested on a set of bacterial chlorophyll A (BChla) 
+molecules. These are a much larger and more complex system, and so present a tougher
+challenge for the \dscf method. Additionally, it is a more relevant test for the
 goal of simulating a whole LHII complex.
 
-As each Bchla is 140 atoms, we chose not to run EOM-CCSD as the reference method
-but use TDDFT at a PBE0/Def2-SVP level of theory. We ran \dscf with the same
-density functional and basis set.
+As each Bchla is 140 atoms, EOM-CCSD could not be used as the reference method due
+to resource constraints, so TD-DFT at a PBE0/Def2-SVP level of theory was used instead.
+The \dscf was run with the same density functional and basis set.
 
-We also only looked the $Q_y$ transition with both methods. More detail about this
-transition and it's importance will be discussed in the next chapter.
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{../../Year_3/dscf_figures/chlorophyll_energy_scatter.png}
+\label{fig:chl_energy}
+\caption{The transition energies from \dscf for the 26 chlorophyll geometries, 
+plotted against energies from TD-DFT. The line of best fit ($R^2=0.87$) is shown 
+as the dashed line.}
+\end{figure}
 
-We found that \dscf gave transition energies to within the accuracy of TD-DFT, 
-such that we can claim that the fluctuations in transition energy are due to
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png}
+\label{fig:chl_dipole}
+\caption{The transition dipole magnitudes from \dscf for the 26 chlorophyll geometries, 
+plotted against dipole magnitudes from TD-DFT. The line of best fit ($R^2= 0.57$) 
+is shown as the dashed line.}
+\end{figure}
+
+\dscf can be seen to give transition energies to within the accuracy of TD-DFT, 
+such that the variations in transition energy can be said to be due to
 physical intra-molecular reasons rather than random error from the \dscf method.
-Hence \dscf could be used to accurately predict geometry dependent properties.
+\dscf could therefore be used to accurately predict geometry dependent properties.
 
-However, the error in transition dipole magnitudes was larger than that of the small
-test set. The error was about 0.42 a.u. larger, but without EOM-CCSD or another
+However, the error in transition dipole magnitudes is larger than that of the small
+test set. This error is about 0.42 a.u. larger, but without EOM-CCSD or another
 high-level method, it's unclear whether this error might be from TD-DFT or \dscf.
 Additionally, there is a clear correlation between the transition dipole magnitudes
-from TD-DFT and \dscf, and so whilst quantitative statements cannot be made, we 
-can confidently make qualitative assessments from \dscf.
+from TD-DFT and \dscf, and so whilst quantitative statements cannot be made, qualitative
+assessments can be confidently made from \dscf data.
 
-
-\subsection{GFN methods}
+\afterpartskip
+\subsection{xTB methods}
 \label{subsec:dscf_gfn_tests}
-We ran the same benchmarking set for the \dxtb method. Here we found it was 
-necessary to extend the number methods that we were using to compare results.
-Our range of methods were chosen to cover the different approximations for
-transition properties we were making. Again the reference data was CC2 data, 
-produced by the Grimme group. Our approximations were using \dscf rather than
-linear response, and semi-empirical rather than DFT. Hence we investigated:
-\begin{itemize}
-    \item High level TD-DFT, with a range separated functional and large basis set
-    \item Lower level TD-DFT, with a functional and smaller basis set
-    \item \dscf with range separated functional and large basis set
-    \item \dscf with functional and smaller basis set
-    \item linear response with GFN-xTB
-    \item \dscf with GFN-xTB, \dxtb
-\end{itemize}
+The same benchmarking set was used with the \dxtb method. The number of methods
+in the comparison was also expanded to cover a range of approximations in calculating
+transition properties, including the aforementioned sTDA-xTB method. To include 
+this in the comparison, it was necessary to use the CC2 reference data produced 
+by the Grimme group.
+Concurrent to this work, the GFN0-xTB method was also implemented in \code{QCORE}.
+This method is similar to the GFN1-xTB method, but excludes any charge dependent
+terms in its Fock matrix so is not self-consistent. This method therefore only
+uses a single diagonalisation, with orbital solutions being the same for both
+ground and excited state. A transition energy from \dscf with this method would
+functionally be the same as an eigenvalue difference, and this was included in 
+the benchmarking to test whether it would be a possibility for predicting transition
+properties.
+Also included in this benchmarking is using the eigenvalue differences from
+sTDA-xTB, given by the \code{xtb4stda} program, to observe how much improvement
+to transition properties is caused by the sTDA procedure. \code{xtb4stda} is the 
+first of two programs that runs a version of xTB, providing molecular orbital
+coefficients and energies for the sTDA program to then use to calculate the transition
+properties.
 
-Concurrent to this work, we also implemented the GFN0-xTB method in \code{QCORE}.
-This method is similar to the GFN-xTB method, but excludes any charge dependent
-terms in its Fock matrix so is not self-consistent. We also tested whether this
-would be a possibility for predicting transition properties.
+All methods included were:
+\begin{itemize}
+    \item High level TD-DFT, with a range separated functional CAM-B3LYP and
+     a aug-cc-pVTZ basis set.
+    \item Lower level TD-DFT, with a PBE0 functional and smaller Def2-SVP basis set.
+    \item \dscf with CAM-B3LYP/aug-cc-pVTZ.
+    \item \dscf with PBE0/Def2-SVP.
+    \item linear response with GFN1-xTB and GFN0-xTB.
+    \item \dscf with GFN1-xTB and GFN0-xTB, named \dxtb.
+    \item Full sTDA-xTB.
+    \item sTDA-xTB eigenvalue difference.
+\end{itemize}
 
 The results are shown in fig-\ref{fig:dxtb_absolute_errors}.
 
 \begin{figure}
     \label{fig:dxtb_absolute_errors}
-    \includegraphics[]{../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png}
-    \caption{The errors of several levels of theory at predicting cc2 transition
+    \includegraphics{../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png}
+    \caption{The errors of several levels of theory at predicting CC2 transition
     energies.}
 \end{figure}
 
 These results are discussed in more detail in \ref{subsubsec:imp_of_benchmarking},
 however it's quickly seen that \dxtb as well as linear response GFN-xTB is inaccurate 
 at predicting excitation energies.
-One factor stands out for this error before discussing reasons based on
-the inherent accuracy of the method. A recurring problem of \dscf methods is that
-the excited state SCF cycle could converge to the wrong state or collapse to the
-ground state. This could be seen by the symmetry of the excitation, as the TD-DFT,
-\dscf and cc2 methods could all be converged to different states. The symmetry of
-these state could also be different, and so by checking this symmetry we can tell
-if a comparison between the results given by these different methods is justified.
-Assigning symmetry to \dscf results however is not a straightforward task.
+A leading source of error that hasn't been discussed in much detail so far is
+the assignment of transitions between different methods. A known problem of \dscf
+methods is that the excited state SCF cycle may not converge to the correct state,
+or it might collapse back to the ground state. This could be seen in the symmetry
+of the excitation, as if the TD-DFT, \dscf and CC2 states have converged to different 
+states they would have different symmetries of transition. The benchmarking discussed
+above used symmetry labels to assign TD-DFT transitions to EOM-CCSD, but as noted
+earlier this was not always possible, and assigning symmetry labels to \dscf was 
+not possible. Instead, transition dipole orientations and plots of MOs were used
+as a proxy. This would not be possible in this case for two reasons. First is the
+valence basis set for the \dxtb calculations are very different to those used in
+DFT. Second is that this information was not available for the CC2 data, however
+the symmetry labels were. Additionally, inspecting the symmetry is very time-consuming
+and can not be automated. Every new method that would be added to the benchmarking
+would have to have every molecule individually inspected to make sure the symmetry
+of each transition was correct. Assigning symmetry to \dscf results was investigated,
+but was not a straightforward implementation.
 
 \subsubsection{Post-SCF Assignment of Symmetry}
 \label{subsubsec:post_scf_symmetry}
 
 Considering symmetry is a common thread in many parts of electronic structure 
 theory. It appears in normal mode analysis, wavefunction analysis and assignment
-of electronic transitions. For this project, we looked at assigning symmetry to 
-the transitions for \dscf methods, which would require assigning symmetry to the
-orbitals and overall wavefunction of a molecule.
-The easiest way to assign the symmetry of transition would be to look at the
-ground and excited-state MOs by plotting them and inspecting the symmetry. Whilst
-this method works, it is very time-consuming and could not be automated. Every new
-method that would be added to the benchmarking would have to have every molecule
-individually inspected to make sure the symmetry of each transition was correct.
-Instead, we investigated whether we could assign the symmetry of the resulting 
-orbitals as they are given by the SCF procedure. This was a new feature that had
-to be implemented in \code{QCORE}.
+of electronic transitions. For this project, assigning symmetry to the transitions
+for \dscf would require assigning symmetry to the MOs and overall wavefunction of
+a molecule.
 Broadly speaking, most electronic structure codes have two choices in assigning
 symmetry to orbitals - either all of the SCF code will treat symmetry from the 
 outset, or nothing is assigned in the SCF code and assignment will happen post-SCF.
@@ -453,17 +565,18 @@ The second approach, assigning symmetry after the SCF cycles, doesn't fix these
 drawbacks, but it does allow for codes which originally didn't have symmetry
 assignment to be extended without rewriting SCF code. The obvious drawback of
 doing assignment post-SCF is that symmetry can't be utilized during the SCF procedure.
-We opted for the second approach, as this was the easiest to implement in \code{QCORE}.
-We used the open source library libmsym for point group assignment routines and finding
-the symmetry adapted linear combination of atomic orbitals. Broadly, the steps
-for assigning orbital symmetry is as follows:
+The second approach was opted for, as this was the easiest to implement in \code{QCORE}.
+The open source library libmsym was used for point group assignment routines and finding
+the symmetry adapted linear combination of atomic orbitals. The steps for assigning
+orbital symmetry is as follows:
+
 \begin{enumerate}
     \item Determine the point group of the molecule, from the atomic positions
     \item Setup the atomic orbitals in the libmsym representation.
-    \item Get the symmetry adapted linear combination (SALC) of atomic orbitals for 
+    \item Get the symmetry adapted linear combinations (SALCs) of atomic orbitals for 
     each subspace. These subspaces are the groups of symmetries that can be found
     in the point group of the molecule.
-    \item The SALC can then be used to make the transformation matrix $T$.
+    \item The SALCs can then be used to construct the transformation matrix $T$.
     \item Assign the one electron molecular orbital (MO) for these subspace characters
      with the symmetry adapted linear combinations.
     \item Multiply the one electron MO symmetries together to find the symmetry 
@@ -566,231 +679,202 @@ for assigning orbital symmetry is as follows:
         ](r) at (3cm,-2.5cm) {T2};
 
     \end{tikzpicture}
-    \caption{Symmetry assigned MOs}
+    \caption{A breakdown of the symmetry orbitals in STO-3G methane into the subspaces 
+    present in the T\textsubscript{d} point group.}
 \end{figure}
 
-
-We implemented this procedure and tested this on methane with a minimal basis set.
-We found that we could accurately assign the MOs and overall wavefunction of this
-system with this method for the ground state, which was encouraging.
+This procedure was implemented and tested on methane with a minimal STO-3G basis set.
+It was found that this could accurately assign the MOs and overall wavefunction of
+methane the ground state.
 
 To assign a label to each molecular orbital, we looked at the character of each
 orbital in all subspaces. This required transforming the molecular orbital coefficients
-into the each subspace by using the transformation matrix T:
+$\mathbf{C}$ into the each subspace $A$ by using the transformation matrix $\mathbf{T}$:
 
 \begin{equation}
 \tilde{\mathbf{C}}_A = \mathbf{T}^T_A \mathbf{S} \mathbf{C}
 \end{equation}
 
-and then summing the coefficients to obtain the character:
+and then summing the coefficients to obtain the character $P_A$:
 
 \begin{equation}
 P_A = \sum_{\nu} \left\lvert \tilde{\mathbf{C}}_{A, \mu\nu} \right\lvert  
 \end{equation}
 
-. For well defined systems, if the molecular orbital is in the subspace then the
-character would equal 1. However in practice this was no so clear cut and so the
-higher subspace character was taken.
+where $\mu,\nu$ are indices for the atomic and molecular orbitals respectively. 
+The molecular orbital with character equal to 1 in a subspace would then have that
+symmetry label, and would be a well defined assignment. However in practice it is
+not so clear cut and so the highest subspace character was taken as the assignment.
 
-We were able to correctly assign the MOs for an optimised methane geometry with
-an STO-3G basis set - two occupied orbitals and one unoccupied orbital of A1 symmetry,
-and three occupied and unoccupied orbitals of T2 symmetry. 
-The overall wavefunction symmetry can then be expressed as the product of all MO
-symmetries, which can be reduced with the reduction formula:
+the MOs for an optimised methane geometry with an STO-3G basis set was correctly
+assigned  - two occupied orbitals and one unoccupied orbital of A1 symmetry,
+and three occupied and unoccupied orbitals of T2 symmetry. The overall wavefunction
+symmetry can then be expressed as the product of all MO symmetries, reduced with
+the reduction formula:
 
 \begin{equation}
-n\left( i \right) = \frac{1}{h} \sum_R \xi_r \left( R \right) \xi_i \left( R \right)
+n = \frac{1}{h} \sum_R \xi_r \left( R \right) \xi_i \left( R \right)
 \end{equation}
 
-. This correctly produced the overall symmetries of ground state systems.
+where $\xi_r, \xi_i$ are the reducible and irreducible representations respectively,
+$h$ is the order of the group and $R$ is the subspace. This correctly produced
+the overall symmetries of ground state systems for methane and water.
 
-However, we encountered two problems. First was that the assignment of MOs did not
-word well for excited states, due to the character from the subspace projection
-being unclear for many MOs. The second was that for non-abelian groups,
-where there are some degenerate E and T subspaces, this assignment did not work.
-The reduction of ground state wavefunctions gave non-physical answers.
+However the assignment of MOs did not work well for excited states, due to the
+character from the subspace projection being unclear for many MOs. 
+Additionally was that for non-abelian groups, where there are some degenerate E
+and T subspaces, this assignment did not work. This is a similar problem to the
+assignment of symmetry for the TD-DFT and EOM-CCSD transitions in the earlier 
+benchmarking. Often the reduction of ground state wavefunctions gave non-physical answers.
 
-We discussed some ideas about how to overcome these issues, such as using symmetry
-decomposition for the non-abelian point groups. We also discussed implementing an
-analysis based on the antisymmetric component of the direct products. However all
-of these ideas would create a more open ended project. Additionally, this may have
-been a useful feature for testing the benchmarking sets, but chlorophyll molecules 
-would not be symmetric and so type of assignment would not have worked. 
-Hence, we could not confidently assign transitions from \dscf methods with this method.
-We could still use the non-autonomous method of inspecting transition dipoles and
-plots of MOs, but as mentioned above this would drastically increase the turnaround
-time of including more systems in benchmarking, or other investigations.
-Critically, it would also be impossible to fit a set of parameters to 'learn' transition
-properties of systems, as will be discussed in the next chapter.
+Using symmetry decomposition for the non-abelian point groups and analysis based 
+on the antisymmetric component of the direct products was discussed, however this
+would create a more open-ended project. Additionally, while this may be a useful
+feature for testing the benchmarking sets, chlorophyll molecules would be far from
+symmetric and so this type of assignment could not have been expected to have worked. 
+In total transitions could not be confidently assigned for \dscf with this method.
 
 \subsubsection{Implications of Benchmarking Results}
 \label{subsubsec:imp_of_benchmarking}
 
-After considering this leading error, we can then make some statements on the
-data presented.
+After considering this leading error, the assignment of symmetry was based on the
+previously used inspection of transition dipole orientations and transition density
+plots, however the difficulty of doing this for the entire range of methods should
+be noted.
 
-Overall, the \dxtb method was inaccurate - far too inaccurate to be used as a 
+Overall, the \dxtb method is inaccurate - far too inaccurate to be used as a 
 viable method for transition properties of chlorophyll, or any other system.
-The range of errors is quite large and there is also a significant systematic shift 
-present. However the DFT methods, both the linear response and the \dscf methods,
-are accurate at predicting excitation energies
+The range of errors is quite large (3 eV) and there is also a significant systematic
+shift of 2 eV present. The DFT methods, both the linear response and the
+\dscf methods, are still shown to be accurate at predicting excitation energies.
 
-We can try to pinpoint where the source of error might be from looking at methods
-including in this benchmarking. First is that whilst the \dxtb method is inaccurate,
-the sTDA-xTB results shows that a tight-binding approach that doesn't use full
-linear-response can give very accurate results. Hence we could expect other similar
-approaches to perform similarly well.
-
-The next comparisons that could be made is whether the difference between 
-linear-response and \dscf methods, or the difference between ab initio or 
-semi-empirical methods, are the leading cause of error. Looking at the results 
-for CAM-B3LYP/aug-cc-pVTZ, we can see that both the linear-response and \dscf 
-results are fairly accurate. There are some outliers in the \dscf results, that 
+The sTDA-xTB results shows that a tight-binding approach that doesn't use full
+linear-response can give very accurate results, well within a 0.3-0.5 eV range.
+Again CAM-B3LYP/aug-cc-pVTZ methods, both the linear-response and \dscf, are 
+accurate to within this range as well. There are some outliers in the \dscf results, that 
 we attribute to different transitions to excited states, however overall both 
-have a majority of errors within a 0.5 eV range. Looking at the slightly lower
-level theory DFT results, PBE0/Def2-SVP, we can see a marked decrease in accuracy.
-Again, both linear-response and \dscf methods perform similarly, and so we attribute
-the leading cause of error to be the electronic structure method, and not the response method.
+have a majority of errors within a 0.5 eV range. The PBE0/Def2-SVP methods have a
+marked decrease in accuracy. Both linear-response and \dscf methods perform similarly,
+and so the leading cause of error is attributed to be the electronic structure method,
+and not the response method.
 
-We can continue this trend into the semi-empirical methods. Overall, these methods
-performed much worse than the ab initio DFT methods, with the exception of the
-sTDA-xTB method. There is still a relatively small difference between linear-response
-xtb and \dxtb results, however both are fairly inaccurate and so this point is a
-bit harder to justify. 
+The GFN-xTB based methods performed much worse than the DFT methods. There is a
+relatively small difference between linear-response GFN-xTB and \dxtb results, again
+showing that poor electronic structure theory gives poor transition properties.
 
-As the implementation of linear-response and \dxtb methods could use both the
-SCC and non-iterative versions of the gfn-xtb methods (gfn1 and gfn0), we included
-both in our test sets. We found that both are inaccurate, and there is a marked
-drop when using gfn0. The systematic shift in the gfn0-\dxtb method is especially
-bad. We conclude from this a response method based on out-of-the-box gfn-xtb would
-not be viable - this is a conclusion that will be returned to in the following
-chapter.
+Both the GFN0- and GFN1-xTB based methods proved inaccurate, and there is a marked
+drop when using GFN0. The systematic shift in the GFN0-\dxtb method is especially
+bad. It's concluded from this that a response method based on out-of-the-box GFN-xTB would
+not be viable.
 
-Overall, arguably the absolute worst was the eigenvalue difference method based
+Overall, the most inaccurate method is the eigenvalue difference methods based
 orbital energies (eigenvalues of the Hamiltonian diagonalisation) from the sTDA-xTB
-method. To obtain these results, we used the available sTDA-xTB programs, that are
-in two parts. The first part runs a version of xTB that provide molecular orbital
-coefficients and energies for the sTDA program to then use to calculate the transition
-properties.
-on \code{xtb4stda} results. For these results we took the difference between
-linear-response routine in the full sTDA-xTB method. This was the simplest method
-that we included, and was a test to see whether the optimised electronic structure 
-parameters were inherently good at predicting transition properties. As can be 
-seen, this isn't the case, and so we could expect no real difference in a new
-method if we started from this xtb method or a version of gfn-xtb. It seems that
-the response method used can make up a large part of predicting transition properties
-accurately.
+method. Arguably the sTDA method then makes up a large part of predicting transition 
+properties accurately.
 
 The result that gfn-xtb based methods are not accurate is not unexpected. Tight-binding
-methods in general are inaccurate methods are electronic interactions, due to not
+methods in general are inaccurate at calculating electronic interactions, due to not
 including a large part of the electronic density. Additionally, they are highly
-parameterised to the certain systems and problems. Whilst the gfn-xtb methods are
+parameterised to the certain systems and properties. Whilst the GFN-xTB methods are
 better than many other methods in this parameterisation, using a few pair-wise
 parameters as possible to improve extensibility to systems outside the training
-set, there will always be the problem that these parameters are trained on ground
-state properties and not excited state properties. Whilst there was the possibility 
-these parameters might have been accurate at both ground and excited state properties,
-the results show that this just isn't the case.
+set, these parameters are trained on ground state properties and not excited state
+properties. These parameters are found to be unsuitable for predicting transition
+properties.
 
 \section{Conclusions and Further Work}
-The two main hypotheses tested in this chapter have been whether a \dscf approach
-to response properties can be as accurate as full linear-response or better, and
-if a tight-binding based method could also be as accurate.
+The transition properties of a test set of small molecules has been benchmarked 
+with multiple \dscf, TD-DFT and high-level methods. It has been shown that DFT 
+based \dscf and TD-DFT methods can reproduce the same transition energies and 
+transition dipole magnitudes as EOM-CCSD to within reasonable levels
+of accuracy. For the set of small molecules, transition energies were predicted
+with a mean of less than 0.5 eV, and 0.07 a.u. for transition dipole magnitudes.
 
-The answer to both of these are yes, but not at the same time, at least in the 
-forms given in this chapter.
+For a small set of BChla geometries, it was found that the same level of accuracy
+for transition energy could be found between \dscf and TD-DFT, where EOM-CCSD was
+too expensive to calculate. The error was well within the range of TD-DFT energy
+variation, shown in the high correlation coefficient, and so \dscf could be reasonably
+expected to give correct geometry-dependent transition energies. Whilst the accuracy
+is slightly reduced for transition dipole moments, the appreciable degree of correlation
+implies that qualitative statements would be valid.
 
-This is an encouraging step towards the overall thesis of this work. All of the
-\dscf methods tested in this work have required much less cpu work, both in terms
-of time and in memory, than the full linear-response methods. The difference is 
-greater for the higher levels of theory, as this can amount to hours of cpu time
-saved. For the tight-binding methods, this is not as stark until we start considering
-much larger systems and problems.
+GFN-xTB based \dscf methods were found to be far more inaccurate, to the point
+where it cannot be claimed to be a useful proxy to higher level methods. This
+is attributed to the different electronic structure theory used, rather than the
+response methods. Whilst this inaccuracy might be due to incorrect comparisons
+of transitions, efforts to assign symmetry to \dscf transitions proved unsuccessful. 
 
-The remaining issues and further work are outlined below.
-
-\subsection{Symmetry}
-\label{sec:dscf_symmetry}
-
-The main problems as have been discussed have mainly been in assigning the correct
-transition between different methods. A \dscf has not been as actively investigated
-as TD-DFT methods, there are fewer developed tools for this kind of problem, much
-less other programs or codes that could be used for reference. For example, many
-TD-DFT codes can provide symmetry in their results, whereas it took alot of work
-even to attempt to do so with \dscf. This would have been an unfinished problem 
-going forward. However, due to the well defined $Q_y$ transition (discussed in the
-following chapter), this may not be an issue for chlorophyll. But as further
-work might include other systems, this would have been a recurring issue to be
-solved. Additionally, it doesn't give much confidence to the results of the benchmarking.
-
-Further work on this issue would be to return to this investigation. As reported, 
-assigning ground state symmetries was successful, and much of the machinery required
-was implemented.
+Obvious areas for further work would include investigating more systems and 
+response methods. Many other DFTB methods exist, such as ZINDO and . Additionally,
+whilst Bchla is present in LHII, the same investigation could be repeated for other
+types of chlorophyll, such as that from the FMO complex. Additionally, the assignment
+of symmetry could be revisited.
 
 \subsection{Embedding}
 \label{subsec:dscf_embedding}
 
-As reported in this chapter, these benchmarking results do not include any investigation
+As reported in this chapter, the benchmarking results do not include any investigation
 into how these methods would behave in an embedded system. This is more of an 
 implementation problem than a theoretical problem for the majority of the methods
-investigated, with the exception of the xtb based methods.
-As implemented in \code{QCORE}, all of the DFT methods as well as the gfn1 based
-method could have included embedding effects. This would be important to investigate
-as we would have moved to more biological systems, where embedding effects can be
-very important to include.
-Further work on the remaining methods would have involved solving two problems. First would
-be the formulation of embedding theory for gfn0, as this has not been investigated
-before. We did perform some work on this area.
+investigated, as many of the programs used do not have the option to include
+point-charge embedding. However, as implemented in \code{QCORE}, all of the DFT 
+methods as well as the GFN1-xTB based methods, could have included embedding effects.
+This would be important to investigate as embedding effects are important to include
+for biological systems.
+However as said not all of the methods used have available implementations with
+embedding. Both the sTDA-xTB and GFN0-xTB do not have published formalisms for
+embedding. The former would require a deep investigation into the source code of
+the two programs that currently make up the only implementation of this method,
+which while not impossible would represent a major task.
+The latter however was investigated, and proves a simpler task.
 
-Second would be embedding the sTDA-xTB theory, which really would have required 
-a deep investigation into the source code of this method. Given the scope of this
-project, this was not a realistic consideration, especially for a relatively minor
-part of the work.
+However, as GFN0-xTB proved to be inaccurate for transition properties this is not
+an important task.
 
 \subsection{Scaling}
 \label{subsec:dscf_scaling}
 
 Whilst the \dscf results are promising in terms of accuracy and computational 
-effort, this method may not be well suited for the issues discussed in the previous
-chapter. The main issue is scaling up the volume of calculations that could reasonably
-be done.
-All of the semi-empirical methods used in this benchmarking all had a cpu walltime 
+effort, this method may not be well suited for calculating properties that depend
+on many individual calculations, such as a time dependent property. The main issue
+is scaling up the volume of calculations that could reasonably be done.
+All of the semi-empirical methods used in this benchmarking had a CPU walltime 
 in the order of seconds, with very small memory requirements. Additionally, they
 all could be run on a single core due to the larger overhead of serial calculations
-as compared to the parallelisable routines - i.e. more time would be spent on running
-SCF cycles or running functional code, which can only be run in serial, than on
+compared to the parallelisable routines - i.e. more time would be spent on running
+SCF cycles or other code which can only be run in serial, than on
 constructing the Fock matrices or calculating integral values, which can be done in
 parallel.
 The opposite is true for the larger scale DFT calculations. Especially for the large
 chlorophyll system, the memory requirements were much higher than the semi-empirical
 methods. For example, using the \code{QCORE} implementation, all of the chlorophyll 
 calculations required on the order of $10^2$ gb of memory, and would take ~90 minutes
-of cpu walltime. This includes being parallelised over many cores (although not
-nodes), all of which adds together to make a relatively expensive calculation. This
+of CPU walltime. This included being parallelised over many cores (although not
+nodes), all of which adds together to make an expensive calculation. This
 also means that it is entirely unfeasible to run these calculations on a desktop
 computer.
 
-This has two drawbacks. First, as said above, is the volume of calculations that
-can be reasonably be done. This investigation used 27 individual chlorophylls, 
-which would represent about half a days worth of supercomputer time. Expanding
-this to a larger scale study of LHII, which can require up to thousands to hundreds
-of thousands of calculations, would take weeks or months of computational time.
-The first drawback then is that a study based on this method would not be repeatable
-in the time frame of a single project. To discover a flaw or additional property 
-that is needed, and so rerun all the calculations even twice or three times, would
-take on the order of a year and so either be unfeasible or drastically reduce the
-ability to test new ideas, given that nothing should be allowed to fail.
-The second drawback is the lack of ease of use. As all calculations would have to
-be run on a supercomputer, no small assays could be done on a local machine or desktop
-computer. This is not a major problem, as many methods are unable to be run on a 
-desktop computer, especially large scale DFT calculations. The problem here is that
-the sTDA-xTB results, which were all run on a desktop computer, show that it is
-possible to run these systems on smaller machines. It would be worth exploring
-whether there are more, similar methods that could also achieve this, as this would
-allow more researchers to be able to run larger systems without the previously needed
-expense of time and energy, as well as allow for a quicker turnaround time on assays.
-Additionally, it would also just allow more calculations to be run. This topic
-is revisited in chapter \ref*{chap:LHII}.
+This severly limits the volume of calculations that can be reasonably be done with
+these methods. For the 27 individual chlorophylls used in this investigation,
+the total amount of walltime would be nearly half a days worth on the
+available supercomputers. Expanding this to a larger scale study of LHII, which
+can require up to thousands to hundreds of thousands of calculations,
+would take weeks or months of computational time. The first drawback then is that
+a study based on this method would not be repeatable in the time frame of a single project.
+To discover a flaw or additional property that is needed, and so rerun all the
+calculations even twice or three times, would take on the order of a year and so
+either be unfeasible or drastically reduce the ability to test new ideas, given 
+that nothing would be allowed to fail. Another drawback is the lack of ease of
+use. As all calculations would have to be run on a supercomputer, no small assays
+could be done on a local machine or desktop computer. This is not a major problem,
+as many methods are unable to be run on a desktop computer, especially large scale
+DFT calculations. The problem here is that the sTDA-xTB results, which were all 
+run on a desktop computer, show that it is possible to run these systems on smaller
+machines. It would be worth exploring whether there are more, similar methods that
+could also achieve this, as this would allow more researchers to be able to run 
+larger systems without the previously needed expense of time and energy, as well
+as allow for a quicker turnaround time on assays. Additionally, it would also just
+allow more calculations to be run.
 
 The reliability, or robustness, of \dscf is another issue in scaling up the volume
 of calculations. As mentioned at a couple of points in this chapter, when calculating
@@ -799,10 +883,10 @@ unintentional state, collapse back down to the ground state, or not converge at 
 It can be very hard to predict when this will happen (for example some Bchla 
 geometries behave like this whilst others do not, which is hard to explain), and
 requires several tricks to fix. These include Fock matrix damping, changing parts of
-the SCF convergence algorithm such as the DIIS procedure, or using step-wise
+the SCF convergence algorithm such as the DIIS procedure, or a step-wise
 initial guesses, such as using an unphysical half-electron excitation as a starting
 point for a full electron excitation. To work out which trick is needed, and which
 systems will need them, requires a trial-and-error approach, and it's never guaranteed
 that something will work. For getting a time series of a transition property from
-a whole MD simulation, this is obviously a large problem.
+a whole MD simulation, this is obviously a serious problem that would need addressing.
 
