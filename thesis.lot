@@ -2,6 +2,7 @@
 \par \nobreak \textbf {{\scshape Table} \hfill Page}\par \nobreak 
 \addvspace {10pt}
 \addvspace {10pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Mean and standard deviations of the errors, in eV, against SCS-CC2 reference data. The {\fontfamily {qcr}\selectfont {xtb4stda}} entry represents the eigenvalue difference method that uses the eigenvalues output from this program.}}{22}{table.2.1}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

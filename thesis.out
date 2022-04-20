@@ -19,52 +19,50 @@
 \BOOKMARK [2][-]{subsection.2.2.3}{Non-orthogonality}{section.2.2}% 19
 \BOOKMARK [2][-]{subsection.2.2.4}{LHII Chlorophyll}{section.2.2}% 20
 \BOOKMARK [2][-]{subsection.2.2.5}{xTB methods}{section.2.2}% 21
-\BOOKMARK [1][-]{section.2.3}{Conclusions and Further Work}{chapter.2}% 22
-\BOOKMARK [2][-]{subsection.2.3.1}{Embedding}{section.2.3}% 23
-\BOOKMARK [2][-]{subsection.2.3.2}{Scaling}{section.2.3}% 24
-\BOOKMARK [0][-]{chapter.3}{Chlorophyll specific methods}{}% 25
-\BOOKMARK [1][-]{section.3.1}{The Cassida equation}{chapter.3}% 26
-\BOOKMARK [2][-]{subsection.3.1.1}{Approximations to Solutions}{section.3.1}% 27
-\BOOKMARK [2][-]{subsection.3.1.2}{MNOK Integrals}{section.3.1}% 28
-\BOOKMARK [1][-]{section.3.2}{Parameterization}{chapter.3}% 29
-\BOOKMARK [2][-]{subsection.3.2.1}{Reference Data}{section.3.2}% 30
-\BOOKMARK [2][-]{subsection.3.2.2}{Objective Function}{section.3.2}% 31
-\BOOKMARK [2][-]{subsection.3.2.3}{Minimization Algorithms}{section.3.2}% 32
-\BOOKMARK [1][-]{section.3.3}{Benchmarking}{chapter.3}% 33
-\BOOKMARK [2][-]{subsection.3.3.1}{Transition properties}{section.3.3}% 34
-\BOOKMARK [2][-]{subsection.3.3.2}{Potential Energy Surfaces}{section.3.3}% 35
-\BOOKMARK [2][-]{subsection.3.3.3}{Absorption Spectra}{section.3.3}% 36
-\BOOKMARK [0][-]{chapter.4}{Exciton Method}{}% 37
-\BOOKMARK [1][-]{section.4.1}{Theory}{chapter.4}% 38
-\BOOKMARK [2][-]{subsection.4.1.1}{Exciton States}{section.4.1}% 39
-\BOOKMARK [2][-]{subsection.4.1.2}{Embedding}{section.4.1}% 40
-\BOOKMARK [1][-]{section.4.2}{Truncated Chlorophylls}{chapter.4}% 41
-\BOOKMARK [2][-]{subsection.4.2.1}{Rotation}{section.4.2}% 42
-\BOOKMARK [2][-]{subsection.4.2.2}{Distance}{section.4.2}% 43
-\BOOKMARK [1][-]{section.4.3}{LHII Pairs}{chapter.4}% 44
-\BOOKMARK [2][-]{subsection.4.3.1}{Assignment of States}{section.4.3}% 45
-\BOOKMARK [2][-]{subsection.4.3.2}{Comparison}{section.4.3}% 46
-\BOOKMARK [0][-]{chapter.5}{Atomistic Modelling of Light Harvesting Complexes}{}% 47
-\BOOKMARK [1][-]{section.5.1}{LHII}{chapter.5}% 48
-\BOOKMARK [2][-]{subsection.5.1.1}{Spectral Density Method}{section.5.1}% 49
-\BOOKMARK [2][-]{subsection.5.1.2}{Molecular Dynamics Method}{section.5.1}% 50
-\BOOKMARK [1][-]{section.5.2}{Approximating Spectral Densities}{chapter.5}% 51
-\BOOKMARK [2][-]{subsection.5.2.1}{Hessians}{section.5.2}% 52
-\BOOKMARK [2][-]{subsection.5.2.2}{Huang Rhys Factors}{section.5.2}% 53
-\BOOKMARK [2][-]{subsection.5.2.3}{Chlorophyll distances}{section.5.2}% 54
-\BOOKMARK [1][-]{section.5.3}{Environmental Effects}{chapter.5}% 55
-\BOOKMARK [2][-]{subsection.5.3.1}{Screening}{section.5.3}% 56
-\BOOKMARK [2][-]{subsection.5.3.2}{Embedding}{section.5.3}% 57
-\BOOKMARK [1][-]{section.5.4}{Sites, states and couplings}{chapter.5}% 58
-\BOOKMARK [2][-]{subsection.5.4.1}{Sites}{section.5.4}% 59
-\BOOKMARK [2][-]{subsection.5.4.2}{Exciton states}{section.5.4}% 60
-\BOOKMARK [2][-]{subsection.5.4.3}{Coupling}{section.5.4}% 61
-\BOOKMARK [1][-]{section.5.5}{Excitation Energies}{chapter.5}% 62
-\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 63
-\BOOKMARK [1][-]{section.6.1}{Transition Property Approximations}{chapter.6}% 64
-\BOOKMARK [1][-]{section.6.2}{Further Investigations into LHII}{chapter.6}% 65
-\BOOKMARK [1][-]{section.6.3}{Coherence}{chapter.6}% 66
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 67
-\BOOKMARK [1][-]{section.A.1}{Electronic Structure Codes}{appendix.A}% 68
-\BOOKMARK [1][-]{section.A.2}{Computational Hardware}{appendix.A}% 69
-\BOOKMARK [0][-]{appendix*.7}{Bibliography}{}% 70
+\BOOKMARK [1][-]{section.2.3}{Conclusions}{chapter.2}% 22
+\BOOKMARK [0][-]{chapter.3}{Chlorophyll specific methods}{}% 23
+\BOOKMARK [1][-]{section.3.1}{The Cassida equation}{chapter.3}% 24
+\BOOKMARK [2][-]{subsection.3.1.1}{Approximations to Solutions}{section.3.1}% 25
+\BOOKMARK [2][-]{subsection.3.1.2}{MNOK Integrals}{section.3.1}% 26
+\BOOKMARK [1][-]{section.3.2}{Parameterization}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.2.1}{Reference Data}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.2}{Objective Function}{section.3.2}% 29
+\BOOKMARK [2][-]{subsection.3.2.3}{Minimization Algorithms}{section.3.2}% 30
+\BOOKMARK [1][-]{section.3.3}{Benchmarking}{chapter.3}% 31
+\BOOKMARK [2][-]{subsection.3.3.1}{Transition properties}{section.3.3}% 32
+\BOOKMARK [2][-]{subsection.3.3.2}{Potential Energy Surfaces}{section.3.3}% 33
+\BOOKMARK [2][-]{subsection.3.3.3}{Absorption Spectra}{section.3.3}% 34
+\BOOKMARK [0][-]{chapter.4}{Exciton Method}{}% 35
+\BOOKMARK [1][-]{section.4.1}{Theory}{chapter.4}% 36
+\BOOKMARK [2][-]{subsection.4.1.1}{Exciton States}{section.4.1}% 37
+\BOOKMARK [2][-]{subsection.4.1.2}{Embedding}{section.4.1}% 38
+\BOOKMARK [1][-]{section.4.2}{Truncated Chlorophylls}{chapter.4}% 39
+\BOOKMARK [2][-]{subsection.4.2.1}{Rotation}{section.4.2}% 40
+\BOOKMARK [2][-]{subsection.4.2.2}{Distance}{section.4.2}% 41
+\BOOKMARK [1][-]{section.4.3}{LHII Pairs}{chapter.4}% 42
+\BOOKMARK [2][-]{subsection.4.3.1}{Assignment of States}{section.4.3}% 43
+\BOOKMARK [2][-]{subsection.4.3.2}{Comparison}{section.4.3}% 44
+\BOOKMARK [0][-]{chapter.5}{Atomistic Modelling of Light Harvesting Complexes}{}% 45
+\BOOKMARK [1][-]{section.5.1}{LHII}{chapter.5}% 46
+\BOOKMARK [2][-]{subsection.5.1.1}{Spectral Density Method}{section.5.1}% 47
+\BOOKMARK [2][-]{subsection.5.1.2}{Molecular Dynamics Method}{section.5.1}% 48
+\BOOKMARK [1][-]{section.5.2}{Approximating Spectral Densities}{chapter.5}% 49
+\BOOKMARK [2][-]{subsection.5.2.1}{Hessians}{section.5.2}% 50
+\BOOKMARK [2][-]{subsection.5.2.2}{Huang Rhys Factors}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.3}{Chlorophyll distances}{section.5.2}% 52
+\BOOKMARK [1][-]{section.5.3}{Environmental Effects}{chapter.5}% 53
+\BOOKMARK [2][-]{subsection.5.3.1}{Screening}{section.5.3}% 54
+\BOOKMARK [2][-]{subsection.5.3.2}{Embedding}{section.5.3}% 55
+\BOOKMARK [1][-]{section.5.4}{Sites, states and couplings}{chapter.5}% 56
+\BOOKMARK [2][-]{subsection.5.4.1}{Sites}{section.5.4}% 57
+\BOOKMARK [2][-]{subsection.5.4.2}{Exciton states}{section.5.4}% 58
+\BOOKMARK [2][-]{subsection.5.4.3}{Coupling}{section.5.4}% 59
+\BOOKMARK [1][-]{section.5.5}{Excitation Energies}{chapter.5}% 60
+\BOOKMARK [0][-]{chapter.6}{Discussion}{}% 61
+\BOOKMARK [1][-]{section.6.1}{Transition Property Approximations}{chapter.6}% 62
+\BOOKMARK [1][-]{section.6.2}{Further Investigations into LHII}{chapter.6}% 63
+\BOOKMARK [1][-]{section.6.3}{Coherence}{chapter.6}% 64
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 65
+\BOOKMARK [1][-]{section.A.1}{Electronic Structure Codes}{appendix.A}% 66
+\BOOKMARK [1][-]{section.A.2}{Computational Hardware}{appendix.A}% 67
+\BOOKMARK [0][-]{appendix*.8}{Bibliography}{}% 68

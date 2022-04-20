@@ -3,46 +3,47 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: siam.bst
 Database file #1: /Users/of15641/Documents/library.bib
+Warning--to sort, need author or key in libmsym
 Warning--empty journal in Marenich2012
-You've used 14 entries,
+You've used 26 entries,
             2030 wiz_defined-function locations,
-            605 strings with 6758 characters,
-and the built_in function-call counts, 5138 in all, are:
-= -- 520
-> -- 197
+            686 strings with 9192 characters,
+and the built_in function-call counts, 10075 in all, are:
+= -- 1005
+> -- 456
 < -- 0
-+ -- 78
-- -- 64
-* -- 375
-:= -- 763
-add.period$ -- 14
-call.type$ -- 14
-change.case$ -- 74
++ -- 180
+- -- 154
+* -- 746
+:= -- 1491
+add.period$ -- 26
+call.type$ -- 26
+change.case$ -- 155
 chr.to.int$ -- 0
-cite$ -- 15
-duplicate$ -- 256
-empty$ -- 359
-format.name$ -- 64
-if$ -- 1124
+cite$ -- 28
+duplicate$ -- 497
+empty$ -- 656
+format.name$ -- 154
+if$ -- 2204
 int.to.chr$ -- 0
-int.to.str$ -- 14
-missing$ -- 13
-newline$ -- 45
-num.names$ -- 28
-pop$ -- 60
+int.to.str$ -- 26
+missing$ -- 24
+newline$ -- 81
+num.names$ -- 50
+pop$ -- 131
 preamble$ -- 1
-purify$ -- 60
+purify$ -- 129
 quote$ -- 0
-skip$ -- 251
+skip$ -- 499
 stack$ -- 0
-substring$ -- 366
-swap$ -- 132
+substring$ -- 634
+swap$ -- 267
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 56
-warning$ -- 1
-while$ -- 54
-width$ -- 16
-write$ -- 124
-(There was 1 warning)
+type$ -- 104
+warning$ -- 2
+while$ -- 93
+width$ -- 28
+write$ -- 228
+(There were 2 warnings)

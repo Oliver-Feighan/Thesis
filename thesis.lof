@@ -7,18 +7,18 @@
 \contentsline {figure}{\numberline {2.3}{\ignorespaces The absolute value of the error in transition dipole magnitude between $\Delta $-SCF and EOM-CCSD, plotted against the $\Delta $-SCF overlap of the ground and excited state. All systems were translated by 100 \r Ain all cartesian axes. Transition dipole magnitudes calculated without any correction are shown in red, whilst those with the symmetric orthogonalisation correction are shown in black.}}{13}{figure.2.3}%
 \contentsline {figure}{\numberline {2.4}{\ignorespaces The transition energies from $\Delta $-SCF for the 26 chlorophyll geometries, plotted against energies from TD-DFT. The line of best fit ($R^2=0.87$) is shown as the dashed line.}}{15}{figure.2.4}%
 \contentsline {figure}{\numberline {2.5}{\ignorespaces The transition dipole magnitudes from $\Delta $-SCF for the 26 chlorophyll geometries, plotted against dipole magnitudes from TD-DFT. The line of best fit ($R^2= 0.57$) is shown as the dashed line.}}{16}{figure.2.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces The errors of several levels of theory at predicting CC2 transition energies.}}{18}{figure.2.6}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces A breakdown of the symmetry orbitals in STO-3G methane into the subspaces present in the T\textsubscript {d} point group.}}{20}{figure.2.7}%
+\contentsline {figure}{\numberline {2.6}{\ignorespaces A breakdown of the symmetry orbitals in STO-3G methane into the subspaces present in the T\textsubscript {d} point group.}}{19}{figure.2.6}%
+\contentsline {figure}{\numberline {2.7}{\ignorespaces The distributions of errors to CC2 transition energies for the methods included in the $\Delta $-xTB benchmarking.}}{21}{figure.2.7}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces correlations of energies}}{28}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces correlations of transition dipole moments}}{29}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Nelder-mead}}{30}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces SLSQP}}{31}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces optimized parameters from SLSQP procedure.}}{31}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces training scatter}}{32}{figure.3.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces correlations of energies}}{26}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces correlations of transition dipole moments}}{27}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Nelder-mead}}{28}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces SLSQP}}{29}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces optimized parameters from SLSQP procedure.}}{29}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces training scatter}}{30}{figure.3.6}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces caption}}{46}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces caption}}{47}{figure.4.2}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces caption}}{44}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces caption}}{45}{figure.4.2}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

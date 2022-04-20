@@ -1,5 +1,23 @@
 \begin{thebibliography}{10}
 
+\bibitem{libmsym}
+{\em mcodev31/libmsym: molecular point group symmetry lib}.
+
+\bibitem{Adamo1999}
+{\sc C.~Adamo and V.~Barone}, {\em {Towards reliable density functional methods
+  without adjustable parameters: The PBE0 model}}, J. Chem. Phys1, 110 (1999),
+  p.~6158.
+
+\bibitem{Bannwarth2020}
+{\sc C.~Bannwarth, C.~Eike, S.~Ehlert, A.~Hansen, P.~Pracht, J.~Seibert,
+  S.~Spicher, and S.~Grimme}, {\em {Extended tight-binding quantum chemistry
+  methods}}, WIREs Comput. Mol. Sci., 11 (2020), p.~1493.
+
+\bibitem{Besley2009}
+{\sc N.~A. Besley, A.~T.~B. Gilbert, and P.~M.~W. Gill}, {\em
+  {Self-consistent-field calculations of core excited states}}, J. Chem. Phys,
+  130 (2009), p.~124308.
+
 \bibitem{Gaussian16}
 {\sc D.~J. {Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.;
   Robb, M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Petersson, G. A.;
@@ -10,6 +28,11 @@
 \bibitem{Gasteiger1978}
 {\sc J.~Gasteiger and M.~Marsili}, {\em {A new model for calculating atomic
   charges in molecules}}, Tetrahedron Lett., 19 (1978), pp.~3181--3184.
+
+\bibitem{Gavnholt2008}
+{\sc J.~Gavnholt, T.~Olsen, M.~Engelund, and J.~Schi{\o}tz}, {\em
+  self-consistent field method to obtain potential energy surfaces of excited
+  molecules on surfaces}, Phys. Rev. B, 78 (2008), p.~075441.
 
 \bibitem{Gilbert2008}
 {\sc A.~T.~B. Gilbert, N.~A. Besley, and P.~M.~W. Gill}, {\em {Self-Consistent
@@ -39,6 +62,16 @@
   Parametrized for All spd-Block Elements (Z = 1-86)}}, J. Chem. Theory
   Comput., 13 (2017), pp.~1989--2009.
 
+\bibitem{Hattig2000}
+{\sc C.~H{\"{a}}ttig and F.~Weigend}, {\em {CC2 excitation energy calculations
+  on large molecules using the resolution of the identity approximation}}, J.
+  Chem. Phys, 113 (2000), p.~5154.
+
+\bibitem{Hellweg2008}
+{\sc A.~Hellweg, S.~A.~G. Gru¨n, and C.~H. Ha¨ttig}, {\em {Benchmarking the
+  performance of spin-component scaled CC2 in ground and electronically excited
+  states}}, Phys. Chem. Chem. Phys, 10 (2008), pp.~4119--4127.
+
 \bibitem{Hunt1969}
 {\sc s.~W.~J. Hunt and W.~A. Goddard}, {\em {Excited States of H2O using
   improved virtual orbitals}}, Chem. Phys. Lett., 3 (1969), pp.~414--418.
@@ -48,6 +81,17 @@
   Semiempirical Treatment of Molecular Structures. II. Molecular Terms and
   Application to Diatomic Molecules}}, J. Am. Chem. Soc., 86 (1964),
   pp.~4550--4557.
+
+\bibitem{Kowalczyk2011}
+{\sc T.~Kowalczyk, S.~R. Yost, and T.~{Van Voorhis}}, {\em {Assessment of the
+  D-SCF density functional theory approach for electronic excitations in
+  organic dyes}}, J. Chem. Phys., 134 (2011), p.~164101.
+
+\bibitem{Liu2004}
+{\sc T.~Liu, W.-G. Han, F.~Himo, .~G.~M. Ullmann, D.~Bashford, A.~Toutchkine,
+  K.~M. Hahn, and L.~Noodleman}, {\em {Density Functional Vertical
+  Self-Consistent Reaction Field Theory for Solvatochromism Studies of
+  Solvent-Sensitive Dyes}}, J. Phys. Chem. A, 108 (2004), pp.~3545--3555.
 
 \bibitem{Lowdin1955}
 {\sc P.~O. L{\"{o}}wdin}, {\em {Quantum theory of many-particle systems. I.
@@ -73,5 +117,21 @@
 \bibitem{Roothaan1951}
 {\sc C.~C.~J. Roothaan}, {\em {New Developments in Molecular Orbital Theory}},
   Rev. Mod. Phys., 23 (1951), p.~69.
+
+\bibitem{Schafer1992}
+{\sc A.~Sch{\"{a}}fer, H.~Horn, and R.~Ahlrichs}, {\em {Fully optimized
+  contracted Gaussian basis sets for atoms Li to Kr}}, J. Chem. Phys, 97
+  (1992), p.~2571.
+
+\bibitem{Stross2016}
+{\sc C.~Stross, M.~W. {Van Der Kamp}, T.~A. Oliver, J.~N. Harvey, N.~Linden,
+  and F.~R. Manby}, {\em {How static disorder mimics decoherence in anisotropy
+  pump-probe experiments on purple-bacteria light harvesting complexes}}, J.
+  Phys. Chem. B, 120 (2016), pp.~11449--11463.
+
+\bibitem{Worster2021}
+{\sc S.~B. Worster, O.~Feighan, and F.~R. Manby}, {\em {Reliable transition
+  properties from excited-state mean-field calculations}}, J. Chem. Phys, 154
+  (2021), p.~124106.
 
 \end{thebibliography}
