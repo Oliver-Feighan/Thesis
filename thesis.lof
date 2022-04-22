@@ -10,15 +10,15 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces A breakdown of the symmetry orbitals in STO-3G methane into the subspaces present in the T\textsubscript {d} point group.}}{19}{figure.2.6}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces The distributions of errors to CC2 transition energies for the methods included in the $\Delta $-xTB benchmarking.}}{21}{figure.2.7}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces correlations of energies}}{26}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces correlations of transition dipole moments}}{27}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Nelder-mead}}{28}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces SLSQP}}{29}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces optimized parameters from SLSQP procedure.}}{29}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces training scatter}}{30}{figure.3.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces correlations of energies}}{31}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces correlations of transition dipole moments}}{32}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Nelder-mead}}{36}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces SLSQP}}{37}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces optimized parameters from SLSQP procedure.}}{37}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces training scatter}}{38}{figure.3.6}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces caption}}{44}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces caption}}{45}{figure.4.2}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces caption}}{52}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces caption}}{53}{figure.4.2}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
