@@ -344,25 +344,37 @@ expanding the training data down was another factor in choosing this functional.
 The design of the objective function, the function that is minimised in the optimisation
 procedure, is also important to find the best parameters.
 
-At first, it would be argued that the mean error to the PBE0 transition energy
-would be the value that should be minimised, giving the objective function as
+At first, it would be argued that the root mean squared error (RMSE) to the PBE0 
+transition energy should be the value that should be minimised, giving the objective
+function as
 
 \begin{equation}
-f\left(\mathbf{x}\right) = \frac{1}{N} \sum^N_i \left\| \Delta E_i  - \Delta E_{i, PBE0} \right\|
+f_{\text{RMSE}}\left(\mathbf{x}\right) = \sqrt{ \frac{1}{N} \sum^N_i \left( \Delta E_i  - \Delta E_{i, PBE0}\right)^2}
 \end{equation}
 
-however this has two issues. First is that other transition properties are just 
-not optimised to, so the transition dipoles would be expected to have a large amount
-of error. This is a simple problem that will can be fixed by including a metric
-for the error in transition dipoles.
-The larger issue proved to be making better targets for the transition energies.
-By just looking at the mean absolute error, the correlation of chl-xTB transition 
-energies to PBE0 energies is missed, which is an important criterion to achieve 
-in order to get optimisation to the geometry variations in the BChla structures.
-It is possible to achieve a small RMSE whilst having no correlation to the training
-set data.
+however this has two issues. First is that other transition properties are not 
+included in the optimisation, so the transition dipoles would be expected to have 
+a large error. This can be fixed by including a metric for the error in transition dipoles.
+The other issue is that a low RMSE does not guarantee a high correlation. A measure
+of the correlation can be given by the coefficient of determination:
 
+\begin{equation}
+R^2 = 1 - \frac{\sum^N_i \left(\hat{y}_i - y_i \right)^2}{\sum^N_i \left(\hat{y}_i - \bar{y}\right)^2}
+\end{equation}
 
+The correlation is a better metric for determining if chl-xTB has a small enough random
+error to have predict variations of transition properties from different geometries.
+A low RMSE and high coefficient of determination ($R^2$) are not mutually inclusive.
+
+The full objective function used was:
+
+\begin{equation}
+f_{\text{full}} \left( \mathbf{x} \right) = \lambda_1 \text{RMSE} \left(\Delta E \right)+ \lambda_2 \text{RMSE}\left( \left| \mu \right| \right) + \lambda_3 R^2 \left( \Delta E \right)
+\end{equation}
+
+where $\lambda_n$ are weights necessary to keep all of the terms to a similar range.
+This provides stability to the optimisation procedure, such that no one term dominates
+the solution space.
 
 \subsection{Minimisation Algorithms}
 \label{subsec:algorithms}
@@ -489,7 +501,7 @@ value of $\mathbf{x}_0$, a search direction $d^k$ and step length $\alpha_k$ are
 used to propagate the set of parameters by:
 
 \begin{equation}
-\mathbf{x}_{k+1} = \mathbf{x}_k + \alpha_k d_k
+\mathbf{x}_{k+1} = \mathbf{x}_k + \alpha_k \mathbf{d}_k
 \end{equation}
 
 . The search direction, analogous to the ratio of function value to gradient in 
@@ -521,7 +533,7 @@ of $\mathbf{B}$:
 \mathbf{L}_k \mathbf{D}_k \left(\mathbf{L}_k\right)^T = \mathbf{B}_k
 \end{equation}
 
-. With the solutions for $d_k$ solved by these subproblems, the parameter vector
+. With the solutions for $\mathbf{d}_k$ solved by these subproblems, the parameter vector
 $\mathbf{x}$ can be propagated until similar termination criteria as the Nelder-Mead
 method.
 
@@ -534,17 +546,38 @@ investigate further. The values out from the SLSQP optimisation are physically
 reasonable, and within the range of similar parameters in the xTB methods.
 
 \begin{figure}
-    \includegraphics{nelder-mead.png}
+    \includegraphics[scale=0.6]{nelder-mead.png}
     \caption{Nelder-mead}
+    \label{fig:nelder_mead}
 \end{figure}
 
 \begin{figure}
-    \includegraphics{SLSQP.png}
+    \includegraphics[scale=0.6]{SLSQP.png}
     \caption{SLSQP}
+    \label{fig:slsqp}
 \end{figure}
 
+\afterpartskip
 
-\begin{figure}
+\subsection{Results}
+\label{subsec:chl_opt_results}
+
+The final parameters for the chl-xTB method are given in table \ref{table:chl_params}.
+The best performing set of parameters had an RMSE of excitation energy of, RMSE
+of transition dipole magnitude of , and a $R^2$ value of . Repeated optimisation runs
+gave parameter and objective function minima to similar values, and the difference in
+these values can be attributed to the complex solution space.
+
+It was also found that lower minima of the objective function were found when using
+the SLSQP method for optimisation instead of the default Nelder-Mead method. It 
+was also found that minima were found in a smaller number of iterations, reducing
+the overall CPU time required. This is in line with benchmarked SLSQP solutions 
+in a non-linear multidimensional space.
+It was also investigated whether a reduction in the amount of parameters was possible,
+by only training the response parameters and not the Hamiltonian parameters, however 
+this did not achieve the same levels of accuracy as using both sets of parameters.
+
+\begin{table}
     \centering
     \begin{tabular}{l | r}
         \hline
@@ -554,25 +587,59 @@ reasonable, and within the range of similar parameters in the xTB methods.
         \hline
     \end{tabular}
     \caption{optimized parameters from SLSQP procedure.}
-    \centering
-\end{figure}
-
-\section{Benchmarking}
+    \label{table:chl_params}
+\end{table}
+    
+\section{Benchmarking and Cross-validation}
 \label{sec:chl_benchmarking}
 
 \subsection{Transition properties}
 \label{subsec:transition_properties}
 
+The predicted values for \Qy transition energies are shown against other methods
+in figure \ref{fig:training_scatter}. It can be seen that the chl-xTB energies are
+well within the range of other DFT functionals, and on a similar level of accuracy
+and correlation, which is a huge improvement over the lower level methods.
+
 \begin{figure}
     \includegraphics{../../Year_2/chlorophyll_parameterization/training_scatter.png}
-    \caption{training scatter}
+    \caption{fig:training scatter}
 \end{figure}
 
 \subsection{Potential Energy Surfaces}
 \label{subsec:pot_energy_surfaces}
 
+Whilst the stochastic selection of BChla geometries should represent a large section 
+of the conformational space in LHII, it is not explicitly given that chl-xTB would
+perform equally well all conformations. The errors in transition properties between
+PBE0, benchmarked against other DFT methods, and chl-xTB was then calculated for
+geometries along multiple normal modes.
+
+The geometries for this test were not taken to be BChla for two reasons. There are
+140 of atoms in BChla, which means the number of normal modes is 414, and with
+anywhere between 10-20 coordinates along each normal mode, this represents a large
+number of calculations to do with expensive functionals and basis sets. Additionally,
+the normal modes would need to be calculated from an optimised geometry. The phytol
+tail in BChla (and chlorophyll in general) make geometry optimisations difficult
+due to the large degrees of freedom in rotations along the carbon chain. Therefore
+the normal modes and transition properties were calculated for a truncated BChla, 
+with a hydrogen atom replacing the phytol tail, instead of a full BChla molecule.
+
+To further reduce the number of calculations needed, only normal modes where strong
+coupling to the \Qy transition were taken. It's known that only certain symmetry 
+breaking normal modes will couple to the \Qy transition. These can be proxied
+by looking at the difference in $N_A$, $N_C$ displacements as the normal mode
+is scanned. A plot of these values, as well as the moving average, is shown in figure
+\ref{qy_scan}. It is interesting to note that the peaks in the moving average line
+closely approximates the peaks in the BChla absorption spectrum.
+
+The modes with highest displacement were then chosen for scans, and the results
+are shown in the set of figures.
+
+
 \begin{figure}
     \includegraphics{../../Year_2/BChla_Qy/Scan_of_Modes.png}
+    \label{fig:qy_scan}
 \end{figure}
 
 \begin{figure}
