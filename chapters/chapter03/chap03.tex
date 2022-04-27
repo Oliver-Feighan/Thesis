@@ -182,6 +182,13 @@ amount of computational cost as well as accurately predicting transition propert
 for small molecules and larger systems.
 
 \subsection{\Qy Transition}
+\begin{figure}
+    \centering
+    \includegraphics{chapters/chapter03/chlorophyll_Qy.png}
+    \caption{Bacterial Chlorophyll a (BChla) with a model \Qy transition dipole.}
+    \label{fig:bchla_qy}
+\end{figure}
+
 The \Qy transition is the one of the two transitions that make up
 the $Q$ band in the absorption spectra of chlorophyll, the other being the $Q_x$
 transition. It is well known that the \Qy transition is important for electronic 
@@ -322,11 +329,11 @@ Transition properties were calculated with a range of methods, covering levels o
 theory that would be comparable to the chl-xTB formalism. These included an eigenvalue
 difference approach, \dscf, and three levels of TD-DFT. 
 
-The actual training data used was the PBE0 data. This was chosen for the best
-accuracy-cost ratio, as well as having been previously used to investigate exciton
-properties for the same system. Additionally, from the outset it was unknown how
-much training data would be necessary, and so keeping potential future costs of 
-expanding the training data down was another factor in choosing this functional.
+Training the chl-xTB parameters was done against the PBE0 data. This data was chosen
+for the best accuracy-cost ratio, as well as having been previously used to investigate
+exciton properties for the LHII system. Additionally, from the outset it was unknown
+how much training data would be necessary, and so keeping potential future costs
+of expanding the training data down was another factor in choosing this functional.
 
 \begin{figure}
     \includegraphics{../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png}
@@ -337,7 +344,6 @@ expanding the training data down was another factor in choosing this functional.
     \includegraphics{../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png}
     \caption{correlations of transition dipole moments}
 \end{figure}
-
 
 \subsection{Objective Function}
 \label{subsec:obj_func}
@@ -369,7 +375,7 @@ A low RMSE and high coefficient of determination ($R^2$) are not mutually inclus
 The full objective function used was:
 
 \begin{equation}
-f_{\text{full}} \left( \mathbf{x} \right) = \lambda_1 \text{RMSE} \left(\Delta E \right)+ \lambda_2 \text{RMSE}\left( \left| \mu \right| \right) + \lambda_3 R^2 \left( \Delta E \right)
+f_{\text{full}} \left( \mathbf{x} \right) = \lambda_1 \text{RMSE} \left(\Delta E \right)+ \lambda_2 \text{RMSE}\left( \left| \mu \right| \right) + \lambda_3 \left(1 - R^2 \left( \Delta E \right)\right) + \lambda_4 \left( 1 - R^2 \left( \left| \mu \right| \right)\right)
 \end{equation}
 
 where $\lambda_n$ are weights necessary to keep all of the terms to a similar range.
@@ -388,7 +394,7 @@ the algorithm for which is described below.
 
 \subsubsection{Nelder-Mead}
 \label{nelder_mead}
-The Nelder-Mead method, as implemented in SciPy, is a modified version of a simplex
+The Nelder-Mead method, as implemented in \code{SciPy}, is a modified version of a simplex
 algorithm, that uses a $n$-dimensional shape to define a test region, and iteratively
 searches the $n$-dimension space by reflecting the vertices of the test region. 
 The test region, or more specifically the shape described by its vertices, is the
@@ -569,27 +575,48 @@ gave parameter and objective function minima to similar values, and the differen
 these values can be attributed to the complex solution space.
 
 It was also found that lower minima of the objective function were found when using
-the SLSQP method for optimisation instead of the default Nelder-Mead method. It 
-was also found that minima were found in a smaller number of iterations, reducing
-the overall CPU time required. This is in line with benchmarked SLSQP solutions 
-in a non-linear multidimensional space.
+the SLSQP method for optimisation instead of the default Nelder-Mead method. Minima
+were found in a smaller number of iterations, reducing the overall CPU time required.
+This is in line with benchmarked SLSQP solutions in a non-linear multidimensional space.
 It was also investigated whether a reduction in the amount of parameters was possible,
 by only training the response parameters and not the Hamiltonian parameters, however 
 this did not achieve the same levels of accuracy as using both sets of parameters.
 
+The optimised values do not differ much from the original GFN1-xTB and sTDA-xTB
+parameters (given for reference in table \ref{table:chl_params}), with the exception
+of the $a_x$ parameter. This parameter is far lower than the sTDA-xTB equivalent,
+which has a value of 0.5, noted to be similar to other range-based functional mixing.
+
 \begin{table}
     \centering
-    \begin{tabular}{l | r}
-        \hline
-        $y_K$ & 1.0 \\
-        $y_J$ & 1.0 \\
-        $a_x$ & 1.0 \\
-        \hline
+    \begin{tabular}{|| l r ||}
+    \hline
+    Hamiltonian & \\
+    $k_\text{s}$ & 1.462 \\
+    $k_\text{p}$ & 2.694 \\
+
+    $\text{Mg}_\text{p}$ & 0.902 \\
+    $\text{Mg}_\text{s}$ & 1.053 \\
+    $\text{N}_\text{p}$ & 1.044 \\
+    $\text{N}_\text{s}$ & 1.281 \\
+
+    $\text{Mg}_\text{s}$-$\text{N}_\text{s}$ & 1.468 \\
+    $\text{Mg}_\text{s}$-$\text{N}_\text{p}$ & 1.023 \\
+    $\text{Mg}_\text{p}$-$\text{N}_\text{s}$ & 1.067 \\
+    $\text{Mg}_\text{p}$-$\text{N}_\text{p}$ & 1.402 \\
+
+    \hline\hline
+    Response & \\
+    $y_K$ & 2.147 \\
+    $y_J$ & 4.012 \\
+    $a_x$ & 0.067 \\
+    $D_{\text{scale}}$ & 0.636\\
+    \hline
     \end{tabular}
     \caption{optimized parameters from SLSQP procedure.}
     \label{table:chl_params}
 \end{table}
-    
+
 \section{Benchmarking and Cross-validation}
 \label{sec:chl_benchmarking}
 
@@ -602,7 +629,7 @@ well within the range of other DFT functionals, and on a similar level of accura
 and correlation, which is a huge improvement over the lower level methods.
 
 \begin{figure}
-    \includegraphics{../../Year_2/chlorophyll_parameterization/training_scatter.png}
+    \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/training_scatter.png}
     \caption{fig:training scatter}
 \end{figure}
 
@@ -616,8 +643,8 @@ PBE0, benchmarked against other DFT methods, and chl-xTB was then calculated for
 geometries along multiple normal modes.
 
 The geometries for this test were not taken to be BChla for two reasons. There are
-140 of atoms in BChla, which means the number of normal modes is 414, and with
-anywhere between 10-20 coordinates along each normal mode, this represents a large
+140 of atoms in BChla, giving the number of normal modes is 414, and with
+anywhere between 10-20 coordinates along each normal mode this represents a large
 number of calculations to do with expensive functionals and basis sets. Additionally,
 the normal modes would need to be calculated from an optimised geometry. The phytol
 tail in BChla (and chlorophyll in general) make geometry optimisations difficult
@@ -631,11 +658,10 @@ breaking normal modes will couple to the \Qy transition. These can be proxied
 by looking at the difference in $N_A$, $N_C$ displacements as the normal mode
 is scanned. A plot of these values, as well as the moving average, is shown in figure
 \ref{qy_scan}. It is interesting to note that the peaks in the moving average line
-closely approximates the peaks in the BChla absorption spectrum.
+closely approximate the peaks in the BChla absorption spectrum.
 
 The modes with highest displacement were then chosen for scans, and the results
 are shown in the set of figures.
-
 
 \begin{figure}
     \includegraphics{../../Year_2/BChla_Qy/Scan_of_Modes.png}
@@ -679,4 +705,32 @@ are shown in the set of figures.
 \subsection{Absorption Spectra}
 \label{subsec:absorption_spectra}
 
+An absorption spectrum for BChla was also calculated with chl-xTB.
+In order to account for inhomogeneous broadening, the chlorophyll structures were
+taken from an MD simulation of BChla in an explicit ether solvent.
+
+The MD was performed with the \code{OpenMM} toolkit. The chlorophyll structure was
+taken from the previously used LHII protein MD, and was packed with diethyl ether.
+The forcefield parameters were taken from , using a PME method for the non-bonded
+method with a 1 nm cutoff. Equilibriation and production steps were done with a
+Langevin integrator, set to 300 K and a timestep of 0.5 femtoseconds. The system
+energy was minimised before running a 10ps equilibriation. Frames were then taken
+from a 2ns simulation time, with structures taken every picosecond. 
+
+Transition properties for chlorophyll structures from every frame were calculated.
+These were calculated using the same methods as included in the reference data.
+
+Absorption spectra, both with and without a single-parameter shift of excitation
+energy, can be seen in ref. 
+
+\subsubsection{Particle Mesh Ewald}
+\label{subsubsec:PME}
+The effect of including embedding effects was also investigated. As the ground
+state calculation can include a QM-MM polarisation term in the Fock matrix, non-periodic 
+embedding would have been fairly trivial to include. A periodic embedding term could
+also be included using an Ewald potential, which uses the relation
+
+\begin{equation}
+\frac{1}{r} = 
+\end{equation}
 
