@@ -4,46 +4,48 @@ The top-level auxiliary file: thesis.aux
 The style file: siam.bst
 Database file #1: /Users/of15641/Documents/library.bib
 Warning--to sort, need author or key in libmsym
+Warning--empty institution in Grimme
+Warning--empty year in Grimme
 Warning--empty journal in Marenich2012
-You've used 26 entries,
+You've used 28 entries,
             2030 wiz_defined-function locations,
-            686 strings with 9192 characters,
-and the built_in function-call counts, 10075 in all, are:
-= -- 1005
-> -- 456
+            697 strings with 9533 characters,
+and the built_in function-call counts, 10697 in all, are:
+= -- 1067
+> -- 480
 < -- 0
-+ -- 180
-- -- 154
-* -- 746
-:= -- 1491
-add.period$ -- 26
-call.type$ -- 26
-change.case$ -- 155
++ -- 190
+- -- 162
+* -- 797
+:= -- 1585
+add.period$ -- 28
+call.type$ -- 28
+change.case$ -- 167
 chr.to.int$ -- 0
-cite$ -- 28
-duplicate$ -- 497
-empty$ -- 656
-format.name$ -- 154
-if$ -- 2204
+cite$ -- 32
+duplicate$ -- 525
+empty$ -- 701
+format.name$ -- 162
+if$ -- 2334
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 24
-newline$ -- 81
-num.names$ -- 50
-pop$ -- 131
+int.to.str$ -- 28
+missing$ -- 25
+newline$ -- 87
+num.names$ -- 53
+pop$ -- 142
 preamble$ -- 1
-purify$ -- 129
+purify$ -- 138
 quote$ -- 0
-skip$ -- 499
+skip$ -- 522
 stack$ -- 0
-substring$ -- 634
-swap$ -- 267
+substring$ -- 676
+swap$ -- 278
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 104
-warning$ -- 2
-while$ -- 93
-width$ -- 28
-write$ -- 228
-(There were 2 warnings)
+type$ -- 112
+warning$ -- 4
+while$ -- 99
+width$ -- 30
+write$ -- 244
+(There were 4 warnings)

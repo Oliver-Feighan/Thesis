@@ -50,10 +50,16 @@
   for the electronic excitation spectra of very large molecules}}, J. Chem.
   Phys, 138 (2013), p.~244104.
 
+\bibitem{Grimme}
+{\sc S.~Grimme and C.~Bannwarth}, {\em {Supporting information for: Ultra-fast
+  computation of electronic spectra for large systems by tight-binding based
+  simplified Tamm-Dancoff approximation (sTDA-xTB)}}, tech. rep.
+
 \bibitem{Grimme2016}
-{\sc S.~Grimme and C.~Bannwarth}, {\em {Ultra-fast computation of electronic
-  spectra for large systems by tight-binding based simplified Tamm-Dancoff
-  approximation (sTDA-xTB)}}, J. Chem. Phys., 145 (2016), p.~54103.
+\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em {Ultra-fast
+  computation of electronic spectra for large systems by tight-binding based
+  simplified Tamm-Dancoff approximation (sTDA-xTB)}}, J. Chem. Phys., 145
+  (2016), p.~54103.
 
 \bibitem{Grimme2017}
 {\sc S.~Grimme, C.~Bannwarth, and P.~Shushkov}, {\em {A Robust and Accurate
@@ -133,5 +139,10 @@
 {\sc S.~B. Worster, O.~Feighan, and F.~R. Manby}, {\em {Reliable transition
   properties from excited-state mean-field calculations}}, J. Chem. Phys, 154
   (2021), p.~124106.
+
+\bibitem{Ziegler1977}
+{\sc T.~Ziegler, A.~Rank, and E.~J. Baerends}, {\em {On the Calculation of
+  Multiplet Energies by the Hartree-Fock-Slater Method}}, Acta, 43 (1977),
+  pp.~261--271.
 
 \end{thebibliography}
