@@ -204,6 +204,16 @@ Plots of the electron density of the HOMO, LUMO and transition density show how
 this transition is delocalised over large sections of the porphyrin ring, with 
 approximate $C_2$ symmetry along the molecular axes.
 
+\begin{figure}
+    %\includegraphics[scale=0.1]{../../Year_2/chlorophyll_parameterization/cube_files/HOMO.png}
+    \caption{caption}
+    \label{fig:HOMO}
+\end{figure}
+
+\begin{figure}
+%    \includegraphics{../../Year_2/chlorophyll_parameterization/cube_files/LUMO.png}
+\end{figure}
+
 It has recently also been shown that the high correlation between the eigenvalue
 difference of HOMO-LUMO orbitals and full TD-DFT excitation energies implies that
 the HOMO-1 - LUMO+1 transition can be excluded from the transition character. This
@@ -320,30 +330,127 @@ matrix.
 \subsection{Reference Data}
 \label{subsec:ref_data}
 The geometries for the training set used to optimise the chl-xTB method were taken
-from previously done classical MD of the LHII protein. These geometries were chosen
-as the stochastic variations of the BChla molecules would represent a range of
-configurations, which would train chl-xTB to accurately predict variations of 
-transition properties on vibrational modes.
+from previously done molecular dynamics of the LHII protein \cite{Stross2016}. 
+The geometries of LHII were chosen from uncorrelated snapshots, although each of
+the 27 chlorophylls from each snapshot were included in the training data to account
+for the differences in binding pockets. The stochastic collection of LHII snapshots
+were chosen to cover a range of chlorophyll conformations to reduce the amount of
+artificial bias towards any particular geometries or sequence.
 
 Transition properties were calculated with a range of methods, covering levels of
 theory that would be comparable to the chl-xTB formalism. These included an eigenvalue
-difference approach, \dscf, and three levels of TD-DFT. 
+difference approach, \dscf, and three levels of TD-DFT. This was done so that the
+performance of any parameterisation results could be benchmarked to an expected
+accuracy.
 
 Training the chl-xTB parameters was done against the PBE0 data. This data was chosen
 for the best accuracy-cost ratio, as well as having been previously used to investigate
-exciton properties for the LHII system. Additionally, from the outset it was unknown
-how much training data would be necessary, and so keeping potential future costs
-of expanding the training data down was another factor in choosing this functional.
+exciton properties for the LHII system \cite{Stross2016}. Additionally, from the
+outset it was unknown how much training data would be necessary, and so keeping 
+potential future costs of expanding the training data down was another factor in 
+choosing this functional.
 
-\begin{figure}
-    \includegraphics{../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsEnergiesCorrelations.png}
-    \caption{correlations of energies}
-\end{figure}
+The errors and correlations of the reference data are shown in table. The methods
+included in the benchmarking are \dscf, TD-DFT and eigenvalue difference all using
+the PBE0 functional and Def2-SVP basis set. Also included are CAM-B3LYP and BLYP
+functionals with Def2-SVP basis sets, as a higher and lower level reference respectively.
+The basis set was not changed as it has been found that the basis set has little
+importance on the accuracy \cite{Stross2016}.
 
-\begin{figure}
-    \includegraphics{../../Year_2/chlorophyll_parameterization/tddft_data/ResponseMethodsTDMSCorrelations.png}
-    \caption{correlations of transition dipole moments}
-\end{figure}
+\afterpartskip
+\begin{table}
+    \centering
+    \begin{tabular}{|| c | c | c | c | c | c ||}
+                        & PBE0 & CAM-B3LYP & BLYP & \dscf & $\Delta \epsilon$ \\
+    \hline
+    PBE0                & - & 0.15 & 0.06 & 0.22 & 0.22 \\
+    CAM-B3LYP           & 0.15 & - & 0.21 & 0.08 & 0.36 \\
+    BLYP                & 0.06 & 0.21 & - & 0.28 & 0.16 \\
+    \dscf               & 0.22 & 0.08 & 0.28 & - & 0.44 \\
+    $\Delta \epsilon$   & 0.22 & 0.36 & 0.16 & 0.44 & - \\
+    \end{tabular}
+    \label{table:rmse_e}
+    \caption{caption}
+\end{table}
+
+\begin{table}
+    \centering
+    \begin{tabular}{|| c | c | c | c | c | c ||}
+                       & PBE0 & CAM-B3LYP & BLYP & \dscf & $\Delta \epsilon$ \\    
+    \hline
+    PBE0               & - & 0.90 & 0.84 & 0.84 & 0.83 \\ 
+    CAMB3LYP           & 0.90 & - & 0.66 & 0.72 & 0.83 \\ 
+    BLYP               & 0.84 & 0.66 & - & 0.67 & 0.57 \\ 
+    \dscf              & 0.84 & 0.72 & 0.67 & - & 0.67 \\ 
+    $\Delta \epsilon$  & 0.83 & 0.83 & 0.57 & 0.67 & - \\ 
+    \end{tabular}
+    \label{table:r2_e}
+    \caption{caption}
+\end{table}
+
+\begin{table}
+    \centering
+    \begin{tabular}{|| c | c | c | c | c | c ||}
+                        & PBE0 & CAM-B3LYP & BLYP & \dscf & $\Delta \epsilon$ \\
+    \hline
+    PBE0                & - & 0.26 & 0.45 & 1.54 & 1.59 \\ 
+    CAM-B3LYP           & 0.26 & - & 0.69 & 1.28 & 1.34 \\ 
+    BLYP                & 0.45 & 0.69 & - & 1.95 & 2.01 \\ 
+    \dscf               & 1.54 & 1.28 & 1.95 & - & 0.06 \\ 
+    $\Delta \epsilon$   & 1.59 & 1.34 & 2.01 & 0.06 & - \\ 
+    \end{tabular}
+    \label{table:rmse_tdm}
+    \caption{caption}
+\end{table}
+
+\begin{table}
+    \centering
+    \begin{tabular}{|| c | c | c | c | c | c ||}
+                        & PBE0 & CAM-B3LYP & BLYP & \dscf & $\Delta \epsilon$ \\
+    \hline
+    PBE0                & - & 0.55 & 0.09 & 0.33 & 0.30 \\
+    CAM-B3LYP           & 0.55 & - & 0.09 & 0.63 & 0.57 \\
+    BLYP                & 0.09 & 0.09 & - & 0.03 & 0.06 \\
+    \dscf               & 0.33 & 0.63 & 0.03 & - & 0.95 \\
+    $\Delta \epsilon$   & 0.30 & 0.57 & 0.06 & 0.95 & - \\
+    \end{tabular}
+    \label{table:r2_tdm}
+    \caption{caption}
+\end{table}
+
+There is a large variation in correlation and RMSE values between the reference 
+methods. This variation sets a reasonable expectation of how well a new method
+might perform.
+The PBE0 and CAM-B3LYP excitation energies have RMSE of 0.15 eV and an $R^2$ value
+of 0.9. The geometry variations have a very similar effect on transition properties
+calculated on these two properties. 
+The lower level BLYP functional has a smaller RMSE of 0.06 eV, but is not as correlated 
+with an $R^2$ value of 0.84. This highlights how RMSE is not always a full picture
+of how well two methods agree. However this correlation is still relatively good,
+compared to the $R^2$ value of 0.84. Hence we should expect a well trained method
+to be on this level of accuracy. 
+The \dscf and eigenvalue difference methods, whilst still well correlated, have
+much higher RMSE values, both around 0.22 eV. Having established in the last chapter
+the suitability of the \dscf method, this then gives one lower bound on the accuracy,
+with the CAM-B3LYP and BLYP being an upper bound.
+
+The agreement of transition dipole magnitudes is much lower than excitation energies.
+The RMSE of \dscf and eigenvalue difference methods is significantly higher (1.54
+a.u. and 1.59 a.u. respectively) than CAM-B3LYP (0.26 a.u.). The average magnitude
+of PBE0 transition dipoles is 2.751 a.u., with the average for \dscf and eigenvalue
+difference being 4.287 a.u. and 4.342 a.u. respectively. CAM-B3LYP has a more reasonable
+RMSE of 0.26 a.u., with the average value being similar to PBE0. It is harder to 
+state what a reasonable accuracy for transition dipole magnitudes could be.
+Additionally, there is also little correlation between methods. CAM-B3LYP and PBE0
+has a correlation of 0.55, which is surprisingly low for two comparatively similar
+and high level methods. The best agreement is between \dscf and eigenvalue difference,
+which might be due to the similarity between the ground and excited states from 
+these two methods.
+
+Overall, whilst it might be expected for transition energies to agree with an accuracy 
+between 0.15 eV and 0.22 eV, the transition dipoles may have vary more. It is hard
+to say whether this variation is due to inaccurately describing the transition density
+of chlorophyll geometries, as none of the reference methods are especially correlated.
 
 \subsection{Objective Function}
 \label{subsec:obj_func}
@@ -569,10 +676,14 @@ reasonable, and within the range of similar parameters in the xTB methods.
 \label{subsec:chl_opt_results}
 
 The final parameters for the chl-xTB method are given in table \ref{table:chl_params}.
-The best performing set of parameters had an RMSE of excitation energy of, RMSE
-of transition dipole magnitude of , and a $R^2$ value of . Repeated optimisation runs
-gave parameter and objective function minima to similar values, and the difference in
-these values can be attributed to the complex solution space.
+The best performing set of parameters had an RMSE of excitation energy of 0.014 eV 
+with an $R^2$ value of 0.88, and an RMSE of transition dipole magnitude of 0.057 a.u. 
+with an $R^2$ value of 0.40. Repeated optimisation runs gave parameter and objective
+function minima to similar values, and the difference in these values can be attributed
+to the complex solution space. The values for RMSE are well within the values for
+TD-DFT with various functionals, as and the $R^2$ of transition energy is equally
+good. While the correlation is low, it is similar to the correlation of other methods
+and so it is expected to be at around this value.
 
 It was also found that lower minima of the objective function were found when using
 the SLSQP method for optimisation instead of the default Nelder-Mead method. Minima
@@ -654,17 +765,29 @@ with a hydrogen atom replacing the phytol tail, instead of a full BChla molecule
 
 To further reduce the number of calculations needed, only normal modes where strong
 coupling to the \Qy transition were taken. It's known that only certain symmetry 
-breaking normal modes will couple to the \Qy transition. These can be proxied
-by looking at the difference in $N_A$, $N_C$ displacements as the normal mode
-is scanned. A plot of these values, as well as the moving average, is shown in figure
-\ref{qy_scan}. It is interesting to note that the peaks in the moving average line
-closely approximate the peaks in the BChla absorption spectrum.
+breaking normal modes will couple to the \Qy transition.
+In an ideal model, the magnesium and nitrogen centre have $D_{4h}$ symmetry with
+the \Qy transition lying along one of the axis. Vibrational modes with components
+along this axis will therefore couple to the transition. The movement of $N_A$, $N_C$
+atoms which induce $D_{4h}$-$D_{2h}$ and $D_{4h}$-$C_{s}$ symmetry breaking are 
+shown in plots, and have frequencies calculated by an GFN1-xTB at. This is inline 
+with other calculated frequencies.
+
+\begin{figure}
+    \includegraphics[]{chapters/chapter03/D4h_symmetry.png}
+\end{figure}
+
+Other normal modes that would also have this symmetry breaking component were indentified
+by the amount of $N_A$-$N_C$ displacement for each normal mode. A plot of these
+values, as well as the moving average, is shown in figure \ref{qy_scan}.
+It is interesting to note that the peaks in the moving average line approximate
+the peaks in the BChla absorption spectrum.
 
 The modes with highest displacement were then chosen for scans, and the results
 are shown in the set of figures.
 
 \begin{figure}
-    \includegraphics{../../Year_2/BChla_Qy/Scan_of_Modes.png}
+    \includegraphics[angle=90, origin=c]{../../Year_2/BChla_Qy/Scan_of_Modes.png}
     \label{fig:qy_scan}
 \end{figure}
 
@@ -705,32 +828,68 @@ are shown in the set of figures.
 \subsection{Absorption Spectra}
 \label{subsec:absorption_spectra}
 
-An absorption spectrum for BChla was also calculated with chl-xTB.
-In order to account for inhomogeneous broadening, the chlorophyll structures were
-taken from an MD simulation of BChla in an explicit ether solvent.
+An absorption spectrum for BChla was also calculated with chl-xTB. In order to
+account for inhomogeneous broadening, the chlorophyll structures were taken from
+an MD simulation of BChla in an explicit ether solvent.
 
-The MD was performed with the \code{OpenMM} toolkit. The chlorophyll structure was
-taken from the previously used LHII protein MD, and was packed with diethyl ether.
-The forcefield parameters were taken from , using a PME method for the non-bonded
-method with a 1 nm cutoff. Equilibriation and production steps were done with a
-Langevin integrator, set to 300 K and a timestep of 0.5 femtoseconds. The system
-energy was minimised before running a 10ps equilibriation. Frames were then taken
-from a 2ns simulation time, with structures taken every picosecond. 
+The MD was performed with the \code{OpenMM} toolkit. Forcefield parameters for the
+chlorophyll were taken from a bespoke parameterisation for photosystem II \cite{Zhang2012},
+with the rest of the system using the OpenForceField. The structure for chlorophyll 
+was taken from the same source as the bespoke forcefield, and packed with explicit
+solvent using the tools in the \code{Mistral} package. Equilibriation and production
+steps were done with a Langevin integrator set to 300 K  and a timestep of 0.5
+femtoseconds. The system energy was minimised before running a 10ps equilibriation.
+Frames were then taken from a 2ns simulation time, with structures taken every picosecond.
 
 Transition properties for chlorophyll structures from every frame were calculated.
-These were calculated using the same methods as included in the reference data.
+This was done with the chl-xTB method, as well as PBE0 and CAM-B3LYP, both using 
+the Def2-SVP basis set. Experimental data for the absorption spectra was also found
+from.
+
+The effect of including embedding effects was also investigated. As implemeneted
+in the \code{QCORE} package, the ground state xTB calculation could include
+include a QM-MM polarisation term in the Fock matrix, for both periodic and non-
+periodic embeddeding. However the size of the solvated chlorophyll system required 
+a more efficient implementation of the real-space Ewald summation, as well as implementing
+a particle mesh Ewald method, which was done by using the \code{HelPME} library.
 
 Absorption spectra, both with and without a single-parameter shift of excitation
-energy, can be seen in ref. 
+energies, can be seen in ref. 
 
-\subsubsection{Particle Mesh Ewald}
-\label{subsubsec:PME}
-The effect of including embedding effects was also investigated. As the ground
-state calculation can include a QM-MM polarisation term in the Fock matrix, non-periodic 
-embedding would have been fairly trivial to include. A periodic embedding term could
-also be included using an Ewald potential, which uses the relation
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6, angle=90, origin=c]{../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png}
+    \caption{Chlorophyll in diethyl ether.}
+    \label{fig:chl_diethyl_ether}
+\end{figure}
 
-\begin{equation}
-\frac{1}{r} = 
-\end{equation}
+chl-xTB performs equally well as TD-DFT methods at simulating absorption
+spectra, although constrained by the quality of the training data.
+It can be seen that the chl-xTB lineshape is similar in position and witdh to the
+PBE0 method. Although both lineshapes are much wider than the experimental spectrum,
+the CAM-B3LYP line also fails to capture this broadening effectively, and so the
+accuracy of the broadening from chl-xTB is within reasonable bounds.
+The more complex shape of the experimental spectrum, with shoulders at 610 nm,
+580 nm and 530 nm are not captured by either chl-xTB. This can be explained by PBE0
+also not having these shoulders in the \Qy transition, and so the cause of this
+behaviour might not be included in the training data. The CAM-B3LYP does show a
+little of these shoulders with an additional peak, however it does not capture 
+all of the shape.
+The embedded chl-xTB spectra is both red-shifted and broadened slightly, which is
+in line with changes in simulated spectra from other methods.
+
+Overall, chl-xTB performs as well as can be expected from the traning data. From
+this it could be expected that better training data would yield better accuracy
+from chl-xTB. This was taken into consideration when investigating this method,
+for example using CAM-B3LYP as training data instead of PBE0. This approach would
+have two drawbacks. First would be that PBE0 has already been established for investigating
+LHII properties, and so a clearer comparison of results for the exciton system would
+be possible. Second is that a feature of this method is the reduced amount of 
+computational cost required. If the amount of CAM-B3LYP data that may have been 
+necessary to obtain increased too much then it would no longer be efficient to 
+parameterise compared to using a different, lower level method. For other systems
+smaller than chlorophyll, this might not be the case.
+
+\section{Conclusions}
+
 

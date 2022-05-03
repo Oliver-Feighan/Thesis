@@ -7,45 +7,45 @@ Warning--to sort, need author or key in libmsym
 Warning--empty institution in Grimme
 Warning--empty year in Grimme
 Warning--empty journal in Marenich2012
-You've used 28 entries,
+You've used 29 entries,
             2030 wiz_defined-function locations,
-            697 strings with 9533 characters,
-and the built_in function-call counts, 10697 in all, are:
-= -- 1067
-> -- 480
+            704 strings with 9708 characters,
+and the built_in function-call counts, 11197 in all, are:
+= -- 1119
+> -- 503
 < -- 0
-+ -- 190
-- -- 162
-* -- 797
-:= -- 1585
-add.period$ -- 28
-call.type$ -- 28
-change.case$ -- 167
++ -- 199
+- -- 170
+* -- 837
+:= -- 1657
+add.period$ -- 29
+call.type$ -- 29
+change.case$ -- 174
 chr.to.int$ -- 0
-cite$ -- 32
-duplicate$ -- 525
-empty$ -- 701
-format.name$ -- 162
-if$ -- 2334
+cite$ -- 33
+duplicate$ -- 546
+empty$ -- 733
+format.name$ -- 170
+if$ -- 2443
 int.to.chr$ -- 0
-int.to.str$ -- 28
-missing$ -- 25
-newline$ -- 87
-num.names$ -- 53
-pop$ -- 142
+int.to.str$ -- 29
+missing$ -- 26
+newline$ -- 90
+num.names$ -- 55
+pop$ -- 147
 preamble$ -- 1
-purify$ -- 138
+purify$ -- 144
 quote$ -- 0
-skip$ -- 522
+skip$ -- 544
 stack$ -- 0
-substring$ -- 676
-swap$ -- 278
+substring$ -- 721
+swap$ -- 290
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 112
+type$ -- 116
 warning$ -- 4
-while$ -- 99
-width$ -- 30
-write$ -- 244
+while$ -- 104
+width$ -- 31
+write$ -- 253
 (There were 4 warnings)
