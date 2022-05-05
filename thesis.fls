@@ -1573,6 +1573,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.lof
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncsy.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
@@ -1608,6 +1610,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fouriernc/fncsy.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mex.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fouriernc/fncmi.tfm
@@ -1635,8 +1639,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm7.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
@@ -1702,13 +1704,21 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.t
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chlorophyll_Qy.png
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chlorophyll_Qy.png
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chlorophyll_Qy.png
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chlorophyll_Qy.png
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chlorophyll_Qy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncmii.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncmii.vf

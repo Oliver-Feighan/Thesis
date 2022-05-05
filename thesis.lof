@@ -10,15 +10,17 @@
 \contentsline {figure}{\numberline {2.6}{\ignorespaces A breakdown of the symmetry orbitals in STO-3G methane into the subspaces present in the T\textsubscript {d} point group.}}{20}{figure.2.6}%
 \contentsline {figure}{\numberline {2.7}{\ignorespaces The distributions of errors compared to SCS-CC2 transition energies for the methods included in the $\Delta $-xTB benchmarking.}}{22}{figure.2.7}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Bacterial Chlorophyll a (BChla) with a model $Q_y$transition dipole.}}{30}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces caption}}{31}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Nelder-mead}}{41}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces SLSQP}}{42}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces fig:training scatter}}{44}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Chlorophyll in diethyl ether.}}{59}{figure.3.6}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Bacterial Chlorophyll a (BChla) with a model $Q_y$transition dipole.}}{32}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces The HOMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}}{33}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces The LUMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}}{34}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Positions of the Nelder-Mead simplex vertices for the HimmelBlau function.}}{42}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Positions of iterative solution vector $\mathbf {x}$ from SLSQP for the HimmelBlau funcion.}}{43}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces fig:training scatter}}{47}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Normal modes of the nitrogen-magnesium centre of chlorophyll that have $D_{4h}$-$D_{2h}$ (left) and $D_{4h}$-$C_{s}$ (right) symmetry breaking components.}}{48}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Chlorophyll in diethyl ether.}}{62}{figure.3.8}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces caption}}{62}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces caption}}{63}{figure.4.2}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces caption}}{66}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces caption}}{67}{figure.4.2}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
