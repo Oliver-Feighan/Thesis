@@ -87,6 +87,11 @@
 {\sc s.~W.~J. Hunt and W.~A. Goddard}, {\em {Excited States of H2O using
   improved virtual orbitals}}, Chem. Phys. Lett., 3 (1969), pp.~414--418.
 
+\bibitem{Kim2020}
+{\sc J.~Kim, J.~Jeon, T.~{Hyun Yoon}, and M.~Cho}, {\em {Two-dimensional
+  electronic spectroscopy of bacteriochlorophyll a with synchronized dual
+  mode-locked lasers}}, Nat. Commun., 11 (2020), p.~6029.
+
 \bibitem{Klopman1964}
 {\sc G.~Klopman, V.~86, J.~Linevsky, K.~S. Seshadri, and D.~White}, {\em {A
   Semiempirical Treatment of Molecular Structures. II. Molecular Terms and
@@ -133,6 +138,11 @@
 {\sc A.~Sch{\"{a}}fer, H.~Horn, and R.~Ahlrichs}, {\em {Fully optimized
   contracted Gaussian basis sets for atoms Li to Kr}}, J. Chem. Phys, 97
   (1992), p.~2571.
+
+\bibitem{Strain1963}
+{\sc H.~Strain, M.~Thomas, and J.~Katz}, {\em {Spectral Absorption Properties
+  of Ordinary and Fully Deuteriated Chlorophylls a and b}}, Biochem. Biophys.
+  Acta., 75 (1963), pp.~306--311.
 
 \bibitem{Stross2016}
 {\sc C.~Stross, M.~W. {Van Der Kamp}, T.~A. Oliver, J.~N. Harvey, N.~Linden,
