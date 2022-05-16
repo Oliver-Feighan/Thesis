@@ -4,10 +4,14 @@
 % Description: Excitons
 %
 \let\textcircled=\pgftextcircled
-\chapter{Exciton Method}
+\chapter{Beyond Monomer Chlorophyll}
 \label{chap:excitons}
 
-\initial {P}reamble
+\initial {T}his chapter investigates the applicability of chl-xTB for aggregate 
+chlorophyll systems, beyond the monomers reported in the previous chapter. It is
+the properties of aggregate chlorophyll that make light harvesting systems so efficient.
+It is necessary to show that chl-xTB can be used to construct viable models for
+these systems.
 
 %=======
 \section{Theory}
@@ -15,22 +19,157 @@
 
 \subsection{Exciton States}
 \label{subsec:exciton_states}
+As stated in the introduction, a large majority of models of light harvesting systems
+utilises a Frenkel Hamiltonian model of excitonic states, where the weak coupling
+between monomers mean that a description can be constructed from properties of the 
+individual sites.
+
+To recap the exciton theory from the introduction, the exciton states $\ket{\Psi}$ can
+be constructed as a Hartree product of the states of individual sites (also refered
+to as monomers or chromophores)
+
+\begin{equation}
+    \ket{\Psi} = \Pi_m \ket{\phi_m}
+\end{equation}
+%
+where $\ket{\phi_m}$ is the monomer state on sites $m$. These monomer states form
+the basis function of the overall excitonic states. As the exciton is modelled to
+be localised to a specific site, an exciton state with an exciton at site $i$ is
+given by
+
+\begin{equation}
+    \ket{\Psi}^i = \ket{\phi_i}^\ast \Pi_{m \neq i}  \ket{\phi_m}
+\end{equation}
+%
+where $\ket{\phi_i}^\ast$ is the excited state of monomer site $i$. States with 
+more than one exciton are possible in this framework, however this is not necessary
+for light harvesting systems as stated in the introduction. The Hamiltonian, including
+the "ground state" where there are no excitons in the system, is given in by
+
+\begin{equation}
+    H = 
+    \begin{bmatrix}
+        E_0 & V_{0, \left(1, 1\right)} & \cdots & V_{0, \left(N, 1\right)} \\
+        V_{0, \left(1, 1\right)} & E_{\left(1,1\right)} & \cdots & V_{\left(1,1\right) \left(N, 1\right)} \\
+        \vdots & \vdots & \ddots & \vdots \\
+        V_{0, \left(N, 1\right)} & V_{\left(1,1\right) \left(N, 1\right)} & \cdots & E_{\left(N, 1\right)}
+    \end{bmatrix}
+\end{equation}
+%
+where $N$ is equal to the total number of individual sites. The diagonal terms $E$
+is the sum of the site energies and a point charge interaction
+
+\begin{equation}
+    E_0 = \sum_m e_m + \sum_{m \neq n, A \in m, B \in n} \frac{q^A_m q^B_n}{r_{AB}}
+\end{equation}
+%
+where $e_m$ is the energy of site $m$ and $q^A_m$ is the charge centered on atom
+$A$ in site $m$. Hamiltonian elements corresponding to a single excitation are similarly
+given except with the excited state energy and charges
+
+\begin{equation}
+    E_{\left(m,1\right)} = e_m + \delta e_m + \sum_{n \neq m} e_n + \sum_{n, A \in m, B \in n} \frac{q^{\ast A}_m q^B_n}{r_{AB}} + \sum_{n,p \neq m, A \in n, B \in p} \frac{q^{A}_n q^B_p}{r_{AB}}
+\end{equation}
+%
+where $\delta e_m$ is the excitation energy of site $m$, and charges marked $q^\ast$
+are the excited state charges. The inter-site second term has been replaced here
+to explicitly show that there is both the interaction of excited state point charges
+with all other sites, as well as the ground-state ground-state interactions for 
+all other non-excited chromophores.
+
+The off diagonal elements are the coupling elements between all exciton states.
+For coupling to the ground state, these are given by
+
+\begin{equation}
+    V_{0, \left(m,1\right)} = \sum_{n, A \in m, B \in n} \frac{q^{\text{tr},A}_m q^B_n}{r_{AB}}
+\end{equation}
+%
+where charges marked $q^{\text{tr}}$ are transition charges. It can be seen that 
+this coupling element includes an electrostatic interaction between all sites and
+the excited site. This is different to coupling elements between two single exciton
+states, given as
+
+\begin{equation}
+    V_{\left(m, 1\right), \left(n,1\right)} = \sum_{A \in m, B \in n} \frac{q^{\text{tr},A}_m q^{\text{tr}B}_n}{r_{AB}}
+\end{equation}
+%
+which just involve sites $m$, $n$ which have local excitations.
+
+This Hamiltonian for exciton states is slightly different those reported in the 
+literature, as the ground state where no excitons are present is not usually included.
+However, if the local excitations are sufficiently different in energy and the coupling
+between ground and excited states is weak, then the eigensolution corresponding 
+to the ground state would have mostly ground state character. The other excited
+state eigensolutions would have very little ground state character, and so the block
+matrix of just excited state contributions can be taken which would return the Hamiltonian
+used in many other studies. Calculating the ground state however is necessary if
+all the states for the exciton system are required, which is the case for the
+spectral density investigation of the next chapter.
 
 \subsection{Embedding}
 \label{subsec:embedding}
 
+
+
 \section{Truncated Chlorophylls}
 \label{sec:trunc_chl}
 
+A series of chlorophyll dimers were used to calculate benchmarks for an exciton
+model based on chl-xTB calculations. The exciton predictions were compared to TD-DFT
+calculations on the full dimer system. In order to get usable scaling with the DFT
+methods, a truncated version of chlorophyll with the phytol tail removed was used.
+In the large separation limit the TD-DFT and chl-xTB results should match, with
+more discrepancy appearing as the chromophores are closer together and the differences
+between Frenkel exciton coupling and a full DFT treatment are more apparent.
+
+For each dimer, TD-DFT data was calculated for the two monomers separately as well
+as for the full dimer system. The monomer data was then used to construct the Frenkel
+Hamiltonian as described earlier.
+The benchmarked data was first calculated with PBE0/Def2-SVP, however it was found 
+that an exciton model constructed from monomer data did not well match it's full 
+dimer counterpart. This is attributed to the lack of range-separation in the
+functional.
+As a replacement, the CAM-B3LYP functional was used instead. The exciton model matched
+the full dimer calculation well.
+
 \subsection{Rotation}
 \label{subsec:rotation}
+
+The first benchmark was constructed from a scan of transition energies over the
+angle between two parallel chlorophyll molecules. This axis and orientation was
+chosen as it would maximise the change in exciton coupling as angle varies. Additionally,
+pairs of chlorophyll are nearly parallel in LHII, however they are not direcly overlaid
+as they are in this set.
+
+Dimer geometries were taken from 5 degree increments of the angle of rotation up 
+to a full 360 degree rotation. The plot of the two excited state energies for both
+CAM-B3LYP dimer and chl-xTB exciton methods are shown in fig., where they have been
+aligned to their average values to remove the systematic shift.
+
 
 \begin{figure}
     \includegraphics{../../Year_2/DimerModel/Scans/rotating_dimer.png}
     \caption{caption}
 \end{figure}
 
+It can be seen that the chl-xTB exciton model can reproduce high level TD-DFT dimer
+data with an excellent level of accuracy. The energies for both excited states agree
+across the entire range of angles, and much of the detailed variation in the CAM-B3LYP
+data is also found in the chl-xTB data.. The two areas where the agreement is worse
+is at 180 degrees and 270 degrees, where the coupling is strong and weak respectively.
+This is attributed to the proximity of functional groups that are found at the
+corners of the porphyrin ring, which are closest at these angles. As these groups
+get closer together, the difference between the TD-DFT and chl-xTB treatment would
+be expected to cause transition energies to grow more distinct. However it can be
+seen that even with these effects the difference is small. Additionally, the angle
+of chlorophyll pairs in LHII (for B850 a,b pairs) only varies around 0 by a few 
+degrees, so these effects would not be so present.
+
 \subsection{Distance}
+
+The same scan was made on dimer pairs of with different separations. The same 
+agreement was found in each case.
+
 \label{subsec:distance}
 \begin{figure}
     \includegraphics{../../Year_2/DimerModel/Scans/angle_and_distance.png}
@@ -40,8 +179,30 @@
 \section{LHII Pairs}
 \label{sec:LHII_excitons}
 
+A number of full dimer properties were also calculated for chlorophyll pairs taken
+from LHII. The chlorophyll geometries for these pairs also included the phytol tail
+for a more complete test.
+Similar to the coordinate scan tests above, both full dimer TD-DFT and exciton model
+transition energies were calculated.
+
 \subsection{Assignment of States}
 \label{subsec:state_assign}
+
+A more detailed view of each exciton state was needed to properly assign the two
+excited states from the full TD-DFT and exciton models. It was found that for some
+dimer pairs, some models would predict different energy ordering. More explicitly, 
+for the A-B dimer system, one model might predict a lower energy for a state with
+the exciton localised on monomer A, whereas another might predict the other state
+with the exciton on B. It should be noted that the CAM-B3LYP exciton model and full
+dimer data were always consistent, and it was only when comparing to PBE0 or chl-xTB
+was this effect apparent.
+
+It was therefore necessary to find the location of the excitons in both dimer and
+exciton models. For the TD-DFT dimer result, the exciton location was taken as the
+molecule where the transition charge distribution centered around. This centre was
+calculated by the absolute charge weighted average of the atomic position. For the
+Frenkel exciton result, the location was taken as the monomer which had the most
+amount of character in the eigenvector solution.
 
 \subsection{Comparison}
 \label{subsec:comparison}
@@ -52,3 +213,24 @@
 \begin{figure}
     \includegraphics{../../Year_2/DimerModel/histogram_of_errors.png}
 \end{figure}
+
+There are a few conclusions to unpack from the comparison of Frenel exciton models
+against full TD-DFT data. First from the CAM-B3LYP based exciton, it can be seen
+that the exciton model and the full TD-DFT model agree well. There is a systematic
+cluster of points that are seen to follow the $y=x$ line. These are dimers at large
+separations where both the TD-DFT and exciton model predict no coupling and so
+the individual site transition energies are recovered, which are the same for both
+dimer and monomer calculations. At closer separations, the difference from using
+the Frenkel model can be observed. Overall, the difference is small compared to 
+the total range of transition energies.
+The PBE0 exciton model has a large varience in transition energies. As the CAM-B3LYP
+data shows that the exciton framework provides accurate predictions of full dimer
+properties, this variance is attributed to the differences between the PBE0 and 
+CAM-B3LYP functionals rather than full dimer vs. exciton models. Whilst these variances
+are large, it is still within the range of errors from in monomer transition energies
+reported in the previous chapter.
+Therefore the variance in the chl-xTB exciton results to CAM-B3LYP data is more
+due to training to the PBE0 functional rather than any inherent unsuitability to
+the exciton framework.
+
+\section{Conclusions}
