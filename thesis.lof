@@ -2,30 +2,32 @@
 \par \nobreak \textbf {{\scshape Figure} \hfill Page}\par \nobreak 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Transition energies $\Delta E$ from TD-DFT (black) and $\Delta $-SCF (red) plotted against EOM-CCSD energies, with the line $y=x$ (dashed) for reference. The ethene dimer outlier has been circled.}}{11}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Transition dipole magnitudes from TD-DFT (black) and $\Delta $-SCF (red) plotted against EOM-CCSD transition dipole magnitudes, with the line $y=x$ (dashed) for reference.}}{12}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces The absolute value of the error in transition dipole magnitude between $\Delta $-SCF and EOM-CCSD, plotted against the $\Delta $-SCF overlap of the ground and excited state. All systems were translated by 100 \r A{} in all cartesian axes. Transition dipole magnitudes calculated without any correction are shown in red, whilst those with the symmetric orthogonalisation correction are shown in black.}}{14}{figure.2.3}%
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Transition energies from $\Delta $-SCF for 26 chlorophyll geometries from the LHII protein of purple bacteria, plotted against energies from TD-DFT. The line of best fit ($R^2=0.87$) is shown as the dashed line. Both methods used a PBE0/Def2-SVP level of theory.}}{16}{figure.2.4}%
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Transition dipole magnitudes from $\Delta $-SCF for the same 26 chlorophyll geometries as \ref {fig:chl_energy}, plotted against dipole magnitudes from TD-DFT. The line of best fit ($R^2= 0.57$) is shown as the dashed line. Both methods used a PBE0/Def2-SVP level of theory.}}{17}{figure.2.5}%
-\contentsline {figure}{\numberline {2.6}{\ignorespaces A breakdown of the symmetry orbitals in STO-3G methane into the subspaces present in the T\textsubscript {d} point group.}}{20}{figure.2.6}%
-\contentsline {figure}{\numberline {2.7}{\ignorespaces The distributions of errors compared to SCS-CC2 transition energies for the methods included in the $\Delta $-xTB benchmarking.}}{22}{figure.2.7}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Bacterial Chlorophyll a (BChla) with a model $Q_y$ transition dipole.}}{32}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces The HOMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}}{33}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces The LUMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}}{34}{figure.3.3}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Positions of the Nelder-Mead simplex vertices for the HimmelBlau function.}}{42}{figure.3.4}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Positions of iterative solution vector $\mathbf {x}$ from SLSQP for the HimmelBlau funcion.}}{43}{figure.3.5}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces caption}}{47}{figure.3.6}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces caption}}{48}{figure.3.7}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Normal modes of the nitrogen-magnesium centre of chlorophyll that have $D_{4h}$-$D_{2h}$ (left) and $D_{4h}$-$C_{s}$ (right) symmetry breaking components.}}{50}{figure.3.8}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail.}}{52}{figure.3.9}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail. The small smaller variance than in figure \ref {fig:qy_length_scan} led to this metric to not be used in normal mode choices.}}{53}{figure.3.10}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with different response theories.}}{58}{figure.3.11}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Chlorophyll in diethyl ether.}}{60}{figure.3.12}%
 \addvspace {10pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces caption}}{70}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces caption}}{71}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces caption}}{72}{figure.4.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Transition energies $\Delta E$ from TD-DFT (black) and $\Delta $-SCF (red) plotted against EOM-CCSD energies, with the line $y=x$ (dashed) for reference. The ethene dimer outlier has been circled.}}{15}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Transition dipole magnitudes from TD-DFT (black) and $\Delta $-SCF (red) plotted against EOM-CCSD transition dipole magnitudes, with the line $y=x$ (dashed) for reference.}}{16}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces The absolute value of the error in transition dipole magnitude between $\Delta $-SCF and EOM-CCSD, plotted against the $\Delta $-SCF overlap of the ground and excited state. All systems were translated by 100 \r A{} in all cartesian axes. Transition dipole magnitudes calculated without any correction are shown in red, whilst those with the symmetric orthogonalisation correction are shown in black.}}{18}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Transition energies from $\Delta $-SCF for 26 chlorophyll geometries from the LHII protein of purple bacteria, plotted against energies from TD-DFT. The line of best fit ($R^2=0.87$) is shown as the dashed line. Both methods used a PBE0/Def2-SVP level of theory.}}{20}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Transition dipole magnitudes from $\Delta $-SCF for the same 26 chlorophyll geometries as \ref {fig:chl_energy}, plotted against dipole magnitudes from TD-DFT. The line of best fit ($R^2= 0.57$) is shown as the dashed line. Both methods used a PBE0/Def2-SVP level of theory.}}{21}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces A breakdown of the symmetry orbitals in STO-3G methane into the subspaces present in the T\textsubscript {d} point group.}}{24}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The distributions of errors compared to SCS-CC2 transition energies for the methods included in the $\Delta $-xTB benchmarking.}}{26}{figure.4.7}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Bacterial Chlorophyll a (BChla) with a model $Q_y$ transition dipole.}}{36}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces The HOMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}}{37}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces The LUMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}}{38}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Positions of the Nelder-Mead simplex vertices for the HimmelBlau function.}}{46}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Positions of iterative solution vector $\mathbf {x}$ from SLSQP for the HimmelBlau funcion.}}{47}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces caption}}{51}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces caption}}{52}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Normal modes of the nitrogen-magnesium centre of chlorophyll that have $D_{4h}$-$D_{2h}$ (left) and $D_{4h}$-$C_{s}$ (right) symmetry breaking components.}}{54}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail.}}{56}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail. The small smaller variance than in figure \ref {fig:qy_length_scan} led to this metric to not be used in normal mode choices.}}{57}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with different response theories.}}{62}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Chlorophyll in diethyl ether.}}{64}{figure.5.12}%
+\addvspace {10pt}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces caption}}{74}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces caption}}{75}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces caption}}{76}{figure.6.3}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}

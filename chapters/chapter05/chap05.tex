@@ -4,89 +4,384 @@
 % Description: LHII Spectral Density
 %
 \let\textcircled=\pgftextcircled
-\chapter{Atomistic Modelling of Light Harvesting Complexes}
-\label{chap:LHII}
+\chapter{Light Harvesting Complexes}
+\label{chap:LH2}
 
-\initial {P}reamble
+\initial {T}his chapter reports on the application of the chl-xTB exciton framework
+in calculating the spectral density of the exciton states of LH2. By comparing the
+this spectral density to spectra from other systems, as well as properties such
+as the Huang-Rhys factors for chlorophyll normal modes and chlorophyll separation
+force constants, it is argued that the protein scaffold has little effect on exciton
+states outside of affecting individual chromophore geometries.
 
 %=======
-\section{LHII}
-\label{sec:LHII}
+\section{LH2}
+\label{sec:LH2}
 
-%\begin{figure}
-%    \includegraphics[scale=0.01]{../../Year_3/LH2_MD/LH2_files/vmdscene.png}
-%\end{figure}
+In the introduction it was stated that spectral densities of individual sites can
+be calculated with an explicit electronic treatment for each frame of a time series.
+
+For larger systems, such as the 27-site exciton system in LH2, the increased volume
+of calculation necessary mean that approximations have to be made that averages
+over intra-site properties, reducing the level of deatil. Due to the efficiency
+of the chl-xTB exciton method, it was possible to calculate the transition properties
+for each site for each frame of a time series, and construct and diagonalise the
+Frenkel exciton Hamiltonian.
+
+This chapter tries to answer two questions about environmental frequency coupling
+to the exciton states. The first is whether the is the presence of low frequency
+modes in the spectral density, which would be indicative of a large scale motion
+of the protein scaffold. It can be seen on AFM images of the LH2 protein that there
+are distinct deformations of the circular symmetry, which would indicate a ring-
+breathing mode in the chlorophyll site positions. It is not fully understood whether
+this would have an effect on the exciton states. Second would be by how much is 
+the exciton state spectral density different to that of the sites. This would be
+an indicator of whether the protein structure promotes some special interaction 
+between sites, or if the protein only affects intra-chromophore geometry. Whilst
+these two questions only probe vague details of the protein structure, there are
+other conclusions possible that would be useful for further studies. The amount 
+of intra- verses inter-site difference would inform how much detail is needed for
+future studies on LH2. It would also help in the design of artificial systems, which
+is discussed later.
 
 \subsection{Spectral Density Method}
 \label{subsec:spec_dens}
 
-\subsection{Molecular Dynamics Method}
-\label{subsec:MD}
+The spectral density describes how the oscillations in the surrounding environment 
+can effect a property. Whilst it is not limited to transition energies, it is usually
+used when looking at light harvesting complexes to assign functions to the protein
+structure. 
 
-\section{Approximating Spectral Densities}
-\label{sec:monomer_dimer_assign}
+There are a several definitions of spectral density. This chapter uses the definitions
+laid out by Mallus \emph{et al.}. This describes the spectral density
+as the real part of the Fourier transform of the classical autocorrelation function.
+The autocorrelation here is the deviation of transition energies from the mean correlated
+with itself
 
-\subsection{Hessians}
-\label{subsec:hessians}
+\begin{equation}
+    C\left(t_j\right) = \frac{1}{N-j} \sum^{N-j}_{k=1} \Delta E \left(t_j + t_k\right) \left(t_k\right)
+\end{equation}
+%
+where $j,k$ are indices in the time series, $N$ the total number of frames in the
+time series, and $\Delta E$ the deviation of transition energy to the mean. The
+spectral density is then given by
 
-\subsection{Huang Rhys Factors}
-\label{subsec:hrf}
+\begin{equation}
+    J\left(\omega\right) = \frac{\beta \omega}{\pi} \int^\infty_0 dt C\left(t\right) \cos \left(\omega t\right)
+\end{equation}
+%
+where $\omega$ are the frequencies and $\beta$ is the inverse temperature $\frac{1}{k_B T}$.
 
-\begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/CO_vibration.png}
-\end{figure}
+In practice, the spectral density is usually calculated from a discrete series of 
+a property calculated from the frames of an MD simulation. Hence the autocorrelation
+and Fourier transforms are also discrete. This places a limit on the frequencies 
+that the spectral density can cover, proportional to both the length of the MD
+for the low frequency limit and the interval between frames for the high frequency
+limit. The fastest vibrations would be due to hydrogen atoms with a timescale of 
+about, giving the timestep interval to be about , which is in line with other similar
+studies. The lower frequency limit is an open ended limit, dependent on how many
+frames it is possible to calculate the exciton model for. This is discussed in more
+detail later.
 
-\subsection{Chlorophyll distances}
-\label{subsec:chl_distances}
+\section{Calculating LH2 Excitons}
+\label{sec:MD}
 
-\begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/mg_displacement.png}
-\end{figure}
+The time series of exciton states was calculated from a series of structures of 
+LH2 generated by molecular dynamics. These simulations were done with the OpenMM 
+package. The forcefield and geometry was the same as used by \emph{et al.}. For 
+each simulation, the system was equilibriated for 60 ps. The production workflow 
+length was 300 ps, with frames taken every 2 fs similar to the work done by \emph{et al.}.
+A Langevin integrator set at 300 K was used with a timestep of 2 fs. Non-bonded
+interactions were treated with a PME method.
 
-\begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/mg_correlations.png}
-\end{figure} 
+Exciton states were calculated with the same method as discussed in the previous 
+chapter, extending beyond the dimer system to include all chlorophyll sites. The
+elements in exciton Hamiltonian were calculated using chl-xTB properties. A highly
+parallelised version of the code used to calculated chl-xTB properties was implemented
+in order to achieve good scaling. As machines with 20 cores were readily accessible, 
+it was found that running sites as a serial chl-xTB calculation whilst inside a 
+parent program that setup and collected the chl-xTB results, gave the best performance.
 
-\section{Environmental Effects}
-\subsection{Screening}
+The main bottleneck in calculating these states was the volume of chl-xTB properties
+needed, as it was found construction and diagonlisation of the exciton Hamiltonian
+was negligable. The 300 ps MD generated 150,000 individual frames, requiring 4,050,000
+individual chl-xTB runs. The time for each chl-xTB calculation is $\approx 1$ second,
+so this presented about 46 days of CPU walltime. This was significantly reduced 
+by using the highly parallelised program. Whilst have this level of detail is necessary
+for spectral density investigations, other properties of the LH2 system that can
+be obtained with more statistical methods may still be more efficient use of resources.
+
+The coupling values obtained from the chl-xTB exciton framework match those of previous
+studies well.
+
+\subsection{Screening and Embedding}
 \label{subsec:screening}
 
-\subsection{Embedding}
-\label{subsec:embedding}
+Recent studies that calculate exciton models for light harvesting systems employ
+screening factors as well as point charge interactions to compensate for some of
+the embedding effects of the protein scaffold. These were also tested, but ultimately
+not used for the spectral density in favour of a vacuum model.
+
+Point charge embedding was used in the previous chapter for LH2 dimers, with the
+non-periodic implementation utilising the open source \code{helPME} library. The
+CPU time of performing non-periodic point charge embedding was profiled using the
+LH2 MD frames. It was found that due to implementation problems with re-using splines
+and grid positions, the time for each chl-xTB calculation was increased from $\approx 1$
+second to  $\approx 40$ seconds. Additionally the PME routines required multiple 
+cores in order to get the best possible performanc, which competed with the site 
+parallelisation of serial chl-xTB runs. As improving PME implementations are out
+of the scope of this work (beyond what was already done to achieve the work in the
+last chapter), and as the embedding only marginally changes the \Qy transition,
+this embedding scheme was not applied to the exciton system used in this chapter.
+
+A screening term was also implemented. This followed the same form as that reported
+by \emph{et al.}, where any point-charge interaction has a prefactor screening term
+that is dependent on the distance between point charges. For example for a coupling
+term between two exciton states, a single element in the sum of chromophore-chromophore
+interactions would be given by
+
+\begin{equation}
+    V_{mn} = \frac{f}{4\pi\epsilon_0} \sum_{i,j} \frac{q^T_i q^T_j}{R_{ij}}
+\end{equation}
+
+where the definition of variables are the same for equation . The scaling factor 
+$f$ is given by
+
+\begin{equation}
+    f = A \text{exp}\left(-B R_{ij}\right) + f_0
+\end{equation}
+
+where $A$, $B$ and $f_0$ are constants. 
+
+With this screening factor implemented, it was was found that the spectral density
+was not appreciably different, and the only effect  was to decouple the B800 and
+B850 exciton states. This is best demonstrated in the simulated absorption spectra 
+for LH2 with and without the screening factor, as well as the breakdown of exciton
+states into the density contributions from each site.
+
+\subsubsection{Absorption Spectra}
+\label{subsubsec:abs_spec}
+
+Absorption spectra of LH2 is usually calculated by calculating the intensity of 
+transitions for each exciton state and plotting these against the wavelengths of
+transitions to these states. 
+
+The intensity of transition can be calculated with
+
+. 
+
+The two spectra, with and without screening, with the experimental spectrum of LH2,
+is shown in fig. It can be seen that including the screening factor does produce
+better splitting of the B800 and B850 peaks. The poor fit of the B800 peak to the
+experimental spectrum has been well discussed in the literature, and the best fit
+is achieved by using a more idealised method to calculated exciton transition energies.
+
+\subsubsection{Site Contributions to Exciton Density}
+\label{subsubsec:site_dens}
+
+The decoupling of ring structures is also seen in the density contributions of chlorophyll
+sites to overall exciton states. The eigenvector solutions contain the amount of
+site character in each state, with the square of this being equal to the exciton
+density on a specific site. For example, the second element in each eigenvector 
+is the corresponding amount of character from an excitation on the first chlorophyll
+site (the first element corresponding to the ground state, with no excitation on
+any chlorophylls). The average of density values is shown in fig for both exciton
+states calculated with and without the screening factor, as well as the difference
+between them.
 
 
-\section{Sites, states and couplings}
+The main difference is the change in the amount of density shared between states
+localised on B800 and B850 sites. 
+
+
+
+While this comparison implies that the screening factor should be employed as it
+better reproduces the experimental spectrum, there is little observable evidence
+that it affects the spectral density.
+
+
+Overall, whilst is was possible to include embedding effects into the chl-xTB exciton
+model, exciton states were calculated by only considering the chlorophyll sites.
+This model has been effective in the past, and captures many of the important effects.
+This should also be true for the spectral density as the leading cause of exciton
+state energy variation would be in effect of intra-chlorophyll geometry on the 
+coupling and transition energy.
+
+\section{Spectra}
 \label{sec:sites_states_couplings}
 
 \subsection{Sites}
 \label{subsec:sites}
 
-\begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/specdens_literature_comparison.png}
-\end{figure}
+Similar to other studies, it was possible to produce a spectral density for \Qy 
+transitions at individual sites. This is shown in figure , with the same scale as
+the spectral density by . Similar features such as the peaks at eV are present in
+both. The discrepancy between both can be explained by the different forcefields
+and response methods used. It could then be expected that the features found in
+the spectral density of chl-xTB exciton states to be reasonable as the individual
+sites show the same features as those reported before in the literature.
 
 \begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/specdens_ring_average.png}
+    \centering
+    \includegraphics[scale=0.3]{../../Year_3/SpectralDensity/images/specdens_literature_comparison.png}
+\end{figure}
+
+Expanding the frequency domain and averaging the spectra by the ring type clearly
+shows the effect of the protein scaffold at different sites. The main difference
+is seen between the B800 and B850 rings, at the 0.2 eV region. There is little difference
+between the B850a and B850b spectra.
+
+\begin{figure}
+    \includegraphics[angle=90, origin=c, scale=0.3]{../../Year_3/SpectralDensity/images/specdens_ring_average.png}
 \end{figure}
 
 \subsection{Exciton states}
-\label{subsec:Absorption Probability}
+\label{subsec:states}
+
+The exciton spectral density was calculated on the time series of the exciton transition
+energies. Comparing the exciton spectra to the site spectra, it is clear to see that the major
+features in the exciton spectra correspond with the major features in the site spectra.
+This implies that the inter-site effects of the protein scaffold do not effect the
+exciton states as much as the internal geometry does. Significantly, lower frequency
+features are also not observed, implying that large scales motions of the protein
+are either not present, or do not effect the exciton states.
+
+The variation in the spectra between the different states is considered in the next
+section.
+
+\label{subsubsec:Absorption Probability}
+
+While the exciton state spectra show a significant amount of variation, it is argued
+only a couple of state transitions are actually important to consider. The transition
+probability was calculated for each exciton states at all MD frames. The time series
+of these probabilities is shown in fig. It can be seen that the 2nd and 3rd lowest
+energy exciton states have the highest probability of absorption. 
 
 \begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/abs_prob_by_time.png}
+    \includegraphics[scale=0.1, angle=90, origin=c]{../../Year_3/SpectralDensity/images/abs_prob_by_time.png}
 \end{figure}
 
 \begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/abs_prob_by_energy.png}
+    \includegraphics[scale=0.1]{../../Year_3/SpectralDensity/images/abs_prob_by_energy.png}
 \end{figure}
 
+\section{Assigning Spectral Densities}
+\label{sec:monomer_dimer_assign}
 
-\subsection{Coupling}
-\label{subsec:coupling}
+It was also investigated whether the features in the spectral density of chlorophyll
+and exciton states could be assigned by comparison to other spectral densities and
+normal mode analysis. The LH2 spectral densities were compared to monomer chlorophyll 
+embedded in diethyl ether, Huang-Rhys factors calculated with chl-xTB and a GFN1-xTB
+hessians, as well as an estimation of the force constant in the separation of interchromophore
+distances in the LH2 protein. 
+
+\subsection{Ether system}
+\label{subsec:specdens_ether}
+
+The spectral density for the \Qy transition for a single chlorophyll molecule was
+calculated in a similar fashion to the LH2 sites above. 
+
+Geometries were taken from an MD simulation of a diethyl-ether embedded chlorophyll. 
+The solvent box was made with the \code{packmol} program with a single chlorophyll 
+molecule in a 64 $\AA{}$ box with 1054 diethyl-ether molecules. The simulation was
+run with OpenMM using parameters for chlorophyll taken from the LH2 forceifield,
+and parameters for diethyl ether taken from the General Amber ForceField (GAFF).
+The system was equilibriated for 60 ps, with a production workflow of 300 ps run 
+afterwards. Structures were taken every 2 fs. A Langevin integrator set at 300 K
+was used, with a timestep of 2 fs.
+
+The \Qy transition was calculated for every frame of the MD trajectory. The spectral
+density of these transition energies was calculated with equations . A plot of this 
+can be seen in fig.
+
+It can be seen that the features in the spectral density for diethy-ether embedded
+chlorophyll are similar to the features from the LH2 single chlorophyll and exciton
+states. The immediate implication is that, to a first approximation, the spectral
+density of a single chlorophyll in smaller systems can replace those for larger,
+more complicated systems. The other implications is that most of the effect of 
+the environment on chlorophyll is exhibited though the same normal modes, most likely
+normal modes which were already present in monomer chlorophyll. It is argued that
+no external motions are likely to be any of the major features as they are found
+in two separate 
+
+\subsection{Huang Rhys Factors}
+\label{subsec:hrf}
+
+The coupling of normal modes to electron transition can be calculated with Huang
+-Rhys factors. This was done for a single chlorophyll molecule to attempt to assign
+the spectral density features to individual motions.
+
+The normal modes used to calculate Huang-Rhys factors were calculated using a GFN1-xTB
+hessian calculation of a single chlorophyll molecule. It was found that rotations
+in the phytol tail were too unconstrained for a good optimised geometry to be achieved, 
+and so a truncated chlorophyll with a hydrogen atom replacing the phytol group was
+used again. The optimised geometry was then used to calculate normal modes.
+
+A scan of excitation energies were then made for each normal mode, with the chlorophyll
+atoms being displaced along the vectors derived from the hessian of the optimised
+chlorophyll structure. For a series of coordinates calculated as 
+
+\begin{equation}
+    q_i = \sqrt{\frac{\omega_i}{\hbar}} x^m_i
+\end{equation}
+%
+where $\omega_i$ is the angular frequency of the normal mode $i$ and $x^m_i$ is
+the displacement vector in mass weighted coordinates. The \Qy transition energy 
+was calculated for a series of structures with successive values of $q_i$. Fits 
+of the ground state and excited state energies were made with quadratic functions,
+from which it was possible to make estimates of the $q$ value for a minimum ground
+state energy ($q_{\text{ground}}$) and excited state energy ($q_{\text{excited}}$).
+
+From these it was possible to calculate the Huang-Rhys factors as
+
+\begin{equation}
+    d = \frac{\left(q_{\text{excited}} - q_{\text{excited}}\right)^2}{2}
+\end{equation}
+%
+. These Huang-Rhys factors were then used to construct a spectral density, using
+their absolute value for amplitude and the frequency of the corresponding normal
+mode as position. A plot of this spectra, against the single chlorophyll spectra,
+is shown in fig.
+
+At the low frequency region it is fairly clear that these modes are suppressed in
+LH2 and ether. It could be argued that this is due to the high force constants, 
+and so would not be expected to be observable motions. Without any further investigation,
+it is hard to say for what reasons these normal modes are not present but it is 
+clear that they do not explain any features in the spectral densities.
+
+The high frequency normal modes correspondence to spectral density features is less
+clear. Whilst two peaks in the Huang-Rhys spectrum are similar to the full spectral
+density, these may just be coincidence. It is argued that it is more likely that 
+whole sections of the normal modes are at difference frequencies to those observed
+in the spectral density.
+
+The most probable reason for this discrepancy is that the forcefield and GFN1-xTB
+method are much to different in theory to give the same frequencies for normal modes.
+Without normal modes calculated with the same forcefield as the spectral density
+MD, it would not be possible to assign vibrational motion to the spectral density
+features.
 
 \begin{figure}
-    \includegraphics{../../Year_3/SpectralDensity/images/coupling_matrix.png}
+    \includegraphics[scale=0.6]{../../Year_3/SpectralDensity/images/CO_vibration.png}
 \end{figure}
 
-\section{Excitation Energies}
-\label{sec:excitation_energies}
+\subsubsection{Estimating Force Constants for Low Frequency Modes}
+\label{subsubsec:force_constants}
+
+While there is evidence for the protein scaffold affecting chlorophyll motion and
+subsequent \Qy transition and coupling, there is little evidence for any effects
+outside of intra-chlorophyll range. One explanation is that the crystal structure
+used for LH2 is a low energy structure, and so there would be little potential energy
+in the ring-breathing modes to start any observable motions. Ring-breathing motion
+could be promoted by additional force constants, but this would introduce artificial
+features into the spectral density.
+
+Another explanation is that the barrier to the chlorophyll separation mode is too 
+high. 
+
+\begin{figure}
+    \includegraphics[scale=0.6]{../../Year_3/SpectralDensity/images/coupling_matrix.png}
+\end{figure}
+
+\section{conclusions}
+\label{sec:specdens_concs}
