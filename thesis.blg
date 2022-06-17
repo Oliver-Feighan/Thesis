@@ -8,45 +8,45 @@ Warning--empty journal in Cho2021
 Warning--empty institution in Grimme
 Warning--empty year in Grimme
 Warning--empty journal in Marenich2012
-You've used 32 entries,
+You've used 33 entries,
             2030 wiz_defined-function locations,
-            722 strings with 10280 characters,
-and the built_in function-call counts, 12270 in all, are:
-= -- 1220
-> -- 562
+            729 strings with 10453 characters,
+and the built_in function-call counts, 12611 in all, are:
+= -- 1255
+> -- 575
 < -- 0
-+ -- 222
-- -- 190
-* -- 927
-:= -- 1826
-add.period$ -- 32
-call.type$ -- 32
-change.case$ -- 193
++ -- 227
+- -- 194
+* -- 948
+:= -- 1875
+add.period$ -- 33
+call.type$ -- 33
+change.case$ -- 198
 chr.to.int$ -- 0
-cite$ -- 37
-duplicate$ -- 595
-empty$ -- 799
-format.name$ -- 190
-if$ -- 2666
+cite$ -- 38
+duplicate$ -- 616
+empty$ -- 821
+format.name$ -- 194
+if$ -- 2744
 int.to.chr$ -- 0
-int.to.str$ -- 32
-missing$ -- 29
-newline$ -- 99
-num.names$ -- 61
-pop$ -- 164
+int.to.str$ -- 33
+missing$ -- 30
+newline$ -- 102
+num.names$ -- 63
+pop$ -- 168
 preamble$ -- 1
-purify$ -- 160
+purify$ -- 164
 quote$ -- 0
-skip$ -- 586
+skip$ -- 608
 stack$ -- 0
-substring$ -- 776
-swap$ -- 312
+substring$ -- 791
+swap$ -- 324
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 128
+type$ -- 132
 warning$ -- 5
-while$ -- 114
-width$ -- 34
-write$ -- 278
+while$ -- 117
+width$ -- 35
+write$ -- 287
 (There were 5 warnings)
