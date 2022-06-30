@@ -96,11 +96,13 @@ interactions were treated with a PME method.
 
 Exciton states were calculated with the same method as discussed in the previous 
 chapter, extending beyond the dimer system to include all chlorophyll sites. The
-elements in exciton Hamiltonian were calculated using chl-xTB properties. A highly
-parallelised version of the code used to calculated chl-xTB properties was implemented
-in order to achieve good scaling. As machines with 20 cores were readily accessible, 
-it was found that running sites as a serial chl-xTB calculation whilst inside a 
-parent program that setup and collected the chl-xTB results, gave the best performance.
+elements in exciton Hamiltonian were calculated using chl-xTB properties. It was
+necessary to implement a highly parallelised version of the code to calculate chl-xTB
+properties with good scaling. It was found that using a parent program to partition
+each chlorophyll site to run in serial on a single core had the best performance,
+with the data then being collected back in to calculate the exciton Hamiltonian.
+As the machines available had around 20 cores, the scaling of each exciton run was
+similar to a single chl-xTB calculation.
 
 The main bottleneck in calculating these states was the volume of chl-xTB properties
 needed, as it was found construction and diagonlisation of the exciton Hamiltonian
@@ -113,6 +115,11 @@ be obtained with more statistical methods may still be more efficient use of res
 
 The coupling values obtained from the chl-xTB exciton framework match those of previous
 studies well.
+
+\begin{figure}
+    \centering
+    \includegraphics[]{../../Year_3/SpectralDensity/images/coupling_all.png}
+\end{figure}
 
 \subsection{Screening and Embedding}
 \label{subsec:screening}
@@ -204,6 +211,11 @@ to the experimental spectrum has been well discussed in the literature, and the 
 fit is achieved by using a more idealised method to calculated exciton transition
 energies.
 
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.6]{../../Year_3/SpectralDensity/images/absorption_spectra.png}
+\end{figure}
+
 \subsubsection{Site Contributions to Exciton Density}
 \label{subsubsec:site_dens}
 
@@ -234,6 +246,11 @@ important effects. This should also be true for the spectral density as the lead
 cause of exciton state energy variation would be in effect of intra-chlorophyll 
 geometry on the coupling and transition energy.
 
+\begin{figure}
+    \centering
+    \includegraphics[]{../../Year_3/SpectralDensity/images/screened_density_diff.png}
+\end{figure}
+
 \section{Spectra}
 \label{sec:sites_states_couplings}
 
@@ -250,7 +267,7 @@ individual sites show the same features as those reported before in the literatu
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_3/SpectralDensity/images/specdens_literature_comparison.png}
+    \includegraphics[scale=0.6]{../../Year_3/SpectralDensity/images/specdens_literature_comparison.png}
 \end{figure}
 
 Expanding the frequency domain and averaging the spectra by the ring type clearly
@@ -261,32 +278,34 @@ and B850 lines also indicates different binding site environments, in line with
 other studies.
 
 \begin{figure}
-    \includegraphics[angle=90, origin=c, scale=0.3]{../../Year_3/SpectralDensity/images/specdens_ring_average.png}
+    \centering
+    \includegraphics[angle=90, origin=c]{../../Year_3/SpectralDensity/images/specdens_ring_average.png}
 \end{figure}
 
+\afterpartskip
 \subsection{Exciton states}
 \label{subsec:states}
 
 The exciton spectral density was calculated for the time series of the exciton transition
 energies (calculated as the difference between a state and the exciton ground state)
 of each state bar the ground state. The absorption probability was calculated for
-each exciton states at all MD frames. The time series of these probabilities is 
-shown in fig. It can be seen that the 2nd and 3rd lowest energy exciton states have
-the highest probability of absorption. 
+each exciton states at all MD frames. It can be seen that the 2nd and 3rd lowest 
+energy exciton states have the highest probability of absorption. 
 
 \begin{figure}
-    \includegraphics[scale=0.1, angle=90, origin=c]{../../Year_3/SpectralDensity/images/abs_prob_by_time.png}
+    \centering
+    \includegraphics[scale=0.6]{../../Year_3/SpectralDensity/images/abs_prob_by_energy.png}
 \end{figure}
-
-\begin{figure}
-    \includegraphics[scale=0.1]{../../Year_3/SpectralDensity/images/abs_prob_by_energy.png}
-\end{figure}
-
 
 It was then possible to plot the spectral densities
 of all states, weighted by their average absorption probability. The relative absorption 
 probability for a state was found not to vary much, justifying taking the average
 over a large time span. This plot is shown in fig.
+
+\begin{figure}
+    \centering
+    \includegraphics[angle=90, origin=c]{../../Year_3/SpectralDensity/images/specdens_state_spectra.png}
+\end{figure}
 
 From the change in scale on the y-axis, it is obvious that the environmental effect
 on exicton states is much smaller that for sites. This is explained by the lack
@@ -330,6 +349,41 @@ either these motions are not present in LH2, or are on a timescale that is too l
 for the MD simulation. Reasons for the lack of appearance of these modes is discussed
 later.
 
+\afterpartskip
+\subsection{Coupling}
+\label{subcsec:coupling}
+
+The spectral density of the coupling terms were also calculated with the same method
+as the state and site transition energies. These spectra are collected in figure.
+
+It can be seen that there are far fewer features in the coupling spectral density
+than in the site and state transition spectra. Additionally there is a broad feature
+at the low frequency end of the spectrum. Intuitively, the magnitude of the spectral 
+density decreases as the separation of chloroyphlls increase, with anything but
+nearest neighbours almost being undetectable.
+
+Previous arguments about coupling terms have said that the change in distance is
+the controlling factor. This was investigated by calculating the spectral density
+of the interchromophore distance (reported without units as these aren't physically
+meaningful). It can be seen that while there is some correspondence in the low frequency
+region, it does not correspond to features in the high frequency region. These are
+therefore attributed to intra-chromophore vibrations rather than external motions.
+
+The absence of coupling features in the 0.05 eV to 0.15 eV region also gives credence
+to the argument that intra-chromophore variations and not the coupling values are
+the determining factor in state transition energy variations.
+
+\begin{figure}
+    \centering
+    \includegraphics[angle=90, origin=c]{../../Year_3/SpectralDensity/images/specdens_coupling.png}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[angle=90, origin=c]{../../Year_3/SpectralDensity/images/specdens_distance.png}
+\end{figure}
+
+\afterpartskip
 \section{Assigning Specific Motions}
 \label{sec:monomer_dimer_assign}
 
@@ -372,6 +426,11 @@ states. This implies that the coupling of environment to energy fluctuations is
 due to mostly intrinsic properties of the chlorophyll geometry. With this in mind,
 a more detailed view of the normal modes in chlorophyll might help assignment of
 spectral density features. This is the focus of the next section.
+
+\begin{figure}
+    \centering
+    \includegraphics[angle=90, origin=c]{../../Year_3/SpectralDensity/images/specdens_ether.png}
+\end{figure}
 
 \subsection{Huang Rhys Factors}
 \label{subsec:hrf}
@@ -422,6 +481,16 @@ their absolute value for amplitude and the frequency of the corresponding normal
 mode as position. A plot of this spectra, against the single chlorophyll spectra,
 is shown in fig.
 
+\begin{figure}
+    \centering
+    \includegraphics[angle=90, origin=c]{../../Year_3/SpectralDensity/images/hrf_spectrum.png}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[]{../../Year_3/SpectralDensity/images/all_vibrations.png}
+\end{figure}
+
 At the low frequency region it is fairly clear that these modes are suppressed in
 LH2 and ether. It could be argued that this is due to the high force constants, 
 and so would not be expected to be observable motions. Without further investigation
@@ -438,52 +507,27 @@ this work, it can be clearly seen that with a method of producing hessians from
 forcefield parameters it would be possible to make a more compelling comparison
 of Huang-Rhys factors and the spectral density.
 
-\begin{figure}
-    \includegraphics[scale=0.6]{../../Year_3/SpectralDensity/images/CO_vibration.png}
-\end{figure}
+\subsection{N Axes Deformation}
+\label{subsec:N_axes_deformation}
 
-\subsubsection{Estimating Force Constants for Low Frequency Modes}
-\label{subsubsec:force_constants}
+It was posited that the deformation of the $N_A$-$N_C$ and $N_B$-$N_D$ axis might
+correspond well to the previous spectral densities reported. This is due to the 
+appearance of symmetry breaking modes as peaks in the Huang-Rhys spectra, implying
+that many features in the spectral density might correspond to these motions. Another
+spectral density of the ratio of the lengths of the two nitrogen axes was calculated
+in the same fashion, and is shown in figure.
 
-While there is evidence for the protein scaffold affecting chlorophyll motion and
-subsequent \Qy transition and coupling, there is little evidence for any effects
-outside of intra-chlorophyll range. 
-
-Treating the chlorophyll sites as nodes on a circular spring, it was thought that
-the ring-breathing vibrational modes of this circular spring would cause features
-in the spectral density of the exciton sites. This would be due to the change in
-separation of chlorophyll sites, which would have a large effect on the coupling
-values. The lack of these ring-breathing modes could be due to the setup of the
-experiment, and that with a different study these features might be present. The
-first concern in the setup is that the crystal structure used for LH2 is a low 
-energy structure, and so there would be little potential energy in the ring-breathing
-modes to start any observable motions. To counter-act this, ring-breathing motion
-could be promoted by additional force constants, but this would introduce artificial
-features into the spectral density. Additionally it could be that heating the system
-could induce these motions more organically, however this would also affect the 
-spectral density as the whole thermal environment would be changed.
-
-This first explanation assumes that the ring breathing modes are not accessible 
-from the starting geometry, which may not have been the case. Alternatively, it
-could be that the timescale of these motions is much larger than the resolution
-possible by the length of the MD used here. A rough estimate of this could be made
-by looking at the force-constant of separating two chlorophylls. The force constant
-is proportional to the gradient of the energy surface, which can be constructed
-from the energy of a dimer pair at various separations. This was done, and a quadratic
-fit was used to give estimates of the gradient at specific points. The plot in fig 
-shows the dimer energies and the quadratic fitting.
-
-With this model the force constant was calculated to be around , which gives a oscillation
-period of . This is far beyond what could have been observed in the MD trajectory
-used in this chapter. However there are several issues with this argument. First
-is that it does not include the protein scaffold, which would have a much larger
-effect on interchromophore separation than the potential energy of the chlorophylls.
-Second is that from the positions of chlorophyll separation on the PES in fig, it
-can be seen that the separations in LH2 are well outside of the region where a quadratic
-fit is reasonable.
+It can be seen that some features in the 0.05 eV to 0.15 eV frequency range are 
+common, and the prominent feature of the site/state transition spectra at 0.17 eV
+is also present. The main feature in the N axes deformation however is at the low
+frequency range (although not at a position to explain any coupling spectra features), 
+and this does not appear to have any correspondence to the site and state spectra.
+Many high frequency features are also missing, implying that other vibrations are
+responsible for site/state transition variations.
 
 \begin{figure}
-    \includegraphics[scale=0.6]{../../Year_3/SpectralDensity/images/coupling_matrix.png}
+    \centering
+    \includegraphics[angle=90, origin=c]{../../Year_3/SpectralDensity/images/specdens_N_axes.png}
 \end{figure}
 
 \section{conclusions}

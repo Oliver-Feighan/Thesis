@@ -67,21 +67,34 @@
 \contentsline {subsection}{\numberline {7.1.1}Spectral Density Method}{96}{subsection.7.1.1}%
 \contentsline {section}{\numberline {7.2}Calculating LH2 Excitons}{96}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Screening and Embedding}{97}{subsection.7.2.1}%
-\contentsline {subsubsection}{\numberline {7.2.1.1}Absorption Spectra}{98}{subsubsection.7.2.1.1}%
+\contentsline {subsubsection}{\numberline {7.2.1.1}Absorption Spectra}{99}{subsubsection.7.2.1.1}%
 \contentsline {subsubsection}{\numberline {7.2.1.2}Site Contributions to Exciton Density}{99}{subsubsection.7.2.1.2}%
-\contentsline {section}{\numberline {7.3}Spectra}{99}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Sites}{99}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Exciton states}{100}{subsection.7.3.2}%
-\contentsline {section}{\numberline {7.4}Assigning Specific Motions}{103}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Ether system}{103}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Huang Rhys Factors}{104}{subsection.7.4.2}%
-\contentsline {subsubsection}{\numberline {7.4.2.1}Estimating Force Constants for Low Frequency Modes}{105}{subsubsection.7.4.2.1}%
-\contentsline {section}{\numberline {7.5}conclusions}{107}{section.7.5}%
-\contentsline {chapter}{\chapternumberline {8}Discussion}{109}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Transition Property Approximations}{109}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Further Investigations into LHII}{109}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Coherence}{109}{section.8.3}%
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{111}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{111}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Computational Hardware}{111}{section.A.2}%
-\contentsline {chapter}{Bibliography}{113}{appendix*.8}%
+\contentsline {section}{\numberline {7.3}Spectra}{102}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Sites}{102}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Exciton states}{104}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Coupling}{107}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Assigning Specific Motions}{110}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Ether system}{110}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Huang Rhys Factors}{110}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}N Axes Deformation}{115}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}conclusions}{115}{section.7.5}%
+\contentsline {chapter}{\chapternumberline {8}Discussion}{117}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Transition Property Approximations}{117}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Further Investigations into LHII}{117}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Coherence}{117}{section.8.3}%
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{119}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{119}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Computational Hardware}{119}{section.A.2}%
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{121}{appendix.B}%
+\contentsline {section}{\numberline {B.1}LH2 Data}{121}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Spectral Density Features}{121}{subsection.B.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.1}B800 ring sites}{121}{subsubsection.B.1.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.2}B850a ring sites}{122}{subsubsection.B.1.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.1.3}B850b ring sites}{123}{subsubsection.B.1.1.3}%
+\contentsline {subsubsection}{\numberline {B.1.1.4}Exciton states}{124}{subsubsection.B.1.1.4}%
+\contentsline {subsubsection}{\numberline {B.1.1.5}Hamiltonian Coupling Values}{125}{subsubsection.B.1.1.5}%
+\contentsline {subsubsection}{\numberline {B.1.1.6}Interchromophore distances}{126}{subsubsection.B.1.1.6}%
+\contentsline {subsubsection}{\numberline {B.1.1.7}N Axes Deformation}{127}{subsubsection.B.1.1.7}%
+\contentsline {subsubsection}{\numberline {B.1.1.8}Diethyl-Ether system}{128}{subsubsection.B.1.1.8}%
+\contentsline {subsubsection}{\numberline {B.1.1.9}All Spectra}{129}{subsubsection.B.1.1.9}%
+\contentsline {chapter}{Bibliography}{131}{appendix*.8}%
