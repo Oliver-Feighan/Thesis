@@ -91,6 +91,7 @@ states, given as
 
 \begin{equation}
     V_{\left(m, 1\right), \left(n,1\right)} = \sum_{A \in m, B \in n} \frac{q^{\text{tr},A}_m q^{\text{tr},B}_n}{r_{AB}}
+    \label{eq:exciton_coupling}
 \end{equation}
 %
 which just involve sites $m$, $n$ which have local excitations.
@@ -134,7 +135,12 @@ and ground states. The scatter plot of these transition energies are shown in fi
 
 \begin{figure}
     \centering
-    \includegraphics[origin=c, angle=90, scale=0.4]{../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png}
+    \includegraphics[scale=0.5]{../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png}
+    \label{fig:camb3lyp_excitons}
+    \caption{The correlation of lowest excitations in LH2 chlorophyll dimer systems
+    predicted by the exciton model constructed from monomer TD-DFT and TD-DFT of
+    the full dimer system. Scatter points are coloured by the coupling value between
+    exciton states (left) and distance between magnesium centres (right).}
 \end{figure}
 
 A clear relationship can be seen between the full dimer calculations and the exciton
@@ -190,6 +196,9 @@ energies to the correct excited state is discussed below.
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/dimer_system.png}
     \label{fig:dimer_system}
+    \caption{Diagram of the artificial dimer system, showing the axes of rotations
+    in green and the chosen sites for calculating distance between functional groups
+    in orange.}
 \end{figure}
 
 Comparisons of the excited state energy can be seen in figures. From these plots
@@ -213,20 +222,29 @@ seen in fig.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4, origin=c, angle=90]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png}
-    \caption{caption}
+    \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png}
+    \label{fig:camb3lyp_Qz_rotation}
+    \caption{The dimer excited state energies predicted by full dimer TD-DFT (left)
+    and the exciton model (right) for chlorophyll dimer geometries with one monomer
+    rotated around the $Q_z$ axis.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4, origin=c, angle=90]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png}
-    \caption{caption}
+    \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png}
+    \label{fig:camb3lyp_Qx_rotation}
+    \caption{The dimer excited state energies predicted by full dimer TD-DFT (left)
+    and the exciton model (right) for chlorophyll dimer geometries with one monomer
+    rotated around the $Q_x$ axis.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4, origin=c, angle=90]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png}
-    \caption{caption}
+    \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png}
+    \label{fig:camb3lyp_Qy_rotation}
+    \caption{The dimer excited state energies predicted by full dimer TD-DFT (left)
+    and the exciton model (right) for chlorophyll dimer geometries with one monomer
+    rotated around the $Q_y$ axis.}
 \end{figure}
 
 Overall it can be seen that the exciton model predicts TD-DFT excited states and
@@ -263,8 +281,10 @@ shown in figure \ref{fig:camb3lyp_pbe0_distributions}.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.6, angle=90, origin=c]{../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png}
+    \includegraphics[scale=0.6]{../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png}
     \label{fig:camb3lyp_pbe0_distributions}
+    \caption{Distributions of the lowest 5 transition energies of chlorophyll dimers 
+    predicted by TD-DFT with the CAM-B3LYP functional (grey) and PBE0 functional (red).}
 \end{figure}
 
 Here the individual \Qy and higher energy transitions, that are well resolved by CAM-B3LYP,
@@ -275,7 +295,12 @@ was discarded from benchmarking. For the remaining benchmarking, the exciton mod
 is compared to CAM-B3LYP TD-DFT.
 
 \begin{figure}
+    \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/PBE0_tddft_v_CAMB3LYP_tddft_coupling.png}
+    \label{fig:pbe0_camb3lyp_coupling}
+    \caption{Scatter of the two lowest transitions from PBE0 TD-DFT against CAM-B3LYP
+    TD-DFT, coloured by the coupling value from the exciton model using PBE0 monomer 
+    data.}
 \end{figure}
 
 \afterpartskip
@@ -357,7 +382,12 @@ a decent method to use. Improving the error to CAM-B3LYP would make the chl-xTB
 exciton method usable, as it already is. 
 
 \begin{figure}
-    \includegraphics[scale=0.4, angle=90, origin=c]{../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png}
+    \centering
+    \includegraphics[scale=0.6]{../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png}
+    \label{fig:chl_xtb_pbe0_LH2}
+    \caption{Transition energies of the exciton states calculated using PBE0 TD-DFT
+    monomer data (left) and chl-xTB monomer data (right) against CAM-B3LYP full
+    dimer TD-DFT transition energies, coloured by the coupling values.}
 \end{figure}
 
 \subsubsection{chl-xTB Scans}
@@ -374,17 +404,29 @@ notable.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4, angle=90, origin=c]{../../Year_2/DimerModel/Scans/rotation_along_Qz.png}
+    \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/rotation_along_Qz.png}
+    \label{fig:chl_xtb_rot_Qz}
+    \caption{Dimer excited state energies predicted by full dimer TD-DFT (left)
+    and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll 
+    dimer geometries with one monomer rotated around the $Q_z$ axis.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4, angle=90, origin=c]{../../Year_2/DimerModel/Scans/rotation_along_Qy.png}
+    \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/rotation_along_Qy.png}
+    \label{fig:chl_xtb_rot_Qy}
+    \caption{Dimer excited state energies predicted by full dimer TD-DFT (left)
+    and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll 
+    dimer geometries with one monomer rotated around the $Q_y$ axis.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4, angle=90, origin=c]{../../Year_2/DimerModel/Scans/rotation_along_Qx.png}
+    \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/rotation_along_Qx.png}
+    \label{fig:chl_xtb_rot_Qx}
+    \caption{Dimer excited state energies predicted by full dimer TD-DFT (left)
+    and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll 
+    dimer geometries with one monomer rotated around the $Q_x$ axis.}
 \end{figure}
 
 In this case where there is little random error, the exciton model rather than chl-xTB
@@ -433,18 +475,30 @@ reasonable range of other functionals.
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/error_dist_along_Qz.png}
     \label{fig:error_along_qz}
+    \caption{Profiles of the sum of errors between chl-xTB exciton transition energies
+    and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance
+    of the functional group sites at each angle (green) for rotations along the
+    $Q_z$ axis.}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/error_dist_along_Qy.png}
     \label{fig:error_along_qy}
+    \caption{Profiles of the sum of errors between chl-xTB exciton transition energies
+    and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance
+    of the functional group sites at each angle (green) for rotations along the
+    $Q_y$ axis.}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/error_dist_along_Qx.png}
     \label{fig:error_along_qx}
+    \caption{Profiles of the sum of errors between chl-xTB exciton transition energies
+    and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance
+    of the functional group sites at each angle (green) for rotations along the
+    $Q_x$ axis.}
 \end{figure}
 
 \afterpartskip
@@ -546,6 +600,11 @@ which exponentially decreases with distance.
 \begin{figure}
     \centering
     \includegraphics[scale=0.4]{../../Year_3/CT_figures/PES_by_step.png}
+    \label{fig:ct_pes_distance}
+    \caption{Potential energy surfaces of the charge separated and vertical excitation
+    states of chlorophyll dimer systems, using the difference in state energies 
+    as the coordinate, for a series of separations. Free energy changes ($\Delta A$)
+    and reorganisation energies ($\lambda$) are shown for each separation.}
 \end{figure}
 
 Comparing the constrained systems to the LH2 system reveals how the protein structure
@@ -563,9 +622,14 @@ constant for quenching which would otherwise be more present at such close separ
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_3/CT_figures/LH2_PES.png}
+    \label{fig:ct_pes_lh2}
+    \caption{Potential energy surfaces of the charge separated and vertical excitation
+    states of LH2 chlorophyll dimer systems, using the same coordinate as figure
+    \ref{fig:ct_pes_distance}. The large free energy change and movement of charge
+    separation state PES minimum to the left-hand side of the vertical excitation 
+    PES imply the LH2 protein environment inhibits transfer to the charge separated
+    state.}
 \end{figure}
-
-
 
 \section{Conclusions}
 

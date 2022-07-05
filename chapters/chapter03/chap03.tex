@@ -621,15 +621,19 @@ in section \ref{subsec:chl_opt_results}.
 
 \begin{figure}
     \includegraphics[scale=0.6]{nelder-mead.png}
-    \caption{Positions of the Nelder-Mead simplex vertices for the HimmelBlau function.}
     \label{fig:nelder_mead}
+    \caption{An example of the search through solution space using the Nelder-Mead
+    method. The scatter points are positions of the Nelder-Mead simplex vertices,
+    attempting to find the coordinates of the minimum in the HimmelBlau function.}
 \end{figure}
 
 \begin{figure}
     \includegraphics[scale=0.6]{SLSQP.png}
-    \caption{Positions of iterative solution vector $\mathbf{x}$ from SLSQP for
-    the HimmelBlau funcion.}
     \label{fig:slsqp}
+    \caption{A similar example of the search through solution space, but using the
+    SQSLP method. The scatter points are positions of the iterative solution vector
+    $\mathbf{x}$, again attempting to find the coordinates of the minimum in the 
+    HimmelBlau function.}
 \end{figure}
 
 \subsection{Reference Data}
@@ -664,8 +668,11 @@ choosing this functional.
     ZINDO               & 0.596 & 0.339 & 1.526 & 0.396 \\
     \hline
     \end{tabular}
-    \caption{ref data vals}
     \label{table:ref_data}
+    \caption{Summary of the errors and correlations of transition properties for 
+    \Qy for a set of LH2 Bchla geometries from a range of established respond methods.
+    The errors were calculated against PBE0/Def2-SVP TD-DFT data, for transition
+    energies ($\Delta E$) and transition dipole moments ($\left\lvert\mathbf{\mu} \right\rvert$).}
 \end{table}
 
 Transition properties were calculated with a range of methods, covering levels of
@@ -750,23 +757,25 @@ set, as these are mutually exclusive.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/energy_training_scatter.png}
+    \includegraphics[scale=0.8]{../../Year_2/chlorophyll_parameterization/energy_training_scatter.png}
     \label{fig:energy_training_scatter}
-    \caption{caption}
+    \caption{Comparison of the \Qy transition energies predicted from the reference
+    methods as well as chl-xTB (red) against PBE0/Def2-SVP values.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png}
+    \includegraphics[scale=0.8]{../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png}
     \label{fig:dipole_training_scatter}
-    \caption{caption}
+    \caption{Comparison of the \Qy transition dipole moments predicted from the
+    reference methods as well as chl-xTB (red) against PBE0/Def2-SVP values.}
 \end{figure}
 
 \begin{table}
     \centering
     \begin{tabular}{|| l r | r ||}
     \hline
-    Hamiltonian & chl-xTB & GFN1/sTDA-xTB \\
+    Hamiltonian & chl-xTB & GFN1-xTB \\
     $k_\text{s}$ & 1.462 & 1.850 \\
     $k_\text{p}$ & 2.694 & 2.250 \\
 
@@ -781,14 +790,16 @@ set, as these are mutually exclusive.
     $\text{Mg}_\text{p}$-$\text{N}_\text{p}$ & 1.402 & - \\
 
     \hline\hline
-    Response & & \\
+    Response & & sTDA-xTB\\
     $y_K$ & 2.147 & 2.000 \\
     $y_J$ & 4.012 & 4.000 \\
     $a_x$ & 0.067 & 0.500 \\
     $D_{\text{scale}}$ & 0.636 & - \\
     \hline
     \end{tabular}
-    \caption{optimized parameters from SLSQP procedure.}
+    \caption{chl-xTB parameters, optimized by the SLSQP procedure. Reference values
+    for GFN1-xTB and sTDA-xTB are included, and served as initial guesses where 
+    available. Novel parameters all started from initial values of 1.0.}
     \label{table:chl_params}
 \end{table}
 
@@ -869,9 +880,9 @@ $D_{4h}$-$D_{2h}$ and $D_{4h}$-$C_{s}$ symmetry breaking are shown in figure \re
 \begin{figure}[h]
     \centering
     \includegraphics[scale=1.5]{chapters/chapter03/D4h_symmetry.png}
+    \label{fig:D4_sym_breaking}
     \caption{Normal modes of the nitrogen-magnesium centre of chlorophyll that have
     $D_{4h}$-$D_{2h}$ (left) and $D_{4h}$-$C_{s}$ (right) symmetry breaking components.}
-    \label{fig:D4_sym_breaking}
 \end{figure}
 
 Normal modes that would also have this symmetry breaking component were indentified
@@ -889,7 +900,7 @@ and 1156 $\text{cm}^{-1}$ \cite{Kim2020}.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3, angle=90, origin=c]{../../Year_2/BChla_Qy/qy_length_scan.png}
+    \includegraphics[scale=0.55]{../../Year_2/BChla_Qy/qy_length_scan.png}
     \label{fig:qy_length_scan}
     \caption{Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB 
     normal modes for a chlorophyll molecule truncated at the phytol tail.}
@@ -897,7 +908,7 @@ and 1156 $\text{cm}^{-1}$ \cite{Kim2020}.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3, angle=90, origin=c]{../../Year_2/BChla_Qy/qy_angle_scan.png}
+    \includegraphics[scale=0.55]{../../Year_2/BChla_Qy/qy_angle_scan.png}
     \label{fig:qy_angle_scan}
     \caption{Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal
     modes for a chlorophyll molecule truncated at the phytol tail. The small smaller
@@ -919,59 +930,83 @@ geometries were not possible for similar reasons discussed in the previous chapt
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_83.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_83.png}
     \label{fig:mode_83}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_85.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_85.png}
     \label{fig:mode_85}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_88.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_88.png}
     \label{fig:mode_88}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_90.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_90.png}
     \label{fig:mode_90}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_91.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_91.png}
     \label{fig:mode_91}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_129.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_129.png}
     \label{fig:mode_129}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_130.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_130.png}
     \label{fig:mode_130}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_132.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_132.png}
     \label{fig:mode_132}
+    \caption{Transition energies and dipole magnitudes for the \Qy transition for
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.3]{../../Year_2/BChla_Qy/mode_135.png}
+    \includegraphics[scale=0.5]{../../Year_2/BChla_Qy/mode_135.png}
     \label{fig:mode_135}
     \caption{Transition energies and dipole magnitudes for the \Qy transition for
-    geometries of truncated chlorophyll along normal modes, calculated with different
-    response theories.}
+    geometries of truncated chlorophyll along normal modes, calculated with some 
+    of the reference response theories.}
 \end{figure}
 
 It can be seen that chl-xTB predicts PBE0 transition energies with a high degree
@@ -1018,7 +1053,7 @@ done with a Langevin integrator set to 300 K  and a timestep of 0.5 femtoseconds
 The system energy was minimised before running a 10ps equilibriation. Frames were
 then taken from a 2ns simulation time, with structures taken every picosecond.
 
-Transition properties for chlorophyll structures from every frame were calculated.
+Transition properties were calculated for chlorophyll structures from every frame.
 This was done with the chl-xTB method, as well as PBE0 and CAM-B3LYP TD-DFT, both
 using the Def2-SVP basis set. For the TD-DFT methods, the lowest excited state, 
 rather than always the \Qy state, was taken for each frame, so as to fully capture 
@@ -1034,9 +1069,12 @@ of excitation energies, can be seen in \ref{fig:chl_diethyl_ether}.
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.4, angle=90, origin=c]{../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png}
-    \caption{Chlorophyll in diethyl ether.}
+    \includegraphics[scale=0.55]{../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png}
     \label{fig:chl_diethyl_ether}
+    \caption{Predicted and experimental absorption spectrum of chlorophyll in diethyl 
+    ether, only in the $Q$ band region. Predicted spectra are shown without an energy
+    shift on the left, and with an energy shift to match the experimental absorption
+    maximum on the right.}
 \end{figure}
 
 chl-xTB performs equally well as TD-DFT methods at simulating absorption spectra,
@@ -1067,8 +1105,7 @@ Overall, chl-xTB performs as well as can be expected from the training data. Pre
 of transition energies and transition dipoles are incredibly close to the PBE0
 values, and well within the error between different high level DFT functionals. 
 The variations of these transition properties cab be attributed to geometry variations
-rather than random error. 
-
+rather than random error.
 
 From this it could be expected that improvements in the training data would yield 
 better accuracy. This might be done by extending the training data in either the 

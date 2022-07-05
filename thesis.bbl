@@ -23,6 +23,11 @@
   approach for charged and neutral excitation energies of large molecules and
   nanomaterials}},  (2021).
 
+\bibitem{Cogdell2006}
+{\sc R.~J. Cogdell, A.~Gall, and J.~{K{\"{o}} Hler}}, {\em {The architecture
+  and function of the light-harvesting apparatus of purple bacteria : from
+  single molecules to in vivo membranes}}.
+
 \bibitem{Gaussian16}
 {\sc D.~J. {Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.;
   Robb, M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Petersson, G. A.;
@@ -115,11 +120,21 @@
   and convergence problems in the method of configurational interaction}},
   Phys. Rev., 97 (1955), pp.~1474--1489.
 
+\bibitem{Mallus2018}
+{\sc M.~Mallus, Y.~Shakya, J.~Dahyabhai, and U.~Kleinekath{\"{o}}fer}, {\em
+  {Environmental effects on the dynamics in the light-harvesting complexes LH2
+  and LH3 based on molecular simulations | Elsevier Enhanced Reader}}, 2018.
+
 \bibitem{Marenich2012}
 {\sc A.~V. Marenich, S.~V. Jerome, C.~J. Cramer, and D.~G. Truhlar}, {\em
   {Charge Model 5: An Extension of Hirshfeld Population Analysis for the
   Accurate Description of Molecular Interactions in Gaseous and Condensed
   Phases}},  (2012).
+
+\bibitem{Mennucci2019}
+{\sc B.~Mennucci, F.~C. Ramos, M.~Nottoli, and L.~Cupellini}, {\em {The
+  molecular mechanisms of light adaption in light-harvesting complexes of
+  purple bacteria revealed by a multiscale modeling}}, 10 (2019), p.~9650.
 
 \bibitem{Nishimoto1957}
 {\sc K.~Nishimoto and N.~Mataga}, {\em {Electronic Structure and Spectra of
