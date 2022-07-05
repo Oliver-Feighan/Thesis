@@ -7,3 +7,111 @@
 %\let\textcircled=\pgftextcircled
 \chapter{Literature Review}
 \label{chap:lit_rev}
+
+\initial{L}ight harvesting complexes
+
+\section{Efficient Response Methods}
+\label{sec:efficient_response_methods}
+
+\subsubsection{sTDA-xTB}
+\label{subsubsec:stda_xtb}
+sTDA-xTB ("simplified Tann-Dancoff Approximation - eXtended Tight Binding") is another
+method in the family of xTB methods developed by the Grimme group, and is parameterised
+for transition properties \cite{Grimme2016}. The accuracy in calculating transition energies with this
+method is very good, with the error compared to high-level method, such as SCS-CC2,
+being around 0.3 - 0.5 eV.
+
+Similar to other xTB methods, the sTDA-xTB method is a tight-binding method that
+uses empirically fitted parameters and a minimal basis set. It was trained on a
+test set of highly accurate coupled cluster and density functional theory
+excitation energies, as well as atomic partial charges for inter-electronic interactions.
+
+Unlike other xTB methods, coefficients in the basis set for sTDA-xTB are dependent on the D3
+coordination number. This makes basis functions far more flexible, which would usually
+be achieved with fixed basis functions by using diffuse or other additional orbitals in
+the basis set. Additionally, it uses two sets of parameterized basis sets - a
+smaller valence basis set (VBS) and an extended basis set (XBS). Whilst this reduces
+the cost of having larger basis sets, it makes calculating the gradient of transition
+properties much more difficult. This motivates the work on designing an alternative
+method with more tractable gradients, instead of using this already established method.
+
+The two basis sets are used to construct formally similar Fock matrix elements,
+although in practice they use different global parameters. The core Hamiltonian
+is similar to other DFTB methods that use a self-consistent charge (SCC) method, as
+opposed to an SCF method, to obtain molecular orbital coefficients. It is given by,
+
+\begin{equation}
+\bra{\psi_\mu} H^{\text{EHT, sTDA-xTB}} \ket{\psi_\mu}= \frac{1}{2} \left(k^l_\mu k^{l'}_\nu\right) \frac{1}{2} \left(h^l_\mu h^{l'}_\nu\right) S_{\mu\nu} - k_T \bra{\psi_\mu}\hat{T}\ket{\psi_\nu}
+\end{equation}
+%
+where $\mu,\nu,l,l'$ are orbital and shell indices, $k^l_\mu$ are shell-wise 
+H{\"u}ckel parameters, $h$ are effective atomic-orbital energy levels, $S_{\mu\nu}$
+is the overlap of orbitals $\mu$ and $\nu$, $k_T$ is a global constant and $\hat{T}$
+is the kinetic energy operator. The charges used in the inter-electronic repulsion 
+function are given by charge model 5 (CM5) \cite{Marenich2012} charges for the XBS
+Fock matrix. These are calculated using Mulliken charges obtained from diagonalising
+the Fock matrix with the VBS. The charges for the initial VBS Fock matrix are based
+on Gasteiger charges \cite{Gasteiger1978}, modified by the parameterised
+electronegativities of atoms in the system.
+
+The whole process for determining molecular orbitals can be summarized as:
+\begin{enumerate}
+	\item Calculate modified Gasteiger charges for the first initial guess
+	\item Diagonalise Fock matrix in the VBS to get the first set of Mulliken charges
+	\item Compute CM5 charges
+	\item Diagonalise Fock matrix in the VBS again for final set of Mulliken charges.
+	\item Recalculate CM5 charges with this final set, and diagonalize the Fock matrix in the XBS. The molecular orbital coefficients from this are then fed to the response theory.
+\end{enumerate}
+
+The response theory for this method is based on previous work in the Grimme 
+group on the simplified Tamm-Dancoff Approximation \cite{Grimme2013}.
+There are several approximations made between full linear response theory and
+the sTDA method. First is the Tamm-Danncoff approximation, where the $\mathbf{B}$
+matrix is ignored. The second approximation is to use monopole approximations with
+Mataga-Nishimoto-Ohno-Klopman (MNOK) operators instead of explicit 2 electron integral
+as well as neglecting the density functional term.
+
+Transition charges are used to calculate these MNOK integrals. The charge $q^A_{nm}$
+centred on atom $A$ associated withthe transition from $ n \rightarrow m$, are
+computed using a Löwdin population analysis:
+
+\begin{equation}
+q_{nm}^A = \sum_{\mu \in A} C^\prime_{\mu n} C^\prime_{\mu m}
+\end{equation}
+
+where the transformed coefficients $C^\prime_{\mu n}$ are given by orthogonalising
+the original MO coefficients $\textbf{C}$:
+
+\begin{equation}
+\textbf{C}^\prime = \textbf{S}^{\frac{1}{2}} \textbf{C}
+\end{equation}
+
+and $\mu$ is an index that runs over the atomic orbitals (AO). The MO coefficients
+are the solution of diagonalising the Fock matrix, similar to equation \ref{eq:roothaan_hall}.
+
+Approximations to full 2 electron integrals are given by charge-charge interaction
+damped by the MNOK\cite{Nishimoto1957}\cite{Ohno1964}\cite{Klopman1964} functions.
+For exchange and coloumb type integrals, difference exponents are used, along with
+an additional free parameter to recover the amount of Fock exchange mixing in
+the original matrix element equation. These will be discussed in more detail in
+the next chapter, as they are a crucial part of designing a new response method 
+for chlorophyll systems.
+
+Third is the truncation of single particle excited space that is used to construct 
+the $\mathbf{A}$ matrix. This reduces the number of elements that need to be 
+calculated, and so reduces the time taken for diagonalisation, whilst also capturing 
+a broad enough spectrum of excitation energies. The sTDA-xTB has many of the same 
+goals as this project, except in one respect, which is the gradient theory. As 
+the sTDA-xTB method still requires constructing and diagonalizing the $\mathbf{A}$ 
+matrix, albeit with a tight-binding method for molecular orbital coefficients, 
+the gradient of the transition properties would still be difficult to calculate.
+
+
+\section{Statistical Approaches}
+\label{sec:machine_learning}
+
+\section{Hardware}
+\label{}
+
+\section{Conclusions}
+\label{sec:lit_review_conclusions}

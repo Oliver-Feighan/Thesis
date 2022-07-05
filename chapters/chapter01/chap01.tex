@@ -14,27 +14,177 @@ processes that culminate in powering biological systems. Making models that
 can predict and explain these effects are key to making similarly efficient 
 photovoltaic systems.
 
-%=======
-\section{Quantum Exploits in Light Harvesting Systems}
-\label{sec:sec01}
-
-Begins a section.
-
-\subsection{Electronic Energy Transfer}
-\label{subsec:subsec01}
-
-Begins a subsection.
-
-\subsection{Coherence}
-\label{subsec:subsec02}
+\section{Electronic structure}
+\label{sec:electronic_structure}
 
 \section{Light-Matter Response}
-\label{sec:sec02}
+\label{sec:response_theories}
 
-\section{Electronic Structure for Large Systems}
-\label{sec:sec03}
+\subsection{Linear Response}
+\label{subsec:tddft}
 
-\section{The Aim}
-\label{sec:sec04}
+\subsection{$\Delta$-SCF}
+\label{subsec{dscf_and_eigdiff}}
 
-%=========================================================
+\dscf predicts the transition energy $\Delta E$ of a system as the difference of
+the single point energy $E_n$ of two states:
+
+\begin{equation}
+\Delta E = E_{2} - E_{1}
+\end{equation}
+%
+It is usually assumed that the excited state solution will be in a similar
+location to the ground state in the MO coefficient space. The ground state MO 
+coefficients are usually used for an initial guess for the excited
+state for this reason. In its simplest form, the \dscf method calculates
+the ground state with normal DFT or other mean-field methods, and
+then calculates the excited state by rerunning the same method with the excited
+state occupation numbers. The two sets of MO coefficients give a full description
+of both the ground as excited state.
+
+The issue with finding the excited state solution is that the variation principle
+and SCF iterative procedure will try to find the global minimum, which is the 
+ground state. The excited state is a local minimum, and so often is less reliable
+to find as a solution, especially from the standard SAD initial guess.
+For this reason it is often found that converging to the \dscf excited state will
+fail. Even when using the ground state as an initial guess with excited state
+occupations, normal SCF procedure may still collapse back to the ground state.
+Usually it is necessary to include additional changes to the SCF procedure,
+such as Fock damping, alternative DIIS methods and sometimes intermediate 
+initial guess steps.
+
+Initially, the excited state was calculated by relaxing the orbitals which
+contain the excited electron and hole in the ground state space, so that the
+excited state and ground state are orthogonal \cite{Hunt1969}. However, it was
+argued that this procedure would exacerbate the likelihood of collapsing to the ground
+state, and that the excited state was not a proper SCF solution \cite{Gilbert2008}.
+Alternatively, an SCF like method was proposed, where instead of
+populating orbitals according to the Aufbau principle, orbitals which most
+resemble the previous iteration's orbitals should be occupied. This is known as 
+the maximum overlap method (MOM). In the maximum overlap method, each iteration 
+in an SCF procedure produces new molecular orbital coefficients by solving the 
+Roothaan-Hall equations \cite{Roothaan1951}, generally given as an eigenvalue problem:
+
+\begin{equation}
+\mathbf{F} \mathbf{C}^{\text{n}} = \mathbf{S} \mathbf{C}^{\text{n}} \epsilon
+\label{eq:roothaan_hall}
+\end{equation}
+%
+where $\mathbf{C}^{\text{n}}$ are the $n^{\text{th}}$ orbital coefficient solutions, 
+$\mathbf{S}$ is the overlap of orbtials, and $\epsilon$ are the orbital energies. 
+The Fock matrix $\mathbf{F}$ is calculated from the previous set of orbital 
+coefficients,
+
+\begin{equation}
+\mathbf{F} = f\left(\mathbf{C}^{n-1}\right)
+\end{equation}
+%
+. The amount of similarity of orbitals can be estimated from their overlap,
+
+\begin{equation}
+\mathbf{O} = \left(\mathbf{C}^{\text{old}}\right)^\dagger \mathbf{S} \mathbf{C}^{\text{new}}
+\end{equation}
+%
+and for a single orbital can be evaluated as a projection,
+
+\begin{equation}
+p_j = \sum^n_i O_{ij} = \sum^N_\nu \left[\sum^N_\mu\left(\sum^n_i C_{i\mu}^{\text{old}}\right)S_{\mu\nu}\right]C^{\text{new}}_{\nu j}
+\end{equation}
+%
+where $\mu,\nu$ are orbital indices. the set of orbitals with the highest projection
+$p_j$ are then populated with electrons.  This method can be used for any
+excited state, with the caveat that the orbital solution will most likely be in
+the same region as the ground state solution. For a small number of low lying states,
+this is generally  true, and so \dscf can be used to calculate a small spectrum of
+excited states \cite{Gilbert2008}.
+
+\dscf has been shown to be cheap alternative to TD-DFT and other higher level
+methods \cite{Liu2004, Gavnholt2008, Besley2009}, without considerable losses of
+accuracy in certain cases, especially for HOMO-LUMO transitions \cite{Kowalczyk2011}.
+Additionally, as the excited state is given as solutions to SCF equations,
+the gradient of this solution can be given by normal mean-field theory.
+These gradients would be much cheaper than TD-DFT or coupled cluster methods, 
+which is advantageous for simulatings dynamics \cite{Gavnholt2008}.
+
+\subsection{Eigenvalue Difference}
+\label{subsec:eigval_diff}
+Another approximation to full response theory is the eigenvalue difference method. 
+Here there is assumed to be no response of the orbital energies and shapes when 
+interacting with light. This would be recovered from the complete Cassida equation
+if the coupling elements in the $\mathbf{A}$ and $\mathbf{B}$ matrices were set to zero.
+Within this approximation, the transition energy is just the difference between 
+the ground state energy of the orbital an electron has been excited to($\epsilon_{\text{e}}$)
+and the orbital has been excited from ($\epsilon_{\text{g}}$),
+
+\begin{equation}
+\Delta E = \epsilon_{\text{e}} - \epsilon_{\text{g}}
+\end{equation}
+%
+. Additionally, transition properties can be calculated by constructing transition 
+density matrices from the ground state orbitals such that needing only a single 
+SCF optimization is required. Generally, eigenvalue difference methods are not 
+seen as accurate response methods, but can offer a quick and easy initial value 
+\cite{Gimon2009}.
+
+\subsection{Transition Density and Dipole Moments}
+\label{subsec:dscf_transition_density}
+\dscf transition properties, such as the transition dipole moment, can be calculated from
+the SCF solutions for the ground and excited states. The reduced one-particle transition
+density matrix $\mathbf{D}^{21}$ can be written as
+
+\begin{equation}
+\mathbf{D}^{21} = \ket{\Psi_1} \bra{\Psi_2}
+\end{equation}
+%
+where $\ket{\Psi_n}$ is the Slater determinant of state $n$, constructed from the
+set of spin orbitals $\{ \phi_{j}^{\left(n\right)} \} $. Expressed 
+in terms of the molecular orbitals coefficients $\mathbf{C}^{\left(n\right)}$, the
+transition density matrix is
+
+\begin{equation}
+\mathbf{D}^{21} = \mathbf{C}^{\left(2\right)} \text{adj}\left(\mathbf{S}^{21}\right) \mathbf{C}^{\left(1\right) \dagger}
+\end{equation}
+%
+where $\mathbf{S}^{21}$ is an overlap matrix with elements 
+
+\begin{equation}
+S^{21}_{jk} = \braket{\phi^2_j|\phi^1_k}
+\end{equation}
+%
+. The depednece on the adjunct of the overlap
+can be understood using L{\"o}wdin's normal rules for non-orthogonal determinants \cite{Lowdin1955}.
+In the same way, the transition dipole moment is given by
+
+\begin{equation}
+\braket{\Psi_2|\hat{\mathbf{\mu}}|\Psi_1} = \sum_{jk} \mathbf{\mu}_{jk}^{21} \text{adj} \left( \mathbf{S}^{21}\right)_{jk}
+\end{equation}
+%
+where $\hat{\mathbf{\mu}}$ is the one-electron transition dipole operator, and
+$\mu_{jk}$ is the element of this operator corresponding to orbital indices $j$, $k$.
+The determinant of $\mathbf{S^{21}}$ can be defined as the inner product of the 
+two states involved in the transition
+
+\begin{equation}
+\left\lvert {\mathbf{S}^{21}} \right\rvert = \braket{\Psi_2|\Psi_1}
+\end{equation}
+
+The general definition of the transition dipole
+
+\begin{equation}
+\mathbf{\mu}^{1\rightarrow2} = \braket{\Psi_2|\hat{\mathbf{\mu}}|\Psi_1}
+\end{equation}
+
+can be expressed with this transition density matrix as:
+
+\begin{equation}
+\begin{split}    
+\braket{\Psi_2|\hat{\mathbf{\mu}}|\Psi_1} &= \text{tr}\left(\hat{\mathbf{\mu}} \ket{\Psi_1} \bra{\Psi_2} \right) \\
+&= \text{tr}\left( \hat{\mathbf{\mu}} \mathbf{D}^{21}\right)
+\end{split}
+\end{equation}
+
+
+\section{Scaling Theory For Large Systems}
+\label{sec:large_systems_theory}
+
+

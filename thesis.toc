@@ -4,29 +4,30 @@
 \contentsline {chapter}{List of Figures}{xiii}{section*.6}%
 \contentsline {chapter}{\chapternumberline {1}Outline}{1}{chapter.1}%
 \contentsline {chapter}{\chapternumberline {2}Introduction}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Quantum Exploits in Light Harvesting Systems}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Electronic Energy Transfer}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Coherence}{3}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.1}Electronic structure}{3}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Light-Matter Response}{3}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Electronic Structure for Large Systems}{3}{section.2.3}%
-\contentsline {section}{\numberline {2.4}The Aim}{3}{section.2.4}%
-\contentsline {chapter}{\chapternumberline {3}Literature Review}{5}{chapter.3}%
-\contentsline {chapter}{\chapternumberline {4}Mean-Field excited states}{7}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Theory}{8}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}$\Delta $-SCF}{8}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Eigenvalue Difference}{9}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Transition Density and Dipole Moments}{10}{subsection.4.1.3}%
-\contentsline {subsection}{\numberline {4.1.4}Semi-empirical extensions}{11}{subsection.4.1.4}%
-\contentsline {subsubsection}{\numberline {4.1.4.1}sTDA-xTB}{11}{subsubsection.4.1.4.1}%
-\contentsline {section}{\numberline {4.2}Benchmarking}{13}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Reference Data and test set}{13}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {2.2.1}Linear Response}{3}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}$\Delta $-SCF}{3}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Eigenvalue Difference}{5}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Transition Density and Dipole Moments}{5}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Scaling Theory For Large Systems}{6}{section.2.3}%
+\contentsline {chapter}{\chapternumberline {3}Literature Review}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Efficient Response Methods}{7}{section.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.0.1}sTDA-xTB}{7}{subsubsection.3.1.0.1}%
+\contentsline {section}{\numberline {3.2}Statistical Approaches}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hardware}{9}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusions}{9}{section.3.4}%
+\contentsline {chapter}{\chapternumberline {4}Mean-Field excited states}{11}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Combining $\Delta $-SCF With Lower Level Electronic Structure Theories}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Benchmarking $\Delta $-SCF }{12}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Reference Data and test set}{12}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Small Systems}{13}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Non-orthogonality}{17}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}LHII Chlorophyll}{19}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.3}Non-orthogonality}{16}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}LH2 Chlorophyll}{18}{subsection.4.2.4}%
 \contentsline {subsection}{\numberline {4.2.5}xTB methods}{22}{subsection.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.5.1}Post-SCF Assignment of Symmetry}{23}{subsubsection.4.2.5.1}%
+\contentsline {subsubsection}{\numberline {4.2.5.1}Post-SCF Assignment of Symmetry}{22}{subsubsection.4.2.5.1}%
 \contentsline {subsubsection}{\numberline {4.2.5.2}$\Delta $-xTB Benchmarking Results}{25}{subsubsection.4.2.5.2}%
-\contentsline {section}{\numberline {4.3}Conclusions}{28}{section.4.3}%
+\contentsline {section}{\numberline {4.3}Conclusions}{27}{section.4.3}%
 \contentsline {chapter}{\chapternumberline {5}Chlorophyll specific methods}{31}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Theory}{31}{section.5.1}%
 \contentsline {subsection}{\numberline {5.1.1}Full solutions TD-DFT equation}{31}{subsection.5.1.1}%
