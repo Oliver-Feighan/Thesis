@@ -8,29 +8,21 @@
 \chapter{Chlorophyll specific methods}
 \label{chap:chl_xtb}
 
-\initial {T}his chapter reports the work done on designing and parameterising a
-novel method for response properties. The framework and theory for the method is
-outlined in section \ref{sec:theory}. Parameterisation details are given in 
-section \ref{sec:chl_params}, including the reference data that compromised the 
-training data, the objective function used and the algorithms that were used for
-optimisation. The accuracy of this new method is showcased in the final section 
-\ref{sec:chl_benchmarking}.
+\initial {T}his chapter reports on designing and parameterising a novel method for
+response properties, referred to as chl-xTB. The framework and theory for the method
+is outlined in section \ref{sec:theory}. Parameterisation details are given in section \ref{sec:chl_params},
+including the reference data used to create the training data, the objective function
+and optimisation algorithms. The accuracy of this new method is showcased in the
+final section \ref{sec:chl_benchmarking}.
 
 %=======
-\section{Theory}
+\section{Approximations in chl-xTB}
 \label{sec:theory}
 
-This section covers the approximations to full linear response theory that leads to the 
-novel chl-xTB method. Starting from the eigenvalue equation, that is derived more
-fully in the theory chapter but recapped here, a few key approximations lead to 
-a framework that has tractable gradients and is less expensive than full linear
-response. This fulfills the requirements set out in the introduction of having
-an efficient and simple, but accurate, method of getting transition properties
-for LHII chlorophylls.
-
-\subsection{Full solutions TD-DFT equation}
-In linear-response TD-DFT, excitation energies and characters are the solutions
-of the non-Hermitian eigenvalue equation
+\subsection{Full TD-DFT Solutions}
+\label{subsec:tddft_equation}
+In linear-response TD-DFT, excitation energies and transition characters are the
+given by the solutions of the non-Hermitian eigenvalue equation
 
 \begin{equation}
     \begin{pmatrix}
@@ -54,9 +46,9 @@ of the non-Hermitian eigenvalue equation
 \end{equation}
 %
 where $\mathbf{A}$, $\mathbf{B}$ are matrices whose elements describe the perturbation
-of the electron density, the $\mathbf{X}$, $\mathbf{Y}$ solutions are the 
-coefficients of excitations, similar to CIS, and eigenvalues $\omega$ are the 
-excitation energies.
+of the electron density in response to light interaction, the $\mathbf{X}$, $\mathbf{Y}$
+solutions are coefficients of excitations, similar to CIS, and eigenvalues $\omega$
+are the excitation energies.
 
 The elements of $\mathbf{A}$ and $\mathbf{B}$ correspond to descriptions of the
 virtual-occupied and occupied-virtual contributions respectively, and in TD-DFT, 
@@ -72,24 +64,24 @@ B_{ia,jb} = 2\left(ia|bj\right) - a_x\left(ib|aj\right) + (1- a_x)\left(ia|f_{\t
 %
 where indices $a,b$ and $i,j$ refer to virtual and occupied orbitals respectively,
 $\epsilon_i$ is the orbital energy of orbtial $i$, $a_x$ is the value of non-local
-Fock exchange in the XC functional $f_{\text{XC}}$. $\delta_{ij}$ is the Kronecker
-delta function. The intergrals (here in Mulliken notation) can be seen to be of
-Coloumb type for the $\mathbf{A}$ matrix and exchange for the $\mathbf{B}$ matrix. 
-The leading term in the $\mathbf{A}$ matrix is the orbital energy difference,
-which is contributes to the diagonal elements only due to the Kronecker deltas.
+Fock exchange in the XC functional $f_{\text{XC}}$, and $\delta_{ij}$ is the Kronecker
+delta function. The intergrals (here in Mulliken notation) are Coloumb type for
+the $\mathbf{A}$ matrix and exchange type for the $\mathbf{B}$ matrix. The leading 
+term in the $\mathbf{A}$ matrix is the orbital energy difference, which only contributes
+to the diagonal elements due to the Kronecker deltas.
 
 \subsection{Approximations to Solutions}
 \label{subsec:chl_approxs}
 
 There are three approximations made in the chl-xTB method. First is the Tamm-Dancoff 
-approximation (TDA), which eliminates three blocks of the full linear response matrix.
+approximation (TDA), which neglects "de-excitation" contributions to TD-DFT solutions.
 Second is a diagonal dominant approximation to eigenvalue solutions, where diagonal 
-elements of a matrix are taken as an approximation to true eigenvalues. The third
-is a monopole approximation to two electron integrals which employs MNOK operators 
-to accurately capture Coulomb and exchange functions. All these approximations 
-reduce the amount of expensive electron integrals required to construct the full
-eigenvalue equation, whilst still capturing the important aspects of the electron 
-density response.
+elements of a matrix are taken as an approximation to the real eigenvalues. The 
+third is to use a monopole approximation to calculate two electron integrals as 
+point charge interactions, employing MNOK operators to accurately capture Coulomb
+and exchange functions. All these approximations reduce the amount of expensive 
+electron integrals required to construct the full eigenvalue equation, whilst still
+capturing the important aspects of the electron density response.
 
 \subsubsection{Tamm-Dancoff approximation and Diagonal Dominant $\mathbf{A}$ matrices}
 \label{subsubsec:Tamm_Dancoff}
@@ -104,14 +96,13 @@ equation to
 \end{equation}
 %
 where the definitions of elements are the same as above, but it should be noted 
-that the solutions $\mathbf{X}$ will be not be same. This is formally the same as
-a CIS problem, and has been reported as a way to get back to CIS from full
-TD-DFT.
+that the solutions $\mathbf{X}$ will be different to full TD-DFT. This is formally
+the same as a CIS problem, and has been reported as a way to get back to CIS from 
+full TD-DFT.
 
 As an eigenvalue problem, solving for $\omega$ requires constructing and diagonalising
-the full $\mathbf{A}$ and then diagonlising. The XC functional is dependent on 
-$\omega$ values and so several iterations of this diagonalisation are needed to
-find stable, self-consistent solutions.
+the full $\mathbf{A}$. The XC functional is dependent on $\omega$ values and so
+iterating through diagonalisation is needed to find stable, self-consistent solutions.
 
 If the matrix is diagonal dominant, the diagonal elements of the $\mathbf{A}$ matrix 
 can be used as an approximation to the eigenvalue solutions. This would be in the 
@@ -124,35 +115,30 @@ Excitation energies would be given by
 \label{eq:diag_dom}
 \end{equation}
 %
-. If the integrals are assumed to be small compared to the first term orbital energy
-difference, then the orbital energy difference can be taken as an approximation 
+. If the integrals are assumed to be small compared to the first term, the orbital 
+energy difference, then the orbital energy difference can be taken as an approximation 
 to the full excitation energy, recovering the eigenvalue difference method from
 the previous chapter.
 
-By removing the eigenvalue problem, the gradients of the excitation energies are
-more tractable. However the integral terms still require an interative, self-consistent
-treatment. This can be simplified by using an approximation to these integrals that
-uses point charge interactions.
-
-It should be noted that further cost is removed by not needing to calculate not
-only all of the off-diagonal elements but the diagonal elements for transitions
-that are not of interest. This however would only be in the case where transitions
-are not mixed. If transitions are mixed, then the coupling elements should be considered
-and appproximating them to be zero would not be valid. This is considered in section
-\ref{subsec:qy_transition}.
+This approximation also reduces computational cost by removing the need to calculate
+all of the off-diagonal elements as well as the diagonal elements for transitions
+that are not of interest. This approach would be expected to work best where the
+overall transitions are not mixed. If transitions are mixed, then the coupling elements
+would be non-zero, and depending on the proximity in energy of single transitions,
+the coupling values could have a large effect. This is considered in section \ref{subsec:qy_transition}.
 
 \subsection{Integrals approximations}
 \label{subsec:MNOK}
 
-The two electron integrals as written above are usually one of the most expensive
-part of an electonic structure calculation. These can be approximated with a monopole
-expansion, treating atomic sites as point charges, and using a charge-charge interaction 
-for the energy.
+Whilst using this diagonal dominant approximation removes a large portion of the
+integrals, those that are left would still require an interative, self-consistent
+treatment. This can be simplified by approximating these integrals as point charge 
+interactions, as the charges would not be dependent on excited state solutions.
 
 Atom centered transition charges for transition $m \rightarrow n$ can be given in
 the Mulliken scheme by summing the reduced one-electron transition density 
-$\mathbf{D}^{mn}$ multiplied the orbital overlap $\mathbf{S}$ for all orbitals $p$ 
-centred on atom $A$
+$\mathbf{D}^{mn}$ multiplied the orbital overlap $\mathbf{S}$ for all orbitals $p$, 
+$q$ centred on atom $A$
 
 \begin{equation}
 q^{mn}_A = \sum_{p \in A} D^{mn}_{pq} S_{pq}  
@@ -178,8 +164,8 @@ damped MNOK operators. The integral is approximated by
 \end{equation}
 %
 where $N$ is the total number of atoms in the system and $p$,$q$,$r$, $s$ are electron
-indices for both occupied and virtual orbitals. $A$ and $B$ are indices for the atoms.
-For Coloumb type integrals, the operator $\Gamma_{AB}$ is given by
+indices for both occupied and virtual orbitals, and $A$ and $B$ are indices for
+ the atoms. For Coloumb type integrals, the operator $\Gamma_{AB}$ is given by
 
 \begin{equation}
 \Gamma^J_{AB} = \left(\frac{1}{\left(R_{AB}\right)^{y_J} + \left(a_x \eta\right)^{-y_J}} \right)^{\frac{1}{y_J}}
@@ -200,7 +186,7 @@ in the short-distance limit. For exchange type, the operator is
 \Gamma^K_{AB} = \left(\frac{1}{\left(R_{AB}\right)^{y_K} + \eta^{-y_K}} \right)^{\frac{1}{y_K}}
 \end{equation}
 %
-where the $y_K$ parameter replaces the $y_J$ parameter in the Coloumb type operator.
+where the $y_K$ parameter replaces the $y_J$ parameter in the Coulomb type operator.
 
 As the $a_x$ parameter can "mop up" many of the exchange effects, the density functional
 in equation \ref{eq:diag_dom} is also neglected to further reduce computational cost.
@@ -211,7 +197,7 @@ given by
 \omega_{ia} = \left(\epsilon_a - \epsilon_i\right) + \sum^N_{A,B}\left(2 q_{ia}^A \Gamma^K_{AB} q_{ia}^B - q^A \Gamma^J_{AB} q^B\right)
 \end{equation}
 %
-where the exchange term uses transition charges $q_{ia}$, and the Coloumb term uses
+where the exchange term uses transition charges $q_{ia}$, and the Coulomb term uses
 partial charges from the ground state density.
 
 It can be seen that the inclusion of MNOK operators introduces global parameters
@@ -221,12 +207,12 @@ would be possible. However it was found that parameter optimisation procedures,
 whilst improving upon the accuracy of the \dxtb methods of the previous chapter,
 could not break into the accuracy needed to investigate chlorophyll systems well
 enough (discussed in more detail in \ref{subsec:ref_data}). This is due to many
-transitions not being single character which would be not be consistent with the
-diagonal dominant approximation. Additionally, the same issues as the previous 
-chapter in assigning transition without symmetry made any autonomous optimisation
-workflow difficult.
+transitions being mixed, which would not be consistent with conditions needed for
+the diagonal dominant approximation. Additionally, issues with autonomous optimisation
+assigning transitions without symmetry made optimisation workflows difficult (
+see previous chapter section \ref{subsubsec:post_scf_symmetry}).
 
-However a method that works for a wide set of systems is not required for LHII,
+However a method that works for a wide set of systems is not required for LH2,
 as only the \Qy transition is of interest for many models. Parameterising to a 
 single, well-defined transition would be a much better approach for this investigation.
 By reducing the scope of systems, the specificity of parameters can dramatically increase. 
@@ -253,35 +239,33 @@ in light harvesting systems, so an accurate treatment is necessary.
 The \Qy transition is the one of the two transitions that make up the $Q$ band in
 the absorption spectra of chlorophyll, the other being the $Q_x$ transition. It 
 is well known that the \Qy transition is important for electronic energy transfer,
-and predicting both transition energies and transition dipole magnitudes and orientations
-is important to construct frameworks for this transfer. The \Qy transition is mostly
+and predicting both transition energies and dipole moments correctly is important 
+in constructing frameworks that model this transfer. The \Qy transition is mostly
 HOMO-LUMO in character (~96\%), with a small amount of HOMO-1 - LUMO+1 (remaining 4\%).
 The analogous transition in the unsubstituted tetraphorphyrin ring has the transition
 dipole along the molecular axis defined by the N atoms, however due to the asymmetry 
 introduced by substitutions and geometry deformations, this is usually not the case 
 for BChla with a deviation from this axis of around 12 $^{\circ}$. The \Qy transition
-in chlorophyll has its dipole component lying along the $N_A$-$N_C$ axis with $Q_x$ 
-lying orthogonal, along the $N_B$-$N_D$ axis. $Q_x$ has the reverse character to 
+in chlorophyll has its dipole component lying mostly the $N_A$-$N_C$ axis, with $Q_x$ 
+lying orthogonally along the $N_B$-$N_D$ axis. $Q_x$ has the reverse character to 
 the \Qy transition, being mostly HOMO-1 - LUMO+1.
 
-Plots of the electron density of the HOMO and LUMO show how
-this transition is delocalised over large sections of the porphyrin ring, with 
-approximate $C_2$ symmetry along the molecular axes. Notable contributions can be
-seen in the functional groups, giving the modified transition behaviour seen in 
-different versions of chlorophyll, as well as the appearance of some features in
-spectral density (discussed further in chapter \ref{chap:LHII}).
+Plots of the electron density of the HOMO and LUMO show how this transition is delocalised
+over large sections of the porphyrin ring, with approximate $C_2$ symmetry along
+the molecular axes. Notable contributions can be seen in the functional groups,
+giving the modified transition behaviour seen in different versions of chlorophyll.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png}
-    \caption{The HOMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}
+    \caption{The HOMO orbital of Bchla from PBE0/Def2-SVP DFT.}
     \label{fig:HOMO}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png}
-    \caption{The LUMO orbital of bacterial chlorophyll a from PBE0/Def2-SVP DFT.}
+    \caption{The LUMO orbital of BChla from PBE0/Def2-SVP DFT.}
 \end{figure}
 
 It has recently also been shown that the high correlation between the eigenvalue
@@ -293,82 +277,79 @@ with good accuracy.
 
 The high amount of single-transition character in the \Qy transition makes it ideal
 for the approximations to transition energies set out earlier. The lack of coupling
-elements that would appear in the $\mathbf{A}$ matrix justifies both the use of
-the diagonal dominant approximation and TDA. The almost exclusive centering of
-electron density on main group elements make the use of MNOK integrals also valid.
+elements that would appear in the $\mathbf{A}$ matrix justifies the use of the diagonal
+dominant approximation.
 
 Additionally, the well-defined transition make assignment trivial, and the transition
 dipole orientation to the $N_A$-$N_C$ axis has been used as a metric for the accuracy
-of transition dipole moments. As a single value, this is ideal for autonomous optimisation 
+of transition dipole moments. As a single value this is ideal for autonomous optimisation,
 both for use in an objective function as well as for discarding outlier transitions.
-
-The \Qy transition was then used to benchmark the novel response approximations.
-The optimisation and construction of reference and training set data is discussed
-later in section \ref{sec:chl_params}.
 
 \subsection{Changes to xTB parameters}
 \label{subsec:chl_method}
 
 As found in the last chapter, the underlying electronic structure can have a huge
-effect on the accuracy of transition properties, in some cases more than a change
-in the response method. The xTB methods in particular, both linear response and
-\dxtb, were particulary ill-suited for transition properties. Whilst DFT methods
-could have been used as for Mulliken partial and transition charges, this would
-still not be efficient enough to calculate the large volume of geometries from LHII. A 
-tight-binding, semi-emperical approach for the electron structure is still required.
-To improve the applicability of the xTB methods for transition properties, it was
-decided that some of the parameters would need to be altered. A top-down approach
-was used for these alterations, as it has been shown to work well for the GFN-xTB
-and sTDA-xTB methods. 
+effect on the accuracy of transition properties, in some cases being more effective
+than a change in the response method. The xTB methods in particular, both linear
+response and \dxtb, were particulary ill-suited for transition properties. Whilst
+DFT methods could have been used as for Mulliken partial and transition charges,
+this would not be any more efficient that the \dscf methods discussed in the previous 
+chapter. A tight-binding, semi-emperical approach for the electron structure is still 
+required. To improve the applicability of the xTB methods for transition properties, 
+some of the parameters would need to be altered. A top-down approach can be used 
+for these alterations, as it has been shown to work well for the GFN-xTB and sTDA-xTB
+methods. 
 
-As discussed in the theory chapter, the GFN1-xTB Fock matrix is made of both charge
-depenedent and charge independent terms. The form of these terms, and definitions
-of parameters, is also given in the theory chapter. Only the charge dependent terms would
+As discussed in the introduction chapter, the GFN1-xTB Fock matrix is made of both
+charge-depenedent and charge-independent terms. The form of these terms, and definitions
+of parameters, is also given in the introduction chapter. Only the charge dependent terms would
 have any effect on the partial and transition charges, thereby effecting the transition
 properties. The charge dependent terms are the first, second and third density fluctuation
-terms. The first order term is the leading term, and so parameters present in this
-term were chosen to be included in the optimisation procedure to prioritise parameters
-that would have the largest effect. Only some of these parameters are "free", 
-whilst others are based on physical or \emph{ab initio} values. These are the H{\"u}ckel
-parameters $k_l$, where $l$ is the angular momentum of the orbital, and the global
-scaling parameters. The global scaling parameters are used to adjust interactions
-for some pairs of elements where the global parameters led to incorrect bond lengths.
-It was found that for the \Qy transition, only $Mg$ and $N$ interactions had to 
-be scaled.
+terms. The first order term is the leading term, and so altering parameters in this
+term would have the greatest effect. Only some of these parameters are "free", 
+with others calculated from physical or \emph{ab initio} values. The "free" parameters
+are the H{\"u}ckel parameters $k_l$, where $l$ is the angular momentum of the orbital,
+and the global scaling parameters. The global scaling parameters are used to adjust
+interactions for some pairs of elements where the global parameters led to erroneous 
+properties, usually observed in the bond lengths. It was found that for the \Qy
+transition, only $Mg$ and $N$ interactions had to be scaled.
 
-An obvious drawback of altering these parameters to fit to transition properties
-is that they would lose their specificity to the GFN-xTB training set. However
-it is not in the scope of this work to find a semi-empirical method that would be able
-to calculate these properties for chlorophyll. chl-xTB is not used to calculate
-optimised geometries or hessians of chlorophyll as other methods could be expected 
-to perform better. Also if this were the necessary, including more target properties
-in the parameter optimisation would decrease the accuracy to any one target, making
+An obvious drawback of altering these parameters to fit transition properties is
+that they would lose their specificity to the GFN-xTB training set. However it is
+not required, or in the scope of this work, to find a semi-empirical method that 
+would be able to calculate all properties for chlorophyll. chl-xTB is not used to 
+calculate optimised geometries or hessians of chlorophyll, as other methods would 
+be expected to much perform better. If it were necessary to include more target properties
+in the parameter optimisation the accuracy to any one target would decrease, making
 the method worse overall. For example, the sTDA-xTB and GFN-xTB methods use different
-electronic structure parameters for this reason.
+electronic structure parameters for this reason - one for transition properties, 
+the other for geometries.
 
 \subsection{Transition and Excited State Density from the Ground State}
+\label{subsec:trans_excited_densities}
 
-Similar to \dscf, the ground state orbital coefficients are taken to be a good
-approximation to the (\Qy) excited state coefficients. It was assumed then that
-the excited state could be calculated without orbital relaxation, so that both the
-excited state and ground state could be constructed from the same set of molecular
-orbitals. The transition density is then calculated as
+Similar to \dscf, the ground state orbital coefficients are taken to be a good approximation
+to the (\Qy) excited state coefficients. It was assumed that the excited state could
+be calculated without orbital relaxation, so that both the excited state and ground
+state could be constructed from the same set of molecular orbitals. The transition
+density is then calculated as
 
 \begin{equation}
 \mathbf{D}^{01} = \ket{\Psi^0} \bra{\Psi^1} 
 \end{equation}
 %
 with $\bra{\Psi^0}$, $\bra{\Psi^1}$ (the ground and excited state respectively)
-being constructed from the same set of molecular orbital coefficients $\mathbf{C}^0$
-but with different sets of occupation numbers for the ground and excited state.
-The ground state and excited state density can be similarly calculated as
+being constructed from the same set of molecular orbital coefficients $\mathbf{C}$
+but with different sets of occupation numbers for the ground and excited state (
+labelled $n^{\left(0\right)}$ and $n^{\left(1\right)}$ respectively). The ground state
+and excited state density can be similarly calculated as
 
 \begin{equation}
-\mathbf{D}^{0} = \ket{\Psi^0} \bra{\Psi^0}  
+\mathbf{D}^{\left(0\right)} = \sum_i n^{\left(0\right)}_i C^{\left(0\right)}_{ip} C^{\left(0\right)}_{iq}
 \end{equation}
 %
 \begin{equation}
-\mathbf{D}^{1} = \ket{\Psi^1} \bra{\Psi^1}  
+    \mathbf{D}^{\left(1\right)} = \sum_i n^{\left(1\right)}_i C^{\left(0\right)}_{ip} C^{\left(0\right)}_{iq} 
 \end{equation}
 %
 . These density matrices are used to calculate the partial and transition charges
@@ -377,35 +358,35 @@ The transition and molecular dipoles can be calculated as the trace of the dipol
 operator with the density.
 
 It should be noted the ground and excited states would be orthogonal in this scheme,
-as they share the same set of MO coefficients. Additionally, only one cycle of the
-SCC procedure would be necessary, which would eliminate the problem of convergence
-in the \dscf excited state. It would also halve the computational time. Excited
-state properties, such as the molecular dipole and partial charges can also be
-calculated from the excited state density, which will be important for the exciton 
-framework of the next chapter.
+as they share the same set of MO coefficients. Additionally, the problematic excited
+state convergence is unnecessary as only the ground state cycle of the SCC procedure 
+is needed. Excited state properties, such as the molecular dipole and partial charges 
+can also be calculated from the excited state density, which will be important for 
+the exciton framework of the next chapter.
 
 It was found, however, that transition dipoles calculated using this method were
 much larger than TD-DFT. This was also observed for the \dscf and eigenvalue
 difference methods, implying that the inclusion of the HOMO-1-LUMO+1 transition
 is key to accurately describing the transition density. To recover this, an additional
-parameter was included to scale the transition density, which both yielded the 
-correct transition dipole magnitudes as well as drastically increasing the accuracy
-of the method overall. This is discussed more in section \ref{subsec:ref_data}.
+parameter $D_scl$ was included to scale the transition density (i.e. $\tilde{D}^{01} = D_{\text{scl}} D^{01}$ 
+where $\tilde{D}$ is the scaled transition density ) which both yielded the correct
+transition dipole magnitudes as well as drastically increasing the accuracy of the
+method overall. This is discussed more in section \ref{subsec:ref_data}.
 
 \afterpartskip
 \section{Parameterization}
 \label{sec:chl_params}
-An objective function and algorithm is required to find minima in the parameter 
-space, where the minima correspond to an optimised set of parameters. Reference data
-to also required as a target. All of these elements are important for minimising
-the amount of error in the final method, as well as determining how well chl-xTB
-performs for different problems and other properties.
+An objective function and algorithm is required to find minima in parameter space
+when fitting models, where the minima correspond to an optimised set of parameters.
+Reference data to also required as a target. All of these elements are important
+for minimising the amount of error in the final method, as well as determining how
+well a method can perform when used for different problems.
 
 \subsection{Objective Function}
 \label{subsec:obj_func}
-At first, it would be argued that the root mean squared error (RMSE) to the reference 
-transition energy should be the value that should be minimised, giving the objective
-function as
+The first metric that should be minimised is the root mean squared error (RMSE), 
+where the error is to the reference transition energies, giving the objective function 
+as
 
 \begin{equation}
 f_{\text{RMSE}}\left(\mathbf{x}\right) = \sqrt{ \frac{1}{N} \sum^N_i \left( \Delta E_i  - \Delta E_{i, \text{ref.}}\right)^2}
@@ -414,27 +395,28 @@ f_{\text{RMSE}}\left(\mathbf{x}\right) = \sqrt{ \frac{1}{N} \sum^N_i \left( \Del
 where $\textbf{x}$ is the set of parameters, $\delta E_i$, $\delta E_{i,\text{ref.}}$ 
 are the transition energies for system $i$ from the chl-xTB method and reference
 method respectively, $N$ is the number of systems used to calculated the objective
-function value (these can be different when looking at training and testing sets).
+function value (this can be different when looking at training and testing sets).
 
-However just using the RMSE has two issues. First is that other transition properties are not 
-included in the optimisation, so the transition dipoles would be expected to have 
-a large error. This can be fixed by including a metric for the error in transition dipoles.
-The other issue is that a low RMSE does not guarantee a high correlation. A measure
-of the correlation can be given by the coefficient of determination
+However just using the RMSE has two issues. First is that other transition properties
+are not included in the optimisation, and so no comments can be made on the accuracy 
+of, for example, transition dipoles. This can be fixed by including a metric for
+the error in other properties of interest. The other issue is that a low RMSE does
+not guarantee a high correlation. A measure of the correlation can be given by the
+coefficient of determination
 
 \begin{equation}
 R^2 = 1 - \frac{\sum^N_i \left(\hat{y}_i - y_i \right)^2}{\sum^N_i \left(\hat{y}_i - \bar{y}\right)^2}
 \end{equation}
 %
-where $\hat{y}$, $y$ are the predicted and reference values, and $\bar{y}$ is the
-average of the reference values. The correlation is a better metric for determining
+where $\hat{y}$, $y$ are the predicted and reference values respectively and $\bar{y}$
+is the average of the reference values. The correlation is a better metric for determining
 if chl-xTB has a small enough random error to predict transition properties, however
 it may not account for systematic errors. Both a low RMSE and high $R^2$ value are
-needed to optimise fully to the reference data, and the two metrics are not mutually
-inclusive.
+needed to optimise fully to the reference data, and the two metrics are not fully
+mutually inclusive.
 
 By including both RMSE and $R^2$ values, for transition energies as well as dipole
-magnitudes, the full objective function used was
+magnitudes, the full objective function becomes
 
 \begin{equation}
 f_{\text{full}} \left( \mathbf{x} \right) = \lambda_1 \text{RMSE} \left(\Delta E \right)+ \lambda_2 \text{RMSE}\left( \left| \mu \right| \right) + \lambda_3 \left(1 - R^2 \left( \Delta E \right)\right) + \lambda_4 \left( 1 - R^2 \left( \left| \mu \right| \right)\right)
@@ -447,9 +429,9 @@ the solution space.
 \subsection{Minimisation Algorithms}
 \label{subsec:algorithms}
 Finding the optimal parameters for the chl-xTB method is a nonlinear problem. The
-parameters so far stated can not be used to create a linear function that would
-reproduce the value of the objective function. Therefore it's necessary to use
-hueristics that can solve for these problems.
+parameters so far discussed can not be used to create a linear function that would
+reproduce the value of the objective function. Therefore it's necessary to use heuristics
+that can solve non-linear problems.
 
 \subsubsection{Nelder-Mead}
 \label{nelder_mead}
@@ -529,7 +511,7 @@ is shrunk around axes to the best vertex
 \begin{equation}
 \mathbf{x}_i = \mathbf{x}_1 + \sigma \left(\mathbf{x}_i - \mathbf{x}_1 \right)
 \end{equation}
-
+%
 for $i \in \{1, \dots, n\}$.
 
 Once either the worst vertex or all of the vertices are replaced, the new simplex
@@ -542,7 +524,7 @@ descent approach.
 
 \subsubsection{Sequential Least-Squares Squadratic Programming}
 \label{subsubsec:slsqp}
-The SLSQP (Sequential Least-Squares Quadratic Programming) method is fundamentally
+The sequential least-squares quadratic programming (SLSQP) method is fundamentally
 different to the previous Nelder-Mead method, and follows a quasi-Newton procedure
 with additional factors to treat constraints.
 
@@ -551,7 +533,7 @@ The general problem is similar to Nelder-Mead, namely to solve
 \begin{equation}
 \min_{\mathbf{x} \in \mathbb{R}^n} f\left( \mathbf{x}\right)
 \end{equation}
-
+%
 however with an arbitary amount of constraint functions $c$
 
 \begin{equation}
@@ -615,9 +597,8 @@ Both these methods were used to find optimal chl-xTB parameters, and it was foun
 that the SLSQP method performed best, both in terms of the number of iterations,
 stability, and in the overall value of the objective function. This could be due 
 to the addition of contraints, however it is hard to say as the wrapping of \code{SciPy}
-around the implementations of both methods make it a black-box that is hard to 
-investigate further. The results of the optimisation is discussed in further detail
-in section \ref{subsec:chl_opt_results}.
+make both methods black-boxes that are hard to investigate further. The results
+of the optimisation is discussed in further detail in section \ref{subsec:chl_opt_results}.
 
 \begin{figure}
     \includegraphics[scale=0.6]{nelder-mead.png}
@@ -639,16 +620,16 @@ in section \ref{subsec:chl_opt_results}.
 \subsection{Reference Data}
 \label{subsec:ref_data}
 The geometries for the training set used to optimise the chl-xTB method were taken
-from previously done molecular dynamics of the LHII protein \cite{Stross2016}. 
-The geometries of LHII were chosen from uncorrelated snapshots, although each of
+from molecular dynamics of the LH2 protein used in separate work\cite{Stross2016}. 
+The geometries of LH2 were chosen from uncorrelated snapshots, although each of
 the 27 chlorophylls from each snapshot were included in the training data to account
-for the differences in binding pockets. The stochastic collection of LHII snapshots
+for the differences in binding pockets. The stochastic collection of LH2 snapshots
 were chosen to cover a range of chlorophyll conformations to reduce the amount of
-artificial bias towards any particular geometries.
+artificial bias towards any particular correlation of geometries.
 
 Training the chl-xTB parameters was done against PBE0 data. This data was chosen
 for the best accuracy-cost ratio, as well as having been previously used to investigate
-exciton properties for the LHII system \cite{Stross2016}. Additionally, from the
+exciton properties for the LH2 system \cite{Stross2016}. Additionally, from the
 outset it was unknown how much training data would be necessary, and so keeping 
 potential future costs of expanding the training data down was another factor in 
 choosing this functional.
@@ -676,13 +657,13 @@ choosing this functional.
 \end{table}
 
 Transition properties were calculated with a range of methods, covering levels of
-theory that would be comparable to the chl-xTB formalism. These included an eigenvalue
+theory that would be useful to comparable to chl-xTB. These include an eigenvalue
 difference approach, \dscf, and TD-DFT with different levels of theory. This was
 done so that the performance of any parameterisation results could be benchmarked
-to an expected accuracy.
+with an idea of how accurate the method could be expected to be.
 
 The errors and correlations of the reference data are shown in table \ref{table:ref_data}.
-The methods included  in the benchmarking were \dscf, TD-DFT and eigenvalue difference
+The methods included in the benchmarking were \dscf, TD-DFT and eigenvalue difference
 all using the PBE0 functional and Def2-SVP basis set. Also included are CAM-B3LYP
 and BLYP functionals with Def2-SVP basis sets, as a higher and lower level reference
 respectively. The basis set was not changed as it has been found that the basis
@@ -702,12 +683,12 @@ on chlorophyll, show how it is difficult to assign a true value to transition en
 for a set of geometries. Therefore as long as the accuracy of chl-xTB is within 
 the range of methods shown here, it would also be valid.
 
-The single transition methods also perform well, corroberating the earlier statement
+The single transition methods also perform well, corroborating the earlier statement
 that only treating a HOMO-LUMO transition can give accurate results. The \dscf and
-eigenvalue difference methods have slightyl higher RMSE values, both around 0.22 eV.
-However the correlation is much higher at of 0.847 and 0.875 a.u. respectively.
-Hence, due to the dominance of HOMO-LUMO transition character, treating the transition
-as mixed is not necessary in order to achieve accruacy for transition energies. 
+eigenvalue difference methods have slightly higher RMSE values, both around 0.22 eV.
+However the correlation is much higher at of 0.847 and 0.875 respectively. Hence,
+due to the dominance of HOMO-LUMO transition character, treating the transition
+as mixed is not necessary in order to achieve accuracy for transition energies. 
 The story for transition dipoles, however, is different.
 
 The agreement of transition dipole magnitudes is much lower than excitation energies.
@@ -716,9 +697,9 @@ a.u. and 1.511 a.u. respectively) than the TD-DFT methods (0.172 a.u., 0.214 a.u
 and 0.384 a.u. for CAM-B3LYP, $\omega$-B97XD and BLYP respectively). The average
 magnitude of PBE0 transition dipoles is 2.751 a.u., with the average for \dscf and 
 eigenvalue difference being 4.287 a.u. and 4.342 a.u. respectively. This disparity
-is attributed to the lack of inclusion of $Q_x$ transition character. As this dipole
-component of this transition is orthogonal to \Qy, it may reduce the transition 
-dipole magnitude similar to the effect seen in the outliers in the previous chapter.
+is attributed to the lack of inclusion of $Q_x$ transition character. As this direction
+of this dipole of this transition is orthogonal to \Qy it may reduce the transition 
+dipole magnitude, similar to the effect seen in the outliers in the previous chapter.
 
 Whilst there is a high degree of correlation between the higher level TD-DFT methods,
 with 0.919 and 0.876 for CAM-B3LYP and $\omega$-B97XD respectively, the other methods
@@ -730,16 +711,16 @@ Also included in the benchmarking was the semi-emperical method ZINDO. This had 
 poor accuracy across the board, with RMSE and $R^2$ values of 0.596 eV and 0.339
 for transition energies, and 1.526 a.u. and 0.396 for transition dipoles. It was
 thought this might have good accuracy compared to TD-DFT and serve as a benchmark
-for how well a semi-emperical method might perform, but this turned out to not be
+for how well a semi-empirical method might perform, but this turned out to not be
 the case.
 
 Overall an RMSE to transition energies and dipoles of ~0.15 eV and ~0.2 a.u. is 
 necessary to claim that transition properties can be calculated on a usable level 
 of accuracy. Other cross-validations are necessary, and will be discussed in section
-\ref{sec:chl_benchmarking}, but for the optimisation this provides a benchmark to 
-aim for. Whilst a high correlation of around ~0.8 for both transition energies and
-transition dipoles is possible, it can be seen that the latter may not be possible
-for a single transition method.
+\ref{sec:chl_benchmarking}, but for the optimisation this provides a reasonable 
+accuracy benchmark. Whilst a high correlation of around ~0.8 for both transition 
+energies and transition dipoles is possible, it can be seen that the latter may 
+not be possible for a single transition method.
 
 \subsubsection{Training and testing set}
 \label{subsubsec:train_test}
@@ -747,9 +728,9 @@ From the full set of PBE0 data, 100 random geometries were chosen for the traini
 set and 507 geometries for the test set. The test set was used at the end of the 
 optimisation procedure to validate how well the parameters perform on points outside 
 of the training data. The sizes of each set was chosen to achieve a subset mean
-error (how far the mean of the subset is from the full set of data) below 0.15 eV
-for transition energies, whilst keeping a large number of geometries for the testing
-set, as these are mutually exclusive.
+error (how far the mean of the subset is from the full set of data) in transition
+energies below 0.15 eV, whilst keeping a large number of geometries for the testing
+set.
 
 \afterpartskip
 \subsection{Results}
@@ -803,9 +784,10 @@ set, as these are mutually exclusive.
     \label{table:chl_params}
 \end{table}
 
-Overall, the method performs extremely well considering the limitations as set out
-above. Transition energies and dipole magnitudes are calculated well within acceptable
-RMSE and correlation limits.
+The chl-xTB method was parameterised to the PBE0/Def2-SVP training data, using 
+the SLSQP method. Overall, chl-xTB performs extremely well considering the limitations
+discussed above. Transition energies and dipole magnitudes are predicted well within
+acceptable RMSE and correlation limits.
 
 The final parameters for the chl-xTB method are given in table \ref{table:chl_params}.
 The best performing set of parameters had an RMSE of excitation energy of 0.014 eV 
@@ -814,14 +796,15 @@ with an $R^2$ value of 0.40. Repeated optimisation runs gave parameter and objec
 function minima to similar values, and the difference in these values can be attributed
 to the complex solution space. These values for RMSE are well within the values
 for TD-DFT with various functionals, and the $R^2$ of transition energy is equally
-good. While the correlation is low, it is near to the expected correlation from
-\dscf and eigenvalue difference. It can also be seen in figure \ref{fig:dipole_training_scatter}
-that the variation in chl-xTB transition dipole magnitude is much smaller than \dscf,
-eigenvalue difference and ZINDO, as well as being close to the mean from PBE0. This
-is a better behaviour, similar to the statiscal method used before \cite{Stross2016},
-than the other methods with low correlations.
+good. While the correlation in transition dipole magnitude is low, it is near to
+the expected correlation from \dscf and eigenvalue difference. It can also be seen
+in figure \ref{fig:dipole_training_scatter} that the variation in chl-xTB transition
+dipole magnitude is much smaller than \dscf, eigenvalue difference and ZINDO, as
+well as being close to the mean from PBE0. This is a better behaviour, similar to
+the statiscal method used before \cite{Stross2016}, than the other methods with 
+low correlations.
 
-It was also found that lower minima of the objective function were found when using
+It was also found that better minima of the objective function were found when using
 the SLSQP method for optimisation instead of the default Nelder-Mead method. Minima
 were found in a smaller number of iterations, reducing the overall CPU time required.
 This is in line with benchmarked SLSQP solutions in a non-linear multidimensional space.
@@ -847,15 +830,14 @@ approximations for coulomb-type integrals in response methods \cite{Cho2021}.
 \label{subsec:pot_energy_surfaces}
 
 Whilst the stochastic selection of BChla geometries should represent a large section 
-of the conformational space in LHII, it is not explicitly given that chl-xTB would
+of the conformational space in LH2, it is not explicitly given that chl-xTB would
 perform equally well along important vibrational modes. Explicitly testing the
 values predicted by PBE0 and some of the reference methods as well as optimised
 chl-xTB would show how well the geometry dependence has been "learnt". These values
-would correspond to geometries that vary by a single normal mode displacement at 
-a time to reduce error cancellation, as well as to show how well chl-xTB predicts
-to the coupling of vibrational modes and transition properites.
+would show how well chl-xTB predicts the coupling of vibrational modes and transition 
+properites, as well as potentially reducing some error cancellation.
 
-The geometries for this test were not taken to be BChla for two reasons. There are
+The geometries for this test were not taken from BChla for two reasons. There are
 140 atoms in BChla, giving the number of normal modes is 414, and with ~10 coordinates
 being calculated along each normal mode this represents a large number of geometries
 that would require reference data with expensive functionals and basis sets. Additionally,
@@ -863,21 +845,21 @@ the normal modes would need to be calculated from an optimised geometry. The phy
 tail in BChla (and chlorophyll in general) make geometry optimisations difficult
 due to the large degrees of freedom in rotations along the carbon chain. Without
 an accuractely optimised geometry for the normal mode hessian, the predicted displacement
-vectors for the normal modes would be useless.
-
-Therefore the normal modes and transition properties were calculated for a truncated 
-BChla with a hydrogen atom replacing the phytol tail, which made geometry optimisation
-possible, and also reduced the total number of vibrational modes.
+vectors for the normal modes would be useless. Therefore the normal modes and transition 
+properties were calculated for a truncated BChla with a hydrogen atom replacing 
+the phytol tail, which made geometry optimisation possible, and also reduced the
+total number of vibrational modes.
 
 Normal modes with the strongest coupling to the \Qy transition were chosen to most
 effectively scan the conformational space. These can be found by looking at modes
-which break the symmetry of the \Qy transition. In an ideal model, the magnesium
-and nitrogen centre have $D_{4h}$ symmetry with the \Qy transition lying along 
-the $N_A$, $N_C$ axis. Vibrational modes with components along this axis will
-therefore couple to the transition. The movement of $N_A$, $N_C$ atoms which induce
-$D_{4h}$-$D_{2h}$ and $D_{4h}$-$C_{s}$ symmetry breaking are shown in figure \ref{fig:D4_sym_breaking}.
+which break the symmetry component of the \Qy transition. In an ideal model, the 
+magnesium and nitrogen centre have $D_{4h}$ symmetry with the \Qy transition lying 
+along the $N_A$-$N_C$ axis, and so vibrational modes with asymmetric components 
+along this axis will couple to the transition. The movement of $N_A$-$N_C$ atoms 
+which induce $D_{4h}$-$D_{2h}$ and $D_{4h}$-$C_{s}$ symmetry breaking are shown
+in figure \ref{fig:D4_sym_breaking}.
 
-\begin{figure}[h]
+\begin{figure}[]
     \centering
     \includegraphics[scale=1.5]{chapters/chapter03/D4h_symmetry.png}
     \label{fig:D4_sym_breaking}
@@ -891,12 +873,10 @@ values, as well as the moving average, is shown in figure \ref{qy_length_scan}.
 A similar scan was made of the $N_A$-$Mg$-$N_C$ angle, however less variance in
 this value was found and the peak positions did not match previously reported frequencies
 for strong coupling. Normal modes with the largest $N_A$-$N_C$ were then chosen 
-for the transition properties scan.  It is interesting to note that the peaks in
-the moving average line approximate the peaks in the chlorophyll \emph{a} absorption 
-spectrum. The normal modes that were chosen had frequencies at 669.6, 701.7, 733.3,
-745.5, 755.1, 1105.0, 1107.0, 1122.2, 1142.9, 1320.3, 1361.8 $\text{cm}_{-1}$, which
-roughly correspond to previously indentified normal modes with frequencies of 728
-and 1156 $\text{cm}^{-1}$ \cite{Kim2020}.
+for the transition properties scan. The normal modes that were chosen had frequencies 
+at 669.6, 701.7, 733.3, 745.5, 755.1, 1105.0, 1107.0, 1122.2, 1142.9, 1320.3, 1361.8 
+$\text{cm}_{-1}$, which roughly correspond to previously indentified normal modes
+with frequencies of around 728 and 1156 $\text{cm}^{-1}$ \cite{Kim2020}.
 
 \begin{figure}
     \centering
@@ -916,17 +896,17 @@ and 1156 $\text{cm}^{-1}$ \cite{Kim2020}.
     used in normal mode choices.}
 \end{figure}
 
-For each selected normal mode, the geometry was propagated such that the sum of
+The geometry was propagated for each selected normal mode such that the sum of
 all atomic displacements from the optimised geometry was in units of 1 $\AA{}$.
 This was done up to 3 $\AA{}$ as it was found for most normal modes the energy 
 difference between the optimised geometry and 3 $\AA{}$ displaced geometry was greater
-than the thermal energy at 300 K. At each increment, the \Qy transtion energy and
-dipole was calculated using chl-xTB, as well as TD-DFT with a PBE0/Def2-SVP level
-of theory. Additionally, \dscf and the eigenvalue difference method was used as 
-a benchmark, along with CAM-B3LYP TD-DFT with the same basis set. A quadratic
-fit was also made for each of the methods and is shown in the plots. Some points
-for the \dscf method are not shown as convergence for the excited state at these
-geometries were not possible for similar reasons discussed in the previous chapter.
+than the thermal energy at 300 K (i.e. in an environment at 300 K, a chlorophyll 
+system would not be expected to deform past these boundaries). At each increment,
+the \Qy transtion energy and dipole was calculated using chl-xTB, as well as TD-DFT
+with PBE0/Def2-SVP and CAM-B3LYP/Def2-SVP levels of theory, \dscf and eigenvalue 
+differences (both using PBE0/Def2-SVP). A quadratic fit was made for each of the
+response methods and is shown in the plots. Some points for the \dscf method are
+not shown due to issues with excited state convergence.
 
 \begin{figure}
     \centering
@@ -1010,21 +990,15 @@ geometries were not possible for similar reasons discussed in the previous chapt
 \end{figure}
 
 It can be seen that chl-xTB predicts PBE0 transition energies with a high degree
-of accuracy. Transition dipole magnitudes are predicted with less good accuracy,
-but still capture the main behaviour of PBE0 results well. chl-xTB consistently 
+of accuracy. Transition dipole magnitudes are predicted with worse accuracy, but
+still capture the general behaviour of PBE0 results well. chl-xTB consistently 
 predicts PBE0 energies to within the same level of accuracy as achieved in the 
 parameterisation test set. From the quadratic fits it can be seen that the gradients, 
 turning points and curvature is well alligned between PBE0 and chl-xTB, especially
 compared to \dscf and eigenvalue difference. It is also clear how important the
 transition density scaling factor is in achieving accuracy for the transtion dipole
-magnitudes, with \dscf and eigenvalue difference being well above where PBE0 and
-CAM-B3LYP values sit.
-
-It is argued that variations in chl-xTB transition properties, in addition to correctly
-correlated with geometry variations, are also correctly correlated to the coupling
-between normal modes and the \Qy transition. This is an important consideration 
-for the later chapter on spectral density, where the assignment of spectral features
-are based on comparison to vibrational modes.
+magnitudes, with \dscf and eigenvalue difference being well above the region where
+PBE0 and CAM-B3LYP values sit.
 
 \afterpartskip
 \subsection{Absorption Spectra}
@@ -1032,14 +1006,14 @@ are based on comparison to vibrational modes.
 
 So far all of the benchmark and tests on chl-xTB have been for gas phase systems
 and have no environmental effects. However in reality chlorophyll molecules would
-be embedded in many different environments, for example the LHII protein. Although
-the training set took structures that have been perturbed by the LHII protein, it
+be embedded in many different environments, for example the LH2 protein. Although
+the training set took structures that have been perturbed by the LH2 protein, it
 is important to test the behaviour of properties predicted by chl-xTB when explicitly
 embedded. The obvious case for this would be predicting an absorption spectra for
 chlorophyll when embedded by an explicit solvent. Additionally, it should be tested
 whether the method could work for other chlorophyll systems other than Bchla. This
 would be important for future investigations into chlorophyll systems, but for the
-remaining work here it is not as important, and so isn't investigated fully.
+remaining work here it is not as important, and so is not investigated fully.
 
 The absorption spectra was calculated using frames from an MD trajectory of chlorophyll
 A in an explicit diethyl ether solvent. An explicit solvent was used to account
@@ -1055,17 +1029,15 @@ then taken from a 2ns simulation time, with structures taken every picosecond.
 
 Transition properties were calculated for chlorophyll structures from every frame.
 This was done with the chl-xTB method, as well as PBE0 and CAM-B3LYP TD-DFT, both
-using the Def2-SVP basis set. For the TD-DFT methods, the lowest excited state, 
-rather than always the \Qy state, was taken for each frame, so as to fully capture 
-the $Q$ band. Experimental data for the absorption spectra was also taken from Katz 
-\emph{et. al} \cite{Strain1963}. Embedding effects were included in the chl-xTB
-Fock matrix with a particle mesh Ewald method. The real space term was calculated
-using \code{QCORE}, whereas the more complicated spline reciprocal space term was
-calculated with the \code{HelPME} library. The absorption spectrum for each method
-was calculated by a gaussian fit of a histogram of transition  energies. The fit
-was normalised such that the area under all spectra matched that of the experimental 
-spectrum. The absorption spectra, both with and without a single-parameter shift
-of excitation energies, can be seen in \ref{fig:chl_diethyl_ether}.
+using the Def2-SVP basis set. Experimental data for the absorption spectra was also
+taken from Katz \emph{et. al} \cite{Strain1963}. Embedding effects were included 
+in the chl-xTB Fock matrix with a particle mesh Ewald method. The real space term 
+was calculated using \code{QCORE}, whereas the more complicated spline reciprocal
+space term was calculated with the \code{HelPME} library. The absorption spectrum 
+for each method was calculated by a gaussian fit of a histogram of transition energies.
+The fit was normalised such that the area under all spectra matched that of the 
+experimental  spectrum. The absorption spectra, both with and without a single-parameter 
+shift of excitation energies, can be seen in \ref{fig:chl_diethyl_ether}.
 
 \begin{figure}
     \centering
@@ -1082,41 +1054,76 @@ although constrained by the limits of the method and the training data.
 It can be seen that the chl-xTB lineshape is similar in position and witdh to the
 PBE0 method. This is highly encouraging, as the functional groups on chlorophyll A
 can have a large effect on the \Qy transition, and so the good agreement here provides
-evidence that important chemical features are still captured in different systems.
-Although the chl-xTB lineshape is wider than the experimental spectrum, the CAM-B3LYP 
-and PBE0 lines are also wider and so the chl-xTB is still within a reasonable expectation 
-of accuracy.
-Also seen is the lack of other peaks from the $Q$ band, which is present in the
+evidence that important chemical features are can captured in systems outside the 
+training set. Although the chl-xTB lineshape is wider than the experimental spectrum,
+the CAM-B3LYP and PBE0 lines are also wider and so chl-xTB is still within a reasonable
+expectation of accuracy.
+All of the predicted spectra show some lack of lower intensity peaks present in the
 experimental spectrum. The CAM-B3LYP data shows one peak at 510 nm, with PBE0 having
-a very slight peak at around 380 nm. This is not present in the chl-xTB spectrum
-as other $Q$ transitions are not calculated due to being outside of the training
-data. The embedded chl-xTB spectra is both red-shifted and broadened slightly, which
+a very slight peak at around 380 nm. This is not present in the chl-xTB spectrum,
+possibly due to the very niche set of geometries for the training data. Including 
+Bchla geometries from different environments might fix this issue, but as this work
+is only considering light harvesting systems this is outside of the current scope.
+The embedded chl-xTB spectra is both red-shifted and broadened slightly, which
 is also observed in simulated spectra from other methods.
 
 \section{Conclusions}
 \label{sec:chl_conclusions}
 
 It has been shown that novel approximations to the full linear-response eigenvalue
-equation can give accurate predictions of transition properties from high-level methods.
-This has been shown by optimising a set of parameters for the response approximations,
-as well as for the underlying electronic structure.
+equation can give accurate predictions of transition properties from high-level 
+methods, which when combined with efficient electronic structure methods can give
+a very powerful tool for predicting transition properties. However it is clear that
+limitations in the optimisation proceedure create systemic issues with the final
+method.
+
+For other studies, it may not have been necessary to include both the altered xTB
+framework and the novel response approximations. If the efficiency required was 
+slightly less, a low level DFT calculation may have been good enough to achieve 
+the required accuracy. This approach may have also been easier to parameterise, 
+requiring less global parameters and more closely following the sTDA formalism.
+However as stated in the introduction, the efficiency of the desired methods does
+require semi-emperical efficiency, and so studying the response approximations outside
+of an xTB framework is not in the scope of this work.
+
+Additionally the accuracy of the chl-xTB method against training data is most likely
+in large part due to the specificity. In general this is not an issue as many complex
+systems require highly specific treatment, especially for large scale systems such
+as chlorophyll. Applying the optimisation workflow to another system may be expected
+to work well on two conditions. First is how well a single transition character
+could approximate higher order transitions. This is easily sketched out by comparing
+other single transition methods, such as the \dscf and eigenvalue difference methods,
+against any training data. Second is be how well the electronic structure can be 
+improved by altering the H{\"u}ckel and scaling parameters. Altering parameters
+in other GFN-xTB terms might be required for more complex systems, which would require
+more training data to optimise.
+
+Although any system outside of chlorophyll is outside the scope of this work, it
+would be beneficial to know how far the optimisation workflow can be pushed. Due
+to the relatively small size of the training data that may be required, a reoptimisation
+procedure could be fairly short. Additionally, depending on the system, the training
+data could be improved by either using a higher level method or by including a larger
+conformational range. The issue here would be knowing the limits of the workflow
+in greater detail, so it is known beforehand whether a candidate system and transition
+would be expected to work. However if these limits are found, many studies that 
+require large numbers of calculations could be bootstraped, requiring less data 
+for a higher level of accuracy.
+
+In terms of modelling light harvesting complexes, chl-xTB fulfills all the criteria
+required set out in the introduction. It would be efficient enough to calculate
+a huge volume of properties in a reasonable amount of time. Additionally the benefit
+of using the xTB framework is that the memory and CPU requirements are fairly low.
+This would allow for good scaling on high performance computers, using chl-xTB in
+a highly parallelised program (discussed in more detail in chapter \ref{chap:LH2}).
+Additionally the accuracy of the method overcomes the statistical crutches that
+are used in other methods, making the models of light harvesting complexes far more
+detailed.
 
 Overall, chl-xTB performs as well as can be expected from the training data. Predictions
-of transition energies and transition dipoles are incredibly close to the PBE0
-values, and well within the error between different high level DFT functionals. 
-The variations of these transition properties cab be attributed to geometry variations
-rather than random error.
+of transition energies and transition dipoles are reliably close to the PBE0 values,
+and well within the error between different high level DFT functionals. It could 
+be expected that improvements in the training data would yield better accuracy.
+This might be done by extending the training data in either the conformational space,
+or by investigating other systems. Applying chl-xTB to light harvest models forms
+the subject of the next chapters.
 
-From this it could be expected that improvements in the training data would yield 
-better accuracy. This might be done by extending the training data in either the 
-conformational space, or by investigating other systems. 
-
-This was taken into consideration when investigating this method,
-for example using CAM-B3LYP as training data instead of PBE0. This approach would
-have two drawbacks. First would be that PBE0 has already been established for investigating
-LHII properties, and so a clearer comparison of results for the exciton system would
-be possible. Second is that a feature of this method is the reduced amount of 
-computational cost required. If the amount of CAM-B3LYP data that may have been 
-necessary to obtain increased too much then it would no longer be efficient to 
-parameterise compared to using a different, lower level method. For other systems
-smaller than chlorophyll, this might not be the case.
