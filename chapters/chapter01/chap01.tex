@@ -8,20 +8,329 @@
 \label{chap:intro}
 
 \initial {N}aturally occuring light harvesting systems present an interesting 
-scientific challenge. With near perfect efficiency, the energy from a photon
-will be taken and transfered to a reaction centre, leading to charge transfer 
-processes that culminate in powering biological systems. Making models that 
-can predict and explain these effects are key to making similarly efficient 
+scientific challenge. With near perfect efficiency\cite{Scholes2011}, the energy 
+from a photon will be taken and transfered to a reaction centre, leading to charge
+transfer processes that culminate in powering biological systems. Making models 
+that can predict and explain these effects are key to making similarly efficient 
 photovoltaic systems.
 
 \section{Electronic structure}
 \label{sec:electronic_structure}
 
-\section{Light-Matter Response}
+\subsection{Density Functional Theory}
+\label{subsec:dft}
+
+Density functional theory (DFT) is ubiquitous in electronic structure calculations.
+Its' application to a wide range of system sizes as well as chemical systems make 
+it an ideal choice for many situations, including chlorophyll and light harvesting
+systems. A brief overview of DFT is given here to contextualise its use for 
+
+At its heart, DFT is based on the Hohenberg-Kohn theorems, where energies of electronic
+structures are proven to have a one-to-one mapping to electron density.
+
+Schrodinger equation.
+
+Basis sets.
+
+
+
+\subsection{Semi-Empirical Methods}
+\label{subsec:xtb_theory}
+
+\subsubsection{Tight Binding}
+Over the last several years, there has been renewed interest in tight-binding methods, 
+more specifically tight binding methods derived from density functional theory 
+(named density function tight binding or DFTB)\cite{Porezag1994}. These methods
+approximate the density functional energy by expanding it into a Taylor series based 
+on the density fluctuations $\delta\rho$\cite{Koskinen2009}
+
+\begin{equation}
+E\left[\rho\right] \approx E^{\left(0\right)}\left[\rho_0\right] + E^{\left(1\right)}\left[\rho_0, \delta\rho\right] + E^{\left(2\right)}\left[\rho_0, \left(\delta\rho\right)^2\right] + E^{\left(3\right)}\left[\rho_0, \left(\delta\rho\right)^3\right] + \dots
+\end{equation}
+
+This series is usually truncated at somewhere between the first and third term\cite{Gaus2011}. 
+Additionally, it is assumed these density fluctuations will only occur in the valence 
+orbitals of a system, and so core atomic orbitals do not need explicit treatment. 
+As such, these methods usually will use a minimal valence basis set\cite{Bannwarth2020}.
+
+Tight binding methods are usually turned to in investigations where the scale of 
+the system of interest is too large for more usual methods, such as DFT or Hartree-Fock 
+(HF) based methods, to be used. Previous methods of dealing with the size of these 
+systems has been to turn to force-field methods, which do not use any quantum mechanical 
+methods and only use classical methods to evaluate energies and gradients of systems. 
+However, it has routinely been shown that these are inaccurate for many systems 
+that involve proton transfer or metallic centers or the making and breaking of chemical 
+bonds\cite{Salomon-Ferrer2013}, which unfortunately covers many interesting biochemical 
+systems, photosynthesis included. For these systems then, using tight-binding methods 
+seems to be a good tradeoff between the expense of full DFT methods and the innacuracies 
+of classical methods. However, work on making DFT method quicker, usually with efficient 
+massively parallelized codes, is closing the gap where DFTB methods exist\cite{Manathunga2020}.
+
+\subsubsection{Empirical Fitting}
+
+Whilst there is nothing inherent about tight binding methods that require emperically 
+fit parameters, it is usual to make further efficiency gains by using fitted terms 
+for some energy functions. Usually these parameters are fit to certain classes of 
+systems, such as proteins or metallic system, to minimize the drop in accuracy. 
+Additionally, many methods have to make use of element pairwise parameters\cite{Bannwarth2020}, 
+which can sometimes reduce the cases where each method would be reliable (eg a copper-carbon 
+interaction will be very different in biological systems compared to an inorganic system, 
+such that usually metalloproteins have to be parameterized completely separately).
+
+\subsubsection{xTB Methods}
+
+Recently the extented tight binding (xTB) family of methods, developed by the Grimme 
+group, have been presented as another semi-empirical tight binding solution to investigating 
+large chemical systems\cite{Bannwarth2020}\cite{Bannwarth2019}\cite{Grimme2017}\cite{Pracht2019}\cite{Grimme2016}\cite{Spicher2020a}.
+Many of these methods have been parameterized for geometry optimizations and frequencies 
+of normal modes, as well as to take into account non-covalent interactions, hence 
+many of them have the prefix GFN for geometries, frequencies and non-covalent. These 
+methods hope to solve the element pair-wise parameterization problem whilst also 
+remaining efficient and accurate for large systems. These methods also explore the 
+large range of electronic structure treatments that can be done by tight binding 
+methods. For example, GFN2 uses the greatest detail for electronic structure, with 
+a multipole (up to quadrupole) expansion for electrostatics, that along with a detailed 
+dispersion method lets GFN2 be completely pairwise parameter free. GFN0 and GFN-FF (a forcefield method) on the other hand, use very approximate methods and many more parameters to increase speed and possible size of systems.
+
+The energy terms for xTB methods can be characterized by the order of density fluctuations 
+they correspond to. For example, the zeroth order terms are given by dispersion 
+(either D3\cite{Grimme2010}, D4\cite{Caldeweyher2020} or a modified D4 method) and
+electronic repulsion interactions, as well as a halogen bonding correction. First 
+order terms are usually given by an extended Huckel theory, which will be discussed 
+later. The second and higher order terms are given by isotropic electrostatic and 
+exchange-correlation terms.
+
+Hence we can give a brief description of the GFN-xTB energies as
+
+\newcommand{\orderE}[2]{E^{\left(#1\right)}_{#2}}
+\newcommand{\nameE}[2]{E^{#1}_{#2}}
+\begin{equation}
+\begin{aligned}
+E_{\text{GFN1-xTB}} &= \orderE{0}{\text{disp}} + \orderE{0}{\text{rep}} + \orderE{0}{\text{XB}} + \orderE{1}{\text{EHT}} + \orderE{2}{\text{IES+IXC}} + \orderE{3}{\text{IES+IXC}} \\
+&= \nameE{\text{D3}}{\text{disp}} + \nameE{}{\text{rep}} + \nameE{\text{GFN1}}{\text{XB}} + \nameE{}{\text{EHT}} + \nameE{}{\gamma} + \nameE{\text{GFN1}}{\Gamma}
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+E_{\text{GFN2-xTB}} &= \orderE{0,1,2}{\text{disp}} + \orderE{0}{\text{rep}} + \orderE{1}{\text{EHT}}  + \orderE{2}{\text{IES+IXC}} + \orderE{2}{\text{AES+AXC}} + \orderE{3}{\text{IES+IXC}} \\
+&= \nameE{\text{D4'}}{\text{disp}} + \nameE{}{\text{rep}} + \nameE{}{\text{EHT}}  + \nameE{}{\gamma} + \nameE{}{AXC} + \nameE{\text{GFN2}}{\Gamma}
+\end{aligned}
+\end{equation}
+
+\begin{equation}
+\begin{aligned}
+E_{\text{GFN0-xTB}} &= \orderE{0}{\text{disp}} + \orderE{0}{\text{rep}} + \orderE{1}{\text{EHT}}  + \Delta\orderE{0}{} \\
+&= \nameE{\text{D4}}{\text{disp}} + \nameE{}{\text{rep}} + \nameE{}{\text{EHT}}  + \nameE{}{\text{EEQ}} + \nameE{}{\text{srb}}
+\end{aligned}
+\end{equation}
+
+where the subscripts generally describe the interaction each term is describing. 
+$\text{disp}$ and $\text{rep}$ account for dispersion and repulsion interactions, 
+a zeroth order term with respect to density fluctuations. $\text{EHT}$ is the extend 
+Huckel theory, which is first order. $\text{IES}$, $\text{IXC}$ and $\text{AES}$, 
+$\text{AXC}$ are isotropic electrostatics and exchange-correlation effects and anisotropic 
+electrostatics and exchange-correlation respectively, which are second and third 
+order terms. $\text{XB}$ is a hydrogen bonding correction. Many of these then have 
+corresponding terms in the xTB theories (ie $\orderE{0}{\text{disp}}$ is given by 
+the D3 energy $E^{D3}_{\text{disp}}$). 
+
+Common to all of these expressions is the extended Huckel theory energy term, which 
+deals with first order density fluctuations. This energy is given by tracing a Hamiltonian 
+$H_{\mu\nu}^{\text{EHT}}$ constructed from extended Huckel theory with the valence 
+one-electron density $P_{\mu\nu}$
+
+\begin{equation}
+E_{\text{EHT}} = \sum_{\mu\nu} P_{\mu\nu} H_{\mu\nu}^{\text{EHT}}
+\end{equation}
+
+where $\mu$, $\nu$ are the indices of atomic orbitals. The elements of the Hamiltonian 
+are given by the general equation
+
+\begin{equation}
+H_{\mu\nu}^{\text{EHT}} = \frac{1}{2} K_{AB}^{ll'}S_{\mu\nu}\left(H_{\mu\mu} + H_{\nu\nu}\right)X\left(EN_A, EN_B\right)\Pi\left(R_{AB}, l, l'\right)Y\left(\eta^A_l\eta^B_{l'}\right)
+\end{equation}
+
+where $A,B$ are atomic indices, and $l,l'$ are the indices of atomic orbitals on 
+atoms $A, B$ respectively (ie $l \in A, l' \in B$). $K$ is a parameterized global 
+scaling term, $S$ is the atomic orbital overlap. $H$ are diagonal elements of the 
+Hamiltonian and deal with on-site energies. $X$ is a function of environment-scaled 
+electronegativities $EN$, $\Pi$ is another distance-dependent function, to correct 
+for the distance-scaled interactions from the overlap matrix. $Y$ is the identity 
+matrix for GFN1-xTB, but corrects for kinetic energy integrals in GFN2- and GFN0-xTB. 
+Due to the lack of element pair-wise parameters (except for a few special cases 
+in the global scaling constants), these terms are readily separable and so can either 
+be considered or discarded for future parameterization work. For example, the $\Pi$,
+$Y$ and $X$ term deal with interactions that are more described by atomic environments 
+rather than particular chemistry between atoms. Hence, for excited state theories they 
+would not really have to be changed. This is corroberated by their absence in the 
+Hamiltonian for the simplified Tamm-Dancoff (sTDA) xTB\cite{Grimme2016} method, 
+which is discussed later.
+
+In the GFN1 and GFN2 methods there are also the $E_\gamma$ and $E_\Gamma^{\text{GFNn}}$ 
+terms, which are the energy terms from second and third order density fluctuations. 
+The second order term, $E_\gamma$ is common to GFN1 and GFN2, and is given by
+
+\begin{equation}
+E_\gamma = \frac{1}{2} \sum^{N}_{A,B} \sum_{l \in A} \sum_{l' \in B} q_l q_{l'} \gamma_{AB, ll'}
+\end{equation}
+
+wherer $q_l$ are shell-resolved Mulliken partial charges, $A,B$ are atom indices 
+and $l,l'$ are shell indices. The $\gamma$ operator describes short-range Coulombic 
+interactions:
+
+\begin{equation}
+\gamma_{AB, ll'} = \frac{1}{\sqrt{R^2_{AB} + \eta^{-2}_{AB, ll'}}}
+\end{equation}
+
+where $R_{AB}$ is the internuclear distance between A and B, and $\eta$ is a parameterized 
+chemical hardness. The third order term is slightly different for GFN1 and GFN2,
+ ut are generally given by
+
+\begin{equation}
+E_\Gamma = \frac{1}{3}\sum_A^N q_A^3 \Gamma_A
+\end{equation}
+
+where $q_A$ is the atom partial charge (sum of the shell partial charges on that atom), 
+and $\Gamma_A$ is a different operator constructed from atomwise parameters. The relevance 
+of these terms is that they show how many expensive integrals can be approximated 
+sucessfully with a cheaper partial charge interaction.
+
+\section{Light-Matter Response Methods}
 \label{sec:response_theories}
 
 \subsection{Linear Response}
 \label{subsec:tddft}
+
+Linear response TDDFT is a well established method for calculating excitation energies
+and transition properties from only ground state information. It is formulated 
+from the Runge-Gross theorem\cite{Runge1984}, which shows how the time dependent 
+density of a system can be mapped from the time-dependent external potential (for 
+light-matter interactions, the external potential is the light wave), and this 
+mapping is unique. Usually when talking about TDDFT we go one step further, and 
+approximate the response of the electron density to the external potential as a 
+linear perturbation\cite{Marques2004}. This is very useful as only the ground state
+is needed to calculate perturbations to the first order, meaning that all transition
+properties can be calculated from the ground state\cite{Marques2004}.
+
+Response theory aims to predict the changes in the electronic structure of a molecule 
+when exposed to an external electronic potential. This is described by the Hamiltonian
+
+\begin{equation}
+\hat{H}\left(t\right) = \hat{H^0} + V^{\text{ext}}\left(t\right)
+\end{equation}
+
+where $\hat{H^0}$ is the unpeturbed Hamiltonian, $V^{\text{ext}}\left(t\right)$ 
+is the potential from the external field, which is usually taken to be an oscillating 
+electric field and so is time $t$ dependent. This Hamiltonian can then be used to 
+describe a time-dependent set of Kohn-Sham equations\cite{Kohn1952}. For example 
+the time-dependent Kohn-Sham Hamiltonian is given by
+
+\begin{equation}
+\hat{H}_{KS}\left[\rho\right]\left(t\right) = \hat{H}^0_{KS}\left[\rho\right] + V_H\left[\rho\right]\left(t\right) + V_{\text{XC}}\left[\rho\right]\left(t\right) + V^{\text{ext}}\left(t\right)
+\end{equation} 
+
+where $\rho$ is the electron density, $\left[\rho\right]$ denotes a density functional. 
+$V_H$ and $V_{XC}$ are the Kohn-Sham coloumb and exchange-correlation potentials 
+respectively. The key part of the Runge-Gross theorm is that the density solution 
+to this Hamiltonian can be uniquely mapped from the potential function, and so the 
+time-dependent density can be written as a function of the potential function
+
+\begin{equation}
+\rho\left(t\right) = \rho\left[V^{\text{ext}}\right]\left(t\right)
+\end{equation}
+
+. As stated above, linear response theory makes a Taylor expansion of this time-dependent 
+density, and approximates the full sum by only the first term
+
+\begin{equation}
+\begin{aligned}
+\rho\left(t\right) &= \rho_0 + \rho_1\left(t\right) + \rho_2\left(t\right) + \dots \\
+&\approx \rho_0 + \rho_1\left(t\right)
+\end{aligned}
+\end{equation}
+
+where $\rho_n\left(t\right)$ is the density response to the $n$-th order. There 
+re several steps that are easier to speed through here. One of these steps is that 
+the time-dependent term is only dependent on time differences, and so can be transformed 
+with a Fourier transform. Second is that the poles (ie where the inverse of the 
+function is zero) of the response function give the excitation energies. These,
+along with more technical details, lead to the full Cassida equation:
+
+\begin{equation}
+\label{full_cassida_eq1}
+\left(\begin{matrix}
+\mathbf{A} & \mathbf{B} \\
+\mathbf{B^*} & \mathbf{A^*}
+\end{matrix}\right)
+\left(\begin{matrix}
+\mathbf{X}\\
+\mathbf{Y}
+\end{matrix}\right)
+=
+\left(\begin{matrix}
+\omega & 0\\
+0 & -\omega
+\end{matrix}\right)
+\left(\begin{matrix}
+\mathbf{X}\\
+\mathbf{Y}
+\end{matrix}\right)
+\end{equation}
+
+where $\omega$ are the excitation energies, and the vectors $\mathbf{X}$ and $\mathbf{Y}$ 
+describe the electronic transitions in the basis of ground state molecular orbitals. 
+The elements of matrices $\mathbf{A}$ and $\mathbf{B}$ are derived from Fourier 
+transformed density, and are explicitly given by
+
+\begin{equation}
+A_{ia,jb}\left(\omega\right) = \delta_{ij}\delta_{ab}\left(\epsilon_a - \epsilon_i\right) + \int dr_1 \int dr_2 \psi_i^*\left(r_1\right) \psi_a\left(r_1\right) f_{\text{XC}}\left(r_1, r_2, \omega\right) \psi_i\left(r_2\right) \psi_a^*\left(r_2\right)
+\end{equation}
+
+\begin{equation}
+B_{ia,jb}\left(\omega\right) = \int dr \int dr' \psi_i^*\left(r_1\right) \psi_a\left(r_1\right) f_{\text{XC}}\left(r_1, r_2, \omega\right) \psi_i\left(r_2\right) \psi_a^*\left(r_2\right)
+\end{equation}
+
+where $r$ is the position of the electron in orbitals $\psi$, and $i$,$j$ and $a$, 
+$b$ are occupied and virtual orbital indices respectively. $\epsilon_p$ are the 
+orbital energies the ground state orbitals, and $\delta$ is the usual kronecker 
+delta function. The kernal function $f_{\text{XC}}$ is an exact frequency (excitation energy) 
+dependent exchange-correlation functional, and as it is dependent on the excitation 
+energy given by the solutions of this eigenvalue equation, can be seen to be self-consistent.
+
+However, approximations can be made. First is that the coupling matrix elements 
+are in fact zero. Hence the excitation energies are just the eigenvalue differences, 
+giving the eigenvalue difference method discussed below. Second is to say that the 
+kernal function is actually frequency independent. This can then give the matrix 
+elements in a more computable form. These could be calculated by any density functional 
+theory (DFT) method - for example if using a mix of generalized gradient approximation 
+(GGA) density functional and exact exchange, the matrix elements would be given 
+by
+
+\begin{equation}
+A_{ia, jb} = \delta_{ij} \delta_{ab} \left(\epsilon_a - \epsilon_i \right) + \left(ia|jb\right) - \zeta\left(ij|ab\right) + \left(1-\zeta\right)\left(ia|f_{\text{XC}}|jb\right)
+\end{equation}
+
+\begin{equation}
+B_{ia, jb} = \left(ia|jb\right) - \zeta\left(ij|ab\right) + \left(1-\zeta\right)\left(ia|f_{\text{XC}}|jb\right)
+\end{equation}
+
+where spatial notation has been used for brevity. $\zeta$ here is the amount of 
+exact exchange mixing. The density functional term $\left(ia|f_{\text{XC}}|jb\right)$ 
+is given by
+
+\begin{equation}
+\left(ia|f_{\text{XC}}|jb\right) = \int dr_1 \int dr_2 \psi_i \left(r_1\right)\psi_a \left(r_1\right) \frac{\delta^2 E^{\text{GGA}_{\text{XC}}}}{\delta\rho\left(r_1\right)\delta\rho\left(r_2\right)} \psi_i \left(r_2\right)\psi_a \left(r_2\right)
+\end{equation}
+
+It is known that some density functionals are better than others for this approximation. 
+Recently a benchmarking of different density functionals for the \Qy transitions 
+in chlorophylls showed that the lowest error is around 0.1 eV \cite{List2013}. TDDFT 
+has become the work-horse of excitated state studies. It is on comparable accuracy 
+to higher level methods, such as coupled cluster methods, but without the expence\cite{Laurent2013} 
+and can be calculated from just ground state information within the linear response 
+approximation. However, as stated earlier, the excited state gradients are still 
+expensive to calculate, especially for the large LH2 system.
 
 \subsection{$\Delta$-SCF}
 \label{subsec{dscf_and_eigdiff}}
@@ -183,8 +492,128 @@ can be expressed with this transition density matrix as:
 \end{split}
 \end{equation}
 
-
-\section{Scaling Theory For Large Systems}
+\section{Large System Models}
 \label{sec:large_systems_theory}
+
+\subsection{Excitation Energy Transfer and Frenkel Hamiltonians}
+
+Excitation energy transfer (EET) stabilizes the absorption of a photon of light,
+and it is thought that light harvesting systems have evolved to maximize this stability\cite{Cleary2013}.
+In regimes with strong couling (ie large transfer), excitation energy can flow back
+and forth between different states, leading to a superposition. More explicitly,
+transfer can be described as the transition from an initial state to a final state
+
+\begin{equation}
+\ce{D^* + A -> D + A^*}
+\end{equation}
+
+where $D$ and $A$ are the donor and acceptor system respectively, and $*$ denotes
+the excited state. The superposition state can be given by the linear combination 
+of the inital and final states:
+
+\begin{equation}
+\ket{\phi} = c_1 \ket{D^*A} + c_2 \ket{DA^*}
+\end{equation}
+
+where $c_n$ are the cofficients of each acceptor-donor state. We can write the total
+electronic Hamiltonian for an aggregate of chromophore molecule sites as a sum of
+individual site Hamiltonians and cross site interactions
+
+\begin{equation}
+\hat{H}_{\text{tot}} = \sum^N_m \hat{H}_m + \sum^N_m \sum^N_n \left(\hat{V}_{\text{el-el}} + \hat{V}_{\text{el-nuc}} + \hat{V}_{\text{nuc-nuc}}\right)
+\end{equation}
+
+where $N$ is the number of sites, $\hat{H}_m$ is on-site Hamiltonian (ie only treats
+electrons for the site $m$). $\hat{V}_{\text{el-el}}$, $\hat{V}_{\text{el-nuc}}$ 
+and $\hat{V}_{\text{nuc-nuc}}$ are the electron-electron, electron-nuclear and nuclear-nuclear
+interactions between two sites respectively. It is assumed that different site Hamiltonians
+can give both the ground and excited states of the chromophore $m$, i.e. it satisfies
+the time-independent Schrödinger equation
+
+\begin{equation}
+\hat{H}_{a_m} \ket{\phi_{a_m}} = E_{a_m} \ket{\phi_{a_m}}
+\end{equation}
+
+where ${a_m}$ is the index of either the ground or an excited state for the chromophore
+$m$. There are then three approximations we can make to simplify the total Hamiltonian.
+First is to assume that there is only one site excitation, and this is to the first
+excited state. This reduces the complexity of any solution to the total Hamiltonian,
+and is known as the Heitler-London approximation\cite{Agranovich2000}. Second is 
+that the chromophore sites are well separated enough that the wavefunctions do not
+overlap\cite{Frenkel1931}. We can then use a Hartree product to construct the aggregate
+wavefunctions from a basis set of individual chromophores
+
+\begin{equation}
+\ket{\Psi_\text{tot}} = \sum_{a_m} c_{a_m} \ket{\Phi_{a_m}}
+\end{equation}
+
+\begin{equation}
+\ket{\Phi_a} = \prod^N_m \phi_{a_m}
+\end{equation}
+
+where $c_{a_m}$ are the coefficients for each site, given from the eigenvectors 
+of the time-independent Schrödiner equation. $\ket{\Phi_{a_m}}$ is the total chromophore
+state, and $\phi_{a_m}$ are the one-electron orbitals on the chromophore site $m$.
+The third approximation is to neglect the nuclear-electron and nuclear-nuclear interactions.
+This can be done if the effects of the surrounding nuclear environment are treated
+in the individual site Hamiltonians\cite{Scholes2003} - this includes the other 
+chromophore sites as well as any other environments ie. the LH2 protein environment.
+Alternatively, this term can just be ignored.
+
+The total Hamiltonian can then just be expressed as the site Hamiltonians and an 
+electronic coupling element between two sites. We then need to construct the total
+Hamiltonian from the basis of single chromophores. Starting from the excitonic wavefunctions,
+we can write
+
+\begin{equation}
+\begin{aligned}
+\bra{\Phi_a} \hat{H}_{\text{tot}}\ket{\Phi_b} &= \sum^N_m \bra{\Phi_a} \hat{H}_{m}\ket{\Phi_b} + \sum^N_m \sum^N_n \bra{\Phi_a} \hat{V}_{\text{el-el}}\ket{\Phi_b} \\
+&= E^{\left(m\right)}_{a_m} \prod^N_l \delta_{al} \delta_{bl} + \sum^N_m \sum^N_n \bra{\Phi_a} \hat{V}_{\text{el-el}}\ket{\Phi_b}
+\end{aligned}
+\end{equation}
+
+where the first term are the site energies, as the exciton states are orthogonal. 
+The second term needs to be expanded into the basis set of individual chromophore 
+sites, so we can calculate this term from individual response calculations. Each 
+term in the double summation can be given as
+
+\begin{equation}
+\begin{aligned}
+\bra{\Phi_a} \hat{V}_{\text{el-el}}\ket{\Phi_b} &= \sum_{i \in \mathbf{r}_m} \sum_{j \in \mathbf{r}_n} \bra{\Phi_a} \frac{1}{\left|\mathbf{r_i} - \mathbf{r_j}\right|} \ket{\Phi_b} \\
+&= \left(\sum_{i \in m} \sum_{j \in n} \bra{\phi^{\left(m\right)}_{a_m} \phi^{\left(n\right)}_{a_n}} \frac{1}{\left|\mathbf{r_i} - \mathbf{r_j}\right|} \ket{\phi^{\left(m\right)}_{b_m}\phi^{\left(n\right)}_{b_n}}\right)\prod^N_{l\neq m,n}\delta_{a_l, b_l}
+\end{aligned}
+\end{equation}
+
+where $i,j$ are the indices of electrons on the sites $m,n$, and $\mathbf{r}_i, 
+\mathbf{r}_j$ are their positions. With a few extra steps not included for brevity,
+this expression can then be written in terms of the transition densities of each 
+site\cite{Scholes2003}
+
+\begin{equation}
+\bra{\Phi_a} \hat{V}_{\text{el-el}}\ket{\Phi_b} = \int d\mathbf{r}_{m} \int d\mathbf{r}_{n} \frac{\rho_{a_m}\left(\mathbf{r}_{m}\right)\rho_{b_n}\left(\mathbf{r}_{n}\right)}{\left|\mathbf{r}_{m} - \mathbf{r}_{n}\right|}
+\end{equation}
+
+where $\rho_{a_m}$ is the transition density of transition $a$ on site $m$. These 
+transition densities can be expanded in terms of multipoles, leading to dipole-dipole 
+interactions methods. Taking all of the approximations into account, and simplifying 
+some terms, we can then write the effective Hamiltonian that is used to describe 
+Frenkel excitons as
+
+\begin{equation}
+\hat{H}_{\text{eff}} = \sum^N_{m=1} \epsilon_m + \sum^{N,N}_{m \neq n} J_{mn}
+\end{equation}
+
+where the diagonal elements $\epsilon_m$ are site energies of the chromophores, 
+and the off-diagonal elements $J_{mn}$ are the coulombic coupling between the tranisiton
+density of different sites. Calculating these coupling elements is discussed later
+in more detail, but it is usual to take expand this term into a multipole expansion\cite{Steinmann2015}. 
+The first term, corresponding to monopoles, is zero as a local excitation will not 
+produce an overall transition charge (as opposed to a non-local charge-transfer 
+excitation, which can be included in the Frenkel Hamiltonian in some cases\cite{Li2017}). 
+The next term is a dipole-dipole interaction, and usually the expansion is stopped 
+here. Hence, all that is needed to calculate a rough Frenkel exciton Hamiltonian 
+is the local excitations and transition dipoles for each site. This can be done 
+with many response methods, such as time-dependent density functional theory (TDDFT) 
+or mean-field methods like \dscf.
 
 

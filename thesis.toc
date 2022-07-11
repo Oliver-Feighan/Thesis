@@ -5,100 +5,106 @@
 \contentsline {chapter}{\chapternumberline {1}Outline}{1}{chapter.1}%
 \contentsline {chapter}{\chapternumberline {2}Introduction}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Electronic structure}{3}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Light-Matter Response}{3}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Linear Response}{3}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}$\Delta $-SCF}{3}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Eigenvalue Difference}{5}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Transition Density and Dipole Moments}{5}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Scaling Theory For Large Systems}{6}{section.2.3}%
-\contentsline {chapter}{\chapternumberline {3}Literature Review}{7}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Efficient Response Methods}{7}{section.3.1}%
-\contentsline {subsubsection}{\numberline {3.1.0.1}sTDA-xTB}{7}{subsubsection.3.1.0.1}%
-\contentsline {section}{\numberline {3.2}Statistical Approaches}{9}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Hardware}{9}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusions}{9}{section.3.4}%
-\contentsline {chapter}{\chapternumberline {4}Mean-Field excited states}{11}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Combining $\Delta $-SCF With Lower Level Electronic Structure Theories}{12}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Benchmarking $\Delta $-SCF }{12}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Reference Data and test set}{12}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Small Systems}{13}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Non-orthogonality}{16}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}LH2 Chlorophyll}{18}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}xTB methods}{22}{subsection.4.2.5}%
-\contentsline {subsubsection}{\numberline {4.2.5.1}Post-SCF Assignment of Symmetry}{22}{subsubsection.4.2.5.1}%
-\contentsline {subsubsection}{\numberline {4.2.5.2}$\Delta $-xTB Benchmarking Results}{25}{subsubsection.4.2.5.2}%
-\contentsline {section}{\numberline {4.3}Conclusions}{27}{section.4.3}%
-\contentsline {chapter}{\chapternumberline {5}Chlorophyll specific methods}{31}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Approximations in chl-xTB}{31}{section.5.1}%
-\contentsline {subsection}{\numberline {5.1.1}Full TD-DFT Solutions}{31}{subsection.5.1.1}%
-\contentsline {subsection}{\numberline {5.1.2}Approximations to Solutions}{32}{subsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.2.1}Tamm-Dancoff approximation and Diagonal Dominant $\mathbf {A}$ matrices}{32}{subsubsection.5.1.2.1}%
-\contentsline {subsection}{\numberline {5.1.3}Integrals approximations}{33}{subsection.5.1.3}%
-\contentsline {subsection}{\numberline {5.1.4}$Q_y$ Transition}{35}{subsection.5.1.4}%
-\contentsline {subsection}{\numberline {5.1.5}Changes to xTB parameters}{36}{subsection.5.1.5}%
-\contentsline {subsection}{\numberline {5.1.6}Transition and Excited State Density from the Ground State}{39}{subsection.5.1.6}%
-\contentsline {section}{\numberline {5.2}Parameterization}{41}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Objective Function}{41}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Minimisation Algorithms}{42}{subsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.2.1}Nelder-Mead}{42}{subsubsection.5.2.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2.2}Sequential Least-Squares Squadratic Programming}{43}{subsubsection.5.2.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Reference Data}{47}{subsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.3.1}Training and testing set}{49}{subsubsection.5.2.3.1}%
-\contentsline {subsection}{\numberline {5.2.4}Results}{50}{subsection.5.2.4}%
-\contentsline {section}{\numberline {5.3}Cross-validation}{53}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Vibrational Mode Coupling}{53}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Absorption Spectra}{61}{subsection.5.3.2}%
-\contentsline {section}{\numberline {5.4}Conclusions}{62}{section.5.4}%
-\contentsline {chapter}{\chapternumberline {6}Beyond Monomer Chlorophyll}{65}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Frenkel Exciton Hamiltonian}{65}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}Exciton States}{65}{subsection.6.1.1}%
-\contentsline {section}{\numberline {6.2}Same-functional Benchmarking}{67}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}LH2 Dimers}{67}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Rotation}{68}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}chl-xTB Excitons}{72}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Full Dimer comparison}{72}{subsection.6.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.1}Discarding PBE0}{72}{subsubsection.6.3.1.1}%
-\contentsline {subsubsection}{\numberline {6.3.1.2}Assignment of States}{73}{subsubsection.6.3.1.2}%
-\contentsline {subsubsection}{\numberline {6.3.1.3}Comparison}{75}{subsubsection.6.3.1.3}%
-\contentsline {subsubsection}{\numberline {6.3.1.4}chl-xTB Scans}{76}{subsubsection.6.3.1.4}%
-\contentsline {section}{\numberline {6.4}Concentration Quenching}{80}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Conclusions}{85}{section.6.5}%
-\contentsline {chapter}{\chapternumberline {7}Light Harvesting Complexes}{87}{chapter.7}%
-\contentsline {section}{\numberline {7.1}LH2}{87}{section.7.1}%
-\contentsline {subsection}{\numberline {7.1.1}Spectral Density Method}{88}{subsection.7.1.1}%
-\contentsline {section}{\numberline {7.2}Calculating LH2 Excitons}{88}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Molecular Dynamics}{88}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Scaling}{89}{subsection.7.2.2}%
-\contentsline {subsection}{\numberline {7.2.3}Coupling Values}{89}{subsection.7.2.3}%
-\contentsline {subsection}{\numberline {7.2.4}Screening and Embedding}{89}{subsection.7.2.4}%
-\contentsline {subsubsection}{\numberline {7.2.4.1}Absorption Spectra}{91}{subsubsection.7.2.4.1}%
-\contentsline {subsubsection}{\numberline {7.2.4.2}Site Contributions to Exciton Density}{92}{subsubsection.7.2.4.2}%
-\contentsline {section}{\numberline {7.3}Spectra}{93}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Sites}{95}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Exciton states}{98}{subsection.7.3.2}%
-\contentsline {subsection}{\numberline {7.3.3}Coupling}{101}{subsection.7.3.3}%
-\contentsline {section}{\numberline {7.4}Assigning Specific Motions}{104}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Ether system}{104}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Huang Rhys Factors}{106}{subsection.7.4.2}%
-\contentsline {subsection}{\numberline {7.4.3}N Axes Deformation}{107}{subsection.7.4.3}%
-\contentsline {section}{\numberline {7.5}conclusions}{111}{section.7.5}%
-\contentsline {chapter}{\chapternumberline {8}Discussion}{113}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Transition Property Approximations}{113}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Further Investigations into LHII}{113}{section.8.2}%
-\contentsline {section}{\numberline {8.3}Coherence}{113}{section.8.3}%
-\contentsline {appendix}{\chapternumberline {A}Appendix A}{115}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{115}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Computational Hardware}{115}{section.A.2}%
-\contentsline {appendix}{\chapternumberline {B}Appendix B}{117}{appendix.B}%
-\contentsline {section}{\numberline {B.1}LH2 Data}{117}{section.B.1}%
-\contentsline {subsection}{\numberline {B.1.1}Spectral Density Features}{117}{subsection.B.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.1}B800 ring sites}{117}{subsubsection.B.1.1.1}%
-\contentsline {subsubsection}{\numberline {B.1.1.2}B850a ring sites}{118}{subsubsection.B.1.1.2}%
-\contentsline {subsubsection}{\numberline {B.1.1.3}B850b ring sites}{119}{subsubsection.B.1.1.3}%
-\contentsline {subsubsection}{\numberline {B.1.1.4}Exciton states}{120}{subsubsection.B.1.1.4}%
-\contentsline {subsubsection}{\numberline {B.1.1.5}Hamiltonian Coupling Values}{121}{subsubsection.B.1.1.5}%
-\contentsline {subsubsection}{\numberline {B.1.1.6}Interchromophore distances}{122}{subsubsection.B.1.1.6}%
-\contentsline {subsubsection}{\numberline {B.1.1.7}N Axes Deformation}{123}{subsubsection.B.1.1.7}%
-\contentsline {subsubsection}{\numberline {B.1.1.8}Diethyl-Ether system}{124}{subsubsection.B.1.1.8}%
-\contentsline {subsubsection}{\numberline {B.1.1.9}All Spectra}{125}{subsubsection.B.1.1.9}%
-\contentsline {chapter}{Bibliography}{127}{appendix*.8}%
+\contentsline {subsection}{\numberline {2.1.1}Density Functional Theory}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Semi-Empirical Methods}{3}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Tight Binding}{3}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Empirical Fitting}{4}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}xTB Methods}{4}{subsubsection.2.1.2.3}%
+\contentsline {section}{\numberline {2.2}Light-Matter Response Methods}{7}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Linear Response}{7}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}$\Delta $-SCF}{9}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Eigenvalue Difference}{10}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Transition Density and Dipole Moments}{11}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Large System Models}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Excitation Energy Transfer and Frenkel Hamiltonians}{12}{subsection.2.3.1}%
+\contentsline {chapter}{\chapternumberline {3}Literature Review}{15}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Efficient Response Methods}{15}{section.3.1}%
+\contentsline {subsubsection}{\numberline {3.1.0.1}sTDA-xTB}{15}{subsubsection.3.1.0.1}%
+\contentsline {section}{\numberline {3.2}Statistical Approaches}{17}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Hardware}{17}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Conclusions}{17}{section.3.4}%
+\contentsline {chapter}{\chapternumberline {4}Mean-Field excited states}{19}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Combining $\Delta $-SCF With Lower Level Electronic Structure Theories}{20}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Benchmarking $\Delta $-SCF }{20}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Reference Data and test set}{20}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Small Systems}{21}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Non-orthogonality}{24}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}LH2 Chlorophyll}{26}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}xTB methods}{30}{subsection.4.2.5}%
+\contentsline {subsubsection}{\numberline {4.2.5.1}Post-SCF Assignment of Symmetry}{30}{subsubsection.4.2.5.1}%
+\contentsline {subsubsection}{\numberline {4.2.5.2}$\Delta $-xTB Benchmarking Results}{33}{subsubsection.4.2.5.2}%
+\contentsline {section}{\numberline {4.3}Conclusions}{35}{section.4.3}%
+\contentsline {chapter}{\chapternumberline {5}Chlorophyll specific methods}{39}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Approximations in chl-xTB}{39}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Full TD-DFT Solutions}{39}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Approximations to Solutions}{40}{subsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.2.1}Tamm-Dancoff approximation and Diagonal Dominant $\mathbf {A}$ matrices}{40}{subsubsection.5.1.2.1}%
+\contentsline {subsection}{\numberline {5.1.3}Integrals approximations}{41}{subsection.5.1.3}%
+\contentsline {subsection}{\numberline {5.1.4}$Q_y$ Transition}{43}{subsection.5.1.4}%
+\contentsline {subsection}{\numberline {5.1.5}Changes to xTB parameters}{44}{subsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.1.6}Transition and Excited State Density from the Ground State}{47}{subsection.5.1.6}%
+\contentsline {section}{\numberline {5.2}Parameterization}{49}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Objective Function}{49}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Minimisation Algorithms}{50}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}Nelder-Mead}{50}{subsubsection.5.2.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2.2}Sequential Least-Squares Squadratic Programming}{51}{subsubsection.5.2.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Reference Data}{55}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Training and testing set}{57}{subsubsection.5.2.3.1}%
+\contentsline {subsection}{\numberline {5.2.4}Results}{58}{subsection.5.2.4}%
+\contentsline {section}{\numberline {5.3}Cross-validation}{61}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Vibrational Mode Coupling}{61}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Absorption Spectra}{69}{subsection.5.3.2}%
+\contentsline {section}{\numberline {5.4}Conclusions}{70}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {6}Beyond Monomer Chlorophyll}{73}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Frenkel Exciton Hamiltonian}{73}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Exciton States}{73}{subsection.6.1.1}%
+\contentsline {section}{\numberline {6.2}Same-functional Benchmarking}{75}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}LH2 Dimers}{75}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Rotation}{76}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}chl-xTB Excitons}{80}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Full Dimer comparison}{80}{subsection.6.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.1}Discarding PBE0}{80}{subsubsection.6.3.1.1}%
+\contentsline {subsubsection}{\numberline {6.3.1.2}Assignment of States}{81}{subsubsection.6.3.1.2}%
+\contentsline {subsubsection}{\numberline {6.3.1.3}Comparison}{83}{subsubsection.6.3.1.3}%
+\contentsline {subsubsection}{\numberline {6.3.1.4}chl-xTB Scans}{84}{subsubsection.6.3.1.4}%
+\contentsline {section}{\numberline {6.4}Concentration Quenching}{88}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Conclusions}{93}{section.6.5}%
+\contentsline {chapter}{\chapternumberline {7}Light Harvesting Complexes}{95}{chapter.7}%
+\contentsline {section}{\numberline {7.1}LH2}{95}{section.7.1}%
+\contentsline {subsection}{\numberline {7.1.1}Spectral Density Method}{96}{subsection.7.1.1}%
+\contentsline {section}{\numberline {7.2}Calculating LH2 Excitons}{96}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Molecular Dynamics}{96}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Scaling}{97}{subsection.7.2.2}%
+\contentsline {subsection}{\numberline {7.2.3}Coupling Values}{97}{subsection.7.2.3}%
+\contentsline {subsection}{\numberline {7.2.4}Screening and Embedding}{97}{subsection.7.2.4}%
+\contentsline {subsubsection}{\numberline {7.2.4.1}Absorption Spectra}{99}{subsubsection.7.2.4.1}%
+\contentsline {subsubsection}{\numberline {7.2.4.2}Site Contributions to Exciton Density}{100}{subsubsection.7.2.4.2}%
+\contentsline {section}{\numberline {7.3}Spectra}{101}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Sites}{103}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Exciton states}{106}{subsection.7.3.2}%
+\contentsline {subsection}{\numberline {7.3.3}Coupling}{109}{subsection.7.3.3}%
+\contentsline {section}{\numberline {7.4}Assigning Specific Motions}{112}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Ether system}{112}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Huang Rhys Factors}{114}{subsection.7.4.2}%
+\contentsline {subsection}{\numberline {7.4.3}N Axes Deformation}{115}{subsection.7.4.3}%
+\contentsline {section}{\numberline {7.5}conclusions}{119}{section.7.5}%
+\contentsline {chapter}{\chapternumberline {8}Discussion}{121}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Transition Property Approximations}{121}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Further Investigations into LHII}{121}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Coherence}{121}{section.8.3}%
+\contentsline {appendix}{\chapternumberline {A}Appendix A}{123}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Electronic Structure Codes}{123}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Computational Hardware}{123}{section.A.2}%
+\contentsline {appendix}{\chapternumberline {B}Appendix B}{125}{appendix.B}%
+\contentsline {section}{\numberline {B.1}LH2 Data}{125}{section.B.1}%
+\contentsline {subsection}{\numberline {B.1.1}Spectral Density Features}{125}{subsection.B.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.1}B800 ring sites}{125}{subsubsection.B.1.1.1}%
+\contentsline {subsubsection}{\numberline {B.1.1.2}B850a ring sites}{126}{subsubsection.B.1.1.2}%
+\contentsline {subsubsection}{\numberline {B.1.1.3}B850b ring sites}{127}{subsubsection.B.1.1.3}%
+\contentsline {subsubsection}{\numberline {B.1.1.4}Exciton states}{128}{subsubsection.B.1.1.4}%
+\contentsline {subsubsection}{\numberline {B.1.1.5}Hamiltonian Coupling Values}{129}{subsubsection.B.1.1.5}%
+\contentsline {subsubsection}{\numberline {B.1.1.6}Interchromophore distances}{130}{subsubsection.B.1.1.6}%
+\contentsline {subsubsection}{\numberline {B.1.1.7}N Axes Deformation}{131}{subsubsection.B.1.1.7}%
+\contentsline {subsubsection}{\numberline {B.1.1.8}Diethyl-Ether system}{132}{subsubsection.B.1.1.8}%
+\contentsline {subsubsection}{\numberline {B.1.1.9}All Spectra}{133}{subsubsection.B.1.1.9}%
+\contentsline {chapter}{Bibliography}{135}{appendix*.9}%

@@ -8,6 +8,17 @@
   without adjustable parameters: The PBE0 model}}, J. Chem. Phys1, 110 (1999),
   p.~6158.
 
+\bibitem{Agranovich2000}
+{\sc V.~M. Agranovich and D.~M. Basko}, {\em {Molecular polaritons for
+  controlling chemistry with quantum optics}}, Mol. Orbital Heitler-London
+  Methods J. Chem. Phys., 112 (2000), p.~11.
+
+\bibitem{Bannwarth2019}
+{\sc C.~Bannwarth, S.~Ehlert, and S.~Grimme}, {\em {GFN2-xTB An Accurate and
+  Broadly Parametrized Self-Consistent Tight-Binding Quantum Chemical Method
+  with Multipole Electrostatics and Density-Dependent Dispersion
+  Contributions}}, J. Chem. Theory Comput., 15 (2019), pp.~1652--1671.
+
 \bibitem{Bannwarth2020}
 {\sc C.~Bannwarth, C.~Eike, S.~Ehlert, A.~Hansen, P.~Pracht, J.~Seibert,
   S.~Spicher, and S.~Grimme}, {\em {Extended tight-binding quantum chemistry
@@ -18,15 +29,29 @@
   {Self-consistent-field calculations of core excited states}}, J. Chem. Phys,
   130 (2009), p.~124308.
 
+\bibitem{Caldeweyher2020}
+{\sc E.~Caldeweyher, J.-M. Mewes, S.~Ehlert, and S.~Grimme}, {\em {Extension
+  and evaluation of the D4 London-dispersion model for periodic systems}},
+  Phys. Chem. Chem. Phys, 22 (2020), p.~8499.
+
 \bibitem{Cho2021}
 {\sc Y.~Cho, S.~J. Bintrim, and T.~C. Berkelbach}, {\em {A simplified GW/BSE
   approach for charged and neutral excitation energies of large molecules and
   nanomaterials}},  (2021).
 
+\bibitem{Cleary2013}
+{\sc L.~Cleary, H.~Chen, C.~Chuang, R.~J. Silbey, and J.~Cao}, {\em {Optimal
+  fold symmetry of LH2 rings on a photosynthetic membrane}}, Biophys. Comput.
+  Biol. Chem., 110 (2013), pp.~8537--8542.
+
 \bibitem{Cogdell2006}
 {\sc R.~J. Cogdell, A.~Gall, and J.~{K{\"{o}} Hler}}, {\em {The architecture
   and function of the light-harvesting apparatus of purple bacteria : from
   single molecules to in vivo membranes}}.
+
+\bibitem{Frenkel1931}
+{\sc J.~Frenkel}, {\em {On The Transformation Of Light Into Heat In Solids}},
+  Phys. Rev., 37 (1931), pp.~17--44.
 
 \bibitem{Gaussian16}
 {\sc D.~J. {Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.;
@@ -38,6 +63,11 @@
 \bibitem{Gasteiger1978}
 {\sc J.~Gasteiger and M.~Marsili}, {\em {A new model for calculating atomic
   charges in molecules}}, Tetrahedron Lett., 19 (1978), pp.~3181--3184.
+
+\bibitem{Gaus2011}
+{\sc M.~Gaus, Q.~Cui, and M.~Elstner}, {\em {DFTB3: Extension of the
+  Self-Consistent-Charge Density-Functional Tight-Binding Method (SCC-DFTB)}},
+  J. Chem. Theory Comput, 7 (2011), pp.~931--948.
 
 \bibitem{Gavnholt2008}
 {\sc J.~Gavnholt, T.~Olsen, M.~Engelund, and J.~Schi{\o}tz}, {\em
@@ -59,6 +89,12 @@
 {\sc S.~Grimme}, {\em {A simplified Tamm-Dancoff density functional approach
   for the electronic excitation spectra of very large molecules}}, J. Chem.
   Phys, 138 (2013), p.~244104.
+
+\bibitem{Grimme2010}
+{\sc S.~Grimme, J.~Antony, S.~Ehrlich, and H.~Krieg}, {\em {A consistent and
+  accurate ab initio parametrization of density functional dispersion
+  correction (DFT-D) for the 94 elements H-Pu}}, J. Chem. Phys., 132 (2010),
+  p.~24103.
 
 \bibitem{Grimme}
 {\sc S.~Grimme and C.~Bannwarth}, {\em {Supporting information for: Ultra-fast
@@ -88,6 +124,10 @@
   performance of spin-component scaled CC2 in ground and electronically excited
   states}}, Phys. Chem. Chem. Phys, 10 (2008), pp.~4119--4127.
 
+\bibitem{Kohn1952}
+{\sc P.~Hohenberg and W.~Kohn}, {\em {PHYSICAL REVIEW}}, Phys. Rev., 136
+  (1952), p.~864.
+
 \bibitem{Hunt1969}
 {\sc s.~W.~J. Hunt and W.~A. Goddard}, {\em {Excited States of H2O using
   improved virtual orbitals}}, Chem. Phys. Lett., 3 (1969), pp.~414--418.
@@ -103,10 +143,29 @@
   Application to Diatomic Molecules}}, J. Am. Chem. Soc., 86 (1964),
   pp.~4550--4557.
 
+\bibitem{Koskinen2009}
+{\sc P.~Koskinen and V.~M{\"{a}}kinen}, {\em {Density-functional tight-binding
+  for beginners}}, Comput. Mater. Sci., 47 (2009), pp.~237--253.
+
 \bibitem{Kowalczyk2011}
 {\sc T.~Kowalczyk, S.~R. Yost, and T.~{Van Voorhis}}, {\em {Assessment of the
   D-SCF density functional theory approach for electronic excitations in
   organic dyes}}, J. Chem. Phys., 134 (2011), p.~164101.
+
+\bibitem{Laurent2013}
+{\sc A.~D. Laurent and D.~Jacquemin}, {\em {TD-DFT benchmarks: A review}}, sep
+  2013.
+
+\bibitem{Li2017}
+{\sc X.~Li, R.~M. Parrish, F.~Liu, S.~I. {Kokkila Schumacher}, and T.~J.
+  Mart{\'{i}}nez}, {\em {An Ab Initio Exciton Model Including Charge-Transfer
+  Excited States}}, J. Chem. Theory Comput., 13 (2017), pp.~3493--3504.
+
+\bibitem{List2013}
+{\sc N.~H. List, C.~Curutchet, S.~Knecht, B.~Mennucci, J.~Kongsted, J.~Xxiii,
+  and B.~Spain}, {\em {Toward Reliable Prediction of the Energy Ladder in
+  Multichromophoric Systems: A Benchmark Study on the FMO Light-Harvesting
+  Complex}}, J. Chem. Theory Comput., 9 (2013), p.~4928.
 
 \bibitem{Liu2004}
 {\sc T.~Liu, W.-G. Han, F.~Himo, .~G.~M. Ullmann, D.~Bashford, A.~Toutchkine,
@@ -125,11 +184,21 @@
   {Environmental effects on the dynamics in the light-harvesting complexes LH2
   and LH3 based on molecular simulations | Elsevier Enhanced Reader}}, 2018.
 
+\bibitem{Manathunga2020}
+{\sc M.~Manathunga, Y.~Miao, D.~Mu, A.~W. Go, and K.~M. Merz}, {\em {Parallel
+  Implementation of Density Functional Theory Methods in the Quantum
+  Interaction Computational Kernel Program}}, Cite This J. Chem. Theory Comput,
+  16 (2020), pp.~4315--4326.
+
 \bibitem{Marenich2012}
 {\sc A.~V. Marenich, S.~V. Jerome, C.~J. Cramer, and D.~G. Truhlar}, {\em
   {Charge Model 5: An Extension of Hirshfeld Population Analysis for the
   Accurate Description of Molecular Interactions in Gaseous and Condensed
   Phases}},  (2012).
+
+\bibitem{Marques2004}
+{\sc M.~A.~L. Marques and E.~K.~U. Gross}, {\em {TIME-DEPENDENT DENSITY
+  FUNCTIONAL THEORY}}, Annu. Rev. Phys. Chem, 55 (2004), pp.~427--55.
 
 \bibitem{Mennucci2019}
 {\sc B.~Mennucci, F.~C. Ramos, M.~Nottoli, and L.~Cupellini}, {\em {The
@@ -150,14 +219,54 @@
   View on the Electronic Relaxation in Light-Harvesting System II}}, J. Phys.
   Chem. B, 114 (2010), p.~12427.
 
+\bibitem{Porezag1994}
+{\sc D.~Porezag, T.~Frauenheim, T.~Kohler, G.~Seifert, and R.~Kaschner}, {\em
+  {Construction of tight-binding-like potentials on the basis of
+  density-functional theory: Application to carbon}}, Phys. Rev. B, 51 (1994),
+  pp.~12948--12957.
+
+\bibitem{Pracht2019}
+{\sc P.~Pracht, E.~Caldeweyher, S.~Ehlert, and S.~Grimme}, {\em {A Robust
+  Non-Self-Consistent Tight-Binding Quantum Chemistry Method for large
+  Molecules}}, Chem. Eng. Sci., 17 (2019), pp.~1--19.
+
 \bibitem{Roothaan1951}
 {\sc C.~C.~J. Roothaan}, {\em {New Developments in Molecular Orbital Theory}},
   Rev. Mod. Phys., 23 (1951), p.~69.
+
+\bibitem{Runge1984}
+{\sc E.~Runge and E.~K.~U. Gross}, {\em {Density-Functional Theory for
+  Time-Dependent Systems}}, Phys. Rev. Lett., 52 (1984), pp.~997--1000.
+
+\bibitem{Salomon-Ferrer2013}
+{\sc R.~Salomon-Ferrer, D.~A. Case, and R.~C. Walker}, {\em {An overview of the
+  Amber biomolecular simulation package}}, Wiley Interdiscip. Rev. Comput. Mol.
+  Sci., 3 (2013), pp.~198--210.
 
 \bibitem{Schafer1992}
 {\sc A.~Sch{\"{a}}fer, H.~Horn, and R.~Ahlrichs}, {\em {Fully optimized
   contracted Gaussian basis sets for atoms Li to Kr}}, J. Chem. Phys, 97
   (1992), p.~2571.
+
+\bibitem{Scholes2003}
+{\sc G.~D. Scholes}, {\em {LONG-RANGE RESONANCE ENERGY TRANSFER IN MOLECULAR
+  SYSTEMS}}, Annu. Rev. Phys. Chem, 54 (2003), pp.~57--87.
+
+\bibitem{Scholes2011}
+{\sc G.~D. Scholes, G.~R. Fleming, A.~Olaya-Castro, and R.~{Van Grondelle}},
+  {\em {Lessons from nature about solar light harvesting}}, Nat. Chem., 3
+  (2011), p.~763.
+
+\bibitem{Spicher2020a}
+{\sc S.~Spicher and S.~Grimme}, {\em {Robust atomistic modeling of materials,
+  organometallic and biochemical systems}}, Angew. Chemie, 59 (2020),
+  pp.~2--11.
+
+\bibitem{Steinmann2015}
+{\sc C.~Steinmann and J.~Kongsted}, {\em {Electronic Energy Transfer in
+  Polarizable Heterogeneous Environments: A Systematic Investigation of
+  Different Quantum Chemical Approaches}}, J. Chem. Theory Comput., 11 (2015),
+  pp.~4283--4293.
 
 \bibitem{Strain1963}
 {\sc H.~Strain, M.~Thomas, and J.~Katz}, {\em {Spectral Absorption Properties
