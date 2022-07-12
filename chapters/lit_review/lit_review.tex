@@ -8,13 +8,28 @@
 \chapter{Literature Review}
 \label{chap:lit_rev}
 
-\initial{L}ight harvesting complexes
+\initial{T}he issue with designing light harvesting models is the scale of the system.
+For LH2, the chlorophyll system contain 3780 atoms, or $N$ atoms for the entire protein.
+Including a membrane and solvent can quickly leads to the region of 300,000 atoms.
+Generally DFT calculations are not tenable on these types of system sizes, hence 
+the use of the Frenkel exciton method. However the method used to construct the 
+Frenkel Hamiltonian often compromise between accuracy and efficiency. Using DFT
+calculations to calculate the matrix elements for every geometry is still a tall
+order, and often statistical approaches are used. These may use accurate properties
+as a baseline, but much of the small details can be lost due to averaging. On the
+other side, more efficient response methods may be able to construct a greater number
+of matrix elements, but the accuracy may not be comparable to higher level methods.
+Often depending on the study either efficiency or accuracy is the deciding factor.
+
+The space between these tradeoffs has been subject to recent discussion in the literature,
+with novel approaches aiming to achieve accuracy and efficiency. While these approaches
+make significant steps in closing this tra
 
 \section{Efficient Response Methods}
 \label{sec:efficient_response_methods}
 
-\subsubsection{sTDA-xTB}
-\label{subsubsec:stda_xtb}
+\subsection{sTDA-xTB}
+\label{subsec:stda_xtb}
 sTDA-xTB ("simplified Tann-Dancoff Approximation - eXtended Tight Binding") is another
 method in the family of xTB methods developed by the Grimme group, and is parameterised
 for transition properties \cite{Grimme2016}. The accuracy in calculating transition energies with this
@@ -106,9 +121,10 @@ the sTDA-xTB method still requires constructing and diagonalizing the $\mathbf{A
 matrix, albeit with a tight-binding method for molecular orbital coefficients, 
 the gradient of the transition properties would still be difficult to calculate.
 
-
 \section{Statistical Approaches}
-\label{sec:machine_learning}
+\label{sec:stats_models}
+
+
 
 \section{Hardware}
 \label{}

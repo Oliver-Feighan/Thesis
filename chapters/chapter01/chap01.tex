@@ -9,9 +9,9 @@
 
 \initial {N}aturally occuring light harvesting systems present an interesting 
 scientific challenge. With near perfect efficiency\cite{Scholes2011}, the energy 
-from a photon will be taken and transfered to a reaction centre, leading to charge
-transfer processes that culminate in powering biological systems. Making models 
-that can predict and explain these effects are key to making similarly efficient 
+from a photon will be absorbed and transferred to a reaction centre, leading to 
+charge transfer processes that culminate in powering biological systems. Constructing 
+models that can predict and explain these effects are key to making similarly efficient 
 photovoltaic systems.
 
 \section{Electronic structure}
@@ -25,24 +25,90 @@ Its' application to a wide range of system sizes as well as chemical systems mak
 it an ideal choice for many situations, including chlorophyll and light harvesting
 systems. A brief overview of DFT is given here to contextualise its use for 
 
-At its heart, DFT is based on the Hohenberg-Kohn theorems, where energies of electronic
-structures are proven to have a one-to-one mapping to electron density.
+At its heart DFT is based on the two Hohenberg-Kohn theorems. The first states that
+the ground state energy $E_{\text{GS}}$, is proven to have a one-to-one mapping 
+to a functional of the electron density $\rho_{\text{GS}} \left(r\right)$
 
-Schrodinger equation.
+\begin{equation}
+    E_{\text{GS}} = E \left[ \rho_{\text{GS}} \left(r\right)\right]
+\end{equation}
 
-Basis sets.
+where $E \left[ \rho_{\text{GS}} \left(r\right)\right]$ is the functional. The second
+theorem is closely related to the variation principle, stating that the \emph{exact}
+ground state density also minimises the total energy. This minima corresponds to 
+only one electron density. Whilst proven in principle, the exact functional of the
+electron density is unknown and so various approximations have be made. One popular
+method is the Kohn-Sham approach, where non-interacting electrons are used to generate
+the ground state density.  The total energy in the Kohn-Sham approach is the sum
+of functionals
 
+\begin{equation}
+    \functional{E}{\text{tot}}{\rho} = \functional{E}{T_S}{\rho} + \functional{E}{V}{\rho} + \functional{E}{J}{\rho} + \functional{E}{X}{\rho} + \functional{E}{C}{\rho}
+\end{equation}
 
+where these terms correspond to the kinetic, (nuclear) potential, bare Coulombic,
+exchange and correlation interaction respectively. Due to the Coulombic approximation
+not including spin effects, it is necessary to include the exchange and correlation
+terms. The solution for the minimum energy would satisfy
+
+\begin{equation}
+    \Delta \left[  \functional{E}{\text{tot}}{\rho}  - \mu \left( \int_{}^{} \rho\left(r\right) \,dr - N \right) \right] = 0
+\end{equation}
+
+with the constraint that the total number of electrons $N$ is conserved. The value
+of $\mu$ is given by
+
+\begin{equation}
+    \mu = \frac{\delta  \functional{E}{\text{tot}}{\rho}}{\delta \rho}
+\end{equation}
+
+which can be rewritten in terms of the kinetic energy and energy potentials
+
+\begin{equation}
+    \begin{split}
+        \mu &= \frac{\delta  \functional{E}{T_S}{\rho}}{\delta \rho} + \functional{v}{V}{\rho} + \functional{v}{J}{\rho} + \functional{v}{X}{\rho} + \functional{v}{C}{\rho} \\
+            &= \frac{\delta  \functional{E}{T_S}{\rho}}{\delta \rho} + \functional{v}{KS}{\rho}
+    \end{split}
+\end{equation}
+
+where the energy potentials are combined into the Kohn-Sham potential $\functional{v}{KS}{\rho}$ for
+convenience. As the electrons are non-interacting, this potential can be used to
+solve one-electron Schrödinger equations
+
+\begin{equation}
+    \left[ -\frac{1}{2} \nabla^2 + \functional{v}{KS}{\rho} \right] \psi_i = \epsilon_i \psi_i
+\end{equation}
+
+where $psi_i$ are one-electron wavefunctions, $\epsilon_i$ are Lagrange multipliers
+to ensure orthonormality, and the kinetic energy term $-\frac{1}{2} \nabla ^2$ is
+given from the definition of the kinetic energy of non-interacting electrons
+
+\begin{equation}
+    \functional{E}{T_S}{\rho} = -\frac{1}{2} \sum_i^N \braket{\psi_i|\nabla^2|\psi_i}
+\end{equation}
+
+. The total electron density can be constructed from the one-electron wavefunction
+solutions
+
+\begin{equation}
+    \rho = \sum_i^N \left\lvert \psi_i \right( r \left)^2 \right\rvert 
+\end{equation}
+
+. Again the issue is that the potential functional $\functional{v}{KS}{\rho}$ is
+not known, and so approximations have to be made. Additionally, an initial guess 
+of the electron density in needed to start the variational procedure, but this can
+readily be given from atomic densities or other methods.
 
 \subsection{Semi-Empirical Methods}
 \label{subsec:xtb_theory}
 
 \subsubsection{Tight Binding}
-Over the last several years, there has been renewed interest in tight-binding methods, 
-more specifically tight binding methods derived from density functional theory 
-(named density function tight binding or DFTB)\cite{Porezag1994}. These methods
-approximate the density functional energy by expanding it into a Taylor series based 
-on the density fluctuations $\delta\rho$\cite{Koskinen2009}
+\label{subsubsec:tight_binding}
+In recent years there has been renewed interest in tight-binding methods, including
+tight binding methods derived from density functional theory (named density function 
+tight binding or DFTB)\cite{Porezag1994}. These methods approximate the density 
+functional energy by expanding it into a Taylor series based on the density fluctuations
+$\delta\rho$\cite{Koskinen2009}
 
 \begin{equation}
 E\left[\rho\right] \approx E^{\left(0\right)}\left[\rho_0\right] + E^{\left(1\right)}\left[\rho_0, \delta\rho\right] + E^{\left(2\right)}\left[\rho_0, \left(\delta\rho\right)^2\right] + E^{\left(3\right)}\left[\rho_0, \left(\delta\rho\right)^3\right] + \dots
@@ -67,6 +133,7 @@ of classical methods. However, work on making DFT method quicker, usually with e
 massively parallelized codes, is closing the gap where DFTB methods exist\cite{Manathunga2020}.
 
 \subsubsection{Empirical Fitting}
+\label{subsubsec:empirical_fitting}
 
 Whilst there is nothing inherent about tight binding methods that require emperically 
 fit parameters, it is usual to make further efficiency gains by using fitted terms 
@@ -78,8 +145,9 @@ interaction will be very different in biological systems compared to an inorgani
 such that usually metalloproteins have to be parameterized completely separately).
 
 \subsubsection{xTB Methods}
+\label{subsubsec:xtb_methods}
 
-Recently the extented tight binding (xTB) family of methods, developed by the Grimme 
+Recently the extended tight binding (xTB) family of methods, developed by the Grimme 
 group, have been presented as another semi-empirical tight binding solution to investigating 
 large chemical systems\cite{Bannwarth2020}\cite{Bannwarth2019}\cite{Grimme2017}\cite{Pracht2019}\cite{Grimme2016}\cite{Spicher2020a}.
 Many of these methods have been parameterized for geometry optimizations and frequencies 
@@ -154,8 +222,8 @@ H_{\mu\nu}^{\text{EHT}} = \frac{1}{2} K_{AB}^{ll'}S_{\mu\nu}\left(H_{\mu\mu} + H
 where $A,B$ are atomic indices, and $l,l'$ are the indices of atomic orbitals on 
 atoms $A, B$ respectively (ie $l \in A, l' \in B$). $K$ is a parameterized global 
 scaling term, $S$ is the atomic orbital overlap. $H$ are diagonal elements of the 
-Hamiltonian and deal with on-site energies. $X$ is a function of environment-scaled 
-electronegativities $EN$, $\Pi$ is another distance-dependent function, to correct 
+Hamiltonian and deal with on-site energies. $X$ is a function of the environment-scaled 
+electro-negativity $EN$, $\Pi$ is another distance-dependent function, to correct 
 for the distance-scaled interactions from the overlap matrix. $Y$ is the identity 
 matrix for GFN1-xTB, but corrects for kinetic energy integrals in GFN2- and GFN0-xTB. 
 Due to the lack of element pair-wise parameters (except for a few special cases 
@@ -163,7 +231,7 @@ in the global scaling constants), these terms are readily separable and so can e
 be considered or discarded for future parameterization work. For example, the $\Pi$,
 $Y$ and $X$ term deal with interactions that are more described by atomic environments 
 rather than particular chemistry between atoms. Hence, for excited state theories they 
-would not really have to be changed. This is corroberated by their absence in the 
+would not really have to be changed. This is corroborated by their absence in the 
 Hamiltonian for the simplified Tamm-Dancoff (sTDA) xTB\cite{Grimme2016} method, 
 which is discussed later.
 
@@ -496,6 +564,7 @@ can be expressed with this transition density matrix as:
 \label{sec:large_systems_theory}
 
 \subsection{Excitation Energy Transfer and Frenkel Hamiltonians}
+\label{subsec:frenkel_exciton_theory}
 
 Excitation energy transfer (EET) stabilizes the absorption of a photon of light,
 and it is thought that light harvesting systems have evolved to maximize this stability\cite{Cleary2013}.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  11 JUL 2022 13:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  12 JUL 2022 11:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1396,46 +1396,46 @@ LaTeX Warning: Label `eq:exciton_coupling' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 302.
-LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 302.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 303.
+LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 303.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 302.
-LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 302.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 303.
+LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 303.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 302.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 302.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 303.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 303.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 302.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 302.
-LaTeX Font Info:    ... okay on input line 302.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 302.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 302.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 302.
+LaTeX Font Info:    ... okay on input line 303.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 303.
+LaTeX Font Info:    ... okay on input line 303.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 303.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 303.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 303.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 302.
+Package layouts Warning: Layout scale set to 0.5 on input line 303.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -1456,7 +1456,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 302.
+Package hyperref Info: Link coloring ON on input line 303.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2017/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1468,22 +1468,22 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 302.
-LaTeX Info: Redefining \ref on input line 302.
-LaTeX Info: Redefining \pageref on input line 302.
-LaTeX Info: Redefining \nameref on input line 302.
+LaTeX Info: Redefining \nameref on input line 303.
+LaTeX Info: Redefining \ref on input line 303.
+LaTeX Info: Redefining \pageref on input line 303.
+LaTeX Info: Redefining \nameref on input line 303.
 (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 302.
+LaTeX Info: Redefining \microtypecontext on input line 303.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 302.
+LaTeX Info: Redefining \showhyphens on input line 303.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1492,13 +1492,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Package chemgreek Info: Activating mapping `default' on line 302.
+Package chemgreek Info: Activating mapping `default' on line 303.
 
-Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 302.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 302.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 302.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 302.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 302.
+Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 303.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 303.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 303.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 303.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 303.
  (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 24.
@@ -1506,7 +1506,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 28.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 30.
-<logos/bristolcrest_colour.pdf, id=340, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=344, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 <use logos/bristolcrest_colour.pdf>
 Package pdftex.def Info: logos/bristolcrest_colour.pdf  used on input line 32.
@@ -1595,7 +1595,7 @@ l.18 \clearpage
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.327 \clearemptydoublepage
+l.328 \clearemptydoublepage
                             [2
 
 
@@ -1629,105 +1629,105 @@ Overfull \hbox (1.74115pt too wide) detected at line 4
 
 [7]
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 82.
+(Font)              scaled to size 9.29993pt on input line 79.
  [8]
 Overfull \hbox (1.20142pt too wide) detected at line 82
- \T1/fnc/m/n/10.95 101
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 83
  \T1/fnc/m/n/10.95 103
  []
 
 
+Overfull \hbox (1.20142pt too wide) detected at line 83
+ \T1/fnc/m/n/10.95 105
+ []
+
+
 Overfull \hbox (1.20142pt too wide) detected at line 84
- \T1/fnc/m/n/10.95 106
+ \T1/fnc/m/n/10.95 108
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 85
- \T1/fnc/m/n/10.95 109
+ \T1/fnc/m/n/10.95 111
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 86
- \T1/fnc/m/n/10.95 112
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 87
- \T1/fnc/m/n/10.95 112
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 88
  \T1/fnc/m/n/10.95 114
  []
 
 
+Overfull \hbox (1.20142pt too wide) detected at line 87
+ \T1/fnc/m/n/10.95 114
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 88
+ \T1/fnc/m/n/10.95 116
+ []
+
+
 Overfull \hbox (1.20142pt too wide) detected at line 89
- \T1/fnc/m/n/10.95 115
+ \T1/fnc/m/n/10.95 117
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 90
- \T1/fnc/m/n/10.95 119
+ \T1/fnc/m/n/10.95 121
  []
 
 
 Overfull \hbox (1.75146pt too wide) detected at line 91
- \T1/fnc/b/n/10.95 121
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 92
- \T1/fnc/m/n/10.95 121
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 93
- \T1/fnc/m/n/10.95 121
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 94
- \T1/fnc/m/n/10.95 121
- []
-
-
-Overfull \hbox (1.75146pt too wide) detected at line 95
  \T1/fnc/b/n/10.95 123
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 96
+Overfull \hbox (1.20142pt too wide) detected at line 92
  \T1/fnc/m/n/10.95 123
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 97
+Overfull \hbox (1.20142pt too wide) detected at line 93
  \T1/fnc/m/n/10.95 123
  []
 
 
-Overfull \hbox (1.75146pt too wide) detected at line 98
+Overfull \hbox (1.20142pt too wide) detected at line 94
+ \T1/fnc/m/n/10.95 123
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 95
  \T1/fnc/b/n/10.95 125
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 99
+Overfull \hbox (1.20142pt too wide) detected at line 96
  \T1/fnc/m/n/10.95 125
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 97
+ \T1/fnc/m/n/10.95 125
+ []
+
+
+Overfull \hbox (1.75146pt too wide) detected at line 98
+ \T1/fnc/b/n/10.95 127
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 99
+ \T1/fnc/m/n/10.95 127
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 100
- \T1/fnc/m/n/10.95 125
+ \T1/fnc/m/n/10.95 127
  []
 
 
 Overfull \hbox (1.75146pt too wide) detected at line 110
- \T1/fnc/b/n/10.95 135
+ \T1/fnc/b/n/10.95 137
  []
 
 ) [9] [10
@@ -1759,36 +1759,40 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 1024) has occurred while \output is active []
 
  [15]
+Overfull \hbox (1.20142pt too wide) detected at line 53
+ \T1/fnc/m/n/10.95 100
+ []
+
 LaTeX Font Info:    Font shape `T1/fnc/m/it' will be
 (Font)              scaled to size 10.18341pt on input line 54.
 
 Overfull \hbox (1.20142pt too wide) detected at line 54
- \T1/fnc/m/n/10.95 101
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 55
- \T1/fnc/m/n/10.95 102
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 56
  \T1/fnc/m/n/10.95 103
  []
 
 
-Overfull \hbox (1.20142pt too wide) detected at line 57
+Overfull \hbox (1.20142pt too wide) detected at line 55
+ \T1/fnc/m/n/10.95 104
+ []
+
+
+Overfull \hbox (1.20142pt too wide) detected at line 56
  \T1/fnc/m/n/10.95 105
  []
 
 
+Overfull \hbox (1.20142pt too wide) detected at line 57
+ \T1/fnc/m/n/10.95 107
+ []
+
+
 Overfull \hbox (1.20142pt too wide) detected at line 58
- \T1/fnc/m/n/10.95 106
+ \T1/fnc/m/n/10.95 108
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 59
- \T1/fnc/m/n/10.95 107
+ \T1/fnc/m/n/10.95 109
  []
 
 
@@ -1796,32 +1800,32 @@ Underfull \vbox (badness 1776) has occurred while \output is active []
 
  [16]
 Overfull \hbox (1.20142pt too wide) detected at line 60
- \T1/fnc/m/n/10.95 110
+ \T1/fnc/m/n/10.95 112
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 61
- \T1/fnc/m/n/10.95 111
- []
-
-
-Overfull \hbox (1.20142pt too wide) detected at line 62
  \T1/fnc/m/n/10.95 113
  []
 
 
+Overfull \hbox (1.20142pt too wide) detected at line 62
+ \T1/fnc/m/n/10.95 115
+ []
+
+
 Overfull \hbox (1.20142pt too wide) detected at line 63
- \T1/fnc/m/n/10.95 116
+ \T1/fnc/m/n/10.95 118
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 64
- \T1/fnc/m/n/10.95 117
+ \T1/fnc/m/n/10.95 119
  []
 
 
 Overfull \hbox (1.20142pt too wide) detected at line 65
- \T1/fnc/m/n/10.95 118
+ \T1/fnc/m/n/10.95 120
  []
 
 ) [17] [18
@@ -1845,61 +1849,62 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
  [3
 
 
-] [4] [5] [6] [7] [8]
+] [4] [5] [6] [7] [8] [9]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 335.
+(Font)              scaled to size 8.36993pt on input line 403.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 335.
+(Font)              scaled to size 6.50995pt on input line 403.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 335.
+(Font)              scaled to size 11.03998pt on input line 403.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 335.
+(Font)              scaled to size 8.27998pt on input line 403.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 335.
+(Font)              scaled to size 6.43999pt on input line 403.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 335.
+(Font)              scaled to size 8.36993pt on input line 403.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 6.50995pt on input line 335.
+(Font)              scaled to size 6.50995pt on input line 403.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 335.
+(Font)              scaled to size 11.03998pt on input line 403.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 335.
+(Font)              scaled to size 8.27998pt on input line 403.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 335.
+(Font)              scaled to size 6.43999pt on input line 403.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 335.
+(hyperref)                removing `math shift' on input line 403.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 335.
+(hyperref)                removing `\Delta' on input line 403.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 335.
+(hyperref)                removing `math shift' on input line 403.
 
-[9] [10] [11] [12]
-Overfull \hbox (1.63068pt too wide) in paragraph at lines 554--562
+[10] [11] [12] [13]
+Overfull \hbox (1.63068pt too wide) in paragraph at lines 623--631
 []\T1/fnc/m/n/10.95 (-20) where $\FML/fncmi/m/it/10.95 c[]$ \T1/fnc/m/n/10.95 (-20) are the co-ef-fi-cients for each site, given from the eigen-vec-tors of the time-independent
  []
 
-[13]) [14] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/lit_review/lit_review.tex
+[14]) [15] [16
+
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/lit_review/lit_review.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {L}});
+(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
 (lettrine.sty)             reported on input line 11.
- [15
+ [17
 
-
-] [16]) [17] [18
+] [18]) [19] [20
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter02/chap02.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
 (lettrine.sty)             reported on input line 17.
- [19
+ [21
 
 ]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
@@ -1945,8 +1950,8 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 69.
 
-[20]
-<../../Year_3/dscf_figures/energy_scatter.png, id=1001, 867.24pt x 867.24pt>
+[22]
+<../../Year_3/dscf_figures/energy_scatter.png, id=1021, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/energy_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/energy_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/energy_scatter.png  used on input line 119.
@@ -1956,7 +1961,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 119--122
  [][] 
  []
 
-<../../Year_3/dscf_figures/dipole_scatter.png, id=1003, 867.24pt x 867.24pt>
+<../../Year_3/dscf_figures/dipole_scatter.png, id=1023, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/dipole_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/dipole_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/dipole_scatter.png  used on input line 128.
@@ -1974,8 +1979,8 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 (Font)              scaled to size 7.06795pt on input line 159.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 159.
-[21] [22 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/energy_scatter.png>] [23 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/dipole_scatter.png>]
-<../../Year_3/dscf_figures/correction_scatter.png, id=1025, 867.24pt x 867.24pt>
+[23] [24 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/energy_scatter.png>] [25 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/dipole_scatter.png>]
+<../../Year_3/dscf_figures/correction_scatter.png, id=1045, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/correction_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/correction_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/correction_scatter.png  used on input line 211.
@@ -1989,8 +1994,8 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 211--217
  [][] 
  []
 
-[24] [25 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/correction_scatter.png>]
-<../../Year_3/dscf_figures/chlorophyll_energy_scatter.png, id=1043, 867.24pt x 867.24pt>
+[26] [27 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/correction_scatter.png>]
+<../../Year_3/dscf_figures/chlorophyll_energy_scatter.png, id=1063, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/chlorophyll_energy_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/chlorophyll_energy_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/chlorophyll_energy_scatter.png  used on input line 247.
@@ -2004,7 +2009,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 247--252
  [][] 
  []
 
-<../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png, id=1044, 867.24pt x 867.24pt>
+<../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png, id=1064, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png  used on input line 257.
@@ -2014,7 +2019,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 257--261
  [][] 
  []
 
-[26] [27 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/chlorophyll_energy_scatter.png>] [28 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png>] [29]
+[28] [29 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/chlorophyll_energy_scatter.png>] [30 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png>] [31]
 LaTeX Font Info:    Trying to load font information for TS1+fnc on input line 314.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/ts1fnc.fd
 File: ts1fnc.fd 2005/12/13 font definitions for TS1/fnc.
@@ -2025,171 +2030,9 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `fnc' (encoding: TS1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
- [30] [31]
+ [32] [33]
 
 Package nag Warning: \label in float, but not after \caption on input line 492.
 
-[32]
-<../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png, id=1102, 849.62419pt x 715.92468pt>
-File: ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png Graphic file (type png)
-<use ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png>
-Package pdftex.def Info: ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png  used on input line 541.
-(pdftex.def)             Requested size: 509.77846pt x 429.55812pt.
-
-Overfull \hbox (61.77846pt too wide) in paragraph at lines 541--543
- [][] 
- []
-
-[33] [34 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png>] [35])
-Underfull \vbox (badness 2818) has occurred while \output is active []
-
- [36] [37] [38
-
-] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chap03.tex
-Package lettrine.sty Info: Targeted height = 39.06784pt
-(lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
-(lettrine.sty)             reported on input line 11.
- [39
-
-] [40] [41] [42]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 225.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 225.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 225.
-
-<chapters/chapter03/chlorophyll_Qy.png, id=1170, 453.96786pt x 333.02257pt>
-File: chapters/chapter03/chlorophyll_Qy.png Graphic file (type png)
-<use chapters/chapter03/chlorophyll_Qy.png>
-Package pdftex.def Info: chapters/chapter03/chlorophyll_Qy.png  used on input line 229.
-(pdftex.def)             Requested size: 453.96675pt x 333.02174pt.
-
-Overfull \hbox (5.96675pt too wide) in paragraph at lines 229--230
- [][] 
- []
-
-[43 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/chlorophyll_Qy.png>]
-<../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png, id=1176, 984.67876pt x 865.2325pt>
-File: ../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png Graphic file (type png)
-<use ../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png>
-Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png  used on input line 260.
-(pdftex.def)             Requested size: 590.81181pt x 519.14351pt.
-
-Overfull \hbox (142.81181pt too wide) in paragraph at lines 260--261
- [][] 
- []
-
-<../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png, id=1177, 984.67876pt x 865.2325pt>
-File: ../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png Graphic file (type png)
-<use ../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png>
-Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png  used on input line 267.
-(pdftex.def)             Requested size: 590.81181pt x 519.14351pt.
-
-Overfull \hbox (142.81181pt too wide) in paragraph at lines 267--268
- [][] 
- []
-
-[44] [45 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png>] [46 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png>] [47] [48] [49] [50] [51]
-<chapters/chapter03//nelder-mead.png, id=1234, 867.24pt x 867.24pt>
-File: chapters/chapter03//nelder-mead.png Graphic file (type png)
-<use chapters/chapter03//nelder-mead.png>
-Package pdftex.def Info: chapters/chapter03//nelder-mead.png  used on input line 604.
-(pdftex.def)             Requested size: 520.34802pt x 520.34802pt.
-
-
-Package nag Warning: \label in float, but not after \caption on input line 605.
-
-
-Overfull \hbox (72.34802pt too wide) in paragraph at lines 604--608
-[][]
- []
-
-<chapters/chapter03//SLSQP.png, id=1235, 867.24pt x 867.24pt>
-File: chapters/chapter03//SLSQP.png Graphic file (type png)
-<use chapters/chapter03//SLSQP.png>
-Package pdftex.def Info: chapters/chapter03//SLSQP.png  used on input line 612.
-(pdftex.def)             Requested size: 520.34802pt x 520.34802pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 613.
-
-
-Overfull \hbox (72.34802pt too wide) in paragraph at lines 612--617
-[][]
- []
-
-[52] [53 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03//nelder-mead.png>] [54 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03//SLSQP.png>] [55]
-
-Package nag Warning: \label in float, but not after \caption on input line 652.
-
-[56] [57]
-<../../Year_2/chlorophyll_parameterization/energy_training_scatter.png, id=1277, 445.9059pt x 483.30562pt>
-File: ../../Year_2/chlorophyll_parameterization/energy_training_scatter.png Graphic file (type png)
-<use ../../Year_2/chlorophyll_parameterization/energy_training_scatter.png>
-Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/energy_training_scatter.png  used on input line 741.
-(pdftex.def)             Requested size: 356.7252pt x 386.64502pt.
-
-
-Package nag Warning: \label in float, but not after \caption on input line 742.
-
-<../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png, id=1278, 438.13687pt x 484.75102pt>
-File: ../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png Graphic file (type png)
-<use ../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png>
-Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png  used on input line 749.
-(pdftex.def)             Requested size: 350.50996pt x 387.80133pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 750.
-
-[58 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/energy_training_scatter.png>]
-Underfull \vbox (badness 3601) has occurred while \output is active []
-
- [59 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png>] [60]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 862.
-
-<chapters/chapter03/D4h_symmetry.png, id=1301, 186.67749pt x 84.32495pt>
-File: chapters/chapter03/D4h_symmetry.png Graphic file (type png)
-<use chapters/chapter03/D4h_symmetry.png>
-Package pdftex.def Info: chapters/chapter03/D4h_symmetry.png  used on input line 864.
-(pdftex.def)             Requested size: 280.01555pt x 126.4871pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 865.
-
-
-LaTeX Warning: Reference `qy_length_scan' on page 61 undefined on input line 872.
-
-[61 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/chapter03/D4h_symmetry.png>]
-<../../Year_2/BChla_Qy/qy_length_scan.png, id=1308, 763.8939pt x 442.47307pt>
-File: ../../Year_2/BChla_Qy/qy_length_scan.png Graphic file (type png)
-<use ../../Year_2/BChla_Qy/qy_length_scan.png>
-Package pdftex.def Info: ../../Year_2/BChla_Qy/qy_length_scan.png  used on input line 883.
-(pdftex.def)             Requested size: 420.14294pt x 243.36093pt.
-
-
-Package nag Warning: \label in float, but not after \caption on input line 884.
-
-<../../Year_2/BChla_Qy/qy_angle_scan.png, id=1309, 740.22548pt x 442.47307pt>
-File: ../../Year_2/BChla_Qy/qy_angle_scan.png Graphic file (type png)
-<use ../../Year_2/BChla_Qy/qy_angle_scan.png>
-Package pdftex.def Info: ../../Year_2/BChla_Qy/qy_angle_scan.png  used on input line 891.
-(pdftex.def)             Requested size: 407.12526pt x 243.36093pt.
-
-Package nag Warning: \label in float, but not after \caption on input line 892.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 900.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 901.
-
-
-LaTeX Warning: Command \r invalid in math mode on input line 902.
-
-<../../Year_2/BChla
+[34]
+<../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png, id=1122, 849

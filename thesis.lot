@@ -4,10 +4,10 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Mean and standard deviations of the errors, in eV, against SCS-CC2 reference data. The {\fontfamily {qcr}\selectfont {xtb4stda}} entry represents the eigenvalue difference method that uses the eigenvalues output from this program.}}{33}{table.4.1}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Mean and standard deviations of the errors, in eV, against SCS-CC2 reference data. The {\fontfamily {qcr}\selectfont {xtb4stda}} entry represents the eigenvalue difference method that uses the eigenvalues output from this program.}}{35}{table.4.1}%
 \addvspace {10pt}
-\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of the errors and correlations of transition properties for $Q_y$ for a set of LH2 Bchla geometries from a range of established respond methods. The errors were calculated against PBE0/Def2-SVP TD-DFT data, for transition energies ($\Delta E$) and transition dipole moments ($\left \lvert \mathbf {\mu } \right \rvert $).}}{56}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces chl-xTB parameters, optimized by the SLSQP procedure. Reference values for GFN1-xTB and sTDA-xTB are included, and served as initial guesses where available. Novel parameters all started from initial values of 1.0.}}{60}{table.5.2}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of the errors and correlations of transition properties for $Q_y$ for a set of LH2 Bchla geometries from a range of established respond methods. The errors were calculated against PBE0/Def2-SVP TD-DFT data, for transition energies ($\Delta E$) and transition dipole moments ($\left \lvert \mathbf {\mu } \right \rvert $).}}{58}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces chl-xTB parameters, optimized by the SLSQP procedure. Reference values for GFN1-xTB and sTDA-xTB are included, and served as initial guesses where available. Novel parameters all started from initial values of 1.0.}}{62}{table.5.2}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
