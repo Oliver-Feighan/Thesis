@@ -4,81 +4,82 @@
 \BOOKMARK [0][-]{chapter.2}{Introduction}{}% 4
 \BOOKMARK [1][-]{section.2.1}{Electronic structure}{chapter.2}% 5
 \BOOKMARK [2][-]{subsection.2.1.1}{Density Functional Theory}{section.2.1}% 6
-\BOOKMARK [2][-]{subsection.2.1.2}{Semi-Empirical Methods}{section.2.1}% 7
-\BOOKMARK [1][-]{section.2.2}{Light-Matter Response Methods}{chapter.2}% 8
-\BOOKMARK [2][-]{subsection.2.2.1}{Linear Response}{section.2.2}% 9
-\BOOKMARK [2][-]{subsection.2.2.2}{-SCF}{section.2.2}% 10
-\BOOKMARK [2][-]{subsection.2.2.3}{Eigenvalue Difference}{section.2.2}% 11
-\BOOKMARK [2][-]{subsection.2.2.4}{Transition Density and Dipole Moments}{section.2.2}% 12
-\BOOKMARK [1][-]{section.2.3}{Large System Models}{chapter.2}% 13
-\BOOKMARK [2][-]{subsection.2.3.1}{Excitation Energy Transfer and Frenkel Hamiltonians}{section.2.3}% 14
-\BOOKMARK [0][-]{chapter.3}{Literature Review}{}% 15
-\BOOKMARK [1][-]{section.3.1}{Efficient Response Methods}{chapter.3}% 16
-\BOOKMARK [2][-]{subsection.3.1.1}{sTDA-xTB}{section.3.1}% 17
-\BOOKMARK [1][-]{section.3.2}{Statistical Approaches}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{Hardware}{chapter.3}% 19
-\BOOKMARK [1][-]{section.3.4}{Conclusions}{chapter.3}% 20
-\BOOKMARK [0][-]{chapter.4}{Mean-Field excited states}{}% 21
-\BOOKMARK [1][-]{section.4.1}{Combining -SCF With Lower Level Electronic Structure Theories}{chapter.4}% 22
-\BOOKMARK [1][-]{section.4.2}{Benchmarking -SCF }{chapter.4}% 23
-\BOOKMARK [2][-]{subsection.4.2.1}{Reference Data and test set}{section.4.2}% 24
-\BOOKMARK [2][-]{subsection.4.2.2}{Small Systems}{section.4.2}% 25
-\BOOKMARK [2][-]{subsection.4.2.3}{Non-orthogonality}{section.4.2}% 26
-\BOOKMARK [2][-]{subsection.4.2.4}{LH2 Chlorophyll}{section.4.2}% 27
-\BOOKMARK [2][-]{subsection.4.2.5}{xTB methods}{section.4.2}% 28
-\BOOKMARK [1][-]{section.4.3}{Conclusions}{chapter.4}% 29
-\BOOKMARK [0][-]{chapter.5}{Chlorophyll specific methods}{}% 30
-\BOOKMARK [1][-]{section.5.1}{Approximations in chl-xTB}{chapter.5}% 31
-\BOOKMARK [2][-]{subsection.5.1.1}{Full TD-DFT Solutions}{section.5.1}% 32
-\BOOKMARK [2][-]{subsection.5.1.2}{Approximations to Solutions}{section.5.1}% 33
-\BOOKMARK [2][-]{subsection.5.1.3}{Integrals approximations}{section.5.1}% 34
-\BOOKMARK [2][-]{subsection.5.1.4}{Qy Transition}{section.5.1}% 35
-\BOOKMARK [2][-]{subsection.5.1.5}{Changes to xTB parameters}{section.5.1}% 36
-\BOOKMARK [2][-]{subsection.5.1.6}{Transition and Excited State Density from the Ground State}{section.5.1}% 37
-\BOOKMARK [1][-]{section.5.2}{Parameterization}{chapter.5}% 38
-\BOOKMARK [2][-]{subsection.5.2.1}{Objective Function}{section.5.2}% 39
-\BOOKMARK [2][-]{subsection.5.2.2}{Minimisation Algorithms}{section.5.2}% 40
-\BOOKMARK [2][-]{subsection.5.2.3}{Reference Data}{section.5.2}% 41
-\BOOKMARK [2][-]{subsection.5.2.4}{Results}{section.5.2}% 42
-\BOOKMARK [1][-]{section.5.3}{Cross-validation}{chapter.5}% 43
-\BOOKMARK [2][-]{subsection.5.3.1}{Vibrational Mode Coupling}{section.5.3}% 44
-\BOOKMARK [2][-]{subsection.5.3.2}{Absorption Spectra}{section.5.3}% 45
-\BOOKMARK [1][-]{section.5.4}{Conclusions}{chapter.5}% 46
-\BOOKMARK [0][-]{chapter.6}{Beyond Monomer Chlorophyll}{}% 47
-\BOOKMARK [1][-]{section.6.1}{Frenkel Exciton Hamiltonian}{chapter.6}% 48
-\BOOKMARK [2][-]{subsection.6.1.1}{Exciton States}{section.6.1}% 49
-\BOOKMARK [1][-]{section.6.2}{Same-functional Benchmarking}{chapter.6}% 50
-\BOOKMARK [2][-]{subsection.6.2.1}{LH2 Dimers}{section.6.2}% 51
-\BOOKMARK [2][-]{subsection.6.2.2}{Rotation}{section.6.2}% 52
-\BOOKMARK [1][-]{section.6.3}{chl-xTB Excitons}{chapter.6}% 53
-\BOOKMARK [2][-]{subsection.6.3.1}{Full Dimer comparison}{section.6.3}% 54
-\BOOKMARK [1][-]{section.6.4}{Concentration Quenching}{chapter.6}% 55
-\BOOKMARK [1][-]{section.6.5}{Conclusions}{chapter.6}% 56
-\BOOKMARK [0][-]{chapter.7}{Light Harvesting Complexes}{}% 57
-\BOOKMARK [1][-]{section.7.1}{LH2}{chapter.7}% 58
-\BOOKMARK [2][-]{subsection.7.1.1}{Spectral Density Method}{section.7.1}% 59
-\BOOKMARK [1][-]{section.7.2}{Calculating LH2 Excitons}{chapter.7}% 60
-\BOOKMARK [2][-]{subsection.7.2.1}{Molecular Dynamics}{section.7.2}% 61
-\BOOKMARK [2][-]{subsection.7.2.2}{Scaling}{section.7.2}% 62
-\BOOKMARK [2][-]{subsection.7.2.3}{Coupling Values}{section.7.2}% 63
-\BOOKMARK [2][-]{subsection.7.2.4}{Screening and Embedding}{section.7.2}% 64
-\BOOKMARK [1][-]{section.7.3}{Spectra}{chapter.7}% 65
-\BOOKMARK [2][-]{subsection.7.3.1}{Sites}{section.7.3}% 66
-\BOOKMARK [2][-]{subsection.7.3.2}{Exciton states}{section.7.3}% 67
-\BOOKMARK [2][-]{subsection.7.3.3}{Coupling}{section.7.3}% 68
-\BOOKMARK [1][-]{section.7.4}{Assigning Specific Motions}{chapter.7}% 69
-\BOOKMARK [2][-]{subsection.7.4.1}{Ether system}{section.7.4}% 70
-\BOOKMARK [2][-]{subsection.7.4.2}{Huang Rhys Factors}{section.7.4}% 71
-\BOOKMARK [2][-]{subsection.7.4.3}{N Axes Deformation}{section.7.4}% 72
-\BOOKMARK [1][-]{section.7.5}{conclusions}{chapter.7}% 73
-\BOOKMARK [0][-]{chapter.8}{Discussion}{}% 74
-\BOOKMARK [1][-]{section.8.1}{Transition Property Approximations}{chapter.8}% 75
-\BOOKMARK [1][-]{section.8.2}{Further Investigations into LHII}{chapter.8}% 76
-\BOOKMARK [1][-]{section.8.3}{Coherence}{chapter.8}% 77
-\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 78
-\BOOKMARK [1][-]{section.A.1}{Electronic Structure Codes}{appendix.A}% 79
-\BOOKMARK [1][-]{section.A.2}{Computational Hardware}{appendix.A}% 80
-\BOOKMARK [0][-]{appendix.B}{Appendix B}{}% 81
-\BOOKMARK [1][-]{section.B.1}{LH2 Data}{appendix.B}% 82
-\BOOKMARK [2][-]{subsection.B.1.1}{Spectral Density Features}{section.B.1}% 83
-\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 84
+\BOOKMARK [2][-]{subsection.2.1.2}{Density Functional Tight Binding}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.3}{Extended Tight Binding}{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Light-Matter Response Methods}{chapter.2}% 9
+\BOOKMARK [2][-]{subsection.2.2.1}{Linear Response TD-DFT}{section.2.2}% 10
+\BOOKMARK [2][-]{subsection.2.2.2}{-SCF}{section.2.2}% 11
+\BOOKMARK [2][-]{subsection.2.2.3}{Eigenvalue Difference}{section.2.2}% 12
+\BOOKMARK [2][-]{subsection.2.2.4}{Transition Density and Dipole Moments}{section.2.2}% 13
+\BOOKMARK [1][-]{section.2.3}{Large System Models}{chapter.2}% 14
+\BOOKMARK [2][-]{subsection.2.3.1}{Excitation Energy Transfer and Frenkel Hamiltonians}{section.2.3}% 15
+\BOOKMARK [0][-]{chapter.3}{Literature Review}{}% 16
+\BOOKMARK [1][-]{section.3.1}{Efficient Response Methods}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{sTDA-xTB}{section.3.1}% 18
+\BOOKMARK [1][-]{section.3.2}{Statistical Approaches}{chapter.3}% 19
+\BOOKMARK [1][-]{section.3.3}{Hardware}{chapter.3}% 20
+\BOOKMARK [1][-]{section.3.4}{Conclusions}{chapter.3}% 21
+\BOOKMARK [0][-]{chapter.4}{Mean-Field excited states}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Combining -SCF With Lower Level Electronic Structure Theories}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.2}{Benchmarking -SCF }{chapter.4}% 24
+\BOOKMARK [2][-]{subsection.4.2.1}{Reference Data and test set}{section.4.2}% 25
+\BOOKMARK [2][-]{subsection.4.2.2}{Small Systems}{section.4.2}% 26
+\BOOKMARK [2][-]{subsection.4.2.3}{Non-orthogonality}{section.4.2}% 27
+\BOOKMARK [2][-]{subsection.4.2.4}{LH2 Chlorophyll}{section.4.2}% 28
+\BOOKMARK [2][-]{subsection.4.2.5}{xTB methods}{section.4.2}% 29
+\BOOKMARK [1][-]{section.4.3}{Conclusions}{chapter.4}% 30
+\BOOKMARK [0][-]{chapter.5}{Chlorophyll specific methods}{}% 31
+\BOOKMARK [1][-]{section.5.1}{Approximations in chl-xTB}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.1.1}{Full TD-DFT Solutions}{section.5.1}% 33
+\BOOKMARK [2][-]{subsection.5.1.2}{Approximations to Solutions}{section.5.1}% 34
+\BOOKMARK [2][-]{subsection.5.1.3}{Integrals approximations}{section.5.1}% 35
+\BOOKMARK [2][-]{subsection.5.1.4}{Qy Transition}{section.5.1}% 36
+\BOOKMARK [2][-]{subsection.5.1.5}{Changes to xTB parameters}{section.5.1}% 37
+\BOOKMARK [2][-]{subsection.5.1.6}{Transition and Excited State Density from the Ground State}{section.5.1}% 38
+\BOOKMARK [1][-]{section.5.2}{Parameterization}{chapter.5}% 39
+\BOOKMARK [2][-]{subsection.5.2.1}{Objective Function}{section.5.2}% 40
+\BOOKMARK [2][-]{subsection.5.2.2}{Minimisation Algorithms}{section.5.2}% 41
+\BOOKMARK [2][-]{subsection.5.2.3}{Reference Data}{section.5.2}% 42
+\BOOKMARK [2][-]{subsection.5.2.4}{Results}{section.5.2}% 43
+\BOOKMARK [1][-]{section.5.3}{Cross-validation}{chapter.5}% 44
+\BOOKMARK [2][-]{subsection.5.3.1}{Vibrational Mode Coupling}{section.5.3}% 45
+\BOOKMARK [2][-]{subsection.5.3.2}{Absorption Spectra}{section.5.3}% 46
+\BOOKMARK [1][-]{section.5.4}{Conclusions}{chapter.5}% 47
+\BOOKMARK [0][-]{chapter.6}{Beyond Monomer Chlorophyll}{}% 48
+\BOOKMARK [1][-]{section.6.1}{Frenkel Exciton Hamiltonian}{chapter.6}% 49
+\BOOKMARK [2][-]{subsection.6.1.1}{Exciton States}{section.6.1}% 50
+\BOOKMARK [1][-]{section.6.2}{Same-functional Benchmarking}{chapter.6}% 51
+\BOOKMARK [2][-]{subsection.6.2.1}{LH2 Dimers}{section.6.2}% 52
+\BOOKMARK [2][-]{subsection.6.2.2}{Rotation}{section.6.2}% 53
+\BOOKMARK [1][-]{section.6.3}{chl-xTB Excitons}{chapter.6}% 54
+\BOOKMARK [2][-]{subsection.6.3.1}{Full Dimer comparison}{section.6.3}% 55
+\BOOKMARK [1][-]{section.6.4}{Concentration Quenching}{chapter.6}% 56
+\BOOKMARK [1][-]{section.6.5}{Conclusions}{chapter.6}% 57
+\BOOKMARK [0][-]{chapter.7}{Light Harvesting Complexes}{}% 58
+\BOOKMARK [1][-]{section.7.1}{LH2}{chapter.7}% 59
+\BOOKMARK [2][-]{subsection.7.1.1}{Spectral Density Method}{section.7.1}% 60
+\BOOKMARK [1][-]{section.7.2}{Calculating LH2 Excitons}{chapter.7}% 61
+\BOOKMARK [2][-]{subsection.7.2.1}{Molecular Dynamics}{section.7.2}% 62
+\BOOKMARK [2][-]{subsection.7.2.2}{Scaling}{section.7.2}% 63
+\BOOKMARK [2][-]{subsection.7.2.3}{Coupling Values}{section.7.2}% 64
+\BOOKMARK [2][-]{subsection.7.2.4}{Screening and Embedding}{section.7.2}% 65
+\BOOKMARK [1][-]{section.7.3}{Spectra}{chapter.7}% 66
+\BOOKMARK [2][-]{subsection.7.3.1}{Sites}{section.7.3}% 67
+\BOOKMARK [2][-]{subsection.7.3.2}{Exciton states}{section.7.3}% 68
+\BOOKMARK [2][-]{subsection.7.3.3}{Coupling}{section.7.3}% 69
+\BOOKMARK [1][-]{section.7.4}{Assigning Specific Motions}{chapter.7}% 70
+\BOOKMARK [2][-]{subsection.7.4.1}{Ether system}{section.7.4}% 71
+\BOOKMARK [2][-]{subsection.7.4.2}{Huang Rhys Factors}{section.7.4}% 72
+\BOOKMARK [2][-]{subsection.7.4.3}{N Axes Deformation}{section.7.4}% 73
+\BOOKMARK [1][-]{section.7.5}{conclusions}{chapter.7}% 74
+\BOOKMARK [0][-]{chapter.8}{Discussion}{}% 75
+\BOOKMARK [1][-]{section.8.1}{Transition Property Approximations}{chapter.8}% 76
+\BOOKMARK [1][-]{section.8.2}{Further Investigations into LHII}{chapter.8}% 77
+\BOOKMARK [1][-]{section.8.3}{Coherence}{chapter.8}% 78
+\BOOKMARK [0][-]{appendix.A}{Appendix A}{}% 79
+\BOOKMARK [1][-]{section.A.1}{Electronic Structure Codes}{appendix.A}% 80
+\BOOKMARK [1][-]{section.A.2}{Computational Hardware}{appendix.A}% 81
+\BOOKMARK [0][-]{appendix.B}{Appendix B}{}% 82
+\BOOKMARK [1][-]{section.B.1}{LH2 Data}{appendix.B}% 83
+\BOOKMARK [2][-]{subsection.B.1.1}{Spectral Density Features}{section.B.1}% 84
+\BOOKMARK [0][-]{appendix*.9}{Bibliography}{}% 85

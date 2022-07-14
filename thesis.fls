@@ -1674,6 +1674,8 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncsy.vf
@@ -1720,8 +1722,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm10.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/euler/eurm7.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncmi.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
