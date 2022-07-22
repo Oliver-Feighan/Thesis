@@ -226,7 +226,7 @@ to these approximations, is given below.
 \label{subsec:qy_transition}
 \begin{figure}
     \centering
-    \includegraphics{chapters/chapter03/chlorophyll_Qy.png}
+    \includegraphics{chapters/chl_xtb/chlorophyll_Qy.png}
     \caption{Bacterial Chlorophyll a (BChla) with a model \Qy transition dipole.}
     \label{fig:bchla_qy}
 \end{figure}
@@ -861,7 +861,7 @@ in figure \ref{fig:D4_sym_breaking}.
 
 \begin{figure}[]
     \centering
-    \includegraphics[scale=1.5]{chapters/chapter03/D4h_symmetry.png}
+    \includegraphics[scale=1.5]{chapters/chl_xtb/D4h_symmetry.png}
     \label{fig:D4_sym_breaking}
     \caption{Normal modes of the nitrogen-magnesium centre of chlorophyll that have
     $D_{4h}$-$D_{2h}$ (left) and $D_{4h}$-$C_{s}$ (right) symmetry breaking components.}
@@ -1030,42 +1030,48 @@ then taken from a 2ns simulation time, with structures taken every picosecond.
 Transition properties were calculated for chlorophyll structures from every frame.
 This was done with the chl-xTB method, as well as PBE0 and CAM-B3LYP TD-DFT, both
 using the Def2-SVP basis set. Experimental data for the absorption spectra was also
-taken from Katz \emph{et. al} \cite{Strain1963}. Embedding effects were included 
+taken from Katz \emph{et. al} \cite{Strain1963} [REF]. Embedding effects were included 
 in the chl-xTB Fock matrix with a particle mesh Ewald method. The real space term 
 was calculated using \code{QCORE}, whereas the more complicated spline reciprocal
-space term was calculated with the \code{HelPME} library. The absorption spectrum 
-for each method was calculated by a gaussian fit of a histogram of transition energies.
-The fit was normalised such that the area under all spectra matched that of the 
-experimental  spectrum. The absorption spectra, both with and without a single-parameter 
-shift of excitation energies, can be seen in \ref{fig:chl_diethyl_ether}.
+space term was calculated with the \code{HelPME} library [REF]. The absorption spectra
+for each method are shown as the absorption probability at excitation energies in
+nm, normalised such that the area under all spectra matched that of the experimental  
+spectrum. The absorption spectra, both with and without a single-parameter shift
+of excitation energies, can be seen in figure \ref{fig:chl_diethyl_ether}.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.55]{../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png}
-    \label{fig:chl_diethyl_ether}
     \caption{Predicted and experimental absorption spectrum of chlorophyll in diethyl 
     ether, only in the $Q$ band region. Predicted spectra are shown without an energy
     shift on the left, and with an energy shift to match the experimental absorption
-    maximum on the right.}
+    maximum on the right. All spectra are normalised to have equal areas.}
+    \label{fig:chl_diethyl_ether}
 \end{figure}
 
 chl-xTB performs equally well as TD-DFT methods at simulating absorption spectra,
-although constrained by the limits of the method and the training data.
-It can be seen that the chl-xTB lineshape is similar in position and witdh to the
-PBE0 method. This is highly encouraging, as the functional groups on chlorophyll A
+although constrained by the limits of the method and the training data. It can be
+seen that the chl-xTB lineshape is similar in position and witdh to the PBE0 method.
+This is highly encouraging, as the functional groups on chlorophyll A
 can have a large effect on the \Qy transition, and so the good agreement here provides
 evidence that important chemical features are can captured in systems outside the 
 training set. Although the chl-xTB lineshape is wider than the experimental spectrum,
 the CAM-B3LYP and PBE0 lines are also wider and so chl-xTB is still within a reasonable
 expectation of accuracy.
-All of the predicted spectra show some lack of lower intensity peaks present in the
-experimental spectrum. The CAM-B3LYP data shows one peak at 510 nm, with PBE0 having
-a very slight peak at around 380 nm. This is not present in the chl-xTB spectrum,
-possibly due to the very niche set of geometries for the training data. Including 
-Bchla geometries from different environments might fix this issue, but as this work
-is only considering light harvesting systems this is outside of the current scope.
-The embedded chl-xTB spectra is both red-shifted and broadened slightly, which
-is also observed in simulated spectra from other methods.
+All of the predicted spectra show lack of the lower intensity peaks that are present 
+in the experimental spectrum. Assignment of these peaks is shown in figure \ref{fig:chl_diethyl_ether},
+and it can be seen that these are due to other $Q$ transitions. The lack of $Q_x$ 
+peaks are expected, due to these transitions not being included in the predicted 
+spectra, however the lack of the other \Qy peak can be seen in all methods bar CAM-B3LYP.
+There gives two explanations of why chl-xTB is missing this peak. First is that the
+PBE0 data does not include this feature, and so it would be unreasonable to expect
+it to be learnt from the training data. Second is that the training data include 
+geometries from the LH2 complex, and so would not cover the conformations that give
+this lower intensity peak in a diethyl-ether system. Including Bchla geometries
+from different environments might fix this issue, but as this work only considers
+light harvesting systems this is outside of the current scope. The embedded chl-xTB
+spectra is both red-shifted and broadened slightly, which is also observed in simulated
+spectra from other methods.
 
 \section{Conclusions}
 \label{sec:chl_conclusions}

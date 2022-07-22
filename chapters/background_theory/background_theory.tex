@@ -4,15 +4,18 @@
 % Description: Introduction chapter
 %
 \let\textcircled=\pgftextcircled
-\chapter{Introduction}
-\label{chap:intro}
+\chapter{Background Theory}
+\label{chap:background_theory}
 
-\initial {N}aturally occuring light harvesting systems present an interesting 
-scientific challenge. With near perfect efficiency\cite{Scholes2011}, the energy 
-from a photon will be absorbed and transferred to a reaction centre, leading to 
-charge transfer processes that culminate in powering biological systems. Constructing 
-models that can predict and explain these effects are key to making similarly efficient 
-photovoltaic systems.
+\initial {T}here are three theory components that are frequently employed when modeling
+light harvesting complexes. First is the electronic structure theory, which is almost
+exclusively density functional theory (DFT) or density functional tight binding (DFTB). 
+Second is the response method, for which the workhorse is often time-dependent DFT (TD-DFT) 
+or TD-DFTB. In this work other response methods are discussed, and so these theories
+are outlined in this chapter as well. Third is the exciton method, again most frequently
+a Frenkel exciton Hamiltonian. In order to establish a basis for the reporting and
+discussion of work in later chapters, an outline of each of these three components
+are given here.
 
 \section{Electronic structure}
 \label{sec:electronic_structure}
@@ -956,7 +959,7 @@ light harvesting complexes as these sites are just the chlorophyll molecules) an
 modeling the excitation energy transfer to generate excited states of the entire
 system. This is explained in the next section.
 
-\subsection{Excitation Energy Transfer and Frenkel Hamiltonians}
+\subsection{Excitation Energy Transfer and Frenkel Exciton Hamiltonians}
 \label{subsec:frenkel_exciton_theory}
 
 Excitation energy transfer (EET) stabilizes the absorption of a photon of light,

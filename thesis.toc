@@ -4,23 +4,23 @@
 \contentsline {chapter}{List of Figures}{xiii}{section*.6}%
 \contentsline {chapter}{\chapternumberline {1}Outline}{1}{chapter.1}%
 \contentsline {chapter}{\chapternumberline {2}Introduction}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Electronic structure}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Density Functional Theory}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Density Functional Tight Binding}{6}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Extended Tight Binding}{9}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Light-Matter Response Methods}{14}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Linear Response TD-DFT}{14}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}$\Delta $-SCF}{17}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Eigenvalue Difference}{19}{subsection.2.2.3}%
-\contentsline {subsection}{\numberline {2.2.4}Transition Density and Dipole Moments}{19}{subsection.2.2.4}%
-\contentsline {section}{\numberline {2.3}Large System Models}{20}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Excitation Energy Transfer and Frenkel Hamiltonians}{20}{subsection.2.3.1}%
-\contentsline {chapter}{\chapternumberline {3}Literature Review}{25}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Efficient Response Methods}{25}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}sTDA-xTB}{25}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Statistical Approaches}{27}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Hardware}{27}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Conclusions}{27}{section.3.4}%
+\contentsline {section}{\numberline {2.1}Efficient Response Methods}{4}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}sTDA-xTB}{4}{subsection.2.1.1}%
+\contentsline {section}{\numberline {2.2}Statistical Approaches}{6}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Hardware}{6}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Conclusions}{6}{section.2.4}%
+\contentsline {chapter}{\chapternumberline {3}Background Theory}{7}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Electronic structure}{7}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Density Functional Theory}{7}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Density Functional Tight Binding}{10}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}Extended Tight Binding}{13}{subsection.3.1.3}%
+\contentsline {section}{\numberline {3.2}Light-Matter Response Methods}{18}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Linear Response TD-DFT}{18}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}$\Delta $-SCF}{21}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Eigenvalue Difference}{23}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Transition Density and Dipole Moments}{23}{subsection.3.2.4}%
+\contentsline {section}{\numberline {3.3}Large System Models}{24}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Excitation Energy Transfer and Frenkel Exciton Hamiltonians}{24}{subsection.3.3.1}%
 \contentsline {chapter}{\chapternumberline {4}Mean-Field excited states}{29}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Combining $\Delta $-SCF With Lower Level Electronic Structure Theories}{30}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Benchmarking $\Delta $-SCF }{30}{section.4.2}%
