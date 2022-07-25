@@ -201,4 +201,207 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {5.3}{\ignorespaces The LUMO orbital of BChla from PBE0/Def2-SVP DFT.}}{60}{figure.5.3}\protected@file@percent }
 \@writefile{toc}{\contentsline {subsection}{\numberline {5.1.6}Transition and Excited State Density from the Ground State}{61}{subsection.5.1.6}\protected@file@percent }
 \newlabel{subsec:trans_excited_densities}{{\M@TitleReference {5.1.6}{Transition and Excited State Density from the Ground State}}{61}{Transition and Excited State Density from the Ground State}{subsection.5.1.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5.2}Parameterization}{63}{section.5.2}\protected@f
+\@writefile{toc}{\contentsline {section}{\numberline {5.2}Parameterization}{63}{section.5.2}\protected@file@percent }
+\newlabel{sec:chl_params}{{\M@TitleReference {5.2}{Parameterization}}{63}{Parameterization}{section.5.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.1}Objective Function}{63}{subsection.5.2.1}\protected@file@percent }
+\newlabel{subsec:obj_func}{{\M@TitleReference {5.2.1}{Objective Function}}{63}{Objective Function}{subsection.5.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.2}Minimisation Algorithms}{64}{subsection.5.2.2}\protected@file@percent }
+\newlabel{subsec:algorithms}{{\M@TitleReference {5.2.2}{Minimisation Algorithms}}{64}{Minimisation Algorithms}{subsection.5.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.1}Nelder-Mead}{64}{subsubsection.5.2.2.1}\protected@file@percent }
+\newlabel{nelder_mead}{{\M@TitleReference {5.2.2.1}{Nelder-Mead}}{64}{Nelder-Mead}{subsubsection.5.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.2.2}Sequential Least-Squares Squadratic Programming}{65}{subsubsection.5.2.2.2}\protected@file@percent }
+\newlabel{subsubsec:slsqp}{{\M@TitleReference {5.2.2.2}{Sequential Least-Squares Squadratic Programming}}{65}{Sequential Least-Squares Squadratic Programming}{subsubsection.5.2.2.2}{}}
+\citation{Stross2016}
+\newlabel{fig:nelder_mead}{{\M@TitleReference {5.2.2.2}{Sequential Least-Squares Squadratic Programming}}{67}{Sequential Least-Squares Squadratic Programming}{equation.5.2.32}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.4}{\ignorespaces An example of the search through solution space using the Nelder-Mead method. The scatter points are positions of the Nelder-Mead simplex vertices, attempting to find the coordinates of the minimum in the HimmelBlau function.}}{67}{figure.5.4}\protected@file@percent }
+\newlabel{fig:slsqp}{{\M@TitleReference {5.2.2.2}{Sequential Least-Squares Squadratic Programming}}{68}{Sequential Least-Squares Squadratic Programming}{figure.5.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.5}{\ignorespaces A similar example of the search through solution space, but using the SQSLP method. The scatter points are positions of the iterative solution vector $\mathbf  {x}$, again attempting to find the coordinates of the minimum in the HimmelBlau function.}}{68}{figure.5.5}\protected@file@percent }
+\citation{Stross2016}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.3}Reference Data}{69}{subsection.5.2.3}\protected@file@percent }
+\newlabel{subsec:ref_data}{{\M@TitleReference {5.2.3}{Reference Data}}{69}{Reference Data}{subsection.5.2.3}{}}
+\citation{Stross2016}
+\newlabel{table:ref_data}{{\M@TitleReference {5.2.3}{Reference Data}}{70}{Reference Data}{subsection.5.2.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5.1}{\ignorespaces Summary of the errors and correlations of transition properties for $Q_y$ for a set of LH2 Bchla geometries from a range of established respond methods. The errors were calculated against PBE0/Def2-SVP TD-DFT data, for transition energies ($\Delta E$) and transition dipole moments ($\left \lvert \mathbf  {\mu } \right \rvert $).}}{70}{table.5.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {5.2.3.1}Training and testing set}{71}{subsubsection.5.2.3.1}\protected@file@percent }
+\newlabel{subsubsec:train_test}{{\M@TitleReference {5.2.3.1}{Training and testing set}}{71}{Training and testing set}{subsubsection.5.2.3.1}{}}
+\citation{Stross2016}
+\newlabel{fig:energy_training_scatter}{{\M@TitleReference {5.2.4}{Results}}{72}{Results}{subsection.5.2.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.6}{\ignorespaces Comparison of the $Q_y$ transition energies predicted from the reference methods as well as chl-xTB (red) against PBE0/Def2-SVP values.}}{72}{figure.5.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2.4}Results}{72}{subsection.5.2.4}\protected@file@percent }
+\newlabel{subsec:chl_opt_results}{{\M@TitleReference {5.2.4}{Results}}{72}{Results}{subsection.5.2.4}{}}
+\newlabel{fig:dipole_training_scatter}{{\M@TitleReference {5.2.4}{Results}}{73}{Results}{figure.5.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.7}{\ignorespaces Comparison of the $Q_y$ transition dipole moments predicted from the reference methods as well as chl-xTB (red) against PBE0/Def2-SVP values.}}{73}{figure.5.7}\protected@file@percent }
+\citation{Cho2021}
+\@writefile{lot}{\contentsline {table}{\numberline {5.2}{\ignorespaces chl-xTB parameters, optimized by the SLSQP procedure. Reference values for GFN1-xTB and sTDA-xTB are included, and served as initial guesses where available. Novel parameters all started from initial values of 1.0.}}{74}{table.5.2}\protected@file@percent }
+\newlabel{table:chl_params}{{\M@TitleReference {5.2}{chl-xTB parameters, optimized by the SLSQP procedure. Reference values for GFN1-xTB and sTDA-xTB are included, and served as initial guesses where available. Novel parameters all started from initial values of 1.0.}}{74}{chl-xTB parameters, optimized by the SLSQP procedure. Reference values for GFN1-xTB and sTDA-xTB are included, and served as initial guesses where available. Novel parameters all started from initial values of 1.0}{table.5.2}{}}
+\citation{Kim2020}
+\newlabel{fig:D4_sym_breaking}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{75}{Vibrational Mode Coupling}{subsection.5.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.8}{\ignorespaces Normal modes of the nitrogen-magnesium centre of chlorophyll that have $D_{4h}$-$D_{2h}$ (left) and $D_{4h}$-$C_{s}$ (right) symmetry breaking components.}}{75}{figure.5.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5.3}Cross-validation}{75}{section.5.3}\protected@file@percent }
+\newlabel{sec:chl_benchmarking}{{\M@TitleReference {5.3}{Cross-validation}}{75}{Cross-validation}{section.5.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.1}Vibrational Mode Coupling}{75}{subsection.5.3.1}\protected@file@percent }
+\newlabel{subsec:pot_energy_surfaces}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{75}{Vibrational Mode Coupling}{subsection.5.3.1}{}}
+\newlabel{fig:qy_length_scan}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{76}{Vibrational Mode Coupling}{figure.5.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.9}{\ignorespaces Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail.}}{76}{figure.5.9}\protected@file@percent }
+\newlabel{fig:qy_angle_scan}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{77}{Vibrational Mode Coupling}{figure.5.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.10}{\ignorespaces Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail. The small smaller variance than in figure \ref  {fig:qy_length_scan} led to this metric to not be used in normal mode choices.}}{77}{figure.5.10}\protected@file@percent }
+\newlabel{fig:mode_83}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{77}{Vibrational Mode Coupling}{figure.5.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.11}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{77}{figure.5.11}\protected@file@percent }
+\newlabel{fig:mode_85}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{78}{Vibrational Mode Coupling}{figure.5.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.12}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{78}{figure.5.12}\protected@file@percent }
+\newlabel{fig:mode_88}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{78}{Vibrational Mode Coupling}{figure.5.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.13}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{78}{figure.5.13}\protected@file@percent }
+\newlabel{fig:mode_90}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{79}{Vibrational Mode Coupling}{figure.5.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.14}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{79}{figure.5.14}\protected@file@percent }
+\newlabel{fig:mode_91}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{79}{Vibrational Mode Coupling}{figure.5.14}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.15}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{79}{figure.5.15}\protected@file@percent }
+\newlabel{fig:mode_129}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{80}{Vibrational Mode Coupling}{figure.5.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.16}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{80}{figure.5.16}\protected@file@percent }
+\newlabel{fig:mode_130}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{80}{Vibrational Mode Coupling}{figure.5.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.17}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{80}{figure.5.17}\protected@file@percent }
+\newlabel{fig:mode_132}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{81}{Vibrational Mode Coupling}{figure.5.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.18}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{81}{figure.5.18}\protected@file@percent }
+\newlabel{fig:mode_135}{{\M@TitleReference {5.3.1}{Vibrational Mode Coupling}}{81}{Vibrational Mode Coupling}{figure.5.18}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.19}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along normal modes, calculated with some of the reference response theories.}}{81}{figure.5.19}\protected@file@percent }
+\citation{Zhang2012}
+\citation{Strain1963}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3.2}Absorption Spectra}{83}{subsection.5.3.2}\protected@file@percent }
+\newlabel{subsec:absorption_spectra}{{\M@TitleReference {5.3.2}{Absorption Spectra}}{83}{Absorption Spectra}{subsection.5.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5.20}{\ignorespaces Predicted and experimental absorption spectrum of chlorophyll in diethyl ether, only in the $Q$ band region. Predicted spectra are shown without an energy shift on the left, and with an energy shift to match the experimental absorption maximum on the right. All spectra are normalised to have equal areas.}}{84}{figure.5.20}\protected@file@percent }
+\newlabel{fig:chl_diethyl_ether}{{\M@TitleReference {5.20}{Predicted and experimental absorption spectrum of chlorophyll in diethyl ether, only in the $Q$ band region. Predicted spectra are shown without an energy shift on the left, and with an energy shift to match the experimental absorption maximum on the right. All spectra are normalised to have equal areas.}}{84}{Predicted and experimental absorption spectrum of chlorophyll in diethyl ether, only in the $Q$ band region. Predicted spectra are shown without an energy shift on the left, and with an energy shift to match the experimental absorption maximum on the right. All spectra are normalised to have equal areas}{figure.5.20}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5.4}Conclusions}{84}{section.5.4}\protected@file@percent }
+\newlabel{sec:chl_conclusions}{{\M@TitleReference {5.4}{Conclusions}}{84}{Conclusions}{section.5.4}{}}
+\@writefile{lof}{\addvspace {10pt}}
+\@writefile{lot}{\addvspace {10pt}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {6}Beyond Monomer Chlorophyll}{87}{chapter.6}\protected@file@percent }
+\newlabel{chap:excitons}{{\M@TitleReference {6}{Beyond Monomer Chlorophyll}}{87}{Beyond Monomer Chlorophyll}{chapter.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.1}Frenkel Exciton Hamiltonian}{87}{section.6.1}\protected@file@percent }
+\newlabel{sec:exciton_theory}{{\M@TitleReference {6.1}{Frenkel Exciton Hamiltonian}}{87}{Frenkel Exciton Hamiltonian}{section.6.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.1.1}Exciton States}{87}{subsection.6.1.1}\protected@file@percent }
+\newlabel{subsec:exciton_states}{{\M@TitleReference {6.1.1}{Exciton States}}{87}{Exciton States}{subsection.6.1.1}{}}
+\citation{Stross2016}
+\newlabel{eq:exciton_coupling}{{6.7}{89}{Exciton States}{equation.6.1.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {6.2}Same-functional Benchmarking}{89}{section.6.2}\protected@file@percent }
+\newlabel{sec:exction_v_full_dimer}{{\M@TitleReference {6.2}{Same-functional Benchmarking}}{89}{Same-functional Benchmarking}{section.6.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.1}LH2 Dimers}{89}{subsection.6.2.1}\protected@file@percent }
+\newlabel{subsec:LH2_exciton_camb3lyp}{{\M@TitleReference {6.2.1}{LH2 Dimers}}{89}{LH2 Dimers}{subsection.6.2.1}{}}
+\newlabel{fig:camb3lyp_excitons}{{\M@TitleReference {6.2.1}{LH2 Dimers}}{90}{LH2 Dimers}{subsection.6.2.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.1}{\ignorespaces The correlation of lowest excitations in LH2 chlorophyll dimer systems predicted by the exciton model constructed from monomer TD-DFT and TD-DFT of the full dimer system. Scatter points are coloured by the coupling value between exciton states (left) and distance between magnesium centres (right).}}{90}{figure.6.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.2.2}Rotation}{90}{subsection.6.2.2}\protected@file@percent }
+\newlabel{subsec:rotation}{{\M@TitleReference {6.2.2}{Rotation}}{90}{Rotation}{subsection.6.2.2}{}}
+\newlabel{fig:dimer_system}{{\M@TitleReference {6.2.2}{Rotation}}{92}{Rotation}{equation.6.2.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.2}{\ignorespaces Diagram of the artificial dimer system, showing the axes of rotations in green and the chosen sites for calculating distance between functional groups in orange.}}{92}{figure.6.2}\protected@file@percent }
+\newlabel{fig:camb3lyp_Qz_rotation}{{\M@TitleReference {6.2.2}{Rotation}}{93}{Rotation}{figure.6.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.3}{\ignorespaces The dimer excited state energies predicted by full dimer TD-DFT (left) and the exciton model (right) for chlorophyll dimer geometries with one monomer rotated around the $Q_z$ axis.}}{93}{figure.6.3}\protected@file@percent }
+\newlabel{fig:camb3lyp_Qx_rotation}{{\M@TitleReference {6.2.2}{Rotation}}{93}{Rotation}{figure.6.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.4}{\ignorespaces The dimer excited state energies predicted by full dimer TD-DFT (left) and the exciton model (right) for chlorophyll dimer geometries with one monomer rotated around the $Q_x$ axis.}}{93}{figure.6.4}\protected@file@percent }
+\newlabel{fig:camb3lyp_Qy_rotation}{{\M@TitleReference {6.2.2}{Rotation}}{94}{Rotation}{figure.6.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.5}{\ignorespaces The dimer excited state energies predicted by full dimer TD-DFT (left) and the exciton model (right) for chlorophyll dimer geometries with one monomer rotated around the $Q_y$ axis.}}{94}{figure.6.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.3}chl-xTB Excitons}{94}{section.6.3}\protected@file@percent }
+\newlabel{sec:chl_xTB_excitons}{{\M@TitleReference {6.3}{chl-xTB Excitons}}{94}{chl-xTB Excitons}{section.6.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {6.3.1}Full Dimer comparison}{94}{subsection.6.3.1}\protected@file@percent }
+\newlabel{subsec:pbe0_and_chl_xtb_dimer}{{\M@TitleReference {6.3.1}{Full Dimer comparison}}{94}{Full Dimer comparison}{subsection.6.3.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1.1}Discarding PBE0}{94}{subsubsection.6.3.1.1}\protected@file@percent }
+\newlabel{subsec:state_assign}{{\M@TitleReference {6.3.1.1}{Discarding PBE0}}{94}{Discarding PBE0}{subsubsection.6.3.1.1}{}}
+\newlabel{fig:camb3lyp_pbe0_distributions}{{\M@TitleReference {6.3.1.1}{Discarding PBE0}}{95}{Discarding PBE0}{subsubsection.6.3.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.6}{\ignorespaces Distributions of the lowest 5 transition energies of chlorophyll dimers predicted by TD-DFT with the CAM-B3LYP functional (grey) and PBE0 functional (red).}}{95}{figure.6.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1.2}Assignment of States}{95}{subsubsection.6.3.1.2}\protected@file@percent }
+\newlabel{subsec:state_assign}{{\M@TitleReference {6.3.1.2}{Assignment of States}}{95}{Assignment of States}{subsubsection.6.3.1.2}{}}
+\newlabel{fig:pbe0_camb3lyp_coupling}{{\M@TitleReference {6.3.1.1}{Discarding PBE0}}{96}{Discarding PBE0}{figure.6.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.7}{\ignorespaces Scatter of the two lowest transitions from PBE0 TD-DFT against CAM-B3LYP TD-DFT, coloured by the coupling value from the exciton model using PBE0 monomer data.}}{96}{figure.6.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1.3}Comparison}{97}{subsubsection.6.3.1.3}\protected@file@percent }
+\newlabel{subsec:state_assign}{{\M@TitleReference {6.3.1.3}{Comparison}}{97}{Comparison}{subsubsection.6.3.1.3}{}}
+\newlabel{fig:chl_xtb_pbe0_LH2}{{\M@TitleReference {6.3.1.3}{Comparison}}{98}{Comparison}{subsubsection.6.3.1.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.8}{\ignorespaces Transition energies of the exciton states calculated using PBE0 TD-DFT monomer data (left) and chl-xTB monomer data (right) against CAM-B3LYP full dimer TD-DFT transition energies, coloured by the coupling values.}}{98}{figure.6.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {6.3.1.4}chl-xTB Scans}{98}{subsubsection.6.3.1.4}\protected@file@percent }
+\newlabel{subsubsec:chl_xtb_scans}{{\M@TitleReference {6.3.1.4}{chl-xTB Scans}}{98}{chl-xTB Scans}{subsubsection.6.3.1.4}{}}
+\newlabel{fig:chl_xtb_rot_Qz}{{\M@TitleReference {6.3.1.4}{chl-xTB Scans}}{99}{chl-xTB Scans}{subsubsection.6.3.1.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.9}{\ignorespaces Dimer excited state energies predicted by full dimer TD-DFT (left) and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll dimer geometries with one monomer rotated around the $Q_z$ axis.}}{99}{figure.6.9}\protected@file@percent }
+\newlabel{fig:chl_xtb_rot_Qy}{{\M@TitleReference {6.3.1.4}{chl-xTB Scans}}{99}{chl-xTB Scans}{figure.6.9}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.10}{\ignorespaces Dimer excited state energies predicted by full dimer TD-DFT (left) and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll dimer geometries with one monomer rotated around the $Q_y$ axis.}}{99}{figure.6.10}\protected@file@percent }
+\newlabel{fig:chl_xtb_rot_Qx}{{\M@TitleReference {6.3.1.4}{chl-xTB Scans}}{100}{chl-xTB Scans}{figure.6.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.11}{\ignorespaces Dimer excited state energies predicted by full dimer TD-DFT (left) and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll dimer geometries with one monomer rotated around the $Q_x$ axis.}}{100}{figure.6.11}\protected@file@percent }
+\newlabel{fig:error_along_qz}{{\M@TitleReference {6.3.1.4}{chl-xTB Scans}}{101}{chl-xTB Scans}{figure.6.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.12}{\ignorespaces Profiles of the sum of errors between chl-xTB exciton transition energies and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance of the functional group sites at each angle (green) for rotations along the $Q_z$ axis.}}{101}{figure.6.12}\protected@file@percent }
+\newlabel{fig:error_along_qy}{{\M@TitleReference {6.3.1.4}{chl-xTB Scans}}{102}{chl-xTB Scans}{figure.6.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.13}{\ignorespaces Profiles of the sum of errors between chl-xTB exciton transition energies and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance of the functional group sites at each angle (green) for rotations along the $Q_y$ axis.}}{102}{figure.6.13}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.4}Concentration Quenching}{102}{section.6.4}\protected@file@percent }
+\newlabel{sec:concentration_quenching}{{\M@TitleReference {6.4}{Concentration Quenching}}{102}{Concentration Quenching}{section.6.4}{}}
+\newlabel{fig:error_along_qx}{{\M@TitleReference {6.3.1.4}{chl-xTB Scans}}{103}{chl-xTB Scans}{figure.6.13}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.14}{\ignorespaces Profiles of the sum of errors between chl-xTB exciton transition energies and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance of the functional group sites at each angle (green) for rotations along the $Q_x$ axis.}}{103}{figure.6.14}\protected@file@percent }
+\newlabel{fig:ct_pes_distance}{{\M@TitleReference {6.4}{Concentration Quenching}}{105}{Concentration Quenching}{equation.6.4.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.15}{\ignorespaces Potential energy surfaces of the charge separated and vertical excitation states of chlorophyll dimer systems, using the difference in state energies as the coordinate, for a series of separations. Free energy changes ($\Delta A$) and reorganisation energies ($\lambda $) are shown for each separation.}}{105}{figure.6.15}\protected@file@percent }
+\newlabel{fig:ct_pes_lh2}{{\M@TitleReference {6.4}{Concentration Quenching}}{106}{Concentration Quenching}{figure.6.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {6.16}{\ignorespaces Potential energy surfaces of the charge separated and vertical excitation states of LH2 chlorophyll dimer systems, using the same coordinate as figure \ref  {fig:ct_pes_distance}. The large free energy change and movement of charge separation state PES minimum to the left-hand side of the vertical excitation PES imply the LH2 protein environment inhibits transfer to the charge separated state.}}{106}{figure.6.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6.5}Conclusions}{107}{section.6.5}\protected@file@percent }
+\newlabel{sec:exciton_concs}{{\M@TitleReference {6.5}{Conclusions}}{107}{Conclusions}{section.6.5}{}}
+\@writefile{lof}{\addvspace {10pt}}
+\@writefile{lot}{\addvspace {10pt}}
+\@writefile{toc}{\contentsline {chapter}{\chapternumberline {7}Light Harvesting Complexes}{109}{chapter.7}\protected@file@percent }
+\newlabel{chap:LH2}{{\M@TitleReference {7}{Light Harvesting Complexes}}{109}{Light Harvesting Complexes}{chapter.7}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.1}LH2}{109}{section.7.1}\protected@file@percent }
+\newlabel{sec:LH2}{{\M@TitleReference {7.1}{LH2}}{109}{LH2}{section.7.1}{}}
+\citation{Mallus2018}
+\citation{Mennucci2019}
+\citation{Mallus2018}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.1.1}Spectral Density Method}{110}{subsection.7.1.1}\protected@file@percent }
+\newlabel{subsec:spec_dens}{{\M@TitleReference {7.1.1}{Spectral Density Method}}{110}{Spectral Density Method}{subsection.7.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {7.2}Calculating LH2 Excitons}{110}{section.7.2}\protected@file@percent }
+\newlabel{sec:MD}{{\M@TitleReference {7.2}{Calculating LH2 Excitons}}{110}{Calculating LH2 Excitons}{section.7.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.1}Molecular Dynamics}{110}{subsection.7.2.1}\protected@file@percent }
+\newlabel{subsec:specdens_MD}{{\M@TitleReference {7.2.1}{Molecular Dynamics}}{110}{Molecular Dynamics}{subsection.7.2.1}{}}
+\citation{Cogdell2006}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.2}Scaling}{111}{subsection.7.2.2}\protected@file@percent }
+\newlabel{subsec:specdens_scaling}{{\M@TitleReference {7.2.2}{Scaling}}{111}{Scaling}{subsection.7.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.3}Coupling Values}{111}{subsection.7.2.3}\protected@file@percent }
+\newlabel{subsec:coupling_values}{{\M@TitleReference {7.2.3}{Coupling Values}}{111}{Coupling Values}{subsection.7.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.2.4}Screening and Embedding}{111}{subsection.7.2.4}\protected@file@percent }
+\newlabel{subsec:screening}{{\M@TitleReference {7.2.4}{Screening and Embedding}}{111}{Screening and Embedding}{subsection.7.2.4}{}}
+\newlabel{fig:coupling_all}{{\M@TitleReference {7.2.3}{Coupling Values}}{112}{Coupling Values}{subsection.7.2.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.1}{\ignorespaces a) a diagrammatic representation of coupling strengths and interactions between sites specified by ring labels, with thicker lines indicating stronger exciton coupling interactions. b) Exciton coupling values (in $\text  {cm}^{-1}$) plotted as a function of distance between chlorophyll sites, illustrating the distance-dependent cutoff. c) Probability distributions of B850 coupling values, showing the difference in strengths between intra and inter dimer pairs. d) Probability distribution of B800-B850 interactions.}}{112}{figure.7.1}\protected@file@percent }
+\citation{Mallus2018}
+\newlabel{eq:exciton_coupling}{{7.3}{113}{Screening and Embedding}{equation.7.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.4.1}Absorption Spectra}{113}{subsubsection.7.2.4.1}\protected@file@percent }
+\newlabel{subsubsec:abs_spec}{{\M@TitleReference {7.2.4.1}{Absorption Spectra}}{113}{Absorption Spectra}{subsubsection.7.2.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {7.2.4.2}Site Contributions to Exciton Density}{114}{subsubsection.7.2.4.2}\protected@file@percent }
+\newlabel{subsubsec:site_dens}{{\M@TitleReference {7.2.4.2}{Site Contributions to Exciton Density}}{114}{Site Contributions to Exciton Density}{subsubsection.7.2.4.2}{}}
+\newlabel{fig:LH2_abs_spec}{{\M@TitleReference {7.2.4.1}{Absorption Spectra}}{115}{Absorption Spectra}{equation.7.2.7}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.2}{\ignorespaces Simulated absorption spectra of LH2, with (dashed line) and without (solid line) a screening factor for point charge interaction. An experimental line reconstructed from \emph  {et al.} is plotted in black. The simulated spectra are shifted to match the position of the 850 nm peak.}}{115}{figure.7.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.3}Spectra}{115}{section.7.3}\protected@file@percent }
+\newlabel{sec:sites_states_couplings}{{\M@TitleReference {7.3}{Spectra}}{115}{Spectra}{section.7.3}{}}
+\newlabel{fig:LH2_density}{{\M@TitleReference {7.2.4.2}{Site Contributions to Exciton Density}}{116}{Site Contributions to Exciton Density}{subsubsection.7.2.4.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.3}{\ignorespaces Density contributions of site transitions to exciton states for the vacuum (left) and screened (middle) Hamiltonian, with the difference shown in on the right.}}{116}{figure.7.3}\protected@file@percent }
+\citation{Mallus2018}
+\citation{Mallus2018}
+\citation{Mallus2018}
+\citation{Mallus2018}
+\newlabel{fig:specdens_lit}{{\M@TitleReference {7.3.1}{Sites}}{117}{Sites}{subsection.7.3.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.4}{\ignorespaces Spectral density of the $Q_y$ transition for a chlorophyll in the B800 ring in LH2. Axis scaling and units are chosen to best reproduce the spectrum reported by Mallus \emph  {et al.}\cite  {Mallus2018}.}}{117}{figure.7.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.1}Sites}{117}{subsection.7.3.1}\protected@file@percent }
+\newlabel{subsec:sites}{{\M@TitleReference {7.3.1}{Sites}}{117}{Sites}{subsection.7.3.1}{}}
+\citation{Olbrich2010}
+\newlabel{fig:specdens_sites}{{\M@TitleReference {7.3.1}{Sites}}{119}{Sites}{figure.7.4}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.5}{\ignorespaces Average spectral densities for $Q_y$ transitions at sites in the B800, B850a and B850b rings.}}{119}{figure.7.5}\protected@file@percent }
+\newlabel{fig:absorption_probabilities}{{\M@TitleReference {7.3.2}{Exciton states}}{120}{Exciton states}{subsection.7.3.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.6}{\ignorespaces Violin plots of absorption probabilities for exciton states, positioned by the average transition energy from the ground state. The width of each distribution indicates the density of values at absorption probabilities, with crosses marking the mean value.}}{120}{figure.7.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.2}Exciton states}{120}{subsection.7.3.2}\protected@file@percent }
+\newlabel{subsec:states}{{\M@TitleReference {7.3.2}{Exciton states}}{120}{Exciton states}{subsection.7.3.2}{}}
+\newlabel{fig:specdens_states}{{\M@TitleReference {7.3.2}{Exciton states}}{121}{Exciton states}{figure.7.6}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.7}{\ignorespaces Spectral densities of exciton transition energies of LH2, weighted by the averaged absorption probability. The highest energy state is indicated in red. This state has a higher fluctuation in energy, causing excess noise in the spectral density.}}{121}{figure.7.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.3.3}Coupling}{123}{subsection.7.3.3}\protected@file@percent }
+\newlabel{subcsec:coupling}{{\M@TitleReference {7.3.3}{Coupling}}{123}{Coupling}{subsection.7.3.3}{}}
+\newlabel{fig:specdens_coupling}{{\M@TitleReference {7.3.3}{Coupling}}{124}{Coupling}{subsection.7.3.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.8}{\ignorespaces Spectral density of exciton state coupling values (i.e. off diagonal elements of the exciton Hamiltonian) of LH2 coloured by average distance between chlorophyll sites.}}{124}{figure.7.8}\protected@file@percent }
+\newlabel{fig:specdens_distance}{{\M@TitleReference {7.3.3}{Coupling}}{125}{Coupling}{figure.7.8}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.9}{\ignorespaces Spectral density of the separation between nearest neighbour sites in LH2.}}{125}{figure.7.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7.4}Assigning Specific Motions}{126}{section.7.4}\protected@file@percent }
+\newlabel{sec:monomer_dimer_assign}{{\M@TitleReference {7.4}{Assigning Specific Motions}}{126}{Assigning Specific Motions}{section.7.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.1}Ether system}{126}{subsection.7.4.1}\protected@file@percent }
+\newlabel{subsec:specdens_ether}{{\M@TitleReference {7.4.1}{Ether system}}{126}{Ether system}{subsection.7.4.1}{}}
+\newlabel{fig:specdens_ether}{{\M@TitleReference {7.4.1}{Ether system}}{127}{Ether system}{subsection.7.4.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7.10}{\ignorespaces Spectral density of the $Q_y$ transition for a chlorophyll in diethyl-ether.}}{127}{figure.7.10}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.2}Huang Rhys Factors}{128}{subsection.7.4.2}\protected@file@percent }
+\newlabel{subsec:hrf}{{\M@TitleReference {7.4.2}{Huang Rhys Factors}}{128}{Huang Rhys Factors}{subsection.7.4.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {7.4.3}N Axes Deformation}{129}{subsection.7.4.3}\protected@file@percent }
+\newlabel{subsec:N_axes_deformation}{{\M@TitleReference {7.4.3}{N Axes Deformation}}{129}{N Axes Deformation}{subsection.7.4.3}{}}
+\newlabel{fi
