@@ -11,36 +11,86 @@
 \initial{P}hotosynthesis is the bedrock of life on this planet. It is often the 
 first rung in the food chain, establishing ecosystems from a near unlimited source 
 of sunlight. The oldest photosynthetic organisms are purple bacteria, appearing
-on Earth X billion years ago. These organisms employ light harvesting complexes 
-to absorp and stabilise light which is eventually transferred to reaction centres.
+on Earth X billion years ago. These organisms employ light harvesting complexes (LHCs) 
+to absorb and stabilise light which is eventually transferred to reaction centres.
 The steps of creating biomass from base materials occurs at these reaction centres,
 using the photonic energy for charge transfer, however it is the light harvesting
 complexes that are often investigated as they are nearly 100\% efficient at converting
 photons to electronic energy.
 
-Many types of complexes exist, with differences occurring bot
+Many types of complexes exist, differing by the type of chlorophyll pigments as 
+well as structural features. Most often these complexes are formed of repeated units.
+For example the LH2 complex found in \emph{acidophilus} is formed of a trimer unit
+with two bacterial chlorophyll \emph{a} (BChla) chromophore in close proximity, 
+aligned parallel along the porphyrin plane, with a third chromophore perpendicular
+and further apart. This unit is then repeated to form a circular structure with
+between an 8-10 fold symmetry depending on the environment in which the bacteria
+are grown. It is thought that the efficiency of these LHCs is mostly due to these
+structures, and the conformations of the chromophores.
 
+Detailed computational study of these structures has been possible since the first
+crystal structures were produced, and has given a wealth of analysis investigating 
+the properties of these complexes. Most recently these include the effects of non-covalent
+bonding on the chlorophyll pigments, etc. These studies show that the effects of
+the protein occur on the atomistic level as well as on the order of the whole protein 
+structure.
 
+The physical properties of LHCs can be obtained by studying and constructing a Hamiltonian 
+for the system. However usually it is necessary to reduce the number of degrees 
+of freedom in these Hamiltonians. This is due to the sheer size of the complexes.
+For LH2, the chlorophyll system alone contains 3780 atoms, with an additional 
+~6000 atoms for the entire scaffold. Including a membrane and solvent can quickly
+lead to the region of 300,000 atoms.
 
-he issue with designing light harvesting models is the scale of the system.
-For LH2, the chlorophyll system contain 3780 atoms, or $N$ atoms for the entire protein.
-Including a membrane and solvent can quickly leads to the region of 300,000 atoms.
-Generally DFT calculations are not tenable on these types of system sizes, hence 
-the use of the Frenkel exciton method. However the method used to construct the 
-Frenkel Hamiltonian often compromise between accuracy and efficiency. Using DFT
-calculations to calculate the matrix elements for every geometry is still a tall
-order, and often statistical approaches are used. These may use accurate properties
-as a baseline, but much of the small details can be lost due to averaging. On the
-other side, more efficient response methods may be able to construct a greater number
-of matrix elements, but the accuracy may not be comparable to higher level methods.
-Often depending on the study either efficiency or accuracy is the deciding factor.
+It can be seen that the usual electronic structure methods that describe molecular 
+excited states are not tenable for LHCs. However a Frenkel-Davydov model can be 
+utilised due to the weak coupling, which recaptures the delocalisation of excited
+states over pigment sites. This model constructs the Hamiltonian from intra-site energies and
+inter-site interactions, reducing the degrees of freedom of the Hamiltonian from
+the entire state to just single chromophores.
 
-The space between these tradeoffs has been subject to recent discussion in the literature,
-with novel approaches aiming to achieve accuracy and efficiency. While these approaches
-make significant steps in closing this tra
+The Frenkel exciton Hamiltonian can either be constructed from static parameters,
+fit to experimental data or calculated theoretical values, or as functions of LHC 
+geometry and/or time. To recover a truly atomistic treatment of LHCs it is necessary 
+to take the second approach, which if looking at dynamic properties (i.e. requiring
+a time series of LHC geometries) can be far more expensive to calculate.
+
+Often LHC models of this kind fall into the same pattern. Electronic structure calculations
+are used to produce excited state properties for individual sites, which in turn 
+are used to construct Frenkel exciton Hamiltonians, ultimately giving the excited 
+states of the whole LHC. It is obvious then where the model design choices - which 
+electronic structure and response method to use to calculate intra-site properties,
+and how to use these properties to construct the exciton Hamiltonian. The decisions
+on these choices is highly dependent on the level of detail required for the exciton 
+system (i.e. atomistic to coarse grain), and the volume of Hamiltonians required 
+(i.e. how many frames of molecular dynamics are used). 
+
+For a truly atomistic approach often density functional theory (DFT) and linear 
+response methods (time-dependent DFT or TD-DFT) are used to calculate single site
+properties. Due to the size of chlorophyll molecules, using high level methods such 
+as coupled cluster and EOM-CCSD would not be reasonable. Even with TD-DFT methods
+only a limited number of LHC geometries could have explicit Hamiltonians can be 
+constructed before the cost is too high. If a large number of LHC geometries need 
+to be calculated then further approximations are necessary.
+
+This outlines the main issue explored in recent models of LHCs, in that detailed 
+models are required but the electronic structure and response calculations necessary
+are too expensive. Some solutions to this problem are offered in the literature, 
+discussed below, however each have limitations. This thesis focuses on investigating
+new solutions to this problem with the hope that the conclusions will help inform
+future LHC models.
 
 \section{Efficient Response Methods}
 \label{sec:efficient_response_methods}
+
+The most obvious solution to this problem is to make the electronic structure and
+response calculations more efficient. This is often at the expense of accuracy.
+Many recent studies use tight binding methods such as TD-DFTB or ZINDO methods\dots
+
+
+A recent development in efficient response methods is found in the sTDA-xTB method,
+which due to it's relevancy to later sections in this thesis is discussed in detail
+here.
 
 \subsection{sTDA-xTB}
 \label{subsec:stda_xtb}
@@ -67,7 +117,7 @@ method with more tractable gradients, instead of using this already established 
 The two basis sets are used to construct formally similar Fock matrix elements,
 although in practice they use different global parameters. The core Hamiltonian
 is similar to other DFTB methods that use a self-consistent charge (SCC) method, as
-opposed to an SCF method, to obtain molecular orbital coefficients. It is given by,
+opposed to an SCF method, to obtain molecular orbital coefficients. It is given by
 
 \begin{equation}
 \bra{\psi_\mu} H^{\text{EHT, sTDA-xTB}} \ket{\psi_\mu}= \frac{1}{2} \left(k^l_\mu k^{l'}_\nu\right) \frac{1}{2} \left(h^l_\mu h^{l'}_\nu\right) S_{\mu\nu} - k_T \bra{\psi_\mu}\hat{T}\ket{\psi_\nu}
@@ -102,14 +152,14 @@ as well as neglecting the density functional term.
 
 Transition charges are used to calculate these MNOK integrals. The charge $q^A_{nm}$
 centred on atom $A$ associated withthe transition from $ n \rightarrow m$, are
-computed using a Löwdin population analysis:
+computed using a Löwdin population analysis
 
 \begin{equation}
 q_{nm}^A = \sum_{\mu \in A} C^\prime_{\mu n} C^\prime_{\mu m}
 \end{equation}
 
 where the transformed coefficients $C^\prime_{\mu n}$ are given by orthogonalising
-the original MO coefficients $\textbf{C}$:
+the original MO coefficients $\textbf{C}$
 
 \begin{equation}
 \textbf{C}^\prime = \textbf{S}^{\frac{1}{2}} \textbf{C}
@@ -135,13 +185,158 @@ the sTDA-xTB method still requires constructing and diagonalizing the $\mathbf{A
 matrix, albeit with a tight-binding method for molecular orbital coefficients, 
 the gradient of the transition properties would still be difficult to calculate.
 
-\section{Statistical Approaches}
-\label{sec:stats_models}
+The sTDA-xTB method is reported as having excellent accuracy against benchmarked
+data, and has been used to generate absorption spectra and other properties for 
+large systems. At first glance, it would seem that this method would solve the issue
+of calculating many Frenkel exciton systems. However this is not given for two reasons.
+First is that much of the data expressing sTDA-xTB accuracy has been performed on
+a range of systems, and does not concern smaller variations of a single system. 
+The latter is more important for LHCs, as the variations of in chlorophyll geometries
+give rise to variations in the exciton system. Without proper treatment of the former
+it is hard to expect good predicts in the latter. It would be better to start from
+methods that are expected to have accurate correlations with system geometries, 
+such as TD-DFT, and work down to retain this accuracy. The issue of keeping accurate
+transitions properties variations with respect to geometry variations is a key theme
+in this work.
 
+\section{Statistical Methods}
+\label{sec:stats_methods}
+
+As well as making response approximations, using more approximate methods of constructing 
+the exciton framework is also possible. One of the simplest ways of doing this is
+by using static parameters fit from experimental or calculated data. Using these
+static Hamiltonians negates any variation in intra-chromophore or protein scaffold 
+geometry, but can still produce good predictions of physical phenomena.
+
+If using a long timescale, where the full conformation space is well sampled, exciton
+Hamiltonians can be constructed from distributions of chromophore response properties
+(i.e. excitation energies and transition densities). These properties would be distributed
+along a normal distribution when taken from a set of uncorrelated structures. The
+mean and standard deviations can then be used to define a distribution function 
+which can be sampled to construct Hamiltonians without the need for explicit calculations
+on structures. The Hamiltonians could utilise functions that take into account inter-chromophore
+geometries, or use distributions coupling values.
+
+These methods are mostly based on static parameters, such as the mean and standard
+deviation or the Hamiltonian elements themselves, and are not functions of time.
+This means they would be ill-suited for dynamic studies where structures at different
+times are correlated. However recently machine-learning methods has been reported
+that would give time-dependent Hamiltonians still without the need for explicit
+calculations.
+
+Machine-learning models have been used in many areas of computational chemistry,
+especially in areas where both large amounts data and numerical metrics make it 
+easy to train these methods. At their heart, these methods are similar to the static
+Statistical methods that have already been used for LH2 exciton systems, as they
+rely on parameters fit to high level data. However these new models use machine-
+learning techniques to incorporate atomic geometry information.
+
+In 2016 H\"{a}se \emph{et al.} reported on a multi-perceptron (also referred to
+as a neural network (NN)) model that predicts the \Qy transition for chlorophyll
+molecules. Using this model, as well as fitted parameters for the exciton coupling,
+it was possible to calculate exciton population dynamics, as well as spectral densities
+for chlorophyll sites in the FMO light harvesting complex. Similar to other models
+a Coloumb matrix is used as descriptor of the chlorophyll systems, defined as 
+
+\begin{equation}
+	M_{AB} = 
+	  \begin{cases}
+		\frac{1}{2} Z^{2.4} \text{ for } A = B\\
+		\frac{Z_A Z_B}{\left\lvert \mathbf{R}_A - \mathbf{R}_B\right\rvert} \text{ for } A \neq B
+	  \end{cases}
+\end{equation}
+
+where $Z_A$ is some measure of the atomic charge on atom $A$, and $R_A$ is the position
+vector. It can be seen that the off-diagonal elements are simply the Coloumbic interactions,
+and diagonal elements are a polynomial of the atomic charges. This descriptor is
+popular due to the similarity in information that an electronic structure calculation
+would start from, namely the positions and nuclear charges of atoms.
+
+This matrix is used as an input for a neural network with two hidden layers. Briefly,
+a neural network is a series of matrix multiplications applied to input data that
+act as a non-linear function. They are formed of an input and output layer, with 
+any number of "hidden" layers in-between. A layer is a distinct vector of values.
+For example, flattening the Coloumb matrix into a 1D vector gives the input layer,
+and the \Qy transition energy is a the output vector (of 1 element). A vector at
+layer $n$, is multiplied with a coefficient matrix $c$ to give the next layer
+
+\begin{equation}
+	\mathbf{V}_{n+1} = \mathbf{c}_n \mathbf{V}_n	
+\end{equation}
+
+where the coefficient matrices $\mathbf{c}_n$ are fitted to give the smallest deviations
+of the output layer against target data (i.e. error in predicted \Qy energies in 
+this case). Often additional functions are used to modify these values, such as
+sinusoidal, sigmoid, linear ($y=mx$) or rectified linear unit ($y=\text{max}\left(0, mx \right)$)
+functions. In this way they are conceptually similar to biological neurons which
+take in electrical signals, and through some mechanism are can be activated to send
+out a different signal. The coefficient matrices $\mathbf{c}_n$, and any other parameters
+in the activation functions, are fit by a back-propagation method, which also uses
+parameters - these are referred to as hyper-parameters, and using a systematic grid-search
+can find the best hyper-parameters in which to learn the best coefficient matrix
+(although other hyper-parameter searching method can be used). Other considerations
+such as over-fitting also need to be taken into account.
+
+This model predicted \Qy transition energies with around a 0.3 meV error for all
+of the 8 sites in the FMO complex. This is exceptionally accurate, supporting the
+idea that atomic positions and nuclear charges contain all the information necessary
+to predict transition energies. It is noted in this work that the Nitrogen root
+mean squared deviations (RSME) correlates well with excited state properties. Exciton
+properties, such as the time series of exciton populations, were also well reproduced
+using these \Qy energies, although the coupling parameters were taken from other
+fits and not from a NN method.
+
+Another method, developed by Farahvash \emph{et al.}, utilised both neural networks
+and kernel ridge regression (KRR) to predict both site energies as well as exciton 
+coupling parameters, giving a completely time dependent exciton Hamiltonian. KRR
+is another machine-learning method, that can be understood as two processes. First
+is the ridge regression, which is similar to a linear regression model but with
+an additional factor to account for co-linear properties of inputs. Regression models
+are multivariate linear models that follow the form
+
+\begin{equation}
+	f^\prime\left(\mathbf{X}\right) = \mathbf{X} \mathbf{\beta}
+\end{equation}
+
+where $f^\prime\left(\mathbf{X}\right)$ are the predicted values of some metrics $f\left(\mathbf{X}\right)$ 
+(i.e. \Qy energy or exciton coupling value), $\mathbf{X}$ is the matrix of information
+used to predict the value $f$ (i.e. flattened Coloumb matrix, referred to as the feature
+matrix) and $\beta$ is a set of fitted coefficients that minimise the difference 
+$\left\lvert f^\prime \left( \mathbf{x}\right) - f \left(\mathbf{x}\right)\right\rvert$ k.
+The matrix $\mathbf{\beta}$ can be found by minimising the squares of this difference, 
+known as the least-squares method, however this can lead to expensive terms such
+as the inner product of the feature matrix. Here the kernel trick is used to make
+these terms easier to calculate, 
+
+squares approach used in optimising the regression model, some terms in these regression
+models can become expensive to calculate. This leads to the second part of the model, 
+where the "kernel trick" is employed. This rearranges the minimisation of regression
+coefficients so that the inner products are not required, but requires a new function
+that compares the similarity of features. This gives the function that predicts 
+properties as 
+
+\begin{equation}
+	f_{\text{KRR}}^\prime = \sum^{N_x}_j \beta_j k\left(\mathbf{x}, x_j\right)
+\end{equation}
+
+where the $N_x$ is the size of the feature vector $\mathbf{x}$ (which is the linear
+model is stacked to form the matrix $\mathbf{X}$), and $k$ is the kernel function.
+Often this is a gaussian function of the feature vector
+
+\begin{equation}
+	k\left(\mathbf{x}, x_j\right) = \text{exp}\left(\frac{-\left(\mathbf{x}-x_j\right)^2}{2\sigma^2}\right)
+\end{equation}
+
+where $\sigma$ is a fitted parameter. Again these parameters are optimised by searching
+through values, similar to the grid search referenced before.
+
+A KRR model was developed for both the excitation energies and exciton coupling 
+parameters. However it was found that a NN model predicted exciton couplings with
+greater accuracy.
 
 
 \section{Hardware}
-\label{}
+\label{sec:hardware}
 
-\section{Conclusions}
+\section{Applications of LH2 Exciton Systems}
 \label{sec:lit_review_conclusions}
