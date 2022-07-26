@@ -1259,6 +1259,79 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libr
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarybackgrounds.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypetri.code.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypetri.code.tex
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/neuralnetwork/neuralnetwork.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/environ/environ.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/algorithmicx/algorithmicx.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
@@ -1445,6 +1518,7 @@ OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
 OUTPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
@@ -1667,11 +1741,21 @@ INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8t.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncrc8t.tfm
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/subunit.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/subunit.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/subunit.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/subunit.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/subunit.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/ring_assign.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/ring_assign.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/ring_assign.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/ring_assign.png
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/introduction/ring_assign.png
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncrc8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncb8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncb8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncsy.vf
