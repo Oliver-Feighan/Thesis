@@ -29,6 +29,10 @@
   {Self-consistent-field calculations of core excited states}}, J. Chem. Phys,
   130 (2009), p.~124308.
 
+\bibitem{Blankenship2010}
+{\sc R.~E. Blankenship}, {\em {Future Perspectives in Plant Biology Early
+  Evolution of Photosynthesis 1}}, Plant Physiol., 154 (2010), pp.~434--438.
+
 \bibitem{Caldeweyher2020}
 {\sc E.~Caldeweyher, J.-M. Mewes, S.~Ehlert, and S.~Grimme}, {\em {Extension
   and evaluation of the D4 London-dispersion model for periodic systems}},
@@ -48,6 +52,11 @@
 {\sc R.~J. Cogdell, A.~Gall, and J.~{K{\"{o}} Hler}}, {\em {The architecture
   and function of the light-harvesting apparatus of purple bacteria : from
   single molecules to in vivo membranes}}.
+
+\bibitem{Cogdell2021}
+{\sc R.~J. Cogdell and T.~C. Nguyen-Phan}, {\em {Photosynthesis | The Purple
+  Photosynthetic Bacterial Light Harvesting System}}, Encycl. Biol. Chem. Third
+  Ed., 2 (2021), pp.~291--304.
 
 \bibitem{Frenkel1931}
 {\sc J.~Frenkel}, {\em {On The Transformation Of Light Into Heat In Solids}},
@@ -136,6 +145,11 @@
 {\sc J.~Kim, J.~Jeon, T.~{Hyun Yoon}, and M.~Cho}, {\em {Two-dimensional
   electronic spectroscopy of bacteriochlorophyll a with synchronized dual
   mode-locked lasers}}, Nat. Commun., 11 (2020), p.~6029.
+
+\bibitem{Klamt2008}
+{\sc S.~Klamt, H.~Grammel, R.~Straube, R.~Ghosh, and E.~D. Gilles}, {\em
+  {Modeling the electron transport chain of purple non-sulfur bacteria}}, Mol.
+  Syst. Biol., 4 (2008), p.~156.
 
 \bibitem{Klopman1964}
 {\sc G.~Klopman, V.~86, J.~Linevsky, K.~S. Seshadri, and D.~White}, {\em {A
@@ -273,6 +287,11 @@
   and F.~R. Manby}, {\em {How static disorder mimics decoherence in anisotropy
   pump-probe experiments on purple-bacteria light harvesting complexes}}, J.
   Phys. Chem. B, 120 (2016), pp.~11449--11463.
+
+\bibitem{Tretiak2000}
+{\sc S.~Tretiak, C.~Middleton, V.~Chernyak, and S.~Mukamel}, {\em {Exciton
+  Hamiltonian for the Bacteriochlorophyll System in the LH2 Antenna Complex of
+  Purple Bacteria}},  (2000).
 
 \bibitem{Worster2021}
 {\sc S.~B. Worster, O.~Feighan, and F.~R. Manby}, {\em {Reliable transition
