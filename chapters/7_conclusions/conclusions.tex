@@ -9,16 +9,200 @@
 
 \initial{T}he discussion of results in the previous chapters have analysed whether
 the novel approach to designing a novel response method for LHCs has worked. In 
-the first chapter it was found that some of the tight binding stuff.
+the first chapter it was found that while a the more efficient \dscf approach is 
+viable for DFT based methods, the tight-binding \dxtb methods would not be accurate
+enough for LHC models. This was argued to be due to the parameterisation of the 
+GFN-xTB methods used, as other tight-binding schemes do work well. From this the
+more specific chl-xTB method was designed and parameterised for \Qy transition properties.
+The specificity of this model is similar to the machine-learning models discussed 
+in the introduction. chl-xTB proved to be highly accurate against the selected training
+data, although choices in the constructing the training data has shown some signs
+of limiting this method. This is discussed in below. 
+
+Applying this efficient response method to LHCs also proved successful. Dimer transition 
+properties as well as the LH2 coupling values were well recovered by the chl-xTB 
+framework, implying that conclusions about LHC (or other oligomer chlorophyll system) 
+properties would be reliable for discussion. 
+
+Having established the usability of this efficient response method for LHCs, it
+was then possible to calculate novel properties. These were chosen to highlight 
+how the chl-xTB exciton framework answers some of the issues discussion in the introduction
+with existing LHC models. 
+
+The first application was the rate of transition to the charge transfer state for
+chlorophyll dimers, for which is was necessary to have a model that could include 
+embedding effects from different environments. This was straightforward to achieve 
+with chl-xTB as the point-charge embedding terms can be added into the Fock matrix. 
+This is in contrast to the machine-learning models where QM/MM effects must be present 
+in the training data. 
+
+Calculating the spectral density of whole exciton state was the second application.
+This relied on the accuracy of chl-xTB with respect to small changes in chlorophyll
+geometry, which may not be found in more general tight-binding methods (as shown
+in figure \ref{fig:energy_training_scatter}). It also required a highly efficient
+response method due to the large number of individual LH2 geometries needed for 
+the spectra.
+
+Both of these applications resulted in novel explanations of LHC phenomena. The
+rates of transition show how the LH2 protein purposefully inhibits the charge-transfer
+quenching mechanism of excited states when compared to a more stochastic environment
+such as diethyl-ether solvent. The spectral densities then investigated further 
+how the environment couples to the exciton system, finding that intra-chlorophyll
+variations are far more important than inter-chlorophyll interactions, a surprising
+outcome given the delocalisation of exciton states across the site basis.
+
+The investigation of novel efficient response methods and their applications reported
+here was not intended to be (and is not) an exhaustive search but more a proof-of-concept
+of how future models could be constructed. Some considerations for other models 
+have been highlighted in the previous chapters, such as how the prediction of transition
+properties from chl-xTB is highly dependent on the training data. Other considerations
+are proposed below, sketching out possibilities for future work, based on some observations
+that have not been part of the discussion so far. This includes how more properties 
+for LHCs could be calculated using the chl-xTB exciton framework. A workflow for
+designing similar methods for systems other than LH2 BChla chlorophyll is proposed,
+which may be of use in studies on systems similar to LHCs.
 
 \section{Efficient Response Methods}
 \label{sec:future_response_methods}
 
+Testing the chl-xTB response method approximations on a different system would be
+the logical extension of this type of method. In chapter \ref{chap:chl_xtb} it was
+posited that the success of this method was due to strong single-character transition,
+a feature that has been explored in other work as well. This is also corroborated 
+by the accuracy of the DFT based \dscf methods from section \ref{subsec:dscf_chl_tests}
+as these are also single transition methods.
+
+It is argued then that the response approximations and reparameterisation of GFN1-xTB
+may give good results for other single-character systems and transitions. These 
+investigations would have a very similar method to that used in chapter \ref{chap:chl_xtb},
+constructing a set of training data from a high level method and fitting the response
+method parameters. Due to the high level of accuracy achieved in chl-xTB from a
+relatively small set of training data, this reparamterisation could be easily done
+for other systems. If these systems are smaller then the training data could be 
+made from higher level methods or from more data. 
+
+A logical candidate for this would be the $Q_x$ transition in chlorophyll. This 
+transition mostly characterised by the HOMO-1 - LUMO+1 transition so the approximations
+used in chl-xTB response would be applicable. The changes to the GFN1-xTB Hamiltonian
+parameters would also be the same as the transition density of this transition is
+still centered on the porphyrin ring similar to the \Qy transition. Retraining for
+this transition then would be a straightforward investigation to do. This would 
+be a useful method to construct for some models of LHCs, especially for those more
+complex than those looked at in this work. Some exciton systems expand the basis
+sites and transitions to include the $Q_x$ transition, although this is only necessary
+to create a more detailed image of the higher energy exciton states.
+
+Reparameterising for other chlorophyll systems would also be a good area for further
+investigation. As the LH2 protein only includes BChla molecules it was not necessary
+to construct models for other types of chlorophyll. However this would no longer 
+be the case when looking at other chlorophyll systems such as solvated systems or
+other types of LHCs. $Q$ band transition in other chlorophyll systems are similar
+to those found in BChla with changes found in the transition energies and the amount
+of HOMO-LUMO and HOMO-1 - LUMO+1 character. This is dependent on the functional 
+groups that are attached to the porphyrin ring.
+
+There would be two possible approaches to alter the chl-xTB as it is reported here 
+for use on other chlorophyll systems and transitions. The first approach would be 
+simple reparameterisation using the parameters already reported. Not altering which
+GFN1-xTB parameters are optimised would probably work best for a model that predicts
+a single system and transition as has been investigated here. A more encompassing 
+approach would be to include $Q_x$ transitions as well as other chlorophyll systems
+into one set of training data and optimise on model. Due to the diversity of this
+training data it would probably be necessary to reoptimise additional parameters,
+such as a better treatment of the atom types in the porphyrin ring functional groups 
+(i.e. specific C and O parameters). The range of transition energies may also cause
+issues when using the objective function reported in section \ref{subsec:obj_func}.
+Both the RMSE and $R^2$ values would increase with a more varied set of training 
+data. It could be that the values of transition energies would form clusters around
+some set of means which would artificially raise the $R^2$ value for the whole training
+set and obscure the more detailed correlation for transition properties in one system.
+As stated in chapter \ref{chap:chl_xtb} the correlation is an important metric for
+getting good response in predicted transition properties to geometry variations.
+Investigating the weights $\lambda_n$ in the objective function (eq. \ref{eq:obj_func})
+may solve this issue by getting the optimisation procedure to apply higher pressure
+to this metric. It is hard to argue whether a similar level of accuracy would be
+achieved by including differing systems and transitions however the benefits of 
+having a method that could be applied to more than one specific case are obvious.
+
+Going beyond chlorophyll, it would be possible to test this procedure for other 
+systems. One candidate relevant to LHC studies would be carotenoid units (present
+in LH2) that participate in some electronic energy transfer to the chlorophyll system.
+Similar to the inclusion of $Q_x$ transitions in the exciton framework some models
+also include carotenoids as basis sites again for a more detailed description of
+high energy states. It may be that these models would only be successful if the 
+transitions are mostly single-character and have well defined transitions that can
+be used in the objective function. 
+
+Expanding the chl-xTB method to other systems as transitions would be useful for
+calculating properties for more systems. For example, the spectral densities of 
+other chlorophyll systems could be calculated and compared to those reported here.
+Using the chl-xTB exciton framework, as well as some extensions, for further LHC
+applications are discussed below.
 
 \section{Further Investigations into LHCs}
 \label{sec:lhc_investigations}
 
+As stated above the exciton framework could be extended with additional basis sites
+and transitions such as the carotenoid sites and $Q_x$ transitions. These states 
+are usually higher in energy and so many not couple much to the lower exciton states
+based on \Qy transitions. However they are important when considering all the mechanisms
+for electronic energy transfer between states. However to achieve these models with
+the similar methods used in this work would require reparameterisation as discussed
+above.
+
+The chl-xTB exciton method could be used for many more LHCs studies than those reported
+here. One application would be calculating spectral densities of other LHC complexes,
+such as the FMO complex, to find whether these spectra are also be dominated by
+intrinsic chlorophyll properties or whether there is more effect from the protein 
+manifold. The only objection to this investigation would be that, similar to the 
+conclusion from section \ref{subsec:absorption_spectra}, the exclusive use of LH2
+geometries in the training set data may have biased the model. This effect is almost
+negligible as the agreement of predicted spectra shown in figure \ref{fig:chl_diethyl_ether}
+is very good and it is only the smaller \Qy peaks that are missing, in both the
+DFT reference methods as well as chl-xTB. Expanding the training set is achievable
+with some considerations already discussed above.
+
+Another key benefit of the chl-xTB response approximations, and a design choice 
+that has only lightly been discussed, is that the formalism is fairly simple compared 
+to full linear-response or other tight-binding methods such as sTDA-xTB. Specifically
+the gradient of the response properties with respect to atomic positions would be
+substantially easier to calculate than these methods, as TD-DFT gradients would 
+require solving couple-perturbed equations and sTDA-xTB gradients would have a gradient
+term in the basis functions due to their coordination number dependence. The gradient
+of the exciton system is constructed from these site gradients similar to the Hamiltonian.
+Whilst dynamics simulations of the LH2 exciton system have been done before with
+gradients, several approximations were required that would not be needed if using
+the chl-xTB framework. Additionally this approach required DFT level data which 
+limits what could be calculated within reasonable expense. Using the chl-xTB framework 
+would give a much more \emph{ab initio} approach. Calculating the gradients of chl-xTB
+transition properties would be much easier than other methods. The gradient of the
+transition charges, for example, would require gradients of the MO coefficients 
+from the altered GFN1-xTB method. However as this method is optimised for analytic 
+geometry optimisations which also require this gradient term, many programs would
+readily be able to provide this. Also as the other terms in calculating the transition
+energy are based on interatomic distances the gradient terms should be relatively 
+easy to calculate.
+
+Additionally as the chl-xTB exciton method is extremely efficient future investigations
+could be similar to previous studies where it would have been beneficial to just 
+calculate a larger volume of properties. For example a larger model of the entire
+light-harvesting apparatus present in purple bacteria could be achieved, or investigating
+the effects on EET when multiple LH2 proteins are present. These investigations 
+would not add anything more to the model but highlight how increased efficiency 
+allows larger scale models to become feasible.
 
 
-
-
+These suggestions for future work highlight the useful features of the chl-xTB monomer
+method as well as the chl-xTB exciton framework. As there are many potential areas
+for further research it is argued that these novel solutions to the problem of scale
+in LHC models introduced in chapter \ref{chap:intro} will be useful for inspiring
+similar approach in the future. The efficiency of tight-binding methods has been
+well utilised and would allow for larger models to be possible. The more extendable
+formalism, achieved by being based on electronic structure methods and requiring 
+few parameters, would allow for more many more properties and effects to be taken
+into account without the need for large change. Finally many of the transition properties
+are reliable due to the decent accuracy achieved by optimisation to a more specific
+training set than other methods, a feature which should also be true for cases beyond
+the \Qy chlorophyll transition. These approaches should therefore be useful tools
+for the future investigations in LHCs that are necessary to fully explore photosynthesis
+and light harvesting mechanisms. 
