@@ -1,311 +1,600 @@
 \begin{thebibliography}{10}
 
-\bibitem{libmsym}
-{\em mcodev31/libmsym: molecular point group symmetry lib}.
-
-\bibitem{Adamo1999}
-{\sc C.~Adamo and V.~Barone}, {\em {Towards reliable density functional methods
-  without adjustable parameters: The PBE0 model}}, J. Chem. Phys1, 110 (1999),
-  p.~6158.
-
-\bibitem{Agranovich2000}
-{\sc V.~M. Agranovich and D.~M. Basko}, {\em {Molecular polaritons for
-  controlling chemistry with quantum optics}}, Mol. Orbital Heitler-London
-  Methods J. Chem. Phys., 112 (2000), p.~11.
-
-\bibitem{Bannwarth2019}
-{\sc C.~Bannwarth, S.~Ehlert, and S.~Grimme}, {\em {GFN2-xTB An Accurate and
-  Broadly Parametrized Self-Consistent Tight-Binding Quantum Chemical Method
-  with Multipole Electrostatics and Density-Dependent Dispersion
-  Contributions}}, J. Chem. Theory Comput., 15 (2019), pp.~1652--1671.
-
-\bibitem{Bannwarth2020}
-{\sc C.~Bannwarth, C.~Eike, S.~Ehlert, A.~Hansen, P.~Pracht, J.~Seibert,
-  S.~Spicher, and S.~Grimme}, {\em {Extended tight-binding quantum chemistry
-  methods}}, WIREs Comput. Mol. Sci., 11 (2020), p.~1493.
-
-\bibitem{Besley2009}
-{\sc N.~A. Besley, A.~T.~B. Gilbert, and P.~M.~W. Gill}, {\em
-  {Self-consistent-field calculations of core excited states}}, J. Chem. Phys,
-  130 (2009), p.~124308.
+\bibitem{Mallus2018}
+Maria Mallus, Yashoj Shakya, Jigneshkumar Dahyabhai, and Ulrich Kleinekathofer.
+\newblock {Environmental effects on the dynamics in the light-harvesting
+  complexes LH2 and LH3 based on molecular simulations | Elsevier Enhanced
+  Reader}, 2018.
 
 \bibitem{Blankenship2010}
-{\sc R.~E. Blankenship}, {\em {Future Perspectives in Plant Biology Early
-  Evolution of Photosynthesis 1}}, Plant Physiol., 154 (2010), pp.~434--438.
-
-\bibitem{Caldeweyher2020}
-{\sc E.~Caldeweyher, J.-M. Mewes, S.~Ehlert, and S.~Grimme}, {\em {Extension
-  and evaluation of the D4 London-dispersion model for periodic systems}},
-  Phys. Chem. Chem. Phys, 22 (2020), p.~8499.
-
-\bibitem{Cho2021}
-{\sc Y.~Cho, S.~J. Bintrim, and T.~C. Berkelbach}, {\em {A simplified GW/BSE
-  approach for charged and neutral excitation energies of large molecules and
-  nanomaterials}},  (2021).
-
-\bibitem{Cleary2013}
-{\sc L.~Cleary, H.~Chen, C.~Chuang, R.~J. Silbey, and J.~Cao}, {\em {Optimal
-  fold symmetry of LH2 rings on a photosynthetic membrane}}, Biophys. Comput.
-  Biol. Chem., 110 (2013), pp.~8537--8542.
-
-\bibitem{Cogdell2006}
-{\sc R.~J. Cogdell, A.~Gall, and J.~{K{\"{o}} Hler}}, {\em {The architecture
-  and function of the light-harvesting apparatus of purple bacteria : from
-  single molecules to in vivo membranes}}.
+Robert~E Blankenship.
+\newblock {Future Perspectives in Plant Biology Early Evolution of
+  Photosynthesis 1}.
+\newblock {\em Plant Physiol.}, 154:434--438, 2010.
 
 \bibitem{Cogdell2021}
-{\sc R.~J. Cogdell and T.~C. Nguyen-Phan}, {\em {Photosynthesis | The Purple
-  Photosynthetic Bacterial Light Harvesting System}}, Encycl. Biol. Chem. Third
-  Ed., 2 (2021), pp.~291--304.
-
-\bibitem{Frenkel1931}
-{\sc J.~Frenkel}, {\em {On The Transformation Of Light Into Heat In Solids}},
-  Phys. Rev., 37 (1931), pp.~17--44.
-
-\bibitem{Gaussian16}
-{\sc D.~J. {Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.;
-  Robb, M. A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Petersson, G. A.;
-  Nakatsuji, H.; Li, X.; Caricato, M.; Marenich, A. V.; Bloino, J.; Janesko, B.
-  G.; Gomperts, R.; Mennucci, B.; Hratch}}, {\em {Gaussian 16, Revision C.01}},
-  2016.
-
-\bibitem{Gasteiger1978}
-{\sc J.~Gasteiger and M.~Marsili}, {\em {A new model for calculating atomic
-  charges in molecules}}, Tetrahedron Lett., 19 (1978), pp.~3181--3184.
-
-\bibitem{Gaus2011}
-{\sc M.~Gaus, Q.~Cui, and M.~Elstner}, {\em {DFTB3: Extension of the
-  Self-Consistent-Charge Density-Functional Tight-Binding Method (SCC-DFTB)}},
-  J. Chem. Theory Comput, 7 (2011), pp.~931--948.
-
-\bibitem{Gavnholt2008}
-{\sc J.~Gavnholt, T.~Olsen, M.~Engelund, and J.~Schi{\o}tz}, {\em
-  self-consistent field method to obtain potential energy surfaces of excited
-  molecules on surfaces}, Phys. Rev. B, 78 (2008), p.~075441.
-
-\bibitem{Gilbert2008}
-{\sc A.~T.~B. Gilbert, N.~A. Besley, and P.~M.~W. Gill}, {\em {Self-Consistent
-  Field Calculations of Excited States Using the Maximum Overlap Method (MOM)
-  †}}, J. Phys. Chem., 112 (2008), p.~13164.
-
-\bibitem{Gimon2009}
-{\sc T.~Gimon, A.~Ipatov, A.~He{\ss}elmann, and A.~G{\"{o}}rling}, {\em
-  {Qualitatively Correct Charge-Transfer Exictation Energies in HeH+ by
-  Time-Dependent Density-Functional Theory Due to Exact Exchange Kohn-Sham
-  Eigenvalue Differences}}, J. Chem. Theory Comput, 5 (2009), p.~27.
-
-\bibitem{Grimme2013}
-{\sc S.~Grimme}, {\em {A simplified Tamm-Dancoff density functional approach
-  for the electronic excitation spectra of very large molecules}}, J. Chem.
-  Phys, 138 (2013), p.~244104.
-
-\bibitem{Grimme2010}
-{\sc S.~Grimme, J.~Antony, S.~Ehrlich, and H.~Krieg}, {\em {A consistent and
-  accurate ab initio parametrization of density functional dispersion
-  correction (DFT-D) for the 94 elements H-Pu}}, J. Chem. Phys., 132 (2010),
-  p.~24103.
-
-\bibitem{Grimme}
-{\sc S.~Grimme and C.~Bannwarth}, {\em {Supporting information for: Ultra-fast
-  computation of electronic spectra for large systems by tight-binding based
-  simplified Tamm-Dancoff approximation (sTDA-xTB)}}, tech. rep.
-
-\bibitem{Grimme2016}
-\leavevmode\vrule height 2pt depth -1.6pt width 23pt, {\em {Ultra-fast
-  computation of electronic spectra for large systems by tight-binding based
-  simplified Tamm-Dancoff approximation (sTDA-xTB)}}, J. Chem. Phys., 145
-  (2016), p.~54103.
-
-\bibitem{Grimme2017}
-{\sc S.~Grimme, C.~Bannwarth, and P.~Shushkov}, {\em {A Robust and Accurate
-  Tight-Binding Quantum Chemical Method for Structures, Vibrational
-  Frequencies, and Noncovalent Interactions of Large Molecular Systems
-  Parametrized for All spd-Block Elements (Z = 1-86)}}, J. Chem. Theory
-  Comput., 13 (2017), pp.~1989--2009.
-
-\bibitem{Hattig2000}
-{\sc C.~H{\"{a}}ttig and F.~Weigend}, {\em {CC2 excitation energy calculations
-  on large molecules using the resolution of the identity approximation}}, J.
-  Chem. Phys, 113 (2000), p.~5154.
-
-\bibitem{Hellweg2008}
-{\sc A.~Hellweg, S.~A.~G. Gru¨n, and C.~H. Ha¨ttig}, {\em {Benchmarking the
-  performance of spin-component scaled CC2 in ground and electronically excited
-  states}}, Phys. Chem. Chem. Phys, 10 (2008), pp.~4119--4127.
-
-\bibitem{Kohn1952}
-{\sc P.~Hohenberg and W.~Kohn}, {\em {PHYSICAL REVIEW}}, Phys. Rev., 136
-  (1952), p.~864.
-
-\bibitem{Hunt1969}
-{\sc s.~W.~J. Hunt and W.~A. Goddard}, {\em {Excited States of H2O using
-  improved virtual orbitals}}, Chem. Phys. Lett., 3 (1969), pp.~414--418.
-
-\bibitem{Kim2020}
-{\sc J.~Kim, J.~Jeon, T.~{Hyun Yoon}, and M.~Cho}, {\em {Two-dimensional
-  electronic spectroscopy of bacteriochlorophyll a with synchronized dual
-  mode-locked lasers}}, Nat. Commun., 11 (2020), p.~6029.
+Richard~J. Cogdell and Tu~C. Nguyen-Phan.
+\newblock {Photosynthesis | The Purple Photosynthetic Bacterial Light
+  Harvesting System}.
+\newblock {\em Encycl. Biol. Chem. Third Ed.}, 2:291--304, jan 2021.
 
 \bibitem{Klamt2008}
-{\sc S.~Klamt, H.~Grammel, R.~Straube, R.~Ghosh, and E.~D. Gilles}, {\em
-  {Modeling the electron transport chain of purple non-sulfur bacteria}}, Mol.
-  Syst. Biol., 4 (2008), p.~156.
-
-\bibitem{Klopman1964}
-{\sc G.~Klopman, V.~86, J.~Linevsky, K.~S. Seshadri, and D.~White}, {\em {A
-  Semiempirical Treatment of Molecular Structures. II. Molecular Terms and
-  Application to Diatomic Molecules}}, J. Am. Chem. Soc., 86 (1964),
-  pp.~4550--4557.
-
-\bibitem{Koskinen2009}
-{\sc P.~Koskinen and V.~M{\"{a}}kinen}, {\em {Density-functional tight-binding
-  for beginners}}, Comput. Mater. Sci., 47 (2009), pp.~237--253.
-
-\bibitem{Kowalczyk2011}
-{\sc T.~Kowalczyk, S.~R. Yost, and T.~{Van Voorhis}}, {\em {Assessment of the
-  D-SCF density functional theory approach for electronic excitations in
-  organic dyes}}, J. Chem. Phys., 134 (2011), p.~164101.
-
-\bibitem{Laurent2013}
-{\sc A.~D. Laurent and D.~Jacquemin}, {\em {TD-DFT benchmarks: A review}}, sep
-  2013.
-
-\bibitem{Li2017}
-{\sc X.~Li, R.~M. Parrish, F.~Liu, S.~I. {Kokkila Schumacher}, and T.~J.
-  Mart{\'{i}}nez}, {\em {An Ab Initio Exciton Model Including Charge-Transfer
-  Excited States}}, J. Chem. Theory Comput., 13 (2017), pp.~3493--3504.
-
-\bibitem{List2013}
-{\sc N.~H. List, C.~Curutchet, S.~Knecht, B.~Mennucci, J.~Kongsted, J.~Xxiii,
-  and B.~Spain}, {\em {Toward Reliable Prediction of the Energy Ladder in
-  Multichromophoric Systems: A Benchmark Study on the FMO Light-Harvesting
-  Complex}}, J. Chem. Theory Comput., 9 (2013), p.~4928.
-
-\bibitem{Liu2004}
-{\sc T.~Liu, W.-G. Han, F.~Himo, .~G.~M. Ullmann, D.~Bashford, A.~Toutchkine,
-  K.~M. Hahn, and L.~Noodleman}, {\em {Density Functional Vertical
-  Self-Consistent Reaction Field Theory for Solvatochromism Studies of
-  Solvent-Sensitive Dyes}}, J. Phys. Chem. A, 108 (2004), pp.~3545--3555.
-
-\bibitem{Lowdin1955}
-{\sc P.~O. L{\"{o}}wdin}, {\em {Quantum theory of many-particle systems. I.
-  Physical interpretations by means of density matrices, natural spin-orbitals,
-  and convergence problems in the method of configurational interaction}},
-  Phys. Rev., 97 (1955), pp.~1474--1489.
-
-\bibitem{Mallus2018}
-{\sc M.~Mallus, Y.~Shakya, J.~Dahyabhai, and U.~Kleinekath{\"{o}}fer}, {\em
-  {Environmental effects on the dynamics in the light-harvesting complexes LH2
-  and LH3 based on molecular simulations | Elsevier Enhanced Reader}}, 2018.
-
-\bibitem{Manathunga2020}
-{\sc M.~Manathunga, Y.~Miao, D.~Mu, A.~W. Go, and K.~M. Merz}, {\em {Parallel
-  Implementation of Density Functional Theory Methods in the Quantum
-  Interaction Computational Kernel Program}}, Cite This J. Chem. Theory Comput,
-  16 (2020), pp.~4315--4326.
-
-\bibitem{Marenich2012}
-{\sc A.~V. Marenich, S.~V. Jerome, C.~J. Cramer, and D.~G. Truhlar}, {\em
-  {Charge Model 5: An Extension of Hirshfeld Population Analysis for the
-  Accurate Description of Molecular Interactions in Gaseous and Condensed
-  Phases}},  (2012).
-
-\bibitem{Marques2004}
-{\sc M.~A.~L. Marques and E.~K.~U. Gross}, {\em {TIME-DEPENDENT DENSITY
-  FUNCTIONAL THEORY}}, Annu. Rev. Phys. Chem, 55 (2004), pp.~427--55.
-
-\bibitem{Mennucci2019}
-{\sc B.~Mennucci, F.~C. Ramos, M.~Nottoli, and L.~Cupellini}, {\em {The
-  molecular mechanisms of light adaption in light-harvesting complexes of
-  purple bacteria revealed by a multiscale modeling}}, 10 (2019), p.~9650.
-
-\bibitem{Nishimoto1957}
-{\sc K.~Nishimoto and N.~Mataga}, {\em {Electronic Structure and Spectra of
-  Some Nitrogen Heterocycles}}, Zeitshrift fur Phys. Chemie Neue Folge, 12
-  (1957), pp.~335--338.
-
-\bibitem{Ohno1964}
-{\sc K.~Ohno}, {\em {Some Remarks on the Pariser-Parr-Pople Method}}, Theor.
-  chim. Acta, 2 (1964), pp.~219--227.
-
-\bibitem{Olbrich2010}
-{\sc C.~Olbrich and U.~Kleinekath{\"{o}}fer}, {\em {Time-Dependent Atomistic
-  View on the Electronic Relaxation in Light-Harvesting System II}}, J. Phys.
-  Chem. B, 114 (2010), p.~12427.
-
-\bibitem{Porezag1994}
-{\sc D.~Porezag, T.~Frauenheim, T.~Kohler, G.~Seifert, and R.~Kaschner}, {\em
-  {Construction of tight-binding-like potentials on the basis of
-  density-functional theory: Application to carbon}}, Phys. Rev. B, 51 (1994),
-  pp.~12948--12957.
-
-\bibitem{Pracht2019}
-{\sc P.~Pracht, E.~Caldeweyher, S.~Ehlert, and S.~Grimme}, {\em {A Robust
-  Non-Self-Consistent Tight-Binding Quantum Chemistry Method for large
-  Molecules}}, Chem. Eng. Sci., 17 (2019), pp.~1--19.
-
-\bibitem{Roothaan1951}
-{\sc C.~C.~J. Roothaan}, {\em {New Developments in Molecular Orbital Theory}},
-  Rev. Mod. Phys., 23 (1951), p.~69.
-
-\bibitem{Runge1984}
-{\sc E.~Runge and E.~K.~U. Gross}, {\em {Density-Functional Theory for
-  Time-Dependent Systems}}, Phys. Rev. Lett., 52 (1984), pp.~997--1000.
-
-\bibitem{Salomon-Ferrer2013}
-{\sc R.~Salomon-Ferrer, D.~A. Case, and R.~C. Walker}, {\em {An overview of the
-  Amber biomolecular simulation package}}, Wiley Interdiscip. Rev. Comput. Mol.
-  Sci., 3 (2013), pp.~198--210.
-
-\bibitem{Schafer1992}
-{\sc A.~Sch{\"{a}}fer, H.~Horn, and R.~Ahlrichs}, {\em {Fully optimized
-  contracted Gaussian basis sets for atoms Li to Kr}}, J. Chem. Phys, 97
-  (1992), p.~2571.
-
-\bibitem{Scholes2003}
-{\sc G.~D. Scholes}, {\em {LONG-RANGE RESONANCE ENERGY TRANSFER IN MOLECULAR
-  SYSTEMS}}, Annu. Rev. Phys. Chem, 54 (2003), pp.~57--87.
-
-\bibitem{Spicher2020a}
-{\sc S.~Spicher and S.~Grimme}, {\em {Robust atomistic modeling of materials,
-  organometallic and biochemical systems}}, Angew. Chemie, 59 (2020),
-  pp.~2--11.
-
-\bibitem{Steinmann2015}
-{\sc C.~Steinmann and J.~Kongsted}, {\em {Electronic Energy Transfer in
-  Polarizable Heterogeneous Environments: A Systematic Investigation of
-  Different Quantum Chemical Approaches}}, J. Chem. Theory Comput., 11 (2015),
-  pp.~4283--4293.
-
-\bibitem{Strain1963}
-{\sc H.~Strain, M.~Thomas, and J.~Katz}, {\em {Spectral Absorption Properties
-  of Ordinary and Fully Deuteriated Chlorophylls a and b}}, Biochem. Biophys.
-  Acta., 75 (1963), pp.~306--311.
-
-\bibitem{Stross2016}
-{\sc C.~Stross, M.~W. {Van Der Kamp}, T.~A. Oliver, J.~N. Harvey, N.~Linden,
-  and F.~R. Manby}, {\em {How static disorder mimics decoherence in anisotropy
-  pump-probe experiments on purple-bacteria light harvesting complexes}}, J.
-  Phys. Chem. B, 120 (2016), pp.~11449--11463.
+Steffen Klamt, Hartmut Grammel, Ronny Straube, Robin Ghosh, and Ernst~Dieter
+  Gilles.
+\newblock {Modeling the electron transport chain of purple non-sulfur
+  bacteria}.
+\newblock {\em Mol. Syst. Biol.}, 4(1):156, jan 2008.
 
 \bibitem{Tretiak2000}
-{\sc S.~Tretiak, C.~Middleton, V.~Chernyak, and S.~Mukamel}, {\em {Exciton
-  Hamiltonian for the Bacteriochlorophyll System in the LH2 Antenna Complex of
-  Purple Bacteria}},  (2000).
+Sergei Tretiak, Chris Middleton, Vladimir Chernyak, and Shaul Mukamel.
+\newblock {Exciton Hamiltonian for the Bacteriochlorophyll System in the LH2
+  Antenna Complex of Purple Bacteria}.
+\newblock 2000.
+
+\bibitem{Cogdell2006}
+Richard~J Cogdell, Andrew Gall, and Jurgen Kohler.
+\newblock {The architecture and function of the light-harvesting apparatus of
+  purple bacteria : from single molecules to in vivo membranes}.
+
+\bibitem{Cleary2013}
+Liam Cleary, Hang Chen, Chern Chuang, Robert~J Silbey, and Jianshu Cao.
+\newblock {Optimal fold symmetry of LH2 rings on a photosynthetic membrane}.
+\newblock {\em Biophys. Comput. Biol. Chem.}, 110(21):8537--8542, 2013.
+
+\bibitem{Harel2012}
+Elad Harel and Gregory~S Engel.
+\newblock {Quantum coherence spectroscopy reveals complex dynamics in bacterial
+  light-harvesting complex 2 (LH2)}.
+\newblock 109(3), 2012.
+
+\bibitem{Mcdermott1995}
+G~Mcdermott, M~Prince, A~A Freer, A~M Hawthornthwaite-Lawless, M~Z Papiz, R~J
+  {Cogdell T Be}, and N~W Isaacs.
+\newblock {Crystal structure of an integral membrane light-harvesting complex
+  from photosynthetic bacteria}.
+\newblock {\em Nature}, 374:517, 1995.
+
+\bibitem{Koepke1996}
+Juergen Koepke, Xiche Hu, Cornelia Muenke, Klaus Schulten, and Hartmut Michel.
+\newblock {The crystal structure of the light-harvesting complex II (B800-850)
+  from Rhodospirillum molischianum}.
+\newblock {\em Structure}, 4(5):581--597, 1996.
+
+\bibitem{SlaMa2020}
+Vladislav {Sla Ma}, Lorenzo Cupellini, and Benedetta Mennucci.
+\newblock {Exciton properties and optical spectra of light harvesting complex
+  II from a fully atomistic description †}.
+\newblock {\em Phys. Chem. Chem. Phys}, 22:16783, 2020.
+
+\bibitem{Jang2015}
+Seogjoo Jang, Eva Rivera, and Daniel Montemayor.
+\newblock {Molecular level design principle behind optimal sizes of
+  photosynthetic LH2 complex: Taming disorder through cooperation of hydrogen
+  bonding and quantum delocalization}.
+\newblock {\em J. Phys. Chem. Lett.}, 6(6):928--934, 2015.
+
+\bibitem{Curutchet2016}
+Carles Curutchet and Benedetta Mennucci.
+\newblock {Quantum chemical studies of light harvesting}.
+\newblock {\em Chem. Rev.}, 117(2):294--343, 2017.
+
+\bibitem{Mirkovic2016}
+Tihana Mirkovic, Evgeny~E Ostroumov, Jessica~M Anna, Rienk {Van Grondelle},
+  Govindjee, and Gregory~D Scholes.
+\newblock {Light Absorption and Energy Transfer in the Antenna Complexes of
+  Photosynthetic Organisms}.
+\newblock 2016.
+
+\bibitem{Neugebauer2008}
+Johannes Neugebauer.
+\newblock {Photophysical Properties of Natural Light-Harvesting Complexes
+  Studied by Subsystem Density Functional Theory}.
+\newblock 2008.
+
+\bibitem{Cherezov2006}
+Vadim Cherezov, Jeffrey Clogston, Miroslav~Z. Papiz, and Martin Caffrey.
+\newblock {Room to Move: Crystallizing Membrane Proteins in Swollen Lipidic
+  Mesophases}.
+\newblock {\em J. Mol. Biol.}, 357(5):1605--1618, apr 2006.
+
+\bibitem{Mennucci2019}
+Benedetta Mennucci, Felipe~Cardoso Ramos, Michele Nottoli, and Lorenzo
+  Cupellini.
+\newblock {The molecular mechanisms of light adaption in light-harvesting
+  complexes of purple bacteria revealed by a multiscale modeling}.
+\newblock 10:9650, 2019.
+
+\bibitem{Frenkel1931}
+J.~Frenkel.
+\newblock {On The Transformation Of Light Into Heat In Solids}.
+\newblock {\em Phys. Rev.}, 37:17--44, 1931.
+
+\bibitem{Davydov1964}
+A~S Davydov.
+\newblock {Soviet Physics Uspekhi THE THEORY OF MOLECULAR EXCITONS}.
+\newblock {\em Sov. Phys. Usp}, 7:393--448, 1964.
+
+\bibitem{Cignoni2022}
+Edoardo Cignoni, Vladislav Slama, Lorenzo Cupellini, and Benedetta Mennucci.
+\newblock {The atomistic modeling of light-harvesting complexes from the
+  physical models to the computational protocol}.
+\newblock {\em J. Chem. Phys.}, 156:120901, 2022.
+
+\bibitem{Jurinovich2015}
+Sandro Jurinovich, Lucas Viani, Carles Curutchet, and Benedetta Mennucci.
+\newblock {Limits and potentials of quantum chemical methods in modelling
+  photosynthetic antennae}.
+\newblock {\em Phys. Chem. Chem. Phys}, 17:30783, 2015.
+
+\bibitem{Olbrich2010}
+Carsten Olbrich and Ulrich Kleinekathofer.
+\newblock {Time-Dependent Atomistic View on the Electronic Relaxation in
+  Light-Harvesting System II}.
+\newblock {\em J. Phys. Chem. B}, 114:12427, 2010.
+
+\bibitem{Curutchet2011}
+Carles Curutchet, Jacob Kongsted, Aurora {Mu{\~{}} Noz-Losa}, Hoda
+  Hossein-Nejad, Gregory~D Scholes, and Benedetta Mennucci.
+\newblock {Photosynthetic Light-Harvesting Is Tuned by the Heterogeneous
+  Polarizable Environment of the Protein}.
+\newblock {\em J. Am. Chem. Soc}, 133:58, 2011.
+
+\bibitem{Curutchet2012}
+Carles Curutchet, Vladimir~I Novoderezhkin, Jacob Kongsted, Aurora Mun, Rienk
+  van Grondelle, Gregory~D Scholes, Benedetta Mennucci, and Joan Xxiii.
+\newblock {Energy Flow in the Cryptophyte PE545 Antenna Is Directed by Bilin
+  Pigment Conformation}.
+\newblock 2012.
+
+\bibitem{Andreussi2015}
+Oliviero Andreussi, Stefan Knecht, Christel~M Marian, Jacob Kongsted, and
+  Benedetta Mennucci.
+\newblock {Carotenoids and Light-Harvesting: From DFT/MRCI to the Tamm-Dancoff
+  Approximation}.
+\newblock 2015.
+
+\bibitem{Hansen2019}
+Thorsten Hansen and Luca {De Vico}.
+\newblock {Q y and Q x Absorption Bands for Bacteriochlorophyll a Molecules
+  from LH2 and LH3}.
+\newblock 2019.
+
+\bibitem{Poddubnyy2021}
+Vladimir~V. Poddubnyy, Maxim~I. Kozlov, and Ilya~O. Glebov.
+\newblock {The origin of the red shift of Qy band of chlorophylls d and f}.
+\newblock {\em Chem. Phys. Lett.}, 778, sep 2021.
+
+\bibitem{Bannwarth2020}
+Christoph Bannwarth, Caldeweyher Eike, Sebastian Ehlert, Andreas Hansen,
+  Philipp Pracht, Jakob Seibert, Sebastian Spicher, and Stefan Grimme.
+\newblock {Extended tight-binding quantum chemistry methods}.
+\newblock {\em WIREs Comput. Mol. Sci.}, 11(2):1493, 2020.
+
+\bibitem{Grimme2016}
+Stefan Grimme and Christoph Bannwarth.
+\newblock {Ultra-fast computation of electronic spectra for large systems by
+  tight-binding based simplified Tamm-Dancoff approximation (sTDA-xTB)}.
+\newblock {\em J. Chem. Phys.}, 145:54103, 2016.
+
+\bibitem{Marenich2012}
+Aleksandr~V Marenich, Steven~V Jerome, Christopher~J Cramer, and Donald~G
+  Truhlar.
+\newblock {Charge Model 5: An Extension of Hirshfeld Population Analysis for
+  the Accurate Description of Molecular Interactions in Gaseous and Condensed
+  Phases}.
+\newblock 2012.
+
+\bibitem{Gasteiger1978}
+Johann Gasteiger and Mario Marsili.
+\newblock {A new model for calculating atomic charges in molecules}.
+\newblock {\em Tetrahedron Lett.}, 19(34):3181--3184, 1978.
+
+\bibitem{Grimme2013}
+Stefan Grimme.
+\newblock {A simplified Tamm-Dancoff density functional approach for the
+  electronic excitation spectra of very large molecules}.
+\newblock {\em J. Chem. Phys}, 138:244104, 2013.
+
+\bibitem{Nishimoto1957}
+K.~Nishimoto and N.~Mataga.
+\newblock {Electronic Structure and Spectra of Some Nitrogen Heterocycles}.
+\newblock {\em Zeitshrift fur Phys. Chemie Neue Folge}, 12:335--338, 1957.
+
+\bibitem{Ohno1964}
+Kimio Ohno.
+\newblock {Some Remarks on the Pariser-Parr-Pople Method}.
+\newblock {\em Theor. chim. Acta}, 2:219--227, 1964.
+
+\bibitem{Klopman1964}
+G~Klopman, Vol 86, J~Linevsky, K~S Seshadri, and D~White.
+\newblock {A Semiempirical Treatment of Molecular Structures. II. Molecular
+  Terms and Application to Diatomic Molecules}.
+\newblock {\em J. Am. Chem. Soc.}, 86(21):4550--4557, 1964.
+
+\bibitem{Seibert2019}
+Jakob Seibert, Jana Pisarek, Sarah Schmitz, Christoph Bannwarth, Stefan Grimme,
+  and Dieter {Cremer Memorial}.
+\newblock {Molecular Physics An International Journal at the Interface Between
+  Chemistry and Physics Extension of the element parameter set for ultra-fast
+  excitation spectra calculation (sTDA-xTB) Extension of the element parameter
+  set for ultra-fast excitation spec}.
+\newblock {\em Mol. Phys.}, 117(9):1104--1116, 2019.
+
+\bibitem{Wilbraham2018}
+Liam Wilbraham, Enrico Berardo, Lukas Turcani, Kim~E Jelfs, and Martijn~A
+  Zwijnenburg.
+\newblock {High-Throughput Screening Approach for the Optoelectronic Properties
+  of Conjugated Polymers}.
+\newblock {\em J. Chem. Inf. Model}, 58:16, 2018.
+
+\bibitem{Verma2022}
+Shomik Verma, Miguel Rivera, and David~O Scanlon.
+\newblock {Machine learned calibrations to high- throughput molecular excited
+  state calculations}.
+\newblock {\em J. Chem. Phys}, 156:134116, 2022.
+
+\bibitem{HeathApostolopoulos2019}
+Isabelle Heath-Apostolopoulos, Liam Wilbraham, and Martijn~A Zwijnenburg.
+\newblock {Computational high-throughput screening of polymeric photocatalysts:
+  exploring the effect of composition, sequence isomerism and conformational
+  degrees of freedom}.
+\newblock {\em Faraday Discuss.}, 215:98, 2019.
+
+\bibitem{Sirohiwal2020}
+Abhishek Sirohiwal, Romain Berraud-Pache, Frank Neese, Robert Izsak, and
+  Dimitrios~A Pantazis.
+\newblock {Accurate Computation of the Absorption Spectrum of Chlorophyll a
+  with Pair Natural Orbital Coupled Cluster Methods}.
+\newblock {\em J. Phys. Chem}, 124:8761--8771, 2020.
+
+\bibitem{Cory1998}
+Marshall~G Cory, Michael~C Zerner, Xiche Hu, and Klaus Schulten.
+\newblock {Electronic Excitations in Aggregates of Bacteriochlorophylls}.
+\newblock {\em J. Phys. Chem. B}, 102:7640--7650, 1998.
+
+\bibitem{Hu1997}
+Xiche Hu, Thorsten Ritz, Ana {Damjanovic´, Damjanovic´,}, and Klaus Schulten.
+\newblock {Pigment Organization and Transfer of Electronic Excitation in the
+  Photosynthetic Unit of Purple Bacteria}.
+\newblock {\em J. Phys. Chem. B}, 101:3854--3871, 1997.
+
+\bibitem{Stross2016}
+Clement Stross, Marc~W. {Van Der Kamp}, Thomas~A.A. Oliver, Jeremy~N. Harvey,
+  Noah Linden, and Frederick~R. Manby.
+\newblock {How static disorder mimics decoherence in anisotropy pump-probe
+  experiments on purple-bacteria light harvesting complexes}.
+\newblock {\em J. Phys. Chem. B}, 120(44):11449--11463, 2016.
+
+\bibitem{Papiz2003}
+Miroslav~Z. Papiz, Steve~M. Prince, Tina Howard, Richard~J. Cogdell, and
+  Neil~W. Isaacs.
+\newblock {The structure and thermal motion of the B800-850 LH2 complex from
+  Rps. acidophila at 2.0 {\AA} resolution and 100 K: New structural features
+  and functionally relevant motions}.
+\newblock {\em J. Mol. Biol.}, 326(5):1523--1538, 2003.
+
+\bibitem{Dral2020}
+Pavlo~O Dral.
+\newblock {Quantum Chemistry in the Age of Machine Learning}.
+\newblock {\em J. Phys. Chem. Lett}, 11:2336--2347, 2020.
+
+\bibitem{Behler2011}
+Jorg Behler.
+\newblock {Neural network potential-energy surfaces in chemistry: a tool for
+  large-scale simulations}.
+\newblock {\em Phys. Chem. Chem. Phys}, 13:17930--17955, 2011.
+
+\bibitem{Westermayr2020}
+Julia Westermayr and Philipp Marquetand.
+\newblock {Machine Learning for Electronically Excited States of Molecules}.
+\newblock {\em Chem. Rev.}, 121:9873--9926, 2020.
+
+\bibitem{Schutt2019}
+K~T Sch{\"{u}}tt, M~Gastegger, A~Tkatchenko, K.-R M{\"{u}}ller, and R~J Maurer.
+\newblock {Unifying machine learning and quantum chemistry with a deep neural
+  network for molecular wavefunctions}.
+\newblock {\em Nat. Commun.}, 10:5024, 2019.
+
+\bibitem{Sajjan2022}
+Manas Sajjan, Junxu Li, Raja Selvarajan, Bc~Shree, Hari Sureshbabu, Bd~Sumit,
+  Suresh Kale, Rishabh Gupta, Vinit Singh, and Sabre Kais.
+\newblock {Quantum machine learning for chemistry and physics}.
+\newblock {\em Chem. Soc. Rev}, 51:6475, 2022.
+
+\bibitem{AspuruGuzik2016}
+Florian H{\"{a}}se, Stephanie Valleau, Edward Pyzer-Knapp, and Alan
+  Aspuru-Guzik.
+\newblock {Machine learning exciton dynamics}.
+\newblock {\em Chem. Sci.}, 7:5139--5147, 2016.
+
+\bibitem{Rupp2012a}
+Matthias Rupp, Alexandre Tkatchenko, Klaus-Robert M{\"{u}}ller, and O~{Anatole
+  Von Lilienfeld}.
+\newblock {Fast and Accurate Modeling of Molecular Atomization Energies with
+  Machine Learning}.
+\newblock {\em Phys. Rev. Lett.}, 108:058301, 2012.
+
+\bibitem{Montavon2013}
+Gregoire Montavon, Matthias Rupp, Vivekanand Gobre, Alvao Vazquez-Mayagoitia,
+  Katja Hansen, Alexandre Tkatchenko, Klaus-Robert Muller, and O~{Anatole Von
+  Lilienfeld}.
+\newblock {Machine learning of molecular electronic properties in chemical
+  compound space}.
+\newblock {\em New J. Phys.}, 15:095003, 2013.
+
+\bibitem{Raghunathan2022}
+Shampa Raghunathan and U.~Deva Priyakumar.
+\newblock {Molecular representations for machine learning applications in
+  chemistry}.
+\newblock {\em Int. J. Quantum Chem.}, 122(7), apr 2022.
+
+\bibitem{Rumelhart1986}
+David~E. Rumelhart, Geoffrey~E. Hinton, and Ronald~J. Williams.
+\newblock {\em {Learning internal representations by error propagation}}.
+\newblock 1986.
+
+\bibitem{Farahvash2020}
+Ardavan Farahvash, Chee-Kong Lee, Qiming Sun, Liang Shi, and Adam~P Willard.
+\newblock {Machine learning Frenkel Hamiltonian parameters to accelerate
+  simulations of exciton dynamics}.
+\newblock {\em J. Chem. Phys}, 153:74111, 2020.
+
+\bibitem{Hastie2009}
+Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
+\newblock {\em {The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}}.
+\newblock Springer, New York, 2nd edition, 2009.
+
+\bibitem{Rasmussen2006}
+Carl Rasmussen and Christopher Williams.
+\newblock {\em {Gaussian Processes for Machine Learning}}.
+\newblock MIT Press, Cambridge, 2006.
+
+\bibitem{Porezag1994}
+D~Porezag, Th~Frauenheim, Th~Kohler, G~Seifert, and R~Kaschner.
+\newblock {Construction of tight-binding-like potentials on the basis of
+  density-functional theory: Application to carbon}.
+\newblock {\em Phys. Rev. B}, 51(19):12948--12957, 1994.
+
+\bibitem{Koskinen2009}
+Pekka Koskinen and Ville M{\"{a}}kinen.
+\newblock {Density-functional tight-binding for beginners}.
+\newblock {\em Comput. Mater. Sci.}, 47(1):237--253, 2009.
+
+\bibitem{Gaus2011}
+Michael Gaus, Qiang Cui, and Marcus Elstner.
+\newblock {DFTB3: Extension of the Self-Consistent-Charge Density-Functional
+  Tight-Binding Method (SCC-DFTB)}.
+\newblock {\em J. Chem. Theory Comput}, 7:931--948, 2011.
+
+\bibitem{Salomon-Ferrer2013}
+Romelia Salomon-Ferrer, David~A. Case, and Ross~C. Walker.
+\newblock {An overview of the Amber biomolecular simulation package}.
+\newblock {\em Wiley Interdiscip. Rev. Comput. Mol. Sci.}, 3(2):198--210, mar
+  2013.
+
+\bibitem{Manathunga2020}
+Madushanka Manathunga, Yipu Miao, Dawei Mu, Andreas~W Go, and Kenneth~M Merz.
+\newblock {Parallel Implementation of Density Functional Theory Methods in the
+  Quantum Interaction Computational Kernel Program}.
+\newblock {\em Cite This J. Chem. Theory Comput}, 16:4315--4326, 2020.
+
+\bibitem{Bannwarth2019}
+Christoph Bannwarth, Sebastian Ehlert, and Stefan Grimme.
+\newblock {GFN2-xTB An Accurate and Broadly Parametrized Self-Consistent
+  Tight-Binding Quantum Chemical Method with Multipole Electrostatics and
+  Density-Dependent Dispersion Contributions}.
+\newblock {\em J. Chem. Theory Comput.}, 15:1652--1671, 2019.
+
+\bibitem{Grimme2017}
+Stefan Grimme, Christoph Bannwarth, and Philip Shushkov.
+\newblock {A Robust and Accurate Tight-Binding Quantum Chemical Method for
+  Structures, Vibrational Frequencies, and Noncovalent Interactions of Large
+  Molecular Systems Parametrized for All spd-Block Elements (Z = 1-86)}.
+\newblock {\em J. Chem. Theory Comput.}, 13(5):1989--2009, 2017.
+
+\bibitem{Pracht2019}
+Philipp Pracht, Eike Caldeweyher, Sebastian Ehlert, and Stefan Grimme.
+\newblock {A Robust Non-Self-Consistent Tight-Binding Quantum Chemistry Method
+  for large Molecules}.
+\newblock {\em Chem. Eng. Sci.}, 17(preprint):1--19, 2019.
+
+\bibitem{Spicher2020a}
+Sebastian Spicher and Stefan Grimme.
+\newblock {Robust atomistic modeling of materials, organometallic and
+  biochemical systems}.
+\newblock {\em Angew. Chemie}, 59:2--11, 2020.
+
+\bibitem{Grimme2010}
+Stefan Grimme, Jens Antony, Stephan Ehrlich, and Helge Krieg.
+\newblock {A consistent and accurate ab initio parametrization of density
+  functional dispersion correction (DFT-D) for the 94 elements H-Pu}.
+\newblock {\em J. Chem. Phys.}, 132:24103, 2010.
+
+\bibitem{Caldeweyher2020}
+Eike Caldeweyher, Jan-Michael Mewes, Sebastian Ehlert, and Stefan Grimme.
+\newblock {Extension and evaluation of the D4 London-dispersion model for
+  periodic systems}.
+\newblock {\em Phys. Chem. Chem. Phys}, 22:8499, 2020.
+
+\bibitem{Runge1984}
+Erich Runge and E~K~U Gross.
+\newblock {Density-Functional Theory for Time-Dependent Systems}.
+\newblock {\em Phys. Rev. Lett.}, 52:997--1000, 1984.
+
+\bibitem{Marques2004}
+M~A~L Marques and E~K~U Gross.
+\newblock {TIME-DEPENDENT DENSITY FUNCTIONAL THEORY}.
+\newblock {\em Annu. Rev. Phys. Chem}, 55:427--55, 2004.
+
+\bibitem{Kohn1952}
+P.~Hohenberg and W.~Kohn.
+\newblock {PHYSICAL REVIEW}.
+\newblock {\em Phys. Rev.}, 136(3B):864, 1952.
+
+\bibitem{List2013}
+Nanna~Holmgaard List, Carles Curutchet, Stefan Knecht, Benedetta Mennucci,
+  Jacob Kongsted, Joan Xxiii, and Barcelona Spain.
+\newblock {Toward Reliable Prediction of the Energy Ladder in Multichromophoric
+  Systems: A Benchmark Study on the FMO Light-Harvesting Complex}.
+\newblock {\em J. Chem. Theory Comput.}, 9:4928, 2013.
+
+\bibitem{Laurent2013}
+Ad{\`{e}}le~D. Laurent and Denis Jacquemin.
+\newblock {TD-DFT benchmarks: A review}, sep 2013.
+
+\bibitem{Hunt1969}
+s.~William~J. Hunt and William~A. Goddard.
+\newblock {Excited States of H2O using improved virtual orbitals}.
+\newblock {\em Chem. Phys. Lett.}, 3(6):414--418, jun 1969.
+
+\bibitem{Gilbert2008}
+Andrew T~B Gilbert, Nicholas~A Besley, and Peter M~W Gill.
+\newblock {Self-Consistent Field Calculations of Excited States Using the
+  Maximum Overlap Method (MOM) †}.
+\newblock {\em J. Phys. Chem.}, 112:13164, 2008.
+
+\bibitem{Roothaan1951}
+C~C~J Roothaan.
+\newblock {New Developments in Molecular Orbital Theory}.
+\newblock {\em Rev. Mod. Phys.}, 23(2):69, 1951.
+
+\bibitem{Liu2004}
+Tiqing Liu, Wen-Ge Han, Fahmi Himo, |~G~Matthias Ullmann, Donald Bashford,
+  Alexei Toutchkine, Klaus~M Hahn, and Louis Noodleman.
+\newblock {Density Functional Vertical Self-Consistent Reaction Field Theory
+  for Solvatochromism Studies of Solvent-Sensitive Dyes}.
+\newblock {\em J. Phys. Chem. A}, 108:3545--3555, 2004.
+
+\bibitem{Gavnholt2008}
+Jeppe Gavnholt, Thomas Olsen, Mads Engelund, and Jakob Schi{\o}tz.
+\newblock self-consistent field method to obtain potential energy surfaces of
+  excited molecules on surfaces.
+\newblock {\em Phys. Rev. B}, 78:075441, 2008.
+
+\bibitem{Besley2009}
+Nicholas~A Besley, Andrew T~B Gilbert, and Peter M~W Gill.
+\newblock {Self-consistent-field calculations of core excited states}.
+\newblock {\em J. Chem. Phys}, 130:124308, 2009.
+
+\bibitem{Kowalczyk2011}
+Tim Kowalczyk, Shane~R Yost, and Troy {Van Voorhis}.
+\newblock {Assessment of the D-SCF density functional theory approach for
+  electronic excitations in organic dyes}.
+\newblock {\em J. Chem. Phys.}, 134:164101, 2011.
+
+\bibitem{Gimon2009}
+Tino Gimon, Andrey Ipatov, Andreas He{\ss}elmann, and Andreas G{\"{o}}rling.
+\newblock {Qualitatively Correct Charge-Transfer Exictation Energies in HeH+ by
+  Time-Dependent Density-Functional Theory Due to Exact Exchange Kohn-Sham
+  Eigenvalue Differences}.
+\newblock {\em J. Chem. Theory Comput}, 5:27, 2009.
+
+\bibitem{Lowdin1955}
+Per~Olov L{\"{o}}wdin.
+\newblock {Quantum theory of many-particle systems. I. Physical interpretations
+  by means of density matrices, natural spin-orbitals, and convergence problems
+  in the method of configurational interaction}.
+\newblock {\em Phys. Rev.}, 97(6):1474--1489, 1955.
+
+\bibitem{Agranovich2000}
+V~M Agranovich and D~M Basko.
+\newblock {Molecular polaritons for controlling chemistry with quantum optics}.
+\newblock {\em Mol. Orbital Heitler-London Methods J. Chem. Phys.}, 112:11,
+  2000.
+
+\bibitem{Scholes2003}
+Gregory~D Scholes.
+\newblock {LONG-RANGE RESONANCE ENERGY TRANSFER IN MOLECULAR SYSTEMS}.
+\newblock {\em Annu. Rev. Phys. Chem}, 54:57--87, 2003.
+
+\bibitem{Steinmann2015}
+Casper Steinmann and Jacob Kongsted.
+\newblock {Electronic Energy Transfer in Polarizable Heterogeneous
+  Environments: A Systematic Investigation of Different Quantum Chemical
+  Approaches}.
+\newblock {\em J. Chem. Theory Comput.}, 11:4283--4293, 2015.
+
+\bibitem{Li2017}
+Xin Li, Robert~M. Parrish, Fang Liu, Sara~I.L. {Kokkila Schumacher}, and
+  Todd~J. Mart{\'{i}}nez.
+\newblock {An Ab Initio Exciton Model Including Charge-Transfer Excited
+  States}.
+\newblock {\em J. Chem. Theory Comput.}, 13(8):3493--3504, 2017.
 
 \bibitem{Worster2021}
-{\sc S.~B. Worster, O.~Feighan, and F.~R. Manby}, {\em {Reliable transition
-  properties from excited-state mean-field calculations}}, J. Chem. Phys, 154
-  (2021), p.~124106.
+Susannah~Bourne Worster, Oliver Feighan, and Frederick~R Manby.
+\newblock {Reliable transition properties from excited-state mean-field
+  calculations}.
+\newblock {\em J. Chem. Phys}, 154:124106, 2021.
 
-\bibitem{Zhang2012}
-{\sc L.~Zhang, D.-A. Silva, Y.~Yan, and X.~Huang}, {\em {Force Field
-  Development for Cofactors in the Photosystem II}}, J. Comput. Chem., 33
-  (2012), pp.~1969--1980.
+\bibitem{Gaussian16}
+D.~J {Frisch, M. J.; Trucks, G. W.; Schlegel, H. B.; Scuseria, G. E.; Robb, M.
+  A.; Cheeseman, J. R.; Scalmani, G.; Barone, V.; Petersson, G. A.; Nakatsuji,
+  H.; Li, X.; Caricato, M.; Marenich, A. V.; Bloino, J.; Janesko, B. G.;
+  Gomperts, R.; Mennucci, B.; Hratch}.
+\newblock {Gaussian 16, Revision C.01}, 2016.
 
 \bibitem{Ziegler1977}
-{\sc T.~Ziegler, A.~Rank, and E.~J. Baerends}, {\em {On the Calculation of
-  Multiplet Energies by the Hartree-Fock-Slater Method}}, Acta, 43 (1977),
-  pp.~261--271.
+Tom Ziegler, Arvi Rank, and Evert~J Baerends.
+\newblock {On the Calculation of Multiplet Energies by the Hartree-Fock-Slater
+  Method}.
+\newblock {\em Acta}, 43:261--271, 1977.
+
+\bibitem{Adamo1999}
+Carlo Adamo and Vincenzo Barone.
+\newblock {Towards reliable density functional methods without adjustable
+  parameters: The PBE0 model}.
+\newblock {\em J. Chem. Phys1}, 110:6158, 1999.
+
+\bibitem{Schafer1992}
+Ansgar Sch{\"{a}}fer, Hans Horn, and Reinhart Ahlrichs.
+\newblock {Fully optimized contracted Gaussian basis sets for atoms Li to Kr}.
+\newblock {\em J. Chem. Phys}, 97:2571, 1992.
+
+\bibitem{Hattig2000}
+Christof H{\"{a}}ttig and Florian Weigend.
+\newblock {CC2 excitation energy calculations on large molecules using the
+  resolution of the identity approximation}.
+\newblock {\em J. Chem. Phys}, 113:5154, 2000.
+
+\bibitem{Hellweg2008}
+Arnim Hellweg, Sarah A~Gru¨n Gru¨n, and Christof~Ha¨ttig Ha¨ttig.
+\newblock {Benchmarking the performance of spin-component scaled CC2 in ground
+  and electronically excited states}.
+\newblock {\em Phys. Chem. Chem. Phys}, 10:4119--4127, 2008.
+
+\bibitem{Grimme}
+Stefan Grimme and Christoph Bannwarth.
+\newblock {Supporting information for: Ultra-fast computation of electronic
+  spectra for large systems by tight-binding based simplified Tamm-Dancoff
+  approximation (sTDA-xTB)}.
+\newblock Technical report.
+
+\bibitem{libmsym}
+mcodev31/libmsym: molecular point group symmetry lib.
+
+\bibitem{Cho2021}
+Yeongsu Cho, Sylvia~J Bintrim, and Timothy~C Berkelbach.
+\newblock {A simplified GW/BSE approach for charged and neutral excitation
+  energies of large molecules and nanomaterials}.
+\newblock 2021.
+
+\bibitem{Kim2020}
+JunWoo Kim, Jonggu Jeon, Tai {Hyun Yoon}, and Minhaeng Cho.
+\newblock {Two-dimensional electronic spectroscopy of bacteriochlorophyll a
+  with synchronized dual mode-locked lasers}.
+\newblock {\em Nat. Commun.}, 11:6029, 2020.
+
+\bibitem{Zhang2012}
+Lu~Zhang, Daniel-Adriano Silva, Yijing Yan, and Xuhui Huang.
+\newblock {Force Field Development for Cofactors in the Photosystem II}.
+\newblock {\em J. Comput. Chem.}, 33:1969--1980, 2012.
+
+\bibitem{Strain1963}
+H.~Strain, M.~Thomas, and J.~Katz.
+\newblock {Spectral Absorption Properties of Ordinary and Fully Deuteriated
+  Chlorophylls a and b}.
+\newblock {\em Biochem. Biophys. Acta.}, 75:306--311, 1963.
 
 \end{thebibliography}
