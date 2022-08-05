@@ -1,4 +1,4 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{100}
 
 \bibitem{Mallus2018}
 Maria Mallus, Yashoj Shakya, Jigneshkumar Dahyabhai, and Ulrich Kleinekathofer.
@@ -349,6 +349,14 @@ Trevor Hastie, Robert Tibshirani, and Jerome Friedman.
 Carl Rasmussen and Christopher Williams.
 \newblock {\em {Gaussian Processes for Machine Learning}}.
 \newblock MIT Press, Cambridge, 2006.
+
+\bibitem{Sisto2017}
+Aaron Sisto, Clem Stross, Marc~W. {Van Der Kamp}, Michael O'Connor, Simon
+  McIntosh-Smith, Graham~T. Johnson, Edward~G. Hohenstein, Fred~R. Manby,
+  David~R. Glowacki, and Todd~J. Martinez.
+\newblock {Atomistic non-adiabatic dynamics of the LH2 complex with a
+  GPU-accelerated: Ab initio exciton model}.
+\newblock {\em Phys. Chem. Chem. Phys.}, 19(23):14924--14936, 2017.
 
 \bibitem{Porezag1994}
 D~Porezag, Th~Frauenheim, Th~Kohler, G~Seifert, and R~Kaschner.
