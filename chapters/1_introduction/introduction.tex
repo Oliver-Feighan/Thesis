@@ -11,22 +11,24 @@
 \initial{P}hotosynthesis is the bedrock of life on this planet. It is often the 
 first step in the food chain, establishing ecosystems from a near unlimited source 
 of sunlight. The earliest evidence of photosynthetic organisms was formed around
-3.5 billion years ago \cite{Blankenship2010}. One of the most studied organims are
+3.5 billion years ago \cite{Blankenship2010}. One of the most studied organisms are
 purple bacteria, \cite{Cogdell2021}. These organisms use light harvesting complexes 
 (LHCs) to absorb and stabilise energy from light which is eventually transferred 
 to reaction centres \cite{Klamt2008}. The mechanism for creating adenosine triphosphate
-occurs at these reaction centres using the photonic energy for charge transfer.
-These complexes are extremely efficient, with the LHC found in purple bacteria being
-around 95\% efficient at transferring the electronic energy to charge separation \cite{Tretiak2000}.
+(ATP, the energy source require for biochemical processes) occurs at these reaction
+centres and uses the electronic energy gather from photons for charge transfer.
+These complexes are extremely efficient, with the light harvesting complex 1 and 
+2 (LH1 and LH2 respectively) found in purple bacteria being around 95\% efficient
+at transferring the electronic energy to charge separation \cite{Tretiak2000}.
 
 Many types of LHCs exist, differing by the type of chlorophyll pigments as well 
 as structural features . Most often these complexes are formed of repeated units.
-For example the LH2 complex found in \emph{acidophilus} is formed of a trimer unit
-with two bacterial chlorophyll \emph{a} (BChla) chromophores in close proximity, 
-aligned parallel along the porphyrin plane, with a third chromophore perpendicular
-and further apart (shown in figure \ref{fig:LH2_subunit}) \cite{Cogdell2006}. This
-unit is then repeated to form a circular structure with anywhere between an 8-10 
-fold symmetry depending on the species of bacteria (see figure \ref{fig:LH2_rings})
+For example the LH2 complex found in \emph{Rhodoblastus acidophilus} is formed of 
+a trimer unit with two bacterial chlorophyll \emph{a} (BChla) chromophores in close 
+proximity with parallel porphyrin planes, and a third chromophore perpendicular 
+at greater separation (shown in figure \ref{fig:LH2_subunit}) \cite{Cogdell2006}. 
+This unit is then repeated to form a circular structure with anywhere between an
+8-10 fold symmetry depending on the species of bacteria (see figure \ref{fig:LH2_rings})
 \cite{Mallus2018, Cleary2013}. The efficiency of these LHCs is due to these structures
 and the conformations of the chromophores and their effect on nuanced electronic
 energy transfer mechanisms \cite{Harel2012}.
@@ -34,33 +36,32 @@ energy transfer mechanisms \cite{Harel2012}.
 \begin{figure}
 	\centering 
 	\includegraphics[scale=0.3]{chapters/1_introduction/subunit.png}
-	\label{fig:LH2_subunit}
 	\caption{The trimer unit found in LH2, coloured by ring type (red and green
 	for B850a and B850b, blue for B800).}
+	\label{fig:LH2_subunit}
 \end{figure}
 
 \begin{figure}
 	\centering 
 	\includegraphics[scale=0.3]{chapters/1_introduction/ring_assign.png}
-	\label{fig:LH2_rings}
 	\caption{Aggregate units found in LH2, coloured by ring type (red and green
 	for B850a and B850b, blue for B800). This particular structure has a 9-fold
 	symmetry, giving the circular ring structures.}
+	\label{fig:LH2_rings}
 \end{figure}
 
-Detailed computational study of these structures has been possible since the high
-level resolution of crystal structures \cite{Mcdermott1995, Koepke1996} and has 
-produced a wealth of analysis from investigations of the properties of these complexes
-that could only be calculated from computational methods. Many of these studies 
-explore the complex mechanisms of electronic energy transfer as well as environmental
-effects of the protein scaffold on spectroscopic properties of LHCs \cite{SlaMa2020,
-Jang2015, Curutchet2016, Mirkovic2016}. These studies show that the effects of the 
-protein which occur on the atomistic level are an important aspect to capture in 
-LHC models.
+Detailed computational study of these structures has been possible since the first
+reports on high level resolution of crystal structures \cite{Mcdermott1995, Koepke1996} 
+and has produced a wealth of analysis from investigations that could only be done 
+with computational methods requiring the crystal structure. Many of these studies 
+explore the complex mechanisms of electronic energy transfer as well as environmental 
+effects of the protein scaffold on spectroscopic properties of LHCs \cite{SlaMa2020, Jang2015, Curutchet2016, Mirkovic2016}. 
+These studies show that the effects of the protein which occur on the atomistic
+level are an important aspect to capture in LHC models.
 
 To investigate these properties it is necessary to use a model for the excited states
-of LHCs. These models use a Hamiltonian to describe the system state, similar to 
-many other electronic structure problem. However due to the size of these complexes
+of LHCs. These models use a Hamiltonian to calculate the states in a system similar to 
+many other electronic structure problems. However due to the size of these complexes
 it is usually necessary to reduce the number of degrees of freedom in these Hamiltonians
 \cite{Mallus2018, SlaMa2020}. For LH2, the chlorophyll molecules alone constituent
 3780 atoms with an additional ~6000 atoms for the entire scaffold \cite{Neugebauer2008, Cherezov2006}.
@@ -103,9 +104,9 @@ methods can be used.
 For a truly atomistic approach often density functional theory (DFT) and linear 
 response methods (time-dependent DFT or TD-DFT) are used to calculate single site
 properties \cite{Cignoni2022}. Due to the size of chlorophyll molecules, using high
-level methods such as coupled cluster and EOM-CCSD would not be reasonable. Even 
-with TD-DFT methods only a limited number of explicit Hamiltonians could be constructed
-before the cost is too high. If a large number of LHC geometries need to be calculated 
+level methods such as SCS-CC2 and EOM-CCSD would not be reasonable. Even with TD-DFT
+methods only a limited number of explicit Hamiltonians could be constructed before
+the cost is too high. If a large number of LHC geometries need to be calculated 
 then further approximations are necessary.
 
 This trade-off between computational expense and fine-grain accuracy is the main
@@ -114,8 +115,8 @@ that while coarse-grain models are good enough for large scale phenomena, smalle
 details are lost when not using high-level electronic structure and response calculations.
 Some solutions to this problem are offered in the literature which are discussed 
 below, however each have limitations. These limitations sketch out the potential 
-for a new kind of excited state LHC model, which is described at the end of this 
-chapter.
+for a new kind of excited state LHC model, which is the main investigation of this
+work.
 
 \section{Efficient Response Methods}
 \label{sec:efficient_response_methods}
@@ -337,18 +338,18 @@ $c$ to give the next layer
 %
 where the coefficient matrices $\mathbf{c}_n$ are fitted to give the smallest deviations
 of the output layer against target data (i.e. error in predicted \Qy energies in 
-this case). Often additional functions are used to modify these values, such as
-sinusoidal, sigmoid, linear ($\tilde{V}_{n+1}=m V_{n+1}$) or rectified linear unit 
-($\tilde{V}_{n+1}=\text{max}\left(0, m V_{n+1} \right)$) functions. In this way they 
-are conceptually similar to biological neurons which take in electrical signals 
-and through some mechanism are can be activated to send out a different signal. 
-The coefficient matrices $\mathbf{c}_n$, and any other parameters in the activation
-functions, are fit by a back-propagation method which also uses parameters - these 
-are referred to as hyper-parameters and can be optimised using a systematic grid-search
-to learn the best coefficient matrix. Other considerations such as over-fitting 
-also need to be taken into account. The brief explanation of NNs here is fairly 
-simplistic, and creating these models takes in-depth knowledge and experience to
-achieve good results.
+this case). Often additional functions are used to modify these values, such as 
+sinusoidal, sigmoid, linear ($\tilde{\mathbf{V}}_{n+1}=m \mathbf{V}_{n+1}$) or rectified
+linear unit ($\tilde{\mathbf{V}}_{n+1}=\text{max}\left(0, m \mathbf{V}_{n+1} \right)$)
+functions. In this way they are conceptually similar to biological neurons which 
+take in electrical signals and through some mechanism are can be activated to send 
+out a different signal. The coefficient matrices $\mathbf{c}_n$, and any other parameters 
+in the activation functions, are fit by a back-propagation method which also uses
+parameters - these are referred to as hyper-parameters and can be optimised using 
+a systematic grid-search to learn the best coefficient matrix. Other considerations 
+such as over-fitting also need to be taken into account. The brief explanation of 
+NNs here is fairly simplistic, and creating these models takes in-depth knowledge 
+and experience to achieve good results.
 
 This model predicted \Qy transition energies with around a 0.3 meV error for all
 of the 8 sites in the FMO complex \cite{AspuruGuzik2016}. This is exceptionally
@@ -427,8 +428,8 @@ well when designing these models such as the requirement of in-depth knowledge o
 machine-learning methods to retrain models. The cost of generating enough data to
 train these models is also very high level. For example the number of data point 
 required to train the H\"{a}se and Farahvash models was on the order of $10^4$ and 
-$10^5$ respectively. In summary, whilst these models are highly accurate enough 
-to make time-dependent Hamiltonians they are limited by both their designs and their
+$10^5$ respectively. In summary, whilst these models are accurate enough to reliably
+make time-dependent Hamiltonians they are limited by both their designs and their
 construction cost.
 
 \section{GPU Acceleration}
@@ -436,62 +437,70 @@ construction cost.
 
 An alternative approach to this problem would be to accelerate the TD-DFT calculations.
 This is possible using graphical processing units (GPUs) which have been used to
-accelerate many different types of molecular chemistry simulations. Programs written
-for GPUs can partition a limited number of basic operations over a massive number
-of parallel components. Often this is be exploited to parallelise the bottleneck
-of expensive calculations which for TD-DFT is evaluating the electron integrals.
-Other examples of GPU usages include the large amount of operations required to
-calculate forces in MD simulations as well as the matrix multiplications of NNs
-discussed above.
+accelerate many different types of molecular chemistry simulations \cite{Pandey2022}. 
+Programs written for GPUs can partition a limited number of basic operations over 
+a massive number of parallel components and this is exploited to parallelise the
+bottleneck of expensive calculations \cite{McIntosh-Smith2013}. For TD-DFT this 
+bottleneck is evaluating the electron integrals, but other examples of GPU usages 
+include the large amount of operations required to calculate forces in MD simulations 
+as well as the matrix multiplications of NNs discussed above \cite{Ufimtsev2008, Friedrichs2009, Wu2012}.
 
 This approach does not require any parameter optimisation or new formalism but does
 require appropriate hardware (GPU cards) and programs that can partition on GPUs
-correctly, however this is a common feature on high performance computers. GPU-acceleration
-has been used in many other computational chemistry studies, and is a popular way 
-of drastically increasing system sizes while keeping computing time down.
+correctly. However this is a common feature on high performance computers. GPU-acceleration
+has been used in many studies and is a popular way of drastically increasing system 
+sizes while keeping computing time down \cite{Seritan2021}. It has been used for 
+LHC study, for example using full TD-DFT calculations to construct Frenkel exciton
+Hamiltonians for every frame of an LH2 MD simulation \cite{Sisto2014a, Sisto2017}.
 
-This approach has been used previously to construct Frenkel exciton Hamiltonians
-using $\omega\text{PBEh}$/6-31G TD-DFT for every for the LH2 complex MD \cite{Sisto2017}.
+These models followed a similar workflow to exciton frameworks discussed above,
+using transition properties on sites to evaluate Hamiltonian elements. In this case, 
+all of the transition properties were calculated using TD-DFT with the $\omega\text{PBEh}$
+functional and 6-31G basis set. These calculations were accelerated using GPU hardware
+so they would require similar computing wall-time as the tight-binding and machine-learning
+methods. Due to this acceleration it was also possible to calculate transition properties
+on larger aggregates of chlorophyll molecules, such as a combination of the two 
+subunits shown in figure \ref{fig:LH2_subunit}. There was an average error of 0.008 eV 
+when benchmarking the exciton framework against TD-DFT calculations on these hexamer
+complexes\cite{Sisto2014a}. Absorption spectra predicted by full TD-DFT and the
+exciton model were also very similar. The benefit of using a more efficient method
+to calculate TD-DFT data is showcased by this method being able to calculate the
+on-the-fly dynamic simulations of the exciton system. This requires the construction
+of the Frenkel exciton Hamiltonian to be on the timescale of other gradient methods
+(i.e. force-fields or some semi-empirical tight-binding methods).
 
-This model was benchmarked against TD-DFT calculations on a hexamer of bacterial
-chlorophyll \emph{a} molecules from LH2, and had an average error of 0.008 eV. Comparisons
-to absorption spectra predicted by full TD-DFT and the exciton model were also favourable, 
-as were predictions of dynamic properties of the exciton system.
+Whilst computing the electron integral terms with GPUs requires far less computing 
+time, storing these values is a major issue \cite{Sisto2014a}. This is due to the
+lightweight memory restrictions on GPU cards, and even makes recalculation of some
+integrals more efficient than storage. This means that a larger basis sets or more
+complicated density functionals may be too expensive to use. Therefore trying to
+calculate high-level data may be an issue for a more detailed study. It may be argued
+that accelerating the generation of high-level data would be better done by machine-learning
+methods.
 
-Whilst computing the electron integral terms are far less time intensive, storing
-these values is a major issue. This is due to the lightweight memory restrictions
-on GPU cards, and even makes recalculation of some integrals more efficient than
-storage. This means that a larger basis sets may be too expensive to utilise. It
-could be argued that this lack of high level detail would make a niche method, one
-which uses more approximate response methods but is better at reproducing high level
-data, more suitable for some studies. This would lead back to using machine-learning
-methods, however this work proposes a novel approach outlined below.
-
-\section{Combining Approaches}
+\section{Alternative Approaches}
 \label{sec:possible_novel_methods}
 
 The underlying issue of LHC models is clear - the systems are too large to explicitly
-calculate all transition properties required by high level methods. Making well 
-chosen approximations has found success in solving parts of this issue, but often
-at with compromises. The sTDA-xTB method (and other tight-binding methods) are efficient
-but possibly not accurate enough to give meaningful results. Machine-learning methods
-are accurate and efficient but not extendable, use large amounts of expensive high
-level training data, and require a good understanding of machine-learning methods.
-Accelerating calculations with hardware can also be used but may still come up against
-memory issues, however inevitable progress in high performance machines will fix 
-this eventually.
+calculate all transition properties required by high level methods. Making well- 
+chosen approximations has found success in solving some parts of this issue but 
+often at expense of others. The sTDA-xTB method (and other tight-binding methods) 
+are efficient but are generally not accurate enough to give as reliable results 
+as TD-DFT or higher-level methods. Machine-learning methods are accurate and efficient
+but not extendable, use large amounts of expensive high level training data, and
+require a good understanding of machine-learning methods. Accelerating calculations 
+with GPUs could also be used but may still come up against memory issues which limits 
+the extent of the basis set and density functional.
 
 These shortcomings sketch out the need for a method that is efficient, accurate,
-extendable, memory light and easy to reproduce. Combining approaches would be expected
-to keep benefits whilst addressing shortcomings. The tight-binding approaches show
-that even a low level electronic structure is enough to capture the main features
-required for accurate transition properties. The machine-learning models show that
-is using a high degree of specificity can train methods to be extremely accurate.
-This forms the main thesis of this work - that there is merit in designing a method
-for light harvesting models that combines these benefits. The results presented in 
-chapters \ref{chap:dscf} and \ref{chap:chl_xtb} test this idea, and a discussion
-of the results propose reasons why these methods may or may not solve the shortcomings
-outlined above. Applications of these methods to LHC properties are also explored
-in chapters \ref{chap:excitons} and \ref{chap:LH2} to further explore whether the
-novel features of this combinatorial approach can elucidate new explanations of
-LHC phenomena.
+extendable, memory light and easy to reproduce. Arguably there is a need to examine
+new response method approaches, and this work explores this area. Most of this discussion
+is based on tight-binding approaches as these fulfill most of the criteria set out
+above except accuracy making them the optimal starting place. It is explored whether
+novel response methods in conjunction with efficient electronic structure methods
+could design a good method for LHCs models - this is similar to the sTDA-xTB approach
+although with a more specialised scope. In order to assay the usability of these
+novel approaches it is necessary to benchmark transition properties against established 
+methods (explored in chapters \ref{chap:dscf} and \ref{chap:chl_xtb}) as well as
+provide case studies of calculating full LHC models (chapters \ref{chap:excitons} 
+and \ref{chap:LH2}).

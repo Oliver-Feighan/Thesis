@@ -18,45 +18,45 @@ Warning--empty publisher in Rumelhart1986
 Warning--empty institution in Grimme
 Warning--empty year in Grimme
 Warning--empty journal in Cho2021
-You've used 100 entries,
+You've used 107 entries,
             1791 wiz_defined-function locations,
-            1087 strings with 24024 characters,
-and the built_in function-call counts, 22885 in all, are:
-= -- 1940
-> -- 1231
+            1128 strings with 25966 characters,
+and the built_in function-call counts, 24909 in all, are:
+= -- 2103
+> -- 1377
 < -- 0
-+ -- 448
-- -- 348
-* -- 1759
-:= -- 3827
-add.period$ -- 294
-call.type$ -- 100
-change.case$ -- 99
++ -- 499
+- -- 392
+* -- 1946
+:= -- 4173
+add.period$ -- 315
+call.type$ -- 107
+change.case$ -- 106
 chr.to.int$ -- 0
-cite$ -- 115
-duplicate$ -- 872
-empty$ -- 2128
-format.name$ -- 348
-if$ -- 4860
+cite$ -- 122
+duplicate$ -- 934
+empty$ -- 2289
+format.name$ -- 392
+if$ -- 5274
 int.to.chr$ -- 0
-int.to.str$ -- 100
-missing$ -- 98
-newline$ -- 497
-num.names$ -- 99
-pop$ -- 183
+int.to.str$ -- 107
+missing$ -- 105
+newline$ -- 532
+num.names$ -- 106
+pop$ -- 190
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 327
+skip$ -- 350
 stack$ -- 0
-substring$ -- 1719
-swap$ -- 88
+substring$ -- 1887
+swap$ -- 95
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 15
-while$ -- 224
-width$ -- 103
-write$ -- 1062
+while$ -- 243
+width$ -- 110
+write$ -- 1139
 (There were 15 warnings)

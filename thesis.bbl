@@ -350,6 +350,55 @@ Carl Rasmussen and Christopher Williams.
 \newblock {\em {Gaussian Processes for Machine Learning}}.
 \newblock MIT Press, Cambridge, 2006.
 
+\bibitem{Pandey2022}
+Mohit Pandey, Michael Fernandez, Francesco Gentile, Olexandr Isayev, Alexander
+  Tropsha, Abraham~C Stern, and Artem Cherkasov.
+\newblock {The transformational role of GPU computing and deep learning in drug
+  discovery}.
+\newblock {\em Nat. Mach. Intell.}, 4:211--221, 2022.
+
+\bibitem{McIntosh-Smith2013}
+Simon McIntosh-Smith, Charles Gillan, Nico Sanna, Stan Scott, and Thomas
+  Steinke.
+\newblock {Special issue of the Journal of Parallel and Distributed Computing
+  (JDPC) on novel architectures for high-performance computing}.
+\newblock {\em J. Parallel Distrib. Comput.}, 73(11):1415--1416, 2013.
+
+\bibitem{Ufimtsev2008}
+Ivan~S Ufimtsev and Todd~J Mart{\'{i}}nez.
+\newblock {Quantum Chemistry on Graphical Processing Units. 1. Strategies for
+  Two-Electron Integral Evaluation}.
+\newblock {\em J. Chem. Theory Comput.}, 4:222--231, 2008.
+
+\bibitem{Friedrichs2009}
+Mark~S. Friedrichs, Peter Eastman, Vishal Vaidyanathan, Mike Houston, Scott
+  Legrand, Adam~L. Beberg, Daniel~L. Ensign, Christopher~M. Bruns, and Vijay~S.
+  Pande.
+\newblock {Accelerating molecular dynamic simulation on graphics processing
+  units}.
+\newblock {\em J. Comput. Chem.}, 30(6):864--872, apr 2009.
+
+\bibitem{Wu2012}
+Xin Wu, Axel Koslowski, and Walter Thiel.
+\newblock {Semiempirical Quantum Chemical Calculations Accelerated on a Hybrid
+  Multicore CPU-GPU Computing Platform}.
+\newblock {\em J. Chem. Theory Comput.}, 8:2272--2281, 2012.
+
+\bibitem{Seritan2021}
+Stefan Seritan, Christoph Bannwarth, Bryan~S. Fales, Edward~G. Hohenstein,
+  Christine~M. Isborn, Sara~I.L. Kokkila-Schumacher, Xin Li, Fang Liu, Nathan
+  Luehr, James~W. Snyder, Chenchen Song, Alexey~V. Titov, Ivan~S. Ufimtsev,
+  Lee~Ping Wang, and Todd~J. Mart{\'{i}}nez.
+\newblock {TeraChem: A graphical processing unit-accelerated electronic
+  structure package for large-scale ab initio molecular dynamics}.
+\newblock {\em Wiley Interdiscip. Rev. Comput. Mol. Sci.}, 11(2), mar 2021.
+
+\bibitem{Sisto2014a}
+Aaron Sisto, David~R Glowacki, and Todd~J Martinez.
+\newblock {Ab Initio Nonadiabatic Dynamics of Multichromophore Complexes: A
+  Scalable Graphical-Processing-Unit-Accelerated Exciton Framework}.
+\newblock {\em Acc. Chem. Res.}, 47:2857--2866, 2014.
+
 \bibitem{Sisto2017}
 Aaron Sisto, Clem Stross, Marc~W. {Van Der Kamp}, Michael O'Connor, Simon
   McIntosh-Smith, Graham~T. Johnson, Edward~G. Hohenstein, Fred~R. Manby,
