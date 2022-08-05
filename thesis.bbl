@@ -350,6 +350,17 @@ Carl Rasmussen and Christopher Williams.
 \newblock {\em {Gaussian Processes for Machine Learning}}.
 \newblock MIT Press, Cambridge, 2006.
 
+\bibitem{Kenny2016}
+Elise~P Kenny and Ivan Kassal.
+\newblock {Benchmarking Calculations of Excitonic Couplings between
+  Bacteriochlorophylls}.
+\newblock {\em J. Phys. Chem. B}, 120:25--32, 2016.
+
+\bibitem{Fletcher2000}
+Graham~D. Fletcher, Michael~W. Schmidt, Brett~M. Bode, and Mark~S. Gordon.
+\newblock {Distributed data interface in GAMESS}.
+\newblock {\em Comput. Phys. Commun.}, 128(1):190--200, jun 2000.
+
 \bibitem{Pandey2022}
 Mohit Pandey, Michael Fernandez, Francesco Gentile, Olexandr Isayev, Alexander
   Tropsha, Abraham~C Stern, and Artem Cherkasov.

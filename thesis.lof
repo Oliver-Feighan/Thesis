@@ -2,9 +2,9 @@
 \par \nobreak \textbf {{\scshape Figure} \hfill Page}\par \nobreak 
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces The trimer unit found in LH2, coloured by ring type (red and green for B850a and B850b, blue for B800).}}{4}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Aggregate units found in LH2, coloured by ring type (red and green for B850a and B850b, blue for B800). This particular structure has a 9-fold symmetry, giving the circular ring structures.}}{5}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Simplified schematic of a neural network showing how input values, such as the (flattened) Coloumb matrix, can be used to generate outputs by several matrix multiplications and activation functions (represented by the arrows). The values in the output layer for models discussed in the text would be $Q_y$ transition energies or atom centered transition charges.}}{10}{figure.2.3}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces The trimer chlorophyll unit found in LH2, coloured by ring type (red and green for B850a and B850b, blue for B800).}}{4}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces The complete chlorophyll system found in LH2, coloured by ring type (red and green for B850a and B850b, blue for B800). This particular structure has a 9-fold symmetry, giving the circular ring structures.}}{5}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces A schematic of a neural network showing how inputs, such as the (flattened) Coloumb matrix, are ordered into nodes (green and yellow) and can be used to generate outputs (red nodes). The blue nodes between these layers constitute the "hidden layers". Each arrow leading to a node represents a matrix multiplication and activation function application. The values in the output layer for models discussed in the text would be $Q_y$ transition energies or atom centered transition charges.}}{10}{figure.2.3}%
 \addvspace {10pt}
 \addvspace {10pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Transition energies $\Delta E$ from TD-DFT (black) and $\Delta $-SCF (red) plotted against EOM-CCSD energies, with the line $y=x$ (dashed) for reference. The ethene dimer outlier has been circled.}}{40}{figure.4.1}%
