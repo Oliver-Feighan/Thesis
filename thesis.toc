@@ -2,6 +2,7 @@
 \par \nobreak \mbox {}\hfill {\bfseries Page}\par \nobreak 
 \contentsline {chapter}{List of Tables}{xi}{section*.5}%
 \contentsline {chapter}{List of Figures}{xiii}{section*.6}%
+\contentsline {chapter}{List of Abbreviations}{xix}{section*.6}%
 \contentsline {chapter}{\chapternumberline {1}Outline}{1}{chapter.1}%
 \contentsline {chapter}{\chapternumberline {2}Introduction}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Efficient Response Methods}{6}{section.2.1}%
@@ -20,8 +21,7 @@
 \contentsline {subsection}{\numberline {3.2.2}$\Delta $-SCF}{29}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Eigenvalue Difference}{31}{subsection.3.2.3}%
 \contentsline {subsection}{\numberline {3.2.4}Transition Density and Dipole Moments}{31}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Large System Models}{32}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Excitation Energy Transfer and Frenkel Exciton Hamiltonians}{32}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.3}Excitation Energy Transfer and Frenkel-Davydov Exciton Hamiltonians}{32}{section.3.3}%
 \contentsline {chapter}{\chapternumberline {4}Mean-Field excited states}{37}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Combining $\Delta $-SCF With Lower Level Electronic Structure Theories}{38}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Benchmarking $\Delta $-SCF }{38}{section.4.2}%
@@ -105,4 +105,4 @@
 \contentsline {subsubsection}{\numberline {B.1.1.7}N Axes Deformation}{155}{subsubsection.B.1.1.7}%
 \contentsline {subsubsection}{\numberline {B.1.1.8}Diethyl-Ether system}{156}{subsubsection.B.1.1.8}%
 \contentsline {subsubsection}{\numberline {B.1.1.9}All Spectra}{157}{subsubsection.B.1.1.9}%
-\contentsline {chapter}{Bibliography}{159}{appendix*.9}%
+\contentsline {chapter}{Bibliography}{159}{appendix*.10}%

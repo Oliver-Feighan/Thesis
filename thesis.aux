@@ -23,6 +23,7 @@
 \gdef\HyperFirstAtBeginDocument#1{#1}
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
+\AC@reset@newl@bel
 \babel@aux{english}{}
 \@writefile{toc}{\par \nobreak  \mbox  {}\hfill {\bfseries  Page}\par \nobreak  }
 \@writefile{toc}{\contentsline {chapter}{List of Tables}{xi}{section*.5}\protected@file@percent }
@@ -30,6 +31,36 @@
 \@writefile{toc}{\contentsline {chapter}{List of Figures}{xiii}{section*.6}\protected@file@percent }
 \citation{Mallus2018}
 \@writefile{lof}{\par \nobreak  \textbf  {{\scshape Figure} \hfill Page}\par \nobreak  }
+\@writefile{toc}{\contentsline {chapter}{List of Abbreviations}{xix}{section*.6}\protected@file@percent }
+\newacro{LHC}[\AC@hyperlink{LHC}{LHC}]{light harvesting complex}
+\newacro{LH1/LH2}[\AC@hyperlink{LH1/LH2}{LH1/LH2}]{light harvesting complex 1/2}
+\newacro{EET}[\AC@hyperlink{EET}{EET}]{excitation energy transfer}
+\newacro{DFT}[\AC@hyperlink{DFT}{DFT}]{density functional theory}
+\newacro{DFTB}[\AC@hyperlink{DFTB}{DFTB}]{density functional tight binding}
+\newacro{SCF}[\AC@hyperlink{SCF}{SCF}]{self-consistent field}
+\newacro{LDA}[\AC@hyperlink{LDA}{LDA}]{local density approximation}
+\newacro{GGA}[\AC@hyperlink{GGA}{GGA}]{generalized gradient approximation}
+\newacro{HF}[\AC@hyperlink{HF}{HF}]{Hartree-Fock}
+\newacro{KS}[\AC@hyperlink{KS}{KS}]{Kohn-Sham}
+\newacro{MO/AO}[\AC@hyperlink{MO/AO}{MO/AO}]{molecular orbital/ atomic orbital}
+\newacro{XC}[\AC@hyperlink{XC}{XC}]{exchange-correlation}
+\newacro{SAD}[\AC@hyperlink{SAD}{SAD}]{superposition of atomic densities}
+\newacro{DIIS}[\AC@hyperlink{DIIS}{DIIS}]{direct inversion in iterative subspace}
+\newacro{HOMO}[\AC@hyperlink{HOMO}{HOMO}]{highest occupied molecular orbital}
+\newacro{LUMO}[\AC@hyperlink{LUMO}{LUMO}]{lowest unoccupied molecular orbital}
+\newacro{TD-DFT}[\AC@hyperlink{TD-DFT}{TD-DFT}]{time-dependent density functional theory}
+\newacro{TD-DFTB}[\AC@hyperlink{TD-DFTB}{TD-DFTB}]{time-dependent density functional tight binding}
+\newacro{MOM}[\AC@hyperlink{MOM}{MOM}]{maximum overlap method}
+\newacro{xTB}[\AC@hyperlink{xTB}{xTB}]{extended tight binding}
+\newacro{GFN-xTB}[\AC@hyperlink{GFN-xTB}{GFN-xTB}]{geometries, frequencies and non-covalent xTB}
+\newacro{sTDA-xTB}[\AC@hyperlink{sTDA-xTB}{sTDA-xTB}]{simplified Tamm-Dancoff extended tight binding}
+\newacro{chl-xTB}[\AC@hyperlink{chl-xTB}{chl-xTB}]{chlorophyll extended tight binding}
+\newacro{EHT}[\AC@hyperlink{EHT}{EHT}]{extended H\"{u}ckel theory}
+\newacro{EN}[\AC@hyperlink{EN}{EN}]{electronegativity}
+\newacro{AES}[\AC@hyperlink{AES}{AES}]{anisotropic electrostatic}
+\newacro{AXC}[\AC@hyperlink{AXC}{AXC}]{anisotropic exchange-correlation}
+\newacro{EEQ}[\AC@hyperlink{EEQ}{EEQ}]{electronegativity equilibration}
+\newacro{(m)CN}[\AC@hyperlink{(m)CN}{(m)CN}]{(modified) coordination number}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {1}Outline}{1}{chapter.1}\protected@file@percent }
@@ -103,6 +134,9 @@
 \citation{Sisto2014a}
 \@writefile{toc}{\contentsline {section}{\numberline {2.4}Alternative Approaches}{13}{section.2.4}\protected@file@percent }
 \newlabel{sec:possible_novel_methods}{{\M@TitleReference {2.4}{Alternative Approaches}}{13}{Alternative Approaches}{section.2.4}{}}
+\citation{Maitra2016}
+\citation{Kohn1964}
+\citation{Kohn1965}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
 \@writefile{toc}{\contentsline {chapter}{\chapternumberline {3}Background Theory}{15}{chapter.3}\protected@file@percent }
@@ -111,27 +145,33 @@
 \newlabel{sec:electronic_structure}{{\M@TitleReference {3.1}{Electronic structure}}{15}{Electronic structure}{section.3.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Density Functional Theory}{15}{subsection.3.1.1}\protected@file@percent }
 \newlabel{subsec:dft}{{\M@TitleReference {3.1.1}{Density Functional Theory}}{15}{Density Functional Theory}{subsection.3.1.1}{}}
+\citation{Lehtola2019}
+\citation{Langreth1983}
+\citation{Sun2011,Becke1993}
+\citation{Boys1950}
+\citation{Roothaan1951}
 \citation{Porezag1994}
-\citation{Koskinen2009}
-\citation{Gaus2011}
+\citation{Gaus2011,Koskinen2009}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Density Functional Tight Binding}{18}{subsection.3.1.2}\protected@file@percent }
 \newlabel{subsec:tight_binding}{{\M@TitleReference {3.1.2}{Density Functional Tight Binding}}{18}{Density Functional Tight Binding}{subsection.3.1.2}{}}
+\citation{Elstner1998}
 \newlabel{eq:dftb_energies}{{3.17}{19}{Density Functional Tight Binding}{equation.3.1.17}{}}
 \citation{Bannwarth2020}
+\citation{Koskinen2009,Goldman2012,AndreaRozzi2004,Kohler2005,Niehaus2005,Han2000}
+\citation{Lutsker2015,Gruden2017,Vuong2018}
+\citation{Koskinen2009}
+\citation{Melix2016}
 \citation{Salomon-Ferrer2013}
 \citation{Manathunga2020}
-\citation{Bannwarth2020}
-\citation{Bannwarth2019}
-\citation{Grimme2017}
-\citation{Pracht2019}
-\citation{Grimme2016}
-\citation{Spicher2020a}
+\citation{Bannwarth2020,Bannwarth2019,Grimme2017,Pracht2019,Grimme2016,Spicher2020a}
 \citation{Grimme2010}
 \citation{Caldeweyher2020}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1.3}Extended Tight Binding}{21}{subsection.3.1.3}\protected@file@percent }
 \newlabel{subsec:xtb_methods}{{\M@TitleReference {3.1.3}{Extended Tight Binding}}{21}{Extended Tight Binding}{subsection.3.1.3}{}}
 \citation{Grimme2016}
+\citation{Johnson2005,Becke2005}
 \newlabel{eq:eeq_solve}{{3.43}{25}{Extended Tight Binding}{equation.3.1.43}{}}
+\citation{Laurent2013}
 \citation{Runge1984}
 \citation{Marques2004}
 \citation{Marques2004}
@@ -139,13 +179,18 @@
 \newlabel{sec:response_theories}{{\M@TitleReference {3.2}{Light-Matter Response Methods}}{26}{Light-Matter Response Methods}{section.3.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Linear Response TD-DFT}{26}{subsection.3.2.1}\protected@file@percent }
 \newlabel{subsec:tddft}{{\M@TitleReference {3.2.1}{Linear Response TD-DFT}}{26}{Linear Response TD-DFT}{subsection.3.2.1}{}}
-\citation{Kohn1952}
-\newlabel{full_cassida_eq1}{{3.55}{28}{Linear Response TD-DFT}{equation.3.2.55}{}}
+\citation{Kohn1964}
+\citation{Casida1995}
+\newlabel{eq:full_cassida_eq1}{{3.55}{28}{Linear Response TD-DFT}{equation.3.2.55}{}}
 \citation{List2013}
 \citation{Laurent2013}
+\citation{Dahlbom2005}
+\citation{Jones1989,Hellman2004}
+\citation{Almlof1982}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.2}$\Delta $-SCF}{29}{subsection.3.2.2}\protected@file@percent }
 \newlabel{subsec{dscf_and_eigdiff}}{{\M@TitleReference {3.2.2}{$\Delta $-SCF}}{29}{$\Delta $-SCF}{subsection.3.2.2}{}}
 \citation{Hunt1969}
+\citation{Gilbert2008}
 \citation{Gilbert2008}
 \citation{Roothaan1951}
 \citation{Gilbert2008}
@@ -160,16 +205,18 @@
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2.4}Transition Density and Dipole Moments}{31}{subsection.3.2.4}\protected@file@percent }
 \newlabel{subsec:dscf_transition_density}{{\M@TitleReference {3.2.4}{Transition Density and Dipole Moments}}{31}{Transition Density and Dipole Moments}{subsection.3.2.4}{}}
 \citation{Cleary2013}
-\@writefile{toc}{\contentsline {section}{\numberline {3.3}Large System Models}{32}{section.3.3}\protected@file@percent }
-\newlabel{sec:large_systems_theory}{{\M@TitleReference {3.3}{Large System Models}}{32}{Large System Models}{section.3.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.3.1}Excitation Energy Transfer and Frenkel Exciton Hamiltonians}{32}{subsection.3.3.1}\protected@file@percent }
-\newlabel{subsec:frenkel_exciton_theory}{{\M@TitleReference {3.3.1}{Excitation Energy Transfer and Frenkel Exciton Hamiltonians}}{32}{Excitation Energy Transfer and Frenkel Exciton Hamiltonians}{subsection.3.3.1}{}}
+\citation{Frenkel1931,Davydov1964}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3}Excitation Energy Transfer and Frenkel-Davydov Exciton Hamiltonians}{32}{section.3.3}\protected@file@percent }
+\newlabel{sec:frenkel_exciton_theory}{{\M@TitleReference {3.3}{Excitation Energy Transfer and Frenkel-Davydov Exciton Hamiltonians}}{32}{Excitation Energy Transfer and Frenkel-Davydov Exciton Hamiltonians}{section.3.3}{}}
 \citation{Agranovich2000}
 \citation{Frenkel1931}
 \citation{Scholes2003}
 \citation{Scholes2003}
 \citation{Steinmann2015}
 \citation{Li2017}
+\citation{Kenny2016}
+\citation{Kenny2016}
+\newlabel{eq:coupling_density}{{3.82}{34}{Excitation Energy Transfer and Frenkel-Davydov Exciton Hamiltonians}{equation.3.3.82}{}}
 \citation{Worster2021}
 \@writefile{lof}{\addvspace {10pt}}
 \@writefile{lot}{\addvspace {10pt}}
@@ -512,7 +559,7 @@
 \bibcite{Cleary2013}{{7}{}{{}}{{}}}
 \bibcite{Harel2012}{{8}{}{{}}{{}}}
 \bibcite{Mcdermott1995}{{9}{}{{}}{{}}}
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{159}{appendix*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{159}{appendix*.10}\protected@file@percent }
 \bibcite{Koepke1996}{{10}{}{{}}{{}}}
 \bibcite{SlaMa2020}{{11}{}{{}}{{}}}
 \bibcite{Jang2015}{{12}{}{{}}{{}}}
@@ -571,49 +618,73 @@
 \bibcite{Seritan2021}{{65}{}{{}}{{}}}
 \bibcite{Sisto2014a}{{66}{}{{}}{{}}}
 \bibcite{Sisto2017}{{67}{}{{}}{{}}}
-\bibcite{Porezag1994}{{68}{}{{}}{{}}}
-\bibcite{Koskinen2009}{{69}{}{{}}{{}}}
-\bibcite{Gaus2011}{{70}{}{{}}{{}}}
-\bibcite{Salomon-Ferrer2013}{{71}{}{{}}{{}}}
-\bibcite{Manathunga2020}{{72}{}{{}}{{}}}
-\bibcite{Bannwarth2019}{{73}{}{{}}{{}}}
-\bibcite{Grimme2017}{{74}{}{{}}{{}}}
-\bibcite{Pracht2019}{{75}{}{{}}{{}}}
-\bibcite{Spicher2020a}{{76}{}{{}}{{}}}
-\bibcite{Grimme2010}{{77}{}{{}}{{}}}
-\bibcite{Caldeweyher2020}{{78}{}{{}}{{}}}
-\bibcite{Runge1984}{{79}{}{{}}{{}}}
-\bibcite{Marques2004}{{80}{}{{}}{{}}}
-\bibcite{Kohn1952}{{81}{}{{}}{{}}}
-\bibcite{List2013}{{82}{}{{}}{{}}}
-\bibcite{Laurent2013}{{83}{}{{}}{{}}}
-\bibcite{Hunt1969}{{84}{}{{}}{{}}}
-\bibcite{Gilbert2008}{{85}{}{{}}{{}}}
-\bibcite{Roothaan1951}{{86}{}{{}}{{}}}
-\bibcite{Liu2004}{{87}{}{{}}{{}}}
-\bibcite{Gavnholt2008}{{88}{}{{}}{{}}}
-\bibcite{Besley2009}{{89}{}{{}}{{}}}
-\bibcite{Kowalczyk2011}{{90}{}{{}}{{}}}
-\bibcite{Gimon2009}{{91}{}{{}}{{}}}
-\bibcite{Lowdin1955}{{92}{}{{}}{{}}}
-\bibcite{Agranovich2000}{{93}{}{{}}{{}}}
-\bibcite{Scholes2003}{{94}{}{{}}{{}}}
-\bibcite{Steinmann2015}{{95}{}{{}}{{}}}
-\bibcite{Li2017}{{96}{}{{}}{{}}}
-\bibcite{Worster2021}{{97}{}{{}}{{}}}
-\bibcite{Gaussian16}{{98}{}{{}}{{}}}
-\bibcite{Ziegler1977}{{99}{}{{}}{{}}}
-\bibcite{Adamo1999}{{100}{}{{}}{{}}}
-\bibcite{Schafer1992}{{101}{}{{}}{{}}}
-\bibcite{Hattig2000}{{102}{}{{}}{{}}}
-\bibcite{Hellweg2008}{{103}{}{{}}{{}}}
-\bibcite{Grimme}{{104}{}{{}}{{}}}
-\bibcite{libmsym}{{105}{}{{}}{{}}}
-\bibcite{Cho2021}{{106}{}{{}}{{}}}
-\bibcite{Kim2020}{{107}{}{{}}{{}}}
-\bibcite{Zhang2012}{{108}{}{{}}{{}}}
-\bibcite{Strain1963}{{109}{}{{}}{{}}}
+\bibcite{Maitra2016}{{68}{}{{}}{{}}}
+\bibcite{Kohn1964}{{69}{}{{}}{{}}}
+\bibcite{Kohn1965}{{70}{}{{}}{{}}}
+\bibcite{Lehtola2019}{{71}{}{{}}{{}}}
+\bibcite{Langreth1983}{{72}{}{{}}{{}}}
+\bibcite{Sun2011}{{73}{}{{}}{{}}}
+\bibcite{Becke1993}{{74}{}{{}}{{}}}
+\bibcite{Boys1950}{{75}{}{{}}{{}}}
+\bibcite{Roothaan1951}{{76}{}{{}}{{}}}
+\bibcite{Porezag1994}{{77}{}{{}}{{}}}
+\bibcite{Gaus2011}{{78}{}{{}}{{}}}
+\bibcite{Koskinen2009}{{79}{}{{}}{{}}}
+\bibcite{Elstner1998}{{80}{}{{}}{{}}}
+\bibcite{Goldman2012}{{81}{}{{}}{{}}}
+\bibcite{AndreaRozzi2004}{{82}{}{{}}{{}}}
+\bibcite{Kohler2005}{{83}{}{{}}{{}}}
+\bibcite{Niehaus2005}{{84}{}{{}}{{}}}
+\bibcite{Han2000}{{85}{}{{}}{{}}}
+\bibcite{Lutsker2015}{{86}{}{{}}{{}}}
+\bibcite{Gruden2017}{{87}{}{{}}{{}}}
+\bibcite{Vuong2018}{{88}{}{{}}{{}}}
+\bibcite{Melix2016}{{89}{}{{}}{{}}}
+\bibcite{Salomon-Ferrer2013}{{90}{}{{}}{{}}}
+\bibcite{Manathunga2020}{{91}{}{{}}{{}}}
+\bibcite{Bannwarth2019}{{92}{}{{}}{{}}}
+\bibcite{Grimme2017}{{93}{}{{}}{{}}}
+\bibcite{Pracht2019}{{94}{}{{}}{{}}}
+\bibcite{Spicher2020a}{{95}{}{{}}{{}}}
+\bibcite{Grimme2010}{{96}{}{{}}{{}}}
+\bibcite{Caldeweyher2020}{{97}{}{{}}{{}}}
+\bibcite{Johnson2005}{{98}{}{{}}{{}}}
+\bibcite{Becke2005}{{99}{}{{}}{{}}}
+\bibcite{Laurent2013}{{100}{}{{}}{{}}}
+\bibcite{Runge1984}{{101}{}{{}}{{}}}
+\bibcite{Marques2004}{{102}{}{{}}{{}}}
+\bibcite{Casida1995}{{103}{}{{}}{{}}}
+\bibcite{List2013}{{104}{}{{}}{{}}}
+\bibcite{Dahlbom2005}{{105}{}{{}}{{}}}
+\bibcite{Jones1989}{{106}{}{{}}{{}}}
+\bibcite{Hellman2004}{{107}{}{{}}{{}}}
+\bibcite{Almlof1982}{{108}{}{{}}{{}}}
+\bibcite{Hunt1969}{{109}{}{{}}{{}}}
+\bibcite{Gilbert2008}{{110}{}{{}}{{}}}
+\bibcite{Liu2004}{{111}{}{{}}{{}}}
+\bibcite{Gavnholt2008}{{112}{}{{}}{{}}}
+\bibcite{Besley2009}{{113}{}{{}}{{}}}
+\bibcite{Kowalczyk2011}{{114}{}{{}}{{}}}
+\bibcite{Gimon2009}{{115}{}{{}}{{}}}
+\bibcite{Lowdin1955}{{116}{}{{}}{{}}}
+\bibcite{Agranovich2000}{{117}{}{{}}{{}}}
+\bibcite{Scholes2003}{{118}{}{{}}{{}}}
+\bibcite{Steinmann2015}{{119}{}{{}}{{}}}
+\bibcite{Li2017}{{120}{}{{}}{{}}}
+\bibcite{Worster2021}{{121}{}{{}}{{}}}
+\bibcite{Gaussian16}{{122}{}{{}}{{}}}
+\bibcite{Ziegler1977}{{123}{}{{}}{{}}}
+\bibcite{Adamo1999}{{124}{}{{}}{{}}}
+\bibcite{Schafer1992}{{125}{}{{}}{{}}}
+\bibcite{Hattig2000}{{126}{}{{}}{{}}}
+\bibcite{Hellweg2008}{{127}{}{{}}{{}}}
+\bibcite{Grimme}{{128}{}{{}}{{}}}
+\bibcite{libmsym}{{129}{}{{}}{{}}}
+\bibcite{Cho2021}{{130}{}{{}}{{}}}
+\bibcite{Kim2020}{{131}{}{{}}{{}}}
+\bibcite{Zhang2012}{{132}{}{{}}{{}}}
+\bibcite{Strain1963}{{133}{}{{}}{{}}}
 \providecommand\NAT@force@numbers{}\NAT@force@numbers
-\memsetcounter{lastsheet}{192}
-\memsetcounter{lastpage}{172}
-\gdef \@abspage@last{192}
+\memsetcounter{lastsheet}{198}
+\memsetcounter{lastpage}{174}
+\gdef \@abspage@last{198}

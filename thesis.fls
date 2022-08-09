@@ -1332,6 +1332,40 @@ INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+INPUT /usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
 INPUT /usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
@@ -1730,6 +1764,17 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mlit.t
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ml.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/outline.tex
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/outline.tex
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/outline.tex

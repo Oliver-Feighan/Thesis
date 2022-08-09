@@ -29,12 +29,13 @@ Steffen Klamt, Hartmut Grammel, Ronny Straube, Robin Ghosh, and Ernst~Dieter
 Sergei Tretiak, Chris Middleton, Vladimir Chernyak, and Shaul Mukamel.
 \newblock {Exciton Hamiltonian for the Bacteriochlorophyll System in the LH2
   Antenna Complex of Purple Bacteria}.
-\newblock 2000.
+\newblock {\em J. Phys. Chem. B}, 104:4519--4528, 2000.
 
 \bibitem{Cogdell2006}
 Richard~J Cogdell, Andrew Gall, and Jurgen Kohler.
 \newblock {The architecture and function of the light-harvesting apparatus of
   purple bacteria : from single molecules to in vivo membranes}.
+\newblock {\em Q. Rev. Biophys.}, 39(3):277--324, 2006.
 
 \bibitem{Cleary2013}
 Liam Cleary, Hang Chen, Chern Chuang, Robert~J Silbey, and Jianshu Cao.
@@ -45,7 +46,7 @@ Liam Cleary, Hang Chen, Chern Chuang, Robert~J Silbey, and Jianshu Cao.
 Elad Harel and Gregory~S Engel.
 \newblock {Quantum coherence spectroscopy reveals complex dynamics in bacterial
   light-harvesting complex 2 (LH2)}.
-\newblock 109(3), 2012.
+\newblock {\em PNAS}, 109(3):706--711, 2012.
 
 \bibitem{Mcdermott1995}
 G~Mcdermott, M~Prince, A~A Freer, A~M Hawthornthwaite-Lawless, M~Z Papiz, R~J
@@ -418,22 +419,138 @@ Aaron Sisto, Clem Stross, Marc~W. {Van Der Kamp}, Michael O'Connor, Simon
   GPU-accelerated: Ab initio exciton model}.
 \newblock {\em Phys. Chem. Chem. Phys.}, 19(23):14924--14936, 2017.
 
+\bibitem{Maitra2016}
+Neepa~T Maitra.
+\newblock {Perspective: Fifty years of density-functional theory in chemical
+  physics}.
+\newblock {\em J. Chem. Phys.}, 144:220901, 2016.
+
+\bibitem{Kohn1964}
+P.~Hohenberg and W.~Kohn.
+\newblock {Inhomogeneous Electron Gas}.
+\newblock {\em Phys. Rev.}, 136(3B):864, 1964.
+
+\bibitem{Kohn1965}
+W~Kohn and L~J Sham.
+\newblock {Self-Consistent Equations Including Exchange and Correlation
+  Effects}.
+\newblock {\em Phys. Rev.}, 140(4A):1133, 1965.
+
+\bibitem{Lehtola2019}
+Susi Lehtola.
+\newblock {Assessment of Initial Guesses for Self-Consistent Field
+  Calculations. Superposition of Atomic Potentials: Simple yet Efficient}.
+\newblock {\em J. Chem. Theory Comput.}, 15:1593--1604, 2019.
+
+\bibitem{Langreth1983}
+David~C. Langreth and M.~J. Mehl.
+\newblock {Beyond the local-density approximation in calculations of
+  ground-state electronic properties}.
+\newblock {\em Phys. Rev. B}, 28(4):1809, 1983.
+
+\bibitem{Sun2011}
+Jianwei Sun, Martijn Marsman, Adrienn Ruzsinszky, Georg Kresse, and John~P
+  Perdew.
+\newblock {Improved lattice constants, surface energies, and CO desorption
+  energies from a semilocal density functional}.
+\newblock {\em Phys. Rev. B}, 83(4):121410--121411, 2011.
+
+\bibitem{Becke1993}
+Axel~D Becke.
+\newblock {A new mixing of Hartree-Fock and local density-functional theories}.
+\newblock {\em J. Chem. Phys}, 98(2):1372, 1993.
+
+\bibitem{Boys1950}
+S.~F. Boys.
+\newblock {Electronic wavefunctions I. A general method of calculation for the
+  stationary states of any molecular system}.
+\newblock {\em Proc. R. Soc. London A}, A200:542, 1950.
+
+\bibitem{Roothaan1951}
+C~C~J Roothaan.
+\newblock {New Developments in Molecular Orbital Theory}.
+\newblock {\em Rev. Mod. Phys.}, 23(2):69, 1951.
+
 \bibitem{Porezag1994}
 D~Porezag, Th~Frauenheim, Th~Kohler, G~Seifert, and R~Kaschner.
 \newblock {Construction of tight-binding-like potentials on the basis of
   density-functional theory: Application to carbon}.
 \newblock {\em Phys. Rev. B}, 51(19):12948--12957, 1994.
 
-\bibitem{Koskinen2009}
-Pekka Koskinen and Ville M{\"{a}}kinen.
-\newblock {Density-functional tight-binding for beginners}.
-\newblock {\em Comput. Mater. Sci.}, 47(1):237--253, 2009.
-
 \bibitem{Gaus2011}
 Michael Gaus, Qiang Cui, and Marcus Elstner.
 \newblock {DFTB3: Extension of the Self-Consistent-Charge Density-Functional
   Tight-Binding Method (SCC-DFTB)}.
 \newblock {\em J. Chem. Theory Comput}, 7:931--948, 2011.
+
+\bibitem{Koskinen2009}
+Pekka Koskinen and Ville M{\"{a}}kinen.
+\newblock {Density-functional tight-binding for beginners}.
+\newblock {\em Comput. Mater. Sci.}, 47(1):237--253, 2009.
+
+\bibitem{Elstner1998}
+M~Elstner, D~Porezag, G~Jungnickel, J~Elsner, M~Haugk, Th~Frauenheim, S~Suhai,
+  and G~Seifert.
+\newblock {Self-consistent-charge density-functional tight-binding method for
+  simulations of complex materials properties}.
+\newblock {\em Phys. Rev. B}, 58(11):7260, 1998.
+
+\bibitem{Goldman2012}
+Nir Goldman and Laurence~E Fried.
+\newblock {Extending the Density Functional Tight Binding Method to Carbon
+  Under Extreme Conditions}.
+\newblock {\em J. Phys. Chem. C}, 116:2198--2204, 2012.
+
+\bibitem{AndreaRozzi2004}
+Carlo {Andrea Rozzi}, Filippo Troiani, Ivano Tavernelli, Kang Lan, Shijie Xie,
+  Xiangji Cai, Chenfeng Cao, and Shi-Yao Hou.
+\newblock {Atomistic theory of transport in organic and inorganic
+  nanostructures}.
+\newblock {\em Rep. Prog. Phys}, 67:1497--1561, 2004.
+
+\bibitem{Kohler2005}
+Christof K{\"{o}}hler, Gotthard Seifert, and Thomas Frauenheim.
+\newblock {Density functional based calculations for Fen (n{\textless}32)}.
+\newblock {\em Chem. Phys.}, 309(1):23--31, feb 2005.
+
+\bibitem{Niehaus2005}
+T.~A. Niehaus, M.~Rohlfing, F.~Della Sala, A.~{Di Carlo}, and T.~A. Frauenheim.
+\newblock {Quasiparticle energies for large molecules: A tight-binding-based
+  Green's-function approach}.
+\newblock {\em Phys. Rev. A}, 71:022508, 2005.
+
+\bibitem{Han2000}
+Wen~Ge Han, Marcus Elstner, K.~J. Jalkanen, Thomas Frauenheim, and S{\'{a}}ndor
+  Suhai.
+\newblock {Hybrid SCC-DFTB/molecular mechanical studies of H-bonded systems and
+  of N-acetyl-(L-Ala)n N'-methylamide helices in water solution}.
+\newblock {\em Int. J. Quantum Chem.}, 78(6):459--479, 2000.
+
+\bibitem{Lutsker2015}
+V.~Lutsker, B.~Aradi, and T.~A Niehaus.
+\newblock {Implementation and benchmark of a long-range corrected functional in
+  the density functional based tight-binding method}.
+\newblock {\em J. Chem. Phys}, 143:184107, 2015.
+
+\bibitem{Gruden2017}
+Maja Gruden, Ljubica Andjelkovic, Akkarapattiakal~Kuriappan Jissy, Stepan
+  Stepanovi{\'{c}}, Matija Zlatar, Qiang Cui, and Marcus Elstner.
+\newblock {Benchmarking density functional tight binding models for barrier
+  heights and reaction energetics of organic molecules}.
+\newblock {\em J. Comput. Chem.}, 38(25):2171--2185, sep 2017.
+
+\bibitem{Vuong2018}
+Van~Quan Vuong, {\#}~Jissy, Akkarapattiakal Kuriappan, Maximilian Kubillus,
+  Julian~J Kranz, Thilo Mast, Thomas~A Niehaus, Stephan Irle, and Marcus
+  Elstner.
+\newblock {Parametrization and Benchmark of Long-Range Corrected DFTB2 for
+  Organic Molecules}.
+\newblock {\em J. Chem. Theory Comput}, 14:115--125, 2018.
+
+\bibitem{Melix2016}
+Patrick Melix, Augusto~Faria Oliveira, Robert R{\"{u}}ger, and Thomas Heine.
+\newblock {Spin polarization in SCC-DFTB}.
+\newblock {\em Theor. Chem. Acc.}, 135(9):1--6, 2016.
 
 \bibitem{Salomon-Ferrer2013}
 Romelia Salomon-Ferrer, David~A. Case, and Ross~C. Walker.
@@ -485,6 +602,20 @@ Eike Caldeweyher, Jan-Michael Mewes, Sebastian Ehlert, and Stefan Grimme.
   periodic systems}.
 \newblock {\em Phys. Chem. Chem. Phys}, 22:8499, 2020.
 
+\bibitem{Johnson2005}
+Erin~R Johnson and Axel~D Becke.
+\newblock {A post-Hartree-Fock model of intermolecular interactions}.
+\newblock {\em J. Chem. Phys.}, 123:154104, 2005.
+
+\bibitem{Becke2005}
+Axel~D Becke and Erin~R Johnson.
+\newblock {A density-functional model of the dispersion interaction}.
+\newblock {\em J. Chem. Phys.}, 123:6158, 2005.
+
+\bibitem{Laurent2013}
+Ad{\`{e}}le~D. Laurent and Denis Jacquemin.
+\newblock {TD-DFT benchmarks: A review}, sep 2013.
+
 \bibitem{Runge1984}
 Erich Runge and E~K~U Gross.
 \newblock {Density-Functional Theory for Time-Dependent Systems}.
@@ -495,10 +626,10 @@ M~A~L Marques and E~K~U Gross.
 \newblock {TIME-DEPENDENT DENSITY FUNCTIONAL THEORY}.
 \newblock {\em Annu. Rev. Phys. Chem}, 55:427--55, 2004.
 
-\bibitem{Kohn1952}
-P.~Hohenberg and W.~Kohn.
-\newblock {PHYSICAL REVIEW}.
-\newblock {\em Phys. Rev.}, 136(3B):864, 1952.
+\bibitem{Casida1995}
+M.~E. Casida.
+\newblock {\em {Recent Advances in Density Functional Methods}}.
+\newblock World Scientific Singapore, vol. 1 edition, 1995.
 
 \bibitem{List2013}
 Nanna~Holmgaard List, Carles Curutchet, Stefan Knecht, Benedetta Mennucci,
@@ -507,9 +638,27 @@ Nanna~Holmgaard List, Carles Curutchet, Stefan Knecht, Benedetta Mennucci,
   Systems: A Benchmark Study on the FMO Light-Harvesting Complex}.
 \newblock {\em J. Chem. Theory Comput.}, 9:4928, 2013.
 
-\bibitem{Laurent2013}
-Ad{\`{e}}le~D. Laurent and Denis Jacquemin.
-\newblock {TD-DFT benchmarks: A review}, sep 2013.
+\bibitem{Dahlbom2005}
+Mats~G. Dahlbom and Jeffrey~R. Reimers.
+\newblock {Successes and failures of time-dependent density functional theory
+  for the low-lying excited states of chlorophylls}.
+\newblock {\em Mol. Phys.}, 103(6-8):1057--1065, 2005.
+
+\bibitem{Jones1989}
+R~0 Jones and O~Gunnarsson.
+\newblock {The density functional formalism, its applications and prospects}.
+\newblock {\em Rev. Mod. Phys.}, 61(3):689, 1989.
+
+\bibitem{Hellman2004}
+A.~Hellman, B.~Razaznejad, and B.~I. Lundqvist.
+\newblock {Potential-energy surfaces for excited states in extended systems}.
+\newblock {\em J. Chem. Phys}, 120:4593, 2004.
+
+\bibitem{Almlof1982}
+J.~Alml{\"{o}}f, K.~Faegri, and K.~Korsell.
+\newblock {Principles for a direct SCF approach to LICAO-MO ab-initio
+  calculations}.
+\newblock {\em J. Comput. Chem.}, 3(3):385--399, 1982.
 
 \bibitem{Hunt1969}
 s.~William~J. Hunt and William~A. Goddard.
@@ -521,11 +670,6 @@ Andrew T~B Gilbert, Nicholas~A Besley, and Peter M~W Gill.
 \newblock {Self-Consistent Field Calculations of Excited States Using the
   Maximum Overlap Method (MOM) †}.
 \newblock {\em J. Phys. Chem.}, 112:13164, 2008.
-
-\bibitem{Roothaan1951}
-C~C~J Roothaan.
-\newblock {New Developments in Molecular Orbital Theory}.
-\newblock {\em Rev. Mod. Phys.}, 23(2):69, 1951.
 
 \bibitem{Liu2004}
 Tiqing Liu, Wen-Ge Han, Fahmi Himo, |~G~Matthias Ullmann, Donald Bashford,

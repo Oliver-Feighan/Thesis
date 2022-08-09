@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  5 AUG 2022 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.1.26)  9 AUG 2022 15:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1347,24 +1347,35 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 130.
 \l_MT_below_shortintertext_sep=\dimen325
 \xmathstrut@box=\box98
 \xmathstrut@dim=\dimen326
-))
-\c@proofcount=\count452
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/acronym/acronym.sty
+Package: acronym 2020/04/17 v1.47 Support for acronyms (Tobias Oetiker)
+ (/usr/local/texlive/2017/texmf-dist/tex/latex/bigfoot/suffix.sty
+Package: suffix 2006/07/15 1.5a Variant command support
+) (/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty (/usr/local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
+\integerpart=\count452
+\decimalpart=\count453
+)
+Package: xstring 2019/02/06 v1.83 String manipulations (CT)
+)
+\AC@clearlist=\toks65
+)
+\c@proofcount=\count454
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.sty
 File: lettrine.sty 2020-03-14 v2.23 (Daniel Flipo)
  (/usr/local/texlive/2017/texmf-dist/tex/generic/minifp/minifp.sty
 Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack-based programing language.
-\MFP@loopctr=\count453
+\MFP@loopctr=\count455
 )
-\c@DefaultLines=\count454
-\c@DefaultDepth=\count455
+\c@DefaultLines=\count456
+\c@DefaultDepth=\count457
 \DefaultFindent=\dimen327
 \DefaultNindent=\dimen328
 \DefaultSlope=\dimen329
 \DiscardVskip=\dimen330
 \L@lbox=\box99
 \L@tbox=\box100
-\c@L@lines=\count456
-\c@L@depth=\count457
+\c@L@lines=\count458
+\c@L@depth=\count459
 \L@Pindent=\dimen331
 \L@Findent=\dimen332
 \L@Nindent=\dimen333
@@ -1380,7 +1391,7 @@ Package: minifp 2013/12/30 v0.96. Macros for real number operations and a stack-
 \LettrineWidth=\dimen343
 \LettrineHeight=\dimen344
 \LettrineDepth=\dimen345
-\Llist@everypar=\toks65
+\Llist@everypar=\toks66
 
 Loading lettrine.cfg
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lettrine/lettrine.cfg)) (/usr/local/texlive/2017/texmf-dist/tex/latex/mhchem/mhchem.sty
@@ -1389,7 +1400,7 @@ Package: mhchem 2018/06/22 v4.08 for typesetting chemical formulae
 Package: expl3 2021-01-09 L3 programming layer (loader) 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2021-01-09 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count458
+\l__kernel_color_stack_int=\count460
 \l__pdf_internal_box=\box101
 )) (/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
@@ -1397,10 +1408,10 @@ Package: l3keys2e 2020-10-27 LaTeX2e option processing using LaTeX3 keys
 Package: xparse 2020-10-27 L3 Experimental document command parser
  (/usr/local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
-\l__chemgreek_tmpa_int=\count459
-\g__chemgreek_tmpa_int=\count460
+\l__chemgreek_tmpa_int=\count461
+\g__chemgreek_tmpa_int=\count462
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count461
+\l__mhchem_ce_distanceFromLastComma_int=\count463
 \__mhchem_arrow_extPgfLength_skip=\skip299
 \mhchem@minispace@tmp=\skip300
 \mhchem@minibackspace@tmp=\skip301
@@ -1411,18 +1422,18 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use 
 \mhchem@smallbondwidth=\skip306
 \mhchem@bondtmp@minussidebearingleft=\skip307
 \mhchem@bondtmp@minussidebearingright=\skip308
-\l__mhchem_option_version_int=\count462
+\l__mhchem_option_version_int=\count464
 \mhchem@option@minusmathsidebearingleft=\dimen346
 \mhchem@option@minusmathsidebearingright=\dimen347
 \mhchem@option@minustextsidebearingleft=\dimen348
 \mhchem@option@minustextsidebearingright=\dimen349
 )
-\c@theo=\count463
-\c@prop=\count464
-\c@dfn=\count465
-\c@lema=\count466
-\c@cor=\count467
-\c@resu=\count468
+\c@theo=\count465
+\c@prop=\count466
+\c@dfn=\count467
+\c@lema=\count468
+\c@cor=\count469
+\c@resu=\count470
  (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux
 
 LaTeX Warning: Label `subsec:state_assign' multiply defined.
@@ -1436,67 +1447,67 @@ LaTeX Warning: Label `eq:exciton_coupling' multiply defined.
 )
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 303.
-LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 303.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for FML/fncmi/m/it on input line 294.
+LaTeX Font Info:    Trying to load font information for FML+fncmi on input line 294.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmlfncmi.fd
 File: fmlfncmi.fd 2005/12/20 Fontinst v1.928 font definitions for FML/fncmi.
 )
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 303.
-LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 303.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for FMS/fncm/m/n on input line 294.
+LaTeX Font Info:    Trying to load font information for FMS+fncm on input line 294.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fouriernc/fmsfncm.fd
 File: fmsfncm.fd 2005/12/20 Fontinst v1.928 font definitions for FMS/fncm.
 )
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 303.
-LaTeX Font Info:    Trying to load font information for FMX+futm on input line 303.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for FMX/futm/m/n on input line 294.
+LaTeX Font Info:    Trying to load font information for FMX+futm on input line 294.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/fourier/fmxfutm.fd
 File: fmxfutm.fd futm-extension
 )
-LaTeX Font Info:    ... okay on input line 303.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 303.
-LaTeX Font Info:    ... okay on input line 303.
-Package nag Info: pgf.sty is broken: disabling dollar check on input line 303.
-LaTeX Font Info:    Redeclaring math accent \widehat on input line 303.
-LaTeX Font Info:    Redeclaring math accent \widetilde on input line 303.
+LaTeX Font Info:    ... okay on input line 294.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 294.
+LaTeX Font Info:    ... okay on input line 294.
+Package nag Info: pgf.sty is broken: disabling dollar check on input line 294.
+LaTeX Font Info:    Redeclaring math accent \widehat on input line 294.
+LaTeX Font Info:    Redeclaring math accent \widetilde on input line 294.
 
 
-Package layouts Warning: Layout scale set to 0.5 on input line 303.
+Package layouts Warning: Layout scale set to 0.5 on input line 294.
 
 (/usr/local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count469
+\scratchcounter=\count471
 \scratchdimen=\dimen350
 \scratchbox=\box102
-\nofMPsegments=\count470
-\nofMParguments=\count471
-\everyMPshowfont=\toks66
-\MPscratchCnt=\count472
+\nofMPsegments=\count472
+\nofMParguments=\count473
+\everyMPshowfont=\toks67
+\MPscratchCnt=\count474
 \MPscratchDim=\dimen351
-\MPnumerator=\count473
-\makeMPintoPDFobject=\count474
-\everyMPtoPDFconversion=\toks67
+\MPnumerator=\count475
+\makeMPintoPDFobject=\count476
+\everyMPtoPDFconversion=\toks68
 ) (/usr/local/texlive/2017/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 303.
+Package hyperref Info: Link coloring ON on input line 294.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
  (/usr/local/texlive/2017/texmf-dist/tex/latex/refcount/refcount.sty
@@ -1504,26 +1515,26 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2017/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count475
+\c@section@level=\count477
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 303.
-LaTeX Info: Redefining \ref on input line 303.
-LaTeX Info: Redefining \pageref on input line 303.
-LaTeX Info: Redefining \nameref on input line 303.
+LaTeX Info: Redefining \nameref on input line 294.
+LaTeX Info: Redefining \ref on input line 294.
+LaTeX Info: Redefining \pageref on input line 294.
+LaTeX Info: Redefining \nameref on input line 294.
 (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out) (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.out)
 \@outlinefile=\write6
 \openout6 = `thesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 303.
+LaTeX Info: Redefining \microtypecontext on input line 294.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 303.
+LaTeX Info: Redefining \showhyphens on input line 294.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -1532,13 +1543,13 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Package chemgreek Info: Activating mapping `default' on line 303.
+Package chemgreek Info: Activating mapping `default' on line 294.
 
-Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 303.
-Package nag Info: Command \captionabove not defined, skipping amendment on input line 303.
-Package nag Info: Command \captionbelow not defined, skipping amendment on input line 303.
-Package nag Info: Command \hc@caption not defined, skipping amendment on input line 303.
-Package nag Info: Command \topcaption not defined, skipping amendment on input line 303.
+Package nag Info: Command \caption@xlabel not defined, skipping amendment on input line 294.
+Package nag Info: Command \captionabove not defined, skipping amendment on input line 294.
+Package nag Info: Command \captionbelow not defined, skipping amendment on input line 294.
+Package nag Info: Command \hc@caption not defined, skipping amendment on input line 294.
+Package nag Info: Command \topcaption not defined, skipping amendment on input line 294.
  (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/title.tex
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 23.13821pt on input line 24.
@@ -1546,7 +1557,7 @@ LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
 (Font)              scaled to size 11.15991pt on input line 28.
 LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
 (Font)              scaled to size 11.15991pt on input line 30.
-<logos/bristolcrest_colour.pdf, id=348, 114.4275pt x 137.51375pt>
+<logos/bristolcrest_colour.pdf, id=347, 114.4275pt x 137.51375pt>
 File: logos/bristolcrest_colour.pdf Graphic file (type pdf)
 <use logos/bristolcrest_colour.pdf>
 Package pdftex.def Info: logos/bristolcrest_colour.pdf  used on input line 32.
@@ -1635,7 +1646,7 @@ l.18 \clearpage
 ])pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.328 \clearemptydoublepage
+l.319 \clearemptydoublepage
                             [2
 
 
@@ -1665,6 +1676,11 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 
 Overfull \hbox (1.74115pt too wide) detected at line 4
  \T1/fnc/b/n/10.95 xiii
+ []
+
+
+Overfull \hbox (0.42758pt too wide) detected at line 5
+ \T1/fnc/b/n/10.95 xix
  []
 
 [7]
@@ -1697,14 +1713,14 @@ Overfull \hbox (1.20142pt too wide) detected at line 74
  \T1/fnc/m/n/10.95 117
  []
 
-
+LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
+(Font)              scaled to size 9.29993pt on input line 75.
+[8]
 Overfull \hbox (1.20142pt too wide) detected at line 75
  \T1/fnc/m/n/10.95 117
  []
 
-LaTeX Font Info:    Font shape `T1/fnc/m/sc' will be
-(Font)              scaled to size 9.29993pt on input line 76.
-[8]
+
 Overfull \hbox (1.20142pt too wide) detected at line 76
  \T1/fnc/m/n/10.95 117
  []
@@ -1965,6 +1981,188 @@ Overfull \hbox (1.20142pt too wide) detected at line 68
 
 ) [17] [18
 
+] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/abbreviations.tex
+
+LaTeX Warning: Hyper reference `acro:LHC' on page xix undefined on input line 14.
+
+
+LaTeX Warning: Hyper reference `acro:LHC' on page xix undefined on input line 14.
+
+
+LaTeX Warning: Hyper reference `acro:LH1/LH2' on page xix undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `acro:LH1/LH2' on page xix undefined on input line 18.
+
+
+LaTeX Warning: Hyper reference `acro:EET' on page xix undefined on input line 22.
+
+
+LaTeX Warning: Hyper reference `acro:EET' on page xix undefined on input line 22.
+
+
+LaTeX Warning: Hyper reference `acro:DFT' on page xix undefined on input line 27.
+
+
+LaTeX Warning: Hyper reference `acro:DFT' on page xix undefined on input line 27.
+
+
+LaTeX Warning: Hyper reference `acro:DFTB' on page xix undefined on input line 31.
+
+
+LaTeX Warning: Hyper reference `acro:DFTB' on page xix undefined on input line 31.
+
+
+LaTeX Warning: Hyper reference `acro:SCF' on page xix undefined on input line 35.
+
+
+LaTeX Warning: Hyper reference `acro:SCF' on page xix undefined on input line 35.
+
+
+LaTeX Warning: Hyper reference `acro:LDA' on page xix undefined on input line 39.
+
+
+LaTeX Warning: Hyper reference `acro:LDA' on page xix undefined on input line 39.
+
+
+LaTeX Warning: Hyper reference `acro:GGA' on page xix undefined on input line 43.
+
+
+LaTeX Warning: Hyper reference `acro:GGA' on page xix undefined on input line 43.
+
+
+LaTeX Warning: Hyper reference `acro:HF' on page xix undefined on input line 47.
+
+
+LaTeX Warning: Hyper reference `acro:HF' on page xix undefined on input line 47.
+
+
+LaTeX Warning: Hyper reference `acro:KS' on page xix undefined on input line 51.
+
+
+LaTeX Warning: Hyper reference `acro:KS' on page xix undefined on input line 51.
+
+
+LaTeX Warning: Hyper reference `acro:MO/AO' on page xix undefined on input line 55.
+
+
+LaTeX Warning: Hyper reference `acro:MO/AO' on page xix undefined on input line 55.
+
+
+LaTeX Warning: Hyper reference `acro:XC' on page xix undefined on input line 59.
+
+
+LaTeX Warning: Hyper reference `acro:XC' on page xix undefined on input line 59.
+
+
+LaTeX Warning: Hyper reference `acro:SAD' on page xix undefined on input line 63.
+
+
+LaTeX Warning: Hyper reference `acro:SAD' on page xix undefined on input line 63.
+
+[19
+
+]
+
+LaTeX Warning: Hyper reference `acro:DIIS' on page xx undefined on input line 67.
+
+
+LaTeX Warning: Hyper reference `acro:DIIS' on page xx undefined on input line 67.
+
+
+LaTeX Warning: Hyper reference `acro:HOMO' on page xx undefined on input line 71.
+
+
+LaTeX Warning: Hyper reference `acro:HOMO' on page xx undefined on input line 71.
+
+
+LaTeX Warning: Hyper reference `acro:LUMO' on page xx undefined on input line 75.
+
+
+LaTeX Warning: Hyper reference `acro:LUMO' on page xx undefined on input line 75.
+
+
+LaTeX Warning: Hyper reference `acro:TD-DFT' on page xx undefined on input line 80.
+
+
+LaTeX Warning: Hyper reference `acro:TD-DFT' on page xx undefined on input line 80.
+
+
+LaTeX Warning: Hyper reference `acro:TD-DFTB' on page xx undefined on input line 84.
+
+
+LaTeX Warning: Hyper reference `acro:TD-DFTB' on page xx undefined on input line 84.
+
+
+LaTeX Warning: Hyper reference `acro:MOM' on page xx undefined on input line 88.
+
+
+LaTeX Warning: Hyper reference `acro:MOM' on page xx undefined on input line 88.
+
+
+LaTeX Warning: Hyper reference `acro:xTB' on page xx undefined on input line 95.
+
+
+LaTeX Warning: Hyper reference `acro:xTB' on page xx undefined on input line 95.
+
+
+LaTeX Warning: Hyper reference `acro:GFN-xTB' on page xx undefined on input line 99.
+
+
+LaTeX Warning: Hyper reference `acro:GFN-xTB' on page xx undefined on input line 99.
+
+
+LaTeX Warning: Hyper reference `acro:sTDA-xTB' on page xx undefined on input line 103.
+
+
+LaTeX Warning: Hyper reference `acro:sTDA-xTB' on page xx undefined on input line 103.
+
+
+LaTeX Warning: Hyper reference `acro:chl-xTB' on page xx undefined on input line 107.
+
+
+LaTeX Warning: Hyper reference `acro:chl-xTB' on page xx undefined on input line 107.
+
+
+LaTeX Warning: Hyper reference `acro:EHT' on page xx undefined on input line 111.
+
+
+LaTeX Warning: Hyper reference `acro:EHT' on page xx undefined on input line 111.
+
+
+LaTeX Warning: Hyper reference `acro:EN' on page xx undefined on input line 115.
+
+
+LaTeX Warning: Hyper reference `acro:EN' on page xx undefined on input line 115.
+
+
+LaTeX Warning: Hyper reference `acro:AES' on page xx undefined on input line 119.
+
+
+LaTeX Warning: Hyper reference `acro:AES' on page xx undefined on input line 119.
+
+[20]
+
+LaTeX Warning: Hyper reference `acro:AXC' on page xxi undefined on input line 123.
+
+
+LaTeX Warning: Hyper reference `acro:AXC' on page xxi undefined on input line 123.
+
+
+LaTeX Warning: Hyper reference `acro:EEQ' on page xxi undefined on input line 127.
+
+
+LaTeX Warning: Hyper reference `acro:EEQ' on page xxi undefined on input line 127.
+
+
+LaTeX Warning: Hyper reference `acro:(m)CN' on page xxi undefined on input line 131.
+
+
+LaTeX Warning: Hyper reference `acro:(m)CN' on page xxi undefined on input line 131.
+
+[21]) [22
+
+
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/outline.tex [1
 
 
@@ -1979,12 +2177,12 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
 (lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {P}});
 (lettrine.sty)             reported on input line 11.
-<chapters/1_introduction/subunit.png, id=804, 695.59875pt x 759.83875pt>
+<chapters/1_introduction/subunit.png, id=850, 695.59875pt x 759.83875pt>
 File: chapters/1_introduction/subunit.png Graphic file (type png)
 <use chapters/1_introduction/subunit.png>
 Package pdftex.def Info: chapters/1_introduction/subunit.png  used on input line 38.
 (pdftex.def)             Requested size: 208.68123pt x 227.95337pt.
-<chapters/1_introduction/ring_assign.png, id=806, 1027.84pt x 1027.84pt>
+<chapters/1_introduction/ring_assign.png, id=852, 1027.84pt x 1027.84pt>
 File: chapters/1_introduction/ring_assign.png Graphic file (type png)
 <use chapters/1_introduction/ring_assign.png>
 Package pdftex.def Info: chapters/1_introduction/ring_assign.png  used on input line 46.
@@ -2015,13 +2213,13 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-\c@nn@layerindex@counter=\count476
-\c@nn@lastlayerstart@counter=\count477
-\c@nn@thislayerstart@counter=\count478
-\c@nn@lastlayercount@counter=\count479
-\c@nn@thislayercount@counter=\count480
-\c@nn@lastlayerindex@counter=\count481
-\c@nn@thislayerindex@counter=\count482
+\c@nn@layerindex@counter=\count478
+\c@nn@lastlayerstart@counter=\count479
+\c@nn@thislayerstart@counter=\count480
+\c@nn@lastlayercount@counter=\count481
+\c@nn@thislayercount@counter=\count482
+\c@nn@lastlayerindex@counter=\count483
+\c@nn@thislayerindex@counter=\count484
 Missing character: There is no t in font nullfont!
 Missing character: There is no o in font nullfont!
 Missing character: There is no p in font nullfont!
@@ -2068,55 +2266,63 @@ Missing character: There is no ; in font nullfont!
  [10] [11] [12] [13]) [14] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/2_background_theory/background_theory.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
 (lettrine.sty)             (for loversize=0, accent excluded),
-(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {T}});
+(lettrine.sty)             Lettrine height = 39.76254pt ( \color {gray} {\textsc {A}});
 (lettrine.sty)             reported on input line 10.
  [15
 
 
 ] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27] [28]
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 8.36993pt on input line 779.
+(Font)              scaled to size 8.36993pt on input line 787.
 LaTeX Font Info:    Font shape `T1/fnc/m/n' will be
-(Font)              scaled to size 6.50995pt on input line 779.
+(Font)              scaled to size 6.50995pt on input line 787.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 779.
+(Font)              scaled to size 11.03998pt on input line 787.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 779.
+(Font)              scaled to size 8.27998pt on input line 787.
 LaTeX Font Info:    Font shape `FMX/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 779.
+(Font)              scaled to size 6.43999pt on input line 787.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 8.36993pt on input line 779.
+(Font)              scaled to size 8.36993pt on input line 787.
 LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
-(Font)              scaled to size 6.50995pt on input line 779.
+(Font)              scaled to size 6.50995pt on input line 787.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 11.03998pt on input line 779.
+(Font)              scaled to size 11.03998pt on input line 787.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 8.27998pt on input line 779.
+(Font)              scaled to size 8.27998pt on input line 787.
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
-(Font)              scaled to size 6.43999pt on input line 779.
+(Font)              scaled to size 6.43999pt on input line 787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 779.
+(hyperref)                removing `math shift' on input line 787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Delta' on input line 779.
+(hyperref)                removing `\Delta' on input line 787.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 779.
+(hyperref)                removing `math shift' on input line 787.
 
 [29] [30] [31] [32]
-Overfull \hbox (1.63068pt too wide) in paragraph at lines 1019--1027
-[]\T1/fnc/m/n/10.95 (-20) where $\FML/fncmi/m/it/10.95 c[]$ \T1/fnc/m/n/10.95 (-20) are the co-ef-fi-cients for each site, given from the eigen-vec-tors of the time-independent
- []
 
-[33] [34]
+Class memoir Warning: The material used in the headers is too large
+(27.2pt) for the given head height (13.6pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 1027.
 
-LaTeX Warning: Command \r invalid in math mode on input line 1098.
 
-) [35] [36
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+ [33]
+
+LaTeX Warning: Command \r invalid in math mode on input line 1087.
+
+[34])
+Overfull \vbox (13.59999pt too high) has occurred while \output is active []
+
+ [35] [36
 
 ] (/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/3_dscf/dscf.tex
 Package lettrine.sty Info: Targeted height = 39.06784pt
@@ -2170,7 +2376,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 78.
 
 [38]
-<../../Year_3/dscf_figures/energy_scatter.png, id=1265, 867.24pt x 867.24pt>
+<../../Year_3/dscf_figures/energy_scatter.png, id=1362, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/energy_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/energy_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/energy_scatter.png  used on input line 128.
@@ -2180,7 +2386,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 128--131
  [][] 
  []
 
-<../../Year_3/dscf_figures/dipole_scatter.png, id=1266, 867.24pt x 867.24pt>
+<../../Year_3/dscf_figures/dipole_scatter.png, id=1363, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/dipole_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/dipole_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/dipole_scatter.png  used on input line 137.
@@ -2199,7 +2405,7 @@ LaTeX Font Info:    Font shape `T1/fnc/b/n' will be
 LaTeX Font Info:    Font shape `U/futm/m/n' will be
 (Font)              scaled to size 6.99199pt on input line 168.
 [39] [40 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/energy_scatter.png>] [41 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/dscf_figures/dipole_scatter.png>] [42]
-<../../Year_3/dscf_figures/correction_scatter.png, id=1293, 867.24pt x 867.24pt>
+<../../Year_3/dscf_figures/correction_scatter.png, id=1389, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/correction_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/correction_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/correction_scatter.png  used on input line 220.
@@ -2213,7 +2419,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 220--226
  [][] 
  []
 
-<../../Year_3/dscf_figures/chlorophyll_energy_scatter.png, id=1298, 867.24pt x 867.24pt>
+<../../Year_3/dscf_figures/chlorophyll_energy_scatter.png, id=1394, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/chlorophyll_energy_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/chlorophyll_energy_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/chlorophyll_energy_scatter.png  used on input line 256.
@@ -2226,7 +2432,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 256--261
  [][] 
  []
 
-<../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png, id=1299, 867.24pt x 867.24pt>
+<../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png, id=1395, 867.24pt x 867.24pt>
 File: ../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png Graphic file (type png)
 <use ../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png>
 Package pdftex.def Info: ../../Year_3/dscf_figures/chlorophyll_dipole_scatter.png  used on input line 266.
@@ -2252,7 +2458,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 Package nag Warning: \label in float, but not after \caption on input line 501.
 
 [50]
-<../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png, id=1364, 849.62419pt x 715.92468pt>
+<../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png, id=1461, 849.62419pt x 715.92468pt>
 File: ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png Graphic file (type png)
 <use ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png>
 Package pdftex.def Info: ../../Year_2/test_sets/sTDA_xtb_fit/stda_fit/HCNOF/dxtb_absolute_errors.png  used on input line 550.
@@ -2290,7 +2496,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `math shift' on input line 255.
 
-<chapters/4_chl_xtb/chlorophyll_Qy.png, id=1432, 453.96786pt x 333.02257pt>
+<chapters/4_chl_xtb/chlorophyll_Qy.png, id=1527, 453.96786pt x 333.02257pt>
 File: chapters/4_chl_xtb/chlorophyll_Qy.png Graphic file (type png)
 <use chapters/4_chl_xtb/chlorophyll_Qy.png>
 Package pdftex.def Info: chapters/4_chl_xtb/chlorophyll_Qy.png  used on input line 259.
@@ -2301,7 +2507,7 @@ Overfull \hbox (5.96675pt too wide) in paragraph at lines 259--260
  []
 
 [61]
-<../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png, id=1439, 984.67876pt x 865.2325pt>
+<../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png, id=1535, 984.67876pt x 865.2325pt>
 File: ../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png Graphic file (type png)
 <use ../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png>
 Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png  used on input line 290.
@@ -2311,7 +2517,7 @@ Overfull \hbox (142.81181pt too wide) in paragraph at lines 290--291
  [][] 
  []
 
-<../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png, id=1440, 984.67876pt x 865.2325pt>
+<../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png, id=1536, 984.67876pt x 865.2325pt>
 File: ../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png Graphic file (type png)
 <use ../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png>
 Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png  used on input line 297.
@@ -2325,7 +2531,7 @@ Overfull \hbox (142.81181pt too wide) in paragraph at lines 297--298
 Underfull \vbox (badness 2189) has occurred while \output is active []
 
  [62 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/4_chl_xtb/chlorophyll_Qy.png>] [63 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png>] [64 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png>] [65] [66] [67] [68] [69]
-<chapters/4_chl_xtb//nelder-mead.png, id=1497, 867.24pt x 867.24pt>
+<chapters/4_chl_xtb//nelder-mead.png, id=1594, 867.24pt x 867.24pt>
 File: chapters/4_chl_xtb//nelder-mead.png Graphic file (type png)
 <use chapters/4_chl_xtb//nelder-mead.png>
 Package pdftex.def Info: chapters/4_chl_xtb//nelder-mead.png  used on input line 635.
@@ -2339,7 +2545,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 635--639
 [][]
  []
 
-<chapters/4_chl_xtb//SLSQP.png, id=1498, 867.24pt x 867.24pt>
+<chapters/4_chl_xtb//SLSQP.png, id=1595, 867.24pt x 867.24pt>
 File: chapters/4_chl_xtb//SLSQP.png Graphic file (type png)
 <use chapters/4_chl_xtb//SLSQP.png>
 Package pdftex.def Info: chapters/4_chl_xtb//SLSQP.png  used on input line 643.
@@ -2357,7 +2563,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 643--648
 Package nag Warning: \label in float, but not after \caption on input line 683.
 
 [74] [75]
-<../../Year_2/chlorophyll_parameterization/energy_training_scatter.png, id=1540, 463.9734pt x 430.0065pt>
+<../../Year_2/chlorophyll_parameterization/energy_training_scatter.png, id=1636, 463.9734pt x 430.0065pt>
 File: ../../Year_2/chlorophyll_parameterization/energy_training_scatter.png Graphic file (type png)
 <use ../../Year_2/chlorophyll_parameterization/energy_training_scatter.png>
 Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/energy_training_scatter.png  used on input line 772.
@@ -2366,7 +2572,7 @@ Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/energy_traini
 
 Package nag Warning: \label in float, but not after \caption on input line 773.
 
-<../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png, id=1541, 438.13687pt x 484.75102pt>
+<../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png, id=1637, 438.13687pt x 484.75102pt>
 File: ../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png Graphic file (type png)
 <use ../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png>
 Package pdftex.def Info: ../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png  used on input line 780.
@@ -2385,7 +2591,7 @@ Underfull \vbox (badness 1521) has occurred while \output is active []
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 893.
 
-<chapters/4_chl_xtb/D4h_symmetry.png, id=1564, 186.67749pt x 84.32495pt>
+<chapters/4_chl_xtb/D4h_symmetry.png, id=1659, 186.67749pt x 84.32495pt>
 File: chapters/4_chl_xtb/D4h_symmetry.png Graphic file (type png)
 <use chapters/4_chl_xtb/D4h_symmetry.png>
 Package pdftex.def Info: chapters/4_chl_xtb/D4h_symmetry.png  used on input line 895.
@@ -2397,7 +2603,7 @@ Package nag Warning: \label in float, but not after \caption on input line 896.
 LaTeX Warning: Reference `qy_length_scan' on page 79 undefined on input line 903.
 
 [79 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/chapters/4_chl_xtb/D4h_symmetry.png>]
-<../../Year_2/BChla_Qy/qy_length_scan.png, id=1571, 763.8939pt x 442.47307pt>
+<../../Year_2/BChla_Qy/qy_length_scan.png, id=1668, 763.8939pt x 442.47307pt>
 File: ../../Year_2/BChla_Qy/qy_length_scan.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/qy_length_scan.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/qy_length_scan.png  used on input line 914.
@@ -2406,7 +2612,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/qy_length_scan.png  used on input
 
 Package nag Warning: \label in float, but not after \caption on input line 915.
 
-<../../Year_2/BChla_Qy/qy_angle_scan.png, id=1572, 740.22548pt x 442.47307pt>
+<../../Year_2/BChla_Qy/qy_angle_scan.png, id=1669, 740.22548pt x 442.47307pt>
 File: ../../Year_2/BChla_Qy/qy_angle_scan.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/qy_angle_scan.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/qy_angle_scan.png  used on input line 922.
@@ -2423,7 +2629,7 @@ LaTeX Warning: Command \r invalid in math mode on input line 932.
 
 LaTeX Warning: Command \r invalid in math mode on input line 933.
 
-<../../Year_2/BChla_Qy/mode_83.png, id=1575, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_83.png, id=1672, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_83.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_83.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_83.png  used on input line 944.
@@ -2431,7 +2637,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_83.png  used on input line 9
 
 Package nag Warning: \label in float, but not after \caption on input line 945.
 
-<../../Year_2/BChla_Qy/mode_85.png, id=1576, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_85.png, id=1673, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_85.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_85.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_85.png  used on input line 953.
@@ -2439,7 +2645,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_85.png  used on input line 9
 
 Package nag Warning: \label in float, but not after \caption on input line 954.
 
-<../../Year_2/BChla_Qy/mode_88.png, id=1577, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_88.png, id=1674, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_88.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_88.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_88.png  used on input line 962.
@@ -2447,7 +2653,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_88.png  used on input line 9
 
 Package nag Warning: \label in float, but not after \caption on input line 963.
 
-<../../Year_2/BChla_Qy/mode_90.png, id=1578, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_90.png, id=1675, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_90.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_90.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_90.png  used on input line 971.
@@ -2455,7 +2661,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_90.png  used on input line 9
 
 Package nag Warning: \label in float, but not after \caption on input line 972.
 
-<../../Year_2/BChla_Qy/mode_91.png, id=1579, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_91.png, id=1676, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_91.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_91.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_91.png  used on input line 980.
@@ -2463,7 +2669,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_91.png  used on input line 9
 
 Package nag Warning: \label in float, but not after \caption on input line 981.
 
-<../../Year_2/BChla_Qy/mode_129.png, id=1580, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_129.png, id=1677, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_129.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_129.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_129.png  used on input line 989.
@@ -2471,7 +2677,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_129.png  used on input line 
 
 Package nag Warning: \label in float, but not after \caption on input line 990.
 
-<../../Year_2/BChla_Qy/mode_130.png, id=1581, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_130.png, id=1678, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_130.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_130.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_130.png  used on input line 998.
@@ -2479,7 +2685,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_130.png  used on input line 
 
 Package nag Warning: \label in float, but not after \caption on input line 999.
 
-<../../Year_2/BChla_Qy/mode_132.png, id=1582, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_132.png, id=1679, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_132.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_132.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_132.png  used on input line 1007.
@@ -2487,7 +2693,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_132.png  used on input line 
 
 Package nag Warning: \label in float, but not after \caption on input line 1008.
 
-<../../Year_2/BChla_Qy/mode_135.png, id=1583, 730.10768pt x 508.23877pt>
+<../../Year_2/BChla_Qy/mode_135.png, id=1680, 730.10768pt x 508.23877pt>
 File: ../../Year_2/BChla_Qy/mode_135.png Graphic file (type png)
 <use ../../Year_2/BChla_Qy/mode_135.png>
 Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_135.png  used on input line 1016.
@@ -2496,7 +2702,7 @@ Package pdftex.def Info: ../../Year_2/BChla_Qy/mode_135.png  used on input line 
 Package nag Warning: \label in float, but not after \caption on input line 1017.
 
 [80 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/qy_length_scan.png>] [81 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/qy_angle_scan.png> </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_83.png>] [82 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_85.png> </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_88.png>] [83 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_90.png> </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_91.png>] [84 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_129.png> </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_130.png>] [85 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_132.png> </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/BChla_Qy/mode_135.png>] [86]
-<../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png, id=1628, 781.2387pt x 493.6041pt>
+<../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png, id=1725, 781.2387pt x 493.6041pt>
 File: ../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png Graphic file (type png)
 <use ../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png>
 Package pdftex.def Info: ../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png  used on input line 1075.
@@ -2513,7 +2719,7 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 
 
 ] [92] [93]
-<../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png, id=1676, 939.51pt x 505.89pt>
+<../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png, id=1772, 939.51pt x 505.89pt>
 File: ../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png Graphic file (type png)
 <use ../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png  used on input line 167.
@@ -2537,7 +2743,7 @@ LaTeX Warning: Command \r invalid in math mode on input line 214.
 
 LaTeX Warning: Command \r invalid in math mode on input line 216.
 
-<../../Year_2/DimerModel/Scans/dimer_system.png, id=1683, 794.97pt x 781.92125pt>
+<../../Year_2/DimerModel/Scans/dimer_system.png, id=1779, 794.97pt x 781.92125pt>
 File: ../../Year_2/DimerModel/Scans/dimer_system.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/dimer_system.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/dimer_system.png  used on input line 227.
@@ -2551,7 +2757,7 @@ Overfull \hbox (28.98569pt too wide) in paragraph at lines 227--231
  []
 
 [95] [96 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/dimer_system.png>]
-<../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png, id=1698, 783.92876pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png, id=1794, 783.92876pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png  used on input line 256.
@@ -2560,7 +2766,7 @@ Package pdftex.def Info: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Q
 
 Package nag Warning: \label in float, but not after \caption on input line 257.
 
-<../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png, id=1699, 793.96625pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png, id=1795, 793.96625pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png  used on input line 265.
@@ -2568,7 +2774,7 @@ Package pdftex.def Info: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Q
 
 Package nag Warning: \label in float, but not after \caption on input line 266.
 
-<../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png, id=1700, 793.96625pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png, id=1796, 793.96625pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png  used on input line 274.
@@ -2577,7 +2783,7 @@ Package pdftex.def Info: ../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Q
 Package nag Warning: \label in float, but not after \caption on input line 275.
 
 [97 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png>] [98 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png> </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png>]
-<../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png, id=1713, 818.05624pt x 505.89pt>
+<../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png, id=1810, 818.05624pt x 505.89pt>
 File: ../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png Graphic file (type png)
 <use ../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png  used on input line 312.
@@ -2592,7 +2798,7 @@ Overfull \hbox (42.83754pt too wide) in paragraph at lines 312--315
  []
 
 [99 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png>]
-<../../Year_2/DimerModel/PBE0_tddft_v_CAMB3LYP_tddft_coupling.png, id=1721, 867.24pt x 867.24pt>
+<../../Year_2/DimerModel/PBE0_tddft_v_CAMB3LYP_tddft_coupling.png, id=1818, 867.24pt x 867.24pt>
 File: ../../Year_2/DimerModel/PBE0_tddft_v_CAMB3LYP_tddft_coupling.png Graphic file (type png)
 <use ../../Year_2/DimerModel/PBE0_tddft_v_CAMB3LYP_tddft_coupling.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/PBE0_tddft_v_CAMB3LYP_tddft_coupling.png  used on input line 327.
@@ -2611,7 +2817,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 327--331
 LaTeX Warning: Reference `chl_xtb_pbe0_LH2' on page 102 undefined on input line 374.
 
 [102]
-<../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png, id=1742, 867.24pt x 505.89pt>
+<../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png, id=1838, 867.24pt x 505.89pt>
 File: ../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png Graphic file (type png)
 <use ../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png  used on input line 412.
@@ -2625,7 +2831,7 @@ Overfull \hbox (72.34802pt too wide) in paragraph at lines 412--416
  [][] 
  []
 
-<../../Year_2/DimerModel/Scans/rotation_along_Qz.png, id=1743, 902.37125pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/rotation_along_Qz.png, id=1839, 902.37125pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/rotation_along_Qz.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/rotation_along_Qz.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/rotation_along_Qz.png  used on input line 433.
@@ -2638,7 +2844,7 @@ Overfull \hbox (3.18452pt too wide) in paragraph at lines 433--437
  [][] 
  []
 
-<../../Year_2/DimerModel/Scans/rotation_along_Qy.png, id=1744, 902.37125pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/rotation_along_Qy.png, id=1840, 902.37125pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/rotation_along_Qy.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/rotation_along_Qy.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/rotation_along_Qy.png  used on input line 442.
@@ -2651,7 +2857,7 @@ Overfull \hbox (3.18452pt too wide) in paragraph at lines 442--446
  [][] 
  []
 
-<../../Year_2/DimerModel/Scans/rotation_along_Qx.png, id=1745, 902.37125pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/rotation_along_Qx.png, id=1841, 902.37125pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/rotation_along_Qx.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/rotation_along_Qx.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/rotation_along_Qx.png  used on input line 451.
@@ -2665,7 +2871,7 @@ Overfull \hbox (3.18452pt too wide) in paragraph at lines 451--455
  []
 
 [103] [104 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png>] [105 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/rotation_along_Qz.png> </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_2/DimerModel/Scans/rotation_along_Qy.png>]
-<../../Year_2/DimerModel/Scans/error_dist_along_Qz.png, id=1765, 549.05125pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/error_dist_along_Qz.png, id=1862, 549.05125pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/error_dist_along_Qz.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/error_dist_along_Qz.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/error_dist_along_Qz.png  used on input line 503.
@@ -2674,7 +2880,7 @@ Package pdftex.def Info: ../../Year_2/DimerModel/Scans/error_dist_along_Qz.png  
 
 Package nag Warning: \label in float, but not after \caption on input line 504.
 
-<../../Year_2/DimerModel/Scans/error_dist_along_Qy.png, id=1766, 570.13pt x 449.68pt>
+<../../Year_2/DimerModel/Scans/error_dist_along_Qy.png, id=1863, 570.13pt x 449.68pt>
 File: ../../Year_2/DimerModel/Scans/error_dist_along_Qy.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/error_dist_along_Qy.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/error_dist_along_Qy.png  used on input line 513.
@@ -2682,7 +2888,7 @@ Package pdftex.def Info: ../../Year_2/DimerModel/Scans/error_dist_along_Qy.png  
 
 Package nag Warning: \label in float, but not after \caption on input line 514.
 
-<../../Year_2/DimerModel/Scans/error_dist_along_Qx.png, id=1767, 549.05125pt x 448.67625pt>
+<../../Year_2/DimerModel/Scans/error_dist_along_Qx.png, id=1864, 549.05125pt x 448.67625pt>
 File: ../../Year_2/DimerModel/Scans/error_dist_along_Qx.png Graphic file (type png)
 <use ../../Year_2/DimerModel/Scans/error_dist_along_Qx.png>
 Package pdftex.def Info: ../../Year_2/DimerModel/Scans/error_dist_along_Qx.png  used on input line 523.
@@ -2715,7 +2921,7 @@ LaTeX Warning: Command \r invalid in math mode on input line 624.
 
 LaTeX Warning: Command \r invalid in math mode on input line 624.
 
-<../../Year_3/CT_figures/PES_by_step.png, id=1793, 1081.03876pt x 1055.945pt>
+<../../Year_3/CT_figures/PES_by_step.png, id=1890, 1081.03876pt x 1055.945pt>
 File: ../../Year_3/CT_figures/PES_by_step.png Graphic file (type png)
 <use ../../Year_3/CT_figures/PES_by_step.png>
 Package pdftex.def Info: ../../Year_3/CT_figures/PES_by_step.png  used on input line 634.
@@ -2732,7 +2938,7 @@ LaTeX Warning: Command \r invalid in math mode on input line 646.
 
 LaTeX Warning: Command \r invalid in math mode on input line 648.
 
-<../../Year_3/CT_figures/LH2_PES.png, id=1795, 867.24pt x 867.24pt>
+<../../Year_3/CT_figures/LH2_PES.png, id=1892, 867.24pt x 867.24pt>
 File: ../../Year_3/CT_figures/LH2_PES.png Graphic file (type png)
 <use ../../Year_3/CT_figures/LH2_PES.png>
 Package pdftex.def Info: ../../Year_3/CT_figures/LH2_PES.png  used on input line 657.
@@ -2753,7 +2959,7 @@ Underfull \vbox (badness 2698) has occurred while \output is active []
  [115
 
 ] [116] [117]
-<../../Year_3/SpectralDensity/images/coupling_all.png, id=1843, 424.40558pt x 430.54852pt>
+<../../Year_3/SpectralDensity/images/coupling_all.png, id=1940, 424.40558pt x 430.54852pt>
 File: ../../Year_3/SpectralDensity/images/coupling_all.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/coupling_all.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/coupling_all.png  used on input line 162.
@@ -2763,7 +2969,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/coupling_all.png  u
 Package nag Warning: \label in float, but not after \caption on input line 163.
 
 [118] [119 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/coupling_all.png>]
-<../../Year_3/SpectralDensity/images/absorption_spectra.png, id=1859, 561.35722pt x 498.48233pt>
+<../../Year_3/SpectralDensity/images/absorption_spectra.png, id=1955, 561.35722pt x 498.48233pt>
 File: ../../Year_3/SpectralDensity/images/absorption_spectra.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/absorption_spectra.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/absorption_spectra.png  used on input line 265.
@@ -2773,7 +2979,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/absorption_spectra.
 Package nag Warning: \label in float, but not after \caption on input line 266.
 
 [120]
-<../../Year_3/SpectralDensity/images/screened_density_diff.png, id=1870, 505.89pt x 505.89pt>
+<../../Year_3/SpectralDensity/images/screened_density_diff.png, id=1966, 505.89pt x 505.89pt>
 File: ../../Year_3/SpectralDensity/images/screened_density_diff.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/screened_density_diff.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/screened_density_diff.png  used on input line 296.
@@ -2783,7 +2989,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/screened_density_di
 Package nag Warning: \label in float, but not after \caption on input line 297.
 
 [121 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/absorption_spectra.png>] [122 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/screened_density_diff.png>]
-<../../Year_3/SpectralDensity/images/specdens_literature_comparison.png, id=1884, 503.90257pt x 456.56572pt>
+<../../Year_3/SpectralDensity/images/specdens_literature_comparison.png, id=1981, 503.90257pt x 456.56572pt>
 File: ../../Year_3/SpectralDensity/images/specdens_literature_comparison.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_literature_comparison.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_literature_comparison.png  used on input line 333.
@@ -2793,7 +2999,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_literature
 Package nag Warning: \label in float, but not after \caption on input line 334.
 
 [123]
-<../../Year_3/SpectralDensity/images/specdens_ring_average.png, id=1896, 725.5908pt x 257.82323pt>
+<../../Year_3/SpectralDensity/images/specdens_ring_average.png, id=1993, 725.5908pt x 257.82323pt>
 File: ../../Year_3/SpectralDensity/images/specdens_ring_average.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_ring_average.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_ring_average.png  used on input line 375.
@@ -2803,7 +3009,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_ring_avera
 Package nag Warning: \label in float, but not after \caption on input line 376.
 
 [124 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_literature_comparison.png>] [125 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_ring_average.png>]
-<../../Year_3/SpectralDensity/images/abs_prob_by_energy.png, id=1909, 671.93033pt x 463.9734pt>
+<../../Year_3/SpectralDensity/images/abs_prob_by_energy.png, id=2005, 671.93033pt x 463.9734pt>
 File: ../../Year_3/SpectralDensity/images/abs_prob_by_energy.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/abs_prob_by_energy.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/abs_prob_by_energy.png  used on input line 404.
@@ -2812,7 +3018,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/abs_prob_by_energy.
 
 Package nag Warning: \label in float, but not after \caption on input line 405.
 
-<../../Year_3/SpectralDensity/images/specdens_state_spectra.png, id=1910, 745.8264pt x 257.82323pt>
+<../../Year_3/SpectralDensity/images/specdens_state_spectra.png, id=2006, 745.8264pt x 257.82323pt>
 File: ../../Year_3/SpectralDensity/images/specdens_state_spectra.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_state_spectra.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_state_spectra.png  used on input line 414.
@@ -2827,7 +3033,7 @@ LaTeX Warning: Float too large for page by 11.41867pt on input line 420.
 Underfull \vbox (badness 6893) has occurred while \output is active []
 
  [126 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/abs_prob_by_energy.png>] [127 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_state_spectra.png>] [128]
-<../../Year_3/SpectralDensity/images/specdens_coupling.png, id=1931, 755.9442pt x 271.19318pt>
+<../../Year_3/SpectralDensity/images/specdens_coupling.png, id=2027, 755.9442pt x 271.19318pt>
 File: ../../Year_3/SpectralDensity/images/specdens_coupling.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_coupling.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_coupling.png  used on input line 471.
@@ -2842,7 +3048,7 @@ LaTeX Warning: Float too large for page by 5.9129pt on input line 476.
 
 LaTeX Warning: Command \r invalid in math mode on input line 486.
 
-<../../Year_3/SpectralDensity/images/specdens_distance.png, id=1933, 684.57758pt x 260.172pt>
+<../../Year_3/SpectralDensity/images/specdens_distance.png, id=2029, 684.57758pt x 260.172pt>
 File: ../../Year_3/SpectralDensity/images/specdens_distance.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_distance.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_distance.png  used on input line 500.
@@ -2854,7 +3060,7 @@ Package nag Warning: \label in float, but not after \caption on input line 501.
 
 LaTeX Warning: Command \r invalid in math mode on input line 555.
 
-<../../Year_3/SpectralDensity/images/specdens_ether.png, id=1950, 725.5908pt x 257.82323pt>
+<../../Year_3/SpectralDensity/images/specdens_ether.png, id=2045, 725.5908pt x 257.82323pt>
 File: ../../Year_3/SpectralDensity/images/specdens_ether.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_ether.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_ether.png  used on input line 568.
@@ -2863,7 +3069,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_ether.png 
 Package nag Warning: \label in float, but not after \caption on input line 569.
 
 [132] [133 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/specdens_ether.png>]
-<../../Year_3/SpectralDensity/images/hrf_spectrum.png, id=1961, 671.93033pt x 257.82323pt>
+<../../Year_3/SpectralDensity/images/hrf_spectrum.png, id=2058, 671.93033pt x 257.82323pt>
 File: ../../Year_3/SpectralDensity/images/hrf_spectrum.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/hrf_spectrum.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/hrf_spectrum.png  used on input line 638.
@@ -2873,7 +3079,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/hrf_spectrum.png  u
 Package nag Warning: \label in float, but not after \caption on input line 639.
 
 [134]
-<../../Year_3/SpectralDensity/images/all_vibrations.png, id=1969, 505.89pt x 818.0964pt>
+<../../Year_3/SpectralDensity/images/all_vibrations.png, id=2066, 505.89pt x 818.0964pt>
 File: ../../Year_3/SpectralDensity/images/all_vibrations.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/all_vibrations.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/all_vibrations.png  used on input line 667.
@@ -2882,7 +3088,7 @@ Package pdftex.def Info: ../../Year_3/SpectralDensity/images/all_vibrations.png 
 
 Package nag Warning: \label in float, but not after \caption on input line 668.
 
-<../../Year_3/SpectralDensity/images/specdens_N_axes.png, id=1973, 689.99782pt x 261.43672pt>
+<../../Year_3/SpectralDensity/images/specdens_N_axes.png, id=2070, 689.99782pt x 261.43672pt>
 File: ../../Year_3/SpectralDensity/images/specdens_N_axes.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_N_axes.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_N_axes.png  used on input line 695.
@@ -2916,7 +3122,7 @@ Package lettrine.sty Info: Targeted height = 39.06784pt
 ] [148
 
 ]
-<../../Year_3/SpectralDensity/images/peaks_b800_sites.png, id=2046, 460.72125pt x 239.39438pt>
+<../../Year_3/SpectralDensity/images/peaks_b800_sites.png, id=2142, 460.72125pt x 239.39438pt>
 File: ../../Year_3/SpectralDensity/images/peaks_b800_sites.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_b800_sites.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_b800_sites.png  used on input line 19.
@@ -2934,7 +3140,7 @@ Overfull \hbox (12.72012pt too wide) in paragraph at lines 19--20
 Package nag Warning: table with no \caption on input line 47.
 
 [149 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_b800_sites.png>]
-<../../Year_3/SpectralDensity/images/peaks_b850a_sites.png, id=2054, 460.72125pt x 239.39438pt>
+<../../Year_3/SpectralDensity/images/peaks_b850a_sites.png, id=2149, 460.72125pt x 239.39438pt>
 File: ../../Year_3/SpectralDensity/images/peaks_b850a_sites.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_b850a_sites.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_b850a_sites.png  used on input line 56.
@@ -2952,7 +3158,7 @@ Overfull \hbox (12.72012pt too wide) in paragraph at lines 56--57
 Package nag Warning: table with no \caption on input line 86.
 
 [150 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_b850a_sites.png>]
-<../../Year_3/SpectralDensity/images/peaks_b850b_sites.png, id=2061, 460.72125pt x 239.39438pt>
+<../../Year_3/SpectralDensity/images/peaks_b850b_sites.png, id=2156, 460.72125pt x 239.39438pt>
 File: ../../Year_3/SpectralDensity/images/peaks_b850b_sites.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_b850b_sites.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_b850b_sites.png  used on input line 96.
@@ -2970,7 +3176,7 @@ Overfull \hbox (12.72012pt too wide) in paragraph at lines 96--97
 Package nag Warning: table with no \caption on input line 126.
 
 [151 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_b850b_sites.png>]
-<../../Year_3/SpectralDensity/images/peaks_eigval.png, id=2068, 466.68352pt x 239.39438pt>
+<../../Year_3/SpectralDensity/images/peaks_eigval.png, id=2164, 466.68352pt x 239.39438pt>
 File: ../../Year_3/SpectralDensity/images/peaks_eigval.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_eigval.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_eigval.png  used on input line 135.
@@ -2988,7 +3194,7 @@ Overfull \hbox (18.68237pt too wide) in paragraph at lines 135--136
 Package nag Warning: table with no \caption on input line 165.
 
 [152 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_eigval.png>]
-<../../Year_3/SpectralDensity/images/peaks_coupling.png, id=2075, 456.56572pt x 239.39438pt>
+<../../Year_3/SpectralDensity/images/peaks_coupling.png, id=2172, 456.56572pt x 239.39438pt>
 File: ../../Year_3/SpectralDensity/images/peaks_coupling.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_coupling.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_coupling.png  used on input line 174.
@@ -3006,7 +3212,7 @@ Overfull \hbox (8.5646pt too wide) in paragraph at lines 174--175
 Package nag Warning: table with no \caption on input line 197.
 
 [153 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_coupling.png>]
-<../../Year_3/SpectralDensity/images/peaks_distance.png, id=2082, 427.29637pt x 239.39438pt>
+<../../Year_3/SpectralDensity/images/peaks_distance.png, id=2179, 427.29637pt x 239.39438pt>
 File: ../../Year_3/SpectralDensity/images/peaks_distance.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_distance.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_distance.png  used on input line 206.
@@ -3019,7 +3225,7 @@ Package nag Warning: figure with no \caption on input line 207.
 Package nag Warning: table with no \caption on input line 230.
 
 [154 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_distance.png>]
-<../../Year_3/SpectralDensity/images/peaks_N.png, id=2089, 431.63257pt x 239.39438pt>
+<../../Year_3/SpectralDensity/images/peaks_N.png, id=2186, 431.63257pt x 239.39438pt>
 File: ../../Year_3/SpectralDensity/images/peaks_N.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_N.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_N.png  used on input line 239.
@@ -3032,7 +3238,7 @@ Package nag Warning: figure with no \caption on input line 240.
 Package nag Warning: table with no \caption on input line 266.
 
 [155 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_N.png>]
-<../../Year_3/SpectralDensity/images/peaks_ether.png, id=2097, 460.72125pt x 240.6591pt>
+<../../Year_3/SpectralDensity/images/peaks_ether.png, id=2193, 460.72125pt x 240.6591pt>
 File: ../../Year_3/SpectralDensity/images/peaks_ether.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/peaks_ether.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/peaks_ether.png  used on input line 275.
@@ -3050,7 +3256,7 @@ Overfull \hbox (12.72012pt too wide) in paragraph at lines 275--276
 Package nag Warning: table with no \caption on input line 304.
 
 [156 </Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/../../Year_3/SpectralDensity/images/peaks_ether.png>]
-<../../Year_3/SpectralDensity/images/specdens_all.png, id=2104, 721.61595pt x 430.0065pt>
+<../../Year_3/SpectralDensity/images/specdens_all.png, id=2200, 721.61595pt x 430.0065pt>
 File: ../../Year_3/SpectralDensity/images/specdens_all.png Graphic file (type png)
 <use ../../Year_3/SpectralDensity/images/specdens_all.png>
 Package pdftex.def Info: ../../Year_3/SpectralDensity/images/specdens_all.png  used on input line 313.
@@ -3069,29 +3275,35 @@ LaTeX Warning: Float too large for page by 85.01392pt on input line 314.
 ] [160] [161] [162]
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 256.
+(textcomp)             Default family used instead on input line 257.
  (/usr/local/texlive/2017/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 256.
- [163] [164] [165] [166] [167] [168] [169]
+(textcomp)             Default family used instead on input line 257.
+ [163] [164] [165] [166] [167] [168] [169] [170] [171]
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 630.
+(textcomp)             Default family used instead on input line 774.
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 630.
+(textcomp)             Default family used instead on input line 774.
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 630.
+(textcomp)             Default family used instead on input line 774.
 Package textcomp Info: Symbol \textasciidieresis not provided by
 (textcomp)             font family fnc in TS1 encoding.
-(textcomp)             Default family used instead on input line 630.
- [170]) [171] [172
+(textcomp)             Default family used instead on input line 774.
+ [172]) [173] [174
 
 ]
+
+Class memoir Warning: The material used in the headers is too large
+(27.2pt) for the given head height (13.6pt), it is recommended to
+either increase the head height or redesign the header
+(in both cases you will find help in the memoir manual). on input line 388.
+
 
 Package nag Warning: 66 complaints in total.
 
@@ -3112,21 +3324,21 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 254ABE127F15F7CD9FB5F65FDB5FE8D6;5825.
+(rerunfilecheck)             Checksum: 798C93C677915A895E171E332B0913B0;5819.
  ) 
 Here is how much of TeX's memory you used:
- 34783 strings out of 479304
- 662812 string characters out of 5867281
- 1124374 words of memory out of 5000000
- 49957 multiletter control sequences out of 15000+600000
- 545805 words of font info for 482 fonts, out of 8000000 for 9000
+ 35524 strings out of 479304
+ 672724 string characters out of 5867281
+ 1139408 words of memory out of 5000000
+ 50620 multiletter control sequences out of 15000+600000
+ 545911 words of font info for 484 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  83i,19n,88p,1191b,1232s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-bb.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mcl.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mex.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ml.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-mlit.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/fourier/fourier-ms.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/tex-gyre/qcrr.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncb8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncr8a.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/urw/ncntrsbk/uncri8a.pfb>
-Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf" (192 pages, 16223959 bytes).
+Output written on "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf" (198 pages, 16234280 bytes).
 PDF statistics:
- 2373 PDF objects out of 2487 (max. 8388607)
- 2006 compressed objects within 21 object streams
- 640 named destinations out of 1000 (max. 500000)
+ 2496 PDF objects out of 2984 (max. 8388607)
+ 2122 compressed objects within 22 object streams
+ 699 named destinations out of 1000 (max. 500000)
  113156 words of extra memory for PDF output out of 128383 (max. 10000000)
 

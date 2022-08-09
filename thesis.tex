@@ -122,19 +122,8 @@
 \newcommand{\clearemptydoublepage}{\newpage{\thispagestyle{empty}\cleardoublepage}}
 %
 %
-% Creates indexes for Table of Contents, List of Figures, List of Tables and Index
 \makeindex
-% \printglossaries below creates a list of abbreviations. \gls and related
-% commands are then used throughout the text, so that latex can automatically
-% keep track of which abbreviations have already been defined in the text.
-%
-% The import command enables each chapter tex file to use relative paths when
-% accessing supplementary files. For example, to include
-% chapters/brewing/images/figure1.png from chapters/brewing/brewing.tex we can
-% use
-% \includegraphics{images/figure1}
-% instead of
-% \includegraphics{chapters/brewing/images/figure1}
+
 \usepackage{import}
 
 % Add other packages needed for chapters here. For example:
@@ -179,6 +168,8 @@
 		       automata,backgrounds,
 		       petri,topaths}				%To use diverse features from tikz		
 \usepackage{neuralnetwork}
+\usepackage{acronym}
+
 %Reduce widows  (the last line of a paragraph at the start of a page) and orphans 
 % (the first line of paragraph at the end of a page)
 \widowpenalty=1000
@@ -347,6 +338,11 @@
 \addtocontents{lof}{\par\nobreak\textbf{{\scshape Figure} \hfill Page}\par\nobreak}
 \clearemptydoublepage
 %
+\addcontentsline{toc}{chapter}{List of Abbreviations}
+\input{frontmatter/abbreviations}
+\clearemptydoublepage
+
+
 % The bulk of the document is delegated to these chapter files in
 % subdirectories.
 \mainmatter
