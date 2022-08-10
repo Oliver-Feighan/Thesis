@@ -84,13 +84,13 @@ Tihana Mirkovic, Evgeny~E Ostroumov, Jessica~M Anna, Rienk {Van Grondelle},
   Govindjee, and Gregory~D Scholes.
 \newblock {Light Absorption and Energy Transfer in the Antenna Complexes of
   Photosynthetic Organisms}.
-\newblock 2016.
+\newblock {\em Chem. Rev}, 117(2):249--293, 2017.
 
 \bibitem{Neugebauer2008}
 Johannes Neugebauer.
 \newblock {Photophysical Properties of Natural Light-Harvesting Complexes
   Studied by Subsystem Density Functional Theory}.
-\newblock 2008.
+\newblock {\em J. Phys. Chem. B}, 112:2207--2217, 2008.
 
 \bibitem{Cherezov2006}
 Vadim Cherezov, Jeffrey Clogston, Miroslav~Z. Papiz, and Martin Caffrey.
@@ -103,7 +103,7 @@ Benedetta Mennucci, Felipe~Cardoso Ramos, Michele Nottoli, and Lorenzo
   Cupellini.
 \newblock {The molecular mechanisms of light adaption in light-harvesting
   complexes of purple bacteria revealed by a multiscale modeling}.
-\newblock 10:9650, 2019.
+\newblock {\em Chem. Sci.}, 10:9650, 2019.
 
 \bibitem{Frenkel1931}
 J.~Frenkel.
@@ -145,20 +145,20 @@ Carles Curutchet, Vladimir~I Novoderezhkin, Jacob Kongsted, Aurora Mun, Rienk
   van Grondelle, Gregory~D Scholes, Benedetta Mennucci, and Joan Xxiii.
 \newblock {Energy Flow in the Cryptophyte PE545 Antenna Is Directed by Bilin
   Pigment Conformation}.
-\newblock 2012.
+\newblock {\em J. Phys. Chem. B}, 117:4263--4273, 2013.
 
 \bibitem{Andreussi2015}
 Oliviero Andreussi, Stefan Knecht, Christel~M Marian, Jacob Kongsted, and
   Benedetta Mennucci.
 \newblock {Carotenoids and Light-Harvesting: From DFT/MRCI to the Tamm-Dancoff
   Approximation}.
-\newblock 2015.
+\newblock {\em J. Chem. Theory Comput.}, 11:655--666, 2015.
 
 \bibitem{Hansen2019}
 Thorsten Hansen and Luca {De Vico}.
 \newblock {Q y and Q x Absorption Bands for Bacteriochlorophyll a Molecules
   from LH2 and LH3}.
-\newblock 2019.
+\newblock {\em J. Phys. Chem. A}, 123(25):5283--5292, 2019.
 
 \bibitem{Poddubnyy2021}
 Vladimir~V. Poddubnyy, Maxim~I. Kozlov, and Ilya~O. Glebov.
@@ -183,7 +183,7 @@ Aleksandr~V Marenich, Steven~V Jerome, Christopher~J Cramer, and Donald~G
 \newblock {Charge Model 5: An Extension of Hirshfeld Population Analysis for
   the Accurate Description of Molecular Interactions in Gaseous and Condensed
   Phases}.
-\newblock 2012.
+\newblock {\em J. Chem. Theory Comput}, 8:527--541, 2012.
 
 \bibitem{Gasteiger1978}
 Johann Gasteiger and Mario Marsili.
@@ -781,7 +781,6 @@ Stefan Grimme and Christoph Bannwarth.
 \newblock {Supporting information for: Ultra-fast computation of electronic
   spectra for large systems by tight-binding based simplified Tamm-Dancoff
   approximation (sTDA-xTB)}.
-\newblock Technical report.
 
 \bibitem{libmsym}
 mcodev31/libmsym: molecular point group symmetry lib.
@@ -808,5 +807,12 @@ H.~Strain, M.~Thomas, and J.~Katz.
 \newblock {Spectral Absorption Properties of Ordinary and Fully Deuteriated
   Chlorophylls a and b}.
 \newblock {\em Biochem. Biophys. Acta.}, 75:306--311, 1963.
+
+\bibitem{Polli2006}
+Dario Polli, Giulio Cerullo, Guglielmo Lanzani, Sandro {De Silvestri}, Hideki
+  Hashimoto, and Richard~J. Cogdell.
+\newblock {Carotenoid-bacteriochlorophyll energy transfer in LH2 complexes
+  studied with 10-fs time resolution}.
+\newblock {\em Biophys. J.}, 90(7):2486--2497, 2006.
 
 \end{thebibliography}

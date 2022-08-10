@@ -3,56 +3,49 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: /Users/of15641/Documents/library.bib
-Warning--empty journal in Mirkovic2016
-Warning--empty journal in Neugebauer2008
-Warning--empty journal in Mennucci2019
-Warning--empty journal in Curutchet2012
-Warning--empty journal in Andreussi2015
-Warning--empty journal in Hansen2019
-Warning--empty journal in Marenich2012
 Warning--empty publisher in Rumelhart1986
-Warning--empty institution in Grimme
+Warning--empty journal in Grimme
 Warning--empty year in Grimme
 Warning--empty journal in Cho2021
-You've used 133 entries,
+You've used 134 entries,
             1791 wiz_defined-function locations,
-            1301 strings with 30765 characters,
-and the built_in function-call counts, 31406 in all, are:
-= -- 2685
-> -- 1688
+            1316 strings with 31116 characters,
+and the built_in function-call counts, 32316 in all, are:
+= -- 2794
+> -- 1708
 < -- 0
-+ -- 613
-- -- 480
-* -- 2483
-:= -- 5235
-add.period$ -- 394
-call.type$ -- 133
++ -- 620
+- -- 486
+* -- 2591
+:= -- 5357
+add.period$ -- 396
+call.type$ -- 134
 change.case$ -- 132
 chr.to.int$ -- 0
-cite$ -- 144
-duplicate$ -- 1172
-empty$ -- 2904
-format.name$ -- 480
-if$ -- 6663
+cite$ -- 138
+duplicate$ -- 1189
+empty$ -- 2994
+format.name$ -- 486
+if$ -- 6863
 int.to.chr$ -- 0
-int.to.str$ -- 133
-missing$ -- 132
-newline$ -- 663
-num.names$ -- 132
-pop$ -- 210
+int.to.str$ -- 134
+missing$ -- 134
+newline$ -- 667
+num.names$ -- 133
+pop$ -- 187
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 434
+skip$ -- 439
 stack$ -- 0
-substring$ -- 2479
-swap$ -- 124
+substring$ -- 2678
+swap$ -- 132
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 11
-while$ -- 313
-width$ -- 136
-write$ -- 1432
-(There were 11 warnings)
+warning$ -- 4
+while$ -- 328
+width$ -- 137
+write$ -- 1454
+(There were 4 warnings)
