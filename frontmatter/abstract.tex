@@ -1,6 +1,6 @@
 %
 % File: abstract.tex
-% Author: V?ctor Bre?a-Medina
+% Author: Oliver Feighan
 % Description: Contains the text for thesis abstract
 %
 % UoB guidelines:
@@ -13,6 +13,34 @@
 
 \chapter*{Abstract}
 \begin{SingleSpace}
-\initial{H}ere goes the abstract
+\initial{T}he challenge with modelling the excited states of light harvesting complexes
+lies in scaling accurate approaches for large system sizes. Many common approaches 
+to excited states are not viable on this scale, creating the need for more efficient
+methods. These methods come with compromises either in accuracy, extendability or simplicity.
+In spite of this these models have found great success in being able to predict 
+and explain the nuanced mechanisms of light harvesting complexes. 
+
+This work explores alternatives to these existing methods in order to overcome some
+of the compromises. The design of these new methods required an understanding the
+key components of a useful methods, which was achieved by comparison to high-level
+data and other existing methods. The outcome of this is a set of novel response 
+method approximations and workflow for reparameterisating Grimme's GFN-xTB methods.
+These were applied to create a specific method, referred to as chl-xTB, parameterized
+for the $Qy$ transition in LH2 BChla molecules.
+
+The accuracy of chl-xTB transition properties for monomer, dimer and oligomer chlorophyll
+systems is established with benchmarking and comparison to existing literature,
+using a Frenkel-Davydov exciton framework for systems beyond chlorophyll monomers.
+chl-xTB is found to perform very well in these cases, giving confidence that it 
+can be reliably used to predict light harvesting complexes properties.
+
+This is showcased by calculating novel properties of the LH2 complex, such as spectral
+densities and rate of transition between charge-separated and vertical-transition
+excited states. These properties further explore the role of the LH2 protein scaffold
+and its manipulation of the exciton system. Both this and discussion of further
+applications of both the novel efficient response framework and the specific chl-xTB
+method demonstrate a possible solution to the issues of efficiently modelling light 
+harvesting complexes.
+
 \end{SingleSpace}
 \clearpage
