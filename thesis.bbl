@@ -1,10 +1,15 @@
 \begin{thebibliography}{100}
 
+\bibitem{Strain1963}
+H.~Strain, M.~Thomas, and J.~Katz.
+\newblock {Spectral Absorption Properties of Ordinary and Fully Deuteriated
+  Chlorophylls a and b}.
+\newblock {\em Biochem. Biophys. Acta.}, 75:306--311, 1963.
+
 \bibitem{Mallus2018}
 Maria Mallus, Yashoj Shakya, Jigneshkumar Dahyabhai, and Ulrich Kleinekathofer.
 \newblock {Environmental effects on the dynamics in the light-harvesting
-  complexes LH2 and LH3 based on molecular simulations | Elsevier Enhanced
-  Reader}, 2018.
+  complexes LH2 and LH3 based on molecular simulations}, 2018.
 
 \bibitem{Blankenship2010}
 Robert~E Blankenship.
@@ -753,6 +758,12 @@ Tom Ziegler, Arvi Rank, and Evert~J Baerends.
   Method}.
 \newblock {\em Acta}, 43:261--271, 1977.
 
+\bibitem{Lowdin1950}
+Per‐Olov L{\"{o}}wdin.
+\newblock {On the Non-Orthogonality Problem Connected with the Use of Atomic
+  Wave Functions in the Theory of Molecules and Crystals}.
+\newblock {\em J. Chem. Phys}, 18:365, 1950.
+
 \bibitem{Adamo1999}
 Carlo Adamo and Vincenzo Barone.
 \newblock {Towards reliable density functional methods without adjustable
@@ -771,7 +782,7 @@ Christof H{\"{a}}ttig and Florian Weigend.
 \newblock {\em J. Chem. Phys}, 113:5154, 2000.
 
 \bibitem{Hellweg2008}
-Arnim Hellweg, Sarah A~Gru¨n Gru¨n, and Christof~Ha¨ttig Ha¨ttig.
+Arnim Hellweg, Sarah~A. Gr{\"{u}}n, and Christof H{\"{a}}ttig.
 \newblock {Benchmarking the performance of spin-component scaled CC2 in ground
   and electronically excited states}.
 \newblock {\em Phys. Chem. Chem. Phys}, 10:4119--4127, 2008.
@@ -785,11 +796,29 @@ Stefan Grimme and Christoph Bannwarth.
 \bibitem{libmsym}
 mcodev31/libmsym: molecular point group symmetry lib.
 
-\bibitem{Cho2021}
-Yeongsu Cho, Sylvia~J Bintrim, and Timothy~C Berkelbach.
-\newblock {A simplified GW/BSE approach for charged and neutral excitation
-  energies of large molecules and nanomaterials}.
-\newblock 2021.
+\bibitem{Hirata1999}
+So~Hirata and Martin Head-Gordon.
+\newblock {Time-dependent density functional theory within the Tamm-Dancoff
+  approximation}.
+\newblock {\em Chem. Phys. Lett.}, 314(3-4):291--299, dec 1999.
+
+\bibitem{Yoshimine1992}
+M~Yoshimine, A~D Mclean, B~Liu, and G~S Hammond.
+\newblock {Toward a Systematic Molecular Orbital Theory for Excited States}.
+\newblock {\em J. Am. Chem. Soc}, 96(20):334, 1992.
+
+\bibitem{BelenOviedo2011}
+M.~{Bel{\'{e}}n Oviedo} and Cristian~G. S{\'{a}}nchez.
+\newblock {Transition Dipole Moments of the Q y Band in Photosynthetic
+  Pigments}.
+\newblock {\em J. Phys. Chem. A}, 115:12280--12285, 2011.
+
+\bibitem{Zucchelli2002}
+Giuseppe Zucchelli, Robert~C. Jennings, Flavio~M. Garlaschi, Gianfelice Cinque,
+  Roberto Bassi, and Oliviero Cremonesi.
+\newblock {The calculated in vitro and in vivo chlorophyll a absorption
+  bandshape}.
+\newblock {\em Biophys. J.}, 82(1):378--390, 2002.
 
 \bibitem{Kim2020}
 JunWoo Kim, Jonggu Jeon, Tai {Hyun Yoon}, and Minhaeng Cho.
@@ -797,16 +826,76 @@ JunWoo Kim, Jonggu Jeon, Tai {Hyun Yoon}, and Minhaeng Cho.
   with synchronized dual mode-locked lasers}.
 \newblock {\em Nat. Commun.}, 11:6029, 2020.
 
+\bibitem{Zazubovich2001}
+V~Zazubovich, I~Tibe, and G~J Small.
+\newblock {Bacteriochlorophyll a Franck-Condon Factors for the S0 f S1(Qy)
+  Transition}.
+\newblock {\em J. Phys. Chem. B}, 105:12410--12417, 2001.
+
+\bibitem{Saito2020}
+Keisuke Saito, Koji Mitsuhashi, and Hiroshi Ishikita.
+\newblock {Dependence of the chlorophyll wavelength on the orientation of a
+  charged group: Why does the accessory chlorophyll have a low site energy in
+  photosystem II?}
+\newblock {\em J. Photochem. Photobiol. A Chem.}, 402:112799, nov 2020.
+
+\bibitem{Fragata1988}
+M.~Fragata, B.~Norden, and T.~Kurucsev.
+\newblock {Linear Dichroism (250-700 nm) of chlorophyll a and pheophytin a
+  oriented in a lamellar phase of glycerylmonooctanoate/H2O. Characterization
+  of electronic transitions}.
+\newblock {\em Photochem. Photobiol.}, 47(1):133--143, 1988.
+
+\bibitem{Himmelblau1972}
+David~M. Himmelblau.
+\newblock {\em {Applied nonlinear programming}}.
+\newblock MgGraw-Hill, New York, 1972.
+
+\bibitem{Cho2021}
+Yeongsu Cho, Sylvia~J Bintrim, and Timothy~C Berkelbach.
+\newblock {A simplified GW/BSE approach for charged and neutral excitation
+  energies of large molecules and nanomaterials}.
+\newblock 2021.
+
 \bibitem{Zhang2012}
 Lu~Zhang, Daniel-Adriano Silva, Yijing Yan, and Xuhui Huang.
 \newblock {Force Field Development for Cofactors in the Photosystem II}.
 \newblock {\em J. Comput. Chem.}, 33:1969--1980, 2012.
 
-\bibitem{Strain1963}
-H.~Strain, M.~Thomas, and J.~Katz.
-\newblock {Spectral Absorption Properties of Ordinary and Fully Deuteriated
-  Chlorophylls a and b}.
-\newblock {\em Biochem. Biophys. Acta.}, 75:306--311, 1963.
+\bibitem{Beddard1976}
+G.~S. Beddard and G.~Porter.
+\newblock {Concentration quenching in chlorophyll}.
+\newblock {\em Nature}, 260:367, 1976.
+
+\bibitem{Koolhaas1997}
+M.~H.~C. Koolhaas, G.~{Van Der Zwan}, R.~N. Frese, and R.~{Van Grondelle}.
+\newblock {Red Shift of the Zero Crossing in the CD Spectra of the LH2 Antenna
+  Complex of Rhodopseudomonas acidophila: A Structure-Based Study}.
+\newblock {\em J. Phys. Chem. B}, 101:7262--7270, 1997.
+
+\bibitem{Jimenez1996}
+Ralph Jimenez, Srivatsan~N Dikshit, Stephen~E Bradforth, and Graham~R Fleming.
+\newblock {Electronic Excitation Transfer in the LH2 Complex of Rhodobacter
+  sphaeroides}.
+\newblock {\em J. Phys. Chem}, 100:6825--6834, 1996.
+
+\bibitem{Chachisvilis1997}
+Mirianas Chachisvilis, Oliver Ku, T{\~{o}}nu Pullerits, and Villy Sundstro.
+\newblock {Excitons in Photosynthetic Purple Bacteria: Wavelike Motion or
+  Incoherent Hopping?}
+\newblock {\em J. Phys. Chem. B}, 101:7275--7283, 1997.
+
+\bibitem{Scholes2000}
+Gregory~D Scholes and Graham~R Fleming.
+\newblock {On the Mechanism of Light Harvesting in Photosynthetic Purple
+  Bacteria: B800 to B850 Energy Transfer}.
+\newblock {\em J. Phys. Chem. B}, 104:1854--1868, 2000.
+
+\bibitem{Krueger1998}
+Brent~P Krueger, Gregory~D Scholes, and Graham~R Fleming.
+\newblock {Calculation of Couplings and Energy-Transfer Pathways between the
+  Pigments of LH2 by the ab Initio Transition Density Cube Method}.
+\newblock {\em J. Ph}, 102:5378--5386, 1998.
 
 \bibitem{Polli2006}
 Dario Polli, Giulio Cerullo, Guglielmo Lanzani, Sandro {De Silvestri}, Hideki

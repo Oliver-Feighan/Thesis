@@ -9,19 +9,20 @@
 
 \subsubsection*{Previous Published Work}
 Parts of the work presented in this chapter are also included in a paper published 
-with Dr Susannah Bourne-Worster in tbd. These are reported in section \ref{sec:concentration_quenching}.
+with Dr Susannah Bourne-Worster. These are reported in section \ref{sec:concentration_quenching}.
 
-\initial {T}his chapter investigates whether chl-xTB is still accurate for oligomer 
-chlorophyll systems, beyond the monomers reported in the previous chapter. While
-monomer transition properties have been shown to be well predicted by chl-xTB, it
-is still necessary to show how this would perform in exciton frameworks that are
-used for LHCs.
 
-The work here is in two parts. First is the work done on benchmarking a dimer exciton
-framework. Chlorophyll dimer systems were chosen as a test as opposed to the larger
-systems found in LHCs as their small size makes high-level methods tenable. Hence
-while this comparison may not be as relevant as a system closer to LHCs it would
-allow for more detailed comparisons. 
+\initial {T}his chapter investigates whether chl-xTB is still an accurate method 
+for oligomer chlorophyll system excited states, beyond the monomers reported in 
+the previous chapter. While monomer transition properties have been shown to be 
+well predicted by chl-xTB, it is still necessary to show how this would perform
+in exciton frameworks that are used for LHCs.
+
+The work here is in two parts. First is the benchmarking the exciton framework on
+dimer systems. Chlorophyll dimer systems were chosen as a test as opposed to the
+larger systems found in LHCs as their smaller size makes high-level methods tenable.
+Hence while this comparison may not be as relevant as a system closer to LHCs it 
+would allow for more detailed comparisons. 
 
 The second part applies the dimer exciton system to predict the rate of transition 
 to a charge separation state in chlorophyll dimers, and important mechanism in the
@@ -41,7 +42,7 @@ and conformer space used to construct the training data).
 
 Applications to larger LHCs would be trivial after establishing that the dimer exciton
 system would work. This would just be a matter of using a system with more basis
-sites, for example the 27 chlorophyll sites in LH2. This exciton system is analysed
+sites, for example the 27 chlorophyll sites in LH2. This exciton system is analyzed
 in the next chapter as part of a investigation into LH2 properties that can be reliably
 calculated with the chl-xTB system.
 
@@ -52,9 +53,9 @@ calculated with the chl-xTB system.
 \subsection{Exciton States}
 \label{subsec:exciton_states}
 As stated in the introduction, a large majority of models of light harvesting systems
-utilise a Frenkel Hamiltonian model of exciton states, where the weak coupling between
-monomers mean that a model can be constructed from properties of the individual
-sites.
+utilize a Frenkel-Davydov Hamiltonian model of exciton states \cite{Curutchet2016, Cignoni2022}, 
+where the weak coupling between monomers mean that a model can be constructed from
+properties of the individual sites.
 
 To recap the exciton theory from chapter \ref{chap:background_theory}, the exciton 
 states $\ket{\Psi}$ can be constructed as a Hartree product of the states of individual 
@@ -64,7 +65,7 @@ sites (the monomers or chromophores in LHCs)
     \ket{\Psi} = \Pi_m \ket{\phi_m}
 \end{equation}
 %
-where $\ket{\phi_m}$ is the monomer state on sites $m$. These monomer states form
+where $\ket{\phi_m}$ is the monomer state on site $m$. These monomer states form
 the basis function of the overall excitonic states. As the exciton is modelled to
 be localised to a specific site, an exciton state with an exciton at site $i$ is
 given by
@@ -160,16 +161,16 @@ calculated for the full dimer systems, and compared with energies from the excit
 model. The exciton model was constructed from monomer TD-DFT calculations on the
 two chlorophylls in each dimer. The transition energies for the exciton model were
 calculated as the difference between the excited and ground states. The scatter
-plot of these transition energies are shown in figure \ref{fig:camb3lyp_excitons}. 
+plot of these transition energies is shown in figure \ref{fig:camb3lyp_excitons}. 
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_2/DimerModel/CAMB3LYP_exciton_v_tddft_coupling_and_distance.png}
-    \label{fig:camb3lyp_excitons}
     \caption{The correlation of lowest excitations in LH2 chlorophyll dimer systems
     predicted by the exciton model constructed from monomer TD-DFT and TD-DFT of
     the full dimer system. Scatter points are coloured by the coupling value between
     exciton states (left) and distance between magnesium centres (right).}
+    \label{fig:camb3lyp_excitons}
 \end{figure}
 
 A clear relationship can be seen between the full dimer calculations and the exciton
@@ -217,31 +218,31 @@ and $Q_x$ axes this separation was around 15 $\AA{}$ to be able to fit a full ro
 The initial system and the axes of rotation can be seen in figure \ref{fig:dimer_system}.
 
 In order to make assignment of exciton states easier, the geometries of the two 
-trunctated chlorophyll monomers were altered such that there would be a distinct 
-gap in their transition energies. This gap was not wider that the variation in 
+truncated chlorophyll monomers were altered such that there would be a distinct 
+gap in their transition energies. This gap was not wider than the variation in 
 transition energies found in LH2 monomers. More detail on assigning transition 
 energies to the correct excited state is discussed below.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/dimer_system.png}
-    \label{fig:dimer_system}
     \caption{Diagram of the artificial dimer system, showing the axes of rotations
     in green and the chosen sites for calculating distance between functional groups
     in orange.}
+    \label{fig:dimer_system}
 \end{figure}
 
 Comparisons of the excited state energy can be seen in figures \ref{fig:camb3lyp_Qz_rotation},
 \ref{fig:camb3lyp_Qx_rotation}, \ref{fig:camb3lyp_Qy_rotation}. The same trends 
 in the profile of excited state energies can be seen both the full dimer system 
 and exciton models. The minima and maxima are found at the same positions in both, 
-and the qualitative trends in curvature are also the similar. The only major discrepancy
+and the qualitative trends in curvature are also similar. The only major discrepancy
 is seen in the 150-200 $^{\circ}$ region in the $Q_x$ profile, where the exciton 
 model predicts the higher excited state at a little above the TD-DFT profile. A 
 similar effect is seen in the LH2 dimers, where the errors in transition energies 
 are almost all overestimates, and is attributed to a higher coupling value in the
 exciton model than is present in TD-DFT. This higher coupling could be due to the
-asymptotic behaviour of a bare point charge interaction. Using a short range damping
+asymptotic behavior of a bare point charge interaction. Using a short range damping
 operator might correct this, but this would be outside the scope of this work.
 It should be noted that the angle between nearest neighbour chlorophylls is either
 $\approx 0 ^{\circ}$ in the B850 rings, or $\approx 90 ^{\circ}$ for B800-B850 pairs,
@@ -254,28 +255,28 @@ values.
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qz.png}
-    \label{fig:camb3lyp_Qz_rotation}
     \caption{The dimer excited state energies predicted by full dimer TD-DFT (left)
     and the exciton model (right) for chlorophyll dimer geometries with one monomer
     rotated around the $Q_z$ axis.}
+    \label{fig:camb3lyp_Qz_rotation}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qx.png}
-    \label{fig:camb3lyp_Qx_rotation}
     \caption{The dimer excited state energies predicted by full dimer TD-DFT (left)
     and the exciton model (right) for chlorophyll dimer geometries with one monomer
     rotated around the $Q_x$ axis.}
+    \label{fig:camb3lyp_Qx_rotation}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/camb3lyp_rotation_along_Qy.png}
-    \label{fig:camb3lyp_Qy_rotation}
     \caption{The dimer excited state energies predicted by full dimer TD-DFT (left)
     and the exciton model (right) for chlorophyll dimer geometries with one monomer
     rotated around the $Q_y$ axis.}
+    \label{fig:camb3lyp_Qy_rotation}
 \end{figure}
 
 Overall it can be seen that the exciton model predicts TD-DFT excited states and
@@ -294,41 +295,40 @@ change the character of these states.
 \subsubsection{Discarding PBE0}
 \label{subsec:state_assign}
 
-While in the previous section is was possible to compare like-for-like with CAM-B3LYP
-dimer and monomer properties, it was found this was not the case for chl-xTB as 
-well as the PBE0/Def2-SVP reference method. For chl-xTB, the obvious flaw is that
-the method was parameterised for monomer chlorophyll properties and not dimers.
-Additionally it was found that dimer response properties had systematic errors, 
-which is attributed to the underlying xTB framework.
+While in the previous section is was possible to compare excited state energies
+with the same CAM-B3LYP functional for both dimer and monomer properties, it was
+found this was not the case for chl-xTB as well as the PBE0/Def2-SVP reference method.
+For chl-xTB, the obvious flaw is that the method was parameterised for monomer chlorophyll
+properties and not dimers. Additionally it was found that dimer response properties 
+had systematic errors, which is attributed to the underlying xTB framework.
 
 Ideally, the next-best comparison to replace dimer chl-xTB would have been dimer
 PBE0. However it was found that the transitions from PBE0/Def2-SVP were not well
 defined, having charge transfer character that is not present in the CAM-B3LYP
 dimer transitions. This effect can be seen in the distribution of transition energies, 
-shown in figure \ref{fig:camb3lyp_pbe0_distributions}.
+shown in figure \ref{fig:camb3lyp_pbe0_distributions}. Here the individual \Qy and 
+higher energy transitions that are well resolved by CAM-B3LYP are not well resolved
+when using PBE0. This leads these transitions to be uncorrelated to CAM-B3LYP transitions,
+as seen in figure \ref{fig:pbe0_camb3lyp_coupling}. Hence the PBE0 dimer data would 
+not make a good comparison for either the PBE0 exciton or the chl-xTB exciton models, 
+and so was discarded from benchmarking. For the remaining sections, the exciton
+model is compared to CAM-B3LYP TD-DFT.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/camb3lyp_pbe0_distributions.png}
-    \label{fig:camb3lyp_pbe0_distributions}
     \caption{Distributions of the lowest 5 transition energies of chlorophyll dimers 
     predicted by TD-DFT with the CAM-B3LYP functional (grey) and PBE0 functional (red).}
+    \label{fig:camb3lyp_pbe0_distributions}
 \end{figure}
-
-Here the individual \Qy and higher energy transitions that are well resolved by CAM-B3LYP
-are not well resolved when using PBE0. This leads these transitions to be uncorrelated 
-to CAM-B3LYP transitions, as seen in figure \ref{fig:pbe0_camb3lyp_coupling}. Hence
-the PBE0 dimer data would not make a good comparison for either the PBE0 exciton 
-or the chl-xTB exciton models, and so was discarded from benchmarking. For the remaining
-sections, the exciton model is compared to CAM-B3LYP TD-DFT.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/PBE0_tddft_v_CAMB3LYP_tddft_coupling.png}
-    \label{fig:pbe0_camb3lyp_coupling}
     \caption{Scatter of the two lowest transitions from PBE0 TD-DFT against CAM-B3LYP
     TD-DFT, coloured by the coupling value from the exciton model using PBE0 monomer 
     data.}
+    \label{fig:pbe0_camb3lyp_coupling}
 \end{figure}
 
 \afterpartskip
@@ -338,8 +338,8 @@ sections, the exciton model is compared to CAM-B3LYP TD-DFT.
 In the CAM-B3LYP comparisons, both TD-DFT and the exciton model gave excited states
 in the same energy ordering, making assignment straightforward. However it was found
 that for some dimer pairs, the exciton states constructed with PBE0 and chl-xTB
-would predict different energy ordering. For example, for an A-B  dimer system,
-one model might predict the lower energy for a state with the exciton localised 
+would predict show energy ordering. For example, for an A-B  dimer system,
+one model might predict the lower energy for a state with the exciton localized 
 on monomer A, whereas CAM-B3LYP might predict the state with the exciton on B as
 the lower energy state. It should be noted that the CAM-B3LYP exciton model and CAM-B3LYP 
 full dimer data were always consistent, and it was only when comparing to PBE0 or
@@ -347,9 +347,9 @@ chl-xTB was this effect apparent.
 
 It was therefore necessary to find the location of the excitons in both dimer and
 exciton models. For the TD-DFT dimer result, the exciton location was taken as the
-molecule where the transition charge distribution centered around. This centre
-$\mathbf{c}$ was calculated by taking the average of the charge positions $\mathbf{r}$
-weighted by the absolute transition charge value $\left\lvert q^{\text{tr}} \right\rvert$
+molecule where the transition charge distribution was centered. This centre $\mathbf{c}$
+was calculated by taking the average of the charge positions $\mathbf{r}$ weighted
+by the absolute transition charge value $\left\lvert q^{\text{tr}} \right\rvert$
 
 \begin{equation}
     \mathbf{c} = \frac{\sum_i \left\lvert q^{\text{tr}}_i \right\rvert \mathbf{r}_i}{\sum_i \left\lvert q^{\text{tr}}_i \right\rvert}
@@ -363,20 +363,20 @@ metric for the "transition centre".
 
 For the Frenkel exciton result, the location was taken as the monomer corresponding
 to the dominant character in the eigenvector solution. For example, if the diagonal
-elements of the Hamiltonian where in order of ground state, transition on A, transition
+elements of the Hamiltonian in order of ground state, transition on A, transition
 on B, and the eigenvector solution of the lower energy exciton state had the greatest
-value in it's second element, the "transition on A" character, the exciton was assigned
-as localised on monomer A.
+value in its second element, the "transition on A" character, the exciton was assigned
+as localized on monomer A.
 
 \subsubsection{Comparison}
 \label{subsec:state_assign}
 
-Figure \ref{chl_xtb_pbe0_LH2} shows the comparison of the exciton model, constructed
-with PBE0 and chl-xTB monomer data, against dimer TD-DFT data with CAM-B3LYP (i.e.
-the same domain as figure \ref{fig:camb3lyp_excitons}). Whilst the correlation is 
-not as good as was found with CAM-B3LYP monomer data, there is still a clear relationship 
-that supports the hypothesis that using the exciton model with lower level methods 
-can still reproduce qualitative responses found from higher level data.
+Figure \ref{fig:chl_xtb_pbe0_LH2} compares the exciton model, constructed with PBE0
+and chl-xTB monomer data, against dimer TD-DFT data with CAM-B3LYP (i.e. the same
+domain as figure \ref{fig:camb3lyp_excitons}). Whilst the correlation is not as good
+as was found with CAM-B3LYP monomer data, there is still a clear relationship that
+supports the hypothesis that using the exciton model with lower level methods can
+still reproduce qualitative responses found from higher level data.
 
 The systematic shift observed in both is equivalent to the shift found in monomer
 transitions in the previous chapter. The standard deviation of the errors was also
@@ -384,14 +384,15 @@ found to be similar to the values reported in the last chapter.
 The two possible leading causes of error would be the exciton model or the theory 
 used for monomer properties. From the CAM-B3LYP exciton comparison in figure \ref{fig:camb3lyp_excitons},
 it was concluded that the correlation of close proximity of monomers, related to 
-high coupling values, to overestimation of transition energy implied that the exciton
-model was the leading cause of error. This implies that where there is large separation
-and low coupling between chromophores, the exciton model would have little effect
-and so any error here would be due to the monomer model used. This explains the 
-behaviour seen in the PBE0 and chl-xTB exciton scatters - the error in the low coupling
-regions is due to the monomer theory rather than the exciton theory. When there is 
-large coupling, the error in monomer properties is compounded with error in the
-exciton model. It can be seen that for high coupling values there is either a cancellation
+high coupling values, to the overestimation of transition energy implied that the 
+exciton model was the leading cause of error. Hence it is implied that where there
+is large separation and low coupling between chromophores, the exciton model would 
+have little effect and so any error here would be due to the monomer model used. 
+The origin of error being from the monomer method then explains the behavior seen
+in the PBE0 and chl-xTB exciton scatters - the error in the low coupling regions
+is due to the monomer theory rather than the exciton theory. When there is large
+coupling, the error in monomer properties is compounded with error in the exciton
+model. It can be seen that for high coupling values there is either a cancellation
 of errors, with some points being firmly in the middle of the pack, or addition 
 of errors, giving the outliers.
 
@@ -402,7 +403,7 @@ monomer methods would give the greatest improvement. This is a similar conclusio
 to the choice of electronic theory against choice of response theory discussed in
 chapter \ref{chap:dscf}. However as the chl-xTB method behaves similarly to PBE0,
 it would be hard to justify changes other than changing the functional for the training 
-set data. The choice to do this would be almost arbitary - a PBE0 exciton model has
+set data. The choice to do this would be almost arbitrary - a PBE0 exciton model has
 been shown to work well in past investigations, and so even though there is error
 to CAM-B3LYP data it is still good enough for investigations on light harvesting 
 complexes.
@@ -410,10 +411,10 @@ complexes.
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/chl_xtb_pbe0_CAMB3LYP_tddft_coupling.png}
-    \label{fig:chl_xtb_pbe0_LH2}
     \caption{Transition energies of the exciton states calculated using PBE0 TD-DFT
     monomer data (left) and chl-xTB monomer data (right) against CAM-B3LYP full
     dimer TD-DFT transition energies, coloured by the coupling values.}
+    \label{fig:chl_xtb_pbe0_LH2}
 \end{figure}
 
 \subsubsection{chl-xTB Scans}
@@ -421,7 +422,7 @@ complexes.
 
 Similar to the CAM-B3LYP scans above, the profile of excited dimer states was a useful
 test in detailing the accuracy of chl-xTB excitons. For the same reasons as the
-LH2 dimers, this could not be benchmarked against chl-xTB or PBE0 dimer properties,
+LH2 dimers, this benchmarking could not be done against chl-xTB or PBE0 dimer properties,
 and so was compared to CAM-B3LYP again. Similar qualitative reproductions of the
 excited states were found, although interestingly with slightly better separations
 of the two excited states than before. Apart from differences in the magnitudes 
@@ -431,28 +432,28 @@ notable.
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/rotation_along_Qz.png}
-    \label{fig:chl_xtb_rot_Qz}
     \caption{Dimer excited state energies predicted by full dimer TD-DFT (left)
     and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll 
     dimer geometries with one monomer rotated around the $Q_z$ axis.}
+    \label{fig:chl_xtb_rot_Qz}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/rotation_along_Qy.png}
-    \label{fig:chl_xtb_rot_Qy}
     \caption{Dimer excited state energies predicted by full dimer TD-DFT (left)
     and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll 
     dimer geometries with one monomer rotated around the $Q_y$ axis.}
+    \label{fig:chl_xtb_rot_Qy}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_2/DimerModel/Scans/rotation_along_Qx.png}
-    \label{fig:chl_xtb_rot_Qx}
     \caption{Dimer excited state energies predicted by full dimer TD-DFT (left)
     and the exciton model (right) constructed from chl-xTB monomer data for chlorophyll 
     dimer geometries with one monomer rotated around the $Q_x$ axis.}
+    \label{fig:chl_xtb_rot_Qx}
 \end{figure}
 
 In this case where there is little random error from geometry variation, the exciton
@@ -460,27 +461,27 @@ model rather than chl-xTB properties is most likely the leading cause of error.
 This does not contradict the LH2 dimer conclusion as these setups test two different
 things. For LH2 dimers, the exciton model had to predict correct variations in transition
 properties for a set of intra-chromophore geometries, similar to the study in the 
-previous chapter. The range of inter-chromophore geometry is limited for the most,
+previous chapter. The range of inter-chromophore conformations is fairly narrow,
 especially for nearest neighbours. In contrast, in this study the intra-chromophore 
 geometry is constant, and the inter-chromophore geometry is changed. This removes
 the compound issue between chl-xTB and CAM-B3LYP monomer properties being different
 for intra-chromophore geometries, and just focuses on whether a non-varying chl-xTB
 transition can supply decent properties for a varying dimer system. One observation
 that showcased this difference was that the coupling values predicted by earlier
-version of chl-xTB were much larger than CAM-B3LYP. This was attributed to the much
-larger transition dipole magnitude that, observed in \dscf and the eigenvalue difference 
-methods of the previous chapter, and led to the inclusion of the transition density
-matrix scaling factor. Without removing the variation due to intra-chromophore geometry, 
-this effect may not have been clear.
+versions of chl-xTB were much larger than CAM-B3LYP. Observing that the transition
+dipoles were also much larger in these earlier versions of chl-xTb, an artifact 
+also observed in \dscf and the eigenvalue difference methods of the previous chapter,
+the transition density matrix scaling factor was then included. Without removing
+the variation due to intra-chromophore geometry this effect may not have been clear.
 
-As the exciton framework has been shown to breakdown at small separations, it was
+As the exciton framework has been shown to break down at small separations, it was
 postulated that there should be a good correlation between proximity of electron
 density and errors in predicting excited states. The places where the two chlorophylls
 would have a closest approach would be in the functional groups attached to the 
-porphyrin ring. The centre of functional groups which have the most amount of transition
-density are shown in fig with orange spheres. These atoms were used to calculate
-the maximum reciprocal distance between the chlorophylls, which would correspond
-to the leading terms in the exciton coupling elements.
+porphyrin ring. The centres of functional groups which have the most amount of transition
+density are shown in figure \ref{fig:dimer_system} with orange spheres. These atoms
+were used to calculate the maximum reciprocal distance between the chlorophylls, 
+which would correspond to the leading terms in the exciton coupling elements.
 
 As the energy value of the excited states is very different between CAM-B3LYP and
 chl-xTB, a better comparison would be in the error of transition energies from the
@@ -501,31 +502,31 @@ range of other functionals.
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/error_dist_along_Qz.png}
-    \label{fig:error_along_qz}
     \caption{Profiles of the sum of errors between chl-xTB exciton transition energies
     and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance
     of the functional group sites at each angle (green) for rotations along the
     $Q_z$ axis.}
+    \label{fig:error_along_qz}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/error_dist_along_Qy.png}
-    \label{fig:error_along_qy}
     \caption{Profiles of the sum of errors between chl-xTB exciton transition energies
     and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance
     of the functional group sites at each angle (green) for rotations along the
     $Q_y$ axis.}
+    \label{fig:error_along_qy}
 \end{figure}
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/DimerModel/Scans/error_dist_along_Qx.png}
-    \label{fig:error_along_qx}
     \caption{Profiles of the sum of errors between chl-xTB exciton transition energies
     and full CAM-B3LYP TD-DFT (blue), alongside the greatest reciprocal distance
     of the functional group sites at each angle (green) for rotations along the
     $Q_x$ axis.}
+    \label{fig:error_along_qx}
 \end{figure}
 
 \afterpartskip
@@ -542,7 +543,7 @@ monomer TD-DFT that could be used to construct exciton models.
 This is the case for calculating rate constants of conversion between the excited 
 state (ES) and charge separation (CS) state of a chlorophyll dimer, which is important
 for understanding the quenching mechanism of excited chlorophyll dimer states. This
-rate constant is dependent on the free energy change $\Delta A$ and reorganisation
+rate constant is dependent on the free energy change $\Delta A$ and reorganization
 energy $\lambda$ of transitioning from the ES to CS state, and is given by
 
 \begin{equation}
@@ -550,7 +551,7 @@ energy $\lambda$ of transitioning from the ES to CS state, and is given by
 \end{equation}
 %
 where $H_{AB}$ is the coupling value between the ES and CS states, $k_B$ is the 
-usual Boltzmann factor and $T$ is the temperature. $\Delta A$ and $\lambda$ are
+usual Boltzmann constant and $T$ is the temperature. $\Delta A$ and $\lambda$ are
 calculated from the minima of the ES and CS PESs. These surfaces however are 
 dependent the both the internal geometry of the dimers and the solvent system around
 it, and it is not possible to reduce this space to simple reaction coordinates to 
@@ -558,19 +559,18 @@ perform systematic scans. Instead, the PES can be reconstructed using the distri
 of energy values that it defines, calculated from a large volume of chlorophyll 
 dimer geometries.
 
-This was done for a series of chlorophyll dimers, using the difference between the
-ES and CS energies as the reaction coordinate (and the space over which the $\Delta E$
-are  distributed), as this would include all of the internal chlorophyll coordinates 
-and solvent coordinates.
-
-The PESs was taken as a quadratic function of the excitation energy $\Delta E$
+Calculating PESs was done for a series of chlorophyll dimers, using the difference
+between the ES and CS energies as the reaction coordinate (and the space over which
+the $\Delta E$ are  distributed), as this would include all of the internal chlorophyll
+coordinates and solvent coordinates. The PESs was taken as a quadratic function
+of the excitation energy $\Delta E$
 
 \begin{equation}
     V\left(\Delta E\right) = \frac{kT}{2} \left( \frac{\Delta E - \mu}{\sigma}\right)^2
 \end{equation}
 %
-where $\mu$ and $\sigma$ are the mean and standard deviation of the excitation energies,
-the Boltzmann distribution from this PES is a normal distribution
+where $\mu$ and $\sigma$ are the mean and standard deviation of the excitation energies.
+The Boltzmann distribution from this PES is a normal distribution
 
 \begin{equation}
     P\left(\Delta E\right) = \text{exp} \left(-\frac{1}{2}\left(\frac{\Delta E - \mu}{\sigma}\right)^2\right)
@@ -583,24 +583,24 @@ at a constant separation, solvated in diethyl ether. The rate was also calculate
 for a pair of chlorophylls embedded in the LH2 protein. MD simulations were used 
 to generate  the thermally distributed geometries of the dimer systems. The diethyl
 ether systems were prepared using \code{Packmol}, solvating chlorophyll dimers into 
-100 \AA{} diethyl ether boxes, with forcefield parameters taken from OpenForceField 
+100 \AA{} diethyl ether boxes, with force-field parameters taken from OpenForceField 
 version 1.3.0. For the solvent systems, an additional constraint was used to keep 
 the dimer at a constant separation in order to properly inspect the effect of chlorophyll
 distance on the charge separation rate. These constraints were set to 8, 10, 12,
-14 and 20 \AA{}. Each system was equilibriated for 10 ps at 300 K with a
+14 and 20 \AA{}. Each system was equilibrated for 10 ps at 300 K with a
 Langevin Integrator, with a production simulation of 500 ps performed afterwards. 
 Geometries were taken every 1 ps for 500 total geometries. The LH2 geometries were
-calculated using the same MD method but using the LH2 structure and forcefield developed
-by Ramos \emph{et al.}.
+calculated using the same MD method but using the LH2 structure and force-field developed
+by Ramos \emph{et al.} \cite{Mennucci2019}.
 
 Dimer excited states were calculated for all of the geometries, using the Frenkel
 exciton Hamiltonian and chl-xTB. The lowest energy exciton states were taken for 
 the distribution to reconstruct the PES. To account for environmental effects, the
 solvent and other chlorophyll(s) were included as point charges (with charge values 
-taken from the forcefields used) to polarize the chl-xTB calculations. Fitting normal
-distribution values $\mu$ and $\sigma$ was done with the \code{scipy.stats} module.
-Good fits were achieved with this method, justifying the assumption that the PESs
-follow a quadratic function.
+taken from the force-fields used) to polarize the chl-xTB calculations. Fitting normal
+distribution values for $\mu$ and $\sigma$ was done with the \code{scipy.stats} 
+module. Good fits were achieved with this method, justifying the assumption that 
+the PESs follow a quadratic function.
 
 The coupling value $H_{AB} = \braket{ES|\hat{H}|CS}$ was calculated for a set of
 dimers using Fragment Orbital DFT with a PBE/3-21++G level of theory. FODFT will
@@ -623,20 +623,21 @@ The rate constant also decreases with the distance between the chlorophyll dimer
 be seen in the $\lambda$ and $\Delta A$ values for 8 $\AA{}$, 10 $\AA{}$, 12 $\AA{}$,
 14 $\AA{}$ and 20 $\AA{}$ shown in figure \ref{fig:ct_pes_distance}. As the systems
 get more separated both $\Delta A$ and $\lambda$ get greater, exponentially reducing 
-the rate constant. This is in contrary to the previously held assumption that there 
-is a critical distance where this rate drops to zero, although the exponential dropoff 
-in rate will be sharp. Additionally, the coupling value $H_{AB}$ will also decrease 
-with distance. This is due to the dependence on overlap between the donor and acceptor 
-orbitals in the electron transfer, which exponentially decreases with distance.
+the rate constant. This is contrary to the previously held assumption that there 
+is a critical distance where this rate drops to zero \cite{Beddard1976}, although 
+the exponential drop off in rate will be sharp. Additionally, the coupling value 
+$H_{AB}$ will also decrease with distance. This decrease is due to the dependence 
+on overlap between the donor and acceptor orbitals in the electron transfer, which 
+exponentially decreases with distance.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.4]{../../Year_3/CT_figures/PES_by_step.png}
-    \label{fig:ct_pes_distance}
     \caption{Potential energy surfaces of the charge separated and vertical excitation
     states of chlorophyll dimer systems, using the difference in state energies 
     as the coordinate, for a series of separations. Free energy changes ($\Delta A$)
-    and reorganisation energies ($\lambda$) are shown for each separation.}
+    and reorganization energies ($\lambda$) are shown for each separation.}
+    \label{fig:ct_pes_distance}
 \end{figure}
 
 Comparing the constrained systems to the LH2 system reveals how the protein structure
@@ -646,22 +647,22 @@ the CS state is most competitive. This is in contrast to the "better designed" F
 complex, where the average separation of 12 $\AA{}$ would drastically reduce the
 quenching pathway. However, as can been seen in figure \ref{fig:ct_pes_lh2}, the
 free energy change is much higher for LH2 than for even the 20 $\AA{}$ case, attributed
-to the destabilisation of the CS state. Additionally, the crossing point for the
+to the destabilization of the CS state. Additionally, the crossing point for the
 electron transfer is to the right of the CS state minima, implying that any transition
-from ES to CS would quickly reverse. This illustrates how the LH2 protein actively 
-reduces the rate constant for quenching which would otherwise be more present at 
-such close separations.
+from ES to CS would quickly reverse. This biasing of PESs illustrates how the LH2
+protein actively reduces the rate constant for quenching which would otherwise be 
+more present at such close separations.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_3/CT_figures/LH2_PES.png}
-    \label{fig:ct_pes_lh2}
     \caption{Potential energy surfaces of the charge separated and vertical excitation
     states of LH2 chlorophyll dimer systems, using the same coordinate as figure
-    \ref{fig:ct_pes_distance}. The large free energy change and movement of charge
-    separation state PES minimum to the left-hand side of the vertical excitation 
+    \ref{fig:ct_pes_distance}. The large free energy change and movement of the 
+    charge separation state PES minimum to the left-hand side of the vertical excitation 
     PES imply the LH2 protein environment inhibits transfer to the charge separated
     state.}
+    \label{fig:ct_pes_lh2}
 \end{figure}
 
 \section{Conclusions}
@@ -671,10 +672,10 @@ It has been shown that a Frenkel exciton Hamiltonian constructed using chl-xTB c
 give reliable transition properties for aggregate chlorophyll systems. Whilst some
 issues were found in benchmarking against relevant PBE0 data, comparisons to CAM-B3LYP 
 were still possible and showcase the accuracy of the chl-xTB exciton method. The
-quantitative accuracy of transition energies for LH2 dimers is on the order as expected
+quantitative accuracy of transition energies for LH2 dimers is on the order expected
 from the training data. As chl-xTB and PBE0 based excitons predict CAM-B3LYP data
 with similar levels of accuracy, it is not expected that improvements to chl-xTB
-optimisation methods would have appreciable effect in this specific test. Instead
+optimization methods would have appreciable effect in this specific test. Instead
 the qualitative trends in excited state energies for artificial dimer geometries
 imply that chl-xTB excitons can be expected to predict variations due to geometry 
 changes well, and this is the main focus of this work.
@@ -684,18 +685,18 @@ predicting the rate constants of transitions between excited states in chlorophy
 dimers. This study is used to construct important arguments that explain quenching
 behavior in chlorophyll dimers and the effect of the LH2 protein scaffold. This work
 shows how the chl-xTB exciton method can be used for light harvesting studies that 
-may not be possible with other response methods. Similar to the arguments in the 
-section \ref{sec:chl_conclusions}, it is the ability to bootstrap high level data 
-that is the main benefit of this kind of method.
+may not be possible with other response methods. Similar to the arguments in section
+\ref{sec:chl_conclusions}, it is the ability to bootstrap high level data that is
+the main benefit of this kind of method.
 
 Some of the errors in the chl-xTB exciton model may be improved by using other interaction
 methods beyond the point charge interaction. This could be done using MNOK operators
 similar to the work done in the previous chapter, although with different parameters.
 
 It can be seen how chl-xTB design choices have created a method that can be readily 
-applied to light harvest systems. For this work, chl-xTB had to be shown to be able
-to predict transition properties for a range of LH2 dimer conformations, but no 
-explicit consideration is given to other systems. The qualitative trends found in
-the dimer geometry scans imply that this method would work for other light harvesting
+applied to light harvesting systems. For this work, chl-xTB had to be shown to be 
+able to predict transition properties for a range of LH2 dimer conformations, but 
+no explicit consideration is given to other systems. The qualitative trends found 
+in the dimer geometry scans imply that this method would work for other light harvesting
 complexes. However one outcome of this study could be that the training data range
 would need to be extended, similar to the conclusion of the previous chapter. 
