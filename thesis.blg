@@ -3,49 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: /Users/of15641/Documents/library.bib
-Warning--empty publisher in Rumelhart1986
-Warning--empty journal in Grimme
-Warning--empty year in Grimme
-Warning--empty journal in Cho2021
 You've used 149 entries,
             1791 wiz_defined-function locations,
-            1411 strings with 33942 characters,
-and the built_in function-call counts, 35963 in all, are:
-= -- 3131
-> -- 1868
-< -- 0
-+ -- 679
-- -- 530
-* -- 2875
-:= -- 5945
-add.period$ -- 441
+            1418 strings with 34048 characters,
+and the built_in function-call counts, 36431 in all, are:
+= -- 3193
+> -- 1877
+< -- 1
++ -- 682
+- -- 533
+* -- 2916
+:= -- 6010
+add.period$ -- 444
 call.type$ -- 149
-change.case$ -- 146
+change.case$ -- 147
 chr.to.int$ -- 0
-cite$ -- 153
-duplicate$ -- 1325
-empty$ -- 3344
-format.name$ -- 530
-if$ -- 7647
+cite$ -- 149
+duplicate$ -- 1339
+empty$ -- 3384
+format.name$ -- 533
+if$ -- 7759
 int.to.chr$ -- 0
 int.to.str$ -- 149
-missing$ -- 150
-newline$ -- 742
-num.names$ -- 148
-pop$ -- 207
+missing$ -- 149
+newline$ -- 744
+num.names$ -- 149
+pop$ -- 197
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 487
+skip$ -- 494
 stack$ -- 0
-substring$ -- 3027
-swap$ -- 147
-text.length$ -- 0
+substring$ -- 3115
+swap$ -- 158
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 367
+warning$ -- 0
+while$ -- 375
 width$ -- 152
-write$ -- 1619
-(There were 4 warnings)
+write$ -- 1631

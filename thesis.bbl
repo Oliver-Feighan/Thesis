@@ -336,8 +336,9 @@ Shampa Raghunathan and U.~Deva Priyakumar.
 
 \bibitem{Rumelhart1986}
 David~E. Rumelhart, Geoffrey~E. Hinton, and Ronald~J. Williams.
-\newblock {\em {Learning internal representations by error propagation}}.
-\newblock 1986.
+\newblock {Learning internal representations by error propagation}.
+\newblock In {\em Parallel Distrib. Process. Explor. Microstruct. Cogn.
+  Found.}, pages 318--362. MIT Press, 1986.
 
 \bibitem{Farahvash2020}
 Ardavan Farahvash, Chee-Kong Lee, Qiming Sun, Liang Shi, and Adam~P Willard.
@@ -787,14 +788,9 @@ Arnim Hellweg, Sarah~A. Gr{\"{u}}n, and Christof H{\"{a}}ttig.
   and electronically excited states}.
 \newblock {\em Phys. Chem. Chem. Phys}, 10:4119--4127, 2008.
 
-\bibitem{Grimme}
-Stefan Grimme and Christoph Bannwarth.
-\newblock {Supporting information for: Ultra-fast computation of electronic
-  spectra for large systems by tight-binding based simplified Tamm-Dancoff
-  approximation (sTDA-xTB)}.
-
 \bibitem{libmsym}
-mcodev31/libmsym: molecular point group symmetry lib.
+Marcus Johansson.
+\newblock libmsym: molecular point group symmetry library, 2018.
 
 \bibitem{Hirata1999}
 So~Hirata and Martin Head-Gordon.
@@ -855,7 +851,7 @@ David~M. Himmelblau.
 Yeongsu Cho, Sylvia~J Bintrim, and Timothy~C Berkelbach.
 \newblock {A simplified GW/BSE approach for charged and neutral excitation
   energies of large molecules and nanomaterials}.
-\newblock 2021.
+\newblock {\em J. Chem. Theory Comput.}, 18(6):3438--3446, 2022.
 
 \bibitem{Zhang2012}
 Lu~Zhang, Daniel-Adriano Silva, Yijing Yan, and Xuhui Huang.
@@ -896,6 +892,11 @@ Brent~P Krueger, Gregory~D Scholes, and Graham~R Fleming.
 \newblock {Calculation of Couplings and Energy-Transfer Pathways between the
   Pigments of LH2 by the ab Initio Transition Density Cube Method}.
 \newblock {\em J. Ph}, 102:5378--5386, 1998.
+
+\bibitem{Zuehlsdorff2022}
+Tim~J. Zuehlsdorff, Hanbo Hong, Liang Shi, and Christine~M. Isborn.
+\newblock {Influence of Electronic Polarization on the Spectral Density}.
+\newblock {\em J. Phys. Chem. B.}, 124:531--543, 2020.
 
 \bibitem{Polli2006}
 Dario Polli, Giulio Cerullo, Guglielmo Lanzani, Sandro {De Silvestri}, Hideki
