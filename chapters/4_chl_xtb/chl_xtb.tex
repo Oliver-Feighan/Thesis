@@ -289,14 +289,14 @@ giving the modified transition behavior seen in different versions of chlorophyl
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png}
+    \includegraphics[scale=0.4]{../../Year_2/chlorophyll_parameterization/cube_files/HOMO_copy.png}
     \caption{The HOMO orbital of Bchla from PBE0/Def2-SVP DFT.}
     \label{fig:HOMO}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png}
+    \includegraphics[scale=0.4]{../../Year_2/chlorophyll_parameterization/cube_files/LUMO_copy.png}
     \caption{The LUMO orbital of BChla from PBE0/Def2-SVP DFT.}
 \end{figure}
 
@@ -635,7 +635,8 @@ make both methods black-boxes that are hard to investigate further. The results
 of the optimisation is discussed in further detail in section \ref{subsec:chl_opt_results}.
 
 \begin{figure}
-    \includegraphics[scale=0.6]{nelder-mead.png}
+    \centering
+    \includegraphics[scale=0.4]{nelder-mead.png}
     \caption{An example of the search through solution space using the Nelder-Mead
     method. The scatter points are positions of the Nelder-Mead simplex vertices,
     attempting to find the coordinates of the minimum in the Himmelblau function.}
@@ -643,7 +644,8 @@ of the optimisation is discussed in further detail in section \ref{subsec:chl_op
 \end{figure}
 
 \begin{figure}
-    \includegraphics[scale=0.6]{SLSQP.png}
+    \centering
+    \includegraphics[scale=0.4]{SLSQP.png}
     \caption{A similar example of the search through solution space, but using the
     SQSLP method. The scatter points are positions of the iterative solution vector
     $\mathbf{x}$, again attempting to find the coordinates of the minimum in the 
@@ -675,19 +677,21 @@ choosing this functional.
     \hline
                         & $\text{RMSE}\left(\Delta E\right)$ & $R^2\left(\Delta E\right)$ & $\text{RMSE}\left(\lvert \mu \rvert\right)$ & $R^2\left(\lvert \mu \rvert\right)$ \\
     \hline
-    CAM-B3LYP           & 0.147 & 0.795 & 0.172 & 0.919 \\
-    $\omega$-B97XD      & 0.200 & 0.650 & 0.214 & 0.876 \\
-    BLYP                & 0.053 & 0.871 & 0.384 & 0.129 \\
-    \dscf               & 0.225 & 0.847 & 1.455 & 0.566 \\
-    $\Delta \epsilon$   & 0.218 & 0.875 & 1.511 & 0.500 \\
-    ZINDO               & 0.596 & 0.339 & 1.526 & 0.396 \\
+    PBE0                & 0.147 & 0.795 & 0.172 & 0.919 \\ 
+    $\omega$-B97XD      & 0.053 & 0.972 & 0.043 & 0.993 \\
+    BLYP                & 0.098 & 0.554 & 0.543 & 0.080 \\
+    \dscf               & 0.079 & 0.764 & 1.283 & 0.646 \\
+    $\Delta \epsilon$   & 0.363 & 0.790 & 1.341 & 0.610 \\
+    ZINDO               & 0.449 & 0.735 & 1.354 & 0.623 \\
+    sTDA-xTB            & 0.517 & 0.258 &   -   &   -   \\
     \hline
     \end{tabular}
-    \label{table:ref_data}
     \caption{Summary of the errors and correlations of transition properties for 
-    \Qy for a set of LH2 Bchla geometries from a range of established respond methods.
-    The errors were calculated against PBE0/Def2-SVP TD-DFT data, for transition
-    energies ($\Delta E$) and transition dipole moments ($\left\lvert\mathbf{\mu} \right\rvert$).}
+    \Qy for a set of LH2 BChla geometries from a range of established respond methods.
+    The errors were calculated against CAM-B3LYP/Def2-SVP TD-DFT data, for transition
+    energies ($\Delta E$) and transition dipole moments ($\left\lvert\mathbf{\mu} \right\rvert$).
+    sTDA-xTB transition dipoles were unavailable for comparison.}
+    \label{table:ref_data}
 \end{table}
 
 Transition properties were calculated with a range of methods, covering different
@@ -698,54 +702,60 @@ about accuracy expectations.
 
 The errors and correlations of the reference data are shown in table \ref{table:ref_data}.
 The methods included in the benchmarking were \dscf, TD-DFT and eigenvalue difference
-all using the PBE0 functional and Def2-SVP basis set. Also included are CAM-B3LYP
-and BLYP functionals with Def2-SVP basis sets, as a higher and lower level reference
-respectively. The basis set was not changed as it has been found that the basis
-set has less importance on the accuracy than the functional \cite{Stross2016}.
+all using the PBE0 functional and Def2-SVP basis set. Also included are $\omega$-B97XD
+and BLYP functionals with Def2-SVP basis sets, as a higher and lower level TD-DFT
+reference respectively. The basis set was not changed as it has been found that 
+the basis set has less importance on the accuracy than the functional \cite{Stross2016}. 
+Also included are ZINDO and sTDA-xTB to represent other efficient response methods.
 
 There are large variations in correlation and RMSE values for the reference methods
-compared to PBE0. This variation sets a reasonable expectation of how well a new 
-method might perform. The BLYP functional performs best with an RMSE of 0.053 eV,
-and is the most correlated (of the TD-DFT methods) with an $R^2$ value of 0.871.
-Second best is CAM-B3LYP, with an RMSE of 0.147 eV. $\omega$-B97XD performs relatively
-well, with an RMSE value of 0.200 eV, but has the lowest $R^2$ value of 0.650. This 
-illustrates how a low RMSE and high correlation are not mutually inclusive, and
-so must both be present in the objective function. 
+compared to CAM-B3LYP. This variation sets a reasonable expectation of how well
+a new method might perform. The $\omega$-B97XD functional performs best with an 
+RMSE of 0.053 eV, and is the most correlated (of the TD-DFT methods) with an $R^2$
+value of 0.972. The other TD-DFT methods have similar accuracies ranging from 0.079
+eV to 0.147 eV. Good accuracy is not followed by high correlation (see PBE0 with 
+the highest RMSE but highest $R^2$ past $\omega$-B97XD), which illustrates how a
+low RMSE and high correlation are not mutually inclusive and so must both be present
+in the objective function. 
+
 The variance in these different TD-DFT methods, all of which have been used in studies
 on chlorophyll, show how it is difficult to assign a true value to transition energy
 for a set of geometries. Therefore as long as the accuracy of chl-xTB is within 
 the range of methods shown here, it would also be valid.
 
 The single transition methods also perform well, corroborating the earlier statement
-that only treating a HOMO-LUMO transition can give accurate results. The \dscf and
-eigenvalue difference methods have slightly higher RMSE values, both around 0.22 eV.
-However the correlation is much higher at of 0.847 and 0.875 respectively. Hence,
+that only treating a HOMO-LUMO transition can give accurate results. \dscf performs
+as well as any of the TD-DFT methods with an RMSE and $R^2$ values of 0.079 eV and
+0.764 respectively. Whilst the eigenvalue difference method has a higher RMSE at
+0.363 eV its correlation of 0.79 is still similar to the TD-DFT methods. Hence,
 due to the dominance of HOMO-LUMO transition character, treating the transition
 as mixed is not necessary in order to achieve accuracy for transition energies. 
 The story for transition dipoles, however, is different.
 
 The agreement of transition dipole magnitudes is much lower than excitation energies.
-The RMSE of \dscf and eigenvalue difference methods is significantly higher (1.455
-a.u. and 1.511 a.u. respectively) than the TD-DFT methods (0.172 a.u., 0.214 a.u.
-and 0.384 a.u. for CAM-B3LYP, $\omega$-B97XD and BLYP respectively). The average
-magnitude of PBE0 transition dipoles is 2.751 a.u., with the average for \dscf and 
-eigenvalue difference being 4.287 a.u. and 4.342 a.u. respectively. This disparity
-is attributed to the lack of inclusion of $Q_x$ transition character. As the direction
-of the dipole of this transition is orthogonal to \Qy it may reduce the transition 
-dipole magnitude, similar to the effect seen in the outliers in the previous chapter.
+The RMSE of \dscf and eigenvalue difference methods is significantly higher (1.283
+a.u. and 1.241 a.u. respectively) than the TD-DFT methods (0.172 a.u., 0.043 a.u.
+and 0.543 a.u. for PBE0, $\omega$-B97XD and BLYP respectively). The average magnitude
+of PBE0 transition dipoles is 2.751 a.u., with the average for \dscf and eigenvalue 
+difference being 4.287 a.u. and 4.342 a.u. respectively. This disparity is attributed
+to the lack of inclusion of $Q_x$ transition character. As the direction of the dipole
+of this transition is orthogonal to \Qy it may reduce the transition dipole magnitude, 
+similar to the effect seen in the outliers in the previous chapter.
 
-Whilst there is a high degree of correlation between the higher level TD-DFT methods,
-with 0.919 and 0.876 for CAM-B3LYP and $\omega$-B97XD respectively, the other methods
+Whilst there is a high degree of correlation between the higher level TD-DFT methods
+(0.919 and 0.993 for PBE0 and $\omega$-B97XD respectively) the other methods
 have a much lower correlation to PBE0 transition dipoles. BLYP is the worst correlated,
-with a $R^2$ value of 0.129, which is fully uncorrelated. \dscf and eigenvalue difference
-show a slight correlation at around 0.5.
+with a $R^2$ value of 0.080, which is fully uncorrelated. \dscf and eigenvalue difference
+show a slight correlation at around 0.6-0.65.
 
-Also included in the benchmarking was the semi-emperical method ZINDO. This had a
-poor accuracy across the board, with RMSE and $R^2$ values of 0.596 eV and 0.339
-for transition energies, and 1.526 a.u. and 0.396 for transition dipoles. It was
-thought this might have good accuracy compared to TD-DFT and serve as a benchmark
-for how well a semi-empirical method might perform, but this turned out to not be
-the case.
+Also included in the benchmarking was the semi-empirical method ZINDO. This had a
+poor accuracy but reasonable correlation, with RMSE and $R^2$ values of 0.449 eV 
+and 0.735 for transition energies, and 1.354 a.u. and 0.623 for transition dipoles.
+sTDA-xTB also performs poorly, with the highest RMSE at 0.517 eV and with a low 
+correlation of 0.258. This supports the arguments made in \ref{subsec:stda_xtb}
+and demonstrates how this method is not suitable this study. These two methods act
+as a benchmark for how well a more efficient response method could be expected to
+perform.
 
 Overall an RMSE to transition energies and dipoles of ~0.15 eV and ~0.2 a.u. is 
 necessary to claim that transition properties can be calculated at a usable level 
@@ -771,17 +781,25 @@ below 0.15 eV, whilst keeping a large number of geometries for the testing set.
 \begin{figure}
     \centering
     \includegraphics[scale=0.8]{../../Year_2/chlorophyll_parameterization/energy_training_scatter.png}
+    \caption{Comparison of the \Qy transition energies predicted from chl-xTB against
+    PBE0/Def2-SVP values.}
     \label{fig:energy_training_scatter}
-    \caption{Comparison of the \Qy transition energies predicted from the reference
-    methods as well as chl-xTB (red) against PBE0/Def2-SVP values.}
 \end{figure}
 
 \begin{figure}
     \centering
-    \includegraphics[scale=0.8]{../../Year_2/chlorophyll_parameterization/dipole_training_scatter.png}
-    \label{fig:dipole_training_scatter}
+    \includegraphics[scale=0.8]{../../Year_2/chlorophyll_parameterization/energy_method_comparison.png}
     \caption{Comparison of the \Qy transition dipole moments predicted from the
     reference methods as well as chl-xTB (red) against PBE0/Def2-SVP values.}
+    \label{fig:dipole_training_scatter}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.8]{../../Year_2/chlorophyll_parameterization/dipole_method_comparison.png}
+    \caption{Comparison of the \Qy transition dipole moments predicted from the
+    reference methods as well as chl-xTB (red) against PBE0/Def2-SVP values.}
+    \label{fig:dipole_training_scatter}
 \end{figure}
 
 \begin{table}
