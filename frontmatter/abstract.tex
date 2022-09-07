@@ -15,31 +15,39 @@
 \begin{SingleSpace}
 \initial{T}he challenge with modelling the excited states of light harvesting complexes
 lies in scaling accurate approaches for large system sizes. Many common approaches 
-to excited states are not viable on this scale, creating the need for more efficient
-methods. These methods come with compromises either in accuracy, extendability or simplicity.
-In spite of this these models have found great success in being able to predict 
-and explain the nuanced mechanisms of light harvesting complexes. 
+to excited states are not viable on the scale of thousands of atoms, creating the 
+need for more efficient methods. These methods come with compromises either in accuracy,
+extendability or simplicity. In spite of this, some models have found great success 
+in being able to predict and explain the nuanced mechanisms of light harvesting
+complexes. 
 
-This work explores alternatives to these existing methods in order to overcome some
-of the compromises. The design of these new methods required an understanding the
-key components of a useful methods, which was achieved by comparison to high-level
-data and other existing methods. The outcome of this is a set of novel response 
-method approximations and workflow for reparameterisating Grimme's GFN-xTB methods.
-These were applied to create a specific method, referred to as chl-xTB, parameterized
-for the $Qy$ transition in LH2 BChla molecules.
+This work explores alternatives to existing methods that overcome some of the compromises.
+The design of these new methods required an understanding of the key components of 
+earlier methods, which was achieved by comparing transition energies to high-level 
+data and other existing methods. By introducing a new set of approximations to the
+standard response method framework and re-optimizing key parameters in the recently
+developed semi-empirical GFN-xTB method, a new approach is derived, referred to 
+as chl-xTB, that efficiently and accurately describes the \Qy transition in chlorophyll,
+the most important transition to model for light harvesting complexes.
 
 The accuracy of chl-xTB transition properties for monomer, dimer and oligomer chlorophyll
 systems is established with benchmarking and comparison to existing literature,
 using a Frenkel-Davydov exciton framework for systems beyond chlorophyll monomers.
 chl-xTB is found to perform very well in these cases, giving confidence that it 
-can be reliably used to predict light harvesting complexes properties.
+can be reliably used to predict light harvesting complex properties.
 
-This is showcased by calculating novel properties of the LH2 complex, such as spectral
-densities and rate of transition between charge-separated and vertical-transition
-excited states. These properties further explore the role of the LH2 protein scaffold
-and its manipulation of the exciton system. Both this and discussion of further
-applications of both the novel efficient response framework and the specific chl-xTB
-method demonstrate a possible solution to the issues of efficiently modelling light 
+The successful application of the chl-xTB method is showcased by calculating properties 
+of the LH2 complex that are prohibitively expensive using existing techniques, such 
+as spectral densities and electron transfer rates between charge-separated and vertical-transition
+excited states. These properties shed light on the role of the LH2 protein scaffold 
+and its manipulation of the exciton system. For example it is explicitly shown how
+the LH2 scaffold quells transition between vertical excitation to charge transfer 
+states in chlorophyll dimers, a key mechanism in concentration quenching. Additionally,
+the spectral densities of exciton states show how environmental coupling to off-diagonal
+elements of the exciton Hamiltonian have little effect on the overall coupling to 
+exciton states. The calculation of these novel properties and discussion of further
+applications of both the novel efficient response framework and the specific chl-xTB 
+method demonstrate a possible solution to the issues of efficiently modelling light
 harvesting complexes.
 
 \end{SingleSpace}
