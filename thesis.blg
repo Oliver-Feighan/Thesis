@@ -4,45 +4,45 @@ The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
 Database file #1: /Users/of15641/Documents/library.bib
 Warning--empty journal in Manby2019
-You've used 182 entries,
+You've used 195 entries,
             1791 wiz_defined-function locations,
-            1594 strings with 39852 characters,
-and the built_in function-call counts, 44093 in all, are:
-= -- 3857
-> -- 2269
+            1668 strings with 43083 characters,
+and the built_in function-call counts, 48022 in all, are:
+= -- 4204
+> -- 2489
 < -- 1
-+ -- 826
-- -- 644
-* -- 3499
-:= -- 7290
-add.period$ -- 543
-call.type$ -- 182
-change.case$ -- 178
++ -- 904
+- -- 709
+* -- 3869
+:= -- 7937
+add.period$ -- 584
+call.type$ -- 195
+change.case$ -- 191
 chr.to.int$ -- 0
-cite$ -- 183
-duplicate$ -- 1635
-empty$ -- 4101
-format.name$ -- 644
-if$ -- 9393
+cite$ -- 196
+duplicate$ -- 1760
+empty$ -- 4437
+format.name$ -- 709
+if$ -- 10209
 int.to.chr$ -- 0
-int.to.str$ -- 182
-missing$ -- 184
-newline$ -- 909
-num.names$ -- 182
-pop$ -- 246
+int.to.str$ -- 195
+missing$ -- 199
+newline$ -- 976
+num.names$ -- 195
+pop$ -- 247
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 601
+skip$ -- 640
 stack$ -- 0
-substring$ -- 3724
-swap$ -- 190
+substring$ -- 4141
+swap$ -- 203
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 451
-width$ -- 185
-write$ -- 1991
+while$ -- 491
+width$ -- 198
+write$ -- 2140
 (There was 1 warning)

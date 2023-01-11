@@ -5,18 +5,18 @@
 \addvspace {10pt}
 \contentsline {table}{\numberline {3.1}{\ignorespaces Means and standard deviations of the errors between SCS-CC2 reference data and response methods for the whole test set in eV. The {\fontfamily {qcr}\selectfont {xtb4stda}} entry represents the eigenvalue difference method that uses the eigenvalues output from this program.}}{49}{table.3.1}%
 \addvspace {10pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of the errors and correlations of transition properties for $Q_y$ for a set of LH2 BChla geometries from a range of established respond methods. The errors were calculated against CAM-B3LYP/Def2-SVP TD-DFT data, for transition energies ($\Delta E$) and transition dipole moments ($\left \lvert \mathbf {\mu } \right \rvert $). sTDA-xTB transition dipoles were unavailable for comparison.}}{69}{table.4.1}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Summary of the errors and correlations of transition properties for $Q_y$ for a set of LH2 BChla geometries from a range of established respond methods. The errors were calculated against CAM-B3LYP/Def2-SVP TD-DFT data, for transition energies ($\Delta E$) and transition dipole moments ($\left \lvert \mathbf {\mu } \right \rvert $).}}{69}{table.4.1}%
 \contentsline {table}{\numberline {4.2}{\ignorespaces chl-xTB parameters, optimized by the SLSQP procedure. Reference values for GFN1-xTB and sTDA-xTB are included, and served as initial guesses where available. Novel parameters all started from initial values of 1.0.}}{74}{table.4.2}%
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {table}{\numberline {B.1}{\ignorespaces Peak positions and heights for the spectral density of $Q_y$ transition at LH2 B800 sites.}}{144}{table.B.1}%
-\contentsline {table}{\numberline {B.2}{\ignorespaces Peak positions and heights for the spectral density of the $Q_y$ transition at LH2 B850a sites.}}{145}{table.B.2}%
-\contentsline {table}{\numberline {B.3}{\ignorespaces Peak positions and heights for the spectral density of $Q_y$ transitions at LH2 B850b sites.}}{147}{table.B.3}%
-\contentsline {table}{\numberline {B.4}{\ignorespaces Peak positions and heights for the spectral density of LH2 exciton transition energies.}}{148}{table.B.4}%
-\contentsline {table}{\numberline {B.5}{\ignorespaces Peak positions and heights for the spectral density of LH2 exciton couplings.}}{149}{table.B.5}%
-\contentsline {table}{\numberline {B.6}{\ignorespaces Peak positions and heights for the spectral density of LH2 Mg-Mg distances.}}{150}{table.B.6}%
-\contentsline {table}{\numberline {B.7}{\ignorespaces Peak positions and heights for the spectral density of LH2 N axes deformations.}}{151}{table.B.7}%
-\contentsline {table}{\numberline {B.8}{\ignorespaces Peak positions and heights for the spectral density of $Q_y$ transition of chlorophyll in explicit diethyl ether solvent.}}{153}{table.B.8}%
+\contentsline {table}{\numberline {B.1}{\ignorespaces Peak positions and heights for the spectral density of $Q_y$ transition at LH2 B800 sites.}}{146}{table.B.1}%
+\contentsline {table}{\numberline {B.2}{\ignorespaces Peak positions and heights for the spectral density of the $Q_y$ transition at LH2 B850a sites.}}{147}{table.B.2}%
+\contentsline {table}{\numberline {B.3}{\ignorespaces Peak positions and heights for the spectral density of $Q_y$ transitions at LH2 B850b sites.}}{149}{table.B.3}%
+\contentsline {table}{\numberline {B.4}{\ignorespaces Peak positions and heights for the spectral density of LH2 exciton transition energies.}}{150}{table.B.4}%
+\contentsline {table}{\numberline {B.5}{\ignorespaces Peak positions and heights for the spectral density of LH2 exciton couplings.}}{151}{table.B.5}%
+\contentsline {table}{\numberline {B.6}{\ignorespaces Peak positions and heights for the spectral density of LH2 Mg-Mg distances.}}{152}{table.B.6}%
+\contentsline {table}{\numberline {B.7}{\ignorespaces Peak positions and heights for the spectral density of LH2 N axes deformations.}}{153}{table.B.7}%
+\contentsline {table}{\numberline {B.8}{\ignorespaces Peak positions and heights for the spectral density of $Q_y$ transition of chlorophyll in explicit diethyl ether solvent.}}{155}{table.B.8}%

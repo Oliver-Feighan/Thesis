@@ -8,11 +8,11 @@
 \label{chap:background_theory}
 
 \initial {T}here are three main components to calculating atomic geometry dependent
-Frenkel-Davydov exciton models. First is the electronic structure theory, which 
-is often density functional theory (DFT) or density functional tight binding (DFTB).
+Frenkel-Davydov exciton models. First is the underlying electronic structure theory, 
+such as density functional theory (DFT) or density functional tight binding (DFTB).
 The electronic structure theory is the basis for calculating excited states, providing
 MO coefficients for electron integrals, orbital energies and other properties. The 
-second component is the excited state method, again often time-dependent DFT (TD-DFT)
+second component is the excited state method, again such as time-dependent DFT (TD-DFT)
 or TD-DFTB. In this work other excited state methods are discussed so these theories 
 are outlined in this chapter as well. The excited state methods provide the transition 
 properties, such as transition densities, charges or dipoles and transition energies 
@@ -29,8 +29,8 @@ in later chapters, outlines of each of these three components are given here.
 
 Density functional theory is ubiquitous in molecular chemistry simulations \cite{Maitra2016}.
 Often this theory is chosen for its good scaling with respect to system sizes as 
-well as the appreciable accuracy against higher level theories. A brief overview
-of the DFT formalism is given here.
+well as an appreciable accuracy against higher level methods. A brief overview of
+the DFT formalism is given here.
 
 At its heart DFT is based on the two Hohenberg-Kohn theorems \cite{Kohn1964}. The
 first states that the ground state energy $E_{\text{GS}}$, is proven to have a one-to-one
@@ -44,19 +44,23 @@ where $E \left[ \rho_{\text{GS}} \left(r\right)\right]$ is the functional. The s
 theorem is closely related to the variation principle, stating that the \emph{exact}
 ground state density also minimizes the total energy. This minimum corresponds to 
 only one electron density. Whilst proven in principle, the exact functional of the
-electron density is unknown and so various approximations have be made. One popular
-method is the Kohn-Sham approach, where non-interacting electrons are used to generate
-the ground state density \cite{Kohn1965}. The total energy in the Kohn-Sham approach
-is the sum of functionals
+electron density which gives this energy is unknown, and so various approximations
+have be made. One popular approximation is the Kohn-Sham approach, where electrons
+are approximated as non-interacting in order to tractably calculate the ground state
+density \cite{Kohn1965}. The total energy in the Kohn-Sham approach is the sum of 
+functionals
 
 \begin{equation}
     \functional{E}{\text{tot}}{\rho\left(r\right)} = \functional{E}{T_S}{\rho\left(r\right)} + \functional{E}{V}{\rho\left(r\right)} + \functional{E}{J}{\rho\left(r\right)} + \functional{E}{X}{\rho\left(r\right)} + \functional{E}{C}{\rho\left(r\right)},
 \end{equation}
 %
-where these terms correspond to the kinetic, (nuclear) potential, bare Coulombic,
-exchange and correlation interaction respectively. It is necessary to include the 
-exchange and correlation terms as the Coulombic approximation does not include any
-treatment of spin effects. The solution for the minimum energy would satisfy
+where the terms $\functional{E}{T_S}{\rho\left(r\right)}$, $\functional{E}{V}{\rho\left(r\right)}$,
+$\functional{E}{J}{\rho\left(r\right)}$, $\functional{E}{X}{\rho\left(r\right)}$, 
+$\functional{E}{C}{\rho\left(r\right)}$ correspond to the kinetic, (nuclear) potential, 
+bare Coulombic, exchange and correlation interaction respectively. It is necessary 
+to include the exchange and correlation terms as the Coulombic approximation does 
+not include any treatment of spin effects. The solution for the minimum energy would
+satisfy the equation
 
 \begin{equation}
     \Delta \left[  \functional{E}{\text{tot}}{\rho\left(r\right)}  - \mu \left( \int_{}^{} \rho\left(r\right) \,dr - N \right) \right] = 0
@@ -117,11 +121,11 @@ as well as hybrid functionals, which use some fraction of the Hartree-Fock energ
 \cite{Sun2011, Becke1993}. Many exchange-correlation functionals require parameterization 
 against high level data.
 
-The first DFT calculations were done on periodic systems where infinite-domain plane
-wave functions were used as a basis set. However molecular electronic structure
-packages often use basis functions centred on atomic positions (although this is 
-not always the case) \cite{Boys1950}. The one-electron wavefunctions can be written 
-as linear combinations of basis functions $\chi_j$
+The first DFT calculations were done on periodic systems with infinite-domain plane
+wave functions used as a basis set. However molecular electronic structure packages
+often use basis functions centred on atomic positions \cite{Boys1950}, although 
+this is not always the case. The one-electron wavefunctions can be written as linear
+combinations of basis functions $\chi_j$
 
 \begin{equation}
     \psi_i = \sum_\mu^n c_{\mu i} \chi_\mu \left( r\right),
@@ -175,7 +179,7 @@ necessary to understand the photochemical processes in light harvesting complexe
 In recent years there has been renewed interest in tight-binding (TB) methods, including
 tight binding methods derived from density functional theory (named density function 
 tight binding or DFTB) \cite{Porezag1994}. Interest in DFTB and similar methods 
-has grown in the last ~10 years as they are often more accurate than force-field
+has grown in the last $\sim$10 years as they are often more accurate than force-field
 methods, especially for complex metallic systems, and cheaper than DFT methods. 
 Modern applications combine semi-empirical tight-binding methods with machine-learning
 to accelerate screening of potential drug candidates \cite{Qiao2020}, materials 
@@ -188,8 +192,9 @@ fluctuations $\delta\rho$
     E\left[\rho\right] &= E^{\left(0\right)}\left[\rho_0\right] + E^{\left(1\right)}\left[\rho_0, \delta\rho\right] + E^{\left(2\right)}\left[\rho_0, \left(\delta\rho\right)^2\right] + E^{\left(3\right)}\left[\rho_0, \left(\delta\rho\right)^3\right] + \dots \\
     &= \functional{E}{}{\rho_0\left(r\right)} \\
     &+ \left. \int \frac{\delta \functional{E}{}{\rho\left(r\right)}}{\delta \rho\left(r\right)} \right\rvert_{\rho_0}  \delta \rho \left( r \right) \\
-    &+ \frac{1}{2} \left. \int\int \frac{\delta^2 \functional{E}{}{\rho\left(r\right)}}{\delta \rho\left(r\right)\delta \rho\left(r^\prime\right)} \right\rvert_{\rho_0} \delta \rho \left( r \right) \delta \rho \left( r^\prime \right) + \cdots \\
-    &+ \frac{1}{p!} \left. \int\int \cdots\int \frac{\delta^p \functional{E}{}{\rho\left(r\right)}}{\delta \rho\left(r\right)\delta \rho\left(r^\prime\right) \cdots \delta \rho\left(r^{\left(p\right)}\right)} \right\rvert_{\rho_0} \delta \rho \left( r \right) \delta \rho \left( r^\prime \right) \cdots \delta \rho\left(r^{\left(p\right)}\right) + \cdots
+    &+ \frac{1}{2} \left. \int\int \frac{\delta^2 \functional{E}{}{\rho\left(r\right)}}{\delta \rho\left(r\right)\delta \rho\left(r^\prime\right)} \right\rvert_{\rho_0} \delta \rho \left( r \right) \delta \rho \left( r^\prime \right) \\
+    &+ \frac{1}{p!} \left. \int\int \cdots\int \frac{\delta^p \functional{E}{}{\rho\left(r\right)}}{\delta \rho\left(r\right)\delta \rho\left(r^\prime\right) \cdots \delta \rho\left(r^{\left(p\right)}\right)} \right\rvert_{\rho_0} \delta \rho \left( r \right) \delta \rho \left( r^\prime \right) \cdots \delta \rho\left(r^{\left(p\right)}\right) \\
+    &+ \cdots
     \end{split}
 \end{equation}
 %
@@ -257,14 +262,14 @@ For example at large separation this function tends towards the Coulombic $\frac
 interaction. At close separations, the $\gamma$ function uses the chemical hardness 
 of atoms to dampen this interaction. For self-interaction (i.e. $\gamma_{AA}$), 
 the energy term is equivalent to the second derivative of the energy with respect
-to the atomic partial charge, equal to the Hubbard parameter or twice the chemical
-hardness 
+to the atomic partial charge, equal to the Hubbard parameter $U_{A}$ or twice the chemical
+hardness $\eta_{A}$
 
 \begin{equation}
     \begin{split}
     E^{\text{XC}}_{AA} &= \frac{1}{2} \Delta q_A^2 \gamma_{AA} \\
     &= U_{A} \\
-    &= 2 \eta_A
+    &= 2 \eta_A.
     \end{split}
 \end{equation}
 %
@@ -306,17 +311,17 @@ tabulated. For many parameters a careful approach has to be taken to avoid syste
 accuracy issues.
 
 Much work has been done on benchmarking DFTB and expanding the formalism \cite{Koskinen2009, Goldman2012, AndreaRozzi2004, Kohler2005, Niehaus2005, Han2000}. 
-Generally the accuracy of DFTB is found to be on par with DFT \cite{Lutsker2015, Gruden2017, Vuong2018},
-and higher order derivative terms can be used to achieve better results. Often it
-is found that the repulsive energy term is the trickiest to get correct, requiring 
-the most reference data for parameterisation \cite{Koskinen2009}. Additional energy 
-terms, such as non-covalent interactions and spin-polarisation effects can also 
-be included. The spin-polarisation is especially useful for excited states \cite{Melix2016}. 
+Generally the accuracy of DFTB is found to be on par with or just below DFT \cite{Lutsker2015, Gruden2017, Vuong2018},
+and higher order derivative terms can be used to achieve more accurate results. 
+Often it is found that the repulsive energy term is the trickiest to get correct, 
+requiring the most reference data for parameterisation \cite{Koskinen2009}. Additional 
+energy terms, such as non-covalent interactions and spin-polarisation effects can 
+also be included. The spin-polarisation is especially useful for excited states \cite{Melix2016}. 
 Originally DFTB was formulated in a restricted ansatz, using doubly occupied orbitals 
-instead of spin-orbitals. This restricted its application in a linear response framework 
-as the excited states could not be properly treated. However additional energy terms 
-in the Fock matrix recover the effects of using a spin-unrestricted ansatz, making 
-predictions of excited states much more accurate.
+instead of spin-orbitals. This approach restricted its application in a linear response
+framework as the excited states could not be properly treated. However additional 
+energy terms in the Fock matrix recover the effects of using a spin-unrestricted 
+ansatz, making predictions of excited states much more accurate.
 
 Tight binding methods are usually best used in investigations where the scale of 
 the  system of interest is too large for more usual methods, such as DFT or Hartree-Fock 
@@ -347,25 +352,25 @@ component uses element wise parameters for atoms up to radon (the original cutof
 of GFN1-xTB) then 86 parameters are required - if using pair-wise parameters then 
 7,396 parameters are needed. This will require more training data as the number
 of training features should be much greater than the number of parameters needed 
-to be fit. Fitting more parameters is also generally more difficult to optimize 
-for many heuristics. Other issues with these highly specific parameters is that 
-they are rarely transferable to other chemical environments and often require 
-reparameterisation for different target properties. They are often limited to the
-upper parts of the periodic table for this reason. Minimizing pair-wise parameters 
-is then beneficial in terms of training set size, performance and re-usability. 
-The number of parameters required varies systematically across the family of methods, 
-decreasing with increasingly sophisticated descriptions of the electronic structure. 
-For example GFN2 uses a quadrupole expansion for electrostatics, which, along with 
-a detailed dispersion method, makes GFN2 completely pairwise parameter free. GFN0 
-and GFN-FF on the other hand use very approximate methods and more parameters to 
-increase computational efficiency. 
+to be fit, making datasets more expensive to calculate. Fitting more parameters 
+is also generally more difficult to optimize for many heuristics. Other issues with
+these highly specific parameters is that they are rarely transferable to other chemical
+environments and often require reparameterisation for different target properties. 
+They are often limited to the upper parts of the periodic table for this reason. 
+Minimizing pair-wise parameters is then beneficial in terms of training set size, 
+performance and re-usability. The number of parameters required varies systematically 
+across the family of GFN methods, decreasing with increasingly sophisticated descriptions
+of the electronic structure. For example GFN2 uses a quadrupole expansion for electrostatics, 
+which, along with a detailed dispersion method, makes GFN2 completely pairwise parameter 
+free. GFN0 and GFN-FF on the other hand use very approximate methods and more parameters 
+to increase computational efficiency. 
 
 The energy terms for xTB methods can be characterized by the order of density fluctuations 
 they correspond to. For example, the zeroth order terms correspond to dispersion 
 (either D3 \cite{Grimme2010}, D4 \cite{Caldeweyher2020} or a modified D4 method) and
 a halogen bonding correction. First order terms are calculated with an extended 
 H\"{u}ckel theory, and second and higher order terms are calculated by isotropic
-electrostatic and exchange-correlation terms. In the equations below, these energies
+electrostatic and exchange-correlation terms. In the following equations, these energies
 are first labelled with a superscript $\left(n\right)$ to identify the density fluctuation 
 order, and a subscript to describe the interaction calculated. The second line in
 each equation gives the corresponding label found in the GFN-xTB publications. The
@@ -420,7 +425,7 @@ in GFN2- and GFN0-xTB but is discarded for GFN1-xTB.
 Due to the lack of element pair-wise parameters (except for a few special cases 
 in the global scaling constants), each interaction term is readily separable and
 so can either be considered or discarded for future parameterization work. For example, 
-the $\Pi$, $Y$ and $X$ term deal with interactions that are more strongly influenced
+the $\Pi$, $Y$ and $X$ terms deal with interactions that are more strongly influenced
 by atomic environments rather than particular chemistry between atoms. Hence, for 
 excited state theories they would not really have to be changed. This is corroborated 
 by their absence in the Hamiltonian for the simplified Tamm-Dancoff (sTDA) xTB \cite{Grimme2016} 
@@ -543,7 +548,7 @@ where $f^{\left(n\right)}_{\text{damping}} \left(R_{AB}, R_{AC}, R_{BC}\right)$ 
 a special damping function for the three-body term. It can be seen that again GFN2-xTB 
 includes higher order terms to achieve greater accuracy against the test data.
 
-Present also in GFN1- and GFN0-, but not GFN2-xTB, are correctional terms that are
+Also present in GFN1- and GFN0-, but not GFN2-xTB, are correctional terms that are
 independent with respect to the electron density. For GFN1-xTB this is the halogen
 bonding energy term, which for a system of halogen bond acceptor $A$, donor $B$ and
 halogen $X$ is given by
@@ -631,7 +636,7 @@ with a mean absolute deviation of just over 1 kcal/mol, comparable to low level
 DFT methods and greatly outperforming other semi-empirical quantum methods. These
 successes against the target data shows that using partial charge interactions to
 replace full integrals and global/element-wise parameters to scale interactions 
-works well in designing efficient but accurate methods.
+works well in designing efficient and accurate methods.
 
 \section{Excited State Methods}
 \label{sec:response_theories}
@@ -671,9 +676,9 @@ the Hamiltonian as
 %
 where $\hat{H^0}$ is the unperturbed Hamiltonian, $v^{\text{ext}}\left(t\right)$ 
 is the potential from the external field, which is usually taken to be an oscillating 
-electric field and so is time $t$ dependent. This Hamiltonian can then be used to 
-describe a time-dependent set of Kohn-Sham equations \cite{Kohn1964}. The time-dependent
-Kohn-Sham Hamiltonian is given by
+electric field (such as that created by a photon) and so is time $t$ dependent. 
+This Hamiltonian can then be used to describe a time-dependent set of Kohn-Sham 
+equations \cite{Kohn1964}. The time-dependent Kohn-Sham Hamiltonian is given by
 
 \begin{equation}
 \hat{H}_{KS}\left[\rho\left(t\right)\right] = \hat{H}^0_{KS}\left[\rho\right] + v_H\left[\rho\left(t\right)\right] + v_{\text{XC}}\left[\rho\left(t\right)\right] + v_{\text{ext}}\left(t\right)
@@ -695,8 +700,9 @@ with what is referred to as the response function $\chi$
     \delta \rho \left(r, \omega \right) = \int d^3 r^\prime \chi \left(r, r^\prime, \omega \right) \delta v_{\text{ext}} \left(r^\prime, \omega \right),
 \end{equation}
 %
-which, when calculated from the Fourier transform of the time series (i.e. in the
-frequency space) can be written explicitly for a Kohn-Sham system of electrons as
+which, when calculated from the Fourier transform of the time series (i.e. calculated 
+in the frequency space) can be written explicitly for a Kohn-Sham system of electrons 
+as
 
 \begin{equation}
     \chi_{KS} \left(r, r^\prime, \omega \right) = \sum_{\mu\nu} \left(f_\mu - f_\nu \right) \frac{\psi_\mu\left(r\right)\psi^\ast_\mu\left(r^\prime\right) \psi_\nu\left(r^\prime\right) \psi^\ast_\nu\left(r\right)}{\omega - \left(\epsilon_\mu - \epsilon_\nu\right) + i\eta}
@@ -705,12 +711,12 @@ frequency space) can be written explicitly for a Kohn-Sham system of electrons a
 where $f_\mu$ is the occupation number of the orbital $\psi_\mu$, and $\eta$ is a positive
 infinitesimal number. Again similar to ground-state DFT, this response function 
 is used in conjunction with correcting exchange-correlation terms to yield the response
-function of the real system. This would calculate the response, and therefore the 
-excited state, explicitly. However the issue with the theory given so far is that
-it does not identify which frequencies $\omega$ give any appreciable density response
-i.e. where the excited states are. Gross \emph{et al.} solved this issue by writing
-the (non-KS) response function as in a Lehmann representation, with a discretized
-set of states $m$
+function of the real system. This approach would calculate the response of the electron
+density, and therefore the  excited state, explicitly. However the issue with the
+theory given so far is that it does not identify which frequencies $\omega$ give
+any appreciable density response i.e. where the excited states are. Gross \emph{et al.}
+solved this issue by writing the (non-KS) response function as in a Lehmann representation,
+with a discretized set of states $m$
 
 \begin{equation}
     \chi\left(r, r^\prime, \omega \right) = \lim_{\eta \to 0^+} \sum_m \left[ \frac{\braket{0|\hat{n}\left(r\right)|m}\braket{m|\hat{n}\left(r^\prime\right)|0}}{\omega - \left(E_m - E_0\right) + i\eta} - \frac{\braket{0|\hat{n}\left(r^\prime\right)|m}\braket{m|\hat{n}\left(r\right)|0}}{\omega + \left(E_m - E_0\right) + i\eta} \right]
@@ -752,6 +758,7 @@ elements of matrices $\mathbf{A}$ and $\mathbf{B}$ are given by
 
 \begin{equation}
 A_{ia,jb}\left(\omega\right) = \delta_{ij}\delta_{ab}\left(\epsilon_a - \epsilon_i\right) + \int dr \int dr^\prime \psi_i^*\left(r\right) \psi_a\left(r\right) f_{\text{XC}}\left(r, r^\prime, \omega\right) \psi_i\left(r^\prime\right) \psi_a^*\left(r^\prime\right)
+\label{eq:full_A_integrals}
 \end{equation}
 %
 \begin{equation}
@@ -773,28 +780,28 @@ state properties. These could be provided by both DFT and DFTB methods.
 Using TD-DFT for LHC investigations come with some caveats. Fairly early on it was 
 found that the charge-transfer artifacts can affect low energy ($Q$ band) excitations
 \cite{Dahlbom2005}. There is also difficulty in obtaining good reference data - 
-for example coupled-cluster methods are extremely expensive for the 140 atom chlorophyll
-systems. A recent successful benchmarking of density functionals compares TD-DFT
-to DFT/MRCI - DFT/MRCI was chosen in this example as a reference method due to its
-good performance against \emph{ab initio} methods for $\pi$ conjugated systems including
-chlorophyll \cite{Marian2008, Perun2008, Etinski2011, Parusel2000}. In the TD-DFT
-benchmarking, a range of different density functionals were used to calculate the
-\Qy transitions in chlorophylls from the FMO complex, and it was found that PBE0,
-CAM-B3LYP and B3LYP had RMSEs in transition energies of less than 0.05 eV against 
-DFT/MRCI \cite{List2013}. CAM-B3LYP also proved the best in reproducing the whole
-$Q$ band ($Q_x$ and \Qy). With few alternatives, TD-DFT is a common choice for calculating
-chlorophyll excited states.
+for example coupled-cluster methods are extremely expensive for chlorophyll systems
+as they contain $\sim 140$ atoms. A recent successful benchmarking of density functionals 
+compares TD-DFT to DFT/MRCI - DFT/MRCI was chosen in this example as a reference 
+method due to its good performance against \emph{ab initio} methods for $\pi$ conjugated
+systems including chlorophyll \cite{Marian2008, Perun2008, Etinski2011, Parusel2000}. 
+In the TD-DFT benchmarking, a range of different density functionals were used to
+calculate the \Qy transitions in chlorophylls from the FMO complex, and it was found
+that PBE0, CAM-B3LYP and B3LYP had RMSEs in transition energies of less than 0.05 
+eV against DFT/MRCI \cite{List2013}. CAM-B3LYP also proved the best in reproducing 
+the whole $Q$ band ($Q_x$ and \Qy). With few alternatives, TD-DFT is a common choice
+for calculating chlorophyll excited states.
 
 \subsection{Eigenvalue Difference}
 \label{subsec:eigval_diff}
-One approximation to full response theory is the eigenvalue difference method. Here
-there is assumed to be no response of the orbital energies and shapes when interacting
-with light. This approach can be recovered from the complete Cassida equation (equation 
-\ref{eq:full_cassida_eq1}) if the coupling elements (off-diagonal elements) in the
-$\mathbf{A}$ and $\mathbf{B}$ matrices are set to zero. Within this approximation,
-the transition energy is just the difference between the ground state energy of 
-the orbital an electron has been excited to ($\epsilon_{\text{2}}$) and the orbital 
-has been excited from ($\epsilon_{\text{1}}$)
+One approximation to full response theory is the eigenvalue difference method. For
+eigenvalue difference method, it is assumed there is no response of the orbital 
+energies and shapes when interacting with light. This approach can be recovered 
+from the complete Cassida equation (equation \ref{eq:full_cassida_eq1}) if the coupling
+elements (off-diagonal elements) in the $\mathbf{A}$ and $\mathbf{B}$ matrices are
+set to zero. Within this approximation, the transition energy is just the difference
+between the ground state energy of the orbital an electron has been excited to ($\epsilon_{\text{2}}$)
+and the orbital has been excited from ($\epsilon_{\text{1}}$)
 
 \begin{equation}
 \Delta E = \epsilon_{\text{2}} - \epsilon_{\text{1}}.
@@ -813,17 +820,17 @@ a system as the difference of the single point energy $E_n$ of two states:
 \Delta E = E_{2} - E_{1}.
 \end{equation}
 %
-It is usually assumed that the excited state solution will be in a similar location
-to the ground state in the MO coefficient space, so that the ground-state MO coefficients
-can be used as an initial guess for the excited state. In its simplest form, the
-\dscf method calculates the ground-state with normal DFT or other mean-field methods
-and then calculates the excited state by rerunning the same method with the excited
-state occupation numbers. The second set of MO coefficients then give a full description
+Assuming that the excited state solution will be in a similar location to the ground
+state in the MO coefficient space, the ground-state MO coefficients can be used 
+as an initial guess for the excited state. In its simplest form, the \dscf method 
+calculates the ground-state with normal DFT or other mean-field methods and then
+calculates the excited state by rerunning the same method with the excited state
+occupation numbers. The second set of MO coefficients then give a full description
 of the excited state.
 
 The issue with finding the excited state solution is that the variation principle
-and SCF iterative procedure will try to find the global minimum, which is the 
-ground state. The excited state is only a local minimum, and so often is less reliable
+and SCF iterative procedure will try to find the global minimum, which is the ground
+state. The excited state is only a local minimum, and so often is less reliable
 to find as a solution especially from the standard SAD initial guess \cite{Almlof1982} 
 (the SAD or "superposition of atomic orbitals" is a standard initial guess of the
 ground state density, calculated as a combination of electronic densities calculated
@@ -832,7 +839,7 @@ converging to the \dscf excited state will fail. Even when using the ground stat
 as an initial guess with excited state occupations, normal SCF procedure may still 
 collapse back to the ground state. Usually it is necessary to include additional 
 changes to the SCF procedure, such as Fock damping (mixing of previous iterations'
-Fock matrices with the current Fock matrix to reduce (dampen) "jumps" which may
+Fock matrices with the current Fock matrix to reduce or dampen "jumps" which may
 prevent convergence), DIIS methods (quadratic extrapolation of Fock matrices) and
 sometimes intermediate initial guess steps (i.e. using excited state populations 
 with fractional occupations before integral occupations).
@@ -955,13 +962,17 @@ involved in the transition
 \section{Excitation Energy Transfer and Frenkel-Davydov Exciton Hamiltonians}
 \label{sec:frenkel_exciton_theory}
 
-Excitation energy transfer (EET) stabilizes the absorption of a photon of light,
-and it is thought that light harvesting systems have evolved to maximize this stability \cite{Cleary2013}.
+Excitation energy transfer (EET) and subsequent rates of transfer describe the time-frame
+that energy, absorbed through a photon of light for LHCs, is shuttled between states.
+It is thought that light harvesting systems have evolved to fine these rates \cite{Cleary2013}.
 In regimes with strong coupling (ie large transfer), excitation energy can flow back
 and forth between different sites. The Frenkel-Davydov model \cite{Frenkel1931, Davydov1964}
 is used in the regime where the excited electron and its "hole" have a strong interaction
 and so are localized on the same chromophore - this means mainly vertical excitations
-are included instead of charge transfer states. 
+are included instead of charge transfer states (although charge transfer states
+are important mechanisms for the fluorescence quenching of chlorophyll excited states,
+as discussed in section \ref{sec:concentration_quenching}).
+
 For a dimer system with chromophores $A$ and $B$, there are two possible states 
 where one molecule is in the ground state and the other in the excited state - these 
 are labelled $\ket{A^*B}, \ket{AB^*}$ where $A^*$ denotes molecule $A$ in the excited
