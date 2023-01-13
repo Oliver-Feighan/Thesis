@@ -5,7 +5,7 @@
 % Include vibronic PES tests, and absorption spectra.
 %
 \let\textcircled=\pgftextcircled
-\chapter{Chlorophyll specific methods}
+\chapter{Bespoke Chlorophyll Excited State Methods}
 \label{chap:chl_xtb}
 
 \subsubsection*{Previous Published Work}
@@ -47,7 +47,7 @@ parameters also increase the reusability of methods, as these parameters can be 
 re-optimised.
 
 %=======
-\section{Response and electronic structure theory approximations}
+\section{Response and Electronic Structure Theory Approximations}
 \label{sec:theory}
 
 \subsection{Full TD-DFT Solutions}
@@ -101,7 +101,7 @@ $\mathbf{A}$ matrix and exchange type for the $\mathbf{B}$ matrix. The leading t
 in the $\mathbf{A}$ matrix is the orbital energy difference, which, due to the Kronecker 
 delta functions, only contributes to the diagonal elements.
 
-\subsection{Approximations to Solutions}
+\subsection{Approximations to Full TD-DFT Solutions}
 \label{subsec:chl_approxs}
 \subsubsection{Tamm-Dancoff approximation and Diagonal Dominant $\mathbf{A}$ matrices}
 \label{subsubsec:Tamm_Dancoff}
@@ -152,7 +152,7 @@ overall transitions are not mixed. If transitions are mixed, then the coupling e
 would be non-zero, and depending on the proximity in energy of single transitions,
 the coupling values could have a large effect. This is considered in section \ref{subsec:qy_transition}.
 
-\subsection{Integral approximations}
+\subsection{Integral Approximations with Monopole Expansions}
 \label{subsec:MNOK}
 
 Whilst using a diagonal dominant approximation removes a large portion of the integrals,
@@ -194,6 +194,7 @@ indices for both occupied and virtual orbitals, and $A$ and $B$ are indices for
 
 \begin{equation}
 \Gamma^J_{AB} = \left(\frac{1}{\left(R_{AB}\right)^{y_J} + \left(a_x \eta\right)^{-y_J}} \right)^{\frac{1}{y_J}}
+\label{eq:gammaJ}
 \end{equation}
 %
 where $R_{AB}$ is the interatomic distance and $\eta$ is the average of the chemical 
@@ -209,6 +210,7 @@ mixing in the short-distance limit. For exchange type, the operator is
 
 \begin{equation}
 \Gamma^K_{AB} = \left(\frac{1}{\left(R_{AB}\right)^{y_K} + \eta^{-y_K}} \right)^{\frac{1}{y_K}}
+\label{eq:gammaK}
 \end{equation}
 %
 where the $y_K$ parameter replaces the $y_J$ parameter in the Coulomb type operator.
@@ -247,7 +249,7 @@ systems then is outside the scope of this work, but could be a large area for fu
 work for similar investigations. An outline of the \Qy transition, and its applicability
 to these approximations, is given below.
 
-\subsection{\Qy Transition}
+\subsection{The \Qy Transition}
 \label{subsec:qy_transition}
 \begin{figure}
     \centering
@@ -312,7 +314,7 @@ dipole orientation to the $N_A$-$N_C$ axis has been used as a metric for the acc
 of transition dipole moments. As a singular value this is ideal for autonomous optimisation,
 both for use in an objective function as well as for discarding outlier transitions.
 
-\subsection{Changes to xTB parameters}
+\subsection{Bespoke xTB Parameters for Chlorophyll}
 \label{subsec:chl_method}
 
 As found in the last chapter, the underlying electronic structure can have a huge
@@ -805,7 +807,7 @@ below 0.15 eV, whilst keeping a large number of geometries for the testing set.
     \centering
     \begin{tabular}{|| l r | r ||}
     \hline
-    Hamiltonian & chl-xTB & GFN1-xTB \\
+    Hamiltonian & Chl-xTB & GFN1-xTB \\
     $k_\text{s}$ & 1.462 & 1.850 \\
     $k_\text{p}$ & 2.694 & 2.250 \\
 
@@ -874,9 +876,9 @@ similar MNOK approximations for Coulomb-type integrals in response methods \cite
 \begin{figure}
     \centering
     \includegraphics[scale=0.6]{../../Year_2/chlorophyll_parameterization/tddft_data/method_timing.pdf}
-    \caption{Distributions of the compute walltimes between TD-DFT with CAM-B3LYP/Def2-SVP 
-    and PBE0/Def2-SVP levels of theory, performed on 20 2.4 GHz Intel E5-2680 v4 CPUs (labelled \emph{HCP}).
-    Walltimes for sTDA-xTB and Chl-xTB, performed on a desktop 2019 2.3 GHz Intel Core i5 Macbook Pro,
+    \caption{Distributions of the compute wall-times between TD-DFT with CAM-B3LYP/Def2-SVP 
+    and PBE0/Def2-SVP levels of theory, performed on 20 2.4 GHz Intel E5-2680 v4 CPUs (labelled \emph{HPC}).
+    Wall-times for sTDA-xTB and Chl-xTB, performed on a desktop 2019 2.3 GHz Intel Core i5 Macbook Pro,
     are shown with the label \emph{Desktop}.}
     \label{fig:method_timing}
 \end{figure}
@@ -1082,7 +1084,7 @@ magnitudes, with \dscf and eigenvalue difference being well above the region whe
 PBE0 and CAM-B3LYP values sit.
 
 \afterpartskip
-\subsection{Absorption Spectra}
+\subsection{Predicting Absorption Spectra}
 \label{subsec:absorption_spectra}
 
 So far all of the benchmark tests on chl-xTB have been for gas phase systems and
@@ -1195,7 +1197,7 @@ the limits of the protocol in greater detail, it would be known beforehand wheth
 a candidate system and transition could be expected to work. Many studies that require
 large numbers of calculations could be bootstraped in a similar fashion.
 
-In terms of modelling light harvesting complexes, chl-xTB fulfills all the required
+In terms of modelling light harvesting complexes, Chl-xTB fulfills all the required
 criteria set out in the introduction. It is efficient enough to calculate a huge
 volume of properties in a reasonable amount of time. Additionally the benefit of
 using the xTB framework is that the memory and CPU requirements are fairly low.

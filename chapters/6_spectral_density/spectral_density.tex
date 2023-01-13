@@ -7,49 +7,91 @@
 \chapter{Light Harvesting Complexes}
 \label{chap:LH2}
 
-\initial {T}his chapter reports on the application of the chl-xTB exciton framework
-in calculating the spectral density of the exciton states of LH2. By comparing this
-spectral density to spectra from other systems, as well as properties such as the
-Huang-Rhys factors for chlorophyll normal modes and chlorophyll separations,
-it is argued that the protein scaffold has little effect on exciton states outside
-of affecting individual chromophore geometries, and that intrinsic properties of
-chlorophyll play a much greater part in determining the spectral density.
+\subsubsection*{Previous Published Work}
+All of the work presented in this chapter are also included in a paper published 
+with Dr Susannah Bourne-Worster and Prof. Fred Manby in December 2022 \cite{Feighan2023}.
 
-This is the final step is establishing a new response model for light harvesting
-complexes. Having shown in previous chapters that chl-xTB can reliably calculate 
-monomer and dimer properties, it remains to be tested how this model performs for
-a full light harvesting complex.
+\initial {I}n this chapter further large scale properties of LHCs are explored with
+the Chl-xTB exciton framework. As opposed to the previous chapter where only the 
+chlorophyll dimer case was investigated, this chapter examines the interplay between
+the entire chlorophyll exciton network and the protein environment.
 
-Similar to the previous chapter this falls into two components. First is how the
-chl-xTB based exciton framework is compared to previous models, which is discussed
-in subsection \ref{subsec:coupling_values}. This is an important step in establishing
-the reliability of any properties of LHCs that are calculated.
+As seen in the previous chapter, the protein scaffold and chromophore geometry conformation
+have direct effect on the rates of EET. Similarly dynamic properties of these systems
+will effect EET, as the properties of chlorophyll chromophores in the LH2 complex
+are not static. Motion (e.g., vibrations) of the chromophores themselves and of 
+the protein complex constantly changes the conformational energy of the chromophores,
+their interactions with each other, and their interactions with their protein environment, 
+creating continual fluctuations in the excitonic energies of the chromophore network. 
+These fluctuations drive relaxation processes, which lead to spectroscopic line-broadening 
+and heavily influence the ability of the chromophore antenna network to efficiently 
+transport energy.
 
-The second section applies this framework to calculate properties that similar to 
-the charge transfer state transition rates would be difficult to do without chl-xTB.
-The chosen property was the spectral density of the exciton state of LH2. This would
-have been difficult to achieve with the methods discussed in the introduction due
-to the accuracy need with respect to small chlorophyll geometry variations, as well
-as the prediction of transition properties other than \Qy energies. This accuracy
-is a key requirement of obtaining reliable spectral densities, which is why a large
-emphasis has been given to achieving highly accurate predictions in the preceding
-chapters.
+This important environmental influence can be encapsulated in a single parameter 
+called the spectral density, which describes the coupling between vibrations (of 
+the chromophores and environment) and excitonic energies.
 
-Once the performance of the chl-xTB framework is established, it would then be possible
-to discuss further applications to LHCs or other systems. Similar to the spectral
-densities discussed here, these would focus mainly on the features of chl-xTB that
-separate it from previously reported methods.
+The spectral density describes how the oscillations in the surrounding environment 
+can effect a property. Calculating spectral densities for transitions energies is
+usually used when looking at light harvesting complexes to assign functions to the 
+protein structure, as well as necessary for population dynamics \cite{Mallus2018}.
 
-\section{LH2}
-\label{sec:LH2}
+This important environmental influence can be encapsulated in a single parameter 
+called the spectral density, which describes the coupling between vibrations (of 
+the chromophores and environment) and excitonic energies. Spectral densities are
+commonly defined as the half-sided Fourier transform of the autocorrelation function 
+of a time series for the property of interest (usually a specific energy). For example,
+the spectral density for a  transition energy $\Delta E$ is 
+\begin{equation}
+    J\left(\omega\right) = \frac{\beta \omega}{\pi} \int^\infty_0 dt \, C\left(t\right) \cos \left(\omega t\right), \label{eq:specden}
+\end{equation}
+%
+where $\omega$ is frequency and 
+\begin{equation}
+    C\left(t_j\right) = \frac{1}{N-j} \sum^{N-j}_{k=1} \Delta E \left(t_j + t_k\right) \Delta E \left(t_k\right)
+\end{equation}
+%
+is the autocorrelation function in the time domain. The indices $j,k$ label frames
+in the time series of $\Delta E$ (usually a series of energies calculated along 
+consecutive frames of a molecular dynamics trajectory) and $N$ is the total number 
+of frames. The prefactor $\frac{\beta \omega}{\pi}$ in equation \ref{eq:specden} 
+is required to maintain detailed balance, with $\beta = \frac{1}{k_B T}$ and $T= 300 K$.
 
-In the introduction it was stated that spectral densities of individual sites can
-be calculated with an explicit electronic treatment for each frame of a time series.
-For spectral densities of larger systems, such as the 27-site LH2 exciton system,
-the increased volume of calculation necessary mean that approximations have to be
-made that average over intra-site properties, reducing the level of detail. Due 
-to the efficiency of the chl-xTB exciton method, it is possible to calculate the
-transition properties for the whole exciton system for each frame of a time series.
+The ability to capture coupling to vibrational modes of a particular frequency depends 
+on the length ($N$) and frequency ($1 / \left(t_k-t_j\right)$) of sampling across 
+the time series. Specifically, the upper frequency limit is $\frac{1}{2\left(t_k-t_j\right)}$, 
+whilst the lower limit is $\frac{1}{2N}$. In order for the spectral density to cover 
+high-frequency vibrations (e.g. vibrations of hydrogen bonds), as well as low frequency 
+vibrations (e.g. large-scale motion of the protein complex), transition energies 
+have to be sampled over the long time scale of protein motion (10s -- 100s of picoseconds)
+at a femtosecond or even sub-femtosecond resolution.
+
+With current electronic structure methods and computing power, this is an almost 
+prohibitively large volume of data to acquire. Consequently, most spectral densities
+calculated from MD trajectories only cover a small frequency range. Recent examples 
+for bilin \cite{Blau2018} and Nile red chromophores \cite{Zuehlsdorff2022} (both 
+smaller than bacteriochlorophyll), calculated at a TD-DFT level of theory (B3LYP/aug-cc-pVDZ 
+and B3LYP/cc-pVTZ for bilin chromophores and CAM-B3LYP/6-31G* for Nile red chromophores), 
+sample high frequency molecular motion with a sampling rate of 0.5 $\mathrm{fs}^{-1}$ 
+but do not simulate beyond a few picoseconds (6 ps and 40 ps for bilin and Nile red 
+simulations respectively) so cannot capture lower frequency modes.
+
+They nevertheless required months of GPU time. Switching to lower level electronic
+structure methods, such as ZINDO, give access to longer timescales (Mallus \emph{et al.}
+achieve 300 ps at 2 fs intervals\cite{Mallus2018}) but still remain too expensive 
+to treat the entire exciton framework collectively. In the absence of affordable 
+\emph{ab initio} spectral densities, a popular alternative is to use experimentally 
+parameterised model spectral densities\cite{Ishizaki2009,Renger2002,Padula2017}, 
+but even these can be difficult to obtain and only offer an approximate, coarse-grained 
+picture. 
+
+The speed and accuracy of Chl-xTB, particularly in describing the relative excitation 
+energies of closely related geometries (see figures \ref{fig:mode_83} through to \ref{fig:mode_135}), 
+addresses this issue by making it feasible to sample transition energies over long
+timescales at high resolution. Using this method it becomes possible to calculate 
+spectral densities that not only cover a broader frequency range than was previously
+possible but also for the exciton state energies of the entire LH2 antenna complex 
+(rather than just the transition energies on individual chromophore sites).
 
 This chapter tries to answer two questions about environmental frequency coupling
 to the exciton states. The first is whether low frequency modes are present in the
@@ -61,48 +103,9 @@ have an effect on the exciton states. The second questions would be by how much
 is the exciton state spectral density different to that of individual chlorophyll 
 molecules (inside the LH2 protein). This would be an indicator of whether the protein
 structure promotes some special interaction between sites, or if the protein only
-affects intra-chromophore geometry. Whilst these two questions only probe vague
-details of the protein structure, there are other conclusions possible that would
-be useful for further studies. The amount of intra- verses inter-site difference
+affects intra-chromophore geometry. The amount of intra- verses inter-site difference
 would inform how much detail is needed for future studies on LH2. It would also 
-help in the design of artificial systems, which is discussed later.
-
-\subsection{Spectral Density Method}
-\label{subsec:spec_dens}
-
-The spectral density describes how the oscillations in the surrounding environment 
-can effect a property. Calculating spectral densities for transitions energies is
-usually used when looking at light harvesting complexes to assign functions to the 
-protein structure, as well as necessary for population dynamics \cite{Mallus2018}.
-
-There are several definitions of spectral density. This chapter uses the definitions
-laid out by Mallus \emph{et al.} \cite{Mallus2018}. This work describes the spectral 
-density as the real part of the Fourier transform of the classical autocorrelation 
-function. The autocorrelation $C\left(t_j\right)$ is the correlation of the deviation 
-of transition energies with itself
-
-\begin{equation}
-    C\left(t_j\right) = \frac{1}{N-j} \sum^{N-j}_{k=1} \Delta E \left(t_j + t_k\right) \left(t_k\right)
-\end{equation}
-%
-where $j,k$ are indices in the time series, $N$ the total number of frames in the
-time series, and $\Delta E$ the deviation of transition energy to the mean. The
-spectral density is then given by
-
-\begin{equation}
-    J\left(\omega\right) = \frac{\beta \omega}{\pi} \int^\infty_0 dt \, C\left(t\right) \cos \left(\omega t\right)
-\end{equation}
-%
-where $\omega$ are the frequencies and $\beta$ is the inverse temperature $\frac{1}{k_B T}$.
-
-In practice, the spectral density is usually calculated from a discrete series of 
-a property obtained from the frames of an MD simulation. Hence the autocorrelation
-and Fourier transforms are also discrete. This discretization places a limit on 
-the frequencies that the spectral density can cover, proportional to both the length 
-of the MD simulation for the low frequency limit and the interval between frames 
-for the high frequency limit. The high frequency limit is usually around 1-2 fs 
-in order to capture all atomic movements. The lower frequency limit is an open ended
-limit, dependent on the number of frames that are used in total.
+help in the design of artificial biomimetic systems.
 
 \section{Calculating LH2 Excitons}
 \label{sec:MD}
@@ -110,50 +113,52 @@ limit, dependent on the number of frames that are used in total.
 \subsection{Molecular Dynamics}
 \label{subsec:specdens_MD}
 
-The time series of exciton states was calculated from a series of structures of 
-LH2 generated by simulations run with the OpenMM package. The force-field and geometry
-were the same as used by Ramos \emph{et al.} \cite{Mennucci2019}. For each simulation,
-the system was equilibrated for 60 ps. The production workflow length was 300 ps, 
+Exciton states were calculated from a series of structures of LH2 and chlorophyll
+generated by molecular dynamics simulations run with the OpenMM package. The force-field 
+and geometry were the same as used by Ramos \emph{et al.} \cite{Mennucci2019}. The
+system was equilibrated for 60 ps, before starting a production workflow of 300 ps, 
 with frames taken every 2 fs similar to the work done by Mallus \emph{et al.} \cite{Mallus2018}.
 A Langevin integrator set at 300 K was used with a timestep of 2 fs. Non-bonded
-interactions were treated with a PME method.
+interactions were treated with a particle mesh Ewald method.
 
-\subsection{Scaling}
+\subsection{Scaling computational performance}
 \label{subsec:specdens_scaling}
 
-Exciton states were calculated with the same method as discussed in the previous 
-chapter, extending beyond the dimer system to include all chlorophyll sites. The
-elements in the exciton Hamiltonian were calculated using chl-xTB properties. It
-was necessary to implement a highly parallelized version of the code to calculate 
-chl-xTB properties with good scaling. It was found that using a parent program to 
-partition each chlorophyll site to run in serial on a single core had the best performance,
-with the data then being collected back in to calculate the exciton Hamiltonian.
-As the machines available had around 20 cores, the scaling of each exciton run was
-similar to a single chl-xTB calculation.
+Exciton states were calculated with the same method as used in the previous chapter
+(encapsulated in equation \ref{eq:exciton_H_matrix}), but extending beyond the dimer 
+system to include all chlorophyll sites. The elements in the exciton Hamiltonian 
+were calculated using Chl-xTB properties. It was necessary to implement a highly
+parallelized version of the code to calculate Chl-xTB properties efficiently. It
+was found that using a parent program to partition each chlorophyll site to run 
+in serial on a single core had the best performance, with the data then being collected
+back into a separate program to construct the exciton Hamiltonian. As the high performance
+computing machines available had around 20 cores, the compute wall-time of each 
+exciton run was on the order of a single chl-xTB calculation.
 
-The main bottleneck in calculating these states was the volume of chl-xTB properties
+The main bottleneck in analysing these states was the volume of Chl-xTB properties
 needed, as it was found construction and diagonalization of the exciton Hamiltonian
 was negligible. A 300 ps MD simulation, saving frames every 2 fs, generates 150,000
-individual frames requiring 4,050,000 chl-xTB runs to construct the exciton Hamiltonian.
-The time for each chl-xTB calculation is $\approx 1$ second, so this presents about
-46 days of CPU time. This was significantly reduced by using the highly parallelized
-program. Whilst have this level of detail is necessary for spectral density investigations,
-other properties of the LH2 system that can be obtained with more statistical methods
-may still be more efficient use of resources.
+individual frames requiring 4,050,000 individual Chl-xTB calculations on distinct 
+geometries to construct the exciton Hamiltonian. The time for each Chl-xTB calculation
+is $\approx 0.5$ s (see figure \ref{fig:method_timing}), so this presents about
+46 days of serial CPU time. This was significantly reduced by using the highly parallelized
+program, to $\sim$ 30 hours. Whilst have this level of detail is necessary for spectral
+density investigations, other properties of the LH2 system that can be obtained 
+with more statistical methods may be a more efficient use of resources than the 
+approach used here.
 
 \subsection{Coupling Values}
 \label{subsec:coupling_values}
 
 A summary of the coupling values, broken down by ring-interaction type, are shown
-in figure \ref{fig:coupling_all}. 
-The coupling values obtained from the chl-xTB exciton framework match those of previous
-studies well. Coupling values are highest for B850-B850 interactions, distributed
-around a centre of 350 $\text{cm}^{-1}$, which corresponds well with previously 
-used values between 238 and 771 $\text{cm}^{-1}$ \cite{Cogdell2006}. Intra-dimer
-(where the dimer is a subunit of LH2 chlorophylls consisting of a B850a, B850b and
-B800 chlorophyll) couplings are markedly stronger than inter-dimer couplings, which
-also corresponds well with previous estimated of inter-dimer couplings being ~100 
-$\text{cm}^{-1}$ less than intra-dimer couplings \cite{Koolhaas1997, Jimenez1996, Chachisvilis1997, Scholes2000}. 
+in figure \ref{fig:coupling_all}. The coupling values obtained from the chl-xTB 
+exciton framework match those of previous studies well. Coupling values are highest 
+for B850-B850 interactions, distributed around a centre of 350 $\text{cm}^{-1}$,
+which corresponds well with previously used values between 238 and 771 $\text{cm}^{-1}$ \cite{Cogdell2006}.
+Intra-dimer (where the dimer is a subunit of LH2 chlorophylls consisting of a B850a,
+B850b and B800 chlorophyll) couplings are markedly stronger than inter-dimer couplings, 
+which also corresponds well with previous estimated of inter-dimer couplings being
+~100 $\text{cm}^{-1}$ less than intra-dimer couplings \cite{Koolhaas1997, Jimenez1996, Chachisvilis1997, Scholes2000}. 
 Inter-ring couplings are much lower, with distributions around 35 $\text{cm}^{-1}$
 and 10 $\text{cm}^{-1}$, consistent with previous estimates of between 24 and 31 
 $\text{cm}^{-1}$ \cite{Krueger1998}.
@@ -183,13 +188,13 @@ The point charge embedding used in the previous chapter for LH2 dimers was imple
 with the required PME periodic terms using the open source \code{helPME} library.
 The CPU time of the PME terms was profiled using the LH2 MD frames, and it was found
 that due to implementation problems with re-using splines and grid positions the
-time for each chl-xTB calculation increased from $\approx 1$ second to $\approx 40$
-seconds. Additionally the PME functions required multiple cores in order to get
-the best performance, which competed with the parallelization of chl-xTB runs. As
-improving PME implementations are out of the scope of this work (beyond what was 
-already done to achieve the work in the last chapter), and considering that the
-embedding only marginally changes the \Qy transition, this embedding scheme was
-not applied to the exciton system used in this chapter.
+time for each chl-xTB calculation increased from $\sim 1$ second to $\sim 40$ seconds. 
+Additionally the PME functions required multiple cores in order to get the best 
+performance, which competed with the parallelization of chl-xTB runs. As improving 
+PME implementations are out of the scope of this work (beyond what was already done
+to achieve the work in the last chapter), and considering that the embedding only
+marginally changes the \Qy transition, this embedding scheme was not applied to 
+the exciton system used in this chapter.
 
 A screening term was also implemented. This followed the same form as that reported
 by Mallus \emph{et al.} \cite{Mallus2018}, where any point-charge interaction has
@@ -316,17 +321,17 @@ model, they may not change the overall qualitative behavior of the exciton state
 Calculating the chlorophyll system in a vacuum would still be a valid choice of
 model, and this model has shown to be been effective in the previous investigations.
 
-\section{Spectra}
+\section{Long Timescale Spectral Densities of the LH2 Protein}
 \label{sec:sites_states_couplings}
 
 The following section reports on the features of spectral densities calculated using
 the chl-xTB and exciton method. A more detailed breakdown of peak positions, heights
 and assignments can be found in appendix \ref{app:app02}.
 
-\subsection{Sites}
+\subsection{Spectral Densities of \Qy Transition Energies at Individual Sites}
 \label{subsec:sites}
 
-In order to confirm the spectral densities calculated with chl-xTB excitons are 
+In order to confirm the spectral densities calculated with Chl-xTB excitons are 
 reasonable, spectral densities of monomer chlorophyll \Qy transitions were benchmarked 
 against literature data. This benchmarking was done for a B800 site of LH2 chlorophyll,
 and the spectrum can be seen in figure \ref{fig:specdens_lit}.
@@ -388,7 +393,7 @@ well. It is discussed later how the efficiency of the chl-xTB method would allow
 better workflows in calculating spectral densities.
 
 \afterpartskip
-\subsection{Exciton states}
+\subsection{Spectral Densities of Exciton State Energy}
 \label{subsec:states}
 
 This section reports on the calculation of the spectral density for exciton states.
@@ -463,7 +468,7 @@ closer together or change the angle between porphyrin planes. The next section l
 at the variations in coupling values in greater detail.
 
 \afterpartskip
-\subsection{Coupling}
+\subsection{Spectral Densities of Exciton State Coupling}
 \label{subcsec:coupling}
 
 The spectral densities of the coupling terms were calculated with the same method
@@ -472,7 +477,7 @@ It can be seen that there are far fewer features in the coupling spectral densit
 than in the site and state transition spectra. Additionally there is a broad feature
 at the low frequency end of the spectrum, around 0.01 eV. Intuitively, the magnitude
 of the spectral density decreases as the separation of chlorophylls increase, with
-anything but nearest neighbours showing signficant value against the strongest coupling 
+anything but nearest neighbours showing significant value against the strongest coupling 
 spectrum.
 
 \begin{figure}
@@ -486,7 +491,7 @@ spectrum.
 
 
 Taking the largest valued spectrum, where the distance between the two chlorophylls
-was the smallest with an average of 15.9 $\AA{}$, the high frequency features correspond 
+was the smallest with an average of 15.9 \AA{}, the high frequency features correspond 
 to features found in the exciton state and site spectra. The strongest features are 
 found at 0.201, 0.203 and 0.205 eV, with strengths of 0.416, 0.457 and 0.372 meV 
 respectively. These correspond with major features in the site spectra, implying 
@@ -539,7 +544,7 @@ in diethyl ether, as well as a spectrum constructed from Huang-Rhys factors calc
 with chl-xTB response properties and a GFN1-xTB hessian. Some speculative explanations
 of the lack of low frequency features are also given.
 
-\subsection{Spectral Density of Chlorophyll in Diethyl Ether}
+\subsection{Spectral Density of the \Qy Transition from Chlorophyll in Diethyl Ether}
 \label{subsec:specdens_ether}
 
 So far only the environmental coupling of LH2 has been considered. Whilst some differences
@@ -590,7 +595,7 @@ imply little effect originating from the environment. Overall couplings between
 chlorophyll transition energies and the environment are controlled by intrinsic 
 chlorophyll properties.
 
-\subsection{Huang-Rhys Factors}
+\subsection{Assignment of Molecular Motion with Huang-Rhys Factors}
 \label{subsec:hrf}
 
 These intrinsic properties that cause features in the spectral density would most
@@ -680,7 +685,7 @@ method might improve the comparison, but this was not possible with the resource
 available. However looking at the atomic motions more explicitly could explain some
 of the features observed.
 
-\subsection{N Axes Deformation}
+\subsection{Assignment of Molecular Motion with Spectral Densities of $N$ Axes Deformation}
 \label{subsec:N_axes_deformation}
 
 The motion of the $N_A$-$N_C$ and $N_B$-$N_D$ axes inducing a $D_{4h}$-$C_{s}$ symmetry
@@ -722,7 +727,7 @@ still be the lack of correspondence between spectral density features and normal
 mode vibrations, however it may shed light on which chlorophyll atoms are particularly
 important to spectral density features.
 
-\section{conclusions}
+\section{Conclusions}
 \label{sec:specdens_concs}
 
 The work in this chapter shows that the chl-xTB exciton method can fulfill the criteria
@@ -739,7 +744,11 @@ The exciton transition energy and coupling energy spectra clearly show that ther
 environment coupling is mostly based around intra-chlorophyll variations. The coupling
 spectra show how low-frequency motions of the protein are a relatively unimportant 
 factor in exciton state variation, and that coupling variations originate at the
-monomer level than aggregate effects.
+monomer level than aggregate effects. This extends the observation made in previous
+work that the Qy excitation energy of individual chlorophyll sites remains essentially 
+constant when intramolecular BChl vibrations are “frozen out” (i.e., the BChl geometry
+is artificially fixed during a molecular dynamics simulation) to leave only the 
+effect of large-scale protein motion \cite{Claridge2018a}.
 
 Whilst these intra-chlorophyll variations are explored in some detail, it remains
 a challenge to fully assign the underlying motions for peaks at specific frequencies.

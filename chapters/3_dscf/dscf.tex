@@ -59,7 +59,7 @@ chapter to enhance the conclusions of the benchmarking.
 
 \section{Benchmarking \dscf}
 \label{sec:benchmarking}
-\subsection{Reference Data and test set}
+\subsection{Reference Data and Test Sets}
 \label{subsec:reference_data}
 
 Full scale chlorophyll molecules are too large to be able to calculate benchmark
@@ -83,7 +83,7 @@ singlet excited state transition energies were calculated using EOM-CCSD with an
 aug-cc-pVTZ basis set. These results were generated using the Gaussian 16 program
 \cite{Gaussian16}.
 
-\subsection{Small Systems}
+\subsection{Benchmarking Small Systems}
 \label{subsec:smalltest}
 Transition properties for the small molecule test set were calculated using TD-DFT 
 and \dscf, both using a CAM-B3LYP functional and aug-cc-pVTZ basis set. The transitions
@@ -154,7 +154,7 @@ In summary, \dscf can be seen to accurately predict transition properties
 to a EOM-CCSD level of accuracy with as much success as TD-DFT, except in cases
 of mixed transitions. 
 
-\subsection{Non-orthogonality}
+\subsection{Addressing Non-orthogonality in \dscf States}
 \label{subsec:dscf_nonorth}
 Generally the ground and excited states calculated for \dscf transition, being solutions
 from two separate SCF cycles, will not be completely orthogonal. The Slater determinants
@@ -224,7 +224,7 @@ large protein system, where chromophores can easily be tens or hundreds of angst
 from the overall system origin, this would obviously present a much larger problem 
 than for a vacuum-phase small molecule.
 
-\subsection{LH2 Chlorophyll}
+\subsection{\dscf Accuracy in LH2 Chlorophylls}
 \label{subsec:dscf_chl_tests}
 Having demonstrated that TD-DFT is a good proxy for high-level methods, \dscf was
 benchmarked against TD-DFT data for a series of chlorophyll molecules. This comparison 
@@ -280,7 +280,7 @@ on one static set of orbitals rather than the previous SCF cycle, but implementi
 and testing these methods is outside the scope of this work.
 
 \afterpartskip
-\subsection{xTB methods}
+\subsection{Benchmarking xTB \dscf Methods}
 \label{subsec:dscf_gfn_tests}
 \dxtb was tested on the same small molecule benchmark set. Its performance was compared
 to other methods with a range of approximations for calculating transition properties, 

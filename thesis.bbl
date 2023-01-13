@@ -1154,10 +1154,100 @@ Lu~Zhang, Daniel-Adriano Silva, Yijing Yan, and Xuhui Huang.
 \newblock {Force Field Development for Cofactors in the Photosystem II}.
 \newblock {\em J. Comput. Chem.}, 33:1969--1980, 2012.
 
+\bibitem{Kelly1970}
+A.~R. Kelly and G.~Porter.
+\newblock {Model systems for photosynthesis I Energy transfer and light
+  harvesting mechanisms}.
+\newblock {\em Proc. R. Soc. London A}, 315:149--161, 1970.
+
+\bibitem{Kelly1971}
+A.~R. Kelly and L.~K. Patterson.
+\newblock {Model systems for photosynthesis II Concentration quenching of
+  chlorophyll b fluorescence in solid solutions}.
+\newblock {\em Proc. R. Soc. London A}, 324:117--126, 1971.
+
+\bibitem{Beddard1976a}
+G.~S. Beddard, S.~E. Carlin, and G.~Porter.
+\newblock {Concentration quenching of chlorophyll fluorescnece in bilayer lipid
+  vesicles and liposomes}.
+\newblock {\em Chem. Phys. Lett.}, 43(1):27--32, 1976.
+
+\bibitem{Gutschick1978}
+V.~P. Gutschick.
+\newblock {Concentration Quenching in Chlorophyll-a and Relation to Functional
+  Charge Transfer in vivo}.
+\newblock {\em J. Bioenerg. Biomembr.}, 10:153--170, 1978.
+
+\bibitem{Seely1978}
+G.~R. Seely.
+\newblock {The energetics of electron-transfer reactions of chlorophyll and
+  other compounds}.
+\newblock {\em Photochem. Photobiol.}, 27:639--654, 1978.
+
+\bibitem{Yuen1980}
+M.~J. Yuen, L.~L. Shipman, J.~Katz, and C.~Hindman.
+\newblock {Concentration Quenching of fluorescence from chlorophyll-a,
+  pheophytin-a, pyropheophytin-a and their covalently linked pairs}.
+\newblock {\em Photochem. Photobiol.}, 32(3):281--296, 1980.
+
+\bibitem{Watson1950}
+W~F Watson and Robert Livingston.
+\newblock {Self-quenching of nitrobenzoxadiazole labeled phospholipids in lipid
+  membranes}.
+\newblock {\em J. Chem. Phys.}, 18(6):802, 1950.
+
+\bibitem{Warshel2001}
+A.~Warshel and W.~W. Parson.
+\newblock {Dynamics of biochemical and biophysical reactions: Insight from
+  computer simulations}.
+\newblock {\em Q. Rev. Biophys.}, 34(4):563--679, 2001.
+
+\bibitem{Beddard1976b}
+G.S. Beddard and G.~Porter.
+\newblock {Concentration quenching in chlorophyll}.
+\newblock {\em Nature}, 260:366--367, 1976.
+
+\bibitem{Brody2002}
+Seymour~Steven Brody.
+\newblock {Fluorescence lifetime, yield, energy transfer and spectrum in
+  photosynthesis, 1950-1960 *}.
+\newblock {\em Photosynth. Res.}, 73:127--132, 2002.
+
 \bibitem{Beddard1976}
 G.~S. Beddard and G.~Porter.
 \newblock {Concentration quenching in chlorophyll}.
 \newblock {\em Nature}, 260:367, 1976.
+
+\bibitem{Blau2018}
+Samuel~M Blau, Doran~I {G Bennett}, Christoph Kreisbeck, Gregory~D Scholes, and
+  A{\'{i}}an Aspuru-Guzik.
+\newblock {Local protein solvation drives direct down-conversion in
+  phycobiliprotein PC645 via incoherent vibronic transport}.
+\newblock {\em PNAS}, 115(15):E3342--E3350, 2018.
+
+\bibitem{Zuehlsdorff2022}
+Tim~J. Zuehlsdorff, Hanbo Hong, Liang Shi, and Christine~M. Isborn.
+\newblock {Influence of Electronic Polarization on the Spectral Density}.
+\newblock {\em J. Phys. Chem. B.}, 124:531--543, 2020.
+
+\bibitem{Ishizaki2009}
+Akihito Ishizaki and Graham~R Fleming.
+\newblock {Theoretical examination of quantum coherence in a photosynthetic
+  system at physiological temperature}.
+\newblock {\em PNAS}, 106(41):17255--17260, 2009.
+
+\bibitem{Renger2002}
+Thomas Renger and R~A Marcus.
+\newblock {On the relation of protein dynamics and exciton relaxation in
+  pigment-protein complexes: An estimation of the spectral density and a theory
+  for the calculation of optical spectra}.
+\newblock {\em J. Chem. Phys}, 116:9997, 2002.
+
+\bibitem{Padula2017}
+Daniele Padula, Myeong~H Lee, Kirsten Claridge, and Alessandro Troisi.
+\newblock {Chromophore-Dependent Intramolecular Exciton-Vibrational Coupling in
+  the FMO Complex: Quantification and Importance for Exciton Dynamics}.
+\newblock {\em J. Phys. Chem. B}, 121:10026--10035, 2017.
 
 \bibitem{Koolhaas1997}
 M.~H.~C. Koolhaas, G.~{Van Der Zwan}, R.~N. Frese, and R.~{Van Grondelle}.
@@ -1183,10 +1273,11 @@ Gregory~D Scholes and Graham~R Fleming.
   Bacteria: B800 to B850 Energy Transfer}.
 \newblock {\em J. Phys. Chem. B}, 104:1854--1868, 2000.
 
-\bibitem{Zuehlsdorff2022}
-Tim~J. Zuehlsdorff, Hanbo Hong, Liang Shi, and Christine~M. Isborn.
-\newblock {Influence of Electronic Polarization on the Spectral Density}.
-\newblock {\em J. Phys. Chem. B.}, 124:531--543, 2020.
+\bibitem{Claridge2018a}
+Kirsten Claridge, Daniele Padula, and Alessandro Troisi.
+\newblock {How fine-tuned for energy transfer is the environmental noise
+  produced by proteins around biological chromophores?}
+\newblock {\em Phys. Chem. Chem. Phys}, 20:17279, 2018.
 
 \bibitem{Polli2006}
 Dario Polli, Giulio Cerullo, Guglielmo Lanzani, Sandro {De Silvestri}, Hideki
@@ -1194,5 +1285,31 @@ Dario Polli, Giulio Cerullo, Guglielmo Lanzani, Sandro {De Silvestri}, Hideki
 \newblock {Carotenoid-bacteriochlorophyll energy transfer in LH2 complexes
   studied with 10-fs time resolution}.
 \newblock {\em Biophys. J.}, 90(7):2486--2497, 2006.
+
+\bibitem{Tracy2022}
+Dustin~A Tracy, Sebastian Fernandez-Alberti, Sergei Tretiak, and Adrian~E
+  Roitberg.
+\newblock {Adiabatic Excited-State Molecular Dynamics with an Explicit Solvent:
+  NEXMD-SANDER Implementation}.
+\newblock {\em J. Chem. Theory Comput.}, 18:5213--5220, 2022.
+
+\bibitem{Matute2010}
+Ricardo~A Matute, Renato Contreras, and Leticia {Gonz Alez}.
+\newblock {Time-Dependent DFT on Phytochrome Chromophores: A Way to the Right
+  Conformer}.
+\newblock {\em J. Phys. Chem. Lett}, 1:796--801, 2010.
+
+\bibitem{Scholes2013}
+Gregory~D Scholes, Francesca Fassioli, Rayomond Dinshaw, and Paul~C Arpin.
+\newblock {Photosynthetic light harvesting: excitons and coherence}.
+\newblock {\em J. R. Soc. Interface}, 11:20130901, 2013.
+
+\bibitem{Coccia2014}
+Emanuele Coccia, Daniele Varsano, and Leonardo Guidoni.
+\newblock {Ab Initio Geometry and Bright Excitation of Carotenoids: Quantum
+  Monte Carlo and Many Body Green's Function Theory Calculations on Peridinin
+  Chart 1. Sketch Representation of Peridinin (PID) and of the Reduced
+  Peridinin Model (PID1)}.
+\newblock {\em J. Chem. Theory Comput}, 10:501--506, 2014.
 
 \end{thebibliography}
