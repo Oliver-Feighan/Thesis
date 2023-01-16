@@ -851,7 +851,7 @@ to the complex solution space. These values for RMSE are well within the values
 for TD-DFT with various functionals, and the $R^2$ of transition energy is equally
 good. While the correlation in transition dipole magnitude is low, it is near to
 the expected correlation from \dscf and eigenvalue difference. It can also be seen
-in figure \ref{fig:dipole_training_scatter} that the variation in chl-xTB transition
+in figure \ref{fig:dipole_camb3lyp_scatter} that the variation in Chl-xTB transition
 dipole magnitude is much smaller than \dscf, eigenvalue difference and ZINDO, as
 well as being close to the mean from PBE0. This is a better behaviour, similar to
 the statistical method used before \cite{Stross2016}, than the other methods with 
@@ -949,9 +949,27 @@ in figure \ref{fig:D4_sym_breaking}.
     \label{fig:D4_sym_breaking}
 \end{figure}
 
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.55]{../../Year_2/BChla_Qy/qy_length_scan.png}
+    \caption{Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB 
+    normal modes for a chlorophyll molecule truncated at the phytyl tail.}
+    \label{fig:qy_length_scan}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.55]{../../Year_2/BChla_Qy/qy_angle_scan.png}
+    \caption{Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal
+    modes for a chlorophyll molecule truncated at the phytyl tail. The smaller variance
+    than in figure \ref{fig:qy_length_scan} led this metric to not be used in normal
+    mode choices.}
+    \label{fig:qy_angle_scan}
+\end{figure}
+
 Normal modes that would also have this symmetry breaking component were identified
 by how much the $N_A$-$N_C$ displacement would change along each normal mode. A plot of these
-values, as well as the moving average, is shown in figure \ref{qy_length_scan}.
+values, as well as the moving average, is shown in figure \ref{fig:qy_length_scan}.
 A similar scan was made of the $N_A$-$Mg$-$N_C$ angle, however less variance in
 this value was found and the peak positions did not match previously reported frequencies
 for strong coupling. Normal modes with the largest $N_A$-$N_C$ were then chosen 
@@ -960,34 +978,16 @@ at 669.6, 701.7, 733.3, 745.5, 755.1, 1105.0, 1107.0, 1122.2, 1142.9, 1320.3, 13
 $\text{cm}^{-1}$, which roughly correspond to previously identified normal modes
 with frequencies of around 728 and 1156 $\text{cm}^{-1}$ \cite{Kim2020}.
 
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.55]{../../Year_2/BChla_Qy/qy_length_scan.png}
-    \caption{Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB 
-    normal modes for a chlorophyll molecule truncated at the phytol tail.}
-    \label{fig:qy_length_scan}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[scale=0.55]{../../Year_2/BChla_Qy/qy_angle_scan.png}
-    \caption{Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal
-    modes for a chlorophyll molecule truncated at the phytol tail. The smaller variance
-    than in figure \ref{fig:qy_length_scan} led this metric to not be used in normal
-    mode choices.}
-    \label{fig:qy_angle_scan}
-\end{figure}
-
 The geometry was propagated for each selected normal mode such that the sum of
-all atomic displacements from the optimised geometry was in units of 1 $\AA{}$.
-This was done up to 3 $\AA{}$ as it was found for most normal modes the energy 
-difference between the optimised geometry and 3 $\AA{}$ displaced geometry was greater
+all atomic displacements from the optimised geometry was in units of 1 \AA{}.
+This was done up to 3 \AA{} as it was found for most normal modes the energy 
+difference between the optimised geometry and 3 \AA{} displaced geometry was greater
 than the thermal energy at 300 K. Alternatively, in an environment at 300 K, a chlorophyll 
 system would not be expected to deform past these boundaries. At each increment,
 the \Qy transtion energy and dipole were calculated using chl-xTB, as well as TD-DFT
 with PBE0/Def2-SVP and CAM-B3LYP/Def2-SVP levels of theory, \dscf and eigenvalue 
 differences (both using PBE0/Def2-SVP). A quadratic fit was made for each of the
-response methods and is shown in figures \ref{fig:mode83} to \ref{fig:mode_135}. 
+response methods and is shown in figures \ref{fig:mode_83} to \ref{fig:mode_135}. 
 Some points for the \dscf method are not shown due to issues with excited state 
 convergence.
 

@@ -24,8 +24,8 @@
 \contentsline {figure}{\numberline {4.8}{\ignorespaces Comparison of the $Q_y$ transition dipole moments predicted from the reference methods as well as chl-xTB (red) against CAM-B3LYP/Def2-SVP values.}}{73}{figure.4.8}%
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Distributions of the compute wall-times between TD-DFT with CAM-B3LYP/Def2-SVP and PBE0/Def2-SVP levels of theory, performed on 20 2.4 GHz Intel E5-2680 v4 CPUs (labelled \emph {HPC}). Wall-times for sTDA-xTB and Chl-xTB, performed on a desktop 2019 2.3 GHz Intel Core i5 Macbook Pro, are shown with the label \emph {Desktop}.}}{74}{figure.4.9}%
 \contentsline {figure}{\numberline {4.10}{\ignorespaces Normal modes of the nitrogen-magnesium centre of chlorophyll that have $D_{4h}$-$D_{2h}$ (left) and $D_{4h}$-$C_{s}$ (right) symmetry breaking components.}}{76}{figure.4.10}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail.}}{77}{figure.4.11}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytol tail. The smaller variance than in figure \ref {fig:qy_length_scan} led this metric to not be used in normal mode choices.}}{78}{figure.4.12}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Change in the $N_A$-$N_C$ displacements along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytyl tail.}}{77}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Change in the $N_A$-$Mg$-$N_C$ angle along the set of GFN1-xTB normal modes for a chlorophyll molecule truncated at the phytyl tail. The smaller variance than in figure \ref {fig:qy_length_scan} led this metric to not be used in normal mode choices.}}{77}{figure.4.12}%
 \contentsline {figure}{\numberline {4.13}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along the 83rd normal mode (frequency 669.6 $\text {cm}^{-1}$).}}{78}{figure.4.13}%
 \contentsline {figure}{\numberline {4.14}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along the 85th normal mode (frequency 701.7 $\text {cm}^{-1}$).}}{79}{figure.4.14}%
 \contentsline {figure}{\numberline {4.15}{\ignorespaces Transition energies and dipole magnitudes for the $Q_y$ transition for geometries of truncated chlorophyll along the 88th normal mode (frequency 733.3 $\text {cm}^{-1}$).}}{79}{figure.4.15}%
@@ -71,12 +71,12 @@
 \addvspace {10pt}
 \addvspace {10pt}
 \addvspace {10pt}
-\contentsline {figure}{\numberline {B.1}{\ignorespaces Spectral density of the $Q_y$ transition at LH2 B800 sites with labelled peaks.}}{147}{figure.B.1}%
+\contentsline {figure}{\numberline {B.1}{\ignorespaces Spectral density of the $Q_y$ transition at LH2 B800 sites with labelled peaks.}}{148}{figure.B.1}%
 \contentsline {figure}{\numberline {B.2}{\ignorespaces Spectral density of the $Q_y$ transition at LH2 B850a sites with labelled peaks.}}{149}{figure.B.2}%
-\contentsline {figure}{\numberline {B.3}{\ignorespaces Spectral density of the $Q_y$ transition at LH2 B850b sites with labelled peaks.}}{150}{figure.B.3}%
+\contentsline {figure}{\numberline {B.3}{\ignorespaces Spectral density of the $Q_y$ transition at LH2 B850b sites with labelled peaks.}}{151}{figure.B.3}%
 \contentsline {figure}{\numberline {B.4}{\ignorespaces Spectral density of the LH2 exciton transition energies with labelled peaks.}}{152}{figure.B.4}%
-\contentsline {figure}{\numberline {B.5}{\ignorespaces Spectral density of the LH2 exciton coupling energies with labelled peaks.}}{153}{figure.B.5}%
-\contentsline {figure}{\numberline {B.6}{\ignorespaces Spectral density of the LH2 Mg-Mg distances with labelled peaks.}}{154}{figure.B.6}%
-\contentsline {figure}{\numberline {B.7}{\ignorespaces Spectral density of the LH2 N axes deformations with labelled peaks.}}{155}{figure.B.7}%
-\contentsline {figure}{\numberline {B.8}{\ignorespaces Spectral density of the $Q_y$ transition energies for chlorophyll in explicit diethyl ether, with labelled peaks.}}{156}{figure.B.8}%
-\contentsline {figure}{\numberline {B.9}{\ignorespaces A stacked version of all of the above spectra.}}{158}{figure.B.9}%
+\contentsline {figure}{\numberline {B.5}{\ignorespaces Spectral density of the LH2 exciton coupling energies with labelled peaks.}}{154}{figure.B.5}%
+\contentsline {figure}{\numberline {B.6}{\ignorespaces Spectral density of the LH2 Mg-Mg distances with labelled peaks.}}{155}{figure.B.6}%
+\contentsline {figure}{\numberline {B.7}{\ignorespaces Spectral density of the LH2 N axes deformations with labelled peaks.}}{156}{figure.B.7}%
+\contentsline {figure}{\numberline {B.8}{\ignorespaces Spectral density of the $Q_y$ transition energies for chlorophyll in explicit diethyl ether, with labelled peaks.}}{157}{figure.B.8}%
+\contentsline {figure}{\numberline {B.9}{\ignorespaces A stacked version of all of the above spectra.}}{159}{figure.B.9}%
