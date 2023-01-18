@@ -1719,6 +1719,9 @@ INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/frontmatter/declaration.tex
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
+INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
 INPUT /Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.toc
@@ -1752,9 +1755,6 @@ INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncr8t.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncr8r.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8t.tfm
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/adobe/ncntrsbk/pncri8t.vf
-INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/adobe/ncntrsbk/pncri8r.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/vf/public/fouriernc/fncsy.vf
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-ms.tfm
 INPUT /usr/local/texlive/2017/texmf-dist/fonts/tfm/public/fourier/fourier-mcl.tfm
