@@ -34,16 +34,16 @@ forward into exciton Hamiltonians.
 Using Chl-xTB as the engine for exciton models offers to solve many of these issues.
 For the monomer properties examined in the previous chapter, it can be seen to be
 nearly as accurate as TD-DFT is when comparing different functionals. Correct embedding 
-effects, explicitly unincorporated in the training set, are accurately regained
+effects, explicitly excluding from the training set, are accurately regained
 when using Chl-xTB to new species and environments. The \dscf/SPA and semi-empirical 
 inspired approach to excited states has kept computational efficiency high. Combined,
-these benefits anticipate LHC models which can accurately capture the interplay
+these benefits anticipate LHC models that can accurately capture the interplay
 of the expansive environment (protein scaffold and solvent) and the complex quantum
 system inside, with an efficiency that can probe interesting and important phenomena.
 
 A good example of such phenomena is the rate of conversion from vertical excited
 states (ES) to charge-separated (CS) states in embedded chlorophyll dimers. The ES$\rightarrow$CS
-transfer pathway is an important proposed mechanism for fluorescent quenching in
+transfer pathway is an important proposed mechanism for fluorescence quenching in
 LHCs, which directly impacts the quantum efficiency of harvesting light. Understanding 
 how the design of LHCs inhibits this pathway is key to designing similarly efficient
 artificial light harvesting materials.
@@ -52,29 +52,28 @@ Several other proposed mechanisms of fluorescence quenching have been already be
 excluded, being easier to model or experimentally determine. For example, impurity-formed
 trap states, inter-system crossing to triplet states and collisions with quenching
 quenching species have been ruled out by Porter \emph{et al.} \cite{Kelly1970}. 
-The concentration-independence spectral features of chlorophyll also rules out aggregate
-chlorophyll formation as a mechanism for quenching \cite{Kelly1970, Kelly1971, Beddard1976a}. 
+The concentration-independence of the spectral features of chlorophyll also rules 
+out aggregatechlorophyll formation as a mechanism for quenching \cite{Kelly1970, Kelly1971, Beddard1976a}. 
 It is hypothesised that the CT state is the mostly likely candidate for a trap state,
-\cite{Gutschick1978, Seely1978, Kelly1971} the existence of which is connoted by 
+\cite{Gutschick1978, Seely1978, Kelly1971} the existence of which is indicated by 
 fluorescence decay kinetics  \cite{Yuen1980}.
 
 Currently, established methods are unsuitable for computing the energy surfaces of 
 LHC excited states required to examine electron transfer rates of this complexity 
-in great detail. It follows that as the protein environment is highly influential
+in great detail. It follows that, as the protein environment is highly influential
 to these rates, the environment must be included in the energy surface coordinate
-space. Including the environment however introduces a huge number of degrees of 
-freedom which need to be sufficiently sampled, accurately, to obtain energy surfaces. 
-With an efficient, accurate and adaptable method in hand, realizing these states
-is possible.
+space. Including the environment, however introduces a huge number of degrees of 
+freedom, which need to be accurately sampled to obtain energy surfaces. With an
+efficient, accurate and adaptable method in hand, realizing these states is possible.
 
-The aim of this chapter is then to go beyond monomer chlorophyll properties, and 
+The aim of this chapter is to go beyond monomer chlorophyll properties, and 
 utilize the benefits of the protocol established in the previous chapter to realize
 more detailed models of LHCs. To establish accuracy in this expanded regime, the 
 properties of exciton states, which have nuanced differences to monomer excited 
 states, are examined against established methods. Specifically, accurate descriptions
 of the dependence of exciton energies with relative orientation and separation of 
-chlorophylls require attesting. Once established, this chapter showcases the benefits
-of the Chl-xTB exciton model to the problem of understanding LHC inhibition of 
+chlorophylls require testing. Once established, this chapter showcases the benefits
+of the Chl-xTB exciton model for the problem of understanding LHC inhibition of 
 charge-transfer fluorescence quenching.
 
 %=======
@@ -603,75 +602,79 @@ Efficiently calculating exciton network energies opens new avenues of modelling
 LHC properties. With more efficient and accurate calculations, coordinate spaces 
 with large numbers of degrees of freedom can be confidently sampled, extracting 
 the underlying chemical and physical structures that define features in these spaces.
-More specifically, utilizing the enhanced sampling that Chl-xTB provides has enabled
-mapping energy surfaces of embedded chlorophyll dimer states, where the dimers are
-actively affected by the surrounding solvent (evidenced by the discrepancy in fluorescence 
-quenching seen in solvated chlorophyll and chlorophyll networks in LH2 \cite{Watson1950}). 
-From these surfaces the rate constants of the proposed mechanism for fluorescence 
-quenching can be predicted and systematically varied with solvent and protein environment. 
-It should be noted that the high number of degrees of freedom in these surfaces 
-directly originate from the effect of environment on chlorophyll geometry conformation,
-giving two important considerations: a systematic scan of a reaction coordinate 
-would not be possible, due to the sheer number of atoms involved; accurate construction
-of these surfaces require the three main benefits of the Chl-xTB framework 
-(efficiency, accuracy, and inclusion of embedding effects).
+More specifically, utilizing the more efficient sampling that Chl-xTB provides,
+it is possible to map the energy surfaces of embedded chlorophyll dimer states, 
+where the dimers are actively affected by the surrounding solvent (evidenced by 
+the discrepancy in fluorescence quenching seen in solvated chlorophyll and chlorophyll 
+networks in LH2 \cite{Watson1950}). From these surfaces some of the rate constants 
+of the proposed mechanism for fluorescence quenching can be predicted and systematically 
+varied with solvent and protein environment. It should be noted that the high number 
+of degrees of freedom in these surfaces directly originate from the effect of environment
+on chlorophyll geometry conformation. Therefore, a systematic scan of a reaction 
+coordinate would not be possible, due to the sheer number of atoms involved, and
+accurate construction of these surfaces requires the three main benefits of the 
+Chl-xTB framework (efficiency, accuracy, and inclusion of embedding effects).
 
-The rate constant of electron transfer from the ES to CS state is dependent on the
-free energy change $\Delta A$ and reorganization energy $\lambda$ of said transition,
-and is given by
+According to Marcus theory \cite{Marcus1964}, the rate constant of electron transfer
+from the ES to CS state depends upon the free energy change $\Delta A$ and reorganization 
+energy $\lambda$ of said transition, and in the following way:
 
 \begin{equation}
-    k_{\text{CS}} = \frac{2\pi}{\hbar} \left\lvert H_{AB} \right\rvert^2 \frac{1}{\sqrt{4 \pi \lambda k_B T}}\text{exp}\left(\frac{-\left(\lambda + \Delta A\right)^2}{4 \lambda k_B T}\right)
+    k_{\text{CS}} = \frac{2\pi}{\hbar} \left\lvert H_{AB} \right\rvert^2 \frac{1}{\sqrt{4 \pi \lambda k_B T}}\text{exp}\left(\frac{-\left(\lambda + \Delta A\right)^2}{4 \lambda k_B T}\right),
 \end{equation}
 %
 where $H_{AB}$ is the coupling value between the ES and CS states, $k_B$ is the 
 usual Boltzmann constant and $T$ is the temperature. $\Delta A$ and $\lambda$ are
-calculated from the minima of the ES and CS free energy surfaces (FESs). Due to
-the dependence of these surfaces on both the internal geometry of the dimers and
-the surrounding solvent system, it is not possible to discern a simple reaction 
-coordinate to perform systematic scans. Instead, the FES can be reconstructed from 
-a distribution of energy values, calculated from a large volume of stochastic chlorophyll 
-dimer geometries.
+calculated from the minima of the ES and CS free energy surfaces (FESs) (see figure
+\ref{fig:ct_pes_distance}). Due to the dependence of these surfaces on both the 
+internal geometry of the dimers and the surrounding solvent system, it is not possible
+to discern a simple reaction  coordinate to perform systematic scans. However, because
+each electronic state varies differently as a function of chromophore and solvent 
+configuration, the changing energy gap between states ($\mathrm{E}_\mathrm{ES}-\mathrm{E}_\mathrm{CS}$,
+where $\mathrm{E}_\mathrm{ES}$, $\mathrm{E}_\mathrm{CS}$ are the energies of the
+photoexcited and charge-separated state respectively) can be used as a proxy for 
+the reaction coordinate. FESs can be reconstructed from a distribution of these
+proxy values, calculated from a large volume of stochastic chlorophyll dimer geometries.
 
-Calculating FESs was done for a series of chlorophyll dimers, using the difference
-between the ES and CS energies as the reaction coordinate. This coordinate space
-would include all of the internal chlorophyll coordinates and solvent coordinates. 
-The FESs was assumed to be a quadratic function of the excitation energy $\Delta E$
-
-\begin{equation}
-    V\left(\Delta E\right) = \frac{kT}{2} \left( \frac{\Delta E - \mu}{\sigma}\right)^2
-\end{equation}
-%
-where $\mu$ and $\sigma$ are the mean and standard deviation of the excitation energies.
-Assuming the FESs are quadratic is consistent with studies on bacteriochlorophyll 
-pairs in the photosynthetic reaction centre of \emph{Rb. Sphaeroides} \cite{Warshel2001}.
-The Boltzmann distribution from this FES is a normal distribution
+The distribution of the differences $\mathrm{E}_\mathrm{ES}-\mathrm{E}_\mathrm{CS}$
+where well fit by a normal distribution function
 
 \begin{equation}
     P\left(\Delta E\right) = \text{exp} \left(-\frac{1}{2}\left(\frac{\Delta E - \mu}{\sigma}\right)^2\right)
     \label{eq:FES_normdist}
 \end{equation}
 %
-and so values for $\mu$ and $\sigma$ also define the FES. 
+where $\mu$ and $\sigma$ are the mean and standard deviation of the distribution
+respectively, and $\Delta E$ is the excitation energy for either the ES or CS state.
+From this, the FESs are quadratic, having the form
 
-The rate $k_{ES \rightarrow CS}$ was calculated for a series of chlorophyll dimers 
+\begin{equation}
+    V\left(\Delta E\right) = \frac{kT}{2} \left( \frac{\Delta E - \mu}{\sigma}\right)^2.
+\end{equation}
+%
+Assuming the FESs are quadratic is consistent with studies on bacteriochlorophyll 
+pairs in the photosynthetic reaction centre of \emph{Rb. Sphaeroides} \cite{Warshel2001}.
+
+The rate constant $k_{ES \rightarrow CS}$ was calculated for a series of chlorophyll dimers 
 at a constant separation, with MD simulations used to generate thermally distributed
-geometries of the dimer systems. The work by Beddard and Porter demonstrated that
-a critical distance of $\sim 10$ \AA{} is required to chlorophyll dimer to start
-exhibiting the charge-separation trap states proposed for quenching \cite{Beddard1976b}.
-In this way, a constraint was used to keep a dimer pair at a constant separation 
-in order to properly inspect the effect of chlorophyll distance on the charge separation
-rate. These constraints were set to 8, 10, 12, 14 and 20 \AA{}. For each separation,
-the dimer systems were explicitly solvated with 100 \AA{} diethyl ether boxes. These
-boxes were prepared using \code{Packmol}, and force-field parameters were taken
-from OpenForceField version 1.3.0. Each system was equilibrated for 10 ps at 300 K
-with a Langevin Integrator, with a production simulation of 500 ps performed afterwards. 
+geometries of the dimer systems. A constraint was used to keep a dimer pair at a 
+constant separation in order to properly inspect the effect of chlorophyll distance 
+on the charge separation rate. These constraints were set to 8, 10, 12, 14 and 20 \AA{},
+following the work by Beddard and Porter which suggested that a critical distance 
+of $\sim 10$ \AA{} is required for the chlorophyll dimer to start exhibiting the 
+charge-separation trap states proposed for quenching at a competitive rate \cite{Beddard1976b}. 
+For each separation, the dimer systems were explicitly solvated in 100 \AA{} diethyl
+ether boxes. These boxes were prepared using \code{Packmol}, and force-field parameters
+were taken from OpenForceField version 1.3.0. Each system was equilibrated for 10 ps 
+at 300 K with a Langevin Integrator, with a production simulation of 500 ps performed 
+afterwards. 
 
-A $k_{ES \rightarrow CS}$ rate  was also calculated for a pair of chlorophylls embedded
-in the LH2 protein. The average separation of nearest neighbours in LH2 is $\sim 9$ \AA{}.
-The LH2 geometries were generated using the same MD method as the diethyl ether 
-systems, but using the LH2 structure and force-field developed by Ramos \emph{et al.} \cite{Mennucci2019}.
-For both sets of environments, snapshots were taken every 1 ps for 500 total geometries. 
+A $k_{ES \rightarrow CS}$ rate constant was also calculated for a pair of chlorophylls
+embedded in the LH2 protein. The average separation of nearest neighbours in LH2
+is $\sim 9$ \AA{}. The LH2 geometries were generated using the same MD method as 
+the diethyl ether systems, but using the LH2 structure and force-field developed
+by Ramos \emph{et al.} \cite{Mennucci2019}. For both sets of environments, snapshots 
+were taken every 1 ps for 500 total geometries. 
 
 Dimer excited states were calculated for all of the geometries, using the Frenkel
 exciton Hamiltonian and Chl-xTB. To account for environmental effects, the solvent
@@ -681,68 +684,78 @@ $\mu$ and standard deviations $\sigma$ of the symmetric normal distribution in e
 \ref{eq:FES_normdist} were fit to the series of lowest energy exciton states, to
 reconstruct the FES. Fitting $\mu$ and $\sigma$ was done with the \code{scipy.stats} 
 module. Good fits were achieved with this method, justifying the assumption that 
-the FESs follow a quadratic form.
+the FESs follow a quadratic form (see figure \ref{fig:fes_distributes}).
+
+\begin{figure}
+    \includegraphics[scale=0.5]{../../Year_3/CT_figures/FES_dist_and_fit.png}
+    \caption{Distributions of vertical energy gaps $\Delta E$ and fitted normal
+    distribution functions for each solvated Chl dimer system and LH2 Chl dimers.}
+    \label{fig:fes_distributes}
+\end{figure}
 
 The coupling value $H_{AB} = \braket{ES|\hat{H}|CS}$ was calculated for a set of
 dimers using Fragment Orbital DFT with a PBE/3-21++G level of theory. FODFT will
 become less accurate as the distances between fragments get larger due to basis
-set truncation errors, so instead of calculating separate values for all separations
-the 10 $\AA{}$ case was used to better approximate further separations using an
-exponential decay. Additionally, truncated chlorophylls with the phytol tail removed
-were used to make the FODFT calculations feasible.
+set truncation errors \cite{Oberhofer2012, Obenhofer2017}, so instead of calculating
+separate values for all separations the 10 \AA{} case was used to better approximate 
+further separations using an exponential decay. Additionally, truncated chlorophylls
+with the phytyl tail removed were used to make the FODFT calculations feasible.
 
-The rate constant calculated for the $10\AA{}$ angstrom dimer, in diethyl ether,
-was calculated to be $0.03 \text{ns}^{-1}$ $\pm 0.01 \text{ns}^{-1}$. As the fluorescence
+The rate constant calculated for the 10 \AA{} dimer, in diethyl ether, was 
+0.03 $\text{ns}^{-1}$ $\pm 0.01 \text{ns}^{-1}$. As the fluorescence
 rate $k_f$ is given as 0.2 $\text{ns}^{-1}$ \cite{Brody2002}, charge separation
-is a competitive pathway for quenching vertically excited states. The $0.03 \text{ns}^{-1}$
+is a competitive pathway for quenching vertically excited states. The 0.03 $\text{ns}^{-1}$
 value also assumes a full relaxation of the geometries to a new equilibrium. Taking
-values for $\Delta A$ and $\lambda$ from the reaction coordinate at initial photoexcitation 
-(i.e. where the ground state dimer distribution would sit) gives a more competitive 
-rate constant of $0.04 \text{ns}^{-1}$. Other considerations also suggest the rate
-constant calculated with this method will be an underestimate, making it even more competitive.
+values for $\Delta A$ and $\lambda$ from the reaction coordinate at initial photo-excitation 
+(i.e. where the ground state dimer distribution would sit) gives a rate constant
+of 0.04 $\text{ns}^{-1}$. Other considerations, such as the destabilization of the
+CS state from overestimated polarisation in the FF methods or the constant value
+for $H_{AB}$, suggest the rate constant calculated with this method will be an underestimate,
+making it even more competitive.
 
 The rate constant also decreases with the distance between the chlorophyll dimers, as can
-be seen in the increase in $\lambda$ and $\Delta A$ values for 8 $\AA{}$, 10 $\AA{}$,
-12 $\AA{}$, 14 $\AA{}$ and 20 $\AA{}$ shown in figure \ref{fig:ct_pes_distance}. 
+be seen in the increase in $\lambda$ and $\Delta A$ values for 8 \AA{}, 10 \AA{},
+12 \AA{}, 14 \AA{} and 20 \AA{} shown in figure \ref{fig:ct_pes_distance}. 
 As the systems become more separated and both $\Delta A$ and $\lambda$ increase, 
 the rate constant is reduced exponentially. This is contrary to the previously held
 assumption that there is a critical distance where this rate drops to zero \cite{Beddard1976},
 although the exponential drop off in rate will be sharp. Additionally, the coupling
 value $H_{AB}$ will also decrease with distance. This decrease is due to the dependence 
 on overlap between the donor and acceptor orbitals in the electron transfer, which 
-decreases with distance again exponentially.
+decreases with distance again exponentially \cite{Kubas2015, Silver1968, Handy1969}.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.4]{../../Year_3/CT_figures/PES_by_step.png}
-    \caption{Free energy surfaces of the charge separated and vertical excitation
+    \caption{Free energy surfaces of the charge separated and photo-excited
     states of chlorophyll dimer systems, using the difference in state energies 
     as the coordinate, for a series of separations. Free energy changes ($\Delta A$)
     and reorganization energies ($\lambda$) are shown for each separation.}
     \label{fig:ct_pes_distance}
 \end{figure}
 
-Comparing the constrained systems to the LH2 system reveals how the protein structure
+Comparing the solvated systems to the LH2 system reveals how the protein structure
 biases the rate constant to be even lower. The average separation of chlorophylls
-in the LH2 system is around 9 $\AA{}$, which below the separation for formation
-of what is termed statistical pairs, where transition to the CS state is most competitive\cite{Beddard1976b}.
+in the LH2 system is around 9 \AA{}, which is below the calculated critical distance
+for charge-separation/quenching, where transition to the CS state is most competitive\cite{Beddard1976b}.
 However, as can been seen in figure \ref{fig:ct_pes_lh2}, the free energy change
-is much higher for LH2 than for even the 20 $\AA{}$ case, attributed to a destabilization
+is much higher for LH2 than for even the 20 \AA{} case, attributed to a destabilization
 of the CS state. Additionally, the crossing point for the electron transfer is to
 the right of the CS state minima, implying that any transition from ES to CS would
 quickly reverse. This biasing of FESs illustrates how the LH2 protein scaffold actively
-reduces the rate constant for quenching which would otherwise be present at such
+reduces the rate constant for quenching that would otherwise be present at such
 close separations.
 
 \begin{figure}
     \centering
     \includegraphics[scale=0.5]{../../Year_3/CT_figures/LH2_PES.png}
-    \caption{Free energy surfaces of the charge separated and vertical excitation
+    \caption{Free energy surfaces of the charge separated and photo-excited
     states of LH2 chlorophyll dimer systems, using the same coordinate as figure
-    \ref{fig:ct_pes_distance}. The large free energy change and movement of the 
-    charge separation state FES minimum to the left-hand side of the vertical excitation 
-    FES imply the LH2 protein environment inhibits transfer to the charge separated
-    state.}
+    \ref{fig:ct_pes_distance}. The red lines show FESs from LH2 chlorophyll dimers,
+    with black lines showing FESs of solvated chlorophyll dimers. The large free 
+    energy change and movement of the charge separation state FES minimum to the 
+    left-hand side of the photo-excited FES imply the LH2 protein environment inhibits 
+    transfer to the charge separated state.}
     \label{fig:ct_pes_lh2}
 \end{figure}
 
@@ -754,12 +767,12 @@ give reliable transition properties for aggregate chlorophyll systems. Whilst so
 issues were found in benchmarking against relevant PBE0 data, comparisons to CAM-B3LYP 
 were still possible and showcase the accuracy of the Chl-xTB exciton method. The
 quantitative accuracy of transition energies for LH2 dimers is on the order expected
-from the training data. As Chl-xTB and PBE0 based excitons predict CAM-B3LYP data
-with similar levels of accuracy, it is not expected that improvements to Chl-xTB
-optimization methods would have appreciable effect in this specific test. The qualitative
-trends in excited state energies for artificial dimer geometries imply that Chl-xTB 
-excitons can predict variations due to geometry changes well, advantageous to the
-main focus of this work.
+from the training data. As Chl-xTB and PBE0 predict excitonic energies predict with
+similar levels of accuracy to CAM-B3LYP data, it is not expected that improvements 
+to Chl-xTB optimization methods would have an appreciable effect in this specific 
+test. The qualitative trends in excited state energies for artificial dimer geometries
+imply that Chl-xTB is good at predicting variations in excitonic energy due to geometry 
+changes advantageous to the main focus of this work.
 
 It can be seen how Chl-xTB design choices have created a method that can be readily 
 applied to light harvesting systems. For this work, Chl-xTB had to be shown to be 
@@ -770,17 +783,17 @@ complexes. However one outcome of benchmarking other systems could be that the t
 data range would need to be extended, similar to the conclusion of the previous 
 chapter. Some of the errors in the Chl-xTB exciton model may be improved by using
 other monomer interaction methods beyond the point charge interaction, such as
-using MNOK operators similar to the work done in the previous chapter, although
+using MNOK operators similar to the work done in the previous chapters, although
 with different parameters.
 
 The benefits of the efficient Chl-xTB exciton method is illustrated in predicting
 the rate constants of transitions between excited states in chlorophyll dimers. 
 This study has provided  predictions of quenching mechanisms rates in chlorophyll
-dimers that take into effect the atomistic properties of the LH2 protein scaffold.
+dimers that take into account the atomistic properties of the LH2 protein scaffold.
 By including these effects it has been demonstrated that the protein scaffold biases 
 against charge-separation quenching pathways when compared to dimers in solution
 phase, a clear indication of how the LH2 complex maximizes beneficial EET. As a 
 case study, the application of the Chl-xTB exciton method demonstrates its potential
 uses for light harvesting studies that may not be feasible with other excited state
 methods. Similar to the arguments in section \ref{sec:chl_conclusions}, it is the 
-ability to bootstrap high level data that is a main benefit of this kind of method.
+ability to reproduce high level data that is a main benefit of this kind of method.

@@ -2,47 +2,48 @@ This is BibTeX, Version 0.99d (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
 The style file: unsrt.bst
+Reallocated field_info (elt_size=4) to 10060 items from 5000.
 Database file #1: /Users/of15641/Documents/library.bib
 Warning--empty journal in Manby2019
-You've used 214 entries,
+You've used 220 entries,
             1791 wiz_defined-function locations,
-            1771 strings with 46591 characters,
-and the built_in function-call counts, 52642 in all, are:
-= -- 4645
-> -- 2674
+            1804 strings with 47665 characters,
+and the built_in function-call counts, 54230 in all, are:
+= -- 4800
+> -- 2736
 < -- 1
-+ -- 973
-- -- 759
-* -- 4224
-:= -- 8676
-add.period$ -- 641
-call.type$ -- 214
-change.case$ -- 210
++ -- 996
+- -- 776
+* -- 4351
+:= -- 8925
+add.period$ -- 659
+call.type$ -- 220
+change.case$ -- 216
 chr.to.int$ -- 0
-cite$ -- 215
-duplicate$ -- 1931
-empty$ -- 4884
-format.name$ -- 759
-if$ -- 11202
+cite$ -- 221
+duplicate$ -- 1985
+empty$ -- 5036
+format.name$ -- 776
+if$ -- 11542
 int.to.chr$ -- 0
-int.to.str$ -- 214
-missing$ -- 218
-newline$ -- 1071
-num.names$ -- 214
-pop$ -- 266
+int.to.str$ -- 220
+missing$ -- 224
+newline$ -- 1101
+num.names$ -- 220
+pop$ -- 272
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 704
+skip$ -- 724
 stack$ -- 0
-substring$ -- 4612
-swap$ -- 222
+substring$ -- 4798
+swap$ -- 228
 text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 1
-while$ -- 544
-width$ -- 217
-write$ -- 2349
+while$ -- 562
+width$ -- 223
+write$ -- 2415
 (There was 1 warning)

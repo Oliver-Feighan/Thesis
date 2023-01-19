@@ -1196,6 +1196,11 @@ W~F Watson and Robert Livingston.
   membranes}.
 \newblock {\em J. Chem. Phys.}, 18(6):802, 1950.
 
+\bibitem{Marcus1964}
+R.~A. Marcus.
+\newblock {CHEMICAL AND ELECTROCHEMICAL ELECTRON-TRANSFER THEORY}.
+\newblock {\em Annu. Rev. Phys. Chem}, 15:155--196, 1964.
+
 \bibitem{Warshel2001}
 A.~Warshel and W.~W. Parson.
 \newblock {Dynamics of biochemical and biophysical reactions: Insight from
@@ -1207,6 +1212,18 @@ G.S. Beddard and G.~Porter.
 \newblock {Concentration quenching in chlorophyll}.
 \newblock {\em Nature}, 260:366--367, 1976.
 
+\bibitem{Oberhofer2012}
+Harald Oberhofer and Jochen Blumberger.
+\newblock {Revisiting electronic couplings and incoherent hopping models for
+  electron transport in crystalline C 60 at ambient temperatures}.
+\newblock {\em Phys. Chem. Chem. Phys}, 14:13846--13852, 2012.
+
+\bibitem{Obenhofer2017}
+Harald Obenhofer, Karsten Reuter, and Jochen Blumberger.
+\newblock {Charge Transport in Molecular Materials: An Assessment of
+  Computational Methods}.
+\newblock {\em Chem. Rev.}, 117:10319--10357, 2017.
+
 \bibitem{Brody2002}
 Seymour~Steven Brody.
 \newblock {Fluorescence lifetime, yield, energy transfer and spectrum in
@@ -1217,6 +1234,24 @@ Seymour~Steven Brody.
 G.~S. Beddard and G.~Porter.
 \newblock {Concentration quenching in chlorophyll}.
 \newblock {\em Nature}, 260:367, 1976.
+
+\bibitem{Kubas2015}
+Adam Kubas, Fruzsina Gajdos, Alexander Heck, Harald Oberhofer, Marcus Elstner,
+  and Jochen Blumberger.
+\newblock {Electronic couplings for molecular charge transfer: benchmarking
+  CDFT, FODFT, and FODFTB against high-level ab initio calculations. II}.
+\newblock {\em Phys. Chem. Chem. Phys}, 17:14342--14354, 2015.
+
+\bibitem{Silver1968}
+David~M Silver and Klaus Ruedenberg.
+\newblock {Overlap Integrals over Slater-Type Atomic Orbitals}.
+\newblock {\em Coulomb Integr. over Slater-Type At. Orbitals J. Chem. Phys.},
+  49(10):4301--4306, 1968.
+
+\bibitem{Handy1969}
+N.~C. Handy, M.~T. Marron, and H.~J. Silverstone.
+\newblock {Long-Range Behaviour of Hartree-Fock Orbitals}.
+\newblock {\em Phys. Rev.}, 180(1):45--48, 1969.
 
 \bibitem{Blau2018}
 Samuel~M Blau, Doran~I {G Bennett}, Christoph Kreisbeck, Gregory~D Scholes, and
