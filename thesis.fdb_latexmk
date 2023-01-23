@@ -1,17 +1,17 @@
 # Fdb version 3
-["bibtex thesis"] 1674142252 "thesis.aux" "thesis.bbl" "thesis" 1674146170
+["bibtex thesis"] 1674142252 "thesis.aux" "thesis.bbl" "thesis" 1674468599
   "/Users/of15641/Documents/library.bib" 1674136170 618004 5f1ec315b72fb3b0f58a9063e38f59c3 ""
   "/usr/local/texlive/2017/texmf-dist/bibtex/bst/base/unsrt.bst" 1292289607 18030 1376b4b231b50c66211e47e42eda2875 ""
-  "thesis.aux" 1674146170 110737 bcc5cd222da400f3312f74307a49fc96 "pdflatex"
+  "thesis.aux" 1674468599 110737 bcc5cd222da400f3312f74307a49fc96 "pdflatex"
   (generated)
   "thesis.bbl"
   "thesis.blg"
-["makeindex thesis.idx"] 1674142010 "thesis.idx" "thesis.ind" "thesis" 1674146170
-  "thesis.idx" 1674146117 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex thesis.idx"] 1674142010 "thesis.idx" "thesis.ind" "thesis" 1674468599
+  "thesis.idx" 1674468545 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "thesis.ind"
   "thesis.ilg"
-["pdflatex"] 1674146116 "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.tex" "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf" "thesis" 1674146170
+["pdflatex"] 1674468545 "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.tex" "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf" "thesis" 1674468599
   "../../Writing/ChlxTBPaper/figures/Figure2.png" 1663862830 131388 b0051272d2f87deedad644bd61e09c5b ""
   "../../Year_2/AbsorptionSpectra/cla_diethyl_ether_spectra.png" 1658481255 377067 e12eb600e85b6889064c50aa399bf3ec ""
   "../../Year_2/BChla_Qy/mode_129.png" 1661938356 371169 576b176212c43f1fd75ad2be72db8a64 ""
@@ -76,7 +76,7 @@
   "../../Year_3/dscf_figures/correction_scatter.png" 1656950804 208335 795997aa1f6eb88f868a99d3486994d6 ""
   "../../Year_3/dscf_figures/dipole_scatter.png" 1656950788 299357 fcc0e340f76f9e8b939de414c2d47092 ""
   "../../Year_3/dscf_figures/energy_scatter.png" 1656950695 320100 1f52780fe8ae2851e61a03f578878298 ""
-  "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux" 1674146170 110737 bcc5cd222da400f3312f74307a49fc96 ""
+  "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.aux" 1674468599 110737 bcc5cd222da400f3312f74307a49fc96 ""
   "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.tex" 1673620638 13595 d5d6fbffc84f2f8ff442a3efecda5ab2 ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1480098666 2971 def0b6c1f0b107b3b936def894055589 ""
@@ -413,24 +413,24 @@
   "frontmatter/abstract.tex" 1674052141 3230 dc4dfd768c270fa435142bf18759523a ""
   "frontmatter/declaration.tex" 1674052316 1523 1b0dbe8204a15e7937e93317afd3cb6a ""
   "frontmatter/dedication.tex" 1674052195 1688 c758de13fba11851a10cb2cac0758126 ""
-  "frontmatter/title.tex" 1674146116 1861 929cef8616315fa7719381a06715062a ""
+  "frontmatter/title.tex" 1674468544 1864 7a6dde71a6c0fa19672461aa6196662c ""
   "logos/bristolcrest_colour.pdf" 1643109428 133081 910fa2330406778c6658724a5c646377 ""
-  "thesis.aux" 1674146170 110737 bcc5cd222da400f3312f74307a49fc96 "pdflatex"
+  "thesis.aux" 1674468599 110737 bcc5cd222da400f3312f74307a49fc96 "pdflatex"
   "thesis.bbl" 1674142252 54545 08ec4c6d9f8ba4c2d62cccf08f316309 "bibtex thesis"
   "thesis.ind" 1674142010 0 d41d8cd98f00b204e9800998ecf8427e "makeindex thesis.idx"
-  "thesis.lof" 1674146170 19288 596bfa29a9b88f189f554683db43c6bd "pdflatex"
-  "thesis.lot" 1674146170 2600 5632a3b56b1252bf86481a1ce98fc5dc "pdflatex"
-  "thesis.out" 1674146170 6209 92f4684442f0071979351e28360c9a30 "pdflatex"
+  "thesis.lof" 1674468599 19288 596bfa29a9b88f189f554683db43c6bd "pdflatex"
+  "thesis.lot" 1674468599 2600 5632a3b56b1252bf86481a1ce98fc5dc "pdflatex"
+  "thesis.out" 1674468599 6209 92f4684442f0071979351e28360c9a30 "pdflatex"
   "thesis.tex" 1673620638 13595 d5d6fbffc84f2f8ff442a3efecda5ab2 ""
-  "thesis.toc" 1674146170 10053 d24455dc02f2bfae23583ebb29489a93 "pdflatex"
+  "thesis.toc" 1674468599 10053 d24455dc02f2bfae23583ebb29489a93 "pdflatex"
   (generated)
+  "thesis.aux"
   "thesis.lot"
+  "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.log"
   "thesis.toc"
   "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.pdf"
+  "thesis.lof"
   "thesis.pdf"
   "thesis.log"
-  "thesis.aux"
-  "thesis.lof"
-  "/Users/of15641/OneDrive - University of Bristol/Documents/Postgrad_folder/Writing/Thesis/thesis.log"
-  "thesis.out"
   "thesis.idx"
+  "thesis.out"
